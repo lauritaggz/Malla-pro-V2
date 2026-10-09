@@ -1,0 +1,56 @@
+# ──────────────────────────────
+# 📦 Node & Dependencias
+# ──────────────────────────────
+node_modules/
+yarn.lock
+pnpm-lock.yaml
+
+# ──────────────────────────────
+# ⚙️ Build y cache
+# ──────────────────────────────
+dist/
+build/
+mallapro-cpanel-upload.zip
+.vite/
+.cache/
+vite.svg
+
+# ──────────────────────────────
+# 🔐 Archivos de entorno
+# ──────────────────────────────
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ──────────────────────────────
+# 🧠 Configuración y Logs
+# ──────────────────────────────
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# ──────────────────────────────
+# 💻 Editor / IDE
+# ──────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ──────────────────────────────
+# 🧾 Sistema operativo
+# ──────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ──────────────────────────────
+# 📄 PDFs de referencia locales (pueden contener PII)
+# ──────────────────────────────
+public/Horario Alumno*.pdf
+public/_horario_*.txt

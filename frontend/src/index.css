@@ -1,0 +1,1115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================================================================
+   MALLA PRO — Design System v2 (Profesional Académico)
+   Principios:
+   · Fondos neutros — el color primario no contamina el fondo
+   · Bordes grises neutrales — no tematizados
+   · Glass solo en navbar (superpuesta), cards con superficie sólida
+   · Tipografía con contraste real
+   ================================================================ */
+
+/* ── Light themes ─────────────────────────────────────────────── */
+.aurora.light {
+  --primary:        #2563EB;
+  --bgPrimary:      #F8FAFC;
+  --bgSecondary:    #FFFFFF;
+  --bgSurface:      #FFFFFF;
+  --textPrimary:    #0F172A;
+  --textSecondary:  #64748B;
+  --borderColor:    rgba(15,23,42,0.13);
+  --shadowPrimary:  rgba(37,99,235,0.14);
+  --primaryMuted:   rgba(37,99,235,0.07);
+}
+
+.sunset.light {
+  --primary:        #DB2777;
+  --bgPrimary:      #FDF8F8;
+  --bgSecondary:    #FFFFFF;
+  --bgSurface:      #FFFFFF;
+  --textPrimary:    #0F172A;
+  --textSecondary:  #64748B;
+  --borderColor:    rgba(15,23,42,0.13);
+  --shadowPrimary:  rgba(219,39,119,0.14);
+  --primaryMuted:   rgba(219,39,119,0.07);
+}
+
+.emerald.light {
+  --primary:        #059669;
+  --bgPrimary:      #F7FBF9;
+  --bgSecondary:    #FFFFFF;
+  --bgSurface:      #FFFFFF;
+  --textPrimary:    #0F172A;
+  --textSecondary:  #64748B;
+  --borderColor:    rgba(15,23,42,0.13);
+  --shadowPrimary:  rgba(5,150,105,0.14);
+  --primaryMuted:   rgba(5,150,105,0.07);
+}
+
+.midnight.light {
+  --primary:        #7C3AED;
+  --bgPrimary:      #F9F8FE;
+  --bgSecondary:    #FFFFFF;
+  --bgSurface:      #FFFFFF;
+  --textPrimary:    #0F172A;
+  --textSecondary:  #64748B;
+  --borderColor:    rgba(15,23,42,0.13);
+  --shadowPrimary:  rgba(124,58,237,0.14);
+  --primaryMuted:   rgba(124,58,237,0.07);
+}
+
+.golden.light {
+  --primary:        #D97706;
+  --bgPrimary:      #FDFAF5;
+  --bgSecondary:    #FFFFFF;
+  --bgSurface:      #FFFFFF;
+  --textPrimary:    #0F172A;
+  --textSecondary:  #64748B;
+  --borderColor:    rgba(15,23,42,0.13);
+  --shadowPrimary:  rgba(217,119,6,0.14);
+  --primaryMuted:   rgba(217,119,6,0.07);
+}
+
+/* ── Dark themes ──────────────────────────────────────────────── */
+.aurora.dark {
+  --primary:        #60A5FA;
+  --bgPrimary:      #0D1117;
+  --bgSecondary:    #161B22;
+  --bgSurface:      #1C2128;
+  --textPrimary:    #E6EDF3;
+  --textSecondary:  #7D8590;
+  --borderColor:    rgba(255,255,255,0.08);
+  --shadowPrimary:  rgba(96,165,250,0.18);
+  --primaryMuted:   rgba(96,165,250,0.10);
+}
+
+.sunset.dark {
+  --primary:        #F472B6;
+  --bgPrimary:      #0D1117;
+  --bgSecondary:    #161B22;
+  --bgSurface:      #1C2128;
+  --textPrimary:    #E6EDF3;
+  --textSecondary:  #7D8590;
+  --borderColor:    rgba(255,255,255,0.08);
+  --shadowPrimary:  rgba(244,114,182,0.18);
+  --primaryMuted:   rgba(244,114,182,0.10);
+}
+
+.emerald.dark {
+  --primary:        #34D399;
+  --bgPrimary:      #0D1117;
+  --bgSecondary:    #161B22;
+  --bgSurface:      #1C2128;
+  --textPrimary:    #E6EDF3;
+  --textSecondary:  #7D8590;
+  --borderColor:    rgba(255,255,255,0.08);
+  --shadowPrimary:  rgba(52,211,153,0.18);
+  --primaryMuted:   rgba(52,211,153,0.10);
+}
+
+.midnight.dark {
+  --primary:        #A78BFA;
+  --bgPrimary:      #0D1117;
+  --bgSecondary:    #161B22;
+  --bgSurface:      #1C2128;
+  --textPrimary:    #E6EDF3;
+  --textSecondary:  #7D8590;
+  --borderColor:    rgba(255,255,255,0.08);
+  --shadowPrimary:  rgba(167,139,250,0.18);
+  --primaryMuted:   rgba(167,139,250,0.10);
+}
+
+.golden.dark {
+  --primary:        #FCD34D;
+  --bgPrimary:      #0D1117;
+  --bgSecondary:    #161B22;
+  --bgSurface:      #1C2128;
+  --textPrimary:    #E6EDF3;
+  --textSecondary:  #7D8590;
+  --borderColor:    rgba(255,255,255,0.08);
+  --shadowPrimary:  rgba(252,211,77,0.18);
+  --primaryMuted:   rgba(252,211,77,0.10);
+}
+
+/* ── Design tokens system mappings ────────────────────────────── */
+:root {
+  --brand-primary: var(--primary);
+  --brand-soft: var(--primaryMuted);
+  --brand-contrast: #ffffff;
+  --focus-ring: var(--primary);
+
+  --background: var(--bgPrimary);
+  --surface: var(--bgSecondary);
+  --surface-subtle: var(--bgPrimary);
+  --surface-raised: var(--bgSurface);
+  --border: var(--borderColor);
+  --border-strong: var(--textSecondary);
+  --text-primary: var(--textPrimary);
+  --text-secondary: var(--textSecondary);
+  --text-muted: var(--textSecondary);
+
+  /* Semantic status colors (fixed color meanings!) */
+  --status-approved-bg: rgba(16, 185, 129, 0.08);
+  --status-approved-border: rgba(16, 185, 129, 0.35);
+  --status-approved-text: #059669;
+
+  --status-current-bg: rgba(37, 99, 235, 0.08);
+  --status-current-border: rgba(37, 99, 235, 0.4);
+  --status-current-text: #2563eb;
+
+  --status-available-bg: transparent;
+  --status-available-border: var(--borderColor);
+  --status-available-text: var(--textPrimary);
+
+  --status-blocked-bg: rgba(148, 163, 184, 0.06);
+  --status-blocked-border: var(--borderColor);
+  --status-blocked-text: var(--textSecondary);
+}
+
+.dark {
+  --status-approved-text: #34d399;
+  --status-current-text: #60a5fa;
+  --status-approved-bg: rgba(52, 211, 153, 0.1);
+  --status-current-bg: rgba(96, 165, 250, 0.1);
+}
+
+.light {
+  --status-approved-text: #059669;
+  --status-current-text: #2563eb;
+  --status-approved-bg: rgba(16, 185, 129, 0.08);
+  --status-current-bg: rgba(37, 99, 235, 0.08);
+}
+
+/* ── Utility classes ──────────────────────────────────────────── */
+.bg-primary         { background-color: var(--primary); }
+.text-primary       { color: var(--primary); }
+.border-primary     { border-color: var(--primary); }
+.bg-bgPrimary       { background-color: var(--bgPrimary); }
+.bg-bgSecondary     { background-color: var(--bgSecondary); }
+.text-textPrimary   { color: var(--textPrimary); }
+.text-textSecondary { color: var(--textSecondary); }
+.border-borderColor { border-color: var(--borderColor); }
+
+/* ── Global base ──────────────────────────────────────────────── */
+body {
+  background-color: var(--bgPrimary);
+  color: var(--textPrimary);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11", "kern" 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media (min-width: 640px) {
+  .main-content-zoom {
+    zoom: 0.9;
+  }
+}
+
+/* ── Theme transition ─────────────────────────────────────────── */
+:root, .dark, .light {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* ── Card surface — sólida, sin blur ──────────────────────────── */
+.glass-card {
+  background: var(--bgSecondary);
+  border: 1px solid var(--borderColor);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.09), 0 2px 8px rgba(0,0,0,0.05);
+  border-radius: 12px;
+  transition: box-shadow 0.18s ease;
+}
+.glass-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.11), 0 1px 4px rgba(0,0,0,0.07);
+}
+.dark .glass-card {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3), 0 1px 2px rgba(0,0,0,0.2);
+}
+.dark .glass-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+
+/* ── Navbar glass (único lugar donde blur tiene sentido) ──────── */
+.navbar-glass {
+  background: rgba(var(--bgSecondary-rgb, 255,255,255), 0.85);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+}
+.dark .navbar-glass {
+  background: rgba(22,27,34,0.88);
+}
+
+/* ── Buttons ──────────────────────────────────────────────────── */
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  transition: opacity 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+.btn-primary:hover {
+  opacity: 0.9;
+  box-shadow: 0 4px 12px var(--shadowPrimary);
+}
+
+.btn-secondary {
+  background: var(--bgSecondary);
+  border: 1px solid var(--borderColor);
+  color: var(--textPrimary);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.btn-secondary:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+/* ── Borde izquierdo destacado para "en curso" ─────────────────── */
+.encurso-glow {
+  border-left-width: 4px !important;
+}
+
+/* ── Animations ───────────────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-in { animation: fadeIn 0.3s ease-out forwards; }
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25%       { transform: translateX(-5px); }
+  75%       { transform: translateX(5px); }
+}
+.shake { animation: shake 0.3s ease-in-out; }
+
+@keyframes curso-card-shake {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  15%      { transform: translate3d(-7px, 0, 0); }
+  30%      { transform: translate3d(7px, 0, 0); }
+  45%      { transform: translate3d(-5px, 0, 0); }
+  60%      { transform: translate3d(5px, 0, 0); }
+  75%      { transform: translate3d(-3px, 0, 0); }
+  90%      { transform: translate3d(3px, 0, 0); }
+}
+.curso-card-shake {
+  animation: curso-card-shake 0.42s cubic-bezier(0.36, 0.07, 0.19, 0.97);
+  will-change: transform;
+}
+
+.gradient-text { color: var(--primary); font-weight: 700; }
+
+/* ── Scrollbars ───────────────────────────────────────────────── */
+::-webkit-scrollbar        { height: 6px; width: 6px; }
+::-webkit-scrollbar-thumb  { background-color: var(--borderColor); border-radius: 20px; }
+::-webkit-scrollbar-thumb:hover { background-color: var(--primary); }
+::-webkit-scrollbar-track  { background: transparent; }
+
+.scroll-container {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--borderColor) transparent;
+  backface-visibility: hidden;
+  -webkit-overflow-scrolling: touch;
+  contain: paint;
+}
+
+@media (min-width: 768px) {
+  .malla-wheel-scroll {
+    overflow-y: hidden;
+    overscroll-behavior: contain;
+    scroll-behavior: smooth;
+  }
+}
+.scroll-container::-webkit-scrollbar       { height: 6px; }
+.scroll-container::-webkit-scrollbar-thumb { background-color: var(--borderColor); border-radius: 8px; transition: background-color 0.2s ease; }
+.scroll-container::-webkit-scrollbar-thumb:hover { background-color: var(--primary); }
+.scroll-container::-webkit-scrollbar-track { background: transparent; }
+
+/* ── Drag ─────────────────────────────────────────────────────── */
+.dragging { cursor: grabbing !important; user-select: none; }
+
+/* ── Responsive ───────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .scroll-container        { padding-bottom: 1.5rem; }
+  .min-w-\[460px\]         { min-width: 380px !important; }
+  .min-w-\[210px\]         { min-width: 180px !important; }
+}
+@media (max-width: 640px) {
+  .scroll-container        { padding-bottom: 0.35rem; }
+}
+@media (max-width: 480px) {
+  .min-w-\[460px\]         { min-width: 320px !important; }
+  .min-w-\[210px\]         { min-width: 150px !important; }
+}
+
+/* ── Estados de tarjetas de curso ────────────────────────────── */
+
+/* Tarjeta disponible — blanco con borde izquierdo de acento */
+.curso-disponible {
+  background-color: var(--bgSecondary);
+  border-left: 3px solid var(--primary) !important;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
+.curso-disponible:hover {
+  box-shadow: 0 2px 8px var(--shadowPrimary);
+}
+.dark .curso-disponible {
+  background-color: var(--bgSurface);
+}
+
+/* Base (dark mode fallback) */
+.curso-aprobado   { background-color: rgb(16 185 129 / 0.88); }
+.curso-excepcional { background-color: rgb(245 158 11 / 0.88); }
+.curso-encurso    { background-color: var(--primary); }
+
+/* Light mode — pastels sofisticados */
+.light .curso-aprobado {
+  background-color: #ECFDF5;
+  color: #065F46 !important;
+  border-color: #6EE7B7 !important;
+}
+.light .curso-excepcional {
+  background-color: #FFFBEB;
+  color: #78350F !important;
+  border-color: #FCD34D !important;
+}
+/* En curso light mode — pastel del color primario (fondo claro + texto oscuro) */
+.aurora.light  .curso-encurso { background-color: #EFF6FF; color: #1E3A8A !important; border-color: #BFDBFE !important; }
+.sunset.light  .curso-encurso { background-color: #FDF2F8; color: #831843 !important; border-color: #FBCFE8 !important; }
+/* Emerald: cursando usa familia TEAL para diferenciarse del aprobado (verde esmeralda) */
+.emerald.light .curso-encurso { background-color: #CCFBF1; color: #0F766E !important; border-color: #5EEAD4 !important; }
+.midnight.light .curso-encurso { background-color: #F5F3FF; color: #4C1D95 !important; border-color: #DDD6FE !important; }
+.golden.light  .curso-encurso { background-color: #FFFBEB; color: #78350F !important; border-color: #FDE68A !important; }
+.light .curso-encurso {
+  filter: none;
+  box-shadow: none;
+}
+/* Botón "Notas" en cursando light mode */
+.aurora.light  .curso-encurso button { background-color: rgba(30,58,138,0.10) !important; border-color: rgba(30,58,138,0.20) !important; color: #1E3A8A !important; }
+.sunset.light  .curso-encurso button { background-color: rgba(131,24,67,0.10) !important; border-color: rgba(131,24,67,0.20) !important; color: #831843 !important; }
+/* Emerald: botón en teal */
+.emerald.light .curso-encurso button { background-color: rgba(15,118,110,0.12) !important; border-color: rgba(15,118,110,0.25) !important; color: #0F766E !important; }
+.midnight.light .curso-encurso button { background-color: rgba(76,29,149,0.10) !important; border-color: rgba(76,29,149,0.20) !important; color: #4C1D95 !important; }
+.golden.light  .curso-encurso button { background-color: rgba(120,53,15,0.10) !important; border-color: rgba(120,53,15,0.20) !important; color: #78350F !important; }
+
+/* Botón "Notas" adaptado al fondo pastel en light mode */
+.light .curso-aprobado button {
+  background-color: rgba(6,95,70,0.10) !important;
+  border-color: rgba(6,95,70,0.20) !important;
+  color: #065F46 !important;
+}
+.light .curso-aprobado button:hover {
+  background-color: rgba(6,95,70,0.18) !important;
+}
+.light .curso-excepcional button {
+  background-color: rgba(120,53,15,0.10) !important;
+  border-color: rgba(120,53,15,0.20) !important;
+  color: #78350F !important;
+}
+.light .curso-excepcional button:hover {
+  background-color: rgba(120,53,15,0.18) !important;
+}
+
+/* Dark mode — fondos muy apagados, texto en tono del color */
+.dark .curso-aprobado {
+  background-color: rgb(2 44 34 / 0.85);
+  color: #6ee7b7 !important;
+  border-color: rgb(6 95 70 / 0.5) !important;
+  box-shadow: none;
+}
+.dark .curso-excepcional {
+  background-color: rgb(69 26 3 / 0.85);
+  color: #fcd34d !important;
+  border-color: rgb(120 53 15 / 0.5) !important;
+  box-shadow: none;
+}
+.dark .curso-encurso {
+  background-color: var(--primaryMuted);
+  color: var(--primary) !important;
+  border-color: var(--shadowPrimary) !important;
+  box-shadow: none;
+}
+/* Emerald dark: cursando → teal oscuro para diferenciarse del aprobado verde */
+.emerald.dark .curso-encurso {
+  background-color: rgb(4 47 46 / 0.85) !important;
+  color: #5eead4 !important;
+  border-color: rgb(15 118 110 / 0.5) !important;
+  box-shadow: none;
+}
+
+/* ── Stat cards — diferenciación en tema emerald ─────────────── */
+/*
+  Por defecto:
+    aprobados → bg-emerald-500 (hardcoded en JSX)
+    encurso   → bg-primary (= emerald en tema verde → idénticos)
+  Solución: en tema emerald, encurso pasa a teal-600
+*/
+.emerald .stat-card-encurso {
+  background-color: #0d9488 !important; /* teal-600 */
+  border-color: rgba(20, 184, 166, 0.25) !important;
+  box-shadow: 0 8px 20px rgba(13, 148, 136, 0.28) !important;
+}
+/* Emerald dark: aprobados en verde bosque, encurso en teal vibrante */
+.emerald.dark .stat-card-aprobados {
+  background-color: #166534 !important; /* green-800 */
+  border-color: rgba(22, 163, 74, 0.3) !important;
+  box-shadow: 0 8px 20px rgba(22, 101, 52, 0.35) !important;
+}
+.emerald.dark .stat-card-encurso {
+  background-color: #0f766e !important; /* teal-700 */
+  border-color: rgba(20, 184, 166, 0.25) !important;
+  box-shadow: 0 8px 20px rgba(15, 118, 110, 0.35) !important;
+}
+
+/* ── Selector de mención (native select) ─────────────────────── */
+.mencion-select option {
+  background-color: var(--bgSecondary);
+  color: var(--textPrimary);
+  padding: 0.5rem 0.75rem;
+  font-weight: 500;
+}
+
+/* ── Drawer panel ─────────────────────────────────────────────── */
+.drawer-panel {
+  background: var(--bgSecondary);
+  border-left: 1px solid var(--borderColor);
+  box-shadow: -4px 0 24px rgba(0,0,0,0.08);
+}
+.dark .drawer-panel {
+  box-shadow: -4px 0 32px rgba(0,0,0,0.5);
+}
+
+/* ── Mobile layout tokens ─────────────────────────────────────── */
+:root {
+  --mobile-navbar-h: 3rem;
+  --mobile-bottom-nav-h: 4rem;
+  --mobile-stats-h: 0px;
+  --mobile-controls-h: 0px;
+  --mobile-hint-h: 1.125rem;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* ── Mobile malla shell (≤640px) ──────────────────────────────── */
+@media (max-width: 640px) {
+  .mobile-app-shell {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    padding-top: calc(var(--mobile-navbar-h) + 2px);
+    padding-bottom: var(--mobile-bottom-nav-h);
+  }
+
+  .mobile-malla-shell {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .mobile-malla-controls {
+    flex-shrink: 0;
+  }
+
+  .mobile-malla-viewport {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .mobile-semester-carousel {
+    display: flex;
+    align-items: stretch;
+    gap: 0.625rem;
+    min-width: max-content;
+    height: 100%;
+    min-height: 100%;
+    padding: 0.375rem 0.625rem;
+    scroll-padding-inline: 0.625rem;
+    box-sizing: border-box;
+  }
+
+  .mobile-semester-card {
+    flex-shrink: 0;
+    width: 91vw;
+    max-width: 24rem;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+    min-height: calc(
+      100dvh
+      - var(--mobile-navbar-h)
+      - var(--mobile-bottom-nav-h)
+      - var(--mobile-stats-h)
+      - var(--mobile-controls-h)
+      - var(--mobile-hint-h)
+      - 0.375rem
+    );
+    height: calc(
+      100dvh
+      - var(--mobile-navbar-h)
+      - var(--mobile-bottom-nav-h)
+      - var(--mobile-stats-h)
+      - var(--mobile-controls-h)
+      - var(--mobile-hint-h)
+      - 0.375rem
+    );
+    padding: 0.625rem 0.75rem;
+    border-radius: 0.875rem;
+    border: 1px solid var(--borderColor);
+    background: var(--bgSecondary);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    box-sizing: border-box;
+  }
+
+  .mobile-semester-card--mencion {
+    background: var(--primaryMuted);
+    border-color: var(--shadowPrimary);
+  }
+
+  .mobile-semester-card__header {
+    text-align: center;
+    padding-bottom: 0.375rem;
+    margin-bottom: 0.375rem;
+    border-bottom: 1px solid var(--borderColor);
+    flex-shrink: 0;
+  }
+
+  .mobile-semester-card__title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--textSecondary);
+  }
+
+  .mobile-semester-card__courses {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4375rem;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .mobile-semester-scroll {
+    flex: 1;
+    min-height: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-x: contain;
+  }
+
+  .mobile-scroll-hint {
+    text-align: center;
+    font-size: 0.6875rem;
+    color: var(--textSecondary);
+    opacity: 0.7;
+    padding: 0.25rem 0.75rem 0.125rem;
+    line-height: 1.3;
+    flex-shrink: 0;
+    min-height: var(--mobile-hint-h);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-course-card {
+    padding: 0.625rem 0.75rem 0.5625rem !important;
+    min-height: 62px;
+    border-radius: 0.75rem !important;
+    font-size: 0.875rem !important;
+    flex-shrink: 0;
+  }
+
+  .mobile-course-card .mobile-course-name {
+    font-size: 0.875rem;
+    margin-bottom: 0.3125rem;
+    line-height: 1.35;
+  }
+
+  .mobile-course-card .mobile-course-meta {
+    font-size: 0.75rem;
+    opacity: 0.82;
+  }
+
+  .mobile-notes-button {
+    position: absolute;
+    right: 0.4375rem;
+    bottom: 0.4375rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    padding: 0;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--borderColor);
+    background: var(--bgPrimary);
+    color: var(--textSecondary);
+    transition: color 0.15s, background 0.15s, border-color 0.15s;
+  }
+
+  .mobile-notes-button svg {
+    width: 0.9375rem;
+    height: 0.9375rem;
+  }
+
+  .mobile-notes-button:active {
+    transform: scale(0.95);
+  }
+
+  .scroll-container {
+    padding-bottom: 0.25rem;
+  }
+}
+
+/* ── Modo pantalla completa / enfoque malla ───────────────────── */
+.malla-fullscreen-shell {
+  --malla-fs-header-h: 2.75rem;
+}
+
+.malla-fullscreen-shell .mobile-malla-controls {
+  flex-shrink: 0;
+}
+
+.malla-fullscreen-shell .malla-fullscreen-viewport {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 640px) {
+  .malla-fullscreen-shell .mobile-semester-card {
+    min-height: calc(
+      100dvh
+      - var(--malla-fs-header-h)
+      - var(--mobile-controls-h)
+      - var(--mobile-hint-h)
+      - 0.5rem
+    );
+    height: calc(
+      100dvh
+      - var(--malla-fs-header-h)
+      - var(--mobile-controls-h)
+      - var(--mobile-hint-h)
+      - 0.5rem
+    );
+  }
+}
+
+/* ================================================================
+   Malla Pro — Animations & Transitions (UI/UX Improvement)
+   ================================================================ */
+
+/* Accordion Grid Animation */
+.accordion-grid {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition:
+    grid-template-rows 200ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    opacity 160ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    transform 180ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.accordion-grid[data-open="true"] {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.accordion-content {
+  overflow: hidden;
+}
+
+.accordion-chevron {
+  transition: transform 200ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+[data-open="true"] .accordion-chevron {
+  transform: rotate(180deg);
+}
+
+/* Popover & Filter Drawer animations */
+.popover-animate {
+  animation: popoverFadeIn 200ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes popoverFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes marcarHastaFlash {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--primary) 45%, transparent);
+  }
+  70% {
+    box-shadow: 0 0 0 8px color-mix(in srgb, var(--primary) 0%, transparent);
+  }
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--primary) 0%, transparent);
+  }
+}
+
+.marcar-hasta-btn {
+  position: relative;
+}
+
+.marcar-hasta-flash {
+  animation: marcarHastaFlash 0.7s ease-out;
+}
+
+.marcar-hasta-menu {
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+
+.marcar-hasta-item + .marcar-hasta-item {
+  border-top: 1px solid color-mix(in srgb, var(--borderColor) 55%, transparent);
+}
+
+/* Button & Active scaling */
+.btn-interactive {
+  transition: all 150ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.btn-interactive:active:not(:disabled) {
+  transform: scale(0.98);
+}
+.btn-interactive:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .accordion-grid,
+  .accordion-chevron,
+  .popover-animate,
+  .btn-interactive,
+  .marcar-hasta-flash {
+    transition: none !important;
+    animation: none !important;
+    transform: none !important;
+  }
+  .accordion-grid {
+    grid-template-rows: 1fr !important;
+    opacity: 1 !important;
+  }
+  [data-open="true"] .accordion-chevron {
+    transform: rotate(180deg) !important;
+  }
+  .accordion-grid[data-open="false"] {
+    grid-template-rows: 0fr !important;
+    opacity: 0 !important;
+  }
+}
+
+/* ── Redesigned Course Cards ─────────────────────────────────── */
+.curso-card-base {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 8px 10px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 72px;
+  position: relative;
+}
+
+.curso-card-base:hover {
+  transform: translateY(-1px);
+  border-color: var(--brand-primary);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* /portfolio-preview?embed=1: tarjetas más legibles en iframes pequeños */
+.portfolio-embed .curso-card-base {
+  height: 100%;
+  min-height: 0;
+  padding: 6px 11px;
+}
+.portfolio-embed .curso-card-name {
+  font-size: 13px;
+  line-height: 1.2;
+  padding-right: 52px;
+  margin-bottom: 2px;
+}
+.portfolio-embed .curso-card-footer > * {
+  font-size: 10.5px;
+}
+
+/* Statuses */
+.curso-card-aprobado {
+  background: var(--status-approved-bg) !important;
+  border-color: var(--status-approved-border) !important;
+  color: var(--status-approved-text) !important;
+  border-left: 4px solid var(--status-approved-text) !important;
+}
+
+.curso-card-encurso {
+  background: var(--status-current-bg) !important;
+  border-color: var(--status-current-border) !important;
+  color: var(--status-current-text) !important;
+  border-left: 4px solid var(--status-current-text) !important;
+}
+
+.curso-card-disponible {
+  background: var(--surface) !important;
+  border-color: var(--border) !important;
+  color: var(--text-primary) !important;
+}
+
+.curso-card-bloqueado {
+  background: var(--surface-subtle) !important;
+  border-color: var(--border) !important;
+  color: var(--text-secondary) !important;
+  opacity: 0.65;
+}
+
+.curso-card-excepcional {
+  background: rgba(124, 58, 237, 0.10) !important;
+  border-color: rgba(124, 58, 237, 0.38) !important;
+  border-left: 4px solid #7c3aed !important;
+}
+
+.curso-card-exception-selectable:hover {
+  border-color: rgba(124, 58, 237, 0.5) !important;
+}
+
+.curso-card-exception-selected {
+  background: rgba(124, 58, 237, 0.14) !important;
+  border-color: rgba(124, 58, 237, 0.65) !important;
+  border-left: 4px solid #7c3aed !important;
+  box-shadow: 0 0 0 1px rgba(124, 58, 237, 0.25);
+}
+
+.curso-card-exception-locked-normal {
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+html.exception-mode-active .navbar-shell {
+  opacity: 0.72;
+}
+
+.exception-mode-bar-desktop {
+  position: sticky;
+  top: 0;
+  z-index: 35;
+}
+
+.exception-mode-bar-mobile {
+  position: fixed;
+  left: 0.75rem;
+  right: 0.75rem;
+  bottom: calc(var(--mobile-bottom-nav-h, 4rem) + env(safe-area-inset-bottom, 0px) + 0.5rem);
+  z-index: 85;
+}
+
+/* SVG Prerequisites Line Flow Animation */
+@keyframes neonFlow {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+.neon-flow-path {
+  animation: neonFlow 0.8s linear infinite;
+}
+
+/* ── Legal pages ──────────────────────────────────────────────── */
+.legal-shell {
+  width: min(1120px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.legal-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .legal-grid {
+    grid-template-columns: 240px minmax(0, 1fr);
+    gap: 2.5rem;
+    align-items: start;
+  }
+}
+
+.legal-toc-sticky {
+  position: sticky;
+  top: 5.5rem;
+  max-height: calc(100vh - 6.5rem);
+  overflow-y: auto;
+  padding-right: 0.25rem;
+}
+
+.legal-article {
+  max-width: 820px;
+}
+
+.legal-content {
+  color: var(--textPrimary);
+  font-size: 0.975rem;
+  line-height: 1.75;
+}
+
+.legal-content .legal-h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.35;
+  scroll-margin-top: 5.5rem;
+  color: var(--textPrimary);
+}
+
+.legal-content .legal-h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  scroll-margin-top: 5.5rem;
+  color: var(--textPrimary);
+}
+
+.legal-content p {
+  margin: 0 0 1rem;
+  color: var(--textPrimary);
+}
+
+.legal-content .legal-list {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+}
+
+.legal-content .legal-list li {
+  margin-bottom: 0.35rem;
+}
+
+.legal-content .legal-list li::marker {
+  color: var(--textSecondary);
+}
+
+.legal-content strong {
+  font-weight: 650;
+  color: var(--textPrimary);
+}
+
+.legal-content a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.legal-content a:hover {
+  filter: brightness(1.08);
+}
+
+.legal-content .legal-inline-code,
+.legal-content code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.88em;
+  padding: 0.1em 0.35em;
+  border-radius: 0.35rem;
+  background: var(--bgSurface);
+  border: 1px solid var(--borderColor);
+}
+
+.legal-content .legal-hr {
+  border: 0;
+  border-top: 1px solid var(--borderColor);
+  margin: 1.75rem 0;
+}
+
+.legal-content .legal-quote {
+  margin: 0 0 1rem;
+  padding: 0.75rem 1rem;
+  border-left: 3px solid var(--primary);
+  background: var(--primaryMuted);
+  border-radius: 0 0.75rem 0.75rem 0;
+}
+
+.legal-content .legal-quote p {
+  margin: 0;
+}
+
+.legal-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  margin: 0 0 1.25rem;
+  border: 1px solid var(--borderColor);
+  border-radius: 0.75rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.legal-table {
+  width: 100%;
+  min-width: 520px;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.legal-table th,
+.legal-table td {
+  padding: 0.65rem 0.85rem;
+  text-align: left;
+  border-bottom: 1px solid var(--borderColor);
+  vertical-align: top;
+}
+
+.legal-table th {
+  background: var(--bgSurface);
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.legal-table tr:last-child td {
+  border-bottom: 0;
+}
+

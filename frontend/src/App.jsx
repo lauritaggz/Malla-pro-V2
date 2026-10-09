@@ -1,0 +1,507 @@
+import { useState, useEffect, useCallback, useRef } from "react";
+import Navbar from "./components/Navbar";
+import { listarMallas } from "./utils/mallasLoader";
+import MallaViewer from "./components/MallaViewer";
+import { MemoizedStatsDisplay as StatsDisplay } from "./components/StatsDisplay";
+import ResumenProgreso from "./components/ResumenProgreso";
+import NotasModal from "./components/NotasModal";
+import OnboardingTour from "./components/OnboardingTour";
+import MobileBottomNav from "./components/MobileBottomNav";
+import TutorModule from "./components/tutors/TutorModule";
+import HorarioModal from "./components/HorarioModal";
+import ContactoNuevaMalla from "./components/ContactoNuevaMalla";
+import LoginSuggestion, { getStoredUser } from "./components/LoginSuggestion";
+import { trackOpenNotas, trackSelectMalla, inferUniversidadFromUrl } from "./utils/analytics";
+import { clearAcademicProgress, readAcademicProgress } from "./utils/academicProgressStorage";
+import { MALLA_PROGRESS_EVENT } from "./utils/curriculumProgress";
+import { safeStorage } from "./utils/safeStorage";
+import { LEGACY_KEYS } from "./utils/storageKeys";
+import { AnimatePresence } from "framer-motion";
+import { GraduationCap } from "lucide-react";
+import { useLocation } from "react-router-dom";
+import AcademicProgrammingPage from "./features/academicProgramming/components/AcademicProgrammingPage";
+import PeriodoActualView from "./components/PeriodoActualView";
+
+function readMallaSeleccionadaFromStorage() {
+  const raw = safeStorage.get(LEGACY_KEYS.seleccionada, null);
+  if (!raw || typeof raw !== "object") return null;
+  const url = raw.url;
+  const nombre = raw.nombre;
+  if (typeof url !== "string" || !url.trim() || typeof nombre !== "string" || !nombre.trim()) {
+    safeStorage.remove(LEGACY_KEYS.seleccionada);
+    return null;
+  }
+  return {
+    ...raw,
+    url: url.trim(),
+    nombre: nombre.trim(),
+    universidad: raw.universidad || inferUniversidadFromUrl(url.trim()),
+  };
+}
+
+export default function App() {
+  const [navbarHeight, setNavbarHeight] = useState(48);
+  const [isMobileLayout, setIsMobileLayout] = useState(
+    () => typeof window !== "undefined" && window.matchMedia("(max-width: 640px)").matches
+  );
+
+  const [theme, setTheme] = useState(
+    localStorage.getItem("malla-theme") || "aurora"
+  );
+  const [darkMode, setDarkMode] = useState(() => {
+    const saved = localStorage.getItem("malla-darkmode");
+    return saved ? saved === "true" : true;
+  });
+
+  const [progreso, setProgreso] = useState({ total: 0, aprobados: 0 });
+  const [cursosCursando, setCursosCursando] = useState(0);
+  const [modoExcepcional, setModoExcepcional] = useState(false);
+  const exceptionDirtyRef = useRef(false);
+  const [mallasDisponibles, setMallasDisponibles] = useState([]);
+  const [mallaSeleccionada, setMallaSeleccionada] = useState(
+    readMallaSeleccionadaFromStorage
+  );
+
+  const [excepcionesActivas, setExcepcionesActivas] = useState(0);
+  const [cantidadSemestres, setCantidadSemestres] = useState(0);
+  const [mostrarResumen, setMostrarResumen] = useState(false);
+  const [mallaData, setMallaData] = useState(null);
+  const [aprobados, setAprobados] = useState([]);
+  const [excepciones, setExcepciones] = useState([]);
+  const [cursando, setCursando] = useState([]);
+  const [cursoSeleccionado, setCursoSeleccionado] = useState(null);
+  const [cursoEsEnCurso, setCursoEsEnCurso] = useState(false);
+  const [cursoEsAprobado, setCursoEsAprobado] = useState(false);
+  const [mostrarNotas, setMostrarNotas] = useState(false);
+  const [mostrarTour, setMostrarTour] = useState(false);
+  const [ocultarCompletados, setOcultarCompletados] = useState(false);
+  const [mostrarHorario, setMostrarHorario] = useState(false);
+  const [mostrarContacto, setMostrarContacto] = useState(false);
+  const [mostrarLogin, setMostrarLogin] = useState(false);
+  const [, setCurrentUser] = useState(() => getStoredUser());
+  
+  const location = useLocation();
+
+  const [vistaPrincipal, setVistaPrincipal] = useState(() => {
+    if (typeof window !== "undefined" && window.location.pathname === "/programacion-academica") {
+      return "toma-de-ramos";
+    }
+    return "malla";
+  });
+
+  // Sync React State with React Router URL path updates
+  useEffect(() => {
+    if (location.pathname === "/programacion-academica") {
+      setVistaPrincipal("toma-de-ramos");
+    } else if (location.pathname === "/app") {
+      setVistaPrincipal((prev) => (prev === "toma-de-ramos" ? "malla" : prev));
+    }
+  }, [location.pathname]);
+
+  // Detectar si es dispositivo touch
+  const isMobile = typeof window !== 'undefined' && 
+    (('ontouchstart' in window || navigator.maxTouchPoints > 0) && window.innerWidth < 1024);
+
+  // ---------------- LÓGICA CAMBIAR MALLA ----------------
+  const handleCambiarMalla = () => {
+    if (confirm("¿Deseas cambiar de malla? Tus ramos aprobados con el mismo nombre se mantendrán automáticamente.")) {
+      // Analizar aprobados y guardar los nombres exactos antes de resetear
+      if (mallaData && aprobados.length > 0) {
+        const nombresAprobados = (mallaData.semestres || [])
+          .flatMap((s) => s.cursos || [])
+          .filter((c) => aprobados.includes(c.id))
+          .map((c) => c.nombre.trim().toLowerCase());
+
+        safeStorage.set(LEGACY_KEYS.nombresConservados, nombresAprobados);
+      }
+
+      clearAcademicProgress(mallaSeleccionada);
+      setMallaSeleccionada(null);
+      safeStorage.remove(LEGACY_KEYS.seleccionada);
+
+      // Resetear estado general para que quede en 0
+      setProgreso({ total: 0, aprobados: 0 });
+      setCursosCursando(0);
+      setCursando([]);
+      setAprobados([]);
+      setExcepciones([]);
+      setVistaPrincipal("malla");
+    }
+  };
+
+  // Login desactivado temporalmente — componente disponible en LoginSuggestion.jsx
+  // useEffect(() => {
+  //   if (mallaSeleccionada && shouldShowLogin()) {
+  //     setMostrarLogin(true);
+  //   }
+  // }, [mallaSeleccionada]);
+
+  // Mostrar Tour la primera vez (solo después de que el login fue manejado)
+  useEffect(() => {
+    if (!mostrarLogin) {
+      const hasSeenTour = localStorage.getItem("malla-has-seen-tour");
+      if (!hasSeenTour && mallaSeleccionada) {
+        setMostrarTour(true);
+        localStorage.setItem("malla-has-seen-tour", "true");
+      }
+    }
+  }, [mallaSeleccionada, mostrarLogin]);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 640px)");
+    const onChange = (e) => setIsMobileLayout(e.matches);
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  }, []);
+
+  // ---------------- NAVBAR HEIGHT LISTENER ----------------
+  useEffect(() => {
+    const handler = (e) => setNavbarHeight(e.detail);
+    window.addEventListener("navbarHeightChange", handler);
+    return () => window.removeEventListener("navbarHeightChange", handler);
+  }, []);
+
+  useEffect(() => {
+    if (isMobileLayout) {
+      document.documentElement.style.setProperty("--mobile-navbar-h", `${navbarHeight}px`);
+    }
+  }, [navbarHeight, isMobileLayout]);
+
+  // ---------------- THEME & DARKMODE ----------------
+  useEffect(() => {
+    document.documentElement.className = `${theme} ${
+      darkMode ? "dark" : "light"
+    }`;
+    localStorage.setItem("malla-theme", theme);
+    localStorage.setItem("malla-darkmode", darkMode);
+  }, [theme, darkMode]);
+
+  useEffect(() => {
+    listarMallas().then(setMallasDisponibles);
+  }, []);
+
+  const seleccionarMalla = useCallback((malla, universidad) => {
+    const payload = universidad ? { ...malla, universidad } : malla;
+    setMallaSeleccionada(payload);
+    setVistaPrincipal("malla");
+    localStorage.setItem("malla-seleccionada", JSON.stringify(payload));
+    trackSelectMalla(payload);
+  }, []);
+
+  const handleSemestresLoaded = useCallback(
+    (total) => setCantidadSemestres(total),
+    []
+  );
+
+  const handleVerProgresoNav = useCallback(() => {
+    setVistaPrincipal("malla");
+    setMostrarResumen((prev) => !prev);
+  }, []);
+
+  const handleAbrirNotas = useCallback((curso, esEnCurso, esAprobado) => {
+    setCursoSeleccionado(curso);
+    setCursoEsEnCurso(esEnCurso);
+    setCursoEsAprobado(esAprobado);
+    setMostrarNotas(true);
+    trackOpenNotas(mallaSeleccionada);
+  }, [mallaSeleccionada]);
+
+  const handleSetProgreso = useCallback((val) => setProgreso(val), []);
+  const handleSetCursosCursando = useCallback((val) => setCursosCursando(val), []);
+  const handleSetCursando = useCallback((val) => setCursando(val), []);
+  const handleSetMallaData = useCallback((val) => setMallaData(val), []);
+  const handleSetAprobados = useCallback((val) => setAprobados(val), []);
+  const handleSetExcepciones = useCallback((val) => setExcepciones(val), []);
+  const handleExceptionDirtyChange = useCallback((dirty) => {
+    exceptionDirtyRef.current = Boolean(dirty);
+  }, []);
+
+  const confirmLeaveExceptionMode = useCallback(() => {
+    if (!modoExcepcional) return true;
+    if (exceptionDirtyRef.current) {
+      const leave = window.confirm(
+        "Tienes cambios sin aplicar en Modo Excepcional.\n\nAceptar: salir sin guardar\nCancelar: seguir editando"
+      );
+      if (!leave) return false;
+    }
+    setModoExcepcional(false);
+    exceptionDirtyRef.current = false;
+    return true;
+  }, [modoExcepcional]);
+
+  useEffect(() => {
+    document.documentElement.classList.toggle(
+      "exception-mode-active",
+      modoExcepcional
+    );
+    return () => {
+      document.documentElement.classList.remove("exception-mode-active");
+    };
+  }, [modoExcepcional]);
+
+  useEffect(() => {
+    const syncFromStorage = () => {
+      if (!mallaSeleccionada) return;
+      const progress = readAcademicProgress(mallaSeleccionada);
+      setAprobados(progress.aprobados);
+      setExcepciones(progress.excepciones);
+      setCursando(progress.cursando);
+      setCursosCursando(progress.cursando.length);
+    };
+    window.addEventListener(MALLA_PROGRESS_EVENT, syncFromStorage);
+    return () => {
+      window.removeEventListener(MALLA_PROGRESS_EVENT, syncFromStorage);
+    };
+  }, [mallaSeleccionada]);
+
+  return (
+    <div className={`bg-bgPrimary text-textPrimary overflow-x-hidden relative ${mallaSeleccionada ? "mobile-app-shell min-h-[100dvh] sm:min-h-screen" : "min-h-screen"}`}>
+      {/* NAVBAR */}
+      {mallaSeleccionada && (
+        <Navbar
+          theme={theme}
+          setTheme={setTheme}
+          darkMode={darkMode}
+          setDarkMode={setDarkMode}
+          modoExcepcional={modoExcepcional}
+          setModoExcepcional={setModoExcepcional}
+          excepcionesActivas={excepcionesActivas}
+          mallaSeleccionada={mallaSeleccionada}
+          cantidadSemestres={cantidadSemestres}
+          onVerProgreso={() => setMostrarResumen(true)}
+          onShowTour={() => setMostrarTour(true)}
+          onShowHorario={() => setMostrarHorario(true)}
+          onShowContacto={() => setMostrarContacto(true)}
+          onChangeMalla={() => {
+            if (!confirmLeaveExceptionMode()) return;
+            handleCambiarMalla();
+          }}
+          mostrarResumen={mostrarResumen}
+          vistaPrincipal={vistaPrincipal}
+          setVistaPrincipal={setVistaPrincipal}
+          onGuardLeave={confirmLeaveExceptionMode}
+        />
+      )}
+
+      {mallaSeleccionada && (
+        <MobileBottomNav
+          vistaPrincipal={vistaPrincipal}
+          setVistaPrincipal={setVistaPrincipal}
+          onGuardLeave={confirmLeaveExceptionMode}
+        />
+      )}
+
+      {/* CONTENIDO PRINCIPAL */}
+      <div
+        className={`relative z-[10] transition-all duration-300 flex flex-col flex-1 min-h-0 main-content-zoom ${
+          mallaSeleccionada ? "mobile-main-content sm:pb-0 sm:flex-none" : ""
+        }`}
+        style={{
+          paddingTop: mallaSeleccionada && !isMobileLayout ? navbarHeight + 8 : undefined,
+        }}
+      >
+        {mallaSeleccionada && vistaPrincipal === "malla" && (
+          <StatsDisplay />
+        )}
+
+        {!mallaSeleccionada ? (
+          <div className="flex items-center justify-center min-h-[80vh] py-10">
+            <div className="bg-bgSecondary p-6 sm:p-10 rounded-2xl shadow-xl max-w-2xl w-full mx-4 border border-borderColor/50">
+              <h2 className="text-xl font-semibold mb-2 text-center">
+                <GraduationCap className="inline-block w-6 h-6 mr-2" />
+                Selecciona una malla para comenzar
+              </h2>
+              <p className="text-center text-sm text-textSecondary mb-5 leading-relaxed max-w-md mx-auto">
+                Actualmente disponibles para{" "}
+                <span className="font-semibold text-textPrimary">Pregrado Diurno</span>
+                {" "}de las carreras e instituciones incorporadas.
+              </p>
+
+              {mallasDisponibles.length === 0 ? (
+                <p className="text-textSecondary text-center">
+                  Cargando mallas...
+                </p>
+              ) : (
+                mallasDisponibles.map((uni) => (
+                  <div key={uni.universidad} className="mb-6">
+                    <h3 className="font-semibold text-primary mb-2">
+                      {uni.universidad}
+                    </h3>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                      {uni.mallas.map((m) => (
+                        <button
+                          key={m.nombre}
+                          onClick={() => seleccionarMalla(m, uni.universidad)}
+                          className="p-4 rounded-xl border border-borderColor bg-bgPrimary hover:bg-primary hover:text-white transition-all text-sm font-medium shadow-sm hover:shadow-md active:scale-[0.98] text-left sm:text-center leading-snug"
+                        >
+                          {m.nombre}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                ))
+              )}
+              
+              {/* Enlace de contacto Destacado */}
+              <div className="mt-10 overflow-hidden relative rounded-2xl border border-primary/20 bg-gradient-to-br from-primary/5 to-transparent p-6 text-center shadow-lg transition-all duration-300 hover:shadow-primary/10 hover:-translate-y-1">
+                <div className="absolute -top-10 -right-10 w-32 h-32 bg-primary/20 rounded-full blur-3xl pointer-events-none"></div>
+                <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"></div>
+                
+                <h3 className="font-semibold text-textPrimary text-lg mb-2 flex items-center justify-center gap-2 relative z-10">
+                  <span className="text-xl">🤔</span> ¿No encuentras tu malla?
+                </h3>
+                <p className="text-sm text-textSecondary mb-5 relative z-10">
+                  ¡Escríbenos y la agregamos rápidamente para que puedas usar la app!
+                </p>
+                <button
+                  onClick={() => setMostrarContacto(true)}
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 font-semibold text-white bg-primary hover:brightness-110 rounded-full shadow-[0_4px_20px_rgba(0,0,0,0.15)] transition-all transform hover:scale-105 relative z-10 w-full sm:w-auto"
+                >
+                  ¡Envíanos tu malla!
+                </button>
+              </div>
+            </div>
+          </div>
+        ) : vistaPrincipal === "toma-de-ramos" ? (
+          <main className="flex flex-col flex-1 min-h-0 sm:max-w-7xl sm:mx-auto sm:w-full">
+            <AcademicProgrammingPage isEmbedded={true} />
+          </main>
+        ) : vistaPrincipal === "periodo-actual" ? (
+          <main className="flex flex-col flex-1 min-h-0 sm:max-w-7xl sm:mx-auto sm:w-full">
+            <PeriodoActualView
+              cursando={cursando}
+              aprobados={aprobados}
+              excepciones={excepciones}
+              setCursando={setCursando}
+              setAprobados={setAprobados}
+              setExcepciones={setExcepciones}
+              getCursoById={(id) => {
+                if (!mallaData) return null;
+                const semestresEfectivos = mallaData.isMencion
+                  ? [
+                      ...(mallaData.semestresComunes || []),
+                      ...Object.values(mallaData.menciones || {}).flatMap((m) => m.semestres || []),
+                    ]
+                  : mallaData.semestres || [];
+                for (const sem of semestresEfectivos) {
+                  const found = sem.cursos.find((c) => c.id === id);
+                  if (found) return found;
+                }
+                return null;
+              }}
+              onAbrirNotas={(c) => handleAbrirNotas(c, true, aprobados.includes(c.id))}
+              modoExcepcional={modoExcepcional}
+              mallaData={mallaData}
+            />
+          </main>
+        ) : vistaPrincipal === "tutorias" ? (
+          <main>
+            <TutorModule onVolver={() => setVistaPrincipal("malla")} />
+          </main>
+        ) : (
+          <main className="flex flex-col flex-1 min-h-0 max-sm:px-0 sm:max-w-7xl sm:mx-auto sm:w-full">
+            <MallaViewer
+              mallaSeleccionada={mallaSeleccionada}
+              modoExcepcional={modoExcepcional}
+              setModoExcepcional={setModoExcepcional}
+              onExceptionDirtyChange={handleExceptionDirtyChange}
+              setExcepcionesActivas={setExcepcionesActivas}
+              onTotalCursosChange={handleSetProgreso}
+              onSemestresLoaded={handleSemestresLoaded}
+              onCursandoChange={handleSetCursosCursando}
+              onCursandoArrayChange={handleSetCursando}
+              onMallaDataLoaded={handleSetMallaData}
+              onAprobadosChange={handleSetAprobados}
+              onExcepcionesChange={handleSetExcepciones}
+              onAbrirNotas={handleAbrirNotas}
+              ocultarCompletados={ocultarCompletados}
+              setOcultarCompletados={setOcultarCompletados}
+            />
+            
+            {/* BOTÓN CAMBIAR MALLA — solo desktop (móvil: opciones inferiores) */}
+            <div className="hidden sm:flex justify-center pb-8 mt-2">
+              <button
+                onClick={handleCambiarMalla}
+                className="text-xs text-textSecondary/60 hover:text-primary transition-colors px-4 py-2 rounded-full hover:bg-primary/10"
+              >
+                ¿Esta no es tu carrera? Cambiar malla
+              </button>
+            </div>
+          </main>
+        )}
+      </div>
+
+      {/* MODAL RESUMEN */}
+      {/* MODAL RESUMEN */}
+      {mallaData && (
+        <ResumenProgreso
+          isOpen={mostrarResumen}
+          onClose={() => setMostrarResumen(false)}
+          mallaData={mallaData}
+          aprobados={aprobados}
+          excepciones={excepciones}
+          cursando={cursando}
+        />
+      )}
+
+      {/* MODAL NOTAS */}
+      {mostrarNotas && cursoSeleccionado && (
+        <NotasModal
+          curso={cursoSeleccionado}
+          enCurso={cursoEsEnCurso}
+          aprobado={cursoEsAprobado}
+          isOpen={mostrarNotas}
+          mallaSeleccionada={mallaSeleccionada}
+          onClose={() => {
+            setMostrarNotas(false);
+            setCursoSeleccionado(null);
+            setCursoEsEnCurso(false);
+            setCursoEsAprobado(false);
+          }}
+        />
+      )}
+
+      {/* LOGIN SUGERIDO */}
+      <LoginSuggestion
+        isOpen={mostrarLogin}
+        onClose={(user) => {
+          setMostrarLogin(false);
+          if (user) setCurrentUser(user);
+        }}
+      />
+
+      {/* ONBOARDING TOUR */}
+      <OnboardingTour 
+        isVisible={mostrarTour} 
+        onClose={() => setMostrarTour(false)} 
+        isMobile={isMobile}
+      />
+
+      {/* MODAL CONTACTO / NUEVA MALLA */}
+      <ContactoNuevaMalla
+        isOpen={mostrarContacto}
+        onClose={() => setMostrarContacto(false)}
+      />
+
+      {/* MODAL HORARIO */}
+      {mallaSeleccionada && mallaData && (
+        <HorarioModal
+          isOpen={mostrarHorario}
+          onClose={() => setMostrarHorario(false)}
+          cursosCursandoData={(() => {
+            if (!mallaData) return [];
+            const semestres = mallaData.isMencion
+              ? [
+                  ...(mallaData.semestresComunes || []),
+                  ...Object.values(mallaData.menciones || {}).flatMap((m) => m.semestres || []),
+                ]
+              : (mallaData.semestres || []);
+            return semestres.flatMap((s) =>
+              s.cursos.filter((c) => cursando.includes(c.id))
+            );
+          })()}
+        />
+      )}
+    </div>
+  );
+}

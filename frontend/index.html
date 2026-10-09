@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+
+    <!-- SEO Meta Tags -->
+    <title>Malla Pro | Organiza tu malla curricular y calcula tus notas</title>
+    <meta
+      name="description"
+      content="Organiza tu malla curricular, arma tu horario, simula promedios y calcula las notas que necesitas. Herramienta gratuita para estudiantes universitarios."
+    />
+    <meta
+      name="keywords"
+      content="malla curricular, malla académica, calculadora de notas, calcular promedio, eximición, promedios universidad, unab, créditos sct, progreso académico, toma de ramos, malla pro"
+    />
+    <meta name="author" content="Malla Pro" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#0D1117" />
+    <meta name="application-name" content="Malla Pro" />
+
+    <!-- Open Graph — WhatsApp, Facebook, LinkedIn, iMessage -->
+    <!-- VITE_SITE_URL se inyecta en build (Netlify o cPanel) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_CL" />
+    <meta property="og:site_name" content="Malla Pro" />
+    <meta property="og:url" content="%VITE_SITE_URL%/" />
+    <meta property="og:title" content="Malla Pro | Organiza tu malla y calcula tus notas" />
+    <meta
+      property="og:description"
+      content="Organiza tu malla, arma tu horario y calcula tus notas en un solo lugar. Hecho para estudiantes universitarios."
+    />
+    <meta property="og:image" content="%VITE_SITE_URL%/og-image.jpg?v=3" />
+    <meta property="og:image:secure_url" content="%VITE_SITE_URL%/og-image.jpg?v=3" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Malla Pro — organiza tu malla curricular, arma tu horario y calcula tus notas"
+    />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Malla Pro | Organiza tu malla y calcula tus notas" />
+    <meta
+      name="twitter:description"
+      content="Organiza tu malla, arma tu horario y calcula tus notas en un solo lugar. Hecho para estudiantes universitarios."
+    />
+    <meta name="twitter:image" content="%VITE_SITE_URL%/og-image.jpg?v=3" />
+    <meta
+      name="twitter:image:alt"
+      content="Malla Pro — organiza tu malla curricular, arma tu horario y calcula tus notas"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="%VITE_SITE_URL%/" />
+
+    <!-- Structured data (Google / rich results) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Malla Pro",
+        "url": "%VITE_SITE_URL%/",
+        "description": "Organiza tu malla curricular, arma tu horario y calcula tus notas. Herramienta para estudiantes universitarios.",
+        "applicationCategory": "EducationalApplication",
+        "operatingSystem": "Web",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "CLP"
+        },
+        "inLanguage": "es-CL",
+        "image": "%VITE_SITE_URL%/og-image.jpg?v=3"
+      }
+    </script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YNPSR2YSZC"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      // /portfolio-preview se embebe en sitios de terceros: sin page_view ni cookies de GA.
+      if (!/^\/portfolio-preview\/?$/.test(location.pathname)) {
+        gtag('js', new Date());
+        gtag('config', 'G-YNPSR2YSZC');
+      }
+    </script>
+
+    <!-- Premium Font (Inter) as SF Pro alternative -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

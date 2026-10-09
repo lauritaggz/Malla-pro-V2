@@ -1,0 +1,78 @@
+[build]
+  command = "npm ci && npm run build"
+  publish = "dist"
+
+# Preview social apuntando al dominio de Netlify
+[build.environment]
+  VITE_SITE_URL = "https://malla-pro.netlify.app"
+  NODE_VERSION = "22"
+
+# SPA: archivos reales (og-image.jpg, favicon, /mallas/*) se sirven primero
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  force = false
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/og-image.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+    Content-Type = "image/jpeg"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+
+# Iframes: Netlify combina los valores de reglas que coinciden, así que la
+# protección anti-iframe no puede ir en "/*" (anularía la excepción del preview).
+# Se declara por ruta de la SPA.
+[[headers]]
+  for = "/"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    Content-Security-Policy = "frame-ancestors 'none'"
+
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    Content-Security-Policy = "frame-ancestors 'none'"
+
+[[headers]]
+  for = "/app"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    Content-Security-Policy = "frame-ancestors 'none'"
+
+[[headers]]
+  for = "/programacion-academica"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    Content-Security-Policy = "frame-ancestors 'none'"
+
+[[headers]]
+  for = "/privacidad"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    Content-Security-Policy = "frame-ancestors 'none'"
+
+[[headers]]
+  for = "/terminos"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    Content-Security-Policy = "frame-ancestors 'none'"
+
+# DOMINIO DEL PORTAFOLIO: reemplaza https://TU-PORTFOLIO.example por el origen
+# exacto (sin ruta). Mantener sincronizado con public/.htaccess.
+[[headers]]
+  for = "/portfolio-preview"
+  [headers.values]
+    Content-Security-Policy = "frame-ancestors 'self' lauragonzalezv.netlify.app"

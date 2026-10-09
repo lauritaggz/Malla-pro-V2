@@ -1,0 +1,19 @@
+# Node
+node_modules/
+dist/
+
+# Environment (only the examples and the frontend build vars are tracked)
+.env
+.env.*
+!.env.example
+!frontend/.env.production
+!frontend/.env.cpanel
+
+# Python
+__pycache__/
+.venv/
+.pytest_cache/
+
+# Secrets and artifacts
+firebase-sa*.json
+*.zip

@@ -1,0 +1,57 @@
+# Bluehost / cPanel / Apache — SPA (React Router + Vite)
+#
+# Tras `npm run build`, sube TODO el contenido de dist/ a la raíz del dominio
+# (ej. public_html/mallapro.cl si el dominio apunta ahí). Activa "mostrar archivos
+# ocultos" en el administrador de archivos: .htaccess debe subirse sí o sí.
+#
+# Si la app vive en subcarpeta (ej. tudominio.com/malla/), en vite.config.js pon
+# base: "/malla/" y aquí descomenta y ajusta RewriteBase:
+#   RewriteBase /malla/
+
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # No reescribir archivos ni directorios reales (assets, /mallas/*.json, etc.)
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+# Caché larga para assets con hash (Vite emite nombres versionados en /assets/)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  # Preview social: caché corta para poder actualizar og-image sin pelear con CDN vieja
+  ExpiresByType image/jpeg "access plus 7 days"
+  ExpiresByType image/png "access plus 7 days"
+</IfModule>
+
+# Iframes: solo /portfolio-preview se puede embeber, y solo desde los orígenes
+# listados en frame-ancestors. El resto del sitio no se puede embeber.
+#
+# DOMINIO DEL PORTAFOLIO: reemplaza https://TU-PORTFOLIO.example por el origen
+# exacto (esquema + dominio, sin ruta ni "/" final). Varios orígenes: separados
+# por espacio, p. ej. "frame-ancestors 'self' https://a.dev https://www.a.dev".
+# Mantener sincronizado con el bloque equivalente de netlify.toml.
+<IfModule mod_headers.c>
+  <If "%{THE_REQUEST} =~ m#^[A-Z]+\s+/portfolio-preview/?(\?\S*)?\s#">
+    Header always unset X-Frame-Options
+    Header always set Content-Security-Policy "frame-ancestors 'self' https://TU-PORTFOLIO.example"
+  </If>
+  <Else>
+    Header always set X-Frame-Options "DENY"
+    Header always set Content-Security-Policy "frame-ancestors 'none'"
+  </Else>
+</IfModule>
+
+# Asegura MIME correcto de la imagen Open Graph
+<IfModule mod_mime.c>
+  AddType image/jpeg .jpg .jpeg
+  AddType image/png .png
+</IfModule>
