@@ -37,6 +37,7 @@ cd backend
 cp .env.example .env                   # la clave debe coincidir con POSTGRES_PASSWORD
 uv sync
 uv run alembic upgrade head
+uv run python -m app.scripts.import_legacy_mallas ../frontend/public/mallas   # catálogo (idempotente)
 uv run uvicorn app.main:app --reload   # http://localhost:8000/api/v1/health
 uv run pytest
 uv run ruff check

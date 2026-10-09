@@ -1,0 +1,83 @@
+[
+  {
+    "id": "7f214b17-8023-423d-8544-a4be28be5f74",
+    "slug": "ingenieria-civil-industrial",
+    "name": "Ingeniería Civil Industrial",
+    "official_name": "Ingeniería Civil Industrial",
+    "official_code": null,
+    "career_key": "unab-industrial",
+    "legacy_url": "/mallas/Industrial.json"
+  },
+  {
+    "id": "4e3822b1-3781-4e67-9281-cce02f0d325a",
+    "slug": "ingenieria-computacion-informatica",
+    "name": "Ingeniería en Computación e Informática",
+    "official_name": "Ingeniería en Computación e Informática (UNAB)",
+    "official_code": null,
+    "career_key": "unab-comp",
+    "legacy_url": "/mallas/Comp.json"
+  },
+  {
+    "id": "59b1c016-5d1e-4874-9d30-865faac1ff2b",
+    "slug": "geologia",
+    "name": "Geología",
+    "official_name": "Geología (UNAB)",
+    "official_code": null,
+    "career_key": "unab-geo",
+    "legacy_url": "/mallas/Geo.json"
+  },
+  {
+    "id": "cfc912db-4a17-4efc-89bc-00473279aad8",
+    "slug": "ingenieria-marina-mercante",
+    "name": "Ingeniería en Marina Mercante",
+    "official_name": "Ingeniería en Marina Mercante (UNAB)",
+    "official_code": "UNAB14001",
+    "career_key": "unab-mm",
+    "legacy_url": "/mallas/MM.json"
+  },
+  {
+    "id": "49b1fa26-a629-450a-b91a-893338592c2c",
+    "slug": "ingenieria-civil-informatica",
+    "name": "Ingenería Civil Informática",
+    "official_name": "Ingeniería Civil Informática (UNAB)",
+    "official_code": null,
+    "career_key": "unab-cinf",
+    "legacy_url": "/mallas/CInf.json"
+  },
+  {
+    "id": "8eabf0a5-45fe-4d16-802a-d1f926011324",
+    "slug": "ingenieria-civil-minas",
+    "name": "Ingeniería Civil en Minas",
+    "official_name": "Ingeniería Civil en Minas (UNAB)",
+    "official_code": null,
+    "career_key": "unab-minas",
+    "legacy_url": "/mallas/Minas.json"
+  },
+  {
+    "id": "999823dd-5e50-46d6-b029-40c9c7f30959",
+    "slug": "medicina",
+    "name": "Medicina",
+    "official_name": "Medicina (UNAB)",
+    "official_code": null,
+    "career_key": "unab-med",
+    "legacy_url": "/mallas/Med.json"
+  },
+  {
+    "id": "ed223eed-537a-45de-9ab3-be78ee5b9141",
+    "slug": "tecnologia-medica",
+    "name": "Tecnología Médica",
+    "official_name": "Tecnología médica (UNAB)",
+    "official_code": "UNAB19600",
+    "career_key": "unab-tm",
+    "legacy_url": "/mallas/TM.json"
+  },
+  {
+    "id": "57523790-22cd-48e8-9ac5-64cc57002a7e",
+    "slug": "psicologia",
+    "name": "Psicología",
+    "official_name": "Psicología (UNAB)",
+    "official_code": "UNAB11900",
+    "career_key": "unab-psicologia",
+    "legacy_url": "/mallas/Psicologia.json"
+  }
+]

@@ -1,0 +1,1754 @@
+{
+  "program": {
+    "id": "cfc912db-4a17-4efc-89bc-00473279aad8",
+    "slug": "ingenieria-marina-mercante",
+    "name": "Ingeniería en Marina Mercante",
+    "official_name": "Ingeniería en Marina Mercante (UNAB)",
+    "official_code": "UNAB14001",
+    "career_key": "unab-mm",
+    "legacy_url": "/mallas/MM.json"
+  },
+  "university": {
+    "id": "baa60218-0377-4052-bddd-a92786b37188",
+    "slug": "unab",
+    "name": "Universidad Andrés Bello",
+    "short_name": "UNAB",
+    "country": "CL"
+  },
+  "version": {
+    "id": "328b4a1a-9ee3-4a83-b602-483cc8cc9a9f",
+    "label": "legacy",
+    "period_regime": "semestral",
+    "credit_system": "SCT",
+    "total_periods": 8,
+    "total_credits": null,
+    "status": "published",
+    "is_current": true,
+    "source_type": "legacy_json",
+    "source_url": "/mallas/MM.json",
+    "source_note": "Imported from frontend/public/mallas/MM.json",
+    "reviewed_at": null
+  },
+  "tracks": [
+    {
+      "code": "MAQ",
+      "slug": "maq",
+      "name": "Maquinaria",
+      "total_credits": 624
+    },
+    {
+      "code": "CUBI",
+      "slug": "cubi",
+      "name": "Cubierta",
+      "total_credits": 618
+    }
+  ],
+  "periods": [
+    {
+      "number": 1,
+      "track_code": null,
+      "course_ids": [
+        "a1a31e91-f832-4026-9b92-7115d5e7e48b",
+        "de0ef058-8a97-4dfd-b762-b468b43feefc",
+        "7bb35d1e-b539-44e3-84ee-19254902464f",
+        "315d4ebc-3787-47ce-ba3b-ccc9021e3066",
+        "4d74ee70-dd26-4a6b-9c4b-0db8adeb9598"
+      ]
+    },
+    {
+      "number": 2,
+      "track_code": null,
+      "course_ids": [
+        "e35d45ce-7682-459d-a293-80b5f608ab6e",
+        "8757ab87-a579-48a9-930f-f16931042ff9",
+        "002fafef-e221-4817-8f49-f0e4b6870ea8",
+        "0523a7a2-4d5d-46b5-a064-12dd29ba82c1",
+        "1013d634-9c46-435f-8ad3-d1af2c9969ff"
+      ]
+    },
+    {
+      "number": 3,
+      "track_code": null,
+      "course_ids": [
+        "1ffc1907-0dc4-4a73-b4dd-0fc8bb604ee7",
+        "10d88db1-bb49-4442-b4ec-2e94f3af7ab4",
+        "33308a2d-4cd8-481c-ba5d-39fb39e3b7cc",
+        "3506013e-a44e-4084-a028-af454e6cb397",
+        "9051e531-3f96-40e4-ac9c-5cf7aa33afb3"
+      ]
+    },
+    {
+      "number": 4,
+      "track_code": "MAQ",
+      "course_ids": [
+        "173d364a-e946-4004-bccc-2f382a83c351",
+        "65650c67-4a1e-4e62-8516-8596630c6fad",
+        "4b9815da-a405-4283-bd42-9d61be83a488",
+        "933f795e-d45a-4416-ac22-6720d1ecaa08",
+        "61551c8c-bed5-4d0b-99d1-6f8f4f18d9b1",
+        "81e71603-b5cf-44fa-8d21-103532d6602e"
+      ]
+    },
+    {
+      "number": 5,
+      "track_code": "MAQ",
+      "course_ids": [
+        "e6327613-22b5-435d-a583-37ac90d1213c",
+        "91d93b51-83a1-46ef-b4ab-fa312e63e561",
+        "5d415d09-5e77-4afc-b8ee-0a8353cc8f16",
+        "1eb3ff3f-c239-4f5d-a171-472c330e0cac",
+        "80b6e0fa-c5be-426e-853d-293661574bba",
+        "5eb06d94-efbb-4ba1-bc2a-a2a29850596c"
+      ]
+    },
+    {
+      "number": 6,
+      "track_code": "MAQ",
+      "course_ids": [
+        "544bffc9-9870-4ea8-8d5f-663f00c2087a",
+        "8814ef05-da34-4eac-897a-47fff1a0426c",
+        "051e8fb5-840b-4eb8-ad2f-3dde4b52949c",
+        "88209e65-a470-489e-ac38-9f314a68f8e3",
+        "897ba1f7-b4f6-418b-b102-988a2ed3d2e5",
+        "d74b5b7f-4f4e-4f3f-a93d-de15825bee41"
+      ]
+    },
+    {
+      "number": 7,
+      "track_code": "MAQ",
+      "course_ids": [
+        "902ccdb2-0a50-4230-ba21-23364eb8e297",
+        "aafa367e-df2b-4623-9e2f-05e787f65f11",
+        "2e8aa64f-dc48-49c2-bded-c36681147259",
+        "c6236594-c4bf-4cf4-9b77-4b1b2af6aad7",
+        "dd7a60f8-7ca1-4217-bba6-eedfd79a99ee",
+        "50fdb023-f154-4444-bf9c-709b1feebc17"
+      ]
+    },
+    {
+      "number": 8,
+      "track_code": "MAQ",
+      "course_ids": [
+        "1d32943a-f2af-4326-8e92-635fb35352d7",
+        "c601e96f-7003-4796-94f0-2ae1bdbcdf78",
+        "f9e4a8fc-248a-4465-aa2e-1bef77d5be21",
+        "15efe46f-9ae1-4455-a58e-19cfe6c722d7",
+        "1d4c6021-6669-4d6c-8798-796758ce6739",
+        "f4a1d87a-c989-4721-a007-a513363e234c",
+        "f42e5a3a-96d3-48b6-b564-5ad8ccf65185"
+      ]
+    },
+    {
+      "number": 4,
+      "track_code": "CUBI",
+      "course_ids": [
+        "b6798fb4-acd4-40bb-9c37-0c7f532f8648",
+        "8cfc2c42-6ba1-4481-8faa-e9c24776496e",
+        "b543fe3a-f9c5-479c-ac85-4025b1fd33fb",
+        "e3f3c841-251b-47e4-a4fe-53b46854df82",
+        "340b06f4-02be-450b-857f-0d8342c9bdd4",
+        "df1058de-f5e0-4305-935d-db1feb9c073c"
+      ]
+    },
+    {
+      "number": 5,
+      "track_code": "CUBI",
+      "course_ids": [
+        "65b28a8a-d958-4b98-9ba8-8c955bce82a3",
+        "c8048a6c-8343-4a5a-a54c-46a550f4b5ae",
+        "806dda12-86b8-4f34-b420-66f8daddf92e",
+        "d57ec086-4ce1-45df-9436-da3061051a98",
+        "54e5ce30-b5d2-4c1b-a258-b1b591df0af4",
+        "755657ac-7471-4320-ba8d-6a6b061fc6d4"
+      ]
+    },
+    {
+      "number": 6,
+      "track_code": "CUBI",
+      "course_ids": [
+        "720f4cc7-d80f-4b19-96f2-dc10ca42aa03",
+        "f4455aef-e148-4fb7-b6a6-d08395ef8dc2",
+        "7145c82e-c618-4117-bab4-3a3bd69177d2",
+        "ec09f0fa-33ab-412b-97b6-772854bc931a",
+        "7dd61f1e-7e55-4818-a226-e7edb887de78",
+        "06a1b43d-c8ff-4fd8-ae42-b12ec7fff4a6"
+      ]
+    },
+    {
+      "number": 7,
+      "track_code": "CUBI",
+      "course_ids": [
+        "81a303f9-dca6-470c-a093-296b58337092",
+        "0885164f-52f7-468d-a165-363fc52cceb0",
+        "799b8c55-98f3-481e-a9e2-bd56da8f5c46",
+        "5a409826-c77a-41f9-8a82-ba4e8019c824",
+        "a01d2089-4c95-49e9-924e-e19542ec6fc8",
+        "83b2dbbe-a110-4875-bf50-85a897302df4"
+      ]
+    },
+    {
+      "number": 8,
+      "track_code": "CUBI",
+      "course_ids": [
+        "9bbe4f22-9655-4c55-acc2-92cfee6a6d25",
+        "7f8a15e5-0206-45ae-9376-defc6ae99c26",
+        "5e468f91-bd28-4179-a9a7-114aa9c81448",
+        "8b0bcb91-2b80-43ad-997c-dea5cb7797da",
+        "9e4dd0b7-e06a-4726-9288-891712547e97",
+        "519b378c-5112-49b9-83a4-ba54e4a739d4",
+        "3f4c5fd7-e582-4cc7-aea0-f2f98d54700b"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "id": "a1a31e91-f832-4026-9b92-7115d5e7e48b",
+      "legacy_id": 1,
+      "code": "CEGHC11",
+      "name": "Habilidades Comunicativas",
+      "credits": 8,
+      "period_number": 1,
+      "sort_order": 0,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "de0ef058-8a97-4dfd-b762-b468b43feefc",
+      "legacy_id": 2,
+      "code": "CFIS310",
+      "name": "Física General",
+      "credits": 18,
+      "period_number": 1,
+      "sort_order": 1,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "7bb35d1e-b539-44e3-84ee-19254902464f",
+      "legacy_id": 3,
+      "code": "FMMP012",
+      "name": "Introducción a las Matemáticas",
+      "credits": 16,
+      "period_number": 1,
+      "sort_order": 2,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "315d4ebc-3787-47ce-ba3b-ccc9021e3066",
+      "legacy_id": 4,
+      "code": "IMMC101",
+      "name": "Introducción a la Ingeniería en Marina Mercante",
+      "credits": 13,
+      "period_number": 1,
+      "sort_order": 3,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "4d74ee70-dd26-4a6b-9c4b-0db8adeb9598",
+      "legacy_id": 5,
+      "code": "ING119",
+      "name": "Inglés I",
+      "credits": 12,
+      "period_number": 1,
+      "sort_order": 4,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "e35d45ce-7682-459d-a293-80b5f608ab6e",
+      "legacy_id": 6,
+      "code": "CFIS328",
+      "name": "Física Experimental",
+      "credits": 16,
+      "period_number": 2,
+      "sort_order": 5,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "de0ef058-8a97-4dfd-b762-b468b43feefc"
+          },
+          {
+            "course": "7bb35d1e-b539-44e3-84ee-19254902464f"
+          }
+        ]
+      },
+      "prereq_raw": "CFIS310 y FMMP012 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "8757ab87-a579-48a9-930f-f16931042ff9",
+      "legacy_id": 7,
+      "code": "FMMP112",
+      "name": "Cálculo Diferencial",
+      "credits": 16,
+      "period_number": 2,
+      "sort_order": 6,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "7bb35d1e-b539-44e3-84ee-19254902464f"
+      },
+      "prereq_raw": "FMMP012 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "002fafef-e221-4817-8f49-f0e4b6870ea8",
+      "legacy_id": 8,
+      "code": "IMMC102",
+      "name": "Procesos de Ingeniería en Marina Mercante",
+      "credits": 14,
+      "period_number": 2,
+      "sort_order": 7,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "de0ef058-8a97-4dfd-b762-b468b43feefc"
+      },
+      "prereq_raw": "CFIS310 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "0523a7a2-4d5d-46b5-a064-12dd29ba82c1",
+      "legacy_id": 9,
+      "code": "IMMC103",
+      "name": "Reglamentación y Legislación",
+      "credits": 12,
+      "period_number": 2,
+      "sort_order": 8,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "315d4ebc-3787-47ce-ba3b-ccc9021e3066"
+      },
+      "prereq_raw": "IMMC101 (más equivalencias antiguas en la malla)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "1013d634-9c46-435f-8ad3-d1af2c9969ff",
+      "legacy_id": 10,
+      "code": "ING129",
+      "name": "Inglés II",
+      "credits": 12,
+      "period_number": 2,
+      "sort_order": 9,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "4d74ee70-dd26-4a6b-9c4b-0db8adeb9598"
+      },
+      "prereq_raw": "ING119 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "1ffc1907-0dc4-4a73-b4dd-0fc8bb604ee7",
+      "legacy_id": 11,
+      "code": "IMMC201",
+      "name": "Interpretación de Planos y Dibujo Técnico",
+      "credits": 12,
+      "period_number": 3,
+      "sort_order": 10,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "002fafef-e221-4817-8f49-f0e4b6870ea8"
+      },
+      "prereq_raw": "IMMC102",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "10d88db1-bb49-4442-b4ec-2e94f3af7ab4",
+      "legacy_id": 12,
+      "code": "IMMC202",
+      "name": "Mecánica Técnica Naval",
+      "credits": 14,
+      "period_number": 3,
+      "sort_order": 11,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "e35d45ce-7682-459d-a293-80b5f608ab6e"
+      },
+      "prereq_raw": "CFIS328",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "33308a2d-4cd8-481c-ba5d-39fb39e3b7cc",
+      "legacy_id": 13,
+      "code": "IMMC203",
+      "name": "Incendio y Abandono (OMI 1.19-1.23-1.20-2.03)",
+      "credits": 16,
+      "period_number": 3,
+      "sort_order": 12,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "0523a7a2-4d5d-46b5-a064-12dd29ba82c1"
+      },
+      "prereq_raw": "IMMC103 (más equivalencias antiguas en la malla)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "3506013e-a44e-4084-a028-af454e6cb397",
+      "legacy_id": 14,
+      "code": "IMMC204",
+      "name": "Electricidad",
+      "credits": 16,
+      "period_number": 3,
+      "sort_order": 13,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "e35d45ce-7682-459d-a293-80b5f608ab6e"
+      },
+      "prereq_raw": "CFIS328",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "9051e531-3f96-40e4-ac9c-5cf7aa33afb3",
+      "legacy_id": 15,
+      "code": "ING239",
+      "name": "Inglés III",
+      "credits": 12,
+      "period_number": 3,
+      "sort_order": 14,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "1013d634-9c46-435f-8ad3-d1af2c9969ff"
+      },
+      "prereq_raw": "ING129 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "173d364a-e946-4004-bccc-2f382a83c351",
+      "legacy_id": 16,
+      "code": "IMMC205",
+      "name": "Construcción Naval y Flotabilidad",
+      "credits": 9,
+      "period_number": 4,
+      "sort_order": 15,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "1ffc1907-0dc4-4a73-b4dd-0fc8bb604ee7"
+          },
+          {
+            "course": "10d88db1-bb49-4442-b4ec-2e94f3af7ab4"
+          }
+        ]
+      },
+      "prereq_raw": "IMMC201 e IMMC202 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "65650c67-4a1e-4e62-8516-8596630c6fad",
+      "legacy_id": 17,
+      "code": "IMMQ201",
+      "name": "Termodinámica Aplicada",
+      "credits": 9,
+      "period_number": 4,
+      "sort_order": 16,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "8757ab87-a579-48a9-930f-f16931042ff9"
+          },
+          {
+            "course": "10d88db1-bb49-4442-b4ec-2e94f3af7ab4"
+          }
+        ]
+      },
+      "prereq_raw": "FMMP112 e IMMC202 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "4b9815da-a405-4283-bd42-9d61be83a488",
+      "legacy_id": 18,
+      "code": "IMMQ202",
+      "name": "Elasticidad y Resistencia de Materiales",
+      "credits": 9,
+      "period_number": 4,
+      "sort_order": 17,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "8757ab87-a579-48a9-930f-f16931042ff9"
+          },
+          {
+            "course": "10d88db1-bb49-4442-b4ec-2e94f3af7ab4"
+          }
+        ]
+      },
+      "prereq_raw": "FMMP112 e IMMC202 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "933f795e-d45a-4416-ac22-6720d1ecaa08",
+      "legacy_id": 19,
+      "code": "IMMQ203",
+      "name": "Electrotecnia",
+      "credits": 7,
+      "period_number": 4,
+      "sort_order": 18,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "3506013e-a44e-4084-a028-af454e6cb397"
+      },
+      "prereq_raw": "IMMC204 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "61551c8c-bed5-4d0b-99d1-6f8f4f18d9b1",
+      "legacy_id": 20,
+      "code": "IMMQ204",
+      "name": "Práctica I",
+      "credits": 66,
+      "period_number": 4,
+      "sort_order": 19,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "315d4ebc-3787-47ce-ba3b-ccc9021e3066"
+      },
+      "prereq_raw": "IMMC101 (más equivalencias antiguas en la malla)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "81e71603-b5cf-44fa-8d21-103532d6602e",
+      "legacy_id": 21,
+      "code": "ING249",
+      "name": "Inglés IV",
+      "credits": 12,
+      "period_number": 4,
+      "sort_order": 20,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "9051e531-3f96-40e4-ac9c-5cf7aa33afb3"
+      },
+      "prereq_raw": "ING239 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "b6798fb4-acd4-40bb-9c37-0c7f532f8648",
+      "legacy_id": 47,
+      "code": "IMMC205",
+      "name": "Construcción Naval y Flotabilidad",
+      "credits": 9,
+      "period_number": 4,
+      "sort_order": 46,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "1ffc1907-0dc4-4a73-b4dd-0fc8bb604ee7"
+          },
+          {
+            "course": "10d88db1-bb49-4442-b4ec-2e94f3af7ab4"
+          }
+        ]
+      },
+      "prereq_raw": "IMMC201 e IMMC202 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "8cfc2c42-6ba1-4481-8faa-e9c24776496e",
+      "legacy_id": 48,
+      "code": "IMMP201",
+      "name": "Meteorología y Oceanografía",
+      "credits": 7,
+      "period_number": 4,
+      "sort_order": 47,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "8757ab87-a579-48a9-930f-f16931042ff9"
+      },
+      "prereq_raw": "FMMP112 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "b543fe3a-f9c5-479c-ac85-4025b1fd33fb",
+      "legacy_id": 49,
+      "code": "IMMP202",
+      "name": "Fundamentos de Navegación",
+      "credits": 8,
+      "period_number": 4,
+      "sort_order": 48,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "3506013e-a44e-4084-a028-af454e6cb397"
+          },
+          {
+            "course": "8757ab87-a579-48a9-930f-f16931042ff9"
+          }
+        ]
+      },
+      "prereq_raw": "IMMC204 y FMMP112 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "e3f3c841-251b-47e4-a4fe-53b46854df82",
+      "legacy_id": 50,
+      "code": "IMMP203",
+      "name": "Planificación y Estiba de la Carga",
+      "credits": 9,
+      "period_number": 4,
+      "sort_order": 49,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "10d88db1-bb49-4442-b4ec-2e94f3af7ab4"
+      },
+      "prereq_raw": "IMMC202 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "340b06f4-02be-450b-857f-0d8342c9bdd4",
+      "legacy_id": 51,
+      "code": "IMMP204",
+      "name": "Práctica I",
+      "credits": 66,
+      "period_number": 4,
+      "sort_order": 50,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "315d4ebc-3787-47ce-ba3b-ccc9021e3066"
+      },
+      "prereq_raw": "IMMC101 (más equivalencias antiguas en la malla)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "df1058de-f5e0-4305-935d-db1feb9c073c",
+      "legacy_id": 52,
+      "code": "ING249",
+      "name": "Inglés IV",
+      "credits": 12,
+      "period_number": 4,
+      "sort_order": 51,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "9051e531-3f96-40e4-ac9c-5cf7aa33afb3"
+      },
+      "prereq_raw": "ING239 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "e6327613-22b5-435d-a583-37ac90d1213c",
+      "legacy_id": 22,
+      "code": "CEGPC13",
+      "name": "Pensamiento Crítico",
+      "credits": 5,
+      "period_number": 5,
+      "sort_order": 21,
+      "track_code": "MAQ",
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "91d93b51-83a1-46ef-b4ab-fa312e63e561",
+      "legacy_id": 23,
+      "code": "IMMC301",
+      "name": "Cuidado del Medio Ambiente (OMI I.01)",
+      "credits": 10,
+      "period_number": 5,
+      "sort_order": 22,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "33308a2d-4cd8-481c-ba5d-39fb39e3b7cc"
+          },
+          {
+            "course": "173d364a-e946-4004-bccc-2f382a83c351"
+          }
+        ]
+      },
+      "prereq_raw": "IMMC203 y/o IMMC205 (según equivalencias indicadas en la malla)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "5d415d09-5e77-4afc-b8ee-0a8353cc8f16",
+      "legacy_id": 24,
+      "code": "IMMQ301",
+      "name": "Taller de Máquinas y Herramientas",
+      "credits": 13,
+      "period_number": 5,
+      "sort_order": 23,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "4b9815da-a405-4283-bd42-9d61be83a488"
+      },
+      "prereq_raw": "IMMQ202",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "1eb3ff3f-c239-4f5d-a171-472c330e0cac",
+      "legacy_id": 25,
+      "code": "IMMQ302",
+      "name": "Máquinas Eléctricas I",
+      "credits": 10,
+      "period_number": 5,
+      "sort_order": 24,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "933f795e-d45a-4416-ac22-6720d1ecaa08"
+      },
+      "prereq_raw": "IMMQ203",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "80b6e0fa-c5be-426e-853d-293661574bba",
+      "legacy_id": 26,
+      "code": "IMMQ303",
+      "name": "Engine Room Management",
+      "credits": 14,
+      "period_number": 5,
+      "sort_order": 25,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "933f795e-d45a-4416-ac22-6720d1ecaa08"
+          },
+          {
+            "course": "65650c67-4a1e-4e62-8516-8596630c6fad"
+          }
+        ]
+      },
+      "prereq_raw": "IMMQ203 e IMMQ201 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "5eb06d94-efbb-4ba1-bc2a-a2a29850596c",
+      "legacy_id": 27,
+      "code": "IMMQ304",
+      "name": "Combustión Interna I",
+      "credits": 13,
+      "period_number": 5,
+      "sort_order": 26,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "65650c67-4a1e-4e62-8516-8596630c6fad"
+      },
+      "prereq_raw": "IMMQ201 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "65b28a8a-d958-4b98-9ba8-8c955bce82a3",
+      "legacy_id": 53,
+      "code": "CEGPC13",
+      "name": "Pensamiento Crítico",
+      "credits": 5,
+      "period_number": 5,
+      "sort_order": 52,
+      "track_code": "CUBI",
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "c8048a6c-8343-4a5a-a54c-46a550f4b5ae",
+      "legacy_id": 54,
+      "code": "IMMC301",
+      "name": "Cuidado del Medio Ambiente (OMI I.01)",
+      "credits": 10,
+      "period_number": 5,
+      "sort_order": 53,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "33308a2d-4cd8-481c-ba5d-39fb39e3b7cc"
+          },
+          {
+            "course": "b6798fb4-acd4-40bb-9c37-0c7f532f8648"
+          }
+        ]
+      },
+      "prereq_raw": "IMMC203 y/o IMMC205 (según equivalencias indicadas en la malla)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "806dda12-86b8-4f34-b420-66f8daddf92e",
+      "legacy_id": 55,
+      "code": "IMMP301",
+      "name": "Posicionamiento y Pilotaje",
+      "credits": 10,
+      "period_number": 5,
+      "sort_order": 54,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "b543fe3a-f9c5-479c-ac85-4025b1fd33fb"
+      },
+      "prereq_raw": "IMMP202",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "d57ec086-4ce1-45df-9436-da3061051a98",
+      "legacy_id": 56,
+      "code": "IMMP302",
+      "name": "Comunicaciones I",
+      "credits": 16,
+      "period_number": 5,
+      "sort_order": 55,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "b543fe3a-f9c5-479c-ac85-4025b1fd33fb"
+      },
+      "prereq_raw": "IMMP202",
+      "coreq_expr": {
+        "course": "806dda12-86b8-4f34-b420-66f8daddf92e"
+      },
+      "coreq_raw": "IMMP301",
+      "attrs": {}
+    },
+    {
+      "id": "54e5ce30-b5d2-4c1b-a258-b1b591df0af4",
+      "legacy_id": 57,
+      "code": "IMMP303",
+      "name": "Estiba de los Pesos a Bordo",
+      "credits": 13,
+      "period_number": 5,
+      "sort_order": 56,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "e3f3c841-251b-47e4-a4fe-53b46854df82"
+          },
+          {
+            "course": "b6798fb4-acd4-40bb-9c37-0c7f532f8648"
+          }
+        ]
+      },
+      "prereq_raw": "IMMP203 e IMMC205 (según equivalencias de la malla)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "755657ac-7471-4320-ba8d-6a6b061fc6d4",
+      "legacy_id": 58,
+      "code": "IMMP304",
+      "name": "Navegación Electrónica (OMI 1.07-1.27)",
+      "credits": 10,
+      "period_number": 5,
+      "sort_order": 57,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "b543fe3a-f9c5-479c-ac85-4025b1fd33fb"
+      },
+      "prereq_raw": "IMMP202",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "544bffc9-9870-4ea8-8d5f-663f00c2087a",
+      "legacy_id": 28,
+      "code": "IMMC302",
+      "name": "Primeros Auxilios y Cuidados Médicos a Bordo (OMI 1.13-1.14)",
+      "credits": 10,
+      "period_number": 6,
+      "sort_order": 27,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "91d93b51-83a1-46ef-b4ab-fa312e63e561"
+      },
+      "prereq_raw": "IMMC301",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "8814ef05-da34-4eac-897a-47fff1a0426c",
+      "legacy_id": 29,
+      "code": "IMMC303",
+      "name": "Costos y Finanzas",
+      "credits": 10,
+      "period_number": 6,
+      "sort_order": 28,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "8757ab87-a579-48a9-930f-f16931042ff9"
+      },
+      "prereq_raw": "FMMP112 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "051e8fb5-840b-4eb8-ad2f-3dde4b52949c",
+      "legacy_id": 30,
+      "code": "IMMQ305",
+      "name": "Mantención de Motores I",
+      "credits": 12,
+      "period_number": 6,
+      "sort_order": 29,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "5d415d09-5e77-4afc-b8ee-0a8353cc8f16"
+          },
+          {
+            "course": "80b6e0fa-c5be-426e-853d-293661574bba"
+          }
+        ]
+      },
+      "prereq_raw": "IMMQ301 e IMMQ303",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "88209e65-a470-489e-ac38-9f314a68f8e3",
+      "legacy_id": 31,
+      "code": "IMMQ306",
+      "name": "Electrónica",
+      "credits": 12,
+      "period_number": 6,
+      "sort_order": 30,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "1eb3ff3f-c239-4f5d-a171-472c330e0cac"
+      },
+      "prereq_raw": "IMMQ302 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "897ba1f7-b4f6-418b-b102-988a2ed3d2e5",
+      "legacy_id": 32,
+      "code": "IMMQ307",
+      "name": "Plantas a Vapor",
+      "credits": 10,
+      "period_number": 6,
+      "sort_order": 31,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "5eb06d94-efbb-4ba1-bc2a-a2a29850596c"
+      },
+      "prereq_raw": "IMMQ304 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "d74b5b7f-4f4e-4f3f-a93d-de15825bee41",
+      "legacy_id": 33,
+      "code": "IMMQ308",
+      "name": "Combustión Interna II",
+      "credits": 12,
+      "period_number": 6,
+      "sort_order": 32,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "5eb06d94-efbb-4ba1-bc2a-a2a29850596c"
+      },
+      "prereq_raw": "IMMQ304 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "720f4cc7-d80f-4b19-96f2-dc10ca42aa03",
+      "legacy_id": 59,
+      "code": "IMMC302",
+      "name": "Primeros Auxilios y Cuidados Médicos a Bordo (OMI 1.13-1.14)",
+      "credits": 10,
+      "period_number": 6,
+      "sort_order": 58,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "c8048a6c-8343-4a5a-a54c-46a550f4b5ae"
+      },
+      "prereq_raw": "IMMC301",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "f4455aef-e148-4fb7-b6a6-d08395ef8dc2",
+      "legacy_id": 60,
+      "code": "IMMC303",
+      "name": "Costos y Finanzas",
+      "credits": 10,
+      "period_number": 6,
+      "sort_order": 59,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "8757ab87-a579-48a9-930f-f16931042ff9"
+      },
+      "prereq_raw": "FMMP112 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "7145c82e-c618-4117-bab4-3a3bd69177d2",
+      "legacy_id": 61,
+      "code": "IMMP305",
+      "name": "Navegación Ortodrómica y Loxodrómica",
+      "credits": 11,
+      "period_number": 6,
+      "sort_order": 60,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "806dda12-86b8-4f34-b420-66f8daddf92e"
+      },
+      "prereq_raw": "IMMP301",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "ec09f0fa-33ab-412b-97b6-772854bc931a",
+      "legacy_id": 62,
+      "code": "IMMP306",
+      "name": "Comunicaciones II",
+      "credits": 12,
+      "period_number": 6,
+      "sort_order": 61,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "d57ec086-4ce1-45df-9436-da3061051a98"
+      },
+      "prereq_raw": "IMMP302",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "7dd61f1e-7e55-4818-a226-e7edb887de78",
+      "legacy_id": 63,
+      "code": "IMMP307",
+      "name": "Maniobrabilidad de la Nave",
+      "credits": 11,
+      "period_number": 6,
+      "sort_order": 62,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "8cfc2c42-6ba1-4481-8faa-e9c24776496e"
+          },
+          {
+            "course": "806dda12-86b8-4f34-b420-66f8daddf92e"
+          }
+        ]
+      },
+      "prereq_raw": "IMMP201 e IMMP301 (según equivalencias indicadas en la malla)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "06a1b43d-c8ff-4fd8-ae42-b12ec7fff4a6",
+      "legacy_id": 64,
+      "code": "IMMP308",
+      "name": "Esfuerzos y Averías Estructurales",
+      "credits": 11,
+      "period_number": 6,
+      "sort_order": 63,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "54e5ce30-b5d2-4c1b-a258-b1b591df0af4"
+      },
+      "prereq_raw": "IMMP303 (según equivalencias indicadas en la malla)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "902ccdb2-0a50-4230-ba21-23364eb8e297",
+      "legacy_id": 34,
+      "code": "IMMC401",
+      "name": "Seguridad de las Personas y Medio Ambiente (OMI 1.21, 3.26, 1.39, 1.38)",
+      "credits": 10,
+      "period_number": 7,
+      "sort_order": 33,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "544bffc9-9870-4ea8-8d5f-663f00c2087a"
+      },
+      "prereq_raw": "IMMC302",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "aafa367e-df2b-4623-9e2f-05e787f65f11",
+      "legacy_id": 35,
+      "code": "IMMC402",
+      "name": "Evaluación de Inversiones Marítimo Portuario",
+      "credits": 12,
+      "period_number": 7,
+      "sort_order": 34,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "8814ef05-da34-4eac-897a-47fff1a0426c"
+      },
+      "prereq_raw": "IMMC303",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "2e8aa64f-dc48-49c2-bded-c36681147259",
+      "legacy_id": 36,
+      "code": "IMMQ401",
+      "name": "Mantención de Motores II",
+      "credits": 12,
+      "period_number": 7,
+      "sort_order": 35,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "051e8fb5-840b-4eb8-ad2f-3dde4b52949c"
+      },
+      "prereq_raw": "IMMQ305",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "c6236594-c4bf-4cf4-9b77-4b1b2af6aad7",
+      "legacy_id": 37,
+      "code": "IMMQ402",
+      "name": "Control Automático",
+      "credits": 12,
+      "period_number": 7,
+      "sort_order": 36,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "88209e65-a470-489e-ac38-9f314a68f8e3"
+      },
+      "prereq_raw": "IMMQ306",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "dd7a60f8-7ca1-4217-bba6-eedfd79a99ee",
+      "legacy_id": 38,
+      "code": "IMMQ403",
+      "name": "Máquinas Marinas",
+      "credits": 10,
+      "period_number": 7,
+      "sort_order": 37,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "d74b5b7f-4f4e-4f3f-a93d-de15825bee41"
+      },
+      "prereq_raw": "IMMQ308",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "50fdb023-f154-4444-bf9c-709b1feebc17",
+      "legacy_id": 39,
+      "code": "IMMQ404",
+      "name": "Portafolio de Proyecto",
+      "credits": 10,
+      "period_number": 7,
+      "sort_order": 38,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "051e8fb5-840b-4eb8-ad2f-3dde4b52949c"
+          },
+          {
+            "course": "5eb06d94-efbb-4ba1-bc2a-a2a29850596c"
+          },
+          {
+            "course": "88209e65-a470-489e-ac38-9f314a68f8e3"
+          },
+          {
+            "course": "d74b5b7f-4f4e-4f3f-a93d-de15825bee41"
+          }
+        ]
+      },
+      "prereq_raw": "IMMQ305, IMMQ304, IMMQ306 e IMMQ308 (según equivalencias de la malla)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "81a303f9-dca6-470c-a093-296b58337092",
+      "legacy_id": 65,
+      "code": "IMMC401",
+      "name": "Seguridad de las Personas y Medio Ambiente (OMI 1.21, 3.26, 1.39, 1.38)",
+      "credits": 10,
+      "period_number": 7,
+      "sort_order": 64,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "720f4cc7-d80f-4b19-96f2-dc10ca42aa03"
+      },
+      "prereq_raw": "IMMC302",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "0885164f-52f7-468d-a165-363fc52cceb0",
+      "legacy_id": 66,
+      "code": "IMMC402",
+      "name": "Evaluación de Inversiones Marítimo Portuario",
+      "credits": 12,
+      "period_number": 7,
+      "sort_order": 65,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "f4455aef-e148-4fb7-b6a6-d08395ef8dc2"
+      },
+      "prereq_raw": "IMMC303",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "799b8c55-98f3-481e-a9e2-bd56da8f5c46",
+      "legacy_id": 67,
+      "code": "IMMP401",
+      "name": "Navegación Astronómica",
+      "credits": 10,
+      "period_number": 7,
+      "sort_order": 66,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "7145c82e-c618-4117-bab4-3a3bd69177d2"
+      },
+      "prereq_raw": "IMMP305",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "5a409826-c77a-41f9-8a82-ba4e8019c824",
+      "legacy_id": 68,
+      "code": "IMMP402",
+      "name": "Búsqueda y Salvamento (OMI 1.08)",
+      "credits": 12,
+      "period_number": 7,
+      "sort_order": 67,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "755657ac-7471-4320-ba8d-6a6b061fc6d4"
+      },
+      "prereq_raw": "IMMP304",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "a01d2089-4c95-49e9-924e-e19542ec6fc8",
+      "legacy_id": 69,
+      "code": "IMMP403",
+      "name": "Portafolio de Proyecto",
+      "credits": 10,
+      "period_number": 7,
+      "sort_order": 68,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "7145c82e-c618-4117-bab4-3a3bd69177d2"
+          },
+          {
+            "course": "06a1b43d-c8ff-4fd8-ae42-b12ec7fff4a6"
+          },
+          {
+            "course": "f4455aef-e148-4fb7-b6a6-d08395ef8dc2"
+          }
+        ]
+      },
+      "prereq_raw": "IMMP305, IMMP308 e IMMC303 (según equivalencias indicadas en la malla)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "83b2dbbe-a110-4875-bf50-85a897302df4",
+      "legacy_id": 70,
+      "code": "IMMP404",
+      "name": "Seguros del Transporte Marítimo",
+      "credits": 10,
+      "period_number": 7,
+      "sort_order": 69,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "54e5ce30-b5d2-4c1b-a258-b1b591df0af4"
+      },
+      "prereq_raw": "IMMP303 (según equivalencias indicadas en la malla)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "1d32943a-f2af-4326-8e92-635fb35352d7",
+      "legacy_id": 40,
+      "code": "IMMC403",
+      "name": "Sistemas de Gestión Integrado",
+      "credits": 8,
+      "period_number": 8,
+      "sort_order": 39,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "902ccdb2-0a50-4230-ba21-23364eb8e297"
+      },
+      "prereq_raw": "IMMC401",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "c601e96f-7003-4796-94f0-2ae1bdbcdf78",
+      "legacy_id": 41,
+      "code": "IMMC404",
+      "name": "Seminario de Licenciatura en Ingeniería",
+      "credits": 4,
+      "period_number": 8,
+      "sort_order": 40,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "aafa367e-df2b-4623-9e2f-05e787f65f11"
+      },
+      "prereq_raw": "IMMC402 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "f9e4a8fc-248a-4465-aa2e-1bef77d5be21",
+      "legacy_id": 42,
+      "code": "IMMQ405",
+      "name": "Inglés Técnico Marítimo",
+      "credits": 9,
+      "period_number": 8,
+      "sort_order": 41,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "81e71603-b5cf-44fa-8d21-103532d6602e"
+          },
+          {
+            "course": "c6236594-c4bf-4cf4-9b77-4b1b2af6aad7"
+          }
+        ]
+      },
+      "prereq_raw": "ING249 e IMMQ402",
+      "coreq_expr": {
+        "course": "1d4c6021-6669-4d6c-8798-796758ce6739"
+      },
+      "coreq_raw": "IMMQ407",
+      "attrs": {}
+    },
+    {
+      "id": "15efe46f-9ae1-4455-a58e-19cfe6c722d7",
+      "legacy_id": 43,
+      "code": "IMMQ406",
+      "name": "Máquinas Eléctricas II",
+      "credits": 9,
+      "period_number": 8,
+      "sort_order": 42,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "c6236594-c4bf-4cf4-9b77-4b1b2af6aad7"
+      },
+      "prereq_raw": "IMMQ402 (según equivalencias de la malla)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "1d4c6021-6669-4d6c-8798-796758ce6739",
+      "legacy_id": 44,
+      "code": "IMMQ407",
+      "name": "Engine Room Resource Management (ERM - OMI 2.07)",
+      "credits": 8,
+      "period_number": 8,
+      "sort_order": 43,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "80b6e0fa-c5be-426e-853d-293661574bba"
+          },
+          {
+            "course": "dd7a60f8-7ca1-4217-bba6-eedfd79a99ee"
+          }
+        ]
+      },
+      "prereq_raw": "IMMQ303 e IMMQ403",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "f4a1d87a-c989-4721-a007-a513363e234c",
+      "legacy_id": 45,
+      "code": "IMMQ408",
+      "name": "Proyecto de Título",
+      "credits": 4,
+      "period_number": 8,
+      "sort_order": 44,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "c601e96f-7003-4796-94f0-2ae1bdbcdf78"
+      },
+      "prereq_raw": "IMMC404",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "f42e5a3a-96d3-48b6-b564-5ad8ccf65185",
+      "legacy_id": 46,
+      "code": "IMMQ409",
+      "name": "Práctica II",
+      "credits": 66,
+      "period_number": 8,
+      "sort_order": 45,
+      "track_code": "MAQ",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "61551c8c-bed5-4d0b-99d1-6f8f4f18d9b1"
+      },
+      "prereq_raw": "IMMQ204",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "9bbe4f22-9655-4c55-acc2-92cfee6a6d25",
+      "legacy_id": 71,
+      "code": "IMMC403",
+      "name": "Sistemas de Gestión Integrado",
+      "credits": 8,
+      "period_number": 8,
+      "sort_order": 70,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "81a303f9-dca6-470c-a093-296b58337092"
+      },
+      "prereq_raw": "IMMC401",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "7f8a15e5-0206-45ae-9376-defc6ae99c26",
+      "legacy_id": 72,
+      "code": "IMMC404",
+      "name": "Seminario de Licenciatura en Ingeniería",
+      "credits": 4,
+      "period_number": 8,
+      "sort_order": 71,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "0885164f-52f7-468d-a165-363fc52cceb0"
+      },
+      "prereq_raw": "IMMC402 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "5e468f91-bd28-4179-a9a7-114aa9c81448",
+      "legacy_id": 73,
+      "code": "IMMP405",
+      "name": "Inglés Marítimo Portuario",
+      "credits": 9,
+      "period_number": 8,
+      "sort_order": 72,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "df1058de-f5e0-4305-935d-db1feb9c073c"
+          },
+          {
+            "course": "5a409826-c77a-41f9-8a82-ba4e8019c824"
+          }
+        ]
+      },
+      "prereq_raw": "ING249 e IMMP402",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "8b0bcb91-2b80-43ad-997c-dea5cb7797da",
+      "legacy_id": 74,
+      "code": "IMMP406",
+      "name": "Bridge Resource Management (OMI 1.22-BRM)",
+      "credits": 8,
+      "period_number": 8,
+      "sort_order": 73,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "5a409826-c77a-41f9-8a82-ba4e8019c824"
+          },
+          {
+            "course": "7dd61f1e-7e55-4818-a226-e7edb887de78"
+          },
+          {
+            "course": "ec09f0fa-33ab-412b-97b6-772854bc931a"
+          }
+        ]
+      },
+      "prereq_raw": "IMMP402, IMMP307 e IMMP306 (según equivalencias indicadas en la malla)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "9e4dd0b7-e06a-4726-9288-891712547e97",
+      "legacy_id": 75,
+      "code": "IMMP407",
+      "name": "Gestión del Transporte Marítimo",
+      "credits": 8,
+      "period_number": 8,
+      "sort_order": 74,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "83b2dbbe-a110-4875-bf50-85a897302df4"
+      },
+      "prereq_raw": "IMMP404 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "519b378c-5112-49b9-83a4-ba54e4a739d4",
+      "legacy_id": 76,
+      "code": "IMMP408",
+      "name": "Proyecto de Título",
+      "credits": 4,
+      "period_number": 8,
+      "sort_order": 75,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "a01d2089-4c95-49e9-924e-e19542ec6fc8"
+          },
+          {
+            "course": "0885164f-52f7-468d-a165-363fc52cceb0"
+          }
+        ]
+      },
+      "prereq_raw": "IMMP403 e IMMC402 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "3f4c5fd7-e582-4cc7-aea0-f2f98d54700b",
+      "legacy_id": 77,
+      "code": "IMMP409",
+      "name": "Práctica II",
+      "credits": 66,
+      "period_number": 8,
+      "sort_order": 76,
+      "track_code": "CUBI",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "340b06f4-02be-450b-857f-0d8342c9bdd4"
+          },
+          {
+            "course": "806dda12-86b8-4f34-b420-66f8daddf92e"
+          }
+        ]
+      },
+      "prereq_raw": "IMMP204 e IMMP301 (o equivalentes)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    }
+  ],
+  "aliases": {}
+}
