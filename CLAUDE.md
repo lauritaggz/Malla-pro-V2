@@ -4,7 +4,7 @@ Plataforma web para estudiantes universitarios chilenos: malla curricular con pr
 ## Stack
 - frontend/: React 19, Vite, Tailwind, React Router. Auth con Firebase (Google).
 - backend/: Python 3.12, FastAPI, SQLAlchemy 2 (async, asyncpg), Alembic, Pydantic v2, pytest, uv, ruff.
-- PostgreSQL 16 y Redis 7 vía docker-compose en local.
+- PostgreSQL 16 vía docker-compose en local. Sin Redis por ahora: la cola de tareas se hará en Postgres.
 - Firebase solo identifica al usuario: el backend verifica el ID token con firebase-admin. Todos los datos viven en Postgres.
 
 ## Reglas
