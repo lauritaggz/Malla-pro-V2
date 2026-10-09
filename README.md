@@ -7,8 +7,8 @@ Plataforma web para estudiantes universitarios chilenos: malla curricular con pr
 | Carpeta | Contenido |
 |---|---|
 | `frontend/` | App React 19 + Vite + Tailwind (ver [frontend/README.md](frontend/README.md)) |
-| `backend/` | API FastAPI (próximamente) |
-| `docker-compose.yml` | PostgreSQL 16 y Redis 7 para desarrollo local |
+| `backend/` | API FastAPI (ver sección Backend) |
+| `docker-compose.yml` | PostgreSQL 16 para desarrollo local |
 
 ## Cómo levantar
 
@@ -22,14 +22,27 @@ npm test         # vitest
 npm run build    # salida en frontend/dist
 ```
 
-**Infraestructura local** (Postgres y Redis):
+**Infraestructura local** (Postgres):
 
 ```bash
 cp .env.example .env   # ajusta POSTGRES_PASSWORD
 docker compose up -d
 ```
 
-**Backend**: aún no existe; se agrega en `backend/` en la próxima etapa.
+**Backend** (Python 3.12 con [uv](https://docs.astral.sh/uv/), FastAPI):
+
+```bash
+docker compose up -d                   # Postgres (desde la raíz)
+cd backend
+cp .env.example .env                   # la clave debe coincidir con POSTGRES_PASSWORD
+uv sync
+uv run alembic upgrade head
+uv run uvicorn app.main:app --reload   # http://localhost:8000/api/v1/health
+uv run pytest
+uv run ruff check
+```
+
+Los tests crean la base `mallapro_test` en el mismo Postgres si no existe.
 
 ## Despliegue del frontend
 
