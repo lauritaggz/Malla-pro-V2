@@ -15,3 +15,4 @@ Plataforma web para estudiantes universitarios chilenos: malla curricular con pr
 - La IA nunca modifica datos sin revisión del usuario: produce borradores.
 - Tests obligatorios para prerrequisitos, cálculo de notas, topes de horario y permisos.
 - Antes de cambios grandes, mostrar un plan y esperar aprobación.
+- Windows: nunca escribir archivos con redirecciones de PowerShell (>, Out-File, Set-Content); usar siempre las herramientas de edición de archivos. Todo archivo en UTF-8 sin BOM y saltos LF.
