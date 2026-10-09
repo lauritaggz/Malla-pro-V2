@@ -94,7 +94,7 @@ export default function MobileBottomNav({
             </span>
           </button>
           {user && accountOpen && (
-            <div className="absolute bottom-full right-1 mb-2 w-56 rounded-2xl border border-borderColor bg-bgSecondary p-3 shadow-xl">
+            <div className="absolute bottom-full right-1 mb-2 w-56 max-w-[calc(100vw-1rem)] rounded-2xl border border-borderColor bg-bgSecondary p-3 shadow-xl">
               <p className="truncate text-xs font-bold text-textPrimary">
                 {backendUser?.display_name || user.displayName}
               </p>

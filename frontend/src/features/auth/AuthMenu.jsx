@@ -2,22 +2,28 @@ import { useEffect, useRef, useState } from "react";
 import { LogIn, LogOut } from "lucide-react";
 import { useAuth } from "./useAuth";
 
-export function UserAvatar({ user, backendUser, className = "w-8.5 h-8.5" }) {
+/** Avatar redondo de tamaño fijo (por defecto 32 px); cae a la inicial si la foto falla. */
+export function UserAvatar({ user, backendUser, className = "w-8 h-8" }) {
   const photo = backendUser?.photo_url || user?.photoURL;
   const name = backendUser?.display_name || user?.displayName || user?.email || "?";
-  if (photo) {
+  const [failedPhoto, setFailedPhoto] = useState(null);
+  const base = `${className} shrink-0 rounded-full`;
+
+  if (photo && failedPhoto !== photo) {
     return (
       <img
         src={photo}
         alt=""
         referrerPolicy="no-referrer"
-        className={`${className} rounded-full object-cover`}
+        onError={() => setFailedPhoto(photo)}
+        className={`${base} object-cover`}
       />
     );
   }
   return (
     <span
-      className={`${className} rounded-full bg-primary text-white flex items-center justify-center text-xs font-bold`}
+      aria-hidden
+      className={`${base} bg-primary text-white flex items-center justify-center text-xs font-bold leading-none select-none`}
     >
       {name.trim().charAt(0).toUpperCase()}
     </span>
@@ -60,12 +66,12 @@ export default function AuthMenu() {
         onClick={() => setOpen((prev) => !prev)}
         aria-label="Menú de cuenta"
         aria-expanded={open}
-        className="rounded-full border border-borderColor"
+        className="flex shrink-0 rounded-full ring-1 ring-borderColor"
       >
         <UserAvatar user={user} backendUser={backendUser} />
       </button>
       {open && (
-        <div className="absolute right-0 top-full mt-2 w-60 rounded-2xl border border-borderColor bg-bgSecondary p-3 shadow-xl z-50">
+        <div className="absolute right-0 top-full mt-2 w-60 max-w-[calc(100vw-1.5rem)] rounded-2xl border border-borderColor bg-bgSecondary p-3 shadow-xl z-50">
           <p className="truncate text-xs font-bold text-textPrimary">
             {backendUser?.display_name || user.displayName}
           </p>
