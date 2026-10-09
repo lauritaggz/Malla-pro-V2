@@ -7,6 +7,7 @@ import {
 } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import GooeyNav from "./GooeyNav";
+import AuthMenu from "../features/auth/AuthMenu";
 
 const THEMES = [
   { id: "aurora",   name: "Aurora",   color: "#2563EB" },
@@ -220,7 +221,8 @@ export default function Navbar({
 
           {/* ── Right: User Controls & Menu ── */}
           <div className="flex items-center gap-2 flex-shrink-0">
-            
+            <AuthMenu />
+
             <button
               type="button"
               onClick={() => {

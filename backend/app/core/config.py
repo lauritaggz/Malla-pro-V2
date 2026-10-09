@@ -12,6 +12,13 @@ class Settings(BaseSettings):
     test_database_url: str = "postgresql+asyncpg://mallapro:change-me@localhost:5432/mallapro_test"
     # Comma-separated list. Kept as str: pydantic-settings would try to parse list[str] as JSON.
     cors_origins_raw: str = Field(default="http://localhost:5173", validation_alias="CORS_ORIGINS")
+    # Local: path to the service-account file. Production: same JSON, base64-encoded (has priority).
+    firebase_credentials_path: str = Field(
+        default="firebase-sa.json", validation_alias="FIREBASE_CREDENTIALS_PATH"
+    )
+    firebase_credentials_json: str | None = Field(
+        default=None, validation_alias="FIREBASE_CREDENTIALS_JSON"
+    )
 
     @property
     def cors_origins(self) -> list[str]:
