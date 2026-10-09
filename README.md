@@ -44,6 +44,8 @@ uv run ruff check
 
 Los tests crean la base `mallapro_test` en el mismo Postgres si no existe.
 
+**Login con Google (opcional):** el frontend funciona sin login. Para activarlo copia `frontend/.env.example` a `frontend/.env.local` y coloca `firebase-sa.json` (service account, ignorado por git) en `backend/`. Los tests aplican las migraciones de Alembic sobre `mallapro_test`.
+
 ## Despliegue del frontend
 
 Netlify: *Base directory* = `frontend`. Vercel: *Root Directory* = `frontend`. cPanel: `cd frontend && npm run pack:cpanel`.
