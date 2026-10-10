@@ -36,7 +36,7 @@ LEGACY_PROGRAMS: list[tuple[str, str, str]] = [
     ("Comp", "ingenieria-computacion-informatica", "Ingeniería en Computación e Informática"),
     ("Geo", "geologia", "Geología"),
     ("MM", "ingenieria-marina-mercante", "Ingeniería en Marina Mercante"),
-    ("CInf", "ingenieria-civil-informatica", "Ingenería Civil Informática"),
+    ("CInf", "ingenieria-civil-informatica", "Ingeniería Civil Informática"),
     ("Minas", "ingenieria-civil-minas", "Ingeniería Civil en Minas"),
     ("Med", "medicina", "Medicina"),
     ("TM", "tecnologia-medica", "Tecnología Médica"),

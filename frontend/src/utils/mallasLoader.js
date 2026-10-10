@@ -25,7 +25,7 @@ const STATIC_UNIVERSIDADES = [
         url: "/mallas/MM.json",
       },
       {
-        nombre: "Ingenería Civil Informática",
+        nombre: "Ingeniería Civil Informática",
         url: "/mallas/CInf.json",
       },
       {

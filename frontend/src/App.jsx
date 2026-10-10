@@ -22,6 +22,12 @@ import { useLocation } from "react-router-dom";
 import AcademicProgrammingPage from "./features/academicProgramming/components/AcademicProgrammingPage";
 import PeriodoActualView from "./components/PeriodoActualView";
 
+// Nombres visibles corregidos: quien tenga guardada la versión antigua ve el texto nuevo.
+// Solo es presentación: ni careerId ni las claves de avance dependen del nombre.
+const NOMBRES_CORREGIDOS = {
+  "Ingenería Civil Informática": "Ingeniería Civil Informática",
+};
+
 function readMallaSeleccionadaFromStorage() {
   const raw = safeStorage.get(LEGACY_KEYS.seleccionada, null);
   if (!raw || typeof raw !== "object") return null;
@@ -34,7 +40,7 @@ function readMallaSeleccionadaFromStorage() {
   return {
     ...raw,
     url: url.trim(),
-    nombre: nombre.trim(),
+    nombre: NOMBRES_CORREGIDOS[nombre.trim()] ?? nombre.trim(),
     universidad: raw.universidad || inferUniversidadFromUrl(url.trim()),
   };
 }

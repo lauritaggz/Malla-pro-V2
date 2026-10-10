@@ -12,7 +12,7 @@ contra las mallas oficiales. No se corrigió nada.
 | Ingeniería en Computación e Informática | 0 | 0 | 0 | 0 | 0 | 0 | 6 | 16 | 0 | 0 | 0 | 0 | 0 | 1 |
 | Geología | 0 | 0 | 0 | 0 | 0 | 1 | 6 | 0 | 0 | 0 | 42 | 0 | 0 | 1 |
 | Ingeniería en Marina Mercante | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 29 | 10 | 0 | 0 |
-| Ingenería Civil Informática | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 15 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ingeniería Civil Informática | 0 | 0 | 0 | 0 | 0 | 0 | 5 | 15 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Ingeniería Civil en Minas | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 12 | 0 | 0 | 0 |
 | Medicina | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 41 | 0 | 0 | 1 |
 | Tecnología Médica | 0 | 0 | 0 | 0 | 0 | 2 | 10 | 0 | 0 | 0 | 125 | 13 | 0 | 0 |
@@ -271,7 +271,7 @@ Leyenda de columnas: `id_duplicado` = Id de curso repetido (se ignora la segunda
 - **IMMC404 — Seminario de Licenciatura en Ingeniería**: ids: 41 (MAQ), 72 (CUBI)
 - **ING249 — Inglés IV**: ids: 21 (MAQ), 52 (CUBI)
 
-## Ingenería Civil Informática
+## Ingeniería Civil Informática
 
 ### El texto prereq_expr no coincide con los ids de prerrequisitos (5)
 
