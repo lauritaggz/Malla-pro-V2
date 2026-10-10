@@ -32,6 +32,9 @@ export default defineConfig({
 
   server: {
     port: 5174,
+    // Falla en vez de cambiar de puerto: el CORS del backend y los orígenes de Firebase
+    // dependen de que sea siempre el 5174.
+    strictPort: true,
     host: true,
   },
 
