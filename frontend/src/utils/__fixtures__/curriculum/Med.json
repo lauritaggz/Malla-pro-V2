@@ -1,0 +1,1226 @@
+{
+  "program": {
+    "id": "999823dd-5e50-46d6-b029-40c9c7f30959",
+    "slug": "medicina",
+    "name": "Medicina",
+    "official_name": "Medicina (UNAB)",
+    "official_code": null,
+    "career_key": "unab-med",
+    "legacy_url": "/mallas/Med.json"
+  },
+  "university": {
+    "id": "baa60218-0377-4052-bddd-a92786b37188",
+    "slug": "unab",
+    "name": "Universidad Andrés Bello",
+    "short_name": "UNAB",
+    "country": "CL"
+  },
+  "version": {
+    "id": "3f81e33c-1fb3-4150-8dd4-4fbf1cb44487",
+    "label": "legacy",
+    "period_regime": "semestral",
+    "credit_system": "SCT",
+    "total_periods": 12,
+    "total_credits": null,
+    "status": "published",
+    "is_current": true,
+    "source_type": "legacy_json",
+    "source_url": "/mallas/Med.json",
+    "source_note": "Imported from frontend/public/mallas/Med.json",
+    "reviewed_at": null
+  },
+  "tracks": [],
+  "periods": [
+    {
+      "number": 1,
+      "track_code": null,
+      "course_ids": [
+        "0c7e3c11-3d51-41a8-848e-0748b21cf0a1",
+        "bc19a4c8-58bf-4037-a8b6-7ef603ccb5bd",
+        "9689e210-c80b-4374-804c-e3a9ad5a0948",
+        "0b0cb7c7-739d-4792-87dc-4b06b0590c11",
+        "c03a7e30-7a3f-4123-8039-a21308ba3f99",
+        "7ee621ab-a453-42cf-9d14-648f4171d4e9"
+      ]
+    },
+    {
+      "number": 2,
+      "track_code": null,
+      "course_ids": [
+        "361b3d3f-b73c-43ae-837b-44868289282d",
+        "8b7c4e46-bcab-4ab0-a866-c095e896695e",
+        "b6e9443c-11e6-40de-807c-493d0d659d6c",
+        "44d992f5-867a-482a-ae4a-2882bb8f8abe",
+        "f6b05a87-57e6-4b31-aa35-261cecc4486d"
+      ]
+    },
+    {
+      "number": 3,
+      "track_code": null,
+      "course_ids": [
+        "4a06a741-ecec-4137-951d-550f77aed2d5",
+        "041f1423-8e72-4d11-b435-4146c47768d5",
+        "987dd79a-aa96-498d-8984-bd01ffdc9612",
+        "e93a3063-06ea-4ee1-8483-450ad521a402",
+        "a0fd8c66-3f78-4176-8365-f018a29657a3"
+      ]
+    },
+    {
+      "number": 4,
+      "track_code": null,
+      "course_ids": [
+        "c1d8d0c0-b978-48d8-b213-8b5010a3b02f",
+        "16e54658-7cb4-4ad1-b04d-7baed78aaa9b",
+        "d186d7c9-ff00-4e0f-b4ff-c32380940498",
+        "49e4e041-45fa-475a-b547-25265df74471",
+        "643ab0fd-2094-44ad-9328-6ad050b7a347"
+      ]
+    },
+    {
+      "number": 5,
+      "track_code": null,
+      "course_ids": [
+        "b9dfb8c4-d2f8-46f9-bfc5-7f4505a5f7c8",
+        "0e16b31b-5ad6-4a4b-aa7d-05dd7b1d1dd6",
+        "a8894a8e-c106-4e14-ba19-6a3a759d8fb7",
+        "da6600c5-fa02-47ce-a491-ff84e3d7d144",
+        "6efb1c65-87ba-4d82-b5ca-fb9fb4a7352b"
+      ]
+    },
+    {
+      "number": 6,
+      "track_code": null,
+      "course_ids": [
+        "23325c11-ec80-4315-9535-ffa19ddb2b34",
+        "00ec5314-69dd-4125-b612-d845bc21480a",
+        "91dc8743-1a7e-4194-8e45-eef45d145060",
+        "2a3abf07-7216-42fd-8ea8-b2948a5eba9c",
+        "6bc669e0-8344-49cd-8f07-da27726a4708",
+        "c82d7e1c-2371-4439-9d6d-2f1ba3b30bab"
+      ]
+    },
+    {
+      "number": 7,
+      "track_code": null,
+      "course_ids": [
+        "5383a615-7e4c-4353-9604-324b7beaf0a7",
+        "66865fa4-c17d-4915-b7c1-5be20852c56a",
+        "59b69393-9ce3-445d-9bdf-89b3bfd8740d",
+        "2e6e5a99-60fe-47c6-905f-c647b0bc13b4",
+        "f3aff5ec-e7ba-4527-958c-1711af1f1772"
+      ]
+    },
+    {
+      "number": 8,
+      "track_code": null,
+      "course_ids": [
+        "51a1c3fe-a40f-4ade-9f14-b5919f8d718d",
+        "caca4612-f0fd-419b-9e49-51708d3864ad",
+        "c23aef84-1ab7-437b-9199-93d1a5198b72",
+        "2eb6cd6c-5a32-4afe-aeba-c1098fd80641",
+        "3e3c0b1b-2341-4844-8ffa-b9072815095e",
+        "68cf14e2-8db0-4418-a508-6897d2ff546b"
+      ]
+    },
+    {
+      "number": 9,
+      "track_code": null,
+      "course_ids": [
+        "753450ab-4edd-4ee7-9664-6b04966be6e7",
+        "4fef0746-e889-4057-9987-1a3575bc8c45",
+        "cef639c1-ea93-4094-983b-09d535d9132d"
+      ]
+    },
+    {
+      "number": 10,
+      "track_code": null,
+      "course_ids": [
+        "351929fb-6c7c-406a-941b-1c3bf705c0ac",
+        "6d727307-93f5-4236-a0d4-1bc1800019f8"
+      ]
+    },
+    {
+      "number": 11,
+      "track_code": null,
+      "course_ids": [
+        "9f30041b-9b2b-4742-b0ed-3dc3636aa6a2",
+        "81e26ff7-ffd0-4edd-9837-58011814a0a0"
+      ]
+    },
+    {
+      "number": 12,
+      "track_code": null,
+      "course_ids": [
+        "47388cb6-1f72-4786-b555-76539f9c3ec4",
+        "f2670529-1a91-4563-89ca-9b02066d1ab5",
+        "ce868a63-c560-4e94-b254-31b3ae67db70",
+        "d0b2f0ba-0e82-4034-99f5-64dd6c22b1c6"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "id": "0c7e3c11-3d51-41a8-848e-0748b21cf0a1",
+      "legacy_id": 1,
+      "code": "BIOL132",
+      "name": "Biología Celular",
+      "credits": 12,
+      "period_number": 1,
+      "sort_order": 0,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "bc19a4c8-58bf-4037-a8b6-7ef603ccb5bd",
+      "legacy_id": 2,
+      "code": "CEGHC11",
+      "name": "Habilidades Comunicativas",
+      "credits": 8,
+      "period_number": 1,
+      "sort_order": 1,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "9689e210-c80b-4374-804c-e3a9ad5a0948",
+      "legacy_id": 3,
+      "code": "MAT007",
+      "name": "Razonamiento Matemático Aplicado a la Medicina",
+      "credits": 8,
+      "period_number": 1,
+      "sort_order": 2,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "0b0cb7c7-739d-4792-87dc-4b06b0590c11",
+      "legacy_id": 4,
+      "code": "MEDI001",
+      "name": "Fundamentos de la Medicina I",
+      "credits": 12,
+      "period_number": 1,
+      "sort_order": 3,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "c03a7e30-7a3f-4123-8039-a21308ba3f99",
+      "legacy_id": 5,
+      "code": "MORF335",
+      "name": "Bases Morfológicas y Estructurales I",
+      "credits": 16,
+      "period_number": 1,
+      "sort_order": 4,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "7ee621ab-a453-42cf-9d14-648f4171d4e9",
+      "legacy_id": 6,
+      "code": "QUIM500",
+      "name": "Química General y Orgánica",
+      "credits": 11,
+      "period_number": 1,
+      "sort_order": 5,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "361b3d3f-b73c-43ae-837b-44868289282d",
+      "legacy_id": 7,
+      "code": "BIOL148",
+      "name": "Genética y Biología Molecular Humana",
+      "credits": 15,
+      "period_number": 2,
+      "sort_order": 6,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "0c7e3c11-3d51-41a8-848e-0748b21cf0a1"
+      },
+      "prereq_raw": "BIOL132 o (BIO130 y BIO131)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "8b7c4e46-bcab-4ab0-a866-c095e896695e",
+      "legacy_id": 8,
+      "code": "CFIS350",
+      "name": "Física Aplicada a la Medicina",
+      "credits": 7,
+      "period_number": 2,
+      "sort_order": 7,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "9689e210-c80b-4374-804c-e3a9ad5a0948"
+      },
+      "prereq_raw": "MAT007 o FMM007",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "b6e9443c-11e6-40de-807c-493d0d659d6c",
+      "legacy_id": 9,
+      "code": "MEDI002",
+      "name": "Fundamentos de la Medicina II",
+      "credits": 13,
+      "period_number": 2,
+      "sort_order": 8,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "0b0cb7c7-739d-4792-87dc-4b06b0590c11"
+      },
+      "prereq_raw": "MEDI001 o MED016",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "44d992f5-867a-482a-ae4a-2882bb8f8abe",
+      "legacy_id": 10,
+      "code": "MORF336",
+      "name": "Bases Morfológicas y Estructurales II",
+      "credits": 18,
+      "period_number": 2,
+      "sort_order": 9,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "c03a7e30-7a3f-4123-8039-a21308ba3f99"
+      },
+      "prereq_raw": "MORF335 o (MOR330 y MOR331 y BIO320 y BIO321)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "f6b05a87-57e6-4b31-aa35-261cecc4486d",
+      "legacy_id": 11,
+      "code": "SPAB305",
+      "name": "Bioestadística",
+      "credits": 14,
+      "period_number": 2,
+      "sort_order": 10,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "9689e210-c80b-4374-804c-e3a9ad5a0948"
+      },
+      "prereq_raw": "MAT007 o FMM007",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "4a06a741-ecec-4137-951d-550f77aed2d5",
+      "legacy_id": 12,
+      "code": "BIOL259",
+      "name": "Microbiología y Parasitología",
+      "credits": 13,
+      "period_number": 3,
+      "sort_order": 11,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "0c7e3c11-3d51-41a8-848e-0748b21cf0a1"
+      },
+      "prereq_raw": "BIOL132 o (BIO130 y BIO131)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "041f1423-8e72-4d11-b435-4146c47768d5",
+      "legacy_id": 13,
+      "code": "BIOL276",
+      "name": "Bases Funcionales I",
+      "credits": 19,
+      "period_number": 3,
+      "sort_order": 12,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "361b3d3f-b73c-43ae-837b-44868289282d"
+          },
+          {
+            "course": "7ee621ab-a453-42cf-9d14-648f4171d4e9"
+          },
+          {
+            "course": "8b7c4e46-bcab-4ab0-a866-c095e896695e"
+          }
+        ]
+      },
+      "prereq_raw": "(BIOL148 o (BIO148 y BIO242)) y (QUIM500 o (QUI109 y QUI024)) y (CFIS350 o FMF019)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "987dd79a-aa96-498d-8984-bd01ffdc9612",
+      "legacy_id": 14,
+      "code": "ING119",
+      "name": "Inglés I",
+      "credits": 12,
+      "period_number": 3,
+      "sort_order": 13,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "e93a3063-06ea-4ee1-8483-450ad521a402",
+      "legacy_id": 15,
+      "code": "MEDI003",
+      "name": "Psicología Médica",
+      "credits": 10,
+      "period_number": 3,
+      "sort_order": 14,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "b6e9443c-11e6-40de-807c-493d0d659d6c"
+      },
+      "prereq_raw": "MEDI002 o (MED017 o MED121 o MED122)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "a0fd8c66-3f78-4176-8365-f018a29657a3",
+      "legacy_id": 16,
+      "code": "SPAB306",
+      "name": "Epidemiología",
+      "credits": 10,
+      "period_number": 3,
+      "sort_order": 15,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "f6b05a87-57e6-4b31-aa35-261cecc4486d"
+      },
+      "prereq_raw": "SPAB305 o MED293",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "c1d8d0c0-b978-48d8-b213-8b5010a3b02f",
+      "legacy_id": 17,
+      "code": "BIOL376",
+      "name": "Bases Funcionales II",
+      "credits": 20,
+      "period_number": 4,
+      "sort_order": 16,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "041f1423-8e72-4d11-b435-4146c47768d5"
+      },
+      "prereq_raw": "BIOL276 o (BIO376 y BIO266)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "16e54658-7cb4-4ad1-b04d-7baed78aaa9b",
+      "legacy_id": 18,
+      "code": "ING129",
+      "name": "Inglés II",
+      "credits": 12,
+      "period_number": 4,
+      "sort_order": 17,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "987dd79a-aa96-498d-8984-bd01ffdc9612"
+      },
+      "prereq_raw": "ING119 o ING111 o ING110 o ING116 o ING117 o CNT021 o (ING050 y ING051) o (FLG301 y FLG302) o (BMA281 y BMA282) o (ETU081 y ETU082)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "d186d7c9-ff00-4e0f-b4ff-c32380940498",
+      "legacy_id": 19,
+      "code": "MEDI004",
+      "name": "Medicina Familiar y Comunitaria",
+      "credits": 12,
+      "period_number": 4,
+      "sort_order": 18,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "b6e9443c-11e6-40de-807c-493d0d659d6c"
+          },
+          {
+            "course": "e93a3063-06ea-4ee1-8483-450ad521a402"
+          }
+        ]
+      },
+      "prereq_raw": "(MEDI002 o (MED017 o MED121 o MED122)) y (MEDI003 o MED131)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "49e4e041-45fa-475a-b547-25265df74471",
+      "legacy_id": 20,
+      "code": "MEDI005",
+      "name": "Medicina y Sociedad",
+      "credits": 11,
+      "period_number": 4,
+      "sort_order": 19,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "b6e9443c-11e6-40de-807c-493d0d659d6c"
+      },
+      "prereq_raw": "MEDI002 o (MED017 o MED121 o MED122)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "643ab0fd-2094-44ad-9328-6ad050b7a347",
+      "legacy_id": 21,
+      "code": "SPAB307",
+      "name": "Salud Pública",
+      "credits": 12,
+      "period_number": 4,
+      "sort_order": 20,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "a0fd8c66-3f78-4176-8365-f018a29657a3"
+      },
+      "prereq_raw": "SPAB306 o MED293",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "b9dfb8c4-d2f8-46f9-bfc5-7f4505a5f7c8",
+      "legacy_id": 22,
+      "code": "FARM131",
+      "name": "Farmacología",
+      "credits": 14,
+      "period_number": 5,
+      "sort_order": 21,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "c1d8d0c0-b978-48d8-b213-8b5010a3b02f"
+      },
+      "prereq_raw": "BIOL376 o (MED294 y BIO377)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "0e16b31b-5ad6-4a4b-aa7d-05dd7b1d1dd6",
+      "legacy_id": 23,
+      "code": "ING239",
+      "name": "Inglés III",
+      "credits": 12,
+      "period_number": 5,
+      "sort_order": 22,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "16e54658-7cb4-4ad1-b04d-7baed78aaa9b"
+      },
+      "prereq_raw": "ING129 o ING121 o ING120 o ING216 o ING126 o ING134 o ING127 o CNT026 o (ETU181 y ETU182) o ING229",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "a8894a8e-c106-4e14-ba19-6a3a759d8fb7",
+      "legacy_id": 24,
+      "code": "MEDI006",
+      "name": "Semiología",
+      "credits": 16,
+      "period_number": 5,
+      "sort_order": 23,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "b6e9443c-11e6-40de-807c-493d0d659d6c"
+          },
+          {
+            "course": "c1d8d0c0-b978-48d8-b213-8b5010a3b02f"
+          }
+        ]
+      },
+      "prereq_raw": "MEDI002 o (MED017 o MED121 o MED122) y BIOL376",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "da6600c5-fa02-47ce-a491-ff84e3d7d144",
+      "legacy_id": 25,
+      "code": "MEDI007",
+      "name": "Bases Funcionales III",
+      "credits": 18,
+      "period_number": 5,
+      "sort_order": 24,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "c1d8d0c0-b978-48d8-b213-8b5010a3b02f"
+      },
+      "prereq_raw": "BIOL376 o (MED294 y BIO377)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "6efb1c65-87ba-4d82-b5ca-fb9fb4a7352b",
+      "legacy_id": 26,
+      "code": "MEDI0100",
+      "name": "Integrador I",
+      "credits": 5,
+      "period_number": 5,
+      "sort_order": 25,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "b6e9443c-11e6-40de-807c-493d0d659d6c"
+          },
+          {
+            "course": "e93a3063-06ea-4ee1-8483-450ad521a402"
+          },
+          {
+            "course": "d186d7c9-ff00-4e0f-b4ff-c32380940498"
+          },
+          {
+            "course": "4a06a741-ecec-4137-951d-550f77aed2d5"
+          },
+          {
+            "course": "49e4e041-45fa-475a-b547-25265df74471"
+          },
+          {
+            "course": "c1d8d0c0-b978-48d8-b213-8b5010a3b02f"
+          },
+          {
+            "course": "44d992f5-867a-482a-ae4a-2882bb8f8abe"
+          },
+          {
+            "course": "643ab0fd-2094-44ad-9328-6ad050b7a347"
+          }
+        ]
+      },
+      "prereq_raw": "(MEDI002 o (MED017 o MED121 o MED122)) y (MEDI003 o MED131) y (MEDI004 o MED292) y (BIOL259 o (BIO250 y BIO251)) y (MEDI005 o (MED131 o HUF124)) y (BIOL376 o (MED294 y BIO377)) y (MORF336 o (MOR332 y MOR333)) y (SPAB307 o MED292)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "23325c11-ec80-4315-9535-ffa19ddb2b34",
+      "legacy_id": 27,
+      "code": "ING249",
+      "name": "Inglés IV",
+      "credits": 12,
+      "period_number": 6,
+      "sort_order": 26,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "0e16b31b-5ad6-4a4b-aa7d-05dd7b1d1dd6"
+      },
+      "prereq_raw": "ING239 o ING210 o ING216 o ING224 o ING126 o CNT126 o (ETU281 y ETU282) o ING217",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "00ec5314-69dd-4125-b612-d845bc21480a",
+      "legacy_id": 28,
+      "code": "MEDI008",
+      "name": "Ética Médica",
+      "credits": 8,
+      "period_number": 6,
+      "sort_order": 27,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "b6e9443c-11e6-40de-807c-493d0d659d6c"
+      },
+      "prereq_raw": "MEDI002 o (MED017 o MED121 o MED122)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "91dc8743-1a7e-4194-8e45-eef45d145060",
+      "legacy_id": 29,
+      "code": "MEDI009",
+      "name": "Clínica Médico Quirúrgica I",
+      "credits": 20,
+      "period_number": 6,
+      "sort_order": 28,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "da6600c5-fa02-47ce-a491-ff84e3d7d144"
+      },
+      "prereq_raw": "MEDI007 o (MED260 y MED295 y MED257)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "2a3abf07-7216-42fd-8ea8-b2948a5eba9c",
+      "legacy_id": 30,
+      "code": "MEDI010",
+      "name": "Neurología",
+      "credits": 9,
+      "period_number": 6,
+      "sort_order": 29,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "da6600c5-fa02-47ce-a491-ff84e3d7d144"
+      },
+      "prereq_raw": "MEDI007 o (MED260 y MED295 y MED257)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "6bc669e0-8344-49cd-8f07-da27726a4708",
+      "legacy_id": 31,
+      "code": "MEDI011",
+      "name": "Métodos de Investigación",
+      "credits": 8,
+      "period_number": 6,
+      "sort_order": 30,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "f6b05a87-57e6-4b31-aa35-261cecc4486d"
+      },
+      "prereq_raw": "SPAB305 o MED293",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "c82d7e1c-2371-4439-9d6d-2f1ba3b30bab",
+      "legacy_id": 32,
+      "code": "SPAB308",
+      "name": "Gestión en Salud",
+      "credits": 8,
+      "period_number": 6,
+      "sort_order": 31,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "643ab0fd-2094-44ad-9328-6ad050b7a347"
+          },
+          {
+            "course": "b9dfb8c4-d2f8-46f9-bfc5-7f4505a5f7c8"
+          }
+        ]
+      },
+      "prereq_raw": "(SPAB307 o MED292) y (FARM131 o BIO288)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "5383a615-7e4c-4353-9604-324b7beaf0a7",
+      "legacy_id": 33,
+      "code": "MEDI012",
+      "name": "Clínica Médico Quirúrgica II",
+      "credits": 39,
+      "period_number": 7,
+      "sort_order": 32,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "91dc8743-1a7e-4194-8e45-eef45d145060"
+      },
+      "prereq_raw": "MEDI009 o (MED257 y MED249)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "66865fa4-c17d-4915-b7c1-5be20852c56a",
+      "legacy_id": 34,
+      "code": "MEDI013",
+      "name": "Dermatología",
+      "credits": 18,
+      "period_number": 7,
+      "sort_order": 33,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "91dc8743-1a7e-4194-8e45-eef45d145060"
+      },
+      "prereq_raw": "MEDI009 o (MED257 y MED249)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "59b69393-9ce3-445d-9bdf-89b3bfd8740d",
+      "legacy_id": 35,
+      "code": "MEDI014",
+      "name": "Otorrinolaringología",
+      "credits": 18,
+      "period_number": 7,
+      "sort_order": 34,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "91dc8743-1a7e-4194-8e45-eef45d145060"
+      },
+      "prereq_raw": "MEDI009 o (MED257 y MED249)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "2e6e5a99-60fe-47c6-905f-c647b0bc13b4",
+      "legacy_id": 36,
+      "code": "MEDI015",
+      "name": "Psiquiatría",
+      "credits": 13,
+      "period_number": 7,
+      "sort_order": 35,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "e93a3063-06ea-4ee1-8483-450ad521a402"
+      },
+      "prereq_raw": "MEDI003 o MED131",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "f3aff5ec-e7ba-4527-958c-1711af1f1772",
+      "legacy_id": 37,
+      "code": "MEDI016",
+      "name": "Medicina Basada en la Evidencia",
+      "credits": 9,
+      "period_number": 7,
+      "sort_order": 36,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "6bc669e0-8344-49cd-8f07-da27726a4708"
+      },
+      "prereq_raw": "MEDI011 o (MED278 y MED279)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "51a1c3fe-a40f-4ade-9f14-b5919f8d718d",
+      "legacy_id": 38,
+      "code": "CEGPC13",
+      "name": "Pensamiento Crítico",
+      "credits": 5,
+      "period_number": 8,
+      "sort_order": 37,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "caca4612-f0fd-419b-9e49-51708d3864ad",
+      "legacy_id": 39,
+      "code": "MEDI017",
+      "name": "Clínica Médico Quirúrgica III",
+      "credits": 41,
+      "period_number": 8,
+      "sort_order": 38,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "5383a615-7e4c-4353-9604-324b7beaf0a7"
+      },
+      "prereq_raw": "MEDI012 o (MED296 y MED287 y MED257)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "c23aef84-1ab7-437b-9199-93d1a5198b72",
+      "legacy_id": 40,
+      "code": "MEDI018",
+      "name": "Traumatología y Ortopedia",
+      "credits": 16,
+      "period_number": 8,
+      "sort_order": 39,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "5383a615-7e4c-4353-9604-324b7beaf0a7"
+      },
+      "prereq_raw": "MEDI012 o (MED296 y MED287 y MED257)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "2eb6cd6c-5a32-4afe-aeba-c1098fd80641",
+      "legacy_id": 41,
+      "code": "MEDI019",
+      "name": "Oftalmología",
+      "credits": 20,
+      "period_number": 8,
+      "sort_order": 40,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "5383a615-7e4c-4353-9604-324b7beaf0a7"
+      },
+      "prereq_raw": "MEDI012 o (MED296 y MED287 y MED257)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "3e3c0b1b-2341-4844-8ffa-b9072815095e",
+      "legacy_id": 42,
+      "code": "MEDI020",
+      "name": "Urología",
+      "credits": 20,
+      "period_number": 8,
+      "sort_order": 41,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "5383a615-7e4c-4353-9604-324b7beaf0a7"
+      },
+      "prereq_raw": "MEDI012 o (MED296 y MED287 y MED257)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "68cf14e2-8db0-4418-a508-6897d2ff546b",
+      "legacy_id": 43,
+      "code": "MEDI021",
+      "name": "Medicina Legal y Forense",
+      "credits": 19,
+      "period_number": 8,
+      "sort_order": 42,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "5383a615-7e4c-4353-9604-324b7beaf0a7"
+      },
+      "prereq_raw": "MEDI012 o (MED296 y MED287 y MED257)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "753450ab-4edd-4ee7-9664-6b04966be6e7",
+      "legacy_id": 44,
+      "code": "MEDI0200",
+      "name": "Integrador II",
+      "credits": 8,
+      "period_number": 9,
+      "sort_order": 43,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "00ec5314-69dd-4125-b612-d845bc21480a"
+          },
+          {
+            "course": "91dc8743-1a7e-4194-8e45-eef45d145060"
+          },
+          {
+            "course": "2a3abf07-7216-42fd-8ea8-b2948a5eba9c"
+          },
+          {
+            "course": "5383a615-7e4c-4353-9604-324b7beaf0a7"
+          },
+          {
+            "course": "2e6e5a99-60fe-47c6-905f-c647b0bc13b4"
+          },
+          {
+            "course": "caca4612-f0fd-419b-9e49-51708d3864ad"
+          },
+          {
+            "course": "c23aef84-1ab7-437b-9199-93d1a5198b72"
+          },
+          {
+            "course": "c82d7e1c-2371-4439-9d6d-2f1ba3b30bab"
+          },
+          {
+            "course": "f3aff5ec-e7ba-4527-958c-1711af1f1772"
+          }
+        ]
+      },
+      "prereq_raw": "(MEDI008 o (MED258 y MED259)) y (MEDI009 o (MED257 y MED249)) y (MEDI010 o MED244) y (MEDI012 o (MED296 y MED287 y MED257)) y (MEDI015 o MED245) y (MEDI017 o (MED296 o MED287 o MED257)) y (MEDI018 o MED296) y SPAB308 y MEDI016",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "4fef0746-e889-4057-9987-1a3575bc8c45",
+      "legacy_id": 45,
+      "code": "MEDI022",
+      "name": "Pediatría y Cirugía Infantil",
+      "credits": 32,
+      "period_number": 9,
+      "sort_order": 44,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "caca4612-f0fd-419b-9e49-51708d3864ad"
+      },
+      "prereq_raw": "MEDI017 o (MED296 o MED287 o MED257)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "cef639c1-ea93-4094-983b-09d535d9132d",
+      "legacy_id": 46,
+      "code": "MEDI023",
+      "name": "Obstetricia y Ginecología",
+      "credits": 27,
+      "period_number": 9,
+      "sort_order": 45,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "caca4612-f0fd-419b-9e49-51708d3864ad"
+      },
+      "prereq_raw": "MEDI017 o (MED296 o MED287 o MED257)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "351929fb-6c7c-406a-941b-1c3bf705c0ac",
+      "legacy_id": 47,
+      "code": "MEDI024",
+      "name": "Internado de Pediatría",
+      "credits": 58,
+      "period_number": 10,
+      "sort_order": 46,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "4fef0746-e889-4057-9987-1a3575bc8c45"
+      },
+      "prereq_raw": "MEDI022 o MED297",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "6d727307-93f5-4236-a0d4-1bc1800019f8",
+      "legacy_id": 48,
+      "code": "MEDI025",
+      "name": "Internado de Obstetricia y Ginecología",
+      "credits": 58,
+      "period_number": 10,
+      "sort_order": 47,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "cef639c1-ea93-4094-983b-09d535d9132d"
+      },
+      "prereq_raw": "MEDI023 o MED298",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "9f30041b-9b2b-4742-b0ed-3dc3636aa6a2",
+      "legacy_id": 49,
+      "code": "MEDI026",
+      "name": "Internado de Cirugía",
+      "credits": 58,
+      "period_number": 11,
+      "sort_order": 48,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "81e26ff7-ffd0-4edd-9837-58011814a0a0",
+      "legacy_id": 50,
+      "code": "MEDI027",
+      "name": "Internado de Medicina Interna",
+      "credits": 58,
+      "period_number": 11,
+      "sort_order": 49,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "47388cb6-1f72-4786-b555-76539f9c3ec4",
+      "legacy_id": 51,
+      "code": "MEDI028",
+      "name": "Internado de Medicina Rural y Comunitaria",
+      "credits": 47,
+      "period_number": 12,
+      "sort_order": 50,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "f2670529-1a91-4563-89ca-9b02066d1ab5",
+      "legacy_id": 52,
+      "code": "MEDI029",
+      "name": "Internado Psiquiatría",
+      "credits": 32,
+      "period_number": 12,
+      "sort_order": 51,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "ce868a63-c560-4e94-b254-31b3ae67db70",
+      "legacy_id": 53,
+      "code": "MEDI030",
+      "name": "Internado Electivo",
+      "credits": 43,
+      "period_number": 12,
+      "sort_order": 52,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "d0b2f0ba-0e82-4034-99f5-64dd6c22b1c6",
+      "legacy_id": 54,
+      "code": "MEDI0300",
+      "name": "Integrador III",
+      "credits": 5,
+      "period_number": 12,
+      "sort_order": 53,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "d186d7c9-ff00-4e0f-b4ff-c32380940498"
+          },
+          {
+            "course": "da6600c5-fa02-47ce-a491-ff84e3d7d144"
+          },
+          {
+            "course": "a0fd8c66-3f78-4176-8365-f018a29657a3"
+          },
+          {
+            "course": "643ab0fd-2094-44ad-9328-6ad050b7a347"
+          },
+          {
+            "course": "351929fb-6c7c-406a-941b-1c3bf705c0ac"
+          },
+          {
+            "course": "6d727307-93f5-4236-a0d4-1bc1800019f8"
+          },
+          {
+            "course": "9f30041b-9b2b-4742-b0ed-3dc3636aa6a2"
+          },
+          {
+            "course": "81e26ff7-ffd0-4edd-9837-58011814a0a0"
+          }
+        ]
+      },
+      "prereq_raw": "(MEDI004 o MED292) y (MEDI007 o (MED260 y MED295 y MED257)) y (SPAB306 o MED293) y (SPAB307 o MED292) y (MEDI024 o MED374) y (MEDI025 o MED376) y (MEDI026 o MED375) y (MEDI027 o MED377)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    }
+  ],
+  "aliases": {}
+}

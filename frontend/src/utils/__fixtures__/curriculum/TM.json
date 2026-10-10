@@ -1,0 +1,4186 @@
+{
+  "program": {
+    "id": "ed223eed-537a-45de-9ab3-be78ee5b9141",
+    "slug": "tecnologia-medica",
+    "name": "Tecnología Médica",
+    "official_name": "Tecnología médica (UNAB)",
+    "official_code": "UNAB19600",
+    "career_key": "unab-tm",
+    "legacy_url": "/mallas/TM.json"
+  },
+  "university": {
+    "id": "baa60218-0377-4052-bddd-a92786b37188",
+    "slug": "unab",
+    "name": "Universidad Andrés Bello",
+    "short_name": "UNAB",
+    "country": "CL"
+  },
+  "version": {
+    "id": "760f3687-2347-4a38-9723-13d45c2ab586",
+    "label": "legacy",
+    "period_regime": "semestral",
+    "credit_system": "SCT",
+    "total_periods": 10,
+    "total_credits": null,
+    "status": "published",
+    "is_current": true,
+    "source_type": "legacy_json",
+    "source_url": "/mallas/TM.json",
+    "source_note": "Imported from frontend/public/mallas/TM.json",
+    "reviewed_at": null
+  },
+  "tracks": [
+    {
+      "code": "BACIMET",
+      "slug": "bacimet",
+      "name": "BACIMET",
+      "total_credits": 628
+    },
+    {
+      "code": "IFIME",
+      "slug": "ifime",
+      "name": "IFIME",
+      "total_credits": 633
+    },
+    {
+      "code": "MORFO",
+      "slug": "morfo",
+      "name": "MORFO",
+      "total_credits": 641
+    },
+    {
+      "code": "OFTA",
+      "slug": "ofta",
+      "name": "OFTA",
+      "total_credits": 641
+    },
+    {
+      "code": "OTORRINO",
+      "slug": "otorrino",
+      "name": "OTO",
+      "total_credits": 637
+    }
+  ],
+  "periods": [
+    {
+      "number": 1,
+      "track_code": null,
+      "course_ids": [
+        "136d759a-e88f-468c-ad4b-0ed3f52db945",
+        "93615da2-9a60-4a8e-b200-b32625eea28a",
+        "afcdeee4-910b-4f41-83f1-767318d39df3",
+        "78063448-5447-414f-8ab9-7b5b107d3684",
+        "97e043a7-faeb-44d7-8f1b-93edeeb27e87",
+        "41cd948d-fe05-4cf6-b982-ef09c7eea084"
+      ]
+    },
+    {
+      "number": 2,
+      "track_code": null,
+      "course_ids": [
+        "837c084b-1514-4b1e-b4f1-d5589c62ca32",
+        "093472f9-0dd5-4cbe-9b26-2d9c30951004",
+        "d1cb345d-5925-4225-85d6-b3312f4c3ed1",
+        "589f5382-473c-4b7d-8005-16ce6fc964c2",
+        "cb693b16-3237-441a-b500-27925b14980c"
+      ]
+    },
+    {
+      "number": 3,
+      "track_code": null,
+      "course_ids": [
+        "4f548467-5458-4e64-94a1-08b407027756",
+        "e302db47-9c95-4e3c-9be7-a78557099878",
+        "08954965-f5f7-4bc1-acf9-96d912ed1012",
+        "52b11ce0-1b5f-473d-a6a0-6aefb3d52db9",
+        "8764438f-406f-47f9-b5c2-e7194623a80e",
+        "f0167a78-a221-4f09-911e-72ee2878e2b3"
+      ]
+    },
+    {
+      "number": 4,
+      "track_code": "BACIMET",
+      "course_ids": [
+        "84e81bcc-6147-4ced-9780-6903a6ce21bf",
+        "f0a8a2a6-3f20-440f-8a94-60e9e4c328e3",
+        "d792dc00-047f-4a51-b37e-2b614de5a792",
+        "72a914f2-b42c-4620-93e7-74f141b9f742",
+        "b1fc56c4-17c5-4e20-924a-b2b951e995b3"
+      ]
+    },
+    {
+      "number": 5,
+      "track_code": "BACIMET",
+      "course_ids": [
+        "7a99e1b6-8a15-4d71-b0fb-c75b19a49055",
+        "484b3562-8a03-429e-a563-535531d5fb86",
+        "2176f0ed-de3b-4001-bae1-ea54824c7427",
+        "81c9e16e-f57a-4cd5-b714-d4d07a172493",
+        "344ec31d-7beb-4841-9a88-4790e554c377"
+      ]
+    },
+    {
+      "number": 6,
+      "track_code": "BACIMET",
+      "course_ids": [
+        "91f6bb6b-7338-4c92-810d-f65384e76327",
+        "3c51fd6b-caad-41b4-bac4-edcdd7e4339e",
+        "d6e96d70-b5e0-4e92-a2a5-f6e286fbaeca",
+        "7920243e-0b64-4f81-9214-46941561d5e1"
+      ]
+    },
+    {
+      "number": 7,
+      "track_code": "BACIMET",
+      "course_ids": [
+        "fef1d86d-6c97-4319-abcc-80392389688f",
+        "65d7e8fc-81c2-4893-9662-4815f2a0bd32",
+        "c11d2e29-33bf-4a62-a70a-a1975ec1ec3a",
+        "fbd2b627-88a5-4bd6-83ae-0f5f07a67b20",
+        "cc272cab-651b-4aa5-9593-c244e023ff6a",
+        "fc6aaf0f-02bf-45f6-ac17-f47a45fa0e73"
+      ]
+    },
+    {
+      "number": 8,
+      "track_code": "BACIMET",
+      "course_ids": [
+        "d05824e2-e1c6-4f93-bc8a-00de6d2983c1",
+        "b38807d1-aa5b-44c9-85d7-358514e41b42",
+        "a6c258d9-a80a-44ca-a067-464fc5431f7e",
+        "a5d56f48-869e-47c8-815c-16693cbd6307",
+        "10058a0e-ed29-4ea7-bd2b-58fc56191844"
+      ]
+    },
+    {
+      "number": 9,
+      "track_code": "BACIMET",
+      "course_ids": [
+        "ee370f36-a447-4449-99fe-b452fb9158ae",
+        "986d7a9f-43d0-4080-bd7e-ec352fb49418"
+      ]
+    },
+    {
+      "number": 10,
+      "track_code": "BACIMET",
+      "course_ids": [
+        "9472fcc5-bcd9-4e06-a796-dae98b681250"
+      ]
+    },
+    {
+      "number": 4,
+      "track_code": "IFIME",
+      "course_ids": [
+        "2b415602-e5df-4a70-a3d3-eab455207a37",
+        "614bb832-25e7-49ce-ac3d-16c658f25591",
+        "06be66c4-1f3f-47bf-9eb7-28067c6cc474",
+        "0ed0e455-141f-4686-ae80-dca8a9dd441d",
+        "bf46bcab-83a8-4433-b985-08b747a6d4c8",
+        "3ec244c9-32bd-438e-b783-39e7b524248a"
+      ]
+    },
+    {
+      "number": 5,
+      "track_code": "IFIME",
+      "course_ids": [
+        "79597571-e6fd-4846-abc7-9e1e7cf63dc1",
+        "78c9bdba-8f17-4192-87d3-30811e253627",
+        "328b0894-9ea1-4f78-b23b-83a1a6b81bbb",
+        "56edeb9a-a4a0-41ee-85f8-3771e1372179",
+        "9a036006-f4d2-43f3-a2b1-f86212194815",
+        "a0518649-fd12-402e-a36f-81fb1cf03f0a"
+      ]
+    },
+    {
+      "number": 6,
+      "track_code": "IFIME",
+      "course_ids": [
+        "fa4a93ef-00f3-43a7-a440-78785a13c04c",
+        "1277caea-9cba-4068-926b-61307c8dbe16",
+        "0010058c-18ee-4b6b-b931-54f9fd590c50",
+        "2c499134-31ec-4e6d-88cb-16c066dfa35f",
+        "8596e14f-419c-49e5-a86c-9cd1bbb3bdf2"
+      ]
+    },
+    {
+      "number": 7,
+      "track_code": "IFIME",
+      "course_ids": [
+        "db121c8d-ff56-4e6d-8f9a-09f17a6eb312",
+        "51dd8be6-a8b8-4cfa-9cce-2df52b357c13",
+        "029d4316-3bf4-4d61-9258-5a5643f673bc",
+        "fa392257-a9e1-4791-a154-3911c3b0806c",
+        "64beab84-134f-4a97-9aef-a4189dad51b1",
+        "5a89cb45-c028-4d5f-b07d-8b51227a3241"
+      ]
+    },
+    {
+      "number": 8,
+      "track_code": "IFIME",
+      "course_ids": [
+        "9bfcca22-2331-4b0a-8b80-10f19f7ab6e4",
+        "e8be543d-73d1-4ff8-9325-7b3f20c60c66",
+        "3dabeef3-d190-49d1-82fd-e046c0d02578",
+        "41151a3d-9aed-48c1-a855-f748fe9ed7d0",
+        "fde07529-ad56-4ebd-a01e-cfd6343b17c8"
+      ]
+    },
+    {
+      "number": 9,
+      "track_code": "IFIME",
+      "course_ids": [
+        "2f91e270-1f2f-4689-ae90-485284e39572",
+        "4eee4e35-8484-4106-b2d8-50a2f378b09f"
+      ]
+    },
+    {
+      "number": 10,
+      "track_code": "IFIME",
+      "course_ids": [
+        "af3f3df8-9dcc-4b56-a9de-ab13bf65f85a"
+      ]
+    },
+    {
+      "number": 4,
+      "track_code": "MORFO",
+      "course_ids": [
+        "ec0604a8-e9d2-40c0-8b8c-f78cf02fd05f",
+        "baba623c-594a-48a7-85bc-f97e18059afd",
+        "9e07511c-678f-42a4-8ef4-267e9e34a21e",
+        "a63eae52-3bc8-4af9-a239-6f8b0eb71ea9",
+        "06aaf589-d940-4c12-b50a-ab95f39760a8"
+      ]
+    },
+    {
+      "number": 5,
+      "track_code": "MORFO",
+      "course_ids": [
+        "9a3b40d8-1245-42b1-91ba-9a2db43ca611",
+        "dff019e3-2892-4c9b-be11-c716fbcb7372",
+        "78ef0f1b-069d-41d0-9cca-87a96dc719d6",
+        "d7f6b7b9-e84b-4218-9f9e-28825b02a53c",
+        "912f06e2-8a8c-43e0-be05-be8af11da8b0"
+      ]
+    },
+    {
+      "number": 6,
+      "track_code": "MORFO",
+      "course_ids": [
+        "c191c714-e460-4b66-a975-ee0a8fdc8c80",
+        "2ea6cd93-2636-45aa-b2cd-0b1bf5fdd293",
+        "c0b23247-7022-4821-a55d-2a6b11e502b5",
+        "36abddd6-11eb-410a-98d2-461182f05429",
+        "87f78376-d4c7-427f-8ff7-4e1d5ca54ee4"
+      ]
+    },
+    {
+      "number": 7,
+      "track_code": "MORFO",
+      "course_ids": [
+        "d436712d-fe93-43b1-a8e1-e310e912aa6c",
+        "8ad01e01-49eb-4a62-89c5-0f691d6a4a89",
+        "dca83fe3-5306-437d-90ec-80264b3d4f3f",
+        "2108b51e-d3b9-41f9-abcd-45f1732dccbf",
+        "69183d5f-2352-4e21-8cbf-f4cfceca9a2b",
+        "36e1a813-8040-4211-8fd4-de16420272ee"
+      ]
+    },
+    {
+      "number": 8,
+      "track_code": "MORFO",
+      "course_ids": [
+        "3b422c4b-6479-4988-9fce-a34e25e7ccdd",
+        "08af8713-1f5a-402d-85b3-967ed6f7d8c1",
+        "5238c53e-0ce0-47e0-bdc3-a773362598b1",
+        "38e72e30-74c9-418d-8aa5-d66198baa42d",
+        "83ebd7d2-3652-4181-8ba6-4db315563d27"
+      ]
+    },
+    {
+      "number": 9,
+      "track_code": "MORFO",
+      "course_ids": [
+        "871f90bf-78f7-45df-ac98-a4359c2896a8",
+        "6fee5048-71e0-4624-aab3-4fcb39a755cd"
+      ]
+    },
+    {
+      "number": 10,
+      "track_code": "MORFO",
+      "course_ids": [
+        "94fd6b28-86f8-4cd5-92fb-d0f286cd142b"
+      ]
+    },
+    {
+      "number": 4,
+      "track_code": "OFTA",
+      "course_ids": [
+        "7236eeca-6f9b-4d21-8122-189bec0c85ba",
+        "cf489c1c-64d5-4e87-b3cb-7de477fcd4bb",
+        "bd498754-87a2-4f36-b81a-c5ac22a39fa6",
+        "0f89a7c6-61e6-4b3f-9a46-7f9a521d8cb7",
+        "c5ef6e09-8895-438f-8eb3-05a3158b0d7d",
+        "f96be4b8-c152-4011-909a-d85de30e271e"
+      ]
+    },
+    {
+      "number": 5,
+      "track_code": "OFTA",
+      "course_ids": [
+        "aaa80f0a-a8df-41cf-adbb-a721ac31bc5a",
+        "b28b235e-f477-4008-b50a-3bf8373bbf3d",
+        "73893b41-3e28-408d-a3ef-4543f6bdafac",
+        "1403131f-3e06-4c42-8edd-8388350f9b0b",
+        "0a62bfb6-dbb9-4f01-bd24-503fbb10bcd9",
+        "7b7cb6ab-79a8-48a8-9ca8-88572c60d915"
+      ]
+    },
+    {
+      "number": 6,
+      "track_code": "OFTA",
+      "course_ids": [
+        "ebd84022-b4f8-447f-be7a-c8ada7207314",
+        "2f7bd722-d930-4a70-a4f1-211de259fde3",
+        "1950f99c-1aaa-4dc3-bd40-1800eea670bc",
+        "2a3b2ee7-3447-4025-8f8a-b3031f5d57d5"
+      ]
+    },
+    {
+      "number": 7,
+      "track_code": "OFTA",
+      "course_ids": [
+        "4fd64cf4-c19c-44ba-a62a-c5d58c0e5cf9",
+        "949b2799-f981-47f8-b096-c263036c471b",
+        "6c7b8887-a9b0-49ed-84c2-049883c5acaf",
+        "5a19b009-cbea-47a4-b70e-3b28b68cfa27",
+        "279d4113-8642-40d8-8968-740bcb6c0621",
+        "a2717b28-2237-4218-be29-82c4c37a9348",
+        "293b056e-adbf-4db5-896a-9c99f89a45b0"
+      ]
+    },
+    {
+      "number": 8,
+      "track_code": "OFTA",
+      "course_ids": [
+        "fe75cf2c-6cea-4132-881a-514965e0b278",
+        "a18f500d-af4a-47ed-850f-b2b440c9ac8c",
+        "713e96a0-c5e2-4fde-8e59-cbb47cf31b6a",
+        "55923d53-49d0-410c-b6ae-6b4ac588a420",
+        "19583913-ffe3-4139-9d06-444c544aae5b"
+      ]
+    },
+    {
+      "number": 9,
+      "track_code": "OFTA",
+      "course_ids": [
+        "92c5d150-222b-4da8-bf05-89a8bc97d185",
+        "e4f44daf-9422-4b47-a698-bee0816da4f3"
+      ]
+    },
+    {
+      "number": 10,
+      "track_code": "OFTA",
+      "course_ids": [
+        "1e4c141c-26d1-4768-87f1-b2b2b88fc757"
+      ]
+    },
+    {
+      "number": 4,
+      "track_code": "OTORRINO",
+      "course_ids": [
+        "e408752d-7756-4799-a93a-1584ea06f246",
+        "a02276b2-cd3b-4bb5-8021-9dfc297a77d6",
+        "bdf124c3-8191-4413-9580-245bd39dacce",
+        "c57a29d8-62de-496d-b527-43d4578da9a5",
+        "d990f9cc-8a8a-436b-b3fb-d6bf1efb2306",
+        "9c1336fe-6e2d-48d0-b408-6697b6f4a7c7"
+      ]
+    },
+    {
+      "number": 5,
+      "track_code": "OTORRINO",
+      "course_ids": [
+        "672f1c65-c0b6-4c24-883f-cd56c4474c61",
+        "e7d9765d-b34d-48f2-9160-56af7fb5bab7",
+        "a4668d72-7728-47a6-a263-fb06b99ade59",
+        "03e39b0c-740d-46dc-9e36-c799efdbb26a",
+        "de4139a3-e1a7-4b2d-89fd-f5c3e875d543",
+        "20d737a4-402b-4b76-b3d0-18d6618d922a"
+      ]
+    },
+    {
+      "number": 6,
+      "track_code": "OTORRINO",
+      "course_ids": [
+        "dd719b38-7d93-4c80-857a-487658b67de7",
+        "fbf23ffb-a149-4f75-8e9d-fb511ad3142c",
+        "25c7e725-518d-47cb-a58e-8a7d8aaabec3",
+        "15095d98-131b-45d2-b738-a58608191249"
+      ]
+    },
+    {
+      "number": 7,
+      "track_code": "OTORRINO",
+      "course_ids": [
+        "25dbe309-7b56-42d9-b453-bc6d89b7e6bc",
+        "67aae795-448b-474b-996c-19ed50c5e0dc",
+        "d13b4b77-db3c-48db-b58e-a5324f78856a",
+        "31d2fee2-34dd-47c3-ac41-91b8bde28234",
+        "c9071da1-5132-440b-9f0d-99293bf3a546"
+      ]
+    },
+    {
+      "number": 8,
+      "track_code": "OTORRINO",
+      "course_ids": [
+        "23581107-ed0a-4ce4-b3e9-2fadb7f01541",
+        "0f61e242-d9f2-4c79-b22e-00e7c3b1318c",
+        "df1f1d25-ab90-4574-947f-137449715c03",
+        "43fb2292-c8d4-4b52-b718-7555944759b1",
+        "ffb7f760-b26e-4882-b0b2-72b78f42b5e0"
+      ]
+    },
+    {
+      "number": 9,
+      "track_code": "OTORRINO",
+      "course_ids": [
+        "9c3e9e04-73d6-4fca-a965-6d64ed688dec",
+        "41dac4b6-9c00-405a-9180-6c823e0c3c96"
+      ]
+    },
+    {
+      "number": 10,
+      "track_code": "OTORRINO",
+      "course_ids": [
+        "656dd2b9-f609-4e13-a24c-a9d7dec95069"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "id": "136d759a-e88f-468c-ad4b-0ed3f52db945",
+      "legacy_id": 1,
+      "code": "BIOL035",
+      "name": "Laboratorio biología celular",
+      "credits": 6,
+      "period_number": 1,
+      "sort_order": 0,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "93615da2-9a60-4a8e-b200-b32625eea28a",
+      "legacy_id": 2,
+      "code": "BIOL130",
+      "name": "Biología celular",
+      "credits": 8,
+      "period_number": 1,
+      "sort_order": 1,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "afcdeee4-910b-4f41-83f1-767318d39df3",
+      "legacy_id": 3,
+      "code": "FMMP101",
+      "name": "Elementos de álgebra y cálculo",
+      "credits": 14,
+      "period_number": 1,
+      "sort_order": 2,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "78063448-5447-414f-8ab9-7b5b107d3684",
+      "legacy_id": 4,
+      "code": "MORF010",
+      "name": "Anatomía humana",
+      "credits": 12,
+      "period_number": 1,
+      "sort_order": 3,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "97e043a7-faeb-44d7-8f1b-93edeeb27e87",
+      "legacy_id": 5,
+      "code": "QUIM102",
+      "name": "Química general",
+      "credits": 16,
+      "period_number": 1,
+      "sort_order": 4,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "41cd948d-fe05-4cf6-b982-ef09c7eea084",
+      "legacy_id": 6,
+      "code": "TMED001",
+      "name": "Introducción a la tecnología médica",
+      "credits": 5,
+      "period_number": 1,
+      "sort_order": 5,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "837c084b-1514-4b1e-b4f1-d5589c62ca32",
+      "legacy_id": 7,
+      "code": "CEGHC11",
+      "name": "Habilidades comunicativas",
+      "credits": 8,
+      "period_number": 2,
+      "sort_order": 6,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "093472f9-0dd5-4cbe-9b26-2d9c30951004",
+      "legacy_id": 8,
+      "code": "CFIS020",
+      "name": "Física general",
+      "credits": 12,
+      "period_number": 2,
+      "sort_order": 7,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "afcdeee4-910b-4f41-83f1-767318d39df3"
+      },
+      "prereq_raw": "FMMP101 o (FMM032 y FMM134)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "d1cb345d-5925-4225-85d6-b3312f4c3ed1",
+      "legacy_id": 9,
+      "code": "ING119",
+      "name": "Inglés I",
+      "credits": 12,
+      "period_number": 2,
+      "sort_order": 8,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "589f5382-473c-4b7d-8005-16ce6fc964c2",
+      "legacy_id": 10,
+      "code": "MORF122",
+      "name": "Histoembriología",
+      "credits": 14,
+      "period_number": 2,
+      "sort_order": 9,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "78063448-5447-414f-8ab9-7b5b107d3684"
+          },
+          {
+            "course": "93615da2-9a60-4a8e-b200-b32625eea28a"
+          }
+        ]
+      },
+      "prereq_raw": "(MORF010 o (BIO010 y BIO013)) y (BIOL130 o BIO034)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "cb693b16-3237-441a-b500-27925b14980c",
+      "legacy_id": 11,
+      "code": "QUIM022",
+      "name": "Química orgánica",
+      "credits": 15,
+      "period_number": 2,
+      "sort_order": 10,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "97e043a7-faeb-44d7-8f1b-93edeeb27e87"
+      },
+      "prereq_raw": "QUIM102 o QUI102",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "4f548467-5458-4e64-94a1-08b407027756",
+      "legacy_id": 12,
+      "code": "BIOL166",
+      "name": "Bioquímica",
+      "credits": 8,
+      "period_number": 3,
+      "sort_order": 11,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "41cd948d-fe05-4cf6-b982-ef09c7eea084"
+          },
+          {
+            "course": "93615da2-9a60-4a8e-b200-b32625eea28a"
+          },
+          {
+            "course": "136d759a-e88f-468c-ad4b-0ed3f52db945"
+          },
+          {
+            "course": "cb693b16-3237-441a-b500-27925b14980c"
+          },
+          {
+            "course": "589f5382-473c-4b7d-8005-16ce6fc964c2"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED001 o TMD001) y (BIOL130 o BIO034) y (BIOL035 o BIO131) y QUIM022 y (MORF122 o (BIO122 y BIO125))",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "e302db47-9c95-4e3c-9be7-a78557099878",
+      "legacy_id": 13,
+      "code": "BIOL272",
+      "name": "Fisiología humana",
+      "credits": 11,
+      "period_number": 3,
+      "sort_order": 12,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "093472f9-0dd5-4cbe-9b26-2d9c30951004"
+          },
+          {
+            "course": "4f548467-5458-4e64-94a1-08b407027756"
+          }
+        ]
+      },
+      "prereq_raw": "(CFIS020 o FMF020) y (BIOL166 o BIO268)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "08954965-f5f7-4bc1-acf9-96d912ed1012",
+      "legacy_id": 14,
+      "code": "CEGCT12",
+      "name": "Razonamiento científico y tecnologías de información",
+      "credits": 6,
+      "period_number": 3,
+      "sort_order": 13,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "52b11ce0-1b5f-473d-a6a0-6aefb3d52db9",
+      "legacy_id": 15,
+      "code": "ING129",
+      "name": "Inglés II",
+      "credits": 12,
+      "period_number": 3,
+      "sort_order": 14,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "d1cb345d-5925-4225-85d6-b3312f4c3ed1"
+      },
+      "prereq_raw": "ING119 o equivalentes",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "8764438f-406f-47f9-b5c2-e7194623a80e",
+      "legacy_id": 16,
+      "code": "TMED003",
+      "name": "Bioética",
+      "credits": 8,
+      "period_number": 3,
+      "sort_order": 15,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "41cd948d-fe05-4cf6-b982-ef09c7eea084"
+      },
+      "prereq_raw": "TMED001 o TMD001",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "f0167a78-a221-4f09-911e-72ee2878e2b3",
+      "legacy_id": 17,
+      "code": "TMED004",
+      "name": "Infectología",
+      "credits": 8,
+      "period_number": 3,
+      "sort_order": 16,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "4f548467-5458-4e64-94a1-08b407027756"
+      },
+      "prereq_raw": "BIOL166 o BIO268",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "84e81bcc-6147-4ced-9780-6903a6ce21bf",
+      "legacy_id": 18,
+      "code": "FARM171",
+      "name": "Farmacología general",
+      "credits": 5,
+      "period_number": 4,
+      "sort_order": 17,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "4f548467-5458-4e64-94a1-08b407027756"
+      },
+      "prereq_raw": "BIOL166 o BIO268",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "f0a8a2a6-3f20-440f-8a94-60e9e4c328e3",
+      "legacy_id": 19,
+      "code": "ING239",
+      "name": "Inglés III",
+      "credits": 12,
+      "period_number": 4,
+      "sort_order": 18,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "52b11ce0-1b5f-473d-a6a0-6aefb3d52db9"
+      },
+      "prereq_raw": "ING129 o equivalentes",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "d792dc00-047f-4a51-b37e-2b614de5a792",
+      "legacy_id": 20,
+      "code": "TMED005",
+      "name": "Fisiopatología",
+      "credits": 15,
+      "period_number": 4,
+      "sort_order": 19,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "e302db47-9c95-4e3c-9be7-a78557099878"
+      },
+      "prereq_raw": "BIOL272 o (BIO372 y BIO171)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "72a914f2-b42c-4620-93e7-74f141b9f742",
+      "legacy_id": 21,
+      "code": "TMED411",
+      "name": "Parasitología",
+      "credits": 14,
+      "period_number": 4,
+      "sort_order": 20,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "093472f9-0dd5-4cbe-9b26-2d9c30951004"
+          },
+          {
+            "course": "e302db47-9c95-4e3c-9be7-a78557099878"
+          },
+          {
+            "course": "4f548467-5458-4e64-94a1-08b407027756"
+          },
+          {
+            "course": "8764438f-406f-47f9-b5c2-e7194623a80e"
+          },
+          {
+            "course": "f0167a78-a221-4f09-911e-72ee2878e2b3"
+          },
+          {
+            "course": "52b11ce0-1b5f-473d-a6a0-6aefb3d52db9"
+          }
+        ]
+      },
+      "prereq_raw": "(CFIS020 o FMF020) y BIOL272 y BIOL166 y TMED003 y TMED004 y ING129",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "b1fc56c4-17c5-4e20-924a-b2b951e995b3",
+      "legacy_id": 22,
+      "code": "TMED412",
+      "name": "Inmunología diagnóstica",
+      "credits": 17,
+      "period_number": 4,
+      "sort_order": 21,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "093472f9-0dd5-4cbe-9b26-2d9c30951004"
+          },
+          {
+            "course": "e302db47-9c95-4e3c-9be7-a78557099878"
+          },
+          {
+            "course": "4f548467-5458-4e64-94a1-08b407027756"
+          },
+          {
+            "course": "8764438f-406f-47f9-b5c2-e7194623a80e"
+          },
+          {
+            "course": "f0167a78-a221-4f09-911e-72ee2878e2b3"
+          },
+          {
+            "course": "52b11ce0-1b5f-473d-a6a0-6aefb3d52db9"
+          }
+        ]
+      },
+      "prereq_raw": "(CFIS020 o FMF020) y BIOL272 y BIOL166 y TMED003 y TMED004 y ING129",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "2b415602-e5df-4a70-a3d3-eab455207a37",
+      "legacy_id": 46,
+      "code": "FARM171",
+      "name": "Farmacología general",
+      "credits": 5,
+      "period_number": 4,
+      "sort_order": 45,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "4f548467-5458-4e64-94a1-08b407027756"
+      },
+      "prereq_raw": "BIOL166 o BIO268",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "614bb832-25e7-49ce-ac3d-16c658f25591",
+      "legacy_id": 47,
+      "code": "ING239",
+      "name": "Inglés III",
+      "credits": 12,
+      "period_number": 4,
+      "sort_order": 46,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "52b11ce0-1b5f-473d-a6a0-6aefb3d52db9"
+      },
+      "prereq_raw": "ING129 o equivalentes",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "06be66c4-1f3f-47bf-9eb7-28067c6cc474",
+      "legacy_id": 48,
+      "code": "TMED005",
+      "name": "Fisiopatología",
+      "credits": 15,
+      "period_number": 4,
+      "sort_order": 47,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "e302db47-9c95-4e3c-9be7-a78557099878"
+      },
+      "prereq_raw": "BIOL272 o (BIO372 y BIO171)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "0ed0e455-141f-4686-ae80-dca8a9dd441d",
+      "legacy_id": 49,
+      "code": "TMED431",
+      "name": "Protección radiológica",
+      "credits": 6,
+      "period_number": 4,
+      "sort_order": 48,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "093472f9-0dd5-4cbe-9b26-2d9c30951004"
+          },
+          {
+            "course": "e302db47-9c95-4e3c-9be7-a78557099878"
+          },
+          {
+            "course": "4f548467-5458-4e64-94a1-08b407027756"
+          },
+          {
+            "course": "8764438f-406f-47f9-b5c2-e7194623a80e"
+          },
+          {
+            "course": "f0167a78-a221-4f09-911e-72ee2878e2b3"
+          },
+          {
+            "course": "52b11ce0-1b5f-473d-a6a0-6aefb3d52db9"
+          }
+        ]
+      },
+      "prereq_raw": "(CFIS020 o FMF020) y BIOL272 y BIOL166 y TMED003 y TMED004 y ING129",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "bf46bcab-83a8-4433-b985-08b747a6d4c8",
+      "legacy_id": 50,
+      "code": "TMED432",
+      "name": "Radiodiagnóstico I",
+      "credits": 20,
+      "period_number": 4,
+      "sort_order": 49,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "093472f9-0dd5-4cbe-9b26-2d9c30951004"
+          },
+          {
+            "course": "e302db47-9c95-4e3c-9be7-a78557099878"
+          },
+          {
+            "course": "4f548467-5458-4e64-94a1-08b407027756"
+          },
+          {
+            "course": "8764438f-406f-47f9-b5c2-e7194623a80e"
+          },
+          {
+            "course": "f0167a78-a221-4f09-911e-72ee2878e2b3"
+          },
+          {
+            "course": "52b11ce0-1b5f-473d-a6a0-6aefb3d52db9"
+          }
+        ]
+      },
+      "prereq_raw": "(CFIS020 o FMF020) y BIOL272 y BIOL166 y TMED003 y TMED004 y ING129",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "3ec244c9-32bd-438e-b783-39e7b524248a",
+      "legacy_id": 51,
+      "code": "TMED433",
+      "name": "Física electromagnética",
+      "credits": 10,
+      "period_number": 4,
+      "sort_order": 50,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "4f548467-5458-4e64-94a1-08b407027756"
+          },
+          {
+            "course": "e302db47-9c95-4e3c-9be7-a78557099878"
+          }
+        ]
+      },
+      "prereq_raw": "BIOL166 o BIO268 y BIOL272 o equivalentes",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "ec0604a8-e9d2-40c0-8b8c-f78cf02fd05f",
+      "legacy_id": 77,
+      "code": "FARM171",
+      "name": "Farmacología general",
+      "credits": 5,
+      "period_number": 4,
+      "sort_order": 76,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "4f548467-5458-4e64-94a1-08b407027756"
+      },
+      "prereq_raw": "BIOL166 o BIO268",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "baba623c-594a-48a7-85bc-f97e18059afd",
+      "legacy_id": 78,
+      "code": "ING239",
+      "name": "Inglés III",
+      "credits": 12,
+      "period_number": 4,
+      "sort_order": 77,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "52b11ce0-1b5f-473d-a6a0-6aefb3d52db9"
+      },
+      "prereq_raw": "ING129 o equivalentes",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "9e07511c-678f-42a4-8ef4-267e9e34a21e",
+      "legacy_id": 79,
+      "code": "TMED005",
+      "name": "Fisiopatología",
+      "credits": 15,
+      "period_number": 4,
+      "sort_order": 78,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "e302db47-9c95-4e3c-9be7-a78557099878"
+      },
+      "prereq_raw": "BIOL272 o (BIO372 y BIO171)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "a63eae52-3bc8-4af9-a239-6f8b0eb71ea9",
+      "legacy_id": 80,
+      "code": "TMED441",
+      "name": "Técnicas histológicas y citológicas I",
+      "credits": 22,
+      "period_number": 4,
+      "sort_order": 79,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "e302db47-9c95-4e3c-9be7-a78557099878"
+          },
+          {
+            "course": "4f548467-5458-4e64-94a1-08b407027756"
+          },
+          {
+            "course": "8764438f-406f-47f9-b5c2-e7194623a80e"
+          },
+          {
+            "course": "f0167a78-a221-4f09-911e-72ee2878e2b3"
+          },
+          {
+            "course": "52b11ce0-1b5f-473d-a6a0-6aefb3d52db9"
+          },
+          {
+            "course": "093472f9-0dd5-4cbe-9b26-2d9c30951004"
+          }
+        ]
+      },
+      "prereq_raw": "(BIOL272 o (BIO372 y BIO171)) y (BIOL166 o BIO268) y (TMED003 o (TMD020 y TMD250)) y (TMED004 o BIO058) y ING129 y (CFIS020 o FMF020)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "06aaf589-d940-4c12-b50a-ab95f39760a8",
+      "legacy_id": 81,
+      "code": "TMED442",
+      "name": "Histología clínica",
+      "credits": 12,
+      "period_number": 4,
+      "sort_order": 80,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "e302db47-9c95-4e3c-9be7-a78557099878"
+          },
+          {
+            "course": "4f548467-5458-4e64-94a1-08b407027756"
+          },
+          {
+            "course": "8764438f-406f-47f9-b5c2-e7194623a80e"
+          },
+          {
+            "course": "f0167a78-a221-4f09-911e-72ee2878e2b3"
+          },
+          {
+            "course": "52b11ce0-1b5f-473d-a6a0-6aefb3d52db9"
+          },
+          {
+            "course": "093472f9-0dd5-4cbe-9b26-2d9c30951004"
+          }
+        ]
+      },
+      "prereq_raw": "(BIOL272 o (BIO372 y BIO171)) y (BIOL166 o BIO268) y (TMED003 o (TMD020 y TMD250)) y (TMED004 o BIO058) y ING129 y (CFIS020 o FMF020)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "7236eeca-6f9b-4d21-8122-189bec0c85ba",
+      "legacy_id": 106,
+      "code": "FARM171",
+      "name": "Farmacología general",
+      "credits": 5,
+      "period_number": 4,
+      "sort_order": 105,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "4f548467-5458-4e64-94a1-08b407027756"
+      },
+      "prereq_raw": "BIOL166 o BIO268",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "cf489c1c-64d5-4e87-b3cb-7de477fcd4bb",
+      "legacy_id": 107,
+      "code": "ING239",
+      "name": "Inglés III",
+      "credits": 12,
+      "period_number": 4,
+      "sort_order": 106,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "52b11ce0-1b5f-473d-a6a0-6aefb3d52db9"
+      },
+      "prereq_raw": "ING129 o equivalentes",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "bd498754-87a2-4f36-b81a-c5ac22a39fa6",
+      "legacy_id": 108,
+      "code": "TMED005",
+      "name": "Fisiopatología",
+      "credits": 15,
+      "period_number": 4,
+      "sort_order": 107,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "e302db47-9c95-4e3c-9be7-a78557099878"
+      },
+      "prereq_raw": "BIOL272 o (BIO372 y BIO171)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "0f89a7c6-61e6-4b3f-9a46-7f9a521d8cb7",
+      "legacy_id": 109,
+      "code": "TMED421",
+      "name": "Morfofisiología ocular",
+      "credits": 11,
+      "period_number": 4,
+      "sort_order": 108,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "093472f9-0dd5-4cbe-9b26-2d9c30951004"
+          },
+          {
+            "course": "e302db47-9c95-4e3c-9be7-a78557099878"
+          },
+          {
+            "course": "4f548467-5458-4e64-94a1-08b407027756"
+          },
+          {
+            "course": "8764438f-406f-47f9-b5c2-e7194623a80e"
+          },
+          {
+            "course": "f0167a78-a221-4f09-911e-72ee2878e2b3"
+          },
+          {
+            "course": "52b11ce0-1b5f-473d-a6a0-6aefb3d52db9"
+          }
+        ]
+      },
+      "prereq_raw": "(CFIS020 o FMF020) y (BIOL272 o (BIO372 y BIO171)) y (BIOL166 o BIO268) y (TMED003 o (TMD020 y TMD250)) y (TMED004 o BIO058) y ING129",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "c5ef6e09-8895-438f-8eb3-05a3158b0d7d",
+      "legacy_id": 110,
+      "code": "TMED422",
+      "name": "Oftalmología general",
+      "credits": 18,
+      "period_number": 4,
+      "sort_order": 109,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "093472f9-0dd5-4cbe-9b26-2d9c30951004"
+          },
+          {
+            "course": "e302db47-9c95-4e3c-9be7-a78557099878"
+          },
+          {
+            "course": "4f548467-5458-4e64-94a1-08b407027756"
+          },
+          {
+            "course": "8764438f-406f-47f9-b5c2-e7194623a80e"
+          },
+          {
+            "course": "f0167a78-a221-4f09-911e-72ee2878e2b3"
+          },
+          {
+            "course": "52b11ce0-1b5f-473d-a6a0-6aefb3d52db9"
+          }
+        ]
+      },
+      "prereq_raw": "(CFIS020 o FMF020) y (BIOL272 o (BIO372 y BIO171)) y (BIOL166 o BIO268) y (TMED003 o (TMD020 y TMD250)) y (TMED004 o BIO058) y ING129",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "f96be4b8-c152-4011-909a-d85de30e271e",
+      "legacy_id": 111,
+      "code": "TMED423",
+      "name": "Biofísica óptica",
+      "credits": 7,
+      "period_number": 4,
+      "sort_order": 110,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "4f548467-5458-4e64-94a1-08b407027756"
+          },
+          {
+            "course": "52b11ce0-1b5f-473d-a6a0-6aefb3d52db9"
+          }
+        ]
+      },
+      "prereq_raw": "(BIOL166 o BIO268) y ING129",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "e408752d-7756-4799-a93a-1584ea06f246",
+      "legacy_id": 137,
+      "code": "FARM171",
+      "name": "Farmacología general",
+      "credits": 5,
+      "period_number": 4,
+      "sort_order": 136,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "4f548467-5458-4e64-94a1-08b407027756"
+      },
+      "prereq_raw": "BIOL166 o BIO268",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "a02276b2-cd3b-4bb5-8021-9dfc297a77d6",
+      "legacy_id": 138,
+      "code": "ING239",
+      "name": "Inglés III",
+      "credits": 12,
+      "period_number": 4,
+      "sort_order": 137,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "52b11ce0-1b5f-473d-a6a0-6aefb3d52db9"
+      },
+      "prereq_raw": "ING129 o equivalentes",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "bdf124c3-8191-4413-9580-245bd39dacce",
+      "legacy_id": 139,
+      "code": "TMED005",
+      "name": "Fisiopatología",
+      "credits": 15,
+      "period_number": 4,
+      "sort_order": 138,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "e302db47-9c95-4e3c-9be7-a78557099878"
+      },
+      "prereq_raw": "BIOL272 o (BIO372 y BIO171)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "c57a29d8-62de-496d-b527-43d4578da9a5",
+      "legacy_id": 140,
+      "code": "TMED451",
+      "name": "Psicoacústica y fonología",
+      "credits": 10,
+      "period_number": 4,
+      "sort_order": 139,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "e302db47-9c95-4e3c-9be7-a78557099878"
+          },
+          {
+            "course": "4f548467-5458-4e64-94a1-08b407027756"
+          },
+          {
+            "course": "8764438f-406f-47f9-b5c2-e7194623a80e"
+          },
+          {
+            "course": "f0167a78-a221-4f09-911e-72ee2878e2b3"
+          },
+          {
+            "course": "52b11ce0-1b5f-473d-a6a0-6aefb3d52db9"
+          },
+          {
+            "course": "093472f9-0dd5-4cbe-9b26-2d9c30951004"
+          }
+        ]
+      },
+      "prereq_raw": "(CFIS020 o FMF020) y (BIOL272 o (BIO372 y BIO171)) y (BIOL166 o BIO268) y (TMED003 o (TMD020 y TMD250)) y (TMED004 o BIO058) y ING129",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "d990f9cc-8a8a-436b-b3fb-d6bf1efb2306",
+      "legacy_id": 141,
+      "code": "TMED452",
+      "name": "Neuroanatomía otorrinolaringológica",
+      "credits": 15,
+      "period_number": 4,
+      "sort_order": 140,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "e302db47-9c95-4e3c-9be7-a78557099878"
+          },
+          {
+            "course": "4f548467-5458-4e64-94a1-08b407027756"
+          },
+          {
+            "course": "8764438f-406f-47f9-b5c2-e7194623a80e"
+          },
+          {
+            "course": "f0167a78-a221-4f09-911e-72ee2878e2b3"
+          },
+          {
+            "course": "52b11ce0-1b5f-473d-a6a0-6aefb3d52db9"
+          },
+          {
+            "course": "093472f9-0dd5-4cbe-9b26-2d9c30951004"
+          }
+        ]
+      },
+      "prereq_raw": "(CFIS020 o FMF020) y (BIOL272 o (BIO372 y BIO171)) y (BIOL166 o BIO268) y (TMED003 o (TMD020 y TMD250)) y (TMED004 o BIO058) y ING129",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "9c1336fe-6e2d-48d0-b408-6697b6f4a7c7",
+      "legacy_id": 142,
+      "code": "TMED453",
+      "name": "Lengua de señas",
+      "credits": 9,
+      "period_number": 4,
+      "sort_order": 141,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "e302db47-9c95-4e3c-9be7-a78557099878"
+          },
+          {
+            "course": "4f548467-5458-4e64-94a1-08b407027756"
+          },
+          {
+            "course": "8764438f-406f-47f9-b5c2-e7194623a80e"
+          },
+          {
+            "course": "f0167a78-a221-4f09-911e-72ee2878e2b3"
+          },
+          {
+            "course": "52b11ce0-1b5f-473d-a6a0-6aefb3d52db9"
+          },
+          {
+            "course": "093472f9-0dd5-4cbe-9b26-2d9c30951004"
+          }
+        ]
+      },
+      "prereq_raw": "(CFIS020 o FMF020) y (BIOL272 o (BIO372 y BIO171)) y (BIOL166 o BIO268) y (TMED003 o (TMD020 y TMD250)) y (TMED004 o BIO058) y ING129",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "7a99e1b6-8a15-4d71-b0fb-c75b19a49055",
+      "legacy_id": 23,
+      "code": "ING249",
+      "name": "Inglés IV",
+      "credits": 12,
+      "period_number": 5,
+      "sort_order": 22,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "f0a8a2a6-3f20-440f-8a94-60e9e4c328e3"
+      },
+      "prereq_raw": "ING239 o equivalentes",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "484b3562-8a03-429e-a563-535531d5fb86",
+      "legacy_id": 24,
+      "code": "SPAB110",
+      "name": "Salud pública I",
+      "credits": 7,
+      "period_number": 5,
+      "sort_order": 23,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "f0a8a2a6-3f20-440f-8a94-60e9e4c328e3"
+          },
+          {
+            "course": "d792dc00-047f-4a51-b37e-2b614de5a792"
+          }
+        ]
+      },
+      "prereq_raw": "ING239 o equivalentes y (TMED005 o TMD110)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "2176f0ed-de3b-4001-bae1-ea54824c7427",
+      "legacy_id": 25,
+      "code": "TMED006",
+      "name": "Procedimientos de tecnología médica y bioseguridad",
+      "credits": 6,
+      "period_number": 5,
+      "sort_order": 24,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "84e81bcc-6147-4ced-9780-6903a6ce21bf"
+      },
+      "prereq_raw": "FARM171 o BIO184",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "81c9e16e-f57a-4cd5-b714-d4d07a172493",
+      "legacy_id": 26,
+      "code": "TMED511",
+      "name": "Microbiología I",
+      "credits": 23,
+      "period_number": 5,
+      "sort_order": 25,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "72a914f2-b42c-4620-93e7-74f141b9f742"
+          },
+          {
+            "course": "84e81bcc-6147-4ced-9780-6903a6ce21bf"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED411 o TMD225) y (FARM171 o BIO184)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "344ec31d-7beb-4841-9a88-4790e554c377",
+      "legacy_id": 27,
+      "code": "TMED512",
+      "name": "Hematología I",
+      "credits": 20,
+      "period_number": 5,
+      "sort_order": 26,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "b1fc56c4-17c5-4e20-924a-b2b951e995b3"
+          },
+          {
+            "course": "d792dc00-047f-4a51-b37e-2b614de5a792"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED412 o (BIO286 y TMD255)) y (TMED005 o TMD110)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "79597571-e6fd-4846-abc7-9e1e7cf63dc1",
+      "legacy_id": 52,
+      "code": "ING249",
+      "name": "Inglés IV",
+      "credits": 12,
+      "period_number": 5,
+      "sort_order": 51,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "614bb832-25e7-49ce-ac3d-16c658f25591"
+      },
+      "prereq_raw": "ING239 o equivalentes",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "78c9bdba-8f17-4192-87d3-30811e253627",
+      "legacy_id": 53,
+      "code": "SPAB110",
+      "name": "Salud pública I",
+      "credits": 7,
+      "period_number": 5,
+      "sort_order": 52,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "614bb832-25e7-49ce-ac3d-16c658f25591"
+          },
+          {
+            "course": "06be66c4-1f3f-47bf-9eb7-28067c6cc474"
+          }
+        ]
+      },
+      "prereq_raw": "ING239 o equivalentes y (TMED005 o TMD110)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "328b0894-9ea1-4f78-b23b-83a1a6b81bbb",
+      "legacy_id": 54,
+      "code": "TMED006",
+      "name": "Procedimientos de tecnología médica y bioseguridad",
+      "credits": 6,
+      "period_number": 5,
+      "sort_order": 53,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "2b415602-e5df-4a70-a3d3-eab455207a37"
+      },
+      "prereq_raw": "FARM171 o BIO184",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "56edeb9a-a4a0-41ee-85f8-3771e1372179",
+      "legacy_id": 55,
+      "code": "TMED531",
+      "name": "Física moderna",
+      "credits": 7,
+      "period_number": 5,
+      "sort_order": 54,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "0ed0e455-141f-4686-ae80-dca8a9dd441d"
+          },
+          {
+            "course": "3ec244c9-32bd-438e-b783-39e7b524248a"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED431 o TMD223) y (TMED433 o TMD200)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "9a036006-f4d2-43f3-a2b1-f86212194815",
+      "legacy_id": 56,
+      "code": "TMED532",
+      "name": "Radiodiagnóstico II",
+      "credits": 24,
+      "period_number": 5,
+      "sort_order": 55,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "bf46bcab-83a8-4433-b985-08b747a6d4c8"
+          },
+          {
+            "course": "2b415602-e5df-4a70-a3d3-eab455207a37"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED432 o TMD222) y (FARM171 o BIO184)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "a0518649-fd12-402e-a36f-81fb1cf03f0a",
+      "legacy_id": 57,
+      "code": "TMED533",
+      "name": "Anatomía imagenológica",
+      "credits": 11,
+      "period_number": 5,
+      "sort_order": 56,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "bf46bcab-83a8-4433-b985-08b747a6d4c8"
+          },
+          {
+            "course": "06be66c4-1f3f-47bf-9eb7-28067c6cc474"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED432 o TMD222) y (TMED005 o TMD110)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "9a3b40d8-1245-42b1-91ba-9a2db43ca611",
+      "legacy_id": 82,
+      "code": "ING249",
+      "name": "Inglés IV",
+      "credits": 12,
+      "period_number": 5,
+      "sort_order": 81,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "baba623c-594a-48a7-85bc-f97e18059afd"
+      },
+      "prereq_raw": "ING239 o equivalentes",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "dff019e3-2892-4c9b-be11-c716fbcb7372",
+      "legacy_id": 83,
+      "code": "SPAB110",
+      "name": "Salud pública I",
+      "credits": 7,
+      "period_number": 5,
+      "sort_order": 82,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "baba623c-594a-48a7-85bc-f97e18059afd"
+          },
+          {
+            "course": "9e07511c-678f-42a4-8ef4-267e9e34a21e"
+          }
+        ]
+      },
+      "prereq_raw": "ING239 o equivalentes y (TMED005 o TMD110)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "78ef0f1b-069d-41d0-9cca-87a96dc719d6",
+      "legacy_id": 84,
+      "code": "TMED006",
+      "name": "Procedimientos de tecnología médica y bioseguridad",
+      "credits": 6,
+      "period_number": 5,
+      "sort_order": 83,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "ec0604a8-e9d2-40c0-8b8c-f78cf02fd05f"
+      },
+      "prereq_raw": "FARM171 o BIO184",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "d7f6b7b9-e84b-4218-9f9e-28825b02a53c",
+      "legacy_id": 85,
+      "code": "TMED541",
+      "name": "Técnicas histológicas y citológicas II",
+      "credits": 26,
+      "period_number": 5,
+      "sort_order": 84,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "a63eae52-3bc8-4af9-a239-6f8b0eb71ea9"
+      },
+      "prereq_raw": "TMED441 o TMD197",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "912f06e2-8a8c-43e0-be05-be8af11da8b0",
+      "legacy_id": 86,
+      "code": "TMED542",
+      "name": "Anatomía patológica I",
+      "credits": 16,
+      "period_number": 5,
+      "sort_order": 85,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "06aaf589-d940-4c12-b50a-ab95f39760a8"
+          },
+          {
+            "course": "9e07511c-678f-42a4-8ef4-267e9e34a21e"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED442 o TMD199) y (TMED005 o TMD110)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "aaa80f0a-a8df-41cf-adbb-a721ac31bc5a",
+      "legacy_id": 112,
+      "code": "ING249",
+      "name": "Inglés IV",
+      "credits": 12,
+      "period_number": 5,
+      "sort_order": 111,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "cf489c1c-64d5-4e87-b3cb-7de477fcd4bb"
+      },
+      "prereq_raw": "ING239 o equivalentes",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "b28b235e-f477-4008-b50a-3bf8373bbf3d",
+      "legacy_id": 113,
+      "code": "SPAB110",
+      "name": "Salud pública I",
+      "credits": 7,
+      "period_number": 5,
+      "sort_order": 112,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "cf489c1c-64d5-4e87-b3cb-7de477fcd4bb"
+          },
+          {
+            "course": "bd498754-87a2-4f36-b81a-c5ac22a39fa6"
+          }
+        ]
+      },
+      "prereq_raw": "ING239 o equivalentes y (TMED005 o TMD110)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "73893b41-3e28-408d-a3ef-4543f6bdafac",
+      "legacy_id": 114,
+      "code": "TMED006",
+      "name": "Procedimientos de tecnología médica y bioseguridad",
+      "credits": 6,
+      "period_number": 5,
+      "sort_order": 113,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "7236eeca-6f9b-4d21-8122-189bec0c85ba"
+      },
+      "prereq_raw": "FARM171 o BIO184",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "1403131f-3e06-4c42-8edd-8388350f9b0b",
+      "legacy_id": 115,
+      "code": "TMED521",
+      "name": "Morfofisiopatología ocular",
+      "credits": 13,
+      "period_number": 5,
+      "sort_order": 114,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "bd498754-87a2-4f36-b81a-c5ac22a39fa6"
+          },
+          {
+            "course": "0f89a7c6-61e6-4b3f-9a46-7f9a521d8cb7"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED005 o TMD110) y (TMED421 o TMD193)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "0a62bfb6-dbb9-4f01-bd24-503fbb10bcd9",
+      "legacy_id": 116,
+      "code": "TMED522",
+      "name": "Exploración del sistema visual",
+      "credits": 21,
+      "period_number": 5,
+      "sort_order": 115,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "c5ef6e09-8895-438f-8eb3-05a3158b0d7d"
+          },
+          {
+            "course": "f96be4b8-c152-4011-909a-d85de30e271e"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED422 o TMD195) y (TMED423 o TMD192)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "7b7cb6ab-79a8-48a8-9ca8-88572c60d915",
+      "legacy_id": 117,
+      "code": "TMED523",
+      "name": "Oftalmofarmacología",
+      "credits": 9,
+      "period_number": 5,
+      "sort_order": 116,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "7236eeca-6f9b-4d21-8122-189bec0c85ba"
+          },
+          {
+            "course": "0f89a7c6-61e6-4b3f-9a46-7f9a521d8cb7"
+          }
+        ]
+      },
+      "prereq_raw": "(FARM171 o BIO184) y (TMED421 o TMD193)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "672f1c65-c0b6-4c24-883f-cd56c4474c61",
+      "legacy_id": 143,
+      "code": "ING249",
+      "name": "Inglés IV",
+      "credits": 12,
+      "period_number": 5,
+      "sort_order": 142,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "a02276b2-cd3b-4bb5-8021-9dfc297a77d6"
+      },
+      "prereq_raw": "ING239 o equivalentes",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "e7d9765d-b34d-48f2-9160-56af7fb5bab7",
+      "legacy_id": 144,
+      "code": "SPAB110",
+      "name": "Salud pública I",
+      "credits": 7,
+      "period_number": 5,
+      "sort_order": 143,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "a02276b2-cd3b-4bb5-8021-9dfc297a77d6"
+          },
+          {
+            "course": "bdf124c3-8191-4413-9580-245bd39dacce"
+          }
+        ]
+      },
+      "prereq_raw": "ING239 o equivalentes y (TMED005 o TMD110)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "a4668d72-7728-47a6-a263-fb06b99ade59",
+      "legacy_id": 145,
+      "code": "TMED006",
+      "name": "Procedimientos de tecnología médica y bioseguridad",
+      "credits": 6,
+      "period_number": 5,
+      "sort_order": 144,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "e408752d-7756-4799-a93a-1584ea06f246"
+      },
+      "prereq_raw": "FARM171 o BIO184",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "03e39b0c-740d-46dc-9e36-c799efdbb26a",
+      "legacy_id": 146,
+      "code": "TMED551",
+      "name": "Morfofisiopatología orl",
+      "credits": 15,
+      "period_number": 5,
+      "sort_order": 145,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "bdf124c3-8191-4413-9580-245bd39dacce"
+      },
+      "prereq_raw": "TMED005 o TMD110",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "de4139a3-e1a7-4b2d-89fd-f5c3e875d543",
+      "legacy_id": 147,
+      "code": "TMED552",
+      "name": "Función nasal",
+      "credits": 13,
+      "period_number": 5,
+      "sort_order": 146,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "bdf124c3-8191-4413-9580-245bd39dacce"
+          },
+          {
+            "course": "c57a29d8-62de-496d-b527-43d4578da9a5"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED005 o TMD110) y (TMED451 o FMF120)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "20d737a4-402b-4b76-b3d0-18d6618d922a",
+      "legacy_id": 148,
+      "code": "TMED553",
+      "name": "Neurofisiología aplicada a la orl",
+      "credits": 13,
+      "period_number": 5,
+      "sort_order": 147,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "d990f9cc-8a8a-436b-b3fb-d6bf1efb2306"
+      },
+      "prereq_raw": "TMED452 o TMD196",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "91f6bb6b-7338-4c92-810d-f65384e76327",
+      "legacy_id": 28,
+      "code": "SPAB111",
+      "name": "Salud pública II",
+      "credits": 10,
+      "period_number": 6,
+      "sort_order": 27,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "484b3562-8a03-429e-a563-535531d5fb86"
+      },
+      "prereq_raw": "SPAB110 o equivalentes",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "3c51fd6b-caad-41b4-bac4-edcdd7e4339e",
+      "legacy_id": 29,
+      "code": "TMED611",
+      "name": "Bioquímica clínica I",
+      "credits": 15,
+      "period_number": 6,
+      "sort_order": 28,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "b1fc56c4-17c5-4e20-924a-b2b951e995b3"
+      },
+      "prereq_raw": "TMED412 o (BIO286 y TMD255)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "d6e96d70-b5e0-4e92-a2a5-f6e286fbaeca",
+      "legacy_id": 30,
+      "code": "TMED612",
+      "name": "Microbiología II",
+      "credits": 18,
+      "period_number": 6,
+      "sort_order": 29,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "81c9e16e-f57a-4cd5-b714-d4d07a172493"
+      },
+      "prereq_raw": "TMED511 o TMD329",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "7920243e-0b64-4f81-9214-46941561d5e1",
+      "legacy_id": 31,
+      "code": "TMED613",
+      "name": "Hematología II",
+      "credits": 22,
+      "period_number": 6,
+      "sort_order": 30,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "344ec31d-7beb-4841-9a88-4790e554c377"
+      },
+      "prereq_raw": "TMED512 o TMD233",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "fa4a93ef-00f3-43a7-a440-78785a13c04c",
+      "legacy_id": 58,
+      "code": "SPAB111",
+      "name": "Salud pública II",
+      "credits": 10,
+      "period_number": 6,
+      "sort_order": 57,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "78c9bdba-8f17-4192-87d3-30811e253627"
+      },
+      "prereq_raw": "SPAB110 o equivalentes",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "1277caea-9cba-4068-926b-61307c8dbe16",
+      "legacy_id": 59,
+      "code": "TMED631",
+      "name": "Física nuclear",
+      "credits": 13,
+      "period_number": 6,
+      "sort_order": 58,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "56edeb9a-a4a0-41ee-85f8-3771e1372179"
+      },
+      "prereq_raw": "TMED531 o TMD264",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "0010058c-18ee-4b6b-b931-54f9fd590c50",
+      "legacy_id": 60,
+      "code": "TMED632",
+      "name": "Tomografía computada",
+      "credits": 19,
+      "period_number": 6,
+      "sort_order": 59,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "9a036006-f4d2-43f3-a2b1-f86212194815"
+          },
+          {
+            "course": "a0518649-fd12-402e-a36f-81fb1cf03f0a"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED532 o TMD249) y (TMED533 o (TMD251 y TMD282))",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "2c499134-31ec-4e6d-88cb-16c066dfa35f",
+      "legacy_id": 61,
+      "code": "TMED633",
+      "name": "Sistema informático en radiología",
+      "credits": 13,
+      "period_number": 6,
+      "sort_order": 60,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "9a036006-f4d2-43f3-a2b1-f86212194815"
+      },
+      "prereq_raw": "TMED532 o TMD249",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "8596e14f-419c-49e5-a86c-9cd1bbb3bdf2",
+      "legacy_id": 62,
+      "code": "TMED634",
+      "name": "Patología imagenológica",
+      "credits": 12,
+      "period_number": 6,
+      "sort_order": 61,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "9a036006-f4d2-43f3-a2b1-f86212194815"
+          },
+          {
+            "course": "a0518649-fd12-402e-a36f-81fb1cf03f0a"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED532 o TMD249) y (TMED533 o (TMD251 y TMD282))",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "c191c714-e460-4b66-a975-ee0a8fdc8c80",
+      "legacy_id": 87,
+      "code": "CEGPC13",
+      "name": "Pensamiento crítico",
+      "credits": 5,
+      "period_number": 6,
+      "sort_order": 86,
+      "track_code": "MORFO",
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "2ea6cd93-2636-45aa-b2cd-0b1bf5fdd293",
+      "legacy_id": 88,
+      "code": "SPAB111",
+      "name": "Salud pública II",
+      "credits": 10,
+      "period_number": 6,
+      "sort_order": 87,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "dff019e3-2892-4c9b-be11-c716fbcb7372"
+      },
+      "prereq_raw": "SPAB110 o equivalentes",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "c0b23247-7022-4821-a55d-2a6b11e502b5",
+      "legacy_id": 89,
+      "code": "TMED641",
+      "name": "Biología molecular y genética",
+      "credits": 12,
+      "period_number": 6,
+      "sort_order": 88,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "d7f6b7b9-e84b-4218-9f9e-28825b02a53c"
+      },
+      "prereq_raw": "TMED541 o TMD197",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "36abddd6-11eb-410a-98d2-461182f05429",
+      "legacy_id": 90,
+      "code": "TMED642",
+      "name": "Diagnóstico histoquímico",
+      "credits": 21,
+      "period_number": 6,
+      "sort_order": 89,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "d7f6b7b9-e84b-4218-9f9e-28825b02a53c"
+          },
+          {
+            "course": "912f06e2-8a8c-43e0-be05-be8af11da8b0"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED541 o TMD197) y (TMED542 o TMD256)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "87f78376-d4c7-427f-8ff7-4e1d5ca54ee4",
+      "legacy_id": 91,
+      "code": "TMED643",
+      "name": "Anatomía patológica II",
+      "credits": 22,
+      "period_number": 6,
+      "sort_order": 90,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "912f06e2-8a8c-43e0-be05-be8af11da8b0"
+      },
+      "prereq_raw": "TMED542 o TMD256",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "ebd84022-b4f8-447f-be7a-c8ada7207314",
+      "legacy_id": 118,
+      "code": "SPAB111",
+      "name": "Salud pública II",
+      "credits": 10,
+      "period_number": 6,
+      "sort_order": 117,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "b28b235e-f477-4008-b50a-3bf8373bbf3d"
+      },
+      "prereq_raw": "SPAB110 o equivalentes",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "2f7bd722-d930-4a70-a4f1-211de259fde3",
+      "legacy_id": 119,
+      "code": "TMED621",
+      "name": "Estudio del campo visual",
+      "credits": 20,
+      "period_number": 6,
+      "sort_order": 118,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "1403131f-3e06-4c42-8edd-8388350f9b0b"
+      },
+      "prereq_raw": "TMED521 o TMD258",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "1950f99c-1aaa-4dc3-bd40-1800eea670bc",
+      "legacy_id": 120,
+      "code": "TMED622",
+      "name": "Estrabismo y ortóptica",
+      "credits": 21,
+      "period_number": 6,
+      "sort_order": 119,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "1403131f-3e06-4c42-8edd-8388350f9b0b"
+          },
+          {
+            "course": "7b7cb6ab-79a8-48a8-9ca8-88572c60d915"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED521 o TMD258) y (TMED523 o TMD263)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "2a3b2ee7-3447-4025-8f8a-b3031f5d57d5",
+      "legacy_id": 121,
+      "code": "TMED623",
+      "name": "Optometría I",
+      "credits": 15,
+      "period_number": 6,
+      "sort_order": 120,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "0a62bfb6-dbb9-4f01-bd24-503fbb10bcd9"
+      },
+      "prereq_raw": "TMED522 o TMD194",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "dd719b38-7d93-4c80-857a-487658b67de7",
+      "legacy_id": 149,
+      "code": "CEGPC13",
+      "name": "Pensamiento crítico",
+      "credits": 5,
+      "period_number": 6,
+      "sort_order": 148,
+      "track_code": "OTORRINO",
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "fbf23ffb-a149-4f75-8e9d-fb511ad3142c",
+      "legacy_id": 150,
+      "code": "SPAB111",
+      "name": "Salud pública II",
+      "credits": 10,
+      "period_number": 6,
+      "sort_order": 149,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "e7d9765d-b34d-48f2-9160-56af7fb5bab7"
+      },
+      "prereq_raw": "SPAB110 o equivalentes",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "25c7e725-518d-47cb-a58e-8a7d8aaabec3",
+      "legacy_id": 151,
+      "code": "TMED651",
+      "name": "Audiología básica",
+      "credits": 39,
+      "period_number": 6,
+      "sort_order": 150,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "03e39b0c-740d-46dc-9e36-c799efdbb26a"
+          },
+          {
+            "course": "20d737a4-402b-4b76-b3d0-18d6618d922a"
+          },
+          {
+            "course": "9c1336fe-6e2d-48d0-b408-6697b6f4a7c7"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED551 o TMD202) y (TMED553 o TMD196) y (TMED453 o TMD267)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "15095d98-131b-45d2-b738-a58608191249",
+      "legacy_id": 152,
+      "code": "TMED652",
+      "name": "Otoneurología I",
+      "credits": 12,
+      "period_number": 6,
+      "sort_order": 151,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "03e39b0c-740d-46dc-9e36-c799efdbb26a"
+          },
+          {
+            "course": "20d737a4-402b-4b76-b3d0-18d6618d922a"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED551 o TMD202) y (TMED553 o TMD196)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "fef1d86d-6c97-4319-abcc-80392389688f",
+      "legacy_id": 32,
+      "code": "SPAB112",
+      "name": "Administración y gestión en salud",
+      "credits": 6,
+      "period_number": 7,
+      "sort_order": 31,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "91f6bb6b-7338-4c92-810d-f65384e76327"
+      },
+      "prereq_raw": "SPAB111 o equivalentes",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "65d7e8fc-81c2-4893-9662-4815f2a0bd32",
+      "legacy_id": 33,
+      "code": "TMED002",
+      "name": "Educación en salud",
+      "credits": 4,
+      "period_number": 7,
+      "sort_order": 32,
+      "track_code": "BACIMET",
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "c11d2e29-33bf-4a62-a70a-a1975ec1ec3a",
+      "legacy_id": 34,
+      "code": "TMED711",
+      "name": "Biología molecular",
+      "credits": 11,
+      "period_number": 7,
+      "sort_order": 33,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "3c51fd6b-caad-41b4-bac4-edcdd7e4339e"
+      },
+      "prereq_raw": "TMED611 o TMD204",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "fbd2b627-88a5-4bd6-83ae-0f5f07a67b20",
+      "legacy_id": 35,
+      "code": "TMED712",
+      "name": "Inmunohematología",
+      "credits": 15,
+      "period_number": 7,
+      "sort_order": 34,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "344ec31d-7beb-4841-9a88-4790e554c377"
+          },
+          {
+            "course": "3c51fd6b-caad-41b4-bac4-edcdd7e4339e"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED512 o TMD233) y (TMED611 o TMD204)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "cc272cab-651b-4aa5-9593-c244e023ff6a",
+      "legacy_id": 36,
+      "code": "TMED713",
+      "name": "Bioquímica clínica II",
+      "credits": 18,
+      "period_number": 7,
+      "sort_order": 35,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "3c51fd6b-caad-41b4-bac4-edcdd7e4339e"
+          },
+          {
+            "course": "d6e96d70-b5e0-4e92-a2a5-f6e286fbaeca"
+          },
+          {
+            "course": "7920243e-0b64-4f81-9214-46941561d5e1"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED613 o TMD301) y (TMED612 o TMD329) y (TMED611 o TMD204)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "fc6aaf0f-02bf-45f6-ac17-f47a45fa0e73",
+      "legacy_id": 37,
+      "code": "TMED714",
+      "name": "Integrador I: caso clínico BACIMET",
+      "credits": 9,
+      "period_number": 7,
+      "sort_order": 36,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "3c51fd6b-caad-41b4-bac4-edcdd7e4339e"
+          },
+          {
+            "course": "d6e96d70-b5e0-4e92-a2a5-f6e286fbaeca"
+          },
+          {
+            "course": "7920243e-0b64-4f81-9214-46941561d5e1"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED613 o TMD301) y (TMED612 o TMD329) y (TMED611 o TMD204)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "db121c8d-ff56-4e6d-8f9a-09f17a6eb312",
+      "legacy_id": 63,
+      "code": "SPAB112",
+      "name": "Administración y gestión en salud",
+      "credits": 6,
+      "period_number": 7,
+      "sort_order": 62,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "fa4a93ef-00f3-43a7-a440-78785a13c04c"
+      },
+      "prereq_raw": "SPAB111 o equivalentes",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "51dd8be6-a8b8-4cfa-9cce-2df52b357c13",
+      "legacy_id": 64,
+      "code": "TMED002",
+      "name": "Educación en salud",
+      "credits": 4,
+      "period_number": 7,
+      "sort_order": 63,
+      "track_code": "IFIME",
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "029d4316-3bf4-4d61-9258-5a5643f673bc",
+      "legacy_id": 65,
+      "code": "TMED731",
+      "name": "Medicina nuclear",
+      "credits": 17,
+      "period_number": 7,
+      "sort_order": 64,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "1277caea-9cba-4068-926b-61307c8dbe16"
+      },
+      "prereq_raw": "TMED631 o TMD264",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "fa392257-a9e1-4791-a154-3911c3b0806c",
+      "legacy_id": 66,
+      "code": "TMED732",
+      "name": "Intervencionismo endovascular",
+      "credits": 12,
+      "period_number": 7,
+      "sort_order": 65,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "8596e14f-419c-49e5-a86c-9cd1bbb3bdf2"
+      },
+      "prereq_raw": "TMED634 o (TMD251 y TMD282)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "64beab84-134f-4a97-9aef-a4189dad51b1",
+      "legacy_id": 67,
+      "code": "TMED733",
+      "name": "Integrador I: caso clínico IFIME",
+      "credits": 9,
+      "period_number": 7,
+      "sort_order": 66,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "0010058c-18ee-4b6b-b931-54f9fd590c50"
+          },
+          {
+            "course": "2c499134-31ec-4e6d-88cb-16c066dfa35f"
+          },
+          {
+            "course": "8596e14f-419c-49e5-a86c-9cd1bbb3bdf2"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED632 o TMD297) y TMED633 y (TMED634 o (TMD251 y TMD282))",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "5a89cb45-c028-4d5f-b07d-8b51227a3241",
+      "legacy_id": 68,
+      "code": "TMED734",
+      "name": "Ultrasonido",
+      "credits": 17,
+      "period_number": 7,
+      "sort_order": 67,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "8596e14f-419c-49e5-a86c-9cd1bbb3bdf2"
+      },
+      "prereq_raw": "TMED634 o (TMD251 y TMD282)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "d436712d-fe93-43b1-a8e1-e310e912aa6c",
+      "legacy_id": 92,
+      "code": "SPAB112",
+      "name": "Administración y gestión en salud",
+      "credits": 6,
+      "period_number": 7,
+      "sort_order": 91,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "2ea6cd93-2636-45aa-b2cd-0b1bf5fdd293"
+      },
+      "prereq_raw": "SPAB111 o equivalentes",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "8ad01e01-49eb-4a62-89c5-0f691d6a4a89",
+      "legacy_id": 93,
+      "code": "TMED002",
+      "name": "Educación en salud",
+      "credits": 4,
+      "period_number": 7,
+      "sort_order": 92,
+      "track_code": "MORFO",
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "dca83fe3-5306-437d-90ec-80264b3d4f3f",
+      "legacy_id": 94,
+      "code": "TMED741",
+      "name": "Fundamentos de citogénetica",
+      "credits": 13,
+      "period_number": 7,
+      "sort_order": 93,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "c0b23247-7022-4821-a55d-2a6b11e502b5"
+      },
+      "prereq_raw": "TMED641 o BIO040",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "2108b51e-d3b9-41f9-abcd-45f1732dccbf",
+      "legacy_id": 95,
+      "code": "TMED742",
+      "name": "Diagnóstico inmunohistoquímico",
+      "credits": 18,
+      "period_number": 7,
+      "sort_order": 94,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "c0b23247-7022-4821-a55d-2a6b11e502b5"
+          },
+          {
+            "course": "36abddd6-11eb-410a-98d2-461182f05429"
+          },
+          {
+            "course": "87f78376-d4c7-427f-8ff7-4e1d5ca54ee4"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED641 o BIO040) y (TMED642 o TMD248) y (TMED643 o TMD256)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "69183d5f-2352-4e21-8cbf-f4cfceca9a2b",
+      "legacy_id": 96,
+      "code": "TMED743",
+      "name": "Citopatología I",
+      "credits": 17,
+      "period_number": 7,
+      "sort_order": 95,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "87f78376-d4c7-427f-8ff7-4e1d5ca54ee4"
+      },
+      "prereq_raw": "TMED643 o TMD256",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "36e1a813-8040-4211-8fd4-de16420272ee",
+      "legacy_id": 97,
+      "code": "TMED744",
+      "name": "Integrador I: caso clínico MORFO",
+      "credits": 7,
+      "period_number": 7,
+      "sort_order": 96,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "c0b23247-7022-4821-a55d-2a6b11e502b5"
+          },
+          {
+            "course": "36abddd6-11eb-410a-98d2-461182f05429"
+          },
+          {
+            "course": "87f78376-d4c7-427f-8ff7-4e1d5ca54ee4"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED641 o BIO040) y (TMED642 o TMD248) y (TMED643 o TMD256)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "4fd64cf4-c19c-44ba-a62a-c5d58c0e5cf9",
+      "legacy_id": 122,
+      "code": "CEGPC13",
+      "name": "Pensamiento crítico",
+      "credits": 5,
+      "period_number": 7,
+      "sort_order": 121,
+      "track_code": "OFTA",
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "949b2799-f981-47f8-b096-c263036c471b",
+      "legacy_id": 123,
+      "code": "SPAB112",
+      "name": "Administración y gestión en salud",
+      "credits": 6,
+      "period_number": 7,
+      "sort_order": 122,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "ebd84022-b4f8-447f-be7a-c8ada7207314"
+      },
+      "prereq_raw": "SPAB111 o equivalentes",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "6c7b8887-a9b0-49ed-84c2-049883c5acaf",
+      "legacy_id": 124,
+      "code": "TMED002",
+      "name": "Educación en salud",
+      "credits": 4,
+      "period_number": 7,
+      "sort_order": 123,
+      "track_code": "OFTA",
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "5a19b009-cbea-47a4-b70e-3b28b68cfa27",
+      "legacy_id": 125,
+      "code": "TMED721",
+      "name": "Neurooftalmología",
+      "credits": 14,
+      "period_number": 7,
+      "sort_order": 124,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "2f7bd722-d930-4a70-a4f1-211de259fde3"
+          },
+          {
+            "course": "1950f99c-1aaa-4dc3-bd40-1800eea670bc"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED621 o TMD268) y (TMED622 o TMD265)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "279d4113-8642-40d8-8968-740bcb6c0621",
+      "legacy_id": 126,
+      "code": "TMED722",
+      "name": "Optometría II",
+      "credits": 17,
+      "period_number": 7,
+      "sort_order": 125,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "2a3b2ee7-3447-4025-8f8a-b3031f5d57d5"
+      },
+      "prereq_raw": "TMED623 o TMD295",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "a2717b28-2237-4218-be29-82c4c37a9348",
+      "legacy_id": 127,
+      "code": "TMED723",
+      "name": "Procedimientos de apoyo en cirugía refractiva",
+      "credits": 15,
+      "period_number": 7,
+      "sort_order": 126,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "2a3b2ee7-3447-4025-8f8a-b3031f5d57d5"
+          },
+          {
+            "course": "1950f99c-1aaa-4dc3-bd40-1800eea670bc"
+          },
+          {
+            "course": "2f7bd722-d930-4a70-a4f1-211de259fde3"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED623 o TMD295) y (TMED622 o TMD265) y (TMED621 o TMD268)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "293b056e-adbf-4db5-896a-9c99f89a45b0",
+      "legacy_id": 128,
+      "code": "TMED724",
+      "name": "Integrador I: atención primaria en oftalmología",
+      "credits": 5,
+      "period_number": 7,
+      "sort_order": 127,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "2f7bd722-d930-4a70-a4f1-211de259fde3"
+          },
+          {
+            "course": "1950f99c-1aaa-4dc3-bd40-1800eea670bc"
+          },
+          {
+            "course": "2a3b2ee7-3447-4025-8f8a-b3031f5d57d5"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED621 o TMD268) y (TMED622 o TMD265) y (TMED623 o TMD295)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "25dbe309-7b56-42d9-b453-bc6d89b7e6bc",
+      "legacy_id": 153,
+      "code": "SPAB112",
+      "name": "Administración y gestión en salud",
+      "credits": 6,
+      "period_number": 7,
+      "sort_order": 152,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "fbf23ffb-a149-4f75-8e9d-fb511ad3142c"
+      },
+      "prereq_raw": "SPAB111 o equivalentes",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "67aae795-448b-474b-996c-19ed50c5e0dc",
+      "legacy_id": 154,
+      "code": "TMED002",
+      "name": "Educación en salud",
+      "credits": 4,
+      "period_number": 7,
+      "sort_order": 153,
+      "track_code": "OTORRINO",
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "d13b4b77-db3c-48db-b58e-a5324f78856a",
+      "legacy_id": 155,
+      "code": "TMED751",
+      "name": "Audiología avanzada y electrofisiología",
+      "credits": 24,
+      "period_number": 7,
+      "sort_order": 154,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "25c7e725-518d-47cb-a58e-8a7d8aaabec3"
+      },
+      "prereq_raw": "TMED651 o (TMD252 y TMD253)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "31d2fee2-34dd-47c3-ac41-91b8bde28234",
+      "legacy_id": 156,
+      "code": "TMED752",
+      "name": "Otoneurología II",
+      "credits": 23,
+      "period_number": 7,
+      "sort_order": 155,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "25c7e725-518d-47cb-a58e-8a7d8aaabec3"
+          },
+          {
+            "course": "15095d98-131b-45d2-b738-a58608191249"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED651 o (TMD252 y TMD253)) y (TMED652 o (TMD202 y TMD316))",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "c9071da1-5132-440b-9f0d-99293bf3a546",
+      "legacy_id": 157,
+      "code": "TMED753",
+      "name": "Integrador I: caso clínico OTO",
+      "credits": 7,
+      "period_number": 7,
+      "sort_order": 156,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "25c7e725-518d-47cb-a58e-8a7d8aaabec3"
+          },
+          {
+            "course": "15095d98-131b-45d2-b738-a58608191249"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED651 o (TMD252 y TMD253)) y (TMED652 o (TMD202 y TMD316))",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "d05824e2-e1c6-4f93-bc8a-00de6d2983c1",
+      "legacy_id": 38,
+      "code": "CEGPC13",
+      "name": "Pensamiento crítico",
+      "credits": 5,
+      "period_number": 8,
+      "sort_order": 37,
+      "track_code": "BACIMET",
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "b38807d1-aa5b-44c9-85d7-358514e41b42",
+      "legacy_id": 39,
+      "code": "SPAB103",
+      "name": "Gestión y aseguramiento de la calidad",
+      "credits": 8,
+      "period_number": 8,
+      "sort_order": 38,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "fef1d86d-6c97-4319-abcc-80392389688f"
+          },
+          {
+            "course": "fc6aaf0f-02bf-45f6-ac17-f47a45fa0e73"
+          }
+        ]
+      },
+      "prereq_raw": "SPAB112 y (TMED714 o TMED721 o TMED731 o TMED744 o TMED752)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "a6c258d9-a80a-44ca-a067-464fc5431f7e",
+      "legacy_id": 40,
+      "code": "SPAB303",
+      "name": "Metodología de la investigación",
+      "credits": 5,
+      "period_number": 8,
+      "sort_order": 39,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "fef1d86d-6c97-4319-abcc-80392389688f"
+          },
+          {
+            "course": "fc6aaf0f-02bf-45f6-ac17-f47a45fa0e73"
+          }
+        ]
+      },
+      "prereq_raw": "SPAB112 y (TMED714 o TMED721 o TMED731 o TMED744 o TMED752)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "a5d56f48-869e-47c8-815c-16693cbd6307",
+      "legacy_id": 41,
+      "code": "TMED811",
+      "name": "Medicina transfusional",
+      "credits": 24,
+      "period_number": 8,
+      "sort_order": 40,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "fbd2b627-88a5-4bd6-83ae-0f5f07a67b20"
+          },
+          {
+            "course": "fc6aaf0f-02bf-45f6-ac17-f47a45fa0e73"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED712 o TMD325) y TMED714",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "10058a0e-ed29-4ea7-bd2b-58fc56191844",
+      "legacy_id": 42,
+      "code": "TMED812",
+      "name": "Diagnóstico molecular clínico",
+      "credits": 19,
+      "period_number": 8,
+      "sort_order": 41,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "c11d2e29-33bf-4a62-a70a-a1975ec1ec3a"
+          },
+          {
+            "course": "fc6aaf0f-02bf-45f6-ac17-f47a45fa0e73"
+          },
+          {
+            "course": "cc272cab-651b-4aa5-9593-c244e023ff6a"
+          }
+        ]
+      },
+      "prereq_raw": "TMED711 y TMED714 y (TMED713 o TMD231)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "9bfcca22-2331-4b0a-8b80-10f19f7ab6e4",
+      "legacy_id": 69,
+      "code": "CEGPC13",
+      "name": "Pensamiento crítico",
+      "credits": 5,
+      "period_number": 8,
+      "sort_order": 68,
+      "track_code": "IFIME",
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "e8be543d-73d1-4ff8-9325-7b3f20c60c66",
+      "legacy_id": 70,
+      "code": "SPAB103",
+      "name": "Gestión y aseguramiento de la calidad",
+      "credits": 8,
+      "period_number": 8,
+      "sort_order": 69,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "db121c8d-ff56-4e6d-8f9a-09f17a6eb312"
+          },
+          {
+            "course": "029d4316-3bf4-4d61-9258-5a5643f673bc"
+          }
+        ]
+      },
+      "prereq_raw": "SPAB112 y (TMED714 o TMED721 o TMED731 o TMED744 o TMED752)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "3dabeef3-d190-49d1-82fd-e046c0d02578",
+      "legacy_id": 71,
+      "code": "SPAB303",
+      "name": "Metodología de la investigación",
+      "credits": 5,
+      "period_number": 8,
+      "sort_order": 70,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "db121c8d-ff56-4e6d-8f9a-09f17a6eb312"
+          },
+          {
+            "course": "029d4316-3bf4-4d61-9258-5a5643f673bc"
+          }
+        ]
+      },
+      "prereq_raw": "SPAB112 y (TMED714 o TMED721 o TMED731 o TMED744 o TMED752)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "41151a3d-9aed-48c1-a855-f748fe9ed7d0",
+      "legacy_id": 72,
+      "code": "TMED831",
+      "name": "Radioterapia",
+      "credits": 19,
+      "period_number": 8,
+      "sort_order": 71,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "fa392257-a9e1-4791-a154-3911c3b0806c"
+          },
+          {
+            "course": "64beab84-134f-4a97-9aef-a4189dad51b1"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED732 o TMD298) y TMED733",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "fde07529-ad56-4ebd-a01e-cfd6343b17c8",
+      "legacy_id": 73,
+      "code": "TMED832",
+      "name": "Resonancia magnética",
+      "credits": 21,
+      "period_number": 8,
+      "sort_order": 72,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "64beab84-134f-4a97-9aef-a4189dad51b1"
+          },
+          {
+            "course": "5a89cb45-c028-4d5f-b07d-8b51227a3241"
+          }
+        ]
+      },
+      "prereq_raw": "TMED733 y (TMED734 o TMD297)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "3b422c4b-6479-4988-9fce-a34e25e7ccdd",
+      "legacy_id": 98,
+      "code": "SPAB103",
+      "name": "Gestión y aseguramiento de la calidad",
+      "credits": 8,
+      "period_number": 8,
+      "sort_order": 97,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "d436712d-fe93-43b1-a8e1-e310e912aa6c"
+          },
+          {
+            "course": "36e1a813-8040-4211-8fd4-de16420272ee"
+          }
+        ]
+      },
+      "prereq_raw": "SPAB112 y (TMED714 o TMED721 o TMED731 o TMED744 o TMED752)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "08af8713-1f5a-402d-85b3-967ed6f7d8c1",
+      "legacy_id": 99,
+      "code": "SPAB303",
+      "name": "Metodología de la investigación",
+      "credits": 5,
+      "period_number": 8,
+      "sort_order": 98,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "d436712d-fe93-43b1-a8e1-e310e912aa6c"
+          },
+          {
+            "course": "36e1a813-8040-4211-8fd4-de16420272ee"
+          }
+        ]
+      },
+      "prereq_raw": "SPAB112 y (TMED714 o TMED721 o TMED731 o TMED744 o TMED752)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "5238c53e-0ce0-47e0-bdc3-a773362598b1",
+      "legacy_id": 100,
+      "code": "TMED841",
+      "name": "Diagnóstico citogenético",
+      "credits": 19,
+      "period_number": 8,
+      "sort_order": 99,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "dca83fe3-5306-437d-90ec-80264b3d4f3f"
+          },
+          {
+            "course": "36e1a813-8040-4211-8fd4-de16420272ee"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED741 o TMD294) y TMED744",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "38e72e30-74c9-418d-8aa5-d66198baa42d",
+      "legacy_id": 101,
+      "code": "TMED842",
+      "name": "Diagnóstico molecular",
+      "credits": 19,
+      "period_number": 8,
+      "sort_order": 100,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "dca83fe3-5306-437d-90ec-80264b3d4f3f"
+          },
+          {
+            "course": "2108b51e-d3b9-41f9-abcd-45f1732dccbf"
+          },
+          {
+            "course": "36e1a813-8040-4211-8fd4-de16420272ee"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED741 o TMD294) y (TMED742 o TMD327) y TMED744",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "83ebd7d2-3652-4181-8ba6-4db315563d27",
+      "legacy_id": 102,
+      "code": "TMED843",
+      "name": "Citopatología II",
+      "credits": 14,
+      "period_number": 8,
+      "sort_order": 101,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "69183d5f-2352-4e21-8cbf-f4cfceca9a2b"
+          },
+          {
+            "course": "36e1a813-8040-4211-8fd4-de16420272ee"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED743 o TMD321) y TMED744",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "fe75cf2c-6cea-4132-881a-514965e0b278",
+      "legacy_id": 129,
+      "code": "SPAB103",
+      "name": "Gestión y aseguramiento de la calidad",
+      "credits": 8,
+      "period_number": 8,
+      "sort_order": 128,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "949b2799-f981-47f8-b096-c263036c471b"
+          },
+          {
+            "course": "5a19b009-cbea-47a4-b70e-3b28b68cfa27"
+          }
+        ]
+      },
+      "prereq_raw": "SPAB112 y (TMED714 o TMED721 o TMED731 o TMED744 o TMED752)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "a18f500d-af4a-47ed-850f-b2b440c9ac8c",
+      "legacy_id": 130,
+      "code": "SPAB303",
+      "name": "Metodología de la investigación",
+      "credits": 5,
+      "period_number": 8,
+      "sort_order": 129,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "949b2799-f981-47f8-b096-c263036c471b"
+          },
+          {
+            "course": "5a19b009-cbea-47a4-b70e-3b28b68cfa27"
+          }
+        ]
+      },
+      "prereq_raw": "SPAB112 y (TMED714 o TMED721 o TMED731 o TMED744 o TMED752)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "713e96a0-c5e2-4fde-8e59-cbb47cf31b6a",
+      "legacy_id": 131,
+      "code": "TMED821",
+      "name": "Formulación y evaluación de proyectos en oftalmología",
+      "credits": 12,
+      "period_number": 8,
+      "sort_order": 130,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "949b2799-f981-47f8-b096-c263036c471b"
+      },
+      "prereq_raw": "SPAB112 o TMD320",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "55923d53-49d0-410c-b6ae-6b4ac588a420",
+      "legacy_id": 132,
+      "code": "TMED822",
+      "name": "Exámenes funcionales del sistema visual",
+      "credits": 23,
+      "period_number": 8,
+      "sort_order": 131,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "279d4113-8642-40d8-8968-740bcb6c0621"
+          },
+          {
+            "course": "293b056e-adbf-4db5-896a-9c99f89a45b0"
+          }
+        ]
+      },
+      "prereq_raw": "TMED722 y TMED724",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "19583913-ffe3-4139-9d06-444c544aae5b",
+      "legacy_id": 133,
+      "code": "TMED823",
+      "name": "Imagenología ocular",
+      "credits": 17,
+      "period_number": 8,
+      "sort_order": 132,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "a2717b28-2237-4218-be29-82c4c37a9348"
+          },
+          {
+            "course": "293b056e-adbf-4db5-896a-9c99f89a45b0"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED723 o (TMD323 y TMD296)) y TMED724",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "23581107-ed0a-4ce4-b3e9-2fadb7f01541",
+      "legacy_id": 158,
+      "code": "SPAB103",
+      "name": "Gestión y aseguramiento de la calidad",
+      "credits": 8,
+      "period_number": 8,
+      "sort_order": 157,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "25dbe309-7b56-42d9-b453-bc6d89b7e6bc"
+          },
+          {
+            "course": "31d2fee2-34dd-47c3-ac41-91b8bde28234"
+          }
+        ]
+      },
+      "prereq_raw": "SPAB112 y (TMED714 o TMED721 o TMED731 o TMED744 o TMED752)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "0f61e242-d9f2-4c79-b22e-00e7c3b1318c",
+      "legacy_id": 159,
+      "code": "SPAB303",
+      "name": "Metodología de la investigación",
+      "credits": 5,
+      "period_number": 8,
+      "sort_order": 158,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "25dbe309-7b56-42d9-b453-bc6d89b7e6bc"
+          },
+          {
+            "course": "31d2fee2-34dd-47c3-ac41-91b8bde28234"
+          }
+        ]
+      },
+      "prereq_raw": "SPAB112 y (TMED714 o TMED721 o TMED731 o TMED744 o TMED752)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "df1f1d25-ab90-4574-947f-137449715c03",
+      "legacy_id": 160,
+      "code": "TMED851",
+      "name": "Salud ocupacional",
+      "credits": 12,
+      "period_number": 8,
+      "sort_order": 159,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "25dbe309-7b56-42d9-b453-bc6d89b7e6bc"
+      },
+      "prereq_raw": "SPAB112 o TMD320",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "43fb2292-c8d4-4b52-b718-7555944759b1",
+      "legacy_id": 161,
+      "code": "TMED852",
+      "name": "Prótesis y ortesis auditivas",
+      "credits": 25,
+      "period_number": 8,
+      "sort_order": 160,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "d13b4b77-db3c-48db-b58e-a5324f78856a"
+          },
+          {
+            "course": "c9071da1-5132-440b-9f0d-99293bf3a546"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED751 o TMD324) y TMED753",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "ffb7f760-b26e-4882-b0b2-72b78f42b5e0",
+      "legacy_id": 162,
+      "code": "TMED853",
+      "name": "Rehabilitación vestibular auditiva",
+      "credits": 17,
+      "period_number": 8,
+      "sort_order": 161,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "d13b4b77-db3c-48db-b58e-a5324f78856a"
+          },
+          {
+            "course": "31d2fee2-34dd-47c3-ac41-91b8bde28234"
+          }
+        ]
+      },
+      "prereq_raw": "(TMED751 o TMD324) y (TMED752 o TMD316)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "ee370f36-a447-4449-99fe-b452fb9158ae",
+      "legacy_id": 43,
+      "code": "CEGRS14",
+      "name": "Responsabilidad social",
+      "credits": 6,
+      "period_number": 9,
+      "sort_order": 42,
+      "track_code": "BACIMET",
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "986d7a9f-43d0-4080-bd7e-ec352fb49418",
+      "legacy_id": 44,
+      "code": "TMED911",
+      "name": "Seminario de investigación BACIMET",
+      "credits": 55,
+      "period_number": 9,
+      "sort_order": 43,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "a6c258d9-a80a-44ca-a067-464fc5431f7e"
+          },
+          {
+            "course": "b38807d1-aa5b-44c9-85d7-358514e41b42"
+          },
+          {
+            "course": "a5d56f48-869e-47c8-815c-16693cbd6307"
+          },
+          {
+            "course": "10058a0e-ed29-4ea7-bd2b-58fc56191844"
+          }
+        ]
+      },
+      "prereq_raw": "SPAB303 y SPAB103 y (TMED811 o TMD325) y TMED812",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "2f91e270-1f2f-4689-ae90-485284e39572",
+      "legacy_id": 74,
+      "code": "CEGRS14",
+      "name": "Responsabilidad social",
+      "credits": 6,
+      "period_number": 9,
+      "sort_order": 73,
+      "track_code": "IFIME",
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "4eee4e35-8484-4106-b2d8-50a2f378b09f",
+      "legacy_id": 75,
+      "code": "TMED931",
+      "name": "Seminario de investigación IFIME",
+      "credits": 55,
+      "period_number": 9,
+      "sort_order": 74,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "3dabeef3-d190-49d1-82fd-e046c0d02578"
+          },
+          {
+            "course": "e8be543d-73d1-4ff8-9325-7b3f20c60c66"
+          },
+          {
+            "course": "41151a3d-9aed-48c1-a855-f748fe9ed7d0"
+          },
+          {
+            "course": "fde07529-ad56-4ebd-a01e-cfd6343b17c8"
+          }
+        ]
+      },
+      "prereq_raw": "SPAB303 y SPAB103 y (TMED831 o TMD339) y (TMED832 o TMD297)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "871f90bf-78f7-45df-ac98-a4359c2896a8",
+      "legacy_id": 103,
+      "code": "CEGRS14",
+      "name": "Responsabilidad social",
+      "credits": 6,
+      "period_number": 9,
+      "sort_order": 102,
+      "track_code": "MORFO",
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "6fee5048-71e0-4624-aab3-4fcb39a755cd",
+      "legacy_id": 104,
+      "code": "TMED941",
+      "name": "Seminario de investigación MORFO",
+      "credits": 55,
+      "period_number": 9,
+      "sort_order": 103,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "08af8713-1f5a-402d-85b3-967ed6f7d8c1"
+          },
+          {
+            "course": "3b422c4b-6479-4988-9fce-a34e25e7ccdd"
+          },
+          {
+            "course": "5238c53e-0ce0-47e0-bdc3-a773362598b1"
+          },
+          {
+            "course": "38e72e30-74c9-418d-8aa5-d66198baa42d"
+          },
+          {
+            "course": "83ebd7d2-3652-4181-8ba6-4db315563d27"
+          }
+        ]
+      },
+      "prereq_raw": "SPAB303 y SPAB103 y (TMED841 o TMD326) y TMED842 y (TMED843 o TMD322)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "92c5d150-222b-4da8-bf05-89a8bc97d185",
+      "legacy_id": 134,
+      "code": "CEGRS14",
+      "name": "Responsabilidad social",
+      "credits": 6,
+      "period_number": 9,
+      "sort_order": 133,
+      "track_code": "OFTA",
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "e4f44daf-9422-4b47-a698-bee0816da4f3",
+      "legacy_id": 135,
+      "code": "TMED921",
+      "name": "Seminario de investigación OFTA",
+      "credits": 55,
+      "period_number": 9,
+      "sort_order": 134,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "a18f500d-af4a-47ed-850f-b2b440c9ac8c"
+          },
+          {
+            "course": "fe75cf2c-6cea-4132-881a-514965e0b278"
+          },
+          {
+            "course": "713e96a0-c5e2-4fde-8e59-cbb47cf31b6a"
+          },
+          {
+            "course": "55923d53-49d0-410c-b6ae-6b4ac588a420"
+          },
+          {
+            "course": "19583913-ffe3-4139-9d06-444c544aae5b"
+          }
+        ]
+      },
+      "prereq_raw": "SPAB303 y SPAB103 y TMED821 y (TMED822 o TMD356) y (TMED823 o TMD357)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "9c3e9e04-73d6-4fca-a965-6d64ed688dec",
+      "legacy_id": 163,
+      "code": "CEGRS14",
+      "name": "Responsabilidad social",
+      "credits": 6,
+      "period_number": 9,
+      "sort_order": 162,
+      "track_code": "OTORRINO",
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "41dac4b6-9c00-405a-9180-6c823e0c3c96",
+      "legacy_id": 164,
+      "code": "TMED951",
+      "name": "Seminario de investigación OTO",
+      "credits": 55,
+      "period_number": 9,
+      "sort_order": 163,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "0f61e242-d9f2-4c79-b22e-00e7c3b1318c"
+          },
+          {
+            "course": "23581107-ed0a-4ce4-b3e9-2fadb7f01541"
+          },
+          {
+            "course": "df1f1d25-ab90-4574-947f-137449715c03"
+          },
+          {
+            "course": "43fb2292-c8d4-4b52-b718-7555944759b1"
+          },
+          {
+            "course": "ffb7f760-b26e-4882-b0b2-72b78f42b5e0"
+          }
+        ]
+      },
+      "prereq_raw": "SPAB303 y SPAB103 y (TMED851 o TMD280) y (TMED852 o TMD259) y (TMED853 o (TMD259 y TMD253))",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "9472fcc5-bcd9-4e06-a796-dae98b681250",
+      "legacy_id": 45,
+      "code": "TMED912",
+      "name": "Integrador II: internado clínico BACIMET",
+      "credits": 72,
+      "period_number": 10,
+      "sort_order": 44,
+      "track_code": "BACIMET",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "986d7a9f-43d0-4080-bd7e-ec352fb49418"
+      },
+      "prereq_raw": "TMED911",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "af3f3df8-9dcc-4b56-a9de-ab13bf65f85a",
+      "legacy_id": 76,
+      "code": "TMED932",
+      "name": "Integrador II: internado clínico IFIME",
+      "credits": 72,
+      "period_number": 10,
+      "sort_order": 75,
+      "track_code": "IFIME",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "4eee4e35-8484-4106-b2d8-50a2f378b09f"
+      },
+      "prereq_raw": "TMED931",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "94fd6b28-86f8-4cd5-92fb-d0f286cd142b",
+      "legacy_id": 105,
+      "code": "TMED942",
+      "name": "Integrador II: internado clínico MORFO",
+      "credits": 72,
+      "period_number": 10,
+      "sort_order": 104,
+      "track_code": "MORFO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "6fee5048-71e0-4624-aab3-4fcb39a755cd"
+      },
+      "prereq_raw": "TMED941",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "1e4c141c-26d1-4768-87f1-b2b2b88fc757",
+      "legacy_id": 136,
+      "code": "TMED922",
+      "name": "Integrador II: internado clínico OFTA",
+      "credits": 72,
+      "period_number": 10,
+      "sort_order": 135,
+      "track_code": "OFTA",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "e4f44daf-9422-4b47-a698-bee0816da4f3"
+      },
+      "prereq_raw": "TMED921",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "656dd2b9-f609-4e13-a24c-a9d7dec95069",
+      "legacy_id": 165,
+      "code": "TMED952",
+      "name": "Integrador II: internado clínico OTO",
+      "credits": 72,
+      "period_number": 10,
+      "sort_order": 164,
+      "track_code": "OTORRINO",
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "41dac4b6-9c00-405a-9180-6c823e0c3c96"
+      },
+      "prereq_raw": "TMED951",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    }
+  ],
+  "aliases": {}
+}

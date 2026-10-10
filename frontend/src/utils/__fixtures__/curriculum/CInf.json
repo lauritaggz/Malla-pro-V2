@@ -1,0 +1,1141 @@
+{
+  "program": {
+    "id": "49b1fa26-a629-450a-b91a-893338592c2c",
+    "slug": "ingenieria-civil-informatica",
+    "name": "Ingeniería Civil Informática",
+    "official_name": "Ingeniería Civil Informática (UNAB)",
+    "official_code": null,
+    "career_key": "unab-cinf",
+    "legacy_url": "/mallas/CInf.json"
+  },
+  "university": {
+    "id": "baa60218-0377-4052-bddd-a92786b37188",
+    "slug": "unab",
+    "name": "Universidad Andrés Bello",
+    "short_name": "UNAB",
+    "country": "CL"
+  },
+  "version": {
+    "id": "7919815d-72cb-4f51-a39f-ff5beb339789",
+    "label": "legacy",
+    "period_regime": "semestral",
+    "credit_system": "SCT",
+    "total_periods": 10,
+    "total_credits": 631,
+    "status": "published",
+    "is_current": true,
+    "source_type": "legacy_json",
+    "source_url": "/mallas/CInf.json",
+    "source_note": "Imported from frontend/public/mallas/CInf.json",
+    "reviewed_at": null
+  },
+  "tracks": [],
+  "periods": [
+    {
+      "number": 1,
+      "track_code": null,
+      "course_ids": [
+        "3ac06793-b63e-45a5-89d5-9a62a9ba7489",
+        "ae7205ad-5b1a-4011-8fd4-7a7560476c02",
+        "43515f8c-35be-4d5d-adc8-d833bf8372d7",
+        "eb506dc8-5973-452e-a377-6aa4ffa172a7"
+      ]
+    },
+    {
+      "number": 2,
+      "track_code": null,
+      "course_ids": [
+        "f0e6903c-6a0d-428c-92bf-8e5fda876322",
+        "02bc8979-76b3-4576-a7cf-b422cbfd7529",
+        "9be02536-6dc9-4841-a0a3-62642f75aa21",
+        "d60d14ae-bf19-446b-b78e-da5e5044f205",
+        "894d7708-43c5-4412-87a1-a1dda92e3e03"
+      ]
+    },
+    {
+      "number": 3,
+      "track_code": null,
+      "course_ids": [
+        "8c3d4c34-02bd-40f4-aa8d-b3afe1841dee",
+        "a96405c9-ac07-4ae9-8973-59c691b5da99",
+        "163cf8e7-88af-4091-82ad-8d605191179e",
+        "7dc47d35-cbde-4be4-9da4-dc89178daef0",
+        "6f829428-769a-4c90-8c31-3b5f636b891a"
+      ]
+    },
+    {
+      "number": 4,
+      "track_code": null,
+      "course_ids": [
+        "5a126d5a-4ee6-41c1-bede-92032f1515e5",
+        "fb8152d0-bf0f-48de-9769-ad185ea84750",
+        "912750d8-8b2e-465a-b42b-2a6f915d9fd1",
+        "411a98b2-c83b-4d48-8fbe-103c461fb9d9",
+        "cb40f988-73f8-48de-98b2-531c501ea010"
+      ]
+    },
+    {
+      "number": 5,
+      "track_code": null,
+      "course_ids": [
+        "b28fb66d-7f07-4fc0-8a20-bfa5b0b01be6",
+        "6d539f5b-69fc-4838-b049-6aa411fcdf32",
+        "4cac1cc9-0974-45e0-aeff-a09af5ffa666",
+        "be9b98fb-439f-4bac-a789-e3b82168afb8",
+        "1610aa35-505c-4e56-a113-0e0bd2ec4c1d"
+      ]
+    },
+    {
+      "number": 6,
+      "track_code": null,
+      "course_ids": [
+        "b280401d-97db-44ec-be3a-be958eecd128",
+        "f4673ead-954e-425c-8e97-35a2f6b198ac",
+        "20621c45-ce52-47c3-872b-a33d1ded2ce3",
+        "d1877b7b-30b8-4399-a9a1-2f120f4bede6",
+        "3353f511-135d-4cd1-becd-220cff447b9b"
+      ]
+    },
+    {
+      "number": 7,
+      "track_code": null,
+      "course_ids": [
+        "a0cbc698-d763-4206-9644-7e7f1ff39fbf",
+        "b5dcbe31-2270-43b5-8b90-09b9096fd1e9",
+        "bfc4e969-dff3-4c96-b0fc-5109beefd34a",
+        "7f58ceaa-1220-4d12-96aa-4072c7ecc3c5",
+        "d0a28f29-1bab-494f-af50-bc96cbae1725"
+      ]
+    },
+    {
+      "number": 8,
+      "track_code": null,
+      "course_ids": [
+        "e5143068-653a-4671-9c02-e5bc939aa7b1",
+        "f3e55943-b9db-43f5-a100-26b5ad7ede82",
+        "5c8f62c4-74ef-4838-ab12-dd9b614e3734",
+        "48ca8e01-7bf7-4eb5-9cc4-a6ef46eefbec",
+        "c91fd5c0-5764-49b3-8e38-8fb09b88c002",
+        "2b73c74d-1925-4500-b5a8-b41e42be0c87"
+      ]
+    },
+    {
+      "number": 9,
+      "track_code": null,
+      "course_ids": [
+        "1165603a-0daa-4eda-bb92-2bdf7b5de0db",
+        "9eaca5eb-ac15-4c7b-b1df-b6f5c9e67afc",
+        "a0953a9e-cd71-4167-90bb-19e31a0a825c",
+        "d115ddcf-8639-4e7e-8214-9daeaac0fa2f",
+        "6f1ac6f9-8513-44b1-9299-452e11ac629c"
+      ]
+    },
+    {
+      "number": 10,
+      "track_code": null,
+      "course_ids": [
+        "947a5205-845f-49b5-83f6-01db8da8263b",
+        "f9cc961e-e131-4efc-8994-3451118d4363",
+        "7f925744-b486-4898-ab29-fa9664c43a10"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "id": "3ac06793-b63e-45a5-89d5-9a62a9ba7489",
+      "legacy_id": 1,
+      "code": "TDFI102",
+      "name": "Introducción a la Programación",
+      "credits": 18,
+      "period_number": 1,
+      "sort_order": 0,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "ae7205ad-5b1a-4011-8fd4-7a7560476c02",
+      "legacy_id": 2,
+      "code": "TDFI101",
+      "name": "Introducción a la Ingeniería",
+      "credits": 16,
+      "period_number": 1,
+      "sort_order": 1,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "43515f8c-35be-4d5d-adc8-d833bf8372d7",
+      "legacy_id": 3,
+      "code": "FMMP012",
+      "name": "Introducción a las Matemáticas",
+      "credits": 16,
+      "period_number": 1,
+      "sort_order": 2,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "eb506dc8-5973-452e-a377-6aa4ffa172a7",
+      "legacy_id": 4,
+      "code": "CFIS310",
+      "name": "Física General",
+      "credits": 18,
+      "period_number": 1,
+      "sort_order": 3,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "f0e6903c-6a0d-428c-92bf-8e5fda876322",
+      "legacy_id": 5,
+      "code": "TDFI103",
+      "name": "Base de Datos",
+      "credits": 15,
+      "period_number": 2,
+      "sort_order": 4,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "3ac06793-b63e-45a5-89d5-9a62a9ba7489"
+      },
+      "prereq_raw": "TDFI102",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "02bc8979-76b3-4576-a7cf-b422cbfd7529",
+      "legacy_id": 6,
+      "code": "FMMP112",
+      "name": "Cálculo Diferencial",
+      "credits": 16,
+      "period_number": 2,
+      "sort_order": 5,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "43515f8c-35be-4d5d-adc8-d833bf8372d7"
+      },
+      "prereq_raw": "FMMP012",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "9be02536-6dc9-4841-a0a3-62642f75aa21",
+      "legacy_id": 7,
+      "code": "CFIS328",
+      "name": "Física Experimental",
+      "credits": 16,
+      "period_number": 2,
+      "sort_order": 6,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "43515f8c-35be-4d5d-adc8-d833bf8372d7"
+          },
+          {
+            "course": "eb506dc8-5973-452e-a377-6aa4ffa172a7"
+          }
+        ]
+      },
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "d60d14ae-bf19-446b-b78e-da5e5044f205",
+      "legacy_id": 8,
+      "code": "QUIM090",
+      "name": "Química y Ambiente",
+      "credits": 10,
+      "period_number": 2,
+      "sort_order": 7,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "894d7708-43c5-4412-87a1-a1dda92e3e03",
+      "legacy_id": 9,
+      "code": "CEGHC11",
+      "name": "Habilidades Comunicativas",
+      "credits": 8,
+      "period_number": 2,
+      "sort_order": 8,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "8c3d4c34-02bd-40f4-aa8d-b3afe1841dee",
+      "legacy_id": 10,
+      "code": "TDFI104",
+      "name": "Compliance & Accountability",
+      "credits": 10,
+      "period_number": 3,
+      "sort_order": 9,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "ae7205ad-5b1a-4011-8fd4-7a7560476c02"
+      },
+      "prereq_raw": "TDFI101",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "a96405c9-ac07-4ae9-8973-59c691b5da99",
+      "legacy_id": 11,
+      "code": "PTEC101",
+      "name": "Algoritmos y Estructuras de Datos",
+      "credits": 12,
+      "period_number": 3,
+      "sort_order": 10,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "3ac06793-b63e-45a5-89d5-9a62a9ba7489"
+      },
+      "prereq_raw": "TDFI102",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "163cf8e7-88af-4091-82ad-8d605191179e",
+      "legacy_id": 12,
+      "code": "FMMP212",
+      "name": "Cálculo Integral",
+      "credits": 16,
+      "period_number": 3,
+      "sort_order": 11,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "02bc8979-76b3-4576-a7cf-b422cbfd7529"
+      },
+      "prereq_raw": "FMMP112",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "7dc47d35-cbde-4be4-9da4-dc89178daef0",
+      "legacy_id": 13,
+      "code": "CFIS332",
+      "name": "Mecánica",
+      "credits": 18,
+      "period_number": 3,
+      "sort_order": 12,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "02bc8979-76b3-4576-a7cf-b422cbfd7529"
+          },
+          {
+            "course": "9be02536-6dc9-4841-a0a3-62642f75aa21"
+          }
+        ]
+      },
+      "prereq_raw": "CFIS310",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "6f829428-769a-4c90-8c31-3b5f636b891a",
+      "legacy_id": 14,
+      "code": "ACAD101",
+      "name": "Taller de Innovación y Emprendimiento I",
+      "credits": 10,
+      "period_number": 3,
+      "sort_order": 13,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "ae7205ad-5b1a-4011-8fd4-7a7560476c02"
+      },
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "5a126d5a-4ee6-41c1-bede-92032f1515e5",
+      "legacy_id": 15,
+      "code": "FMMP312",
+      "name": "Sistemas y Ecuaciones Diferenciales Lineales",
+      "credits": 16,
+      "period_number": 4,
+      "sort_order": 14,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "163cf8e7-88af-4091-82ad-8d605191179e"
+      },
+      "prereq_raw": "FMMP212",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "fb8152d0-bf0f-48de-9769-ad185ea84750",
+      "legacy_id": 16,
+      "code": "CFIS344",
+      "name": "Electricidad y Magnetismo",
+      "credits": 14,
+      "period_number": 4,
+      "sort_order": 15,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "7dc47d35-cbde-4be4-9da4-dc89178daef0"
+          },
+          {
+            "course": "163cf8e7-88af-4091-82ad-8d605191179e"
+          }
+        ]
+      },
+      "prereq_raw": "CFIS332 & FMMP212",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "912750d8-8b2e-465a-b42b-2a6f915d9fd1",
+      "legacy_id": 17,
+      "code": "INSW220",
+      "name": "Práctica I",
+      "credits": 16,
+      "period_number": 4,
+      "sort_order": 16,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "f0e6903c-6a0d-428c-92bf-8e5fda876322"
+          },
+          {
+            "course": "8c3d4c34-02bd-40f4-aa8d-b3afe1841dee"
+          },
+          {
+            "course": "a96405c9-ac07-4ae9-8973-59c691b5da99"
+          },
+          {
+            "course": "163cf8e7-88af-4091-82ad-8d605191179e"
+          },
+          {
+            "course": "7dc47d35-cbde-4be4-9da4-dc89178daef0"
+          },
+          {
+            "course": "6f829428-769a-4c90-8c31-3b5f636b891a"
+          }
+        ]
+      },
+      "prereq_raw": "",
+      "coreq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "5a126d5a-4ee6-41c1-bede-92032f1515e5"
+          },
+          {
+            "course": "fb8152d0-bf0f-48de-9769-ad185ea84750"
+          },
+          {
+            "course": "411a98b2-c83b-4d48-8fbe-103c461fb9d9"
+          },
+          {
+            "course": "cb40f988-73f8-48de-98b2-531c501ea010"
+          }
+        ]
+      },
+      "coreq_raw": "FMMP312 y CFIS344 y ACAD102 y ING119",
+      "attrs": {}
+    },
+    {
+      "id": "411a98b2-c83b-4d48-8fbe-103c461fb9d9",
+      "legacy_id": 18,
+      "code": "ACAD102",
+      "name": "Taller de Innovación y Emprendimiento II",
+      "credits": 10,
+      "period_number": 4,
+      "sort_order": 17,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "6f829428-769a-4c90-8c31-3b5f636b891a"
+      },
+      "prereq_raw": "ACAD101",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "cb40f988-73f8-48de-98b2-531c501ea010",
+      "legacy_id": 19,
+      "code": "ING119",
+      "name": "Inglés I",
+      "credits": 12,
+      "period_number": 4,
+      "sort_order": 18,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "b28fb66d-7f07-4fc0-8a20-bfa5b0b01be6",
+      "legacy_id": 20,
+      "code": "FMSP316",
+      "name": "Métodos Cuantitativos",
+      "credits": 20,
+      "period_number": 5,
+      "sort_order": 19,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "163cf8e7-88af-4091-82ad-8d605191179e"
+      },
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "6d539f5b-69fc-4838-b049-6aa411fcdf32",
+      "legacy_id": 21,
+      "code": "PTEC102",
+      "name": "Paradigmas de Programación",
+      "credits": 8,
+      "period_number": 5,
+      "sort_order": 20,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "a96405c9-ac07-4ae9-8973-59c691b5da99"
+      },
+      "prereq_raw": "PTEC101",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "4cac1cc9-0974-45e0-aeff-a09af5ffa666",
+      "legacy_id": 22,
+      "code": "ICF201",
+      "name": "Fundamentos de Computación de Alto Desempeño",
+      "credits": 12,
+      "period_number": 5,
+      "sort_order": 21,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "a96405c9-ac07-4ae9-8973-59c691b5da99"
+      },
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "be9b98fb-439f-4bac-a789-e3b82168afb8",
+      "legacy_id": 23,
+      "code": "ICF202",
+      "name": "Análisis y Diseño de Algoritmos",
+      "credits": 12,
+      "period_number": 5,
+      "sort_order": 22,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "a96405c9-ac07-4ae9-8973-59c691b5da99"
+      },
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "1610aa35-505c-4e56-a113-0e0bd2ec4c1d",
+      "legacy_id": 24,
+      "code": "ING129",
+      "name": "Inglés II",
+      "credits": 12,
+      "period_number": 5,
+      "sort_order": 23,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "cb40f988-73f8-48de-98b2-531c501ea010"
+      },
+      "prereq_raw": "ING119",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "b280401d-97db-44ec-be3a-be958eecd128",
+      "legacy_id": 25,
+      "code": "TDFI105",
+      "name": "Minería de Datos",
+      "credits": 12,
+      "period_number": 6,
+      "sort_order": 24,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "b28fb66d-7f07-4fc0-8a20-bfa5b0b01be6"
+          },
+          {
+            "course": "f0e6903c-6a0d-428c-92bf-8e5fda876322"
+          }
+        ]
+      },
+      "prereq_raw": "FMSP316 & TDFI103",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "f4673ead-954e-425c-8e97-35a2f6b198ac",
+      "legacy_id": 26,
+      "code": "PTEC103",
+      "name": "Desarrollo Web y Móvil",
+      "credits": 14,
+      "period_number": 6,
+      "sort_order": 25,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "6d539f5b-69fc-4838-b049-6aa411fcdf32"
+      },
+      "prereq_raw": "PTEC102",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "20621c45-ce52-47c3-872b-a33d1ded2ce3",
+      "legacy_id": 27,
+      "code": "PTEC104",
+      "name": "Infraestructura TI",
+      "credits": 12,
+      "period_number": 6,
+      "sort_order": 26,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "6d539f5b-69fc-4838-b049-6aa411fcdf32"
+      },
+      "prereq_raw": "PTEC102",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "d1877b7b-30b8-4399-a9a1-2f120f4bede6",
+      "legacy_id": 28,
+      "code": "ICF203",
+      "name": "Fundamentos de Inteligencia Artificial",
+      "credits": 12,
+      "period_number": 6,
+      "sort_order": 27,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "be9b98fb-439f-4bac-a789-e3b82168afb8"
+      },
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "3353f511-135d-4cd1-becd-220cff447b9b",
+      "legacy_id": 29,
+      "code": "ING239",
+      "name": "Inglés III",
+      "credits": 12,
+      "period_number": 6,
+      "sort_order": 28,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "1610aa35-505c-4e56-a113-0e0bd2ec4c1d"
+      },
+      "prereq_raw": "ING129",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "a0cbc698-d763-4206-9644-7e7f1ff39fbf",
+      "legacy_id": 30,
+      "code": "PTEC105",
+      "name": "Ingeniería de Software I",
+      "credits": 15,
+      "period_number": 7,
+      "sort_order": 29,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "6d539f5b-69fc-4838-b049-6aa411fcdf32"
+      },
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "b5dcbe31-2270-43b5-8b90-09b9096fd1e9",
+      "legacy_id": 31,
+      "code": "ICF204",
+      "name": "Aprendizaje de Máquina",
+      "credits": 12,
+      "period_number": 7,
+      "sort_order": 30,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "d1877b7b-30b8-4399-a9a1-2f120f4bede6"
+      },
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "bfc4e969-dff3-4c96-b0fc-5109beefd34a",
+      "legacy_id": 32,
+      "code": "ICF205",
+      "name": "Optimización",
+      "credits": 12,
+      "period_number": 7,
+      "sort_order": 31,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "be9b98fb-439f-4bac-a789-e3b82168afb8"
+      },
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "7f58ceaa-1220-4d12-96aa-4072c7ecc3c5",
+      "legacy_id": 33,
+      "code": "ACAD103",
+      "name": "Taller de Innovación y Emprendimiento III",
+      "credits": 10,
+      "period_number": 7,
+      "sort_order": 32,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "411a98b2-c83b-4d48-8fbe-103c461fb9d9"
+      },
+      "prereq_raw": "ACAD102",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "d0a28f29-1bab-494f-af50-bc96cbae1725",
+      "legacy_id": 34,
+      "code": "ING249",
+      "name": "Inglés IV",
+      "credits": 12,
+      "period_number": 7,
+      "sort_order": 33,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "3353f511-135d-4cd1-becd-220cff447b9b"
+      },
+      "prereq_raw": "ING239",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "e5143068-653a-4671-9c02-e5bc939aa7b1",
+      "legacy_id": 35,
+      "code": "TDFI106",
+      "name": "Gestión de la Transformación Digital",
+      "credits": 12,
+      "period_number": 8,
+      "sort_order": 34,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "8c3d4c34-02bd-40f4-aa8d-b3afe1841dee"
+      },
+      "prereq_raw": "TDFI104",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "f3e55943-b9db-43f5-a100-26b5ad7ede82",
+      "legacy_id": 36,
+      "code": "PTEC106",
+      "name": "Ingeniería de Software II",
+      "credits": 15,
+      "period_number": 8,
+      "sort_order": 35,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "a0cbc698-d763-4206-9644-7e7f1ff39fbf"
+          },
+          {
+            "course": "f4673ead-954e-425c-8e97-35a2f6b198ac"
+          }
+        ]
+      },
+      "prereq_raw": "PTEC105 & PTEC103",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "5c8f62c4-74ef-4838-ab12-dd9b614e3734",
+      "legacy_id": 37,
+      "code": "PTEC107",
+      "name": "Ciberseguridad",
+      "credits": 14,
+      "period_number": 8,
+      "sort_order": 36,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "20621c45-ce52-47c3-872b-a33d1ded2ce3"
+      },
+      "prereq_raw": "PTEC104",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "48ca8e01-7bf7-4eb5-9cc4-a6ef46eefbec",
+      "legacy_id": 38,
+      "code": "INSW411",
+      "name": "Tópicos de Especialidad I",
+      "credits": 10,
+      "period_number": 8,
+      "sort_order": 37,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "d1877b7b-30b8-4399-a9a1-2f120f4bede6"
+      },
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "c91fd5c0-5764-49b3-8e38-8fb09b88c002",
+      "legacy_id": 39,
+      "code": "INSW421",
+      "name": "Seminario de Licenciatura en Ingeniería",
+      "credits": 14,
+      "period_number": 8,
+      "sort_order": 38,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "fb8152d0-bf0f-48de-9769-ad185ea84750"
+          },
+          {
+            "course": "b280401d-97db-44ec-be3a-be958eecd128"
+          },
+          {
+            "course": "d1877b7b-30b8-4399-a9a1-2f120f4bede6"
+          },
+          {
+            "course": "a0cbc698-d763-4206-9644-7e7f1ff39fbf"
+          }
+        ]
+      },
+      "prereq_raw": "PTEC106 & INSW410",
+      "coreq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "e5143068-653a-4671-9c02-e5bc939aa7b1"
+          },
+          {
+            "course": "f3e55943-b9db-43f5-a100-26b5ad7ede82"
+          },
+          {
+            "course": "5c8f62c4-74ef-4838-ab12-dd9b614e3734"
+          },
+          {
+            "course": "48ca8e01-7bf7-4eb5-9cc4-a6ef46eefbec"
+          }
+        ]
+      },
+      "coreq_raw": "TDFI106 y PTEC106 y PTEC107 y INSW411",
+      "attrs": {}
+    },
+    {
+      "id": "2b73c74d-1925-4500-b5a8-b41e42be0c87",
+      "legacy_id": 40,
+      "code": "CEGRS14",
+      "name": "Responsabilidad Social",
+      "credits": 6,
+      "period_number": 8,
+      "sort_order": 39,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "1165603a-0daa-4eda-bb92-2bdf7b5de0db",
+      "legacy_id": 41,
+      "code": "INSW410",
+      "name": "Portafolio de Proyectos",
+      "credits": 10,
+      "period_number": 9,
+      "sort_order": 40,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "e5143068-653a-4671-9c02-e5bc939aa7b1"
+          },
+          {
+            "course": "f3e55943-b9db-43f5-a100-26b5ad7ede82"
+          },
+          {
+            "course": "c91fd5c0-5764-49b3-8e38-8fb09b88c002"
+          }
+        ]
+      },
+      "prereq_raw": "PTEC103 & PTEC105",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "9eaca5eb-ac15-4c7b-b1df-b6f5c9e67afc",
+      "legacy_id": 42,
+      "code": "ICF206",
+      "name": "Administración Financiera de Proyectos I+D+i",
+      "credits": 12,
+      "period_number": 9,
+      "sort_order": 41,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "f3e55943-b9db-43f5-a100-26b5ad7ede82"
+      },
+      "prereq_raw": "",
+      "coreq_expr": {
+        "course": "1165603a-0daa-4eda-bb92-2bdf7b5de0db"
+      },
+      "coreq_raw": "INSW410",
+      "attrs": {}
+    },
+    {
+      "id": "a0953a9e-cd71-4167-90bb-19e31a0a825c",
+      "legacy_id": 43,
+      "code": "ICF207",
+      "name": "Ciencia de Datos",
+      "credits": 12,
+      "period_number": 9,
+      "sort_order": 42,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "b280401d-97db-44ec-be3a-be958eecd128"
+          },
+          {
+            "course": "d1877b7b-30b8-4399-a9a1-2f120f4bede6"
+          }
+        ]
+      },
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "d115ddcf-8639-4e7e-8214-9daeaac0fa2f",
+      "legacy_id": 44,
+      "code": "INSW412",
+      "name": "Tópicos de Especialidad II",
+      "credits": 10,
+      "period_number": 9,
+      "sort_order": 43,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "d1877b7b-30b8-4399-a9a1-2f120f4bede6"
+      },
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "6f1ac6f9-8513-44b1-9299-452e11ac629c",
+      "legacy_id": 45,
+      "code": "INSW413",
+      "name": "Tópicos de Especialidad III",
+      "credits": 10,
+      "period_number": 9,
+      "sort_order": 44,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "d1877b7b-30b8-4399-a9a1-2f120f4bede6"
+      },
+      "prereq_raw": "INSW411 & INSW412",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "947a5205-845f-49b5-83f6-01db8da8263b",
+      "legacy_id": 46,
+      "code": "INSW422",
+      "name": "Proyecto de Título",
+      "credits": 14,
+      "period_number": 10,
+      "sort_order": 45,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "1165603a-0daa-4eda-bb92-2bdf7b5de0db"
+      },
+      "prereq_raw": "INSW410",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "f9cc961e-e131-4efc-8994-3451118d4363",
+      "legacy_id": 47,
+      "code": "ICF208",
+      "name": "Taller de Transferencia Tecnológica",
+      "credits": 12,
+      "period_number": 10,
+      "sort_order": 46,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "9eaca5eb-ac15-4c7b-b1df-b6f5c9e67afc"
+      },
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "7f925744-b486-4898-ab29-fa9664c43a10",
+      "legacy_id": 48,
+      "code": "INSW420",
+      "name": "Práctica II",
+      "credits": 26,
+      "period_number": 10,
+      "sort_order": 47,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "912750d8-8b2e-465a-b42b-2a6f915d9fd1"
+          },
+          {
+            "course": "1165603a-0daa-4eda-bb92-2bdf7b5de0db"
+          },
+          {
+            "course": "9eaca5eb-ac15-4c7b-b1df-b6f5c9e67afc"
+          },
+          {
+            "course": "a0953a9e-cd71-4167-90bb-19e31a0a825c"
+          },
+          {
+            "course": "d115ddcf-8639-4e7e-8214-9daeaac0fa2f"
+          },
+          {
+            "course": "6f1ac6f9-8513-44b1-9299-452e11ac629c"
+          }
+        ]
+      },
+      "prereq_raw": "INSW220",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    }
+  ],
+  "aliases": {}
+}

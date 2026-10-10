@@ -1,0 +1,1138 @@
+{
+  "program": {
+    "id": "57523790-22cd-48e8-9ac5-64cc57002a7e",
+    "slug": "psicologia",
+    "name": "Psicología",
+    "official_name": "Psicología (UNAB)",
+    "official_code": "UNAB11900",
+    "career_key": "unab-psicologia",
+    "legacy_url": "/mallas/Psicologia.json"
+  },
+  "university": {
+    "id": "baa60218-0377-4052-bddd-a92786b37188",
+    "slug": "unab",
+    "name": "Universidad Andrés Bello",
+    "short_name": "UNAB",
+    "country": "CL"
+  },
+  "version": {
+    "id": "19e5d187-993e-4aac-a1fa-0810116bf095",
+    "label": "legacy",
+    "period_regime": "semestral",
+    "credit_system": "SCT",
+    "total_periods": 10,
+    "total_credits": null,
+    "status": "published",
+    "is_current": true,
+    "source_type": "legacy_json",
+    "source_url": "/mallas/Psicologia.json",
+    "source_note": "Imported from frontend/public/mallas/Psicologia.json",
+    "reviewed_at": null
+  },
+  "tracks": [],
+  "periods": [
+    {
+      "number": 1,
+      "track_code": null,
+      "course_ids": [
+        "7caf9959-cc9d-448a-9af8-615daf5517d4",
+        "4a546f40-9eb4-4d1e-8186-752eeb775266",
+        "ef273562-9fb7-4ed6-9f56-51a70ad78e27",
+        "c1924050-317d-478b-92f8-ae788ea328e5",
+        "da529547-ee30-4d48-8537-23b842b8e043"
+      ]
+    },
+    {
+      "number": 2,
+      "track_code": null,
+      "course_ids": [
+        "7eddf69e-1b0c-44ab-9377-4fd1d1ee92aa",
+        "db6310e5-8cee-46e6-ae45-963fe94cb722",
+        "2da641ba-300c-4afc-80d1-0d3c107dd5b5",
+        "aa07aae3-964c-4da9-b0a0-292bc75db27d",
+        "c603e97c-062b-4f61-9723-2009a7ecd93f"
+      ]
+    },
+    {
+      "number": 3,
+      "track_code": null,
+      "course_ids": [
+        "f11a473b-b8a2-4896-a268-a5772b2cccc7",
+        "50257f13-a3ec-4943-b4c4-441ad9c36879",
+        "01837327-ca73-448f-9395-3df96b79929d",
+        "05f6f86d-fcaa-40aa-931d-2f65871373dc",
+        "67d5ecb4-0d9a-4e86-9446-d48b9ee4e6e7"
+      ]
+    },
+    {
+      "number": 4,
+      "track_code": null,
+      "course_ids": [
+        "1b0a553a-1438-4968-8fdd-e4ebd318fd60",
+        "a0e36c6b-830f-4e9e-af70-da6c84c8d06a",
+        "55894830-a3a0-4132-8486-2acadfd29272",
+        "b35cfa16-ca22-407a-ae3c-b3c087260ede",
+        "b104d325-10b2-4bf0-9810-9b8f6fcc185b"
+      ]
+    },
+    {
+      "number": 5,
+      "track_code": null,
+      "course_ids": [
+        "ead81d5f-6889-4655-9583-b9b94ff9a7e6",
+        "c2355b88-ac89-4564-aa8e-45477d5e7bfc",
+        "4bfa6dd6-6c4a-4ed9-acae-1baf84fcd98c",
+        "97d6530f-3980-4d62-9555-6f9ec9cf5f11",
+        "d6f813f8-7897-44e2-b17c-a772aa04e47f"
+      ]
+    },
+    {
+      "number": 6,
+      "track_code": null,
+      "course_ids": [
+        "c596ef63-327d-4305-b671-3fd635154342",
+        "4d77dcf2-618d-4c7d-b6c3-01f7fa389d02",
+        "ccd6359b-0fb2-4566-aacc-ad96dcd3b055",
+        "9fb15ff3-68b2-4293-9e2d-88fb3e1075f7",
+        "85141e87-840f-421d-97c5-331402cef4fb"
+      ]
+    },
+    {
+      "number": 7,
+      "track_code": null,
+      "course_ids": [
+        "83318527-9510-4f1c-9c48-17cb64a151ed",
+        "e09f2022-9cbc-40ac-a378-e85e1d58596f",
+        "0aa0bf59-818d-48fb-aa74-95d118aa3dbb",
+        "78123921-58f3-440f-892a-e02eea1fb6eb",
+        "5b80e31f-be2d-4534-9cc5-65b211ac4d81"
+      ]
+    },
+    {
+      "number": 8,
+      "track_code": null,
+      "course_ids": [
+        "cd8ecdec-5557-4223-ad0a-7ae20694658a",
+        "5e6739bc-245b-4c84-923c-584ddc47e306",
+        "7e279a91-cdb4-491f-8256-9258631047d4",
+        "6d9d7a47-3769-4840-87b5-1eb1654318d5",
+        "dcd5af04-903b-4772-8fc6-2c7ffab2e57c"
+      ]
+    },
+    {
+      "number": 9,
+      "track_code": null,
+      "course_ids": [
+        "3f6f9e3f-7d10-496e-9955-07775a617c3d",
+        "6de988cf-212e-4eb0-a667-85266ba99b19",
+        "1f11d08b-8383-4432-862c-c87cf664e277",
+        "2e52190d-6a36-4852-8342-d50f484ea794",
+        "1563a77b-1f0f-4d81-a543-9e7598358978"
+      ]
+    },
+    {
+      "number": 10,
+      "track_code": null,
+      "course_ids": [
+        "03f531c1-1f6f-438a-889b-287aac0043e0"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "id": "7caf9959-cc9d-448a-9af8-615daf5517d4",
+      "legacy_id": 1,
+      "code": "BIOL080",
+      "name": "Tópicos de neurobiología",
+      "credits": 14,
+      "period_number": 1,
+      "sort_order": 0,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "4a546f40-9eb4-4d1e-8186-752eeb775266",
+      "legacy_id": 2,
+      "code": "FHCS211",
+      "name": "Eje de formación interdisciplinaria I",
+      "credits": 12,
+      "period_number": 1,
+      "sort_order": 1,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "ef273562-9fb7-4ed6-9f56-51a70ad78e27",
+      "legacy_id": 3,
+      "code": "ING119",
+      "name": "Inglés I",
+      "credits": 12,
+      "period_number": 1,
+      "sort_order": 2,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "c1924050-317d-478b-92f8-ae788ea328e5",
+      "legacy_id": 4,
+      "code": "PSIC111",
+      "name": "Historia y fundamentos de la psicología",
+      "credits": 15,
+      "period_number": 1,
+      "sort_order": 3,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "da529547-ee30-4d48-8537-23b842b8e043",
+      "legacy_id": 5,
+      "code": "PSIC112",
+      "name": "Psicología y sociedad",
+      "credits": 15,
+      "period_number": 1,
+      "sort_order": 4,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "7eddf69e-1b0c-44ab-9377-4fd1d1ee92aa",
+      "legacy_id": 6,
+      "code": "CEGHC11",
+      "name": "Habilidades comunicativas",
+      "credits": 8,
+      "period_number": 2,
+      "sort_order": 5,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "db6310e5-8cee-46e6-ae45-963fe94cb722",
+      "legacy_id": 7,
+      "code": "ING129",
+      "name": "Inglés II",
+      "credits": 12,
+      "period_number": 2,
+      "sort_order": 6,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "ef273562-9fb7-4ed6-9f56-51a70ad78e27"
+      },
+      "prereq_raw": "ING119 o ING111 o ING110 o ING116 o ING117 o CNT021 o (ING050 y ING051) o (FLG301 y FLG302) o (BMA281 y BMA282) o (ETU081 y ETU082)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "2da641ba-300c-4afc-80d1-0d3c107dd5b5",
+      "legacy_id": 8,
+      "code": "PSIC121",
+      "name": "Sistemas psicológicos",
+      "credits": 16,
+      "period_number": 2,
+      "sort_order": 7,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "aa07aae3-964c-4da9-b0a0-292bc75db27d",
+      "legacy_id": 9,
+      "code": "PSIC122",
+      "name": "Procesos psicológicos y neurociencias",
+      "credits": 16,
+      "period_number": 2,
+      "sort_order": 8,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "7caf9959-cc9d-448a-9af8-615daf5517d4"
+      },
+      "prereq_raw": "BIOL080 o BIO036",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "c603e97c-062b-4f61-9723-2009a7ecd93f",
+      "legacy_id": 10,
+      "code": "PSIC123",
+      "name": "Psicología y epistemología",
+      "credits": 15,
+      "period_number": 2,
+      "sort_order": 9,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "f11a473b-b8a2-4896-a268-a5772b2cccc7",
+      "legacy_id": 11,
+      "code": "CEGCT12",
+      "name": "Razonamiento científico y tecnologías de información",
+      "credits": 6,
+      "period_number": 3,
+      "sort_order": 10,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "50257f13-a3ec-4943-b4c4-441ad9c36879",
+      "legacy_id": 12,
+      "code": "ING239",
+      "name": "Inglés III",
+      "credits": 12,
+      "period_number": 3,
+      "sort_order": 11,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "db6310e5-8cee-46e6-ae45-963fe94cb722"
+      },
+      "prereq_raw": "ING129 o ING121 o ING120 o ING216 o ING126 o ING134 o ING127 o CNT026 o (ETU181 y ETU182) o ING229",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "01837327-ca73-448f-9395-3df96b79929d",
+      "legacy_id": 13,
+      "code": "PSIC211",
+      "name": "Psicoanálisis I",
+      "credits": 15,
+      "period_number": 3,
+      "sort_order": 12,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "05f6f86d-fcaa-40aa-931d-2f65871373dc",
+      "legacy_id": 14,
+      "code": "PSIC212",
+      "name": "Psicología del desarrollo I",
+      "credits": 16,
+      "period_number": 3,
+      "sort_order": 13,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "67d5ecb4-0d9a-4e86-9446-d48b9ee4e6e7",
+      "legacy_id": 15,
+      "code": "PSIC213",
+      "name": "Investigación I",
+      "credits": 18,
+      "period_number": 3,
+      "sort_order": 14,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "c603e97c-062b-4f61-9723-2009a7ecd93f"
+      },
+      "prereq_raw": "PSIC123 o HUF136 o PSL006",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "1b0a553a-1438-4968-8fdd-e4ebd318fd60",
+      "legacy_id": 16,
+      "code": "FHCS221",
+      "name": "Eje de formación interdisciplinaria II",
+      "credits": 11,
+      "period_number": 4,
+      "sort_order": 15,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "a0e36c6b-830f-4e9e-af70-da6c84c8d06a",
+      "legacy_id": 17,
+      "code": "ING249",
+      "name": "Inglés IV",
+      "credits": 12,
+      "period_number": 4,
+      "sort_order": 16,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "50257f13-a3ec-4943-b4c4-441ad9c36879"
+      },
+      "prereq_raw": "ING239 o ING210 o ING216 o ING224 o ING126 o CNT126 o (ETU281 y ETU282) o ING217",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "55894830-a3a0-4132-8486-2acadfd29272",
+      "legacy_id": 18,
+      "code": "PSIC221",
+      "name": "Psicoanálisis II",
+      "credits": 12,
+      "period_number": 4,
+      "sort_order": 17,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "01837327-ca73-448f-9395-3df96b79929d"
+      },
+      "prereq_raw": "PSIC211 o PSL104",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "b35cfa16-ca22-407a-ae3c-b3c087260ede",
+      "legacy_id": 19,
+      "code": "PSIC222",
+      "name": "Psicología del desarrollo II",
+      "credits": 14,
+      "period_number": 4,
+      "sort_order": 18,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "05f6f86d-fcaa-40aa-931d-2f65871373dc"
+      },
+      "prereq_raw": "PSIC212 o PSL111",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "b104d325-10b2-4bf0-9810-9b8f6fcc185b",
+      "legacy_id": 20,
+      "code": "PSIC223",
+      "name": "Investigación II",
+      "credits": 17,
+      "period_number": 4,
+      "sort_order": 19,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "67d5ecb4-0d9a-4e86-9446-d48b9ee4e6e7"
+      },
+      "prereq_raw": "PSIC213 o FMS180",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "ead81d5f-6889-4655-9583-b9b94ff9a7e6",
+      "legacy_id": 21,
+      "code": "FHCS311",
+      "name": "Eje de formación interdisciplinaria III",
+      "credits": 12,
+      "period_number": 5,
+      "sort_order": 20,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "c2355b88-ac89-4564-aa8e-45477d5e7bfc",
+      "legacy_id": 22,
+      "code": "PSIC311",
+      "name": "Psicodiagnóstico clínico I",
+      "credits": 12,
+      "period_number": 5,
+      "sort_order": 21,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "4bfa6dd6-6c4a-4ed9-acae-1baf84fcd98c",
+      "legacy_id": 23,
+      "code": "PSIC312",
+      "name": "Psicopatología y psiquiatría I",
+      "credits": 14,
+      "period_number": 5,
+      "sort_order": 22,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "97d6530f-3980-4d62-9555-6f9ec9cf5f11",
+      "legacy_id": 24,
+      "code": "PSIC313",
+      "name": "Taller de integración",
+      "credits": 16,
+      "period_number": 5,
+      "sort_order": 23,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "01837327-ca73-448f-9395-3df96b79929d"
+          },
+          {
+            "course": "b35cfa16-ca22-407a-ae3c-b3c087260ede"
+          },
+          {
+            "course": "b104d325-10b2-4bf0-9810-9b8f6fcc185b"
+          }
+        ]
+      },
+      "prereq_raw": "(PSIC211 o PSL104) y (PSIC222 o PSL112) y (PSIC223 o PSL105)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "d6f813f8-7897-44e2-b17c-a772aa04e47f",
+      "legacy_id": 25,
+      "code": "PSIC314",
+      "name": "Psicología social",
+      "credits": 15,
+      "period_number": 5,
+      "sort_order": 24,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "c596ef63-327d-4305-b671-3fd635154342",
+      "legacy_id": 26,
+      "code": "PSIC321",
+      "name": "Psicodiagnóstico clínico II",
+      "credits": 12,
+      "period_number": 6,
+      "sort_order": 25,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "c2355b88-ac89-4564-aa8e-45477d5e7bfc"
+      },
+      "prereq_raw": "PSIC311 o PSL131 o PSL233",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "4d77dcf2-618d-4c7d-b6c3-01f7fa389d02",
+      "legacy_id": 27,
+      "code": "PSIC322",
+      "name": "Psicopatología y psiquiatría II",
+      "credits": 12,
+      "period_number": 6,
+      "sort_order": 26,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "4bfa6dd6-6c4a-4ed9-acae-1baf84fcd98c"
+      },
+      "prereq_raw": "PSIC312 o PSL232",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "ccd6359b-0fb2-4566-aacc-ad96dcd3b055",
+      "legacy_id": 28,
+      "code": "PSIC323",
+      "name": "Psicología educacional",
+      "credits": 15,
+      "period_number": 6,
+      "sort_order": 27,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "9fb15ff3-68b2-4293-9e2d-88fb3e1075f7",
+      "legacy_id": 29,
+      "code": "PSIC324",
+      "name": "Diagnóstico e intervención social",
+      "credits": 15,
+      "period_number": 6,
+      "sort_order": 28,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "d6f813f8-7897-44e2-b17c-a772aa04e47f"
+      },
+      "prereq_raw": "PSIC314 o PSL240",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "85141e87-840f-421d-97c5-331402cef4fb",
+      "legacy_id": 30,
+      "code": "PSIC325",
+      "name": "Psicología del trabajo y las organizaciones",
+      "credits": 14,
+      "period_number": 6,
+      "sort_order": 29,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "83318527-9510-4f1c-9c48-17cb64a151ed",
+      "legacy_id": 31,
+      "code": "PSIC411",
+      "name": "Clínica sistémica",
+      "credits": 10,
+      "period_number": 7,
+      "sort_order": 30,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "e09f2022-9cbc-40ac-a378-e85e1d58596f",
+      "legacy_id": 32,
+      "code": "PSIC412",
+      "name": "Psicopatología infanto juvenil",
+      "credits": 12,
+      "period_number": 7,
+      "sort_order": 31,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "4bfa6dd6-6c4a-4ed9-acae-1baf84fcd98c"
+      },
+      "prereq_raw": "PSIC312 o PSL232",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "0aa0bf59-818d-48fb-aa74-95d118aa3dbb",
+      "legacy_id": 33,
+      "code": "PSIC413",
+      "name": "Diagnóstico e intervención educacional",
+      "credits": 15,
+      "period_number": 7,
+      "sort_order": 32,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "ccd6359b-0fb2-4566-aacc-ad96dcd3b055"
+      },
+      "prereq_raw": "PSIC323 o PSL213",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "78123921-58f3-440f-892a-e02eea1fb6eb",
+      "legacy_id": 34,
+      "code": "PSIC414",
+      "name": "Psicología jurídica",
+      "credits": 15,
+      "period_number": 7,
+      "sort_order": 33,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "5b80e31f-be2d-4534-9cc5-65b211ac4d81",
+      "legacy_id": 35,
+      "code": "PSIC415",
+      "name": "Diagnóstico e intervención organizacional",
+      "credits": 15,
+      "period_number": 7,
+      "sort_order": 34,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "85141e87-840f-421d-97c5-331402cef4fb"
+      },
+      "prereq_raw": "PSIC325 o PSL344",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "cd8ecdec-5557-4223-ad0a-7ae20694658a",
+      "legacy_id": 36,
+      "code": "PSIC421",
+      "name": "Clínica psicoanalítica",
+      "credits": 11,
+      "period_number": 8,
+      "sort_order": 35,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "5e6739bc-245b-4c84-923c-584ddc47e306",
+      "legacy_id": 37,
+      "code": "PSIC422",
+      "name": "Clínica infanto juvenil",
+      "credits": 11,
+      "period_number": 8,
+      "sort_order": 36,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "e09f2022-9cbc-40ac-a378-e85e1d58596f"
+      },
+      "prereq_raw": "PSIC412 o PSL314",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "7e279a91-cdb4-491f-8256-9258631047d4",
+      "legacy_id": 38,
+      "code": "PSIC423",
+      "name": "Taller de investigación",
+      "credits": 16,
+      "period_number": 8,
+      "sort_order": 37,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "97d6530f-3980-4d62-9555-6f9ec9cf5f11"
+          },
+          {
+            "course": "c596ef63-327d-4305-b671-3fd635154342"
+          },
+          {
+            "course": "4d77dcf2-618d-4c7d-b6c3-01f7fa389d02"
+          },
+          {
+            "course": "ccd6359b-0fb2-4566-aacc-ad96dcd3b055"
+          },
+          {
+            "course": "85141e87-840f-421d-97c5-331402cef4fb"
+          },
+          {
+            "course": "78123921-58f3-440f-892a-e02eea1fb6eb"
+          }
+        ]
+      },
+      "prereq_raw": "PSIC313 y (PSIC321 o PSL234) y (PSIC322 o PSL235) y (PSIC323 o PSL213) y (PSIC325 o PSL344) y (PSIC414 o PSL242)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "6d9d7a47-3769-4840-87b5-1eb1654318d5",
+      "legacy_id": 39,
+      "code": "PSIC424",
+      "name": "Diagnóstico e intervención jurídica",
+      "credits": 15,
+      "period_number": 8,
+      "sort_order": 38,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "78123921-58f3-440f-892a-e02eea1fb6eb"
+      },
+      "prereq_raw": "PSIC414 o PSL242",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "dcd5af04-903b-4772-8fc6-2c7ffab2e57c",
+      "legacy_id": 40,
+      "code": "PSIC425",
+      "name": "Intervención clínica sistémica",
+      "credits": 13,
+      "period_number": 8,
+      "sort_order": 39,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "83318527-9510-4f1c-9c48-17cb64a151ed"
+      },
+      "prereq_raw": "PSIC411 o PSL206",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "3f6f9e3f-7d10-496e-9955-07775a617c3d",
+      "legacy_id": 41,
+      "code": "PSIC511",
+      "name": "Taller de intervención clínica",
+      "credits": 20,
+      "period_number": 9,
+      "sort_order": 40,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "83318527-9510-4f1c-9c48-17cb64a151ed"
+          },
+          {
+            "course": "e09f2022-9cbc-40ac-a378-e85e1d58596f"
+          },
+          {
+            "course": "0aa0bf59-818d-48fb-aa74-95d118aa3dbb"
+          },
+          {
+            "course": "78123921-58f3-440f-892a-e02eea1fb6eb"
+          },
+          {
+            "course": "5b80e31f-be2d-4534-9cc5-65b211ac4d81"
+          },
+          {
+            "course": "cd8ecdec-5557-4223-ad0a-7ae20694658a"
+          },
+          {
+            "course": "5e6739bc-245b-4c84-923c-584ddc47e306"
+          },
+          {
+            "course": "7e279a91-cdb4-491f-8256-9258631047d4"
+          },
+          {
+            "course": "6d9d7a47-3769-4840-87b5-1eb1654318d5"
+          },
+          {
+            "course": "dcd5af04-903b-4772-8fc6-2c7ffab2e57c"
+          }
+        ]
+      },
+      "prereq_raw": "(PSIC411 o PSL206) y (PSIC412 o PSL314) y (PSIC413 o PSL204) y (PSIC414 o PSL242) y (PSIC415 o PSL345) y (PSIC421 o PSL334 o (PSL331 y PSL335)) y (PSIC422 o PSL315) y (PSIC423 o PSL348) y PSIC424 y (PSIC425 o PSL333)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "6de988cf-212e-4eb0-a667-85266ba99b19",
+      "legacy_id": 42,
+      "code": "PSIC512",
+      "name": "Psicología y salud",
+      "credits": 11,
+      "period_number": 9,
+      "sort_order": 41,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "83318527-9510-4f1c-9c48-17cb64a151ed"
+          },
+          {
+            "course": "e09f2022-9cbc-40ac-a378-e85e1d58596f"
+          },
+          {
+            "course": "0aa0bf59-818d-48fb-aa74-95d118aa3dbb"
+          },
+          {
+            "course": "78123921-58f3-440f-892a-e02eea1fb6eb"
+          },
+          {
+            "course": "5b80e31f-be2d-4534-9cc5-65b211ac4d81"
+          },
+          {
+            "course": "cd8ecdec-5557-4223-ad0a-7ae20694658a"
+          },
+          {
+            "course": "5e6739bc-245b-4c84-923c-584ddc47e306"
+          },
+          {
+            "course": "7e279a91-cdb4-491f-8256-9258631047d4"
+          },
+          {
+            "course": "6d9d7a47-3769-4840-87b5-1eb1654318d5"
+          },
+          {
+            "course": "dcd5af04-903b-4772-8fc6-2c7ffab2e57c"
+          }
+        ]
+      },
+      "prereq_raw": "(PSIC411 o PSL206) y (PSIC412 o PSL314) y (PSIC413 o PSL204) y (PSIC414 o PSL242) y (PSIC415 o PSL345) y (PSIC421 o PSL334 o (PSL331 y PSL335)) y (PSIC422 o PSL315) y (PSIC423 o PSL348) y PSIC424 y (PSIC425 o PSL333)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "1f11d08b-8383-4432-862c-c87cf664e277",
+      "legacy_id": 43,
+      "code": "PSIC513",
+      "name": "Taller de diagnóstico e intervención psicosocial",
+      "credits": 22,
+      "period_number": 9,
+      "sort_order": 42,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "83318527-9510-4f1c-9c48-17cb64a151ed"
+          },
+          {
+            "course": "e09f2022-9cbc-40ac-a378-e85e1d58596f"
+          },
+          {
+            "course": "0aa0bf59-818d-48fb-aa74-95d118aa3dbb"
+          },
+          {
+            "course": "78123921-58f3-440f-892a-e02eea1fb6eb"
+          },
+          {
+            "course": "5b80e31f-be2d-4534-9cc5-65b211ac4d81"
+          },
+          {
+            "course": "cd8ecdec-5557-4223-ad0a-7ae20694658a"
+          },
+          {
+            "course": "5e6739bc-245b-4c84-923c-584ddc47e306"
+          },
+          {
+            "course": "7e279a91-cdb4-491f-8256-9258631047d4"
+          },
+          {
+            "course": "6d9d7a47-3769-4840-87b5-1eb1654318d5"
+          },
+          {
+            "course": "dcd5af04-903b-4772-8fc6-2c7ffab2e57c"
+          }
+        ]
+      },
+      "prereq_raw": "(PSIC411 o PSL206) y (PSIC412 o PSL314) y (PSIC413 o PSL204) y (PSIC414 o PSL242) y (PSIC415 o PSL345) y (PSIC421 o PSL334 o (PSL331 y PSL335)) y (PSIC422 o PSL315) y (PSIC423 o PSL348) y PSIC424 y (PSIC425 o PSL333)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "2e52190d-6a36-4852-8342-d50f484ea794",
+      "legacy_id": 44,
+      "code": "PSIC514",
+      "name": "Electivo de formación profesional I",
+      "credits": 7,
+      "period_number": 9,
+      "sort_order": 43,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "83318527-9510-4f1c-9c48-17cb64a151ed"
+          },
+          {
+            "course": "e09f2022-9cbc-40ac-a378-e85e1d58596f"
+          },
+          {
+            "course": "0aa0bf59-818d-48fb-aa74-95d118aa3dbb"
+          },
+          {
+            "course": "78123921-58f3-440f-892a-e02eea1fb6eb"
+          },
+          {
+            "course": "5b80e31f-be2d-4534-9cc5-65b211ac4d81"
+          },
+          {
+            "course": "cd8ecdec-5557-4223-ad0a-7ae20694658a"
+          },
+          {
+            "course": "5e6739bc-245b-4c84-923c-584ddc47e306"
+          },
+          {
+            "course": "7e279a91-cdb4-491f-8256-9258631047d4"
+          },
+          {
+            "course": "6d9d7a47-3769-4840-87b5-1eb1654318d5"
+          },
+          {
+            "course": "dcd5af04-903b-4772-8fc6-2c7ffab2e57c"
+          }
+        ]
+      },
+      "prereq_raw": "(PSIC411 o PSL206) y (PSIC412 o PSL314) y (PSIC413 o PSL204) y (PSIC414 o PSL242) y (PSIC415 o PSL345) y (PSIC421 o PSL334 o (PSL331 y PSL335)) y (PSIC422 o PSL315) y (PSIC423 o PSL348) y PSIC424 y (PSIC425 o PSL333)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "1563a77b-1f0f-4d81-a543-9e7598358978",
+      "legacy_id": 45,
+      "code": "PSIC515",
+      "name": "Electivo de formación profesional II",
+      "credits": 7,
+      "period_number": 9,
+      "sort_order": 44,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "83318527-9510-4f1c-9c48-17cb64a151ed"
+          },
+          {
+            "course": "e09f2022-9cbc-40ac-a378-e85e1d58596f"
+          },
+          {
+            "course": "0aa0bf59-818d-48fb-aa74-95d118aa3dbb"
+          },
+          {
+            "course": "78123921-58f3-440f-892a-e02eea1fb6eb"
+          },
+          {
+            "course": "5b80e31f-be2d-4534-9cc5-65b211ac4d81"
+          },
+          {
+            "course": "cd8ecdec-5557-4223-ad0a-7ae20694658a"
+          },
+          {
+            "course": "5e6739bc-245b-4c84-923c-584ddc47e306"
+          },
+          {
+            "course": "7e279a91-cdb4-491f-8256-9258631047d4"
+          },
+          {
+            "course": "6d9d7a47-3769-4840-87b5-1eb1654318d5"
+          },
+          {
+            "course": "dcd5af04-903b-4772-8fc6-2c7ffab2e57c"
+          }
+        ]
+      },
+      "prereq_raw": "(PSIC411 o PSL206) y (PSIC412 o PSL314) y (PSIC413 o PSL204) y (PSIC414 o PSL242) y (PSIC415 o PSL345) y (PSIC421 o PSL334 o (PSL331 y PSL335)) y (PSIC422 o PSL315) y (PSIC423 o PSL348) y PSIC424 y (PSIC425 o PSL333)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "03f531c1-1f6f-438a-889b-287aac0043e0",
+      "legacy_id": 46,
+      "code": "PSIC521",
+      "name": "Práctica profesional",
+      "credits": 66,
+      "period_number": 10,
+      "sort_order": 45,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "3f6f9e3f-7d10-496e-9955-07775a617c3d"
+          },
+          {
+            "course": "6de988cf-212e-4eb0-a667-85266ba99b19"
+          },
+          {
+            "course": "1f11d08b-8383-4432-862c-c87cf664e277"
+          },
+          {
+            "course": "2e52190d-6a36-4852-8342-d50f484ea794"
+          },
+          {
+            "course": "1563a77b-1f0f-4d81-a543-9e7598358978"
+          }
+        ]
+      },
+      "prereq_raw": "(PSIC511 o MPC531) y (PSIC512 o MPC532) y PSIC513 y (PSIC514 o PSL323 o PSIC P011 o PSIC P012 o PSIC P036 o PSIC P097 o PSIC P098) y (PSIC515 o PSL332 o PSIC P007 o PSIC P008 o PSIC P009 o PSIC P010 o PSIC P049 o PSIC P096)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    }
+  ],
+  "aliases": {}
+}

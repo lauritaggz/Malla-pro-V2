@@ -46,8 +46,13 @@ export function courseRegistrationKey(careerId, periodId) {
  */
 export function getCareerId(malla) {
   if (!malla || typeof malla !== "object") return "unknown";
+  // Mallas del catálogo (API): la clave estable viene del backend. Para las legadas es
+  // idéntica a la que se calcula abajo desde su URL.
+  if (typeof malla.careerKey === "string" && malla.careerKey.trim()) {
+    return malla.careerKey.trim();
+  }
   const url = typeof malla.url === "string" ? malla.url.trim() : "";
-  if (url) {
+  if (url && !url.startsWith("/api/")) {
     const uniMatch = url.match(/\/mallas\/([^/]+)\//i);
     const uni = (uniMatch?.[1] || "unab").toLowerCase();
     const file = url

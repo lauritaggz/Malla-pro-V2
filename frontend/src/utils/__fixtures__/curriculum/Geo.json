@@ -1,0 +1,1325 @@
+{
+  "program": {
+    "id": "59b1c016-5d1e-4874-9d30-865faac1ff2b",
+    "slug": "geologia",
+    "name": "Geología",
+    "official_name": "Geología (UNAB)",
+    "official_code": null,
+    "career_key": "unab-geo",
+    "legacy_url": "/mallas/Geo.json"
+  },
+  "university": {
+    "id": "baa60218-0377-4052-bddd-a92786b37188",
+    "slug": "unab",
+    "name": "Universidad Andrés Bello",
+    "short_name": "UNAB",
+    "country": "CL"
+  },
+  "version": {
+    "id": "01f67315-a38d-4ee6-9ac2-b30c30e18c1c",
+    "label": "legacy",
+    "period_regime": "semestral",
+    "credit_system": "SCT",
+    "total_periods": 10,
+    "total_credits": null,
+    "status": "published",
+    "is_current": true,
+    "source_type": "legacy_json",
+    "source_url": "/mallas/Geo.json",
+    "source_note": "Imported from frontend/public/mallas/Geo.json",
+    "reviewed_at": null
+  },
+  "tracks": [],
+  "periods": [
+    {
+      "number": 1,
+      "track_code": null,
+      "course_ids": [
+        "a4bc2bf7-0532-4ddb-9973-58db0bbdebd2",
+        "741a100a-ba6b-4356-bbb3-ac67c45be3c9",
+        "c1c536e9-7b05-4244-b828-81b9f4c809a6",
+        "86e764e5-58eb-43d5-9d54-6fc9a5abc124",
+        "4d5cedcc-2284-4751-bc36-96bcd9a7d6bb"
+      ]
+    },
+    {
+      "number": 2,
+      "track_code": null,
+      "course_ids": [
+        "a0b1b31e-afa7-482c-bea8-8c597957efc5",
+        "7f7f08f2-70a0-4346-89e7-953654698450",
+        "96e63112-d745-42e9-8f26-8bd5e9606b06",
+        "4eedd25e-10a7-4d86-97c0-87786714dec1",
+        "d1e0d0e3-4076-4c3e-ad29-ddd36148334d"
+      ]
+    },
+    {
+      "number": 3,
+      "track_code": null,
+      "course_ids": [
+        "5265ef06-2a90-4e52-9691-37a5c7e169d9",
+        "4c59f770-4655-4a0a-a446-e4389c5dda81",
+        "1f0edaf0-824b-4407-b658-69e124ee6be9",
+        "5ada23a0-7944-4942-a864-6cc7b327d71e",
+        "83b76855-c463-4cc2-82e9-ba32f0cc2d39"
+      ]
+    },
+    {
+      "number": 4,
+      "track_code": null,
+      "course_ids": [
+        "e7d57d94-0dc6-48bf-b340-793118680405",
+        "afce4e69-ab40-483e-95ae-eb2418111792",
+        "fa119933-0521-488a-89f8-b3084f4861c5",
+        "ffa3c3eb-49df-4f4b-9db7-a53cbfe69d80",
+        "7267df14-701d-4d3c-94ed-32482041e131"
+      ]
+    },
+    {
+      "number": 5,
+      "track_code": null,
+      "course_ids": [
+        "49a893ca-5515-40ac-aebd-07d81f076c6e",
+        "6f24d782-c0ed-4557-8019-04e0814345f1",
+        "1e332b63-376e-4b3b-b5f3-5d34120af1da",
+        "fb81d669-5a08-430e-8363-f3597450732d",
+        "7aaf360d-ad0e-497d-8ce2-ac6280f93142",
+        "f359b9a9-c3e3-4e29-9d00-b85515a428d9"
+      ]
+    },
+    {
+      "number": 6,
+      "track_code": null,
+      "course_ids": [
+        "f924938b-e725-4dbb-b162-2507c88d81df",
+        "4081a62e-3f92-407f-a058-8275000ee769",
+        "3b6923b6-16f6-4873-917c-9425e4dd889d",
+        "352e1d9a-e31a-4e73-8d7b-bc996ab1a45b",
+        "b8459fb4-f63c-4f05-ab06-2580ed31cd64"
+      ]
+    },
+    {
+      "number": 7,
+      "track_code": null,
+      "course_ids": [
+        "e3466d43-d373-4972-84e7-89f1ecd821b6",
+        "6765087e-50df-4009-84f9-7c4cc916c113",
+        "71c49789-4c51-4e0d-b7ef-60712f7c425a",
+        "cd55db89-379e-46e1-bad4-ff3c0723c209",
+        "dc5742cb-8ef3-46bb-b668-fbf691dd35fe",
+        "59c0b33d-4a0d-434d-a2ea-9c70979c7ff0"
+      ]
+    },
+    {
+      "number": 8,
+      "track_code": null,
+      "course_ids": [
+        "696a13ec-6594-44f0-abfd-76575d840436",
+        "035aabd5-eb0e-49bc-97eb-b88bbe740e18",
+        "d308e6a0-c93a-4b2c-9db6-7fe25756ad63",
+        "65498bbf-31ce-48b3-9f4a-53dc819cecf9",
+        "1c49e3c9-a6b4-47d9-9dca-c20d3f69dde9",
+        "d2d7dda6-516a-43e6-b87d-467913e18415"
+      ]
+    },
+    {
+      "number": 9,
+      "track_code": null,
+      "course_ids": [
+        "6bb15788-cb3b-4b7d-8af2-3398dfe1991c",
+        "dc2a6696-4524-46e8-a968-97cc0e5d2d22",
+        "a690bc1c-41c3-4e91-a8e6-4385f318ff84",
+        "82b06558-c9b0-4dc3-82c3-0481923c882c",
+        "7816d940-ec63-4661-acb8-a6298aa99e94",
+        "6cb097be-ff2c-4d4a-bd2a-485b82eea26f"
+      ]
+    },
+    {
+      "number": 10,
+      "track_code": null,
+      "course_ids": [
+        "1ff89259-708a-4f73-a1ad-87e4260706c4",
+        "9381a439-83f0-47d4-a3bc-e54661ad7f3c",
+        "c6e4e921-240a-4be6-9029-2c6b992d547d",
+        "cbb9b619-d99f-4e1d-a161-2f5429f4d2ff",
+        "a997a31f-a779-4613-bfa2-1d6825349389",
+        "7f9f7068-974c-4dce-8605-b64520b702ea"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "id": "a4bc2bf7-0532-4ddb-9973-58db0bbdebd2",
+      "legacy_id": 1,
+      "code": "CEGHC11",
+      "name": "Habilidades comunicativas",
+      "credits": 8,
+      "period_number": 1,
+      "sort_order": 0,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "741a100a-ba6b-4356-bbb3-ac67c45be3c9",
+      "legacy_id": 2,
+      "code": "CFIS310",
+      "name": "Física general",
+      "credits": 18,
+      "period_number": 1,
+      "sort_order": 1,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "c1c536e9-7b05-4244-b828-81b9f4c809a6",
+      "legacy_id": 3,
+      "code": "FMMP012",
+      "name": "Introducción a las matemáticas",
+      "credits": 16,
+      "period_number": 1,
+      "sort_order": 2,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "86e764e5-58eb-43d5-9d54-6fc9a5abc124",
+      "legacy_id": 4,
+      "code": "GEOL101",
+      "name": "Sistema tierra",
+      "credits": 11,
+      "period_number": 1,
+      "sort_order": 3,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "4d5cedcc-2284-4751-bc36-96bcd9a7d6bb",
+      "legacy_id": 5,
+      "code": "QUIM090",
+      "name": "Química y ambiente",
+      "credits": 10,
+      "period_number": 1,
+      "sort_order": 4,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "a0b1b31e-afa7-482c-bea8-8c597957efc5",
+      "legacy_id": 6,
+      "code": "CFIS328",
+      "name": "Física experimental",
+      "credits": 16,
+      "period_number": 2,
+      "sort_order": 5,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "741a100a-ba6b-4356-bbb3-ac67c45be3c9"
+          },
+          {
+            "course": "c1c536e9-7b05-4244-b828-81b9f4c809a6"
+          }
+        ]
+      },
+      "prereq_raw": "(CFIS310 o FMF023 o FMF010 o FMF024) y (FMMP012 o FMM013 o FMM012 o FMM035)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "7f7f08f2-70a0-4346-89e7-953654698450",
+      "legacy_id": 7,
+      "code": "FMMP112",
+      "name": "Cálculo diferencial",
+      "credits": 16,
+      "period_number": 2,
+      "sort_order": 6,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "c1c536e9-7b05-4244-b828-81b9f4c809a6"
+      },
+      "prereq_raw": "FMMP012 o FMM013 o FMM010 o FMM035 o FMM012",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "96e63112-d745-42e9-8f26-8bd5e9606b06",
+      "legacy_id": 8,
+      "code": "GEOL201",
+      "name": "Mineralogía y cristalografía",
+      "credits": 11,
+      "period_number": 2,
+      "sort_order": 7,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "86e764e5-58eb-43d5-9d54-6fc9a5abc124"
+          },
+          {
+            "course": "4d5cedcc-2284-4751-bc36-96bcd9a7d6bb"
+          }
+        ]
+      },
+      "prereq_raw": "(GEOL101 o GEO101) y (QUIM090 o QUI104)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "4eedd25e-10a7-4d86-97c0-87786714dec1",
+      "legacy_id": 9,
+      "code": "GEOL202",
+      "name": "Paleontología y evolución",
+      "credits": 9,
+      "period_number": 2,
+      "sort_order": 8,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "86e764e5-58eb-43d5-9d54-6fc9a5abc124"
+      },
+      "prereq_raw": "GEOL101 o GEO101",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "d1e0d0e3-4076-4c3e-ad29-ddd36148334d",
+      "legacy_id": 10,
+      "code": "GEOL203",
+      "name": "Fundamentos de geología",
+      "credits": 14,
+      "period_number": 2,
+      "sort_order": 9,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "86e764e5-58eb-43d5-9d54-6fc9a5abc124"
+      },
+      "prereq_raw": "GEOL101 o GEO101",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "5265ef06-2a90-4e52-9691-37a5c7e169d9",
+      "legacy_id": 11,
+      "code": "ACAD101",
+      "name": "Taller de innovación y emprendimiento i",
+      "credits": 10,
+      "period_number": 3,
+      "sort_order": 10,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "86e764e5-58eb-43d5-9d54-6fc9a5abc124"
+      },
+      "prereq_raw": "TDFI101 o AUT1301 o INN1201 o ICF121 o INS122 o ICI1201 o IMIN101 o GEOL101 o GEO101 o BIOQ388 o BIOQ398 o LCEBB110 o LCEBB100",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "4c59f770-4655-4a0a-a446-e4389c5dda81",
+      "legacy_id": 12,
+      "code": "CFIS332",
+      "name": "Mecánica",
+      "credits": 18,
+      "period_number": 3,
+      "sort_order": 11,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "a0b1b31e-afa7-482c-bea8-8c597957efc5"
+          },
+          {
+            "course": "7f7f08f2-70a0-4346-89e7-953654698450"
+          }
+        ]
+      },
+      "prereq_raw": "(CFIS328 o FMF023 o FMF066) y (FMMP112 o FMM033 o FMM112)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "1f0edaf0-824b-4407-b658-69e124ee6be9",
+      "legacy_id": 13,
+      "code": "FMMP212",
+      "name": "Cálculo integral",
+      "credits": 16,
+      "period_number": 3,
+      "sort_order": 12,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "7f7f08f2-70a0-4346-89e7-953654698450"
+      },
+      "prereq_raw": "FMMP112 o FMM040 o FMM010 o FMM033 o FMM112",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "5ada23a0-7944-4942-a864-6cc7b327d71e",
+      "legacy_id": 14,
+      "code": "GEOL301",
+      "name": "Geoquímica endógena",
+      "credits": 12,
+      "period_number": 3,
+      "sort_order": 13,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "4d5cedcc-2284-4751-bc36-96bcd9a7d6bb"
+          },
+          {
+            "course": "d1e0d0e3-4076-4c3e-ad29-ddd36148334d"
+          }
+        ]
+      },
+      "prereq_raw": "(QUIM090 o QUI104) y (GEOL203 o GEO102)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "83b76855-c463-4cc2-82e9-ba32f0cc2d39",
+      "legacy_id": 15,
+      "code": "GEOL302",
+      "name": "Métodos analíticos i: microscopía óptica",
+      "credits": 12,
+      "period_number": 3,
+      "sort_order": 14,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "5ada23a0-7944-4942-a864-6cc7b327d71e"
+          },
+          {
+            "course": "d1e0d0e3-4076-4c3e-ad29-ddd36148334d"
+          }
+        ]
+      },
+      "prereq_raw": "(GEOL301 o GEO201) y (GEOL203 o GEO102)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "e7d57d94-0dc6-48bf-b340-793118680405",
+      "legacy_id": 16,
+      "code": "ACAD102",
+      "name": "Taller de innovación y emprendimiento ii",
+      "credits": 10,
+      "period_number": 4,
+      "sort_order": 15,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "5265ef06-2a90-4e52-9691-37a5c7e169d9"
+      },
+      "prereq_raw": "ACAD101 o INN1201 o ICI1201 o CEGP01",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "afce4e69-ab40-483e-95ae-eb2418111792",
+      "legacy_id": 17,
+      "code": "CFIS344",
+      "name": "Electricidad y magnetismo",
+      "credits": 14,
+      "period_number": 4,
+      "sort_order": 16,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "4c59f770-4655-4a0a-a446-e4389c5dda81"
+          },
+          {
+            "course": "1f0edaf0-824b-4407-b658-69e124ee6be9"
+          }
+        ]
+      },
+      "prereq_raw": "(CFIS332 o FMF122 o FMF025) y (FMMP212 o FMM133 o FMM212)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "fa119933-0521-488a-89f8-b3084f4861c5",
+      "legacy_id": 18,
+      "code": "FMMP312",
+      "name": "Sistemas y ecuaciones diferenciales lineales",
+      "credits": 16,
+      "period_number": 4,
+      "sort_order": 17,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "1f0edaf0-824b-4407-b658-69e124ee6be9"
+      },
+      "prereq_raw": "FMMP212 o FMM133 o FMM130 o FMM212",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "ffa3c3eb-49df-4f4b-9db7-a53cbfe69d80",
+      "legacy_id": 19,
+      "code": "GEOL401",
+      "name": "Integrador i: práctica i",
+      "credits": 10,
+      "period_number": 4,
+      "sort_order": 18,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "5ada23a0-7944-4942-a864-6cc7b327d71e"
+          },
+          {
+            "course": "83b76855-c463-4cc2-82e9-ba32f0cc2d39"
+          }
+        ]
+      },
+      "prereq_raw": "(GEOL301 o GEO302) y (GEOL304 o GEO304) y (GEOL302 o GEO305)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "7267df14-701d-4d3c-94ed-32482041e131",
+      "legacy_id": 20,
+      "code": "ING119",
+      "name": "Inglés i",
+      "credits": 12,
+      "period_number": 4,
+      "sort_order": 19,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "49a893ca-5515-40ac-aebd-07d81f076c6e",
+      "legacy_id": 21,
+      "code": "GEOL501",
+      "name": "Petrología endógena",
+      "credits": 14,
+      "period_number": 5,
+      "sort_order": 20,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "ffa3c3eb-49df-4f4b-9db7-a53cbfe69d80"
+      },
+      "prereq_raw": "GEOL401 o GEO499",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "6f24d782-c0ed-4557-8019-04e0814345f1",
+      "legacy_id": 22,
+      "code": "GEOL502",
+      "name": "Sedimentología y estratigrafía",
+      "credits": 14,
+      "period_number": 5,
+      "sort_order": 21,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "ffa3c3eb-49df-4f4b-9db7-a53cbfe69d80"
+      },
+      "prereq_raw": "GEOL401 o GEO499",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "1e332b63-376e-4b3b-b5f3-5d34120af1da",
+      "legacy_id": 23,
+      "code": "GEOL503",
+      "name": "Métodos analíticos ii: sig y teledetección",
+      "credits": 7,
+      "period_number": 5,
+      "sort_order": 22,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "83b76855-c463-4cc2-82e9-ba32f0cc2d39"
+      },
+      "prereq_raw": "GEOL302 o GEO305",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "fb81d669-5a08-430e-8363-f3597450732d",
+      "legacy_id": 24,
+      "code": "GEOL504",
+      "name": "Geoquímica exógena y ambiental",
+      "credits": 9,
+      "period_number": 5,
+      "sort_order": 23,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "5ada23a0-7944-4942-a864-6cc7b327d71e"
+      },
+      "prereq_raw": "GEOL301 o GEO302 y GEO304",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "7aaf360d-ad0e-497d-8ce2-ac6280f93142",
+      "legacy_id": 25,
+      "code": "GEOL505",
+      "name": "Bases de geología de campo",
+      "credits": 11,
+      "period_number": 5,
+      "sort_order": 24,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "ffa3c3eb-49df-4f4b-9db7-a53cbfe69d80"
+      },
+      "prereq_raw": "GEOL401 o GEO499",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "f359b9a9-c3e3-4e29-9d00-b85515a428d9",
+      "legacy_id": 26,
+      "code": "ING129",
+      "name": "Inglés ii",
+      "credits": 12,
+      "period_number": 5,
+      "sort_order": 25,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "7267df14-701d-4d3c-94ed-32482041e131"
+      },
+      "prereq_raw": "ING119 o ING111 o ING110 o ING116 o ING117 o CNT021 o ING050 o ING051 o FLG301",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "f924938b-e725-4dbb-b162-2507c88d81df",
+      "legacy_id": 27,
+      "code": "ACAD103",
+      "name": "Taller de innovación y emprendimiento iii",
+      "credits": 10,
+      "period_number": 6,
+      "sort_order": 26,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "e7d57d94-0dc6-48bf-b340-793118680405"
+      },
+      "prereq_raw": "ACAD102 o INB1202 o FIC168",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "4081a62e-3f92-407f-a058-8275000ee769",
+      "legacy_id": 28,
+      "code": "GEOL601",
+      "name": "Fundamentos de programación y análisis numérico",
+      "credits": 10,
+      "period_number": 6,
+      "sort_order": 27,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "fa119933-0521-488a-89f8-b3084f4861c5"
+          },
+          {
+            "course": "1e332b63-376e-4b3b-b5f3-5d34120af1da"
+          }
+        ]
+      },
+      "prereq_raw": "(FMMP312 o FMM254) y (GEOL503 o GEO406)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "3b6923b6-16f6-4873-917c-9425e4dd889d",
+      "legacy_id": 29,
+      "code": "GEOL602",
+      "name": "Deformación de la corteza",
+      "credits": 14,
+      "period_number": 6,
+      "sort_order": 28,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "49a893ca-5515-40ac-aebd-07d81f076c6e"
+          },
+          {
+            "course": "6f24d782-c0ed-4557-8019-04e0814345f1"
+          }
+        ]
+      },
+      "prereq_raw": "(GEOL501 o GEO403) y (GEOL502 o GEO301)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "352e1d9a-e31a-4e73-8d7b-bc996ab1a45b",
+      "legacy_id": 30,
+      "code": "GEOL603",
+      "name": "Geología de campo i",
+      "credits": 19,
+      "period_number": 6,
+      "sort_order": 29,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "7aaf360d-ad0e-497d-8ce2-ac6280f93142"
+          },
+          {
+            "course": "1e332b63-376e-4b3b-b5f3-5d34120af1da"
+          }
+        ]
+      },
+      "prereq_raw": "(GEOL505 o GEO307) y (GEOL503 o GEO406)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "b8459fb4-f63c-4f05-ab06-2580ed31cd64",
+      "legacy_id": 31,
+      "code": "ING239",
+      "name": "Inglés iii",
+      "credits": 12,
+      "period_number": 6,
+      "sort_order": 30,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "f359b9a9-c3e3-4e29-9d00-b85515a428d9"
+      },
+      "prereq_raw": "ING129 o ING121 o ING120 o ING216 o ING126 o ING134 o ING127 o CNT026 o ETU181 y ETU182",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "e3466d43-d373-4972-84e7-89f1ecd821b6",
+      "legacy_id": 32,
+      "code": "CEGRS14",
+      "name": "Responsabilidad social",
+      "credits": 6,
+      "period_number": 7,
+      "sort_order": 31,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": "",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "6765087e-50df-4009-84f9-7c4cc916c113",
+      "legacy_id": 33,
+      "code": "GEOL701",
+      "name": "Depósitos minerales y metalogénesis andina",
+      "credits": 12,
+      "period_number": 7,
+      "sort_order": 32,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "352e1d9a-e31a-4e73-8d7b-bc996ab1a45b"
+          },
+          {
+            "course": "3b6923b6-16f6-4873-917c-9425e4dd889d"
+          }
+        ]
+      },
+      "prereq_raw": "(GEOL603 o GEO403) y (GEOL602 o GEO307)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "71c49789-4c51-4e0d-b7ef-60712f7c425a",
+      "legacy_id": 34,
+      "code": "GEOL702",
+      "name": "Geomorfología",
+      "credits": 10,
+      "period_number": 7,
+      "sort_order": 33,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "3b6923b6-16f6-4873-917c-9425e4dd889d"
+          },
+          {
+            "course": "fb81d669-5a08-430e-8363-f3597450732d"
+          }
+        ]
+      },
+      "prereq_raw": "(GEOL602 o GEO307) y (GEOL504 o GEO506)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "cd55db89-379e-46e1-bad4-ff3c0723c209",
+      "legacy_id": 35,
+      "code": "GEOL703",
+      "name": "Paleoclima y ambiente",
+      "credits": 8,
+      "period_number": 7,
+      "sort_order": 34,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "fb81d669-5a08-430e-8363-f3597450732d"
+      },
+      "prereq_raw": "GEOL504 o GEO506",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "dc5742cb-8ef3-46bb-b668-fbf691dd35fe",
+      "legacy_id": 36,
+      "code": "GEOL704",
+      "name": "Geología de campo ii",
+      "credits": 18,
+      "period_number": 7,
+      "sort_order": 35,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "352e1d9a-e31a-4e73-8d7b-bc996ab1a45b"
+          },
+          {
+            "course": "3b6923b6-16f6-4873-917c-9425e4dd889d"
+          }
+        ]
+      },
+      "prereq_raw": "(GEOL603 o GEO403) y (GEOL602 o GEO307). Correquisitos: GEOL703 y GEOL702",
+      "coreq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "71c49789-4c51-4e0d-b7ef-60712f7c425a"
+          },
+          {
+            "course": "cd55db89-379e-46e1-bad4-ff3c0723c209"
+          }
+        ]
+      },
+      "coreq_raw": "GEOL702 y GEOL703",
+      "attrs": {}
+    },
+    {
+      "id": "59c0b33d-4a0d-434d-a2ea-9c70979c7ff0",
+      "legacy_id": 37,
+      "code": "ING249",
+      "name": "Inglés iv",
+      "credits": 12,
+      "period_number": 7,
+      "sort_order": 36,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "b8459fb4-f63c-4f05-ab06-2580ed31cd64"
+      },
+      "prereq_raw": "ING239 o ING210 o ING216 o ING224 o ING126 o ING134 o otros equivalentes",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "696a13ec-6594-44f0-abfd-76575d840436",
+      "legacy_id": 38,
+      "code": "GEOL801",
+      "name": "Recursos energéticos",
+      "credits": 7,
+      "period_number": 8,
+      "sort_order": 37,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "6765087e-50df-4009-84f9-7c4cc916c113"
+      },
+      "prereq_raw": "GEOL701 o GEO407 y GEO402",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "035aabd5-eb0e-49bc-97eb-b88bbe740e18",
+      "legacy_id": 39,
+      "code": "GEOL802",
+      "name": "Geología de chile",
+      "credits": 8,
+      "period_number": 8,
+      "sort_order": 38,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "dc5742cb-8ef3-46bb-b668-fbf691dd35fe"
+          },
+          {
+            "course": "6765087e-50df-4009-84f9-7c4cc916c113"
+          }
+        ]
+      },
+      "prereq_raw": "(GEOL704 o GEO407) y (GEOL701 o GEO407 y GEO402)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "d308e6a0-c93a-4b2c-9db6-7fe25756ad63",
+      "legacy_id": 40,
+      "code": "GEOL803",
+      "name": "Hidrogeología",
+      "credits": 8,
+      "period_number": 8,
+      "sort_order": 39,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "71c49789-4c51-4e0d-b7ef-60712f7c425a"
+      },
+      "prereq_raw": "GEOL702 o GEO306. Correquisitos: GEOL804 y GEOL801",
+      "coreq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "696a13ec-6594-44f0-abfd-76575d840436"
+          },
+          {
+            "course": "65498bbf-31ce-48b3-9f4a-53dc819cecf9"
+          }
+        ]
+      },
+      "coreq_raw": "GEOL801 y GEOL804",
+      "attrs": {}
+    },
+    {
+      "id": "65498bbf-31ce-48b3-9f4a-53dc819cecf9",
+      "legacy_id": 41,
+      "code": "GEOL804",
+      "name": "Métodos de exploración geofísica",
+      "credits": 8,
+      "period_number": 8,
+      "sort_order": 40,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "6765087e-50df-4009-84f9-7c4cc916c113"
+          },
+          {
+            "course": "4081a62e-3f92-407f-a058-8275000ee769"
+          }
+        ]
+      },
+      "prereq_raw": "GEOL701 o GEO407 y GEO402 y GEOL601",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "1c49e3c9-a6b4-47d9-9dca-c20d3f69dde9",
+      "legacy_id": 42,
+      "code": "GEOL805",
+      "name": "Integrador ii: seminario licenciatura en ciencias geológicas",
+      "credits": 19,
+      "period_number": 8,
+      "sort_order": 41,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "dc5742cb-8ef3-46bb-b668-fbf691dd35fe"
+          },
+          {
+            "course": "6765087e-50df-4009-84f9-7c4cc916c113"
+          }
+        ]
+      },
+      "prereq_raw": "(GEOL704 o GEO407) y (GEOL701 o GEO407 y GEO402). Correquisitos: GEOL804 y GEOL803",
+      "coreq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "d308e6a0-c93a-4b2c-9db6-7fe25756ad63"
+          },
+          {
+            "course": "65498bbf-31ce-48b3-9f4a-53dc819cecf9"
+          }
+        ]
+      },
+      "coreq_raw": "GEOL803 y GEOL804",
+      "attrs": {}
+    },
+    {
+      "id": "d2d7dda6-516a-43e6-b87d-467913e18415",
+      "legacy_id": 43,
+      "code": "GEOL806",
+      "name": "Práctica ii",
+      "credits": 18,
+      "period_number": 8,
+      "sort_order": 42,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "dc5742cb-8ef3-46bb-b668-fbf691dd35fe"
+      },
+      "prereq_raw": "GEOL704 o GEO407",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "6bb15788-cb3b-4b7d-8af2-3398dfe1991c",
+      "legacy_id": 44,
+      "code": "GEOL901",
+      "name": "Geología de minas",
+      "credits": 10,
+      "period_number": 9,
+      "sort_order": 43,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "65498bbf-31ce-48b3-9f4a-53dc819cecf9"
+          },
+          {
+            "course": "696a13ec-6594-44f0-abfd-76575d840436"
+          }
+        ]
+      },
+      "prereq_raw": "(GEOL804 o GEO308) y (GEOL801 o GEO408)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "dc2a6696-4524-46e8-a968-97cc0e5d2d22",
+      "legacy_id": 45,
+      "code": "GEOL902",
+      "name": "Geoestadística y modelamiento geológico",
+      "credits": 9,
+      "period_number": 9,
+      "sort_order": 44,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "65498bbf-31ce-48b3-9f4a-53dc819cecf9"
+      },
+      "prereq_raw": "GEOL804 o GEO308",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "a690bc1c-41c3-4e91-a8e6-4385f318ff84",
+      "legacy_id": 46,
+      "code": "GEOL903",
+      "name": "Geología de campo iii",
+      "credits": 19,
+      "period_number": 9,
+      "sort_order": 45,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "1c49e3c9-a6b4-47d9-9dca-c20d3f69dde9"
+      },
+      "prereq_raw": "GEOL805 o GEO405. Correquisitos: GEOL901 y GEOL904",
+      "coreq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "6bb15788-cb3b-4b7d-8af2-3398dfe1991c"
+          },
+          {
+            "course": "82b06558-c9b0-4dc3-82c3-0481923c882c"
+          }
+        ]
+      },
+      "coreq_raw": "GEOL901 y GEOL904",
+      "attrs": {}
+    },
+    {
+      "id": "82b06558-c9b0-4dc3-82c3-0481923c882c",
+      "legacy_id": 47,
+      "code": "GEOL904",
+      "name": "Peligros geológicos y planificación territorial",
+      "credits": 8,
+      "period_number": 9,
+      "sort_order": 46,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "d308e6a0-c93a-4b2c-9db6-7fe25756ad63"
+      },
+      "prereq_raw": "GEOL803 o GEO502",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "7816d940-ec63-4661-acb8-a6298aa99e94",
+      "legacy_id": 48,
+      "code": "GEOL905",
+      "name": "Tópicos de especialidad i",
+      "credits": 9,
+      "period_number": 9,
+      "sort_order": 47,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "035aabd5-eb0e-49bc-97eb-b88bbe740e18"
+      },
+      "prereq_raw": "GEOL802 o GEO411",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "6cb097be-ff2c-4d4a-bd2a-485b82eea26f",
+      "legacy_id": 49,
+      "code": "GEOL906",
+      "name": "Portafolio de proyectos",
+      "credits": 9,
+      "period_number": 9,
+      "sort_order": 48,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "1c49e3c9-a6b4-47d9-9dca-c20d3f69dde9"
+      },
+      "prereq_raw": "GEOL805 o GEO405. Correquisito: GEOL903",
+      "coreq_expr": {
+        "course": "a690bc1c-41c3-4e91-a8e6-4385f318ff84"
+      },
+      "coreq_raw": "GEOL903",
+      "attrs": {}
+    },
+    {
+      "id": "1ff89259-708a-4f73-a1ad-87e4260706c4",
+      "legacy_id": 50,
+      "code": "GEOL001",
+      "name": "Tópicos de especialidad ii",
+      "credits": 5,
+      "period_number": 10,
+      "sort_order": 49,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "7816d940-ec63-4661-acb8-a6298aa99e94"
+      },
+      "prereq_raw": "GEOL905 o GEOLP001 o GEOLP002 o GEOLP003 o GEOLP004 o GEOLP005 o GEOLP006 o GEOLP007 o GEOLP008",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "9381a439-83f0-47d4-a3bc-e54661ad7f3c",
+      "legacy_id": 51,
+      "code": "GEOL002",
+      "name": "Economía y evaluación de proyectos geológicos",
+      "credits": 5,
+      "period_number": 10,
+      "sort_order": 50,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "6bb15788-cb3b-4b7d-8af2-3398dfe1991c"
+          },
+          {
+            "course": "a690bc1c-41c3-4e91-a8e6-4385f318ff84"
+          }
+        ]
+      },
+      "prereq_raw": "(GEOL901 o GEO412 y GEO501) y (GEOL903 o GEO410)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "c6e4e921-240a-4be6-9029-2c6b992d547d",
+      "legacy_id": 52,
+      "code": "GEOL003",
+      "name": "Tópicos de especialidad iii",
+      "credits": 5,
+      "period_number": 10,
+      "sort_order": 51,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "7816d940-ec63-4661-acb8-a6298aa99e94"
+      },
+      "prereq_raw": "GEOL905 o GEOLP001 o GEOLP002 o GEOLP003 o GEOLP004 o GEOLP005 o GEOLP006 o GEOLP007 o GEOLP008",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "cbb9b619-d99f-4e1d-a161-2f5429f4d2ff",
+      "legacy_id": 53,
+      "code": "GEOL004",
+      "name": "Geoética y geopatrimonio",
+      "credits": 4,
+      "period_number": 10,
+      "sort_order": 52,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "7816d940-ec63-4661-acb8-a6298aa99e94"
+      },
+      "prereq_raw": "GEOL905 o GEOLP001 o GEOLP002 o GEOLP003 o GEOLP004 o GEOLP005 o GEOLP006 o GEOLP007 o GEOLP008",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "a997a31f-a779-4613-bfa2-1d6825349389",
+      "legacy_id": 54,
+      "code": "GEOL005",
+      "name": "Integrador iii: proyecto de título",
+      "credits": 45,
+      "period_number": 10,
+      "sort_order": 53,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "6cb097be-ff2c-4d4a-bd2a-485b82eea26f"
+      },
+      "prereq_raw": "(GEOL906 o GEO505) y (GEOL906 o GEO599)",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {}
+    },
+    {
+      "id": "7f9f7068-974c-4dce-8605-b64520b702ea",
+      "legacy_id": 55,
+      "code": "GEOL006",
+      "name": "Geología andina e interpretación avanzada",
+      "credits": 5,
+      "period_number": 10,
+      "sort_order": 54,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "a690bc1c-41c3-4e91-a8e6-4385f318ff84"
+      },
+      "prereq_raw": "GEOL903 o GEO410. Correquisitos: (GEOL001 o GEOLP014) y GEOL003",
+      "coreq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "1ff89259-708a-4f73-a1ad-87e4260706c4"
+          },
+          {
+            "course": "c6e4e921-240a-4be6-9029-2c6b992d547d"
+          }
+        ]
+      },
+      "coreq_raw": "GEOL001 y GEOL003",
+      "attrs": {}
+    }
+  ],
+  "aliases": {}
+}
