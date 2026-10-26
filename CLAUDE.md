@@ -16,3 +16,9 @@ Plataforma web para estudiantes universitarios chilenos: malla curricular con pr
 - Tests obligatorios para prerrequisitos, cálculo de notas, topes de horario y permisos.
 - Antes de cambios grandes, mostrar un plan y esperar aprobación.
 - Windows: nunca escribir archivos con redirecciones de PowerShell (>, Out-File, Set-Content); usar siempre las herramientas de edición de archivos. Todo archivo en UTF-8 sin BOM y saltos LF.
+
+## Trabajo con agentes
+@AGENTS.md
+
+- Implementar una tarea: `/task T-0XX` (subagente `implementer`). Auditar: `/audit T-0XX` (subagente `auditor`, en una sesión que no implementó el cambio).
+- Tareas en `docs/plan/backlog.md`; proceso en `docs/process/`; registro de auditorías en `docs/audits/`.

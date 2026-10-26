@@ -52,3 +52,20 @@ Los tests crean la base `mallapro_test` en el mismo Postgres si no existe.
 Netlify: *Base directory* = `frontend`. Vercel: *Root Directory* = `frontend`. cPanel: `cd frontend && npm run pack:cpanel`.
 
 Reglas del proyecto y stack completo en [CLAUDE.md](CLAUDE.md).
+
+## Documentación y trabajo con agentes
+
+| Documento | Para qué |
+|---|---|
+| [AGENTS.md](AGENTS.md) | Reglas de trabajo, comandos y definición de terminado |
+| [docs/requirements/](docs/requirements/requerimientos-v1.2.md) | Qué se construye (requisitos con ID) |
+| [docs/plan/backlog.md](docs/plan/backlog.md) | Tareas con alcance y criterios de aceptación |
+| [docs/plan/traceability.md](docs/plan/traceability.md) | Requisito → tarea → prueba |
+| [docs/plan/decisions.md](docs/plan/decisions.md) | Decisiones pendientes |
+| [docs/process/](docs/process/workflow.md) | Flujo de trabajo y auditoría de cada cambio |
+| [docs/architecture/](docs/architecture/architecture.md) | Arquitectura, modelo de datos y API |
+| [docs/adr/](docs/adr/README.md) | Decisiones técnicas |
+| [docs/data/mallas.md](docs/data/mallas.md) | Mallas del catálogo y cómo verificarlas |
+| [docs/audits/](docs/audits/README.md) | Registro de auditorías |
+
+Con Claude Code: `/task T-0XX` implementa una tarea y `/audit T-0XX` la audita en otra sesión.

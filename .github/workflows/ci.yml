@@ -1,0 +1,85 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: backend
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: mallapro
+          POSTGRES_PASSWORD: ci-only
+          POSTGRES_DB: mallapro
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U mallapro -d mallapro"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      DATABASE_URL: postgresql+asyncpg://mallapro:ci-only@localhost:5432/mallapro
+      TEST_DATABASE_URL: postgresql+asyncpg://mallapro:ci-only@localhost:5432/mallapro_test
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - run: uv python install 3.12
+      - run: uv sync --locked
+      - run: uv run ruff check
+      - run: uv run ruff format --check
+      - run: uv run alembic upgrade head
+      - name: Import catalog (smoke test)
+        run: uv run python -m app.scripts.import_legacy_mallas ../frontend/public/mallas
+      - name: Migrations are reversible
+        run: uv run alembic downgrade base && uv run alembic upgrade head
+      - run: uv run pytest
+
+  frontend:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: frontend/.nvmrc
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - name: Lint
+        # El código heredado tiene errores de lint; T-006 los corrige y quita esta línea.
+        continue-on-error: true
+        run: npm run lint
+      - run: npm test
+      - run: npm run build
+
+  catalog-data:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Catalog data changes require the type:data label
+        env:
+          LABELS: ${{ toJson(github.event.pull_request.labels.*.name) }}
+          BASE: ${{ github.base_ref }}
+        run: |
+          if git diff --name-only "origin/$BASE...HEAD" | grep -q '^frontend/public/mallas/'; then
+            echo "$LABELS" | grep -q '"type:data"' \
+              || { echo "::error::Este PR modifica frontend/public/mallas/ sin la etiqueta type:data"; exit 1; }
+          fi

@@ -1,0 +1,30 @@
+name: Tarea
+description: Nueva tarea para el backlog (se copia luego a docs/plan/backlog.md)
+title: "T-0XX · "
+labels: ["task"]
+body:
+  - type: dropdown
+    id: type
+    attributes: { label: Tipo, options: [code, data, decision, infra] }
+    validations: { required: true }
+  - type: dropdown
+    id: risk
+    attributes: { label: Riesgo, options: [bajo, medio, alto] }
+    validations: { required: true }
+  - type: input
+    id: requirements
+    attributes: { label: Requisitos, placeholder: "AV-04, sección 6" }
+  - type: input
+    id: depends
+    attributes: { label: Depende de, placeholder: "T-012" }
+  - type: textarea
+    id: scope
+    attributes: { label: Alcance (rutas que puede tocar) }
+    validations: { required: true }
+  - type: textarea
+    id: criteria
+    attributes: { label: Criterios de aceptación (verificables, numerados) }
+    validations: { required: true }
+  - type: textarea
+    id: tests
+    attributes: { label: Pruebas mínimas }
