@@ -1,6 +1,13 @@
 {
-  "carrera": "Ingeniería Civil Industrial",
-  "total_creditos": 400,
+  "carrera": "Ingeniería Civil Industrial (UNAB)",
+  "fuente_oficial": {
+    "programa": "UNAB12100",
+    "catalogo": "202010",
+    "catalogoTexto": "PRIMER SEMESTRE 2020",
+    "lectura": "OCR revisado"
+  },
+  "total_creditos": 673,
+  "totalSemestres": 10,
   "semestres": [
     {
       "numero": 1,
@@ -59,7 +66,8 @@
             1,
             2
           ],
-          "area": "fisica"
+          "area": "fisica",
+          "prereq_expr": "( CFIS310 o FMF023 o FMF010 o FMF024 ) y ( FMMP012 o FMM013 o FMM012 o FMM035 )"
         },
         {
           "id": 7,
@@ -69,7 +77,8 @@
           "prerrequisitos": [
             2
           ],
-          "area": "matematica"
+          "area": "matematica",
+          "prereq_expr": "FMMP012 o FMM013 o FMM010 o FMM035 o FMM012"
         },
         {
           "id": 8,
@@ -87,7 +96,8 @@
           "prerrequisitos": [
             4
           ],
-          "area": "computacion"
+          "area": "computacion",
+          "prereq_expr": "TDFI102 o IND1401 o ICF122 o INS121 o AUT1302"
         }
       ]
     },
@@ -102,7 +112,8 @@
           "prerrequisitos": [
             3
           ],
-          "area": "gestion"
+          "area": "gestion",
+          "prereq_expr": "TDFI101 o AUT1301 o TIN1201 o ICF121 o INS122 o ICI1201 o IMIN101 o ( GEOL101 o GEO101 ) o ( BIOQ388 o BIOQ398 ) o ( LCBB110 o LCBB100 )"
         },
         {
           "id": 11,
@@ -113,7 +124,8 @@
             6,
             7
           ],
-          "area": "fisica"
+          "area": "fisica",
+          "prereq_expr": "( ( CFIS328 o FMF023 o FME086 ) y ( FMMP112 o FMM033 o FMM112 ) ) o ( ( IAUT101 o AUT1303 ) y ( FMMP112 o FMM112 ) )"
         },
         {
           "id": 12,
@@ -123,7 +135,8 @@
           "prerrequisitos": [
             7
           ],
-          "area": "matematica"
+          "area": "matematica",
+          "prereq_expr": "FMMP112 o FMM030 o FMM010 o FMM033 o FMM112"
         },
         {
           "id": 13,
@@ -133,7 +146,8 @@
           "prerrequisitos": [
             3
           ],
-          "area": "formacion"
+          "area": "formacion",
+          "prereq_expr": "TDFI101 o LIN1201 o ICF121 o INS122 o ICI1201 o IMIN101 o AUT1301"
         },
         {
           "id": 14,
@@ -141,10 +155,11 @@
           "nombre": "Procesos Industriales",
           "sct": 12,
           "prerrequisitos": [
-            1,
-            8
+            8,
+            1
           ],
-          "area": "industrial"
+          "area": "industrial",
+          "prereq_expr": "( QUIM090 o QUI070 ) y ( CFIS310 o FMF024 )"
         }
       ]
     },
@@ -159,7 +174,8 @@
           "prerrequisitos": [
             10
           ],
-          "area": "gestion"
+          "area": "gestion",
+          "prereq_expr": "ACAD101 o IIN1201 o ICT1201 o CEGP01"
         },
         {
           "id": 16,
@@ -170,7 +186,8 @@
             11,
             12
           ],
-          "area": "fisica"
+          "area": "fisica",
+          "prereq_expr": "( ( CFIS332 o FMF122 o FMF025 ) y ( FMMP212 o FMM133 o FMM212 ) )"
         },
         {
           "id": 17,
@@ -190,16 +207,18 @@
             11,
             14,
             12,
-            13
+            13,
+            5
           ],
           "area": "industrial",
           "correquisitos": [
-            15,
             16,
             18,
-            19
+            19,
+            15
           ],
-          "correq_expr": "ACAD102 y CFIS344 y FMMP312 y ING119"
+          "correq_expr": "( CFIS344 o FMF144 ) y ( FMMP312 o FMMP312 ) y ING119 y ( ACAD102 o IND1202 )",
+          "prereq_expr": "( CFIS310 o FMF024 ) y ( FMMP012 o FMM012 ) y ( TDFI101 o ICI1201 ) y ( TDFI102 o IND1401 ) y ( CFIS328 o FMF086 ) y ( FMMP112 o FMM112 ) y ( QUIM090 o QUI070 ) y ( TDFI103 o ICI2402 ) y ( ACAD101 o ICI1201 ) y ( CFIS332 o FMF025 ) y ( CIND100 o IND1205 ) y ( FMMP212 o FMM212 ) y TDFI104 y ( CEGHC11 o CEGHC01 o FIC1604 )"
         },
         {
           "id": 18,
@@ -209,7 +228,8 @@
           "prerrequisitos": [
             12
           ],
-          "area": "matematica"
+          "area": "matematica",
+          "prereq_expr": "( FMMP212 o FMM133 ) o ( FMMP212 o FMM130 ) o FMM212"
         },
         {
           "id": 19,
@@ -232,7 +252,8 @@
           "prerrequisitos": [
             14
           ],
-          "area": "industrial"
+          "area": "industrial",
+          "prereq_expr": "CIND100 o IND1205"
         },
         {
           "id": 21,
@@ -242,7 +263,8 @@
           "prerrequisitos": [
             12
           ],
-          "area": "industrial"
+          "area": "industrial",
+          "prereq_expr": "FMMP212 o FMM212"
         },
         {
           "id": 22,
@@ -252,7 +274,8 @@
           "prerrequisitos": [
             12
           ],
-          "area": "economia"
+          "area": "economia",
+          "prereq_expr": "FMMP212 o FMM212"
         },
         {
           "id": 23,
@@ -262,7 +285,8 @@
           "prerrequisitos": [
             12
           ],
-          "area": "matematica"
+          "area": "matematica",
+          "prereq_expr": "FMMP212 o FMM212 o FMM214"
         },
         {
           "id": 24,
@@ -272,7 +296,8 @@
           "prerrequisitos": [
             19
           ],
-          "area": "formacion"
+          "area": "formacion",
+          "prereq_expr": "ING119 o ING111 o ING110 o ING116 o ING117 o CNT021 o ( ING050 y ING051 ) o ( FLG301 y FLG302 ) o ( BMA281 y BMA282 ) o ( ETU081 y ETU082 )"
         }
       ]
     },
@@ -287,7 +312,8 @@
           "prerrequisitos": [
             15
           ],
-          "area": "gestion"
+          "area": "gestion",
+          "prereq_expr": "ACAD102 o IND1202 o FIC168"
         },
         {
           "id": 26,
@@ -297,7 +323,8 @@
           "prerrequisitos": [
             21
           ],
-          "area": "industrial"
+          "area": "industrial",
+          "prereq_expr": "CIND112 o IND2209"
         },
         {
           "id": 27,
@@ -308,7 +335,8 @@
             21,
             23
           ],
-          "area": "industrial"
+          "area": "industrial",
+          "prereq_expr": "( CIND112 o IND2209 ) y ( FMSP316 o ( EMS176 y ICI2206 ) )"
         },
         {
           "id": 28,
@@ -318,7 +346,8 @@
           "prerrequisitos": [
             12
           ],
-          "area": "economia"
+          "area": "economia",
+          "prereq_expr": "FMMP212 o FMM212"
         },
         {
           "id": 29,
@@ -328,7 +357,8 @@
           "prerrequisitos": [
             24
           ],
-          "area": "formacion"
+          "area": "formacion",
+          "prereq_expr": "ING129 o ING121 o ING120 o ING216 o ING126 o ING134 o ING127 o CNT026 o ( ETU181 y ETU182 ) o ING229"
         },
         {
           "id": 30,
@@ -339,7 +369,8 @@
             23,
             9
           ],
-          "area": "computacion"
+          "area": "computacion",
+          "prereq_expr": "( FMSP316 o ( FMS176 y ICI2206 ) o ( FMM214 ) ) y ( TDFI103 o ICI2402 o INS128 o ( ICF132 y ICF231 ) )"
         }
       ]
     },
@@ -362,7 +393,8 @@
           "prerrequisitos": [
             26
           ],
-          "area": "industrial"
+          "area": "industrial",
+          "prereq_expr": "CIND113 o IND2211"
         },
         {
           "id": 33,
@@ -372,7 +404,8 @@
           "prerrequisitos": [
             27
           ],
-          "area": "industrial"
+          "area": "industrial",
+          "prereq_expr": "CIND211 o ICI2212"
         },
         {
           "id": 34,
@@ -382,7 +415,8 @@
           "prerrequisitos": [
             28
           ],
-          "area": "economia"
+          "area": "economia",
+          "prereq_expr": "IIND412 o IND2102"
         },
         {
           "id": 35,
@@ -392,7 +426,8 @@
           "prerrequisitos": [
             29
           ],
-          "area": "formacion"
+          "area": "formacion",
+          "prereq_expr": "ING239 o ING210 o ING216 o ING224 o ING126 o CNT126 o ( ETU281 y ETU282 ) o ING217"
         },
         {
           "id": 36,
@@ -402,7 +437,8 @@
           "prerrequisitos": [
             13
           ],
-          "area": "computacion"
+          "area": "computacion",
+          "prereq_expr": "TDFI104 o CEGS01 o ICF253"
         }
       ]
     },
@@ -417,7 +453,8 @@
           "prerrequisitos": [
             33
           ],
-          "area": "industrial"
+          "area": "industrial",
+          "prereq_expr": "CIND212 o CI2212"
         },
         {
           "id": 38,
@@ -427,7 +464,8 @@
           "prerrequisitos": [
             33
           ],
-          "area": "industrial"
+          "area": "industrial",
+          "prereq_expr": "CIND212 o ICT2212"
         },
         {
           "id": 39,
@@ -437,7 +475,8 @@
           "prerrequisitos": [
             33
           ],
-          "area": "computacion"
+          "area": "computacion",
+          "prereq_expr": "CIND212 o IC2212"
         },
         {
           "id": 40,
@@ -450,7 +489,16 @@
             33,
             32
           ],
-          "area": "industrial"
+          "area": "industrial",
+          "prereq_expr": "TDFI105 y ( IIND413 o IND2103 ) y ( CIND212 o ICI2212 ) y ( CIND114 o IND2213 )",
+          "correquisitos": [
+            42,
+            37,
+            38,
+            39,
+            41
+          ],
+          "correq_expr": "( IIND414 o IND2104 ) y ( CIND213 o ICI3217 ) y ( CIND214 o ICI2215 ) y CIND215 y ( CIND313 o ICI2611 )"
         },
         {
           "id": 41,
@@ -463,7 +511,16 @@
             33,
             32
           ],
-          "area": "industrial"
+          "area": "industrial",
+          "prereq_expr": "TDFI105 y ( IIND413 o IND2103 ) y ( CIND212 o ICI2212 ) y ( CIND114 o IND2213 )",
+          "correquisitos": [
+            42,
+            37,
+            38,
+            39,
+            40
+          ],
+          "correq_expr": "( IIND414 o IND2104 ) y ( CIND213 o ICI3217 ) y ( CIND214 o ICI2215 ) y CIND215 y CIND312"
         },
         {
           "id": 42,
@@ -473,7 +530,8 @@
           "prerrequisitos": [
             34
           ],
-          "area": "economia"
+          "area": "economia",
+          "prereq_expr": "IIND413 o IND2103"
         }
       ]
     },
@@ -488,7 +546,8 @@
           "prerrequisitos": [
             34
           ],
-          "area": "economia"
+          "area": "economia",
+          "prereq_expr": "IIND413 o IND2103"
         },
         {
           "id": 44,
@@ -498,7 +557,8 @@
           "prerrequisitos": [
             39
           ],
-          "area": "computacion"
+          "area": "computacion",
+          "prereq_expr": "CIND215"
         },
         {
           "id": 45,
@@ -508,7 +568,8 @@
           "prerrequisitos": [
             22
           ],
-          "area": "gestion"
+          "area": "gestion",
+          "prereq_expr": "CIND411 o IND1101"
         },
         {
           "id": 46,
@@ -518,7 +579,8 @@
           "prerrequisitos": [
             22
           ],
-          "area": "gestion"
+          "area": "gestion",
+          "prereq_expr": "CIND411 o IND1101"
         },
         {
           "id": 47,
@@ -528,7 +590,8 @@
           "prerrequisitos": [
             40
           ],
-          "area": "industrial"
+          "area": "industrial",
+          "prereq_expr": "CIND312"
         },
         {
           "id": 48,
@@ -538,7 +601,8 @@
           "prerrequisitos": [
             40
           ],
-          "area": "industrial"
+          "area": "industrial",
+          "prereq_expr": "CIND312"
         }
       ]
     },
@@ -553,7 +617,8 @@
           "prerrequisitos": [
             40
           ],
-          "area": "industrial"
+          "area": "industrial",
+          "prereq_expr": "CIND312"
         },
         {
           "id": 50,
@@ -563,7 +628,8 @@
           "prerrequisitos": [
             40
           ],
-          "area": "industrial"
+          "area": "industrial",
+          "prereq_expr": "CIND312"
         },
         {
           "id": 51,
@@ -573,9 +639,372 @@
           "prerrequisitos": [
             48
           ],
-          "area": "industrial"
+          "area": "industrial",
+          "prereq_expr": "CIND314 o ICI3003"
         }
       ]
     }
-  ]
+  ],
+  "equivalencias": {
+    "ACAD101": [
+      [
+        "CEGP01"
+      ],
+      [
+        "ICI1201"
+      ],
+      [
+        "ICT1201"
+      ],
+      [
+        "IIN1201"
+      ]
+    ],
+    "ACAD102": [
+      [
+        "FIC168"
+      ],
+      [
+        "IND1202"
+      ]
+    ],
+    "CEGHC11": [
+      [
+        "CEGHC01"
+      ],
+      [
+        "FIC1604"
+      ]
+    ],
+    "CFIS310": [
+      [
+        "FMF010"
+      ],
+      [
+        "FMF023"
+      ],
+      [
+        "FMF024"
+      ]
+    ],
+    "CFIS328": [
+      [
+        "FME086"
+      ],
+      [
+        "FMF023"
+      ],
+      [
+        "FMF086"
+      ]
+    ],
+    "CFIS332": [
+      [
+        "FMF025"
+      ],
+      [
+        "FMF122"
+      ]
+    ],
+    "CFIS344": [
+      [
+        "FMF144"
+      ]
+    ],
+    "CIND100": [
+      [
+        "IND1205"
+      ]
+    ],
+    "CIND112": [
+      [
+        "IND2209"
+      ]
+    ],
+    "CIND113": [
+      [
+        "IND2211"
+      ]
+    ],
+    "CIND114": [
+      [
+        "IND2213"
+      ]
+    ],
+    "CIND211": [
+      [
+        "ICI2212"
+      ]
+    ],
+    "CIND212": [
+      [
+        "CI2212"
+      ],
+      [
+        "IC2212"
+      ],
+      [
+        "ICI2212"
+      ],
+      [
+        "ICT2212"
+      ]
+    ],
+    "CIND213": [
+      [
+        "ICI3217"
+      ]
+    ],
+    "CIND214": [
+      [
+        "ICI2215"
+      ]
+    ],
+    "CIND313": [
+      [
+        "ICI2611"
+      ]
+    ],
+    "CIND314": [
+      [
+        "ICI3003"
+      ]
+    ],
+    "CIND411": [
+      [
+        "IND1101"
+      ]
+    ],
+    "FMMP012": [
+      [
+        "FMM010"
+      ],
+      [
+        "FMM012"
+      ],
+      [
+        "FMM013"
+      ],
+      [
+        "FMM035"
+      ]
+    ],
+    "FMMP112": [
+      [
+        "FMM010"
+      ],
+      [
+        "FMM030"
+      ],
+      [
+        "FMM033"
+      ],
+      [
+        "FMM112"
+      ]
+    ],
+    "FMMP212": [
+      [
+        "FMM130"
+      ],
+      [
+        "FMM133"
+      ],
+      [
+        "FMM212"
+      ],
+      [
+        "FMM214"
+      ]
+    ],
+    "FMSP316": [
+      [
+        "EMS176",
+        "ICI2206"
+      ],
+      [
+        "FMM214"
+      ],
+      [
+        "FMS176",
+        "ICI2206"
+      ]
+    ],
+    "IIND412": [
+      [
+        "IND2102"
+      ]
+    ],
+    "IIND413": [
+      [
+        "IND2103"
+      ]
+    ],
+    "IIND414": [
+      [
+        "IND2104"
+      ]
+    ],
+    "ING119": [
+      [
+        "BMA281",
+        "BMA282"
+      ],
+      [
+        "CNT021"
+      ],
+      [
+        "ETU081",
+        "ETU082"
+      ],
+      [
+        "FLG301",
+        "FLG302"
+      ],
+      [
+        "ING050",
+        "ING051"
+      ],
+      [
+        "ING110"
+      ],
+      [
+        "ING111"
+      ],
+      [
+        "ING116"
+      ],
+      [
+        "ING117"
+      ]
+    ],
+    "ING129": [
+      [
+        "CNT026"
+      ],
+      [
+        "ETU181",
+        "ETU182"
+      ],
+      [
+        "ING120"
+      ],
+      [
+        "ING121"
+      ],
+      [
+        "ING126"
+      ],
+      [
+        "ING127"
+      ],
+      [
+        "ING134"
+      ],
+      [
+        "ING216"
+      ],
+      [
+        "ING229"
+      ]
+    ],
+    "ING239": [
+      [
+        "CNT126"
+      ],
+      [
+        "ETU281",
+        "ETU282"
+      ],
+      [
+        "ING126"
+      ],
+      [
+        "ING210"
+      ],
+      [
+        "ING216"
+      ],
+      [
+        "ING217"
+      ],
+      [
+        "ING224"
+      ]
+    ],
+    "QUIM090": [
+      [
+        "QUI070"
+      ]
+    ],
+    "TDFI101": [
+      [
+        "AUT1301"
+      ],
+      [
+        "BIOQ388",
+        "BIOQ398"
+      ],
+      [
+        "GEOL101",
+        "GEO101"
+      ],
+      [
+        "ICF121"
+      ],
+      [
+        "ICI1201"
+      ],
+      [
+        "IMIN101"
+      ],
+      [
+        "INS122"
+      ],
+      [
+        "LCBB110",
+        "LCBB100"
+      ],
+      [
+        "LIN1201"
+      ],
+      [
+        "TIN1201"
+      ]
+    ],
+    "TDFI102": [
+      [
+        "AUT1302"
+      ],
+      [
+        "ICF122"
+      ],
+      [
+        "IND1401"
+      ],
+      [
+        "INS121"
+      ]
+    ],
+    "TDFI103": [
+      [
+        "ICF132",
+        "ICF231"
+      ],
+      [
+        "ICI2402"
+      ],
+      [
+        "INS128"
+      ]
+    ],
+    "TDFI104": [
+      [
+        "CEGS01"
+      ],
+      [
+        "ICF253"
+      ]
+    ]
+  }
 }

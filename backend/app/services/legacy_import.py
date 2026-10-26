@@ -11,7 +11,7 @@ import uuid
 from collections import defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any
+from typing import Any, NamedTuple
 
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -27,20 +27,46 @@ from app.models.catalog import (
 from app.services.career_key import career_key_from_url
 from app.services.prerequisites import and_tree
 
-UNIVERSITY = {"slug": "unab", "name": "Universidad Andrés Bello", "short_name": "UNAB"}
+UNIVERSITIES: dict[str, dict[str, str]] = {
+    "unab": {"slug": "unab", "name": "Universidad Andrés Bello", "short_name": "UNAB"},
+    "uch": {"slug": "uch", "name": "Universidad de Chile", "short_name": "UCH"},
+}
 
-# File stem -> (program slug, listing name). Order and names match the legacy mallasLoader
-# listing exactly (including its spelling) so the UI looks the same.
-LEGACY_PROGRAMS: list[tuple[str, str, str]] = [
-    ("Industrial", "ingenieria-civil-industrial", "Ingeniería Civil Industrial"),
-    ("Comp", "ingenieria-computacion-informatica", "Ingeniería en Computación e Informática"),
-    ("Geo", "geologia", "Geología"),
-    ("MM", "ingenieria-marina-mercante", "Ingeniería en Marina Mercante"),
-    ("CInf", "ingenieria-civil-informatica", "Ingeniería Civil Informática"),
-    ("Minas", "ingenieria-civil-minas", "Ingeniería Civil en Minas"),
-    ("Med", "medicina", "Medicina"),
-    ("TM", "tecnologia-medica", "Tecnología Médica"),
-    ("Psicologia", "psicologia", "Psicología"),
+
+class LegacyProgram(NamedTuple):
+    stem: str  # file name without .json inside frontend/public/mallas/
+    slug: str  # program slug, unique within its university
+    name: str  # listing name, as in the static mallasLoader listing
+    university: str  # key of UNIVERSITIES
+
+
+# Order and names match the static mallasLoader listing exactly so the UI looks the same.
+# The U. de Chile files live at /mallas/<Name>UCH.json because that is where the public
+# version (v1) serves them: their career_key ("unab-...uch") is what users' saved progress
+# is keyed on, so it must stay as is even though the prefix says "unab" (ADR-0007).
+LEGACY_PROGRAMS: list[LegacyProgram] = [
+    LegacyProgram(
+        "Industrial", "ingenieria-civil-industrial", "Ingeniería Civil Industrial", "unab"
+    ),
+    LegacyProgram(
+        "Comp",
+        "ingenieria-computacion-informatica",
+        "Ingeniería en Computación e Informática",
+        "unab",
+    ),
+    LegacyProgram("Geo", "geologia", "Geología", "unab"),
+    LegacyProgram("MM", "ingenieria-marina-mercante", "Ingeniería en Marina Mercante", "unab"),
+    LegacyProgram("CInf", "ingenieria-civil-informatica", "Ingeniería Civil Informática", "unab"),
+    LegacyProgram("Minas", "ingenieria-civil-minas", "Ingeniería Civil en Minas", "unab"),
+    LegacyProgram("Med", "medicina", "Medicina", "unab"),
+    LegacyProgram("TM", "tecnologia-medica", "Tecnología Médica", "unab"),
+    LegacyProgram("Psicologia", "psicologia", "Psicología", "unab"),
+    LegacyProgram("BioquimicaUCH", "bioquimica", "Bioquímica", "uch"),
+    LegacyProgram(
+        "IngenieriaAlimentosUCH", "ingenieria-alimentos", "Ingeniería en Alimentos", "uch"
+    ),
+    LegacyProgram("QuimicaUCH", "quimica", "Química", "uch"),
+    LegacyProgram("QuimicaFarmaciaUCH", "quimica-farmacia", "Química y Farmacia", "uch"),
 ]
 
 VERSION_LABEL = "legacy"
@@ -56,7 +82,17 @@ KNOWN_TOP_KEYS = {
     "menciones_disponibles",
     "courseCodeAliases",
     "course_code_aliases",
+    # Kept verbatim in curriculum_versions.attrs (VERSION_ATTR_KEYS):
+    "universidad",
+    "fuente_oficial",
+    "nota_codigos",
+    "equivalencias",
 }
+# Top-level keys copied as they are into curriculum_versions.attrs. Any other unknown
+# top-level key is copied too, and reported as campo_no_modelado.
+VERSION_ATTR_KEYS = ("universidad", "fuente_oficial", "nota_codigos", "equivalencias")
+# Course keys with no column that are expected: kept in courses.attrs without a report line.
+COURSE_ATTR_KEYS = {"area", "linea"}
 KNOWN_COURSE_KEYS = {
     "id",
     "codigo",
@@ -86,6 +122,7 @@ KIND_TITLES = {
     ),
     "codigo_repetido": "Mismo código con ids distintos (una copia por mención)",
     "campo_no_modelado": "Campo del JSON que el modelo no representa (se conserva en attrs)",
+    "equivalencia_sin_curso": "Equivalencia declarada para un código que no está en la malla",
     "creditos_totales_cero": "total_creditos = 0 (se interpreta como desconocido)",
 }
 
@@ -189,7 +226,7 @@ def _detect(
 
     for e in by_id.values():
         raw = e.raw
-        for key in sorted(set(raw) - KNOWN_COURSE_KEYS):
+        for key in sorted(set(raw) - KNOWN_COURSE_KEYS - COURSE_ATTR_KEYS):
             add("campo_no_modelado", f"campo de curso `{key}` = {raw[key]!r}", e)
 
         pre = raw.get("prerrequisitos") or []
@@ -248,6 +285,9 @@ def _detect(
                     e,
                 )
 
+    for code in sorted((data.get("equivalencias") or {}).keys() - malla_codes):
+        add("equivalencia_sin_curso", f"`{code}` tiene equivalencias pero no está en la malla")
+
     for code, ids in sorted(code_to_ids.items(), key=lambda kv: str(kv[0])):
         if len(ids) > 1:
             where = ", ".join(f"{i} ({by_id[i].track_code or 'común'})" for i in sorted(ids))
@@ -285,27 +325,53 @@ def _detect(
     return found
 
 
-async def _get_or_create_university(session: AsyncSession) -> University:
-    uni = await session.scalar(select(University).where(University.slug == UNIVERSITY["slug"]))
+async def _get_or_create_university(session: AsyncSession, key: str) -> University:
+    info = UNIVERSITIES[key]
+    uni = await session.scalar(select(University).where(University.slug == info["slug"]))
     if uni is None:
-        uni = University(country="CL", **UNIVERSITY)
+        uni = University(country="CL", **info)
         session.add(uni)
     else:
-        uni.name = UNIVERSITY["name"]
-        uni.short_name = UNIVERSITY["short_name"]
+        uni.name = info["name"]
+        uni.short_name = info["short_name"]
     await session.flush()
     return uni
+
+
+def _version_attrs(data: dict[str, Any]) -> dict[str, Any]:
+    """Top-level fields with no column, verbatim, so nothing in the file is lost."""
+    keys = [k for k in VERSION_ATTR_KEYS if k in data]
+    keys += sorted(set(data) - KNOWN_TOP_KEYS)
+    return {k: data[k] for k in keys}
+
+
+def _source_note(stem: str, data: dict[str, Any]) -> str:
+    note = f"Imported from frontend/public/mallas/{stem}.json"
+    source = data.get("fuente_oficial")
+    if isinstance(source, dict) and source:
+        parts = [
+            f"program {source['programa']}" if source.get("programa") else None,
+            f"catalog {source['catalogo']}" if source.get("catalogo") else None,
+            f"({source['catalogoTexto']})" if source.get("catalogoTexto") else None,
+            f"reading: {source['lectura']}" if source.get("lectura") else None,
+        ]
+        note += ". Checked against the official curriculum: " + " ".join(p for p in parts if p)
+    return note
 
 
 async def _import_one(
     session: AsyncSession,
     uni: University,
     sort_index: int,
-    stem: str,
-    slug: str,
-    list_name: str,
+    entry: LegacyProgram,
     data: dict[str, Any],
 ) -> tuple[MallaResult, list[Inconsistency]]:
+    stem, slug, list_name = entry.stem, entry.slug, entry.name
+    declared = data.get("universidad")
+    if declared is not None and declared != uni.name:
+        raise ValueError(
+            f"{stem}.json declares universidad={declared!r} but is registered under {uni.name!r}"
+        )
     legacy_url = f"/mallas/{stem}.json"
     career_key = career_key_from_url(legacy_url)
     entries = _collect_entries(data)
@@ -345,7 +411,8 @@ async def _import_one(
     version.is_current = True
     version.source_type = "legacy_json"
     version.source_url = legacy_url
-    version.source_note = f"Imported from frontend/public/mallas/{stem}.json"
+    version.source_note = _source_note(stem, data)
+    version.attrs = _version_attrs(data)
     await session.flush()
 
     # Tracks (menciones)
@@ -438,13 +505,22 @@ async def _import_one(
 
 async def import_legacy_folder(session: AsyncSession, folder: Path) -> ImportReport:
     report = ImportReport()
-    uni = await _get_or_create_university(session)
-    for index, (stem, slug, list_name) in enumerate(LEGACY_PROGRAMS):
-        path = folder / f"{stem}.json"
+    universities: dict[str, University] = {}
+    sort_index: dict[str, int] = defaultdict(int)
+    for entry in LEGACY_PROGRAMS:
+        path = folder / f"{entry.stem}.json"
         if not path.exists():
             raise FileNotFoundError(f"Missing legacy malla file: {path}")
         data = json.loads(path.read_text(encoding="utf-8"))
-        result, issues = await _import_one(session, uni, index, stem, slug, list_name, data)
+        if entry.university not in universities:
+            universities[entry.university] = await _get_or_create_university(
+                session, entry.university
+            )
+        index = sort_index[entry.university]
+        sort_index[entry.university] += 1
+        result, issues = await _import_one(
+            session, universities[entry.university], index, entry, data
+        )
         report.results.append(result)
         report.inconsistencies.extend(issues)
     await session.commit()

@@ -1,0 +1,2233 @@
+{
+  "program": {
+    "id": "46205c47-c800-4973-b3b8-8d59482ac35e",
+    "slug": "ingenieria-alimentos",
+    "name": "Ingeniería en Alimentos",
+    "official_name": "Ingeniería en Alimentos (UCH)",
+    "official_code": null,
+    "career_key": "unab-ingenieriaalimentosuch",
+    "legacy_url": "/mallas/IngenieriaAlimentosUCH.json"
+  },
+  "university": {
+    "id": "095ed5c8-0270-403b-b0d4-5af8573d17a8",
+    "slug": "uch",
+    "name": "Universidad de Chile",
+    "short_name": "UCH",
+    "country": "CL"
+  },
+  "version": {
+    "id": "e8334e72-02ca-4250-934b-da18d5da0c81",
+    "label": "legacy",
+    "period_regime": "semestral",
+    "credit_system": "SCT",
+    "total_periods": 11,
+    "total_credits": 330,
+    "status": "published",
+    "is_current": true,
+    "source_type": "legacy_json",
+    "source_url": "/mallas/IngenieriaAlimentosUCH.json",
+    "source_note": "Imported from frontend/public/mallas/IngenieriaAlimentosUCH.json",
+    "reviewed_at": null,
+    "attrs": {
+      "universidad": "Universidad de Chile",
+      "nota_codigos": "Los códigos IA001, IA002, etc. son códigos internos para el visor de mallas; el PDF oficial usado como fuente muestra número de asignatura, nombre, SCT, línea formativa y requisitos, pero no códigos oficiales de asignatura."
+    }
+  },
+  "tracks": [],
+  "periods": [
+    {
+      "number": 1,
+      "track_code": null,
+      "course_ids": [
+        "ae626c55-7260-4c83-86a7-e74797697d5f",
+        "cd586b8b-1e9f-42ac-b95a-b2b1fc341233",
+        "abac0d80-3e20-4d7b-b414-f80d7335ea2f",
+        "b052c607-1455-49e8-9d15-9a2cc45f0950",
+        "cc7f25d5-a451-4cf4-859f-fd8e7c663179",
+        "b24230f7-8e80-4fdd-a5bd-eb721f750f5f"
+      ]
+    },
+    {
+      "number": 2,
+      "track_code": null,
+      "course_ids": [
+        "9cfa05e9-8ad7-4eb8-864f-d9a5500f32d0",
+        "78b96fcd-5bd5-489b-bd33-c543b786270c",
+        "c072b602-3d28-4244-bde8-c5d3f10aeb6f",
+        "8eac177f-a718-4fd3-8140-0a8a405c69c5",
+        "5de58861-bd38-44b5-aa89-e990685fa32c",
+        "20d1dc06-b4de-405c-9bd6-ca90786ab076",
+        "3e7b600b-91b0-411b-8e39-c2b6535ac28b"
+      ]
+    },
+    {
+      "number": 3,
+      "track_code": null,
+      "course_ids": [
+        "933967b5-77ff-40b5-9b82-48dc2faf81ca",
+        "1c3eb383-242f-48a6-a4a7-c0cd29c619ee",
+        "9caf3f5d-6801-4976-b098-7944e72f57de",
+        "4865836c-876c-4d11-919a-b92bc21472b2",
+        "74887c57-3499-470a-b7e0-1e2eec2b40cd",
+        "fb378bab-eef8-4a66-aecb-8c00e7aa7e27",
+        "198b78b4-0e03-420c-96a7-2a55de1b88e1"
+      ]
+    },
+    {
+      "number": 4,
+      "track_code": null,
+      "course_ids": [
+        "2e5f4ddb-1a11-446e-9fad-0d3abaeceb33",
+        "5d5eb345-c8aa-4ff2-aa73-9e381033e155",
+        "288a89c1-c130-461d-a9d7-40fbbba18c5f",
+        "333672e4-63b7-4afc-a8d6-1493cc52eff9",
+        "bceb199b-92e1-4fe7-a7fd-5b35b45ada4e",
+        "04c23dac-24ff-4110-b4f7-706a24015de9",
+        "c6f5a00e-45b6-4c11-b27f-b496bc123e11"
+      ]
+    },
+    {
+      "number": 5,
+      "track_code": null,
+      "course_ids": [
+        "997a3636-e829-4693-8274-3f07bf3ee5eb",
+        "40d8a361-9568-41b3-a4a8-3cda2728b89a",
+        "38041bb7-1eae-4c5a-acb1-4e6deb7c601d",
+        "c233dfed-06bf-46c1-9446-ce4eeefda4d9",
+        "ccf3fcb8-2e9b-41e4-b895-ac2512f0f8ab",
+        "42f41c78-15e2-43bc-bd3c-e1259e14c474",
+        "7bcd6229-4fb1-4314-b599-9a5db235cf20"
+      ]
+    },
+    {
+      "number": 6,
+      "track_code": null,
+      "course_ids": [
+        "309a47e4-23ba-410a-935c-f844fa0eb470",
+        "f03f99c9-7d61-4461-9fac-6016c4286459",
+        "7422d92d-b8a3-481e-af54-40fc20310c13",
+        "34545b47-e6de-44d5-85fb-1b638983d692",
+        "626d9fb1-d414-4613-b70b-ed290796e093",
+        "de6127ec-066b-49a8-8014-8bd97b91f82d"
+      ]
+    },
+    {
+      "number": 7,
+      "track_code": null,
+      "course_ids": [
+        "2b9ba138-ebf7-4ad1-b70d-bf4fc644e58c",
+        "14ef1859-d172-47ba-b0bc-8194068c1c79",
+        "ed0919dd-8166-4732-9f8c-9f3692fef6e3",
+        "70844ae1-6528-4711-ad9d-7d40635102d7",
+        "2ef7b49a-20e5-4262-a437-44ae41f9ccde",
+        "8d4989a5-0b3b-4d45-a4e7-b8d94a9f3f45",
+        "3e21a6c5-df7d-427f-b8c5-ba1187d11441"
+      ]
+    },
+    {
+      "number": 8,
+      "track_code": null,
+      "course_ids": [
+        "776290ff-2794-4728-8b75-ad291719401b",
+        "9f0e70dc-8976-4c20-9cf2-5edd8f6ef917",
+        "6afb0bdc-bdc4-4e43-b1e7-f0d5fd77bc22",
+        "2341cc36-ec9f-4715-8b54-b975d0fd5581",
+        "f8482be1-af99-4711-bcc2-4a3b3999258f",
+        "fe2fe608-3984-4b33-9b5d-2d233d526c95",
+        "d94da367-2ab8-4589-958f-a3342cb9f293",
+        "ca79ef1c-fe53-4e46-a14c-6bc9c1f9c722"
+      ]
+    },
+    {
+      "number": 9,
+      "track_code": null,
+      "course_ids": [
+        "56a6b061-e128-4f68-8bcd-dbf4e7447591",
+        "c78f6452-0b3f-403f-8474-feb7407bfe6a",
+        "88034740-e622-4855-bbf7-a7ebf21107dc",
+        "742c59a5-33bf-45de-a6b2-37c7dd959d8b",
+        "073c55ea-5a17-47f8-ba5b-27ce90f13c23",
+        "33e03cd3-9f41-4707-b26f-5adfaf925a5b",
+        "6d0860ee-860c-41c2-b367-c216b8c54431"
+      ]
+    },
+    {
+      "number": 10,
+      "track_code": null,
+      "course_ids": [
+        "d7c6d7f7-597d-45e1-93b3-e85f75874c11",
+        "e13a28d4-b427-4940-85ed-7612eebbeb21",
+        "06e18974-1df6-4357-a5e9-35e67efe81d6",
+        "2661f829-efea-4786-97f8-ed4e55d66e04",
+        "e36cc2da-00d9-4538-97aa-9ce274bf75ce"
+      ]
+    },
+    {
+      "number": 11,
+      "track_code": null,
+      "course_ids": [
+        "4cfee285-9198-45e8-b54e-1c847b17af8c",
+        "aa8f96af-46a9-4363-a3ac-6dcd1a54fe02"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "id": "ae626c55-7260-4c83-86a7-e74797697d5f",
+      "legacy_id": 1,
+      "code": "IA001",
+      "name": "Química General I",
+      "credits": 8,
+      "period_number": 1,
+      "sort_order": 0,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "cd586b8b-1e9f-42ac-b95a-b2b1fc341233",
+      "legacy_id": 2,
+      "code": "IA002",
+      "name": "Técnicas de Laboratorio Químico",
+      "credits": 4,
+      "period_number": 1,
+      "sort_order": 1,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "abac0d80-3e20-4d7b-b414-f80d7335ea2f",
+      "legacy_id": 3,
+      "code": "IA003",
+      "name": "Introducción al Álgebra y Cálculo",
+      "credits": 8,
+      "period_number": 1,
+      "sort_order": 2,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "matematica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "b052c607-1455-49e8-9d15-9a2cc45f0950",
+      "legacy_id": 4,
+      "code": "IA004",
+      "name": "Química Transformadora",
+      "credits": 3,
+      "period_number": 1,
+      "sort_order": 3,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "cc7f25d5-a451-4cf4-859f-fd8e7c663179",
+      "legacy_id": 5,
+      "code": "IA005",
+      "name": "Introducción a la Ingeniería en Alimentos",
+      "credits": 3,
+      "period_number": 1,
+      "sort_order": 4,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "alimentos",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "b24230f7-8e80-4fdd-a5bd-eb721f750f5f",
+      "legacy_id": 6,
+      "code": "IA006",
+      "name": "Inglés I",
+      "credits": 3,
+      "period_number": 1,
+      "sort_order": 5,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "9cfa05e9-8ad7-4eb8-864f-d9a5500f32d0",
+      "legacy_id": 7,
+      "code": "IA007",
+      "name": "Química General II",
+      "credits": 5,
+      "period_number": 2,
+      "sort_order": 6,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "ae626c55-7260-4c83-86a7-e74797697d5f"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "78b96fcd-5bd5-489b-bd33-c543b786270c",
+      "legacy_id": 8,
+      "code": "IA008",
+      "name": "Laboratorio de Química General",
+      "credits": 3,
+      "period_number": 2,
+      "sort_order": 7,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "ae626c55-7260-4c83-86a7-e74797697d5f"
+          },
+          {
+            "course": "cd586b8b-1e9f-42ac-b95a-b2b1fc341233"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "c072b602-3d28-4244-bde8-c5d3f10aeb6f",
+      "legacy_id": 9,
+      "code": "IA009",
+      "name": "Física General",
+      "credits": 5,
+      "period_number": 2,
+      "sort_order": 8,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "abac0d80-3e20-4d7b-b414-f80d7335ea2f"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "fisica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "8eac177f-a718-4fd3-8140-0a8a405c69c5",
+      "legacy_id": 10,
+      "code": "IA010",
+      "name": "Cálculo Diferencial e Integral",
+      "credits": 6,
+      "period_number": 2,
+      "sort_order": 9,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "abac0d80-3e20-4d7b-b414-f80d7335ea2f"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "matematica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "5de58861-bd38-44b5-aa89-e990685fa32c",
+      "legacy_id": 11,
+      "code": "IA011",
+      "name": "Biología Celular",
+      "credits": 5,
+      "period_number": 2,
+      "sort_order": 10,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "cd586b8b-1e9f-42ac-b95a-b2b1fc341233"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "biologia",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "20d1dc06-b4de-405c-9bd6-ca90786ab076",
+      "legacy_id": 12,
+      "code": "IA012",
+      "name": "Curso de Formación General",
+      "credits": 4,
+      "period_number": 2,
+      "sort_order": 11,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "3e7b600b-91b0-411b-8e39-c2b6535ac28b",
+      "legacy_id": 13,
+      "code": "IA013",
+      "name": "Inglés II",
+      "credits": 3,
+      "period_number": 2,
+      "sort_order": 12,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "b24230f7-8e80-4fdd-a5bd-eb721f750f5f"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "933967b5-77ff-40b5-9b82-48dc2faf81ca",
+      "legacy_id": 14,
+      "code": "IA014",
+      "name": "Química Orgánica I",
+      "credits": 5,
+      "period_number": 3,
+      "sort_order": 13,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "9cfa05e9-8ad7-4eb8-864f-d9a5500f32d0"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "1c3eb383-242f-48a6-a4a7-c0cd29c619ee",
+      "legacy_id": 15,
+      "code": "IA015",
+      "name": "Química Analítica I",
+      "credits": 5,
+      "period_number": 3,
+      "sort_order": 14,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "9cfa05e9-8ad7-4eb8-864f-d9a5500f32d0"
+          },
+          {
+            "course": "78b96fcd-5bd5-489b-bd33-c543b786270c"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "9caf3f5d-6801-4976-b098-7944e72f57de",
+      "legacy_id": 16,
+      "code": "IA016",
+      "name": "Laboratorio I de Química Orgánica",
+      "credits": 4,
+      "period_number": 3,
+      "sort_order": 15,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "9cfa05e9-8ad7-4eb8-864f-d9a5500f32d0"
+          },
+          {
+            "course": "78b96fcd-5bd5-489b-bd33-c543b786270c"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "4865836c-876c-4d11-919a-b92bc21472b2",
+      "legacy_id": 17,
+      "code": "IA017",
+      "name": "Estadística y Análisis de Datos",
+      "credits": 4,
+      "period_number": 3,
+      "sort_order": 16,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "8eac177f-a718-4fd3-8140-0a8a405c69c5"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "matematica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "74887c57-3499-470a-b7e0-1e2eec2b40cd",
+      "legacy_id": 18,
+      "code": "IA018",
+      "name": "Física Aplicada a la Química",
+      "credits": 4,
+      "period_number": 3,
+      "sort_order": 17,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "c072b602-3d28-4244-bde8-c5d3f10aeb6f"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "fisica",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "fb378bab-eef8-4a66-aecb-8c00e7aa7e27",
+      "legacy_id": 19,
+      "code": "IA019",
+      "name": "Cálculo Avanzado Multivariado",
+      "credits": 5,
+      "period_number": 3,
+      "sort_order": 18,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "8eac177f-a718-4fd3-8140-0a8a405c69c5"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "matematica",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "198b78b4-0e03-420c-96a7-2a55de1b88e1",
+      "legacy_id": 20,
+      "code": "IA020",
+      "name": "Curso de Formación General",
+      "credits": 2,
+      "period_number": 3,
+      "sort_order": 19,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "2e5f4ddb-1a11-446e-9fad-0d3abaeceb33",
+      "legacy_id": 21,
+      "code": "IA021",
+      "name": "Química Orgánica II",
+      "credits": 5,
+      "period_number": 4,
+      "sort_order": 20,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "933967b5-77ff-40b5-9b82-48dc2faf81ca"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "5d5eb345-c8aa-4ff2-aa73-9e381033e155",
+      "legacy_id": 22,
+      "code": "IA022",
+      "name": "Laboratorio de Análisis Químico",
+      "credits": 4,
+      "period_number": 4,
+      "sort_order": 21,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "78b96fcd-5bd5-489b-bd33-c543b786270c"
+          },
+          {
+            "course": "1c3eb383-242f-48a6-a4a7-c0cd29c619ee"
+          },
+          {
+            "course": "4865836c-876c-4d11-919a-b92bc21472b2"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "288a89c1-c130-461d-a9d7-40fbbba18c5f",
+      "legacy_id": 23,
+      "code": "IA023",
+      "name": "Química Analítica II",
+      "credits": 5,
+      "period_number": 4,
+      "sort_order": 22,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "1c3eb383-242f-48a6-a4a7-c0cd29c619ee"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "333672e4-63b7-4afc-a8d6-1493cc52eff9",
+      "legacy_id": 24,
+      "code": "IA024",
+      "name": "Fisicoquímica I",
+      "credits": 6,
+      "period_number": 4,
+      "sort_order": 23,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "c072b602-3d28-4244-bde8-c5d3f10aeb6f"
+          },
+          {
+            "course": "8eac177f-a718-4fd3-8140-0a8a405c69c5"
+          },
+          {
+            "course": "933967b5-77ff-40b5-9b82-48dc2faf81ca"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "bceb199b-92e1-4fe7-a7fd-5b35b45ada4e",
+      "legacy_id": 25,
+      "code": "IA025",
+      "name": "Álgebra Lineal y Métodos Numéricos",
+      "credits": 4,
+      "period_number": 4,
+      "sort_order": 24,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "fb378bab-eef8-4a66-aecb-8c00e7aa7e27"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "matematica",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "04c23dac-24ff-4110-b4f7-706a24015de9",
+      "legacy_id": 26,
+      "code": "IA026",
+      "name": "Computación y Programación",
+      "credits": 5,
+      "period_number": 4,
+      "sort_order": 25,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "4865836c-876c-4d11-919a-b92bc21472b2"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "computacion",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "c6f5a00e-45b6-4c11-b27f-b496bc123e11",
+      "legacy_id": 27,
+      "code": "IA027",
+      "name": "Curso de Formación General",
+      "credits": 2,
+      "period_number": 4,
+      "sort_order": 26,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "997a3636-e829-4693-8274-3f07bf3ee5eb",
+      "legacy_id": 28,
+      "code": "IA028",
+      "name": "Laboratorio de Análisis Instrumental",
+      "credits": 4,
+      "period_number": 5,
+      "sort_order": 27,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "5d5eb345-c8aa-4ff2-aa73-9e381033e155"
+          },
+          {
+            "course": "288a89c1-c130-461d-a9d7-40fbbba18c5f"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "40d8a361-9568-41b3-a4a8-3cda2728b89a",
+      "legacy_id": 29,
+      "code": "IA029",
+      "name": "Materias Primas Vegetales y Animales",
+      "credits": 3,
+      "period_number": 5,
+      "sort_order": 28,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "5de58861-bd38-44b5-aa89-e990685fa32c"
+          },
+          {
+            "course": "2e5f4ddb-1a11-446e-9fad-0d3abaeceb33"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "alimentos",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "38041bb7-1eae-4c5a-acb1-4e6deb7c601d",
+      "legacy_id": 30,
+      "code": "IA030",
+      "name": "Fisicoquímica Orientada a los Alimentos",
+      "credits": 5,
+      "period_number": 5,
+      "sort_order": 29,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "74887c57-3499-470a-b7e0-1e2eec2b40cd"
+          },
+          {
+            "course": "333672e4-63b7-4afc-a8d6-1493cc52eff9"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "alimentos",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "c233dfed-06bf-46c1-9446-ce4eeefda4d9",
+      "legacy_id": 31,
+      "code": "IA031",
+      "name": "Dibujo en Ingeniería",
+      "credits": 4,
+      "period_number": 5,
+      "sort_order": 30,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "fb378bab-eef8-4a66-aecb-8c00e7aa7e27"
+          },
+          {
+            "course": "04c23dac-24ff-4110-b4f7-706a24015de9"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "industrial",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "ccf3fcb8-2e9b-41e4-b895-ac2512f0f8ab",
+      "legacy_id": 32,
+      "code": "IA032",
+      "name": "Comunicación en Ciencia y Tecnología de los Alimentos",
+      "credits": 4,
+      "period_number": 5,
+      "sort_order": 31,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "3e7b600b-91b0-411b-8e39-c2b6535ac28b"
+          },
+          {
+            "course": "4865836c-876c-4d11-919a-b92bc21472b2"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "alimentos",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "42f41c78-15e2-43bc-bd3c-e1259e14c474",
+      "legacy_id": 33,
+      "code": "IA033",
+      "name": "Ecuaciones Diferenciales",
+      "credits": 5,
+      "period_number": 5,
+      "sort_order": 32,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "bceb199b-92e1-4fe7-a7fd-5b35b45ada4e"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "matematica",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "7bcd6229-4fb1-4314-b599-9a5db235cf20",
+      "legacy_id": 34,
+      "code": "IA034",
+      "name": "Módulo Gestión I (Gestión Administrativa y Gestión Económica)",
+      "credits": 5,
+      "period_number": 5,
+      "sort_order": 33,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "4865836c-876c-4d11-919a-b92bc21472b2"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "gestion",
+        "linea": "ces"
+      }
+    },
+    {
+      "id": "309a47e4-23ba-410a-935c-f844fa0eb470",
+      "legacy_id": 35,
+      "code": "IA035",
+      "name": "Bioquímica General",
+      "credits": 5,
+      "period_number": 6,
+      "sort_order": 34,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "333672e4-63b7-4afc-a8d6-1493cc52eff9"
+          },
+          {
+            "course": "40d8a361-9568-41b3-a4a8-3cda2728b89a"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "biologia",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "f03f99c9-7d61-4461-9fac-6016c4286459",
+      "legacy_id": 36,
+      "code": "IA036",
+      "name": "Química y Análisis de los Alimentos",
+      "credits": 5,
+      "period_number": 6,
+      "sort_order": 35,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "997a3636-e829-4693-8274-3f07bf3ee5eb"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "alimentos",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "7422d92d-b8a3-481e-af54-40fc20310c13",
+      "legacy_id": 37,
+      "code": "IA037",
+      "name": "Operaciones Unitarias I",
+      "credits": 7,
+      "period_number": 6,
+      "sort_order": 36,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "997a3636-e829-4693-8274-3f07bf3ee5eb"
+          },
+          {
+            "course": "38041bb7-1eae-4c5a-acb1-4e6deb7c601d"
+          },
+          {
+            "course": "42f41c78-15e2-43bc-bd3c-e1259e14c474"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "industrial",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "34545b47-e6de-44d5-85fb-1b638983d692",
+      "legacy_id": 38,
+      "code": "IA038",
+      "name": "Propiedades Físicas de los Alimentos",
+      "credits": 3,
+      "period_number": 6,
+      "sort_order": 37,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "04c23dac-24ff-4110-b4f7-706a24015de9"
+          },
+          {
+            "course": "ccf3fcb8-2e9b-41e4-b895-ac2512f0f8ab"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "alimentos",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "626d9fb1-d414-4613-b70b-ed290796e093",
+      "legacy_id": 39,
+      "code": "IA039",
+      "name": "Módulo Gestión II (Gestión Contable y Costos, Gestión Comercial)",
+      "credits": 5,
+      "period_number": 6,
+      "sort_order": 38,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "7bcd6229-4fb1-4314-b599-9a5db235cf20"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "gestion",
+        "linea": "ces"
+      }
+    },
+    {
+      "id": "de6127ec-066b-49a8-8014-8bd97b91f82d",
+      "legacy_id": 40,
+      "code": "IA040",
+      "name": "Práctica I / Unidad de Investigación",
+      "credits": 5,
+      "period_number": 6,
+      "sort_order": 39,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "ccf3fcb8-2e9b-41e4-b895-ac2512f0f8ab"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "investigacion",
+        "linea": "ces"
+      }
+    },
+    {
+      "id": "2b9ba138-ebf7-4ad1-b70d-bf4fc644e58c",
+      "legacy_id": 41,
+      "code": "IA041",
+      "name": "Bioquímica de los Alimentos",
+      "credits": 5,
+      "period_number": 7,
+      "sort_order": 40,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "309a47e4-23ba-410a-935c-f844fa0eb470"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "alimentos",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "14ef1859-d172-47ba-b0bc-8194068c1c79",
+      "legacy_id": 42,
+      "code": "IA042",
+      "name": "Nutrición",
+      "credits": 4,
+      "period_number": 7,
+      "sort_order": 41,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "f03f99c9-7d61-4461-9fac-6016c4286459"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "alimentos",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "ed0919dd-8166-4732-9f8c-9f3692fef6e3",
+      "legacy_id": 43,
+      "code": "IA043",
+      "name": "Operaciones Unitarias II",
+      "credits": 7,
+      "period_number": 7,
+      "sort_order": 42,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "7422d92d-b8a3-481e-af54-40fc20310c13"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "industrial",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "70844ae1-6528-4711-ad9d-7d40635102d7",
+      "legacy_id": 44,
+      "code": "IA044",
+      "name": "Envases y Embalajes",
+      "credits": 4,
+      "period_number": 7,
+      "sort_order": 43,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "38041bb7-1eae-4c5a-acb1-4e6deb7c601d"
+          },
+          {
+            "course": "34545b47-e6de-44d5-85fb-1b638983d692"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "alimentos",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "2ef7b49a-20e5-4262-a437-44ae41f9ccde",
+      "legacy_id": 45,
+      "code": "IA045",
+      "name": "Gestión Financiera",
+      "credits": 3,
+      "period_number": 7,
+      "sort_order": 44,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "626d9fb1-d414-4613-b70b-ed290796e093"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "gestion",
+        "linea": "ces"
+      }
+    },
+    {
+      "id": "8d4989a5-0b3b-4d45-a4e7-b8d94a9f3f45",
+      "legacy_id": 46,
+      "code": "IA046",
+      "name": "Legislación Alimentaria",
+      "credits": 4,
+      "period_number": 7,
+      "sort_order": 45,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "f03f99c9-7d61-4461-9fac-6016c4286459"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "gestion",
+        "linea": "ces"
+      }
+    },
+    {
+      "id": "3e21a6c5-df7d-427f-b8c5-ba1187d11441",
+      "legacy_id": 47,
+      "code": "IA047",
+      "name": "Inglés III",
+      "credits": 3,
+      "period_number": 7,
+      "sort_order": 46,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "3e7b600b-91b0-411b-8e39-c2b6535ac28b"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "776290ff-2794-4728-8b75-ad291719401b",
+      "legacy_id": 48,
+      "code": "IA048",
+      "name": "Microbiología e Inocuidad de los Alimentos",
+      "credits": 5,
+      "period_number": 8,
+      "sort_order": 47,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "2b9ba138-ebf7-4ad1-b70d-bf4fc644e58c"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "alimentos",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "9f0e70dc-8976-4c20-9cf2-5edd8f6ef917",
+      "legacy_id": 49,
+      "code": "IA049",
+      "name": "Higiene y Sanidad Industrial",
+      "credits": 3,
+      "period_number": 8,
+      "sort_order": 48,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "2b9ba138-ebf7-4ad1-b70d-bf4fc644e58c"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "alimentos",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "6afb0bdc-bdc4-4e43-b1e7-f0d5fd77bc22",
+      "legacy_id": 50,
+      "code": "IA050",
+      "name": "Procesos de Conservación por Bajas Temperaturas",
+      "credits": 4,
+      "period_number": 8,
+      "sort_order": 49,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "ed0919dd-8166-4732-9f8c-9f3692fef6e3"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "alimentos",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "2341cc36-ec9f-4715-8b54-b975d0fd5581",
+      "legacy_id": 51,
+      "code": "IA051",
+      "name": "Procesos de Conservación por Altas Temperaturas",
+      "credits": 5,
+      "period_number": 8,
+      "sort_order": 50,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "ed0919dd-8166-4732-9f8c-9f3692fef6e3"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "alimentos",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "f8482be1-af99-4711-bcc2-4a3b3999258f",
+      "legacy_id": 52,
+      "code": "IA052",
+      "name": "Diseño de Plantas",
+      "credits": 3,
+      "period_number": 8,
+      "sort_order": 51,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "c233dfed-06bf-46c1-9446-ce4eeefda4d9"
+          },
+          {
+            "course": "ed0919dd-8166-4732-9f8c-9f3692fef6e3"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "industrial",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "fe2fe608-3984-4b33-9b5d-2d233d526c95",
+      "legacy_id": 53,
+      "code": "IA053",
+      "name": "Diseño de Experimentos",
+      "credits": 3,
+      "period_number": 8,
+      "sort_order": 52,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "04c23dac-24ff-4110-b4f7-706a24015de9"
+          },
+          {
+            "course": "ed0919dd-8166-4732-9f8c-9f3692fef6e3"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "matematica",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "d94da367-2ab8-4589-958f-a3342cb9f293",
+      "legacy_id": 54,
+      "code": "IA054",
+      "name": "Práctica II",
+      "credits": 4,
+      "period_number": 8,
+      "sort_order": 53,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "de6127ec-066b-49a8-8014-8bd97b91f82d"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "profesional",
+        "linea": "ces"
+      }
+    },
+    {
+      "id": "ca79ef1c-fe53-4e46-a14c-6bc9c1f9c722",
+      "legacy_id": 55,
+      "code": "IA055",
+      "name": "Inglés IV",
+      "credits": 3,
+      "period_number": 8,
+      "sort_order": 54,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "3e21a6c5-df7d-427f-b8c5-ba1187d11441"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "56a6b061-e128-4f68-8bcd-dbf4e7447591",
+      "legacy_id": 56,
+      "code": "IA056",
+      "name": "Evaluación Sensorial",
+      "credits": 4,
+      "period_number": 9,
+      "sort_order": 55,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "4865836c-876c-4d11-919a-b92bc21472b2"
+          },
+          {
+            "course": "6afb0bdc-bdc4-4e43-b1e7-f0d5fd77bc22"
+          },
+          {
+            "course": "2341cc36-ec9f-4715-8b54-b975d0fd5581"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "alimentos",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "c78f6452-0b3f-403f-8474-feb7407bfe6a",
+      "legacy_id": 57,
+      "code": "IA057",
+      "name": "Ingeniería de Procesos de Conservación de Alimentos",
+      "credits": 6,
+      "period_number": 9,
+      "sort_order": 56,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "776290ff-2794-4728-8b75-ad291719401b"
+          },
+          {
+            "course": "6afb0bdc-bdc4-4e43-b1e7-f0d5fd77bc22"
+          },
+          {
+            "course": "2341cc36-ec9f-4715-8b54-b975d0fd5581"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "alimentos",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "88034740-e622-4855-bbf7-a7ebf21107dc",
+      "legacy_id": 58,
+      "code": "IA058",
+      "name": "Ingeniería de Procesos en Grasas y Aceites",
+      "credits": 4,
+      "period_number": 9,
+      "sort_order": 57,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "6afb0bdc-bdc4-4e43-b1e7-f0d5fd77bc22"
+          },
+          {
+            "course": "2341cc36-ec9f-4715-8b54-b975d0fd5581"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "alimentos",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "742c59a5-33bf-45de-a6b2-37c7dd959d8b",
+      "legacy_id": 59,
+      "code": "IA059",
+      "name": "Ingeniería de Procesos en Cereales",
+      "credits": 4,
+      "period_number": 9,
+      "sort_order": 58,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "6afb0bdc-bdc4-4e43-b1e7-f0d5fd77bc22"
+          },
+          {
+            "course": "2341cc36-ec9f-4715-8b54-b975d0fd5581"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "alimentos",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "073c55ea-5a17-47f8-ba5b-27ce90f13c23",
+      "legacy_id": 60,
+      "code": "IA060",
+      "name": "Ingeniería de Procesos de Productos Cárnicos",
+      "credits": 4,
+      "period_number": 9,
+      "sort_order": 59,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "6afb0bdc-bdc4-4e43-b1e7-f0d5fd77bc22"
+          },
+          {
+            "course": "2341cc36-ec9f-4715-8b54-b975d0fd5581"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "alimentos",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "33e03cd3-9f41-4707-b26f-5adfaf925a5b",
+      "legacy_id": 61,
+      "code": "IA061",
+      "name": "Evaluación de Proyectos",
+      "credits": 4,
+      "period_number": 9,
+      "sort_order": 60,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "2ef7b49a-20e5-4262-a437-44ae41f9ccde"
+          },
+          {
+            "course": "f8482be1-af99-4711-bcc2-4a3b3999258f"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "gestion",
+        "linea": "ces"
+      }
+    },
+    {
+      "id": "6d0860ee-860c-41c2-b367-c216b8c54431",
+      "legacy_id": 62,
+      "code": "IA062",
+      "name": "Electivo Especializado",
+      "credits": 4,
+      "period_number": 9,
+      "sort_order": 61,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "otros",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "d7c6d7f7-597d-45e1-93b3-e85f75874c11",
+      "legacy_id": 63,
+      "code": "IA063",
+      "name": "Ingeniería de Procesos de Lácteos",
+      "credits": 5,
+      "period_number": 10,
+      "sort_order": 62,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "6afb0bdc-bdc4-4e43-b1e7-f0d5fd77bc22"
+          },
+          {
+            "course": "2341cc36-ec9f-4715-8b54-b975d0fd5581"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "alimentos",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "e13a28d4-b427-4940-85ed-7612eebbeb21",
+      "legacy_id": 64,
+      "code": "IA064",
+      "name": "Ingeniería de Procesos en Productos del Mar",
+      "credits": 5,
+      "period_number": 10,
+      "sort_order": 63,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "6afb0bdc-bdc4-4e43-b1e7-f0d5fd77bc22"
+          },
+          {
+            "course": "2341cc36-ec9f-4715-8b54-b975d0fd5581"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "alimentos",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "06e18974-1df6-4357-a5e9-35e67efe81d6",
+      "legacy_id": 65,
+      "code": "IA065",
+      "name": "Ingeniería de Procesos en Fermentaciones",
+      "credits": 5,
+      "period_number": 10,
+      "sort_order": 64,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "776290ff-2794-4728-8b75-ad291719401b"
+          },
+          {
+            "course": "9f0e70dc-8976-4c20-9cf2-5edd8f6ef917"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "alimentos",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "2661f829-efea-4786-97f8-ed4e55d66e04",
+      "legacy_id": 66,
+      "code": "IA066",
+      "name": "Gestión de la Calidad",
+      "credits": 5,
+      "period_number": 10,
+      "sort_order": 65,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "8d4989a5-0b3b-4d45-a4e7-b8d94a9f3f45"
+          },
+          {
+            "course": "56a6b061-e128-4f68-8bcd-dbf4e7447591"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "gestion",
+        "linea": "ces"
+      }
+    },
+    {
+      "id": "e36cc2da-00d9-4538-97aa-9ce274bf75ce",
+      "legacy_id": 67,
+      "code": "IA067",
+      "name": "Electivo Especializado Vinculador con Magíster",
+      "credits": 10,
+      "period_number": 10,
+      "sort_order": 66,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "otros",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "4cfee285-9198-45e8-b54e-1c847b17af8c",
+      "legacy_id": 68,
+      "code": "IA068",
+      "name": "Práctica Profesional",
+      "credits": 10,
+      "period_number": 11,
+      "sort_order": 67,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "ae626c55-7260-4c83-86a7-e74797697d5f"
+          },
+          {
+            "course": "cd586b8b-1e9f-42ac-b95a-b2b1fc341233"
+          },
+          {
+            "course": "abac0d80-3e20-4d7b-b414-f80d7335ea2f"
+          },
+          {
+            "course": "b052c607-1455-49e8-9d15-9a2cc45f0950"
+          },
+          {
+            "course": "cc7f25d5-a451-4cf4-859f-fd8e7c663179"
+          },
+          {
+            "course": "b24230f7-8e80-4fdd-a5bd-eb721f750f5f"
+          },
+          {
+            "course": "9cfa05e9-8ad7-4eb8-864f-d9a5500f32d0"
+          },
+          {
+            "course": "78b96fcd-5bd5-489b-bd33-c543b786270c"
+          },
+          {
+            "course": "c072b602-3d28-4244-bde8-c5d3f10aeb6f"
+          },
+          {
+            "course": "8eac177f-a718-4fd3-8140-0a8a405c69c5"
+          },
+          {
+            "course": "5de58861-bd38-44b5-aa89-e990685fa32c"
+          },
+          {
+            "course": "20d1dc06-b4de-405c-9bd6-ca90786ab076"
+          },
+          {
+            "course": "3e7b600b-91b0-411b-8e39-c2b6535ac28b"
+          },
+          {
+            "course": "933967b5-77ff-40b5-9b82-48dc2faf81ca"
+          },
+          {
+            "course": "1c3eb383-242f-48a6-a4a7-c0cd29c619ee"
+          },
+          {
+            "course": "9caf3f5d-6801-4976-b098-7944e72f57de"
+          },
+          {
+            "course": "4865836c-876c-4d11-919a-b92bc21472b2"
+          },
+          {
+            "course": "74887c57-3499-470a-b7e0-1e2eec2b40cd"
+          },
+          {
+            "course": "fb378bab-eef8-4a66-aecb-8c00e7aa7e27"
+          },
+          {
+            "course": "198b78b4-0e03-420c-96a7-2a55de1b88e1"
+          },
+          {
+            "course": "2e5f4ddb-1a11-446e-9fad-0d3abaeceb33"
+          },
+          {
+            "course": "5d5eb345-c8aa-4ff2-aa73-9e381033e155"
+          },
+          {
+            "course": "288a89c1-c130-461d-a9d7-40fbbba18c5f"
+          },
+          {
+            "course": "333672e4-63b7-4afc-a8d6-1493cc52eff9"
+          },
+          {
+            "course": "bceb199b-92e1-4fe7-a7fd-5b35b45ada4e"
+          },
+          {
+            "course": "04c23dac-24ff-4110-b4f7-706a24015de9"
+          },
+          {
+            "course": "c6f5a00e-45b6-4c11-b27f-b496bc123e11"
+          },
+          {
+            "course": "997a3636-e829-4693-8274-3f07bf3ee5eb"
+          },
+          {
+            "course": "40d8a361-9568-41b3-a4a8-3cda2728b89a"
+          },
+          {
+            "course": "38041bb7-1eae-4c5a-acb1-4e6deb7c601d"
+          },
+          {
+            "course": "c233dfed-06bf-46c1-9446-ce4eeefda4d9"
+          },
+          {
+            "course": "ccf3fcb8-2e9b-41e4-b895-ac2512f0f8ab"
+          },
+          {
+            "course": "42f41c78-15e2-43bc-bd3c-e1259e14c474"
+          },
+          {
+            "course": "7bcd6229-4fb1-4314-b599-9a5db235cf20"
+          },
+          {
+            "course": "309a47e4-23ba-410a-935c-f844fa0eb470"
+          },
+          {
+            "course": "f03f99c9-7d61-4461-9fac-6016c4286459"
+          },
+          {
+            "course": "7422d92d-b8a3-481e-af54-40fc20310c13"
+          },
+          {
+            "course": "34545b47-e6de-44d5-85fb-1b638983d692"
+          },
+          {
+            "course": "626d9fb1-d414-4613-b70b-ed290796e093"
+          },
+          {
+            "course": "de6127ec-066b-49a8-8014-8bd97b91f82d"
+          },
+          {
+            "course": "2b9ba138-ebf7-4ad1-b70d-bf4fc644e58c"
+          },
+          {
+            "course": "14ef1859-d172-47ba-b0bc-8194068c1c79"
+          },
+          {
+            "course": "ed0919dd-8166-4732-9f8c-9f3692fef6e3"
+          },
+          {
+            "course": "70844ae1-6528-4711-ad9d-7d40635102d7"
+          },
+          {
+            "course": "2ef7b49a-20e5-4262-a437-44ae41f9ccde"
+          },
+          {
+            "course": "8d4989a5-0b3b-4d45-a4e7-b8d94a9f3f45"
+          },
+          {
+            "course": "3e21a6c5-df7d-427f-b8c5-ba1187d11441"
+          },
+          {
+            "course": "776290ff-2794-4728-8b75-ad291719401b"
+          },
+          {
+            "course": "9f0e70dc-8976-4c20-9cf2-5edd8f6ef917"
+          },
+          {
+            "course": "6afb0bdc-bdc4-4e43-b1e7-f0d5fd77bc22"
+          },
+          {
+            "course": "2341cc36-ec9f-4715-8b54-b975d0fd5581"
+          },
+          {
+            "course": "f8482be1-af99-4711-bcc2-4a3b3999258f"
+          },
+          {
+            "course": "fe2fe608-3984-4b33-9b5d-2d233d526c95"
+          },
+          {
+            "course": "d94da367-2ab8-4589-958f-a3342cb9f293"
+          },
+          {
+            "course": "ca79ef1c-fe53-4e46-a14c-6bc9c1f9c722"
+          },
+          {
+            "course": "56a6b061-e128-4f68-8bcd-dbf4e7447591"
+          },
+          {
+            "course": "c78f6452-0b3f-403f-8474-feb7407bfe6a"
+          },
+          {
+            "course": "88034740-e622-4855-bbf7-a7ebf21107dc"
+          },
+          {
+            "course": "742c59a5-33bf-45de-a6b2-37c7dd959d8b"
+          },
+          {
+            "course": "073c55ea-5a17-47f8-ba5b-27ce90f13c23"
+          },
+          {
+            "course": "33e03cd3-9f41-4707-b26f-5adfaf925a5b"
+          },
+          {
+            "course": "6d0860ee-860c-41c2-b367-c216b8c54431"
+          },
+          {
+            "course": "d7c6d7f7-597d-45e1-93b3-e85f75874c11"
+          },
+          {
+            "course": "e13a28d4-b427-4940-85ed-7612eebbeb21"
+          },
+          {
+            "course": "06e18974-1df6-4357-a5e9-35e67efe81d6"
+          },
+          {
+            "course": "2661f829-efea-4786-97f8-ed4e55d66e04"
+          },
+          {
+            "course": "e36cc2da-00d9-4538-97aa-9ce274bf75ce"
+          }
+        ]
+      },
+      "prereq_raw": "Semestre 10 aprobado",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "profesional",
+        "linea": "ces"
+      }
+    },
+    {
+      "id": "aa8f96af-46a9-4363-a3ac-6dcd1a54fe02",
+      "legacy_id": 69,
+      "code": "IA069",
+      "name": "Actividad Final de Titulación",
+      "credits": 20,
+      "period_number": 11,
+      "sort_order": 68,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "ae626c55-7260-4c83-86a7-e74797697d5f"
+          },
+          {
+            "course": "cd586b8b-1e9f-42ac-b95a-b2b1fc341233"
+          },
+          {
+            "course": "abac0d80-3e20-4d7b-b414-f80d7335ea2f"
+          },
+          {
+            "course": "b052c607-1455-49e8-9d15-9a2cc45f0950"
+          },
+          {
+            "course": "cc7f25d5-a451-4cf4-859f-fd8e7c663179"
+          },
+          {
+            "course": "b24230f7-8e80-4fdd-a5bd-eb721f750f5f"
+          },
+          {
+            "course": "9cfa05e9-8ad7-4eb8-864f-d9a5500f32d0"
+          },
+          {
+            "course": "78b96fcd-5bd5-489b-bd33-c543b786270c"
+          },
+          {
+            "course": "c072b602-3d28-4244-bde8-c5d3f10aeb6f"
+          },
+          {
+            "course": "8eac177f-a718-4fd3-8140-0a8a405c69c5"
+          },
+          {
+            "course": "5de58861-bd38-44b5-aa89-e990685fa32c"
+          },
+          {
+            "course": "20d1dc06-b4de-405c-9bd6-ca90786ab076"
+          },
+          {
+            "course": "3e7b600b-91b0-411b-8e39-c2b6535ac28b"
+          },
+          {
+            "course": "933967b5-77ff-40b5-9b82-48dc2faf81ca"
+          },
+          {
+            "course": "1c3eb383-242f-48a6-a4a7-c0cd29c619ee"
+          },
+          {
+            "course": "9caf3f5d-6801-4976-b098-7944e72f57de"
+          },
+          {
+            "course": "4865836c-876c-4d11-919a-b92bc21472b2"
+          },
+          {
+            "course": "74887c57-3499-470a-b7e0-1e2eec2b40cd"
+          },
+          {
+            "course": "fb378bab-eef8-4a66-aecb-8c00e7aa7e27"
+          },
+          {
+            "course": "198b78b4-0e03-420c-96a7-2a55de1b88e1"
+          },
+          {
+            "course": "2e5f4ddb-1a11-446e-9fad-0d3abaeceb33"
+          },
+          {
+            "course": "5d5eb345-c8aa-4ff2-aa73-9e381033e155"
+          },
+          {
+            "course": "288a89c1-c130-461d-a9d7-40fbbba18c5f"
+          },
+          {
+            "course": "333672e4-63b7-4afc-a8d6-1493cc52eff9"
+          },
+          {
+            "course": "bceb199b-92e1-4fe7-a7fd-5b35b45ada4e"
+          },
+          {
+            "course": "04c23dac-24ff-4110-b4f7-706a24015de9"
+          },
+          {
+            "course": "c6f5a00e-45b6-4c11-b27f-b496bc123e11"
+          },
+          {
+            "course": "997a3636-e829-4693-8274-3f07bf3ee5eb"
+          },
+          {
+            "course": "40d8a361-9568-41b3-a4a8-3cda2728b89a"
+          },
+          {
+            "course": "38041bb7-1eae-4c5a-acb1-4e6deb7c601d"
+          },
+          {
+            "course": "c233dfed-06bf-46c1-9446-ce4eeefda4d9"
+          },
+          {
+            "course": "ccf3fcb8-2e9b-41e4-b895-ac2512f0f8ab"
+          },
+          {
+            "course": "42f41c78-15e2-43bc-bd3c-e1259e14c474"
+          },
+          {
+            "course": "7bcd6229-4fb1-4314-b599-9a5db235cf20"
+          },
+          {
+            "course": "309a47e4-23ba-410a-935c-f844fa0eb470"
+          },
+          {
+            "course": "f03f99c9-7d61-4461-9fac-6016c4286459"
+          },
+          {
+            "course": "7422d92d-b8a3-481e-af54-40fc20310c13"
+          },
+          {
+            "course": "34545b47-e6de-44d5-85fb-1b638983d692"
+          },
+          {
+            "course": "626d9fb1-d414-4613-b70b-ed290796e093"
+          },
+          {
+            "course": "de6127ec-066b-49a8-8014-8bd97b91f82d"
+          },
+          {
+            "course": "2b9ba138-ebf7-4ad1-b70d-bf4fc644e58c"
+          },
+          {
+            "course": "14ef1859-d172-47ba-b0bc-8194068c1c79"
+          },
+          {
+            "course": "ed0919dd-8166-4732-9f8c-9f3692fef6e3"
+          },
+          {
+            "course": "70844ae1-6528-4711-ad9d-7d40635102d7"
+          },
+          {
+            "course": "2ef7b49a-20e5-4262-a437-44ae41f9ccde"
+          },
+          {
+            "course": "8d4989a5-0b3b-4d45-a4e7-b8d94a9f3f45"
+          },
+          {
+            "course": "3e21a6c5-df7d-427f-b8c5-ba1187d11441"
+          },
+          {
+            "course": "776290ff-2794-4728-8b75-ad291719401b"
+          },
+          {
+            "course": "9f0e70dc-8976-4c20-9cf2-5edd8f6ef917"
+          },
+          {
+            "course": "6afb0bdc-bdc4-4e43-b1e7-f0d5fd77bc22"
+          },
+          {
+            "course": "2341cc36-ec9f-4715-8b54-b975d0fd5581"
+          },
+          {
+            "course": "f8482be1-af99-4711-bcc2-4a3b3999258f"
+          },
+          {
+            "course": "fe2fe608-3984-4b33-9b5d-2d233d526c95"
+          },
+          {
+            "course": "d94da367-2ab8-4589-958f-a3342cb9f293"
+          },
+          {
+            "course": "ca79ef1c-fe53-4e46-a14c-6bc9c1f9c722"
+          },
+          {
+            "course": "56a6b061-e128-4f68-8bcd-dbf4e7447591"
+          },
+          {
+            "course": "c78f6452-0b3f-403f-8474-feb7407bfe6a"
+          },
+          {
+            "course": "88034740-e622-4855-bbf7-a7ebf21107dc"
+          },
+          {
+            "course": "742c59a5-33bf-45de-a6b2-37c7dd959d8b"
+          },
+          {
+            "course": "073c55ea-5a17-47f8-ba5b-27ce90f13c23"
+          },
+          {
+            "course": "33e03cd3-9f41-4707-b26f-5adfaf925a5b"
+          },
+          {
+            "course": "6d0860ee-860c-41c2-b367-c216b8c54431"
+          },
+          {
+            "course": "d7c6d7f7-597d-45e1-93b3-e85f75874c11"
+          },
+          {
+            "course": "e13a28d4-b427-4940-85ed-7612eebbeb21"
+          },
+          {
+            "course": "06e18974-1df6-4357-a5e9-35e67efe81d6"
+          },
+          {
+            "course": "2661f829-efea-4786-97f8-ed4e55d66e04"
+          },
+          {
+            "course": "e36cc2da-00d9-4538-97aa-9ce274bf75ce"
+          }
+        ]
+      },
+      "prereq_raw": "Semestre 10 aprobado",
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "profesional",
+        "linea": "inv"
+      }
+    }
+  ],
+  "aliases": {}
+}

@@ -1,0 +1,965 @@
+{
+  "carrera": "Ingeniería en Alimentos (UCH)",
+  "universidad": "Universidad de Chile",
+  "total_creditos": 330,
+  "nota_codigos": "Los códigos IA001, IA002, etc. son códigos internos para el visor de mallas; el PDF oficial usado como fuente muestra número de asignatura, nombre, SCT, línea formativa y requisitos, pero no códigos oficiales de asignatura.",
+  "semestres": [
+    {
+      "numero": 1,
+      "cursos": [
+        {
+          "id": 1,
+          "codigo": "IA001",
+          "nombre": "Química General I",
+          "sct": 8,
+          "prerrequisitos": [],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 2,
+          "codigo": "IA002",
+          "nombre": "Técnicas de Laboratorio Químico",
+          "sct": 4,
+          "prerrequisitos": [],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 3,
+          "codigo": "IA003",
+          "nombre": "Introducción al Álgebra y Cálculo",
+          "sct": 8,
+          "prerrequisitos": [],
+          "area": "matematica",
+          "linea": "pfi"
+        },
+        {
+          "id": 4,
+          "codigo": "IA004",
+          "nombre": "Química Transformadora",
+          "sct": 3,
+          "prerrequisitos": [],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 5,
+          "codigo": "IA005",
+          "nombre": "Introducción a la Ingeniería en Alimentos",
+          "sct": 3,
+          "prerrequisitos": [],
+          "area": "alimentos",
+          "linea": "inv"
+        },
+        {
+          "id": 6,
+          "codigo": "IA006",
+          "nombre": "Inglés I",
+          "sct": 3,
+          "prerrequisitos": [],
+          "area": "formacion",
+          "linea": "pfi"
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "cursos": [
+        {
+          "id": 7,
+          "codigo": "IA007",
+          "nombre": "Química General II",
+          "sct": 5,
+          "prerrequisitos": [
+            1
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 8,
+          "codigo": "IA008",
+          "nombre": "Laboratorio de Química General",
+          "sct": 3,
+          "prerrequisitos": [
+            1,
+            2
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 9,
+          "codigo": "IA009",
+          "nombre": "Física General",
+          "sct": 5,
+          "prerrequisitos": [
+            3
+          ],
+          "area": "fisica",
+          "linea": "pfi"
+        },
+        {
+          "id": 10,
+          "codigo": "IA010",
+          "nombre": "Cálculo Diferencial e Integral",
+          "sct": 6,
+          "prerrequisitos": [
+            3
+          ],
+          "area": "matematica",
+          "linea": "pfi"
+        },
+        {
+          "id": 11,
+          "codigo": "IA011",
+          "nombre": "Biología Celular",
+          "sct": 5,
+          "prerrequisitos": [
+            2
+          ],
+          "area": "biologia",
+          "linea": "inv"
+        },
+        {
+          "id": 12,
+          "codigo": "IA012",
+          "nombre": "Curso de Formación General",
+          "sct": 4,
+          "prerrequisitos": [],
+          "area": "formacion",
+          "linea": "pfi"
+        },
+        {
+          "id": 13,
+          "codigo": "IA013",
+          "nombre": "Inglés II",
+          "sct": 3,
+          "prerrequisitos": [
+            6
+          ],
+          "area": "formacion",
+          "linea": "pfi"
+        }
+      ]
+    },
+    {
+      "numero": 3,
+      "cursos": [
+        {
+          "id": 14,
+          "codigo": "IA014",
+          "nombre": "Química Orgánica I",
+          "sct": 5,
+          "prerrequisitos": [
+            7
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 15,
+          "codigo": "IA015",
+          "nombre": "Química Analítica I",
+          "sct": 5,
+          "prerrequisitos": [
+            7,
+            8
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 16,
+          "codigo": "IA016",
+          "nombre": "Laboratorio I de Química Orgánica",
+          "sct": 4,
+          "prerrequisitos": [
+            7,
+            8
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 17,
+          "codigo": "IA017",
+          "nombre": "Estadística y Análisis de Datos",
+          "sct": 4,
+          "prerrequisitos": [
+            10
+          ],
+          "area": "matematica",
+          "linea": "pfi"
+        },
+        {
+          "id": 18,
+          "codigo": "IA018",
+          "nombre": "Física Aplicada a la Química",
+          "sct": 4,
+          "prerrequisitos": [
+            9
+          ],
+          "area": "fisica",
+          "linea": "inv"
+        },
+        {
+          "id": 19,
+          "codigo": "IA019",
+          "nombre": "Cálculo Avanzado Multivariado",
+          "sct": 5,
+          "prerrequisitos": [
+            10
+          ],
+          "area": "matematica",
+          "linea": "inv"
+        },
+        {
+          "id": 20,
+          "codigo": "IA020",
+          "nombre": "Curso de Formación General",
+          "sct": 2,
+          "prerrequisitos": [],
+          "area": "formacion",
+          "linea": "pfi"
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "cursos": [
+        {
+          "id": 21,
+          "codigo": "IA021",
+          "nombre": "Química Orgánica II",
+          "sct": 5,
+          "prerrequisitos": [
+            14
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 22,
+          "codigo": "IA022",
+          "nombre": "Laboratorio de Análisis Químico",
+          "sct": 4,
+          "prerrequisitos": [
+            8,
+            15,
+            17
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 23,
+          "codigo": "IA023",
+          "nombre": "Química Analítica II",
+          "sct": 5,
+          "prerrequisitos": [
+            15
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 24,
+          "codigo": "IA024",
+          "nombre": "Fisicoquímica I",
+          "sct": 6,
+          "prerrequisitos": [
+            9,
+            10,
+            14
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 25,
+          "codigo": "IA025",
+          "nombre": "Álgebra Lineal y Métodos Numéricos",
+          "sct": 4,
+          "prerrequisitos": [
+            19
+          ],
+          "area": "matematica",
+          "linea": "inv"
+        },
+        {
+          "id": 26,
+          "codigo": "IA026",
+          "nombre": "Computación y Programación",
+          "sct": 5,
+          "prerrequisitos": [
+            17
+          ],
+          "area": "computacion",
+          "linea": "ind"
+        },
+        {
+          "id": 27,
+          "codigo": "IA027",
+          "nombre": "Curso de Formación General",
+          "sct": 2,
+          "prerrequisitos": [],
+          "area": "formacion",
+          "linea": "pfi"
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "cursos": [
+        {
+          "id": 28,
+          "codigo": "IA028",
+          "nombre": "Laboratorio de Análisis Instrumental",
+          "sct": 4,
+          "prerrequisitos": [
+            22,
+            23
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 29,
+          "codigo": "IA029",
+          "nombre": "Materias Primas Vegetales y Animales",
+          "sct": 3,
+          "prerrequisitos": [
+            11,
+            21
+          ],
+          "area": "alimentos",
+          "linea": "ind"
+        },
+        {
+          "id": 30,
+          "codigo": "IA030",
+          "nombre": "Fisicoquímica Orientada a los Alimentos",
+          "sct": 5,
+          "prerrequisitos": [
+            18,
+            24
+          ],
+          "area": "alimentos",
+          "linea": "ind"
+        },
+        {
+          "id": 31,
+          "codigo": "IA031",
+          "nombre": "Dibujo en Ingeniería",
+          "sct": 4,
+          "prerrequisitos": [
+            19,
+            26
+          ],
+          "area": "industrial",
+          "linea": "ind"
+        },
+        {
+          "id": 32,
+          "codigo": "IA032",
+          "nombre": "Comunicación en Ciencia y Tecnología de los Alimentos",
+          "sct": 4,
+          "prerrequisitos": [
+            13,
+            17
+          ],
+          "area": "alimentos",
+          "linea": "inv"
+        },
+        {
+          "id": 33,
+          "codigo": "IA033",
+          "nombre": "Ecuaciones Diferenciales",
+          "sct": 5,
+          "prerrequisitos": [
+            25
+          ],
+          "area": "matematica",
+          "linea": "ind"
+        },
+        {
+          "id": 34,
+          "codigo": "IA034",
+          "nombre": "Módulo Gestión I (Gestión Administrativa y Gestión Económica)",
+          "sct": 5,
+          "prerrequisitos": [
+            17
+          ],
+          "area": "gestion",
+          "linea": "ces"
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "cursos": [
+        {
+          "id": 35,
+          "codigo": "IA035",
+          "nombre": "Bioquímica General",
+          "sct": 5,
+          "prerrequisitos": [
+            24,
+            29
+          ],
+          "area": "biologia",
+          "linea": "inv"
+        },
+        {
+          "id": 36,
+          "codigo": "IA036",
+          "nombre": "Química y Análisis de los Alimentos",
+          "sct": 5,
+          "prerrequisitos": [
+            28
+          ],
+          "area": "alimentos",
+          "linea": "ind"
+        },
+        {
+          "id": 37,
+          "codigo": "IA037",
+          "nombre": "Operaciones Unitarias I",
+          "sct": 7,
+          "prerrequisitos": [
+            28,
+            30,
+            33
+          ],
+          "area": "industrial",
+          "linea": "ind"
+        },
+        {
+          "id": 38,
+          "codigo": "IA038",
+          "nombre": "Propiedades Físicas de los Alimentos",
+          "sct": 3,
+          "prerrequisitos": [
+            26,
+            32
+          ],
+          "area": "alimentos",
+          "linea": "inv"
+        },
+        {
+          "id": 39,
+          "codigo": "IA039",
+          "nombre": "Módulo Gestión II (Gestión Contable y Costos, Gestión Comercial)",
+          "sct": 5,
+          "prerrequisitos": [
+            34
+          ],
+          "area": "gestion",
+          "linea": "ces"
+        },
+        {
+          "id": 40,
+          "codigo": "IA040",
+          "nombre": "Práctica I / Unidad de Investigación",
+          "sct": 5,
+          "prerrequisitos": [
+            32
+          ],
+          "area": "investigacion",
+          "linea": "ces"
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "cursos": [
+        {
+          "id": 41,
+          "codigo": "IA041",
+          "nombre": "Bioquímica de los Alimentos",
+          "sct": 5,
+          "prerrequisitos": [
+            35
+          ],
+          "area": "alimentos",
+          "linea": "inv"
+        },
+        {
+          "id": 42,
+          "codigo": "IA042",
+          "nombre": "Nutrición",
+          "sct": 4,
+          "prerrequisitos": [
+            36
+          ],
+          "area": "alimentos",
+          "linea": "inv"
+        },
+        {
+          "id": 43,
+          "codigo": "IA043",
+          "nombre": "Operaciones Unitarias II",
+          "sct": 7,
+          "prerrequisitos": [
+            37
+          ],
+          "area": "industrial",
+          "linea": "ind"
+        },
+        {
+          "id": 44,
+          "codigo": "IA044",
+          "nombre": "Envases y Embalajes",
+          "sct": 4,
+          "prerrequisitos": [
+            30,
+            38
+          ],
+          "area": "alimentos",
+          "linea": "ind"
+        },
+        {
+          "id": 45,
+          "codigo": "IA045",
+          "nombre": "Gestión Financiera",
+          "sct": 3,
+          "prerrequisitos": [
+            39
+          ],
+          "area": "gestion",
+          "linea": "ces"
+        },
+        {
+          "id": 46,
+          "codigo": "IA046",
+          "nombre": "Legislación Alimentaria",
+          "sct": 4,
+          "prerrequisitos": [
+            36
+          ],
+          "area": "gestion",
+          "linea": "ces"
+        },
+        {
+          "id": 47,
+          "codigo": "IA047",
+          "nombre": "Inglés III",
+          "sct": 3,
+          "prerrequisitos": [
+            13
+          ],
+          "area": "formacion",
+          "linea": "pfi"
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "cursos": [
+        {
+          "id": 48,
+          "codigo": "IA048",
+          "nombre": "Microbiología e Inocuidad de los Alimentos",
+          "sct": 5,
+          "prerrequisitos": [
+            41
+          ],
+          "area": "alimentos",
+          "linea": "inv"
+        },
+        {
+          "id": 49,
+          "codigo": "IA049",
+          "nombre": "Higiene y Sanidad Industrial",
+          "sct": 3,
+          "prerrequisitos": [
+            41
+          ],
+          "area": "alimentos",
+          "linea": "ind"
+        },
+        {
+          "id": 50,
+          "codigo": "IA050",
+          "nombre": "Procesos de Conservación por Bajas Temperaturas",
+          "sct": 4,
+          "prerrequisitos": [
+            43
+          ],
+          "area": "alimentos",
+          "linea": "ind"
+        },
+        {
+          "id": 51,
+          "codigo": "IA051",
+          "nombre": "Procesos de Conservación por Altas Temperaturas",
+          "sct": 5,
+          "prerrequisitos": [
+            43
+          ],
+          "area": "alimentos",
+          "linea": "ind"
+        },
+        {
+          "id": 52,
+          "codigo": "IA052",
+          "nombre": "Diseño de Plantas",
+          "sct": 3,
+          "prerrequisitos": [
+            31,
+            43
+          ],
+          "area": "industrial",
+          "linea": "ind"
+        },
+        {
+          "id": 53,
+          "codigo": "IA053",
+          "nombre": "Diseño de Experimentos",
+          "sct": 3,
+          "prerrequisitos": [
+            26,
+            43
+          ],
+          "area": "matematica",
+          "linea": "inv"
+        },
+        {
+          "id": 54,
+          "codigo": "IA054",
+          "nombre": "Práctica II",
+          "sct": 4,
+          "prerrequisitos": [
+            40
+          ],
+          "area": "profesional",
+          "linea": "ces"
+        },
+        {
+          "id": 55,
+          "codigo": "IA055",
+          "nombre": "Inglés IV",
+          "sct": 3,
+          "prerrequisitos": [
+            47
+          ],
+          "area": "formacion",
+          "linea": "pfi"
+        }
+      ]
+    },
+    {
+      "numero": 9,
+      "cursos": [
+        {
+          "id": 56,
+          "codigo": "IA056",
+          "nombre": "Evaluación Sensorial",
+          "sct": 4,
+          "prerrequisitos": [
+            17,
+            50,
+            51
+          ],
+          "area": "alimentos",
+          "linea": "inv"
+        },
+        {
+          "id": 57,
+          "codigo": "IA057",
+          "nombre": "Ingeniería de Procesos de Conservación de Alimentos",
+          "sct": 6,
+          "prerrequisitos": [
+            48,
+            50,
+            51
+          ],
+          "area": "alimentos",
+          "linea": "ind"
+        },
+        {
+          "id": 58,
+          "codigo": "IA058",
+          "nombre": "Ingeniería de Procesos en Grasas y Aceites",
+          "sct": 4,
+          "prerrequisitos": [
+            50,
+            51
+          ],
+          "area": "alimentos",
+          "linea": "ind"
+        },
+        {
+          "id": 59,
+          "codigo": "IA059",
+          "nombre": "Ingeniería de Procesos en Cereales",
+          "sct": 4,
+          "prerrequisitos": [
+            50,
+            51
+          ],
+          "area": "alimentos",
+          "linea": "ind"
+        },
+        {
+          "id": 60,
+          "codigo": "IA060",
+          "nombre": "Ingeniería de Procesos de Productos Cárnicos",
+          "sct": 4,
+          "prerrequisitos": [
+            50,
+            51
+          ],
+          "area": "alimentos",
+          "linea": "ind"
+        },
+        {
+          "id": 61,
+          "codigo": "IA061",
+          "nombre": "Evaluación de Proyectos",
+          "sct": 4,
+          "prerrequisitos": [
+            45,
+            52
+          ],
+          "area": "gestion",
+          "linea": "ces"
+        },
+        {
+          "id": 62,
+          "codigo": "IA062",
+          "nombre": "Electivo Especializado",
+          "sct": 4,
+          "prerrequisitos": [],
+          "area": "otros",
+          "linea": "ind"
+        }
+      ]
+    },
+    {
+      "numero": 10,
+      "cursos": [
+        {
+          "id": 63,
+          "codigo": "IA063",
+          "nombre": "Ingeniería de Procesos de Lácteos",
+          "sct": 5,
+          "prerrequisitos": [
+            50,
+            51
+          ],
+          "area": "alimentos",
+          "linea": "ind"
+        },
+        {
+          "id": 64,
+          "codigo": "IA064",
+          "nombre": "Ingeniería de Procesos en Productos del Mar",
+          "sct": 5,
+          "prerrequisitos": [
+            50,
+            51
+          ],
+          "area": "alimentos",
+          "linea": "ind"
+        },
+        {
+          "id": 65,
+          "codigo": "IA065",
+          "nombre": "Ingeniería de Procesos en Fermentaciones",
+          "sct": 5,
+          "prerrequisitos": [
+            48,
+            49
+          ],
+          "area": "alimentos",
+          "linea": "ind"
+        },
+        {
+          "id": 66,
+          "codigo": "IA066",
+          "nombre": "Gestión de la Calidad",
+          "sct": 5,
+          "prerrequisitos": [
+            46,
+            56
+          ],
+          "area": "gestion",
+          "linea": "ces"
+        },
+        {
+          "id": 67,
+          "codigo": "IA067",
+          "nombre": "Electivo Especializado Vinculador con Magíster",
+          "sct": 10,
+          "prerrequisitos": [],
+          "area": "otros",
+          "linea": "ind"
+        }
+      ]
+    },
+    {
+      "numero": 11,
+      "cursos": [
+        {
+          "id": 68,
+          "codigo": "IA068",
+          "nombre": "Práctica Profesional",
+          "sct": 10,
+          "prerrequisitos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67
+          ],
+          "area": "profesional",
+          "linea": "ces",
+          "prereq_expr": "Semestre 10 aprobado"
+        },
+        {
+          "id": 69,
+          "codigo": "IA069",
+          "nombre": "Actividad Final de Titulación",
+          "sct": 20,
+          "prerrequisitos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67
+          ],
+          "area": "profesional",
+          "linea": "inv",
+          "prereq_expr": "Semestre 10 aprobado"
+        }
+      ]
+    }
+  ]
+}

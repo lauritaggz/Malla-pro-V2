@@ -44,6 +44,7 @@ class VersionRead(BaseModel):
     source_url: str | None
     source_note: str | None
     reviewed_at: datetime | None
+    attrs: dict[str, Any]
 
 
 class TrackRead(BaseModel):

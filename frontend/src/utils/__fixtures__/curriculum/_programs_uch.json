@@ -1,0 +1,38 @@
+[
+  {
+    "id": "b5688681-30fd-4b16-a44d-f9b61f0d455b",
+    "slug": "bioquimica",
+    "name": "Bioquímica",
+    "official_name": "Bioquímica (UCH)",
+    "official_code": null,
+    "career_key": "unab-bioquimicauch",
+    "legacy_url": "/mallas/BioquimicaUCH.json"
+  },
+  {
+    "id": "46205c47-c800-4973-b3b8-8d59482ac35e",
+    "slug": "ingenieria-alimentos",
+    "name": "Ingeniería en Alimentos",
+    "official_name": "Ingeniería en Alimentos (UCH)",
+    "official_code": null,
+    "career_key": "unab-ingenieriaalimentosuch",
+    "legacy_url": "/mallas/IngenieriaAlimentosUCH.json"
+  },
+  {
+    "id": "b8389fcc-ed1d-41dc-aba5-5fedb56eb242",
+    "slug": "quimica",
+    "name": "Química",
+    "official_name": "Química (UCH)",
+    "official_code": null,
+    "career_key": "unab-quimicauch",
+    "legacy_url": "/mallas/QuimicaUCH.json"
+  },
+  {
+    "id": "dcbba0b3-7b29-4c39-89dd-cf64e72b82e2",
+    "slug": "quimica-farmacia",
+    "name": "Química y Farmacia",
+    "official_name": "Química y Farmacia (UCH)",
+    "official_code": null,
+    "career_key": "unab-quimicafarmaciauch",
+    "legacy_url": "/mallas/QuimicaFarmaciaUCH.json"
+  }
+]

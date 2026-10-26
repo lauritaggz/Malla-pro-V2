@@ -9,7 +9,21 @@ import { getCareerId } from "./storageKeys.js";
 const here = dirname(fileURLToPath(import.meta.url));
 const FIXTURES = join(here, "__fixtures__", "curriculum");
 const MALLAS = join(here, "..", "..", "public", "mallas");
-const STEMS = ["Industrial", "Comp", "Geo", "MM", "CInf", "Minas", "Med", "TM", "Psicologia"];
+const STEMS = [
+  "Industrial",
+  "Comp",
+  "Geo",
+  "MM",
+  "CInf",
+  "Minas",
+  "Med",
+  "TM",
+  "Psicologia",
+  "BioquimicaUCH",
+  "IngenieriaAlimentosUCH",
+  "QuimicaUCH",
+  "QuimicaFarmaciaUCH",
+];
 
 const readJson = (dir, name) => JSON.parse(readFileSync(join(dir, `${name}.json`), "utf8"));
 

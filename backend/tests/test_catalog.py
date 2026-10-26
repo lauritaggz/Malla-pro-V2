@@ -9,7 +9,7 @@ from sqlalchemy import func, select
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from app.models.catalog import Course, CurriculumVersion, Program, Track
+from app.models.catalog import Course, CourseAlias, CurriculumVersion, Program, Track, University
 from app.schemas.prereq import validate_prereq_tree
 from app.services.career_key import career_key_from_url
 from app.services.legacy_import import LEGACY_PROGRAMS, import_legacy_folder
@@ -17,7 +17,8 @@ from app.services.prerequisites import UnsupportedPrereqTree, and_tree, flatten_
 
 MALLAS_DIR = Path(__file__).resolve().parents[2] / "frontend" / "public" / "mallas"
 
-# getCareerId({url: "/mallas/<stem>.json"}) as produced by the frontend today.
+# getCareerId({url: "/mallas/<stem>.json"}) as produced by the frontend today (v1 included:
+# the U. de Chile mallas are already public there at /mallas/<Name>UCH.json).
 EXPECTED_CAREER_KEYS = {
     "Industrial": "unab-industrial",
     "Comp": "unab-comp",
@@ -28,7 +29,13 @@ EXPECTED_CAREER_KEYS = {
     "Med": "unab-med",
     "TM": "unab-tm",
     "Psicologia": "unab-psicologia",
+    "BioquimicaUCH": "unab-bioquimicauch",
+    "IngenieriaAlimentosUCH": "unab-ingenieriaalimentosuch",
+    "QuimicaUCH": "unab-quimicauch",
+    "QuimicaFarmaciaUCH": "unab-quimicafarmaciauch",
 }
+UNAB_STEMS = ["Industrial", "Comp", "Geo", "MM", "CInf", "Minas", "Med", "TM", "Psicologia"]
+UCH_STEMS = ["BioquimicaUCH", "IngenieriaAlimentosUCH", "QuimicaUCH", "QuimicaFarmaciaUCH"]
 
 
 def load_json(stem: str) -> dict:
@@ -60,8 +67,8 @@ async def _counts(db: AsyncSession) -> dict[str, int]:
 
 
 async def test_course_counts_match_json(imported, db_session: AsyncSession) -> None:
-    assert len(imported.results) == len(LEGACY_PROGRAMS) == 9
-    for stem, slug, _name in LEGACY_PROGRAMS:
+    assert len(imported.results) == len(LEGACY_PROGRAMS) == 13
+    for stem, slug, _name, _uni in LEGACY_PROGRAMS:
         expected = len({c["id"] for c in json_courses(load_json(stem))})
         program = await db_session.scalar(select(Program).where(Program.slug == slug))
         count = await db_session.scalar(
@@ -78,13 +85,13 @@ async def test_import_is_idempotent(db_session: AsyncSession) -> None:
     first = await _counts(db_session)
     second_report = await import_legacy_folder(db_session, MALLAS_DIR)
     assert await _counts(db_session) == first
-    assert first == {"programs": 9, "versions": 9, "tracks": 7, "courses": 585}
+    assert first == {"programs": 13, "versions": 13, "tracks": 7, "courses": 837}
     assert all(r.created_courses == 0 and not r.created_program for r in second_report.results)
 
 
 async def test_versions_are_legacy_published_current(imported, db_session: AsyncSession) -> None:
     versions = (await db_session.scalars(select(CurriculumVersion))).all()
-    assert len(versions) == 9
+    assert len(versions) == 13
     for v in versions:
         assert (v.label, v.status, v.is_current, v.source_type) == (
             "legacy",
@@ -97,7 +104,7 @@ async def test_versions_are_legacy_published_current(imported, db_session: Async
 async def test_prerequisites_reproduce_frontend_semantics(
     imported, db_session: AsyncSession
 ) -> None:
-    for stem, slug, _ in LEGACY_PROGRAMS:
+    for stem, slug, _, _ in LEGACY_PROGRAMS:
         raw_by_id = {c["id"]: c for c in json_courses(load_json(stem))}
         rows = (
             await db_session.scalars(
@@ -138,7 +145,7 @@ async def test_one_current_version_per_program(imported, db_session: AsyncSessio
 
 
 def test_career_key_matches_get_career_id_for_all_legacy_mallas() -> None:
-    assert {s: career_key_from_url(f"/mallas/{s}.json") for s, _, _ in LEGACY_PROGRAMS} == (
+    assert {p.stem: career_key_from_url(f"/mallas/{p.stem}.json") for p in LEGACY_PROGRAMS} == (
         EXPECTED_CAREER_KEYS
     )
     # Other universities keep the folder segment, like getCareerId.
@@ -203,17 +210,18 @@ async def test_universities_endpoint(client: AsyncClient, imported) -> None:
     assert response.status_code == 200
     assert response.headers["cache-control"] == "public, max-age=300"
     body = response.json()
-    assert [(u["slug"], u["short_name"], u["country"]) for u in body] == [("unab", "UNAB", "CL")]
+    assert [(u["slug"], u["short_name"], u["country"]) for u in body] == [
+        ("unab", "UNAB", "CL"),
+        ("uch", "UCH", "CL"),
+    ]
 
 
 async def test_programs_endpoint_keeps_legacy_order(client: AsyncClient, imported) -> None:
     response = await client.get("/api/v1/universities/unab/programs")
     assert response.status_code == 200
     programs = response.json()
-    assert [p["legacy_url"] for p in programs] == [
-        f"/mallas/{s}.json" for s, _, _ in LEGACY_PROGRAMS
-    ]
-    assert {p["career_key"] for p in programs} == set(EXPECTED_CAREER_KEYS.values())
+    assert [p["legacy_url"] for p in programs] == [f"/mallas/{s}.json" for s in UNAB_STEMS]
+    assert {p["career_key"] for p in programs} == {EXPECTED_CAREER_KEYS[s] for s in UNAB_STEMS}
     assert (await client.get("/api/v1/universities/nope/programs")).status_code == 404
 
 
@@ -236,7 +244,7 @@ async def test_curriculum_endpoint_medicina(client: AsyncClient, imported) -> No
     assert legacy_ids == list(range(1, 55))
     biol = next(c for c in body["courses"] if c["code"] == "BIOL148")
     assert biol["prereq_status"] == "known"
-    assert biol["prereq_raw"] == "BIOL132 o (BIO130 y BIO131)"
+    assert biol["prereq_raw"] == "BIOL132 o ( BIO130 y BIO131 )"
     assert biol["prereq_expr"] is not None
     assert next(c for c in body["courses"] if c["code"] == "BIOL132")["prereq_status"] == "none"
 
@@ -266,3 +274,117 @@ async def test_curriculum_unknown_program_returns_404(client: AsyncClient, impor
     response = await client.get(f"/api/v1/programs/{uuid.uuid4()}/curriculum")
     assert response.status_code == 404
     assert (await client.get("/api/v1/programs/not-a-uuid/curriculum")).status_code == 422
+
+
+# ---------------------------------------------------------------- T-010: verified mallas, UCH
+
+
+async def _version_for(db: AsyncSession, stem: str) -> CurriculumVersion:
+    return await db.scalar(
+        select(CurriculumVersion)
+        .join(Program, Program.id == CurriculumVersion.program_id)
+        .where(Program.legacy_url == f"/mallas/{stem}.json")
+    )
+
+
+async def test_uch_programs_belong_to_their_own_university(
+    imported, db_session: AsyncSession
+) -> None:
+    uch = await db_session.scalar(select(University).where(University.slug == "uch"))
+    assert (uch.name, uch.short_name) == ("Universidad de Chile", "UCH")
+    for stem in UCH_STEMS:
+        program = await db_session.scalar(
+            select(Program).where(Program.legacy_url == f"/mallas/{stem}.json")
+        )
+        assert program.university_id == uch.id, stem
+        assert program.career_key == EXPECTED_CAREER_KEYS[stem]
+        assert load_json(stem)["universidad"] == "Universidad de Chile"
+    unab = await db_session.scalar(select(University).where(University.slug == "unab"))
+    unab_programs = (
+        await db_session.scalars(select(Program).where(Program.university_id == unab.id))
+    ).all()
+    assert {p.legacy_url for p in unab_programs} == {f"/mallas/{s}.json" for s in UNAB_STEMS}
+
+
+async def test_programs_endpoint_lists_uch_in_order(client: AsyncClient, imported) -> None:
+    programs = (await client.get("/api/v1/universities/uch/programs")).json()
+    assert [(p["name"], p["legacy_url"], p["career_key"]) for p in programs] == [
+        ("Bioquímica", "/mallas/BioquimicaUCH.json", "unab-bioquimicauch"),
+        (
+            "Ingeniería en Alimentos",
+            "/mallas/IngenieriaAlimentosUCH.json",
+            "unab-ingenieriaalimentosuch",
+        ),
+        ("Química", "/mallas/QuimicaUCH.json", "unab-quimicauch"),
+        ("Química y Farmacia", "/mallas/QuimicaFarmaciaUCH.json", "unab-quimicafarmaciauch"),
+    ]
+
+
+async def test_new_top_level_fields_are_kept_verbatim(imported, db_session: AsyncSession) -> None:
+    """universidad, fuente_oficial, nota_codigos and equivalencias: nothing is lost."""
+    for stem in UNAB_STEMS + UCH_STEMS:
+        data = load_json(stem)
+        version = await _version_for(db_session, stem)
+        for key in ("universidad", "fuente_oficial", "nota_codigos", "equivalencias"):
+            if key in data:
+                assert version.attrs[key] == data[key], (stem, key)
+            else:
+                assert key not in version.attrs, (stem, key)
+
+    cinf = await _version_for(db_session, "CInf")
+    assert cinf.source_type == "legacy_json"
+    assert cinf.source_note == (
+        "Imported from frontend/public/mallas/CInf.json. Checked against the official "
+        "curriculum: program UNAB12210 catalog 202010 (PRIMER SEMESTRE 2020) reading: OCR revisado"
+    )
+    quimica = await _version_for(db_session, "QuimicaUCH")
+    assert quimica.source_note == "Imported from frontend/public/mallas/QuimicaUCH.json"
+    assert "códigos internos" in quimica.attrs["nota_codigos"]
+
+
+async def test_equivalencias_do_not_create_aliases(imported, db_session: AsyncSession) -> None:
+    """Old-plan equivalences are not code aliases: they stay in attrs, so the schedule import
+    (which matches by courseCodeAliases) behaves the same with and without the API."""
+    assert await db_session.scalar(select(func.count()).select_from(CourseAlias)) == 0
+
+
+async def test_area_and_linea_are_kept_in_course_attrs(imported, db_session: AsyncSession) -> None:
+    for stem in ["Industrial", *UCH_STEMS]:
+        raw_by_id = {c["id"]: c for c in json_courses(load_json(stem))}
+        version = await _version_for(db_session, stem)
+        rows = (
+            await db_session.scalars(select(Course).where(Course.version_id == version.id))
+        ).all()
+        for course in rows:
+            raw = raw_by_id[course.legacy_id]
+            for key in ("area", "linea"):
+                assert course.attrs.get(key) == raw.get(key), (stem, course.legacy_id, key)
+
+
+async def test_new_fields_are_not_reported_as_unmodeled(imported) -> None:
+    assert [i for i in imported.inconsistencies if i.kind == "campo_no_modelado"] == []
+    assert [i for i in imported.inconsistencies if i.kind == "equivalencia_sin_curso"] == []
+
+
+async def test_declared_university_must_match_registry(
+    db_session: AsyncSession, tmp_path: Path
+) -> None:
+    for stem in [p.stem for p in LEGACY_PROGRAMS]:
+        data = load_json(stem)
+        if stem == "QuimicaUCH":
+            data["universidad"] = "Universidad Andrés Bello"
+        (tmp_path / f"{stem}.json").write_text(json.dumps(data), encoding="utf-8")
+    with pytest.raises(ValueError, match="QuimicaUCH"):
+        await import_legacy_folder(db_session, tmp_path)
+    await db_session.rollback()
+
+
+async def test_cinf_keeps_ids_with_new_codes(imported, db_session: AsyncSession) -> None:
+    """ICF/INSW -> CINF renames keep each legacy id, so progress saved by id survives."""
+    renamed = {17: "CINF100", 22: "CINF102", 23: "CINF101", 39: "CINF200", 48: "CINF300"}
+    version = await _version_for(db_session, "CInf")
+    rows = (await db_session.scalars(select(Course).where(Course.version_id == version.id))).all()
+    by_id = {c.legacy_id: c.code for c in rows}
+    assert sorted(by_id) == list(range(1, 49))
+    for legacy_id, code in renamed.items():
+        assert by_id[legacy_id] == code

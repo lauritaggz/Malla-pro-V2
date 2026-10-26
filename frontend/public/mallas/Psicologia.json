@@ -1,7 +1,13 @@
 {
   "carrera": "Psicología (UNAB)",
   "codigo_programa": "UNAB11900",
-  "total_creditos": 0,
+  "fuente_oficial": {
+    "programa": "UNAB11900",
+    "catalogo": "201810",
+    "catalogoTexto": "PRIMER SEMESTRE 2018",
+    "lectura": "texto del documento"
+  },
+  "total_creditos": 671,
   "totalSemestres": 10,
   "semestres": [
     {
@@ -68,7 +74,7 @@
           "prerrequisitos": [
             3
           ],
-          "prereq_expr": "ING119 o ING111 o ING110 o ING116 o ING117 o CNT021 o (ING050 y ING051) o (FLG301 y FLG302) o (BMA281 y BMA282) o (ETU081 y ETU082)"
+          "prereq_expr": "ING119 o ING111 o ING110 o ING116 o ING117 o CNT021 o ( ING050 y ING051 ) o ( FLG301 y FLG302 ) o ( BMA281 y BMA282 ) o ( ETU081 y ETU082 )"
         },
         {
           "id": 8,
@@ -117,7 +123,7 @@
           "prerrequisitos": [
             7
           ],
-          "prereq_expr": "ING129 o ING121 o ING120 o ING216 o ING126 o ING134 o ING127 o CNT026 o (ETU181 y ETU182) o ING229"
+          "prereq_expr": "ING129 o ING121 o ING120 o ING216 o ING126 o ING134 o ING127 o CNT026 o ( ETU181 y ETU182 ) o ING229"
         },
         {
           "id": 13,
@@ -143,7 +149,7 @@
           "prerrequisitos": [
             10
           ],
-          "prereq_expr": "PSIC123 o HUF136 o PSL006"
+          "prereq_expr": "PSIC123 o ( HUF136 o PSL006 )"
         }
       ]
     },
@@ -166,7 +172,7 @@
           "prerrequisitos": [
             12
           ],
-          "prereq_expr": "ING239 o ING210 o ING216 o ING224 o ING126 o CNT126 o (ETU281 y ETU282) o ING217"
+          "prereq_expr": "ING239 o ING210 o ING216 o ING224 o ING126 o CNT126 o ( ETU281 y ETU282 ) o ING217"
         },
         {
           "id": 18,
@@ -237,7 +243,7 @@
             19,
             20
           ],
-          "prereq_expr": "(PSIC211 o PSL104) y (PSIC222 o PSL112) y (PSIC223 o PSL105)"
+          "prereq_expr": "( PSIC211 o PSL104 ) y ( PSIC222 o PSL112 ) y ( PSIC223 o PSL105 )"
         },
         {
           "id": 25,
@@ -260,7 +266,7 @@
           "prerrequisitos": [
             22
           ],
-          "prereq_expr": "PSIC311 o PSL131 o PSL233"
+          "prereq_expr": "PSIC311 o ( PSL131 o PSL233 )"
         },
         {
           "id": 27,
@@ -385,7 +391,7 @@
             30,
             34
           ],
-          "prereq_expr": "PSIC313 y (PSIC321 o PSL234) y (PSIC322 o PSL235) y (PSIC323 o PSL213) y (PSIC325 o PSL344) y (PSIC414 o PSL242)"
+          "prereq_expr": "PSIC313 y ( PSIC321 o PSL234 ) y ( PSIC322 o PSL235 ) y ( PSIC323 o PSL213 ) y ( PSIC325 o PSL344 ) y ( PSIC414 o PSL242 )"
         },
         {
           "id": 39,
@@ -429,7 +435,7 @@
             39,
             40
           ],
-          "prereq_expr": "(PSIC411 o PSL206) y (PSIC412 o PSL314) y (PSIC413 o PSL204) y (PSIC414 o PSL242) y (PSIC415 o PSL345) y (PSIC421 o PSL334 o (PSL331 y PSL335)) y (PSIC422 o PSL315) y (PSIC423 o PSL348) y PSIC424 y (PSIC425 o PSL333)"
+          "prereq_expr": "( PSIC411 o PSL206 ) y ( PSIC412 o PSL314 ) y ( PSIC413 o PSL204 ) y ( PSIC414 o PSL242 ) y ( PSIC415 o PSL345 ) y ( PSIC421 o PSL334 o ( PSL331 y PSL335 ) ) y ( PSIC422 o PSL315 ) y ( PSIC423 o PSL348 ) y PSIC424 y ( PSIC425 o PSL333 )"
         },
         {
           "id": 42,
@@ -448,7 +454,7 @@
             39,
             40
           ],
-          "prereq_expr": "(PSIC411 o PSL206) y (PSIC412 o PSL314) y (PSIC413 o PSL204) y (PSIC414 o PSL242) y (PSIC415 o PSL345) y (PSIC421 o PSL334 o (PSL331 y PSL335)) y (PSIC422 o PSL315) y (PSIC423 o PSL348) y PSIC424 y (PSIC425 o PSL333)"
+          "prereq_expr": "( PSIC411 o PSL206 ) y ( PSIC412 o PSL314 ) y ( PSIC413 o PSL204 ) y ( PSIC414 o PSL242 ) y ( PSIC415 o PSL345 ) y ( PSIC421 o PSL334 o ( PSL331 y PSL335 ) ) y ( PSIC422 o PSL315 ) y ( PSIC423 o PSL348 ) y PSIC424 y ( PSIC425 o PSL333 )"
         },
         {
           "id": 43,
@@ -467,7 +473,7 @@
             39,
             40
           ],
-          "prereq_expr": "(PSIC411 o PSL206) y (PSIC412 o PSL314) y (PSIC413 o PSL204) y (PSIC414 o PSL242) y (PSIC415 o PSL345) y (PSIC421 o PSL334 o (PSL331 y PSL335)) y (PSIC422 o PSL315) y (PSIC423 o PSL348) y PSIC424 y (PSIC425 o PSL333)"
+          "prereq_expr": "( PSIC411 o PSL206 ) y ( PSIC412 o PSL314 ) y ( PSIC413 o PSL204 ) y ( PSIC414 o PSL242 ) y ( PSIC415 o PSL345 ) y ( PSIC421 o PSL334 o ( PSL331 y PSL335 ) ) y ( PSIC422 o PSL315 ) y ( PSIC423 o PSL348 ) y PSIC424 y ( PSIC425 o PSL333 )"
         },
         {
           "id": 44,
@@ -486,7 +492,7 @@
             39,
             40
           ],
-          "prereq_expr": "(PSIC411 o PSL206) y (PSIC412 o PSL314) y (PSIC413 o PSL204) y (PSIC414 o PSL242) y (PSIC415 o PSL345) y (PSIC421 o PSL334 o (PSL331 y PSL335)) y (PSIC422 o PSL315) y (PSIC423 o PSL348) y PSIC424 y (PSIC425 o PSL333)"
+          "prereq_expr": "( PSIC411 o PSL206 ) y ( PSIC412 o PSL314 ) y ( PSIC413 o PSL204 ) y ( PSIC414 o PSL242 ) y ( PSIC415 o PSL345 ) y ( PSIC421 o PSL334 o ( PSL331 y PSL335 ) ) y ( PSIC422 o PSL315 ) y ( PSIC423 o PSL348 ) y PSIC424 y ( PSIC425 o PSL333 )"
         },
         {
           "id": 45,
@@ -505,7 +511,7 @@
             39,
             40
           ],
-          "prereq_expr": "(PSIC411 o PSL206) y (PSIC412 o PSL314) y (PSIC413 o PSL204) y (PSIC414 o PSL242) y (PSIC415 o PSL345) y (PSIC421 o PSL334 o (PSL331 y PSL335)) y (PSIC422 o PSL315) y (PSIC423 o PSL348) y PSIC424 y (PSIC425 o PSL333)"
+          "prereq_expr": "( PSIC411 o PSL206 ) y ( PSIC412 o PSL314 ) y ( PSIC413 o PSL204 ) y ( PSIC414 o PSL242 ) y ( PSIC415 o PSL345 ) y ( PSIC421 o PSL334 o ( PSL331 y PSL335 ) ) y ( PSIC422 o PSL315 ) y ( PSIC423 o PSL348 ) y PSIC424 y ( PSIC425 o PSL333 )"
         }
       ]
     },
@@ -524,9 +530,272 @@
             44,
             45
           ],
-          "prereq_expr": "(PSIC511 o MPC531) y (PSIC512 o MPC532) y PSIC513 y (PSIC514 o PSL323 o PSIC P011 o PSIC P012 o PSIC P036 o PSIC P097 o PSIC P098) y (PSIC515 o PSL332 o PSIC P007 o PSIC P008 o PSIC P009 o PSIC P010 o PSIC P049 o PSIC P096)"
+          "prereq_expr": "( PSIC511 o MPC531 ) y ( PSIC512 o MPC532 ) y PSIC513 y ( PSIC514 o PSL323 o PSICP011 o PSICP012 o PSICP036 o PSICP097 o PSICP098 ) y ( PSIC515 o PSL332 o PSICP007 o PSICP008 o PSICP009 o PSICP010 o PSICP049 o PSICP096 )"
         }
       ]
     }
-  ]
+  ],
+  "equivalencias": {
+    "BIOL080": [
+      [
+        "BIO036"
+      ]
+    ],
+    "ING119": [
+      [
+        "BMA281",
+        "BMA282"
+      ],
+      [
+        "CNT021"
+      ],
+      [
+        "ETU081",
+        "ETU082"
+      ],
+      [
+        "FLG301",
+        "FLG302"
+      ],
+      [
+        "ING050",
+        "ING051"
+      ],
+      [
+        "ING110"
+      ],
+      [
+        "ING111"
+      ],
+      [
+        "ING116"
+      ],
+      [
+        "ING117"
+      ]
+    ],
+    "ING129": [
+      [
+        "CNT026"
+      ],
+      [
+        "ETU181",
+        "ETU182"
+      ],
+      [
+        "ING120"
+      ],
+      [
+        "ING121"
+      ],
+      [
+        "ING126"
+      ],
+      [
+        "ING127"
+      ],
+      [
+        "ING134"
+      ],
+      [
+        "ING216"
+      ],
+      [
+        "ING229"
+      ]
+    ],
+    "ING239": [
+      [
+        "CNT126"
+      ],
+      [
+        "ETU281",
+        "ETU282"
+      ],
+      [
+        "ING126"
+      ],
+      [
+        "ING210"
+      ],
+      [
+        "ING216"
+      ],
+      [
+        "ING217"
+      ],
+      [
+        "ING224"
+      ]
+    ],
+    "PSIC123": [
+      [
+        "HUF136",
+        "PSL006"
+      ]
+    ],
+    "PSIC211": [
+      [
+        "PSL104"
+      ]
+    ],
+    "PSIC212": [
+      [
+        "PSL111"
+      ]
+    ],
+    "PSIC213": [
+      [
+        "FMS180"
+      ]
+    ],
+    "PSIC222": [
+      [
+        "PSL112"
+      ]
+    ],
+    "PSIC223": [
+      [
+        "PSL105"
+      ]
+    ],
+    "PSIC311": [
+      [
+        "PSL131",
+        "PSL233"
+      ]
+    ],
+    "PSIC312": [
+      [
+        "PSL232"
+      ]
+    ],
+    "PSIC314": [
+      [
+        "PSL240"
+      ]
+    ],
+    "PSIC321": [
+      [
+        "PSL234"
+      ]
+    ],
+    "PSIC322": [
+      [
+        "PSL235"
+      ]
+    ],
+    "PSIC323": [
+      [
+        "PSL213"
+      ]
+    ],
+    "PSIC325": [
+      [
+        "PSL344"
+      ]
+    ],
+    "PSIC411": [
+      [
+        "PSL206"
+      ]
+    ],
+    "PSIC412": [
+      [
+        "PSL314"
+      ]
+    ],
+    "PSIC413": [
+      [
+        "PSL204"
+      ]
+    ],
+    "PSIC414": [
+      [
+        "PSL242"
+      ]
+    ],
+    "PSIC415": [
+      [
+        "PSL345"
+      ]
+    ],
+    "PSIC421": [
+      [
+        "PSL331",
+        "PSL335"
+      ],
+      [
+        "PSL334"
+      ]
+    ],
+    "PSIC422": [
+      [
+        "PSL315"
+      ]
+    ],
+    "PSIC423": [
+      [
+        "PSL348"
+      ]
+    ],
+    "PSIC425": [
+      [
+        "PSL333"
+      ]
+    ],
+    "PSIC511": [
+      [
+        "MPC531"
+      ]
+    ],
+    "PSIC512": [
+      [
+        "MPC532"
+      ]
+    ],
+    "PSIC514": [
+      [
+        "PSICP011"
+      ],
+      [
+        "PSICP012"
+      ],
+      [
+        "PSICP036"
+      ],
+      [
+        "PSICP097"
+      ],
+      [
+        "PSICP098"
+      ],
+      [
+        "PSL323"
+      ]
+    ],
+    "PSIC515": [
+      [
+        "PSICP007"
+      ],
+      [
+        "PSICP008"
+      ],
+      [
+        "PSICP009"
+      ],
+      [
+        "PSICP010"
+      ],
+      [
+        "PSICP049"
+      ],
+      [
+        "PSICP096"
+      ],
+      [
+        "PSL332"
+      ]
+    ]
+  }
 }

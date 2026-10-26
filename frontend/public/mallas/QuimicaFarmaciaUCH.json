@@ -1,0 +1,865 @@
+{
+  "carrera": "Química y Farmacia (UCH)",
+  "universidad": "Universidad de Chile",
+  "total_creditos": 330,
+  "nota_codigos": "Los códigos QF001, QF002, etc. son códigos internos para el visor de mallas; la fuente oficial consultada entrega nombres, SCT, línea formativa y requisitos, pero no códigos de asignatura.",
+  "semestres": [
+    {
+      "numero": 1,
+      "cursos": [
+        {
+          "id": 1,
+          "codigo": "QF001",
+          "nombre": "Química General I",
+          "sct": 8,
+          "prerrequisitos": [],
+          "area": "quimica",
+          "linea": "basica"
+        },
+        {
+          "id": 2,
+          "codigo": "QF002",
+          "nombre": "Técnicas de Laboratorio Químico",
+          "sct": 4,
+          "prerrequisitos": [],
+          "area": "quimica",
+          "linea": "basica"
+        },
+        {
+          "id": 3,
+          "codigo": "QF003",
+          "nombre": "Introducción al Álgebra y Cálculo",
+          "sct": 8,
+          "prerrequisitos": [],
+          "area": "matematica",
+          "linea": "basica"
+        },
+        {
+          "id": 4,
+          "codigo": "QF004",
+          "nombre": "Orientación Farmacéutica",
+          "sct": 3,
+          "prerrequisitos": [],
+          "area": "farmacia",
+          "linea": "especializada"
+        },
+        {
+          "id": 5,
+          "codigo": "QF005",
+          "nombre": "Curso de Formación General",
+          "sct": 4,
+          "prerrequisitos": [],
+          "area": "formacion",
+          "linea": "general"
+        },
+        {
+          "id": 6,
+          "codigo": "QF006",
+          "nombre": "Inglés I",
+          "sct": 3,
+          "prerrequisitos": [],
+          "area": "formacion",
+          "linea": "complementaria"
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "cursos": [
+        {
+          "id": 7,
+          "codigo": "QF007",
+          "nombre": "Química General II",
+          "sct": 5,
+          "prerrequisitos": [
+            1
+          ],
+          "area": "quimica",
+          "linea": "basica"
+        },
+        {
+          "id": 8,
+          "codigo": "QF008",
+          "nombre": "Laboratorio de Química General",
+          "sct": 3,
+          "prerrequisitos": [
+            2,
+            1
+          ],
+          "area": "quimica",
+          "linea": "basica"
+        },
+        {
+          "id": 9,
+          "codigo": "QF009",
+          "nombre": "Física General",
+          "sct": 5,
+          "prerrequisitos": [
+            3
+          ],
+          "area": "fisica",
+          "linea": "basica"
+        },
+        {
+          "id": 10,
+          "codigo": "QF010",
+          "nombre": "Cálculo Diferencial e Integral",
+          "sct": 6,
+          "prerrequisitos": [
+            3
+          ],
+          "area": "matematica",
+          "linea": "basica"
+        },
+        {
+          "id": 11,
+          "codigo": "QF011",
+          "nombre": "Química Transformadora",
+          "sct": 3,
+          "prerrequisitos": [],
+          "area": "quimica",
+          "linea": "basica"
+        },
+        {
+          "id": 12,
+          "codigo": "QF012",
+          "nombre": "Biología Celular",
+          "sct": 5,
+          "prerrequisitos": [
+            2
+          ],
+          "area": "biologia",
+          "linea": "basica"
+        },
+        {
+          "id": 13,
+          "codigo": "QF013",
+          "nombre": "Inglés II",
+          "sct": 3,
+          "prerrequisitos": [
+            6
+          ],
+          "area": "formacion",
+          "linea": "complementaria"
+        }
+      ]
+    },
+    {
+      "numero": 3,
+      "cursos": [
+        {
+          "id": 14,
+          "codigo": "QF014",
+          "nombre": "Química Orgánica I",
+          "sct": 5,
+          "prerrequisitos": [
+            7
+          ],
+          "area": "quimica",
+          "linea": "basica"
+        },
+        {
+          "id": 15,
+          "codigo": "QF015",
+          "nombre": "Química Analítica I",
+          "sct": 5,
+          "prerrequisitos": [
+            7,
+            8
+          ],
+          "area": "quimica",
+          "linea": "basica"
+        },
+        {
+          "id": 16,
+          "codigo": "QF016",
+          "nombre": "Laboratorio I de Química Orgánica",
+          "sct": 4,
+          "prerrequisitos": [
+            7,
+            8
+          ],
+          "area": "quimica",
+          "linea": "basica"
+        },
+        {
+          "id": 17,
+          "codigo": "QF017",
+          "nombre": "Estadística y Análisis de Datos",
+          "sct": 4,
+          "prerrequisitos": [
+            10
+          ],
+          "area": "matematica",
+          "linea": "basica"
+        },
+        {
+          "id": 18,
+          "codigo": "QF018",
+          "nombre": "Fundamentos de Ciencias Farmacéuticas",
+          "sct": 2,
+          "prerrequisitos": [
+            4,
+            11
+          ],
+          "area": "farmacia",
+          "linea": "basica"
+        },
+        {
+          "id": 19,
+          "codigo": "QF019",
+          "nombre": "Fisiología Celular",
+          "sct": 5,
+          "prerrequisitos": [
+            12,
+            9
+          ],
+          "area": "biologia",
+          "linea": "basica"
+        },
+        {
+          "id": 20,
+          "codigo": "QF020",
+          "nombre": "Curso de Formación General",
+          "sct": 2,
+          "prerrequisitos": [],
+          "area": "formacion",
+          "linea": "general"
+        },
+        {
+          "id": 21,
+          "codigo": "QF021",
+          "nombre": "Inglés III",
+          "sct": 3,
+          "prerrequisitos": [
+            13
+          ],
+          "area": "formacion",
+          "linea": "complementaria"
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "cursos": [
+        {
+          "id": 22,
+          "codigo": "QF022",
+          "nombre": "Química Orgánica II",
+          "sct": 5,
+          "prerrequisitos": [
+            14
+          ],
+          "area": "quimica",
+          "linea": "basica"
+        },
+        {
+          "id": 23,
+          "codigo": "QF023",
+          "nombre": "Laboratorio de Análisis Químico",
+          "sct": 4,
+          "prerrequisitos": [
+            15,
+            8,
+            17
+          ],
+          "area": "quimica",
+          "linea": "basica"
+        },
+        {
+          "id": 24,
+          "codigo": "QF024",
+          "nombre": "Química Analítica II",
+          "sct": 5,
+          "prerrequisitos": [
+            15
+          ],
+          "area": "quimica",
+          "linea": "basica"
+        },
+        {
+          "id": 25,
+          "codigo": "QF025",
+          "nombre": "Fisicoquímica I",
+          "sct": 6,
+          "prerrequisitos": [
+            9,
+            10,
+            14
+          ],
+          "area": "quimica",
+          "linea": "basica"
+        },
+        {
+          "id": 26,
+          "codigo": "QF026",
+          "nombre": "Fisiología de Sistemas",
+          "sct": 4,
+          "prerrequisitos": [
+            19
+          ],
+          "area": "biologia",
+          "linea": "basica"
+        },
+        {
+          "id": 27,
+          "codigo": "QF027",
+          "nombre": "Práctica Intermedia",
+          "sct": 3,
+          "prerrequisitos": [
+            18
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        },
+        {
+          "id": 28,
+          "codigo": "QF028",
+          "nombre": "Inglés IV",
+          "sct": 3,
+          "prerrequisitos": [
+            21
+          ],
+          "area": "formacion",
+          "linea": "complementaria"
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "cursos": [
+        {
+          "id": 29,
+          "codigo": "QF029",
+          "nombre": "Laboratorio de Análisis Instrumental",
+          "sct": 4,
+          "prerrequisitos": [
+            24,
+            23
+          ],
+          "area": "quimica",
+          "linea": "basica"
+        },
+        {
+          "id": 30,
+          "codigo": "QF030",
+          "nombre": "Botánica y Farmacognosia",
+          "sct": 7,
+          "prerrequisitos": [
+            22,
+            24
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        },
+        {
+          "id": 31,
+          "codigo": "QF031",
+          "nombre": "Química de Heterocíclicos y Análisis Espectroscópico",
+          "sct": 5,
+          "prerrequisitos": [
+            22
+          ],
+          "area": "quimica",
+          "linea": "basica"
+        },
+        {
+          "id": 32,
+          "codigo": "QF032",
+          "nombre": "Bioquímica",
+          "sct": 5,
+          "prerrequisitos": [
+            22
+          ],
+          "area": "biologia",
+          "linea": "basica"
+        },
+        {
+          "id": 33,
+          "codigo": "QF033",
+          "nombre": "Farmacología General",
+          "sct": 6,
+          "prerrequisitos": [
+            26,
+            23
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        },
+        {
+          "id": 34,
+          "codigo": "QF034",
+          "nombre": "Gestión de Calidad",
+          "sct": 3,
+          "prerrequisitos": [
+            18
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "cursos": [
+        {
+          "id": 35,
+          "codigo": "QF035",
+          "nombre": "Microbiología",
+          "sct": 5,
+          "prerrequisitos": [
+            32
+          ],
+          "area": "biologia",
+          "linea": "especializada"
+        },
+        {
+          "id": 36,
+          "codigo": "QF036",
+          "nombre": "Farmacoquímica I",
+          "sct": 5,
+          "prerrequisitos": [
+            33,
+            31
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        },
+        {
+          "id": 37,
+          "codigo": "QF037",
+          "nombre": "Farmacología de Sistemas I",
+          "sct": 5,
+          "prerrequisitos": [
+            33
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        },
+        {
+          "id": 38,
+          "codigo": "QF038",
+          "nombre": "Fisiopatología Molecular",
+          "sct": 5,
+          "prerrequisitos": [
+            32,
+            26
+          ],
+          "area": "biologia",
+          "linea": "especializada"
+        },
+        {
+          "id": 39,
+          "codigo": "QF039",
+          "nombre": "Legislación Farmacéutica",
+          "sct": 4,
+          "prerrequisitos": [
+            34,
+            27
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        },
+        {
+          "id": 40,
+          "codigo": "QF040",
+          "nombre": "Fisicoquímica Farmacéutica",
+          "sct": 6,
+          "prerrequisitos": [
+            25
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "cursos": [
+        {
+          "id": 41,
+          "codigo": "QF041",
+          "nombre": "Fisiopatología y Semiología",
+          "sct": 5,
+          "prerrequisitos": [
+            38
+          ],
+          "area": "biologia",
+          "linea": "especializada"
+        },
+        {
+          "id": 42,
+          "codigo": "QF042",
+          "nombre": "Farmacoquímica II",
+          "sct": 5,
+          "prerrequisitos": [
+            36
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        },
+        {
+          "id": 43,
+          "codigo": "QF043",
+          "nombre": "Farmacología de Sistemas II",
+          "sct": 6,
+          "prerrequisitos": [
+            37,
+            35
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        },
+        {
+          "id": 44,
+          "codigo": "QF044",
+          "nombre": "Salud Pública",
+          "sct": 3,
+          "prerrequisitos": [
+            39
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        },
+        {
+          "id": 45,
+          "codigo": "QF045",
+          "nombre": "Tecnología Farmacéutica I",
+          "sct": 6,
+          "prerrequisitos": [
+            40,
+            39
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        },
+        {
+          "id": 46,
+          "codigo": "QF046",
+          "nombre": "Operaciones Unitarias para Q&F",
+          "sct": 5,
+          "prerrequisitos": [
+            40
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "cursos": [
+        {
+          "id": 47,
+          "codigo": "QF047",
+          "nombre": "Análisis de Medicamento, Doping y Drogas de Abuso",
+          "sct": 5,
+          "prerrequisitos": [
+            42,
+            29
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        },
+        {
+          "id": 48,
+          "codigo": "QF048",
+          "nombre": "Nutrición Clínica",
+          "sct": 3,
+          "prerrequisitos": [
+            41
+          ],
+          "area": "biologia",
+          "linea": "especializada"
+        },
+        {
+          "id": 49,
+          "codigo": "QF049",
+          "nombre": "Bioquímica Clínica",
+          "sct": 4,
+          "prerrequisitos": [
+            41
+          ],
+          "area": "biologia",
+          "linea": "especializada"
+        },
+        {
+          "id": 50,
+          "codigo": "QF050",
+          "nombre": "Biofarmacia y Farmacocinética",
+          "sct": 6,
+          "prerrequisitos": [
+            45,
+            33
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        },
+        {
+          "id": 51,
+          "codigo": "QF051",
+          "nombre": "Tecnología Farmacéutica II",
+          "sct": 6,
+          "prerrequisitos": [
+            45,
+            46
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        },
+        {
+          "id": 52,
+          "codigo": "QF052",
+          "nombre": "Administración y Gestión Farmacéutica",
+          "sct": 3,
+          "prerrequisitos": [
+            45
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        },
+        {
+          "id": 53,
+          "codigo": "QF053",
+          "nombre": "Estadística Farmacéutica",
+          "sct": 3,
+          "prerrequisitos": [
+            17,
+            44
+          ],
+          "area": "matematica",
+          "linea": "especializada"
+        }
+      ]
+    },
+    {
+      "numero": 9,
+      "cursos": [
+        {
+          "id": 54,
+          "codigo": "QF054",
+          "nombre": "Farmacología Clínica",
+          "sct": 6,
+          "prerrequisitos": [
+            49,
+            50,
+            43
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        },
+        {
+          "id": 55,
+          "codigo": "QF055",
+          "nombre": "Bromatología",
+          "sct": 4,
+          "prerrequisitos": [
+            48,
+            29
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        },
+        {
+          "id": 56,
+          "codigo": "QF056",
+          "nombre": "Toxicología",
+          "sct": 5,
+          "prerrequisitos": [
+            43,
+            49
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        },
+        {
+          "id": 57,
+          "codigo": "QF057",
+          "nombre": "Farmacia Asistencial",
+          "sct": 4,
+          "prerrequisitos": [
+            52,
+            44
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        },
+        {
+          "id": 58,
+          "codigo": "QF058",
+          "nombre": "Tecnología Cosmética",
+          "sct": 4,
+          "prerrequisitos": [
+            51
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        },
+        {
+          "id": 59,
+          "codigo": "QF059",
+          "nombre": "Electivo Especializado",
+          "sct": 7,
+          "prerrequisitos": [],
+          "area": "otros",
+          "linea": "especializada"
+        }
+      ]
+    },
+    {
+      "numero": 10,
+      "cursos": [
+        {
+          "id": 60,
+          "codigo": "QF060",
+          "nombre": "Farmacia Clínica",
+          "sct": 5,
+          "prerrequisitos": [
+            54
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        },
+        {
+          "id": 61,
+          "codigo": "QF061",
+          "nombre": "Práctica Profesional en Farmacia Comunitaria",
+          "sct": 7,
+          "prerrequisitos": [
+            54,
+            56,
+            52
+          ],
+          "area": "farmacia",
+          "linea": "profesional"
+        },
+        {
+          "id": 62,
+          "codigo": "QF062",
+          "nombre": "Biotecnología Farmacéutica",
+          "sct": 4,
+          "prerrequisitos": [
+            51,
+            38
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        },
+        {
+          "id": 63,
+          "codigo": "QF063",
+          "nombre": "Economía en Salud y Marketing Farmacéutico",
+          "sct": 3,
+          "prerrequisitos": [
+            52,
+            54,
+            44
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        },
+        {
+          "id": 64,
+          "codigo": "QF064",
+          "nombre": "Innovación y Proyectos",
+          "sct": 3,
+          "prerrequisitos": [
+            53
+          ],
+          "area": "farmacia",
+          "linea": "especializada"
+        },
+        {
+          "id": 65,
+          "codigo": "QF065",
+          "nombre": "Electivos Especializados",
+          "sct": 8,
+          "prerrequisitos": [],
+          "area": "otros",
+          "linea": "especializada"
+        }
+      ]
+    },
+    {
+      "numero": 11,
+      "cursos": [
+        {
+          "id": 66,
+          "codigo": "QF066",
+          "nombre": "Actividad Final de Titulación",
+          "sct": 30,
+          "prerrequisitos": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65
+          ],
+          "prereq_expr": "10 semestres aprobados",
+          "area": "otros",
+          "linea": "profesional"
+        }
+      ]
+    }
+  ]
+}

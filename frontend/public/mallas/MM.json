@@ -1,6 +1,13 @@
 {
   "carrera": "Ingeniería en Marina Mercante (UNAB)",
   "codigo_programa": "UNAB14001",
+  "fuente_oficial": {
+    "programa": "UNAB14001",
+    "catalogo": "202010",
+    "catalogoTexto": "PRIMER SEMESTRE 2020",
+    "lectura": "OCR revisado"
+  },
+  "totalSemestres": 8,
   "menciones_disponibles": [
     {
       "codigo": "MAQ",
@@ -11,7 +18,6 @@
       "nombre": "Cubierta"
     }
   ],
-  "totalSemestres": 8,
   "total_creditos_por_mencion": {
     "MAQ": 624,
     "CUBI": 618
@@ -74,7 +80,7 @@
             2,
             3
           ],
-          "prereq_expr": "CFIS310 y FMMP012 (o equivalentes)"
+          "prereq_expr": "( CFIS310 o FMF023 o FMF010 o FMF024 ) y ( FMMP012 o FMM013 o FMM012 o FMM035 )"
         },
         {
           "id": 7,
@@ -84,7 +90,7 @@
           "prerrequisitos": [
             3
           ],
-          "prereq_expr": "FMMP012 (o equivalentes)"
+          "prereq_expr": "FMMP012 o FMM013 o FMM010 o FMM035 o FMM012"
         },
         {
           "id": 8,
@@ -94,7 +100,7 @@
           "prerrequisitos": [
             2
           ],
-          "prereq_expr": "CFIS310 (o equivalentes)"
+          "prereq_expr": "CFIS310 o FMF010"
         },
         {
           "id": 9,
@@ -104,7 +110,7 @@
           "prerrequisitos": [
             4
           ],
-          "prereq_expr": "IMMC101 (más equivalencias antiguas en la malla)"
+          "prereq_expr": "IMMC101 o ( MMC121 y MMC122 y MMC181 )"
         },
         {
           "id": 10,
@@ -114,7 +120,7 @@
           "prerrequisitos": [
             5
           ],
-          "prereq_expr": "ING119 (o equivalentes)"
+          "prereq_expr": "ING119 o ING111 o ING110 o ING116 o ING117 o CNT021 o ( ING050 y ING051 ) o ( FLG301 y FLG302 ) o ( BMA281 y BMA282 ) o ( ETU081 y ETU082 )"
         }
       ]
     },
@@ -129,7 +135,7 @@
           "prerrequisitos": [
             8
           ],
-          "prereq_expr": "IMMC102"
+          "prereq_expr": "IMMC102 o QUI103"
         },
         {
           "id": 12,
@@ -139,7 +145,7 @@
           "prerrequisitos": [
             6
           ],
-          "prereq_expr": "CFIS328"
+          "prereq_expr": "CFIS328 o FMF110"
         },
         {
           "id": 13,
@@ -149,7 +155,7 @@
           "prerrequisitos": [
             9
           ],
-          "prereq_expr": "IMMC103 (más equivalencias antiguas en la malla)"
+          "prereq_expr": "IMMC103 o ( MMC162 y MMC164 )"
         },
         {
           "id": 14,
@@ -159,7 +165,7 @@
           "prerrequisitos": [
             6
           ],
-          "prereq_expr": "CFIS328"
+          "prereq_expr": "CFIS328 o FMF110"
         },
         {
           "id": 15,
@@ -169,7 +175,7 @@
           "prerrequisitos": [
             10
           ],
-          "prereq_expr": "ING129 (o equivalentes)"
+          "prereq_expr": "ING129 o ING121 o ING120 o ING216 o ING126 o ING134 o ING127 o CNT026 o ( ETU181 y ETU182 ) o ING229"
         }
       ]
     }
@@ -190,7 +196,7 @@
                 11,
                 12
               ],
-              "prereq_expr": "IMMC201 e IMMC202 (o equivalentes)"
+              "prereq_expr": "( IMMC201 o MMP170 ) y ( IMMC202 o MMC192 )"
             },
             {
               "id": 17,
@@ -201,7 +207,7 @@
                 7,
                 12
               ],
-              "prereq_expr": "FMMP112 e IMMC202 (o equivalentes)"
+              "prereq_expr": "( FMMP112 o FMM030 ) y ( IMMC202 o MMC192 )"
             },
             {
               "id": 18,
@@ -212,7 +218,7 @@
                 7,
                 12
               ],
-              "prereq_expr": "FMMP112 e IMMC202 (o equivalentes)"
+              "prereq_expr": "( FMMP112 o FMM030 ) y ( IMMC202 o MMC192 )"
             },
             {
               "id": 19,
@@ -222,7 +228,7 @@
               "prerrequisitos": [
                 14
               ],
-              "prereq_expr": "IMMC204 (o equivalentes)"
+              "prereq_expr": "IMMC204 o MMP242"
             },
             {
               "id": 20,
@@ -232,7 +238,7 @@
               "prerrequisitos": [
                 4
               ],
-              "prereq_expr": "IMMC101 (más equivalencias antiguas en la malla)"
+              "prereq_expr": "IMMC101 o ( MMC121 y MMC122 y MMC181 )"
             },
             {
               "id": 21,
@@ -242,7 +248,7 @@
               "prerrequisitos": [
                 15
               ],
-              "prereq_expr": "ING239 (o equivalentes)"
+              "prereq_expr": "ING239 o ING210 o ING216 o ING224 o ING126 o CNT126 o ( ETU281 y ETU282 ) o ING217"
             }
           ]
         },
@@ -266,7 +272,7 @@
                 13,
                 16
               ],
-              "prereq_expr": "IMMC203 y/o IMMC205 (según equivalencias indicadas en la malla)"
+              "prereq_expr": "IMMC203 y ( IMMC205 o ( MMP272 ) o ( MMQ272 y MMQ372 ) )"
             },
             {
               "id": 24,
@@ -286,7 +292,7 @@
               "prerrequisitos": [
                 19
               ],
-              "prereq_expr": "IMMQ203"
+              "prereq_expr": "IMMQ203 o MMQ240"
             },
             {
               "id": 26,
@@ -297,7 +303,7 @@
                 19,
                 17
               ],
-              "prereq_expr": "IMMQ203 e IMMQ201 (o equivalentes)"
+              "prereq_expr": "( IMMQ203 o MMQ240 ) y ( IMMQ201 o ( MMQ212 y MMQ213 ) )"
             },
             {
               "id": 27,
@@ -307,7 +313,7 @@
               "prerrequisitos": [
                 17
               ],
-              "prereq_expr": "IMMQ201 (o equivalentes)"
+              "prereq_expr": "IMMQ201 o ( MMQ212 y MMQ213 )"
             }
           ]
         },
@@ -332,7 +338,7 @@
               "prerrequisitos": [
                 7
               ],
-              "prereq_expr": "FMMP112 (o equivalentes)"
+              "prereq_expr": "( FMMP112 o FMM030 )"
             },
             {
               "id": 30,
@@ -340,10 +346,9 @@
               "nombre": "Mantención de Motores I",
               "sct": 12,
               "prerrequisitos": [
-                24,
-                26
+                24
               ],
-              "prereq_expr": "IMMQ301 e IMMQ303"
+              "prereq_expr": "IMMQ301 o MMQ103"
             },
             {
               "id": 31,
@@ -353,7 +358,7 @@
               "prerrequisitos": [
                 25
               ],
-              "prereq_expr": "IMMQ302 (o equivalentes)"
+              "prereq_expr": "IMMQ302 o MMQ244"
             },
             {
               "id": 32,
@@ -363,7 +368,7 @@
               "prerrequisitos": [
                 27
               ],
-              "prereq_expr": "IMMQ304 (o equivalentes)"
+              "prereq_expr": "IMMQ304 o MMQ214"
             },
             {
               "id": 33,
@@ -373,7 +378,7 @@
               "prerrequisitos": [
                 27
               ],
-              "prereq_expr": "IMMQ304 (o equivalentes)"
+              "prereq_expr": "IMMQ304 o MMQ214"
             }
           ]
         },
@@ -398,7 +403,7 @@
               "prerrequisitos": [
                 29
               ],
-              "prereq_expr": "IMMC303"
+              "prereq_expr": "IMMC303 o MMC134"
             },
             {
               "id": 36,
@@ -408,7 +413,7 @@
               "prerrequisitos": [
                 30
               ],
-              "prereq_expr": "IMMQ305"
+              "prereq_expr": "IMMQ305 o MMQ104"
             },
             {
               "id": 37,
@@ -418,7 +423,7 @@
               "prerrequisitos": [
                 31
               ],
-              "prereq_expr": "IMMQ306"
+              "prereq_expr": "IMMQ306 o MMQ341"
             },
             {
               "id": 38,
@@ -428,7 +433,7 @@
               "prerrequisitos": [
                 33
               ],
-              "prereq_expr": "IMMQ308"
+              "prereq_expr": "IMMQ308 o MMQ216"
             },
             {
               "id": 39,
@@ -437,11 +442,10 @@
               "sct": 10,
               "prerrequisitos": [
                 30,
-                27,
                 31,
                 33
               ],
-              "prereq_expr": "IMMQ305, IMMQ304, IMMQ306 e IMMQ308 (según equivalencias de la malla)"
+              "prereq_expr": "( IMMQ305 o MMQ104 ) y ( IMMQ306 o MMQ341 ) y ( IMMQ308 o MMQ216 )"
             }
           ]
         },
@@ -466,7 +470,7 @@
               "prerrequisitos": [
                 35
               ],
-              "prereq_expr": "IMMC402 (o equivalentes)"
+              "prereq_expr": "IMMC402 o MMC230"
             },
             {
               "id": 42,
@@ -474,10 +478,9 @@
               "nombre": "Inglés Técnico Marítimo",
               "sct": 9,
               "prerrequisitos": [
-                21,
-                37
+                21
               ],
-              "prereq_expr": "ING249 e IMMQ402",
+              "prereq_expr": "( ING249 o ING229 )",
               "correquisitos": [
                 44
               ],
@@ -491,7 +494,7 @@
               "prerrequisitos": [
                 37
               ],
-              "prereq_expr": "IMMQ402 (según equivalencias de la malla)"
+              "prereq_expr": "IMMQ402 o MMQ342"
             },
             {
               "id": 44,
@@ -502,7 +505,7 @@
                 26,
                 38
               ],
-              "prereq_expr": "IMMQ303 e IMMQ403"
+              "prereq_expr": "IMMQ303 y IMMQ403"
             },
             {
               "id": 45,
@@ -510,9 +513,9 @@
               "nombre": "Proyecto de Título",
               "sct": 4,
               "prerrequisitos": [
-                41
+                39
               ],
-              "prereq_expr": "IMMC404"
+              "prereq_expr": "IMMQ404"
             },
             {
               "id": 46,
@@ -543,7 +546,7 @@
                 11,
                 12
               ],
-              "prereq_expr": "IMMC201 e IMMC202 (o equivalentes)"
+              "prereq_expr": "( IMMC201 o MMP170 ) y ( IMMC202 o MMC192 )"
             },
             {
               "id": 48,
@@ -553,7 +556,7 @@
               "prerrequisitos": [
                 7
               ],
-              "prereq_expr": "FMMP112 (o equivalentes)"
+              "prereq_expr": "FMMP112 o FMM030"
             },
             {
               "id": 49,
@@ -564,7 +567,7 @@
                 14,
                 7
               ],
-              "prereq_expr": "IMMC204 y FMMP112 (o equivalentes)"
+              "prereq_expr": "( IMMC204 o MMP242 ) y ( FMMP112 o FMM030 )"
             },
             {
               "id": 50,
@@ -574,7 +577,7 @@
               "prerrequisitos": [
                 12
               ],
-              "prereq_expr": "IMMC202 (o equivalentes)"
+              "prereq_expr": "IMMC202 o MMC192"
             },
             {
               "id": 51,
@@ -584,7 +587,7 @@
               "prerrequisitos": [
                 4
               ],
-              "prereq_expr": "IMMC101 (más equivalencias antiguas en la malla)"
+              "prereq_expr": "IMMC101 o ( MMC121 y MMC122 y MMC181 )"
             },
             {
               "id": 52,
@@ -594,7 +597,7 @@
               "prerrequisitos": [
                 15
               ],
-              "prereq_expr": "ING239 (o equivalentes)"
+              "prereq_expr": "ING239 o ING210 o ING216 o ING224 o ING126 o CNT126 o ( ETU281 y ETU282 ) o ING217"
             }
           ]
         },
@@ -618,7 +621,7 @@
                 13,
                 47
               ],
-              "prereq_expr": "IMMC203 y/o IMMC205 (según equivalencias indicadas en la malla)"
+              "prereq_expr": "IMMC203 y ( IMMC205 o ( MMP272 ) o ( MMQ272 y MMQ372 ) )"
             },
             {
               "id": 55,
@@ -628,7 +631,7 @@
               "prerrequisitos": [
                 49
               ],
-              "prereq_expr": "IMMP202"
+              "prereq_expr": "IMMP202 o MMP151"
             },
             {
               "id": 56,
@@ -638,11 +641,11 @@
               "prerrequisitos": [
                 49
               ],
-              "prereq_expr": "IMMP202",
+              "prereq_expr": "( IMMP202 o MMP151 )",
               "correquisitos": [
                 55
               ],
-              "correq_expr": "IMMP301"
+              "correq_expr": "( IMMP301 o MMP152 )"
             },
             {
               "id": 57,
@@ -653,7 +656,7 @@
                 50,
                 47
               ],
-              "prereq_expr": "IMMP203 e IMMC205 (según equivalencias de la malla)"
+              "prereq_expr": "( IMMP203 o MMP394 ) y ( IMMC205 o MMP272 )"
             },
             {
               "id": 58,
@@ -663,7 +666,7 @@
               "prerrequisitos": [
                 49
               ],
-              "prereq_expr": "IMMP202"
+              "prereq_expr": "IMMP202 o MMP151"
             }
           ]
         },
@@ -688,7 +691,7 @@
               "prerrequisitos": [
                 7
               ],
-              "prereq_expr": "FMMP112 (o equivalentes)"
+              "prereq_expr": "( FMMP112 o FMM030 )"
             },
             {
               "id": 61,
@@ -698,7 +701,7 @@
               "prerrequisitos": [
                 55
               ],
-              "prereq_expr": "IMMP301"
+              "prereq_expr": "IMMP301 o MMP152"
             },
             {
               "id": 62,
@@ -719,7 +722,7 @@
                 48,
                 55
               ],
-              "prereq_expr": "IMMP201 e IMMP301 (según equivalencias indicadas en la malla)"
+              "prereq_expr": "( IMMP201 o MMP358 ) y ( IMMP301 o MMP152 )"
             },
             {
               "id": 64,
@@ -729,7 +732,7 @@
               "prerrequisitos": [
                 57
               ],
-              "prereq_expr": "IMMP303 (según equivalencias indicadas en la malla)"
+              "prereq_expr": "IMMP303 o ( MMP394 y MMP372 )"
             }
           ]
         },
@@ -754,7 +757,7 @@
               "prerrequisitos": [
                 60
               ],
-              "prereq_expr": "IMMC303"
+              "prereq_expr": "IMMC303 o MMC134"
             },
             {
               "id": 67,
@@ -764,7 +767,7 @@
               "prerrequisitos": [
                 61
               ],
-              "prereq_expr": "IMMP305"
+              "prereq_expr": "IMMP305 o MMP253"
             },
             {
               "id": 68,
@@ -774,7 +777,7 @@
               "prerrequisitos": [
                 58
               ],
-              "prereq_expr": "IMMP304"
+              "prereq_expr": "IMMP304 o MMP254"
             },
             {
               "id": 69,
@@ -786,7 +789,7 @@
                 64,
                 60
               ],
-              "prereq_expr": "IMMP305, IMMP308 e IMMC303 (según equivalencias indicadas en la malla)"
+              "prereq_expr": "( IMMP305 o MMP253 ) y ( IMMP308 o MMP374 ) y ( IMMC303 o MMC134 )"
             },
             {
               "id": 70,
@@ -796,7 +799,7 @@
               "prerrequisitos": [
                 57
               ],
-              "prereq_expr": "IMMP303 (según equivalencias indicadas en la malla)"
+              "prereq_expr": "IMMP303 o ( MMP394 y MMP372 )"
             }
           ]
         },
@@ -821,7 +824,7 @@
               "prerrequisitos": [
                 66
               ],
-              "prereq_expr": "IMMC402 (o equivalentes)"
+              "prereq_expr": "IMMC402 o MMC230"
             },
             {
               "id": 73,
@@ -832,7 +835,7 @@
                 52,
                 68
               ],
-              "prereq_expr": "ING249 e IMMP402"
+              "prereq_expr": "( ING249 o ING229 ) y ( IMMP402 o MMP382 )"
             },
             {
               "id": 74,
@@ -844,7 +847,7 @@
                 63,
                 62
               ],
-              "prereq_expr": "IMMP402, IMMP307 e IMMP306 (según equivalencias indicadas en la malla)"
+              "prereq_expr": "( IMMP402 o MMP382 ) y ( IMMP307 o MMP292 ) y IMMP306"
             },
             {
               "id": 75,
@@ -854,7 +857,7 @@
               "prerrequisitos": [
                 70
               ],
-              "prereq_expr": "IMMP404 (o equivalentes)"
+              "prereq_expr": "IMMP404 o MMC330"
             },
             {
               "id": 76,
@@ -865,7 +868,7 @@
                 69,
                 66
               ],
-              "prereq_expr": "IMMP403 e IMMC402 (o equivalentes)"
+              "prereq_expr": "IMMP403 y ( IMMC402 o MMC230 )"
             },
             {
               "id": 77,
@@ -876,11 +879,294 @@
                 51,
                 55
               ],
-              "prereq_expr": "IMMP204 e IMMP301 (o equivalentes)"
+              "prereq_expr": "IMMP204 y ( IMMP301 o MMP152 )"
             }
           ]
         }
       ]
     }
+  },
+  "equivalencias": {
+    "CFIS310": [
+      [
+        "FMF010"
+      ],
+      [
+        "FMF023"
+      ],
+      [
+        "FMF024"
+      ]
+    ],
+    "CFIS328": [
+      [
+        "FMF110"
+      ]
+    ],
+    "FMMP012": [
+      [
+        "FMM010"
+      ],
+      [
+        "FMM012"
+      ],
+      [
+        "FMM013"
+      ],
+      [
+        "FMM035"
+      ]
+    ],
+    "FMMP112": [
+      [
+        "FMM030"
+      ]
+    ],
+    "IMMC101": [
+      [
+        "MMC121",
+        "MMC122",
+        "MMC181"
+      ]
+    ],
+    "IMMC102": [
+      [
+        "QUI103"
+      ]
+    ],
+    "IMMC103": [
+      [
+        "MMC162",
+        "MMC164"
+      ]
+    ],
+    "IMMC201": [
+      [
+        "MMP170"
+      ]
+    ],
+    "IMMC202": [
+      [
+        "MMC192"
+      ]
+    ],
+    "IMMC204": [
+      [
+        "MMP242"
+      ]
+    ],
+    "IMMC205": [
+      [
+        "MMP272"
+      ],
+      [
+        "MMQ272",
+        "MMQ372"
+      ]
+    ],
+    "IMMC303": [
+      [
+        "MMC134"
+      ]
+    ],
+    "IMMC402": [
+      [
+        "MMC230"
+      ]
+    ],
+    "IMMP201": [
+      [
+        "MMP358"
+      ]
+    ],
+    "IMMP202": [
+      [
+        "MMP151"
+      ]
+    ],
+    "IMMP203": [
+      [
+        "MMP394"
+      ]
+    ],
+    "IMMP301": [
+      [
+        "MMP152"
+      ]
+    ],
+    "IMMP303": [
+      [
+        "MMP394",
+        "MMP372"
+      ]
+    ],
+    "IMMP304": [
+      [
+        "MMP254"
+      ]
+    ],
+    "IMMP305": [
+      [
+        "MMP253"
+      ]
+    ],
+    "IMMP307": [
+      [
+        "MMP292"
+      ]
+    ],
+    "IMMP308": [
+      [
+        "MMP374"
+      ]
+    ],
+    "IMMP402": [
+      [
+        "MMP382"
+      ]
+    ],
+    "IMMP404": [
+      [
+        "MMC330"
+      ]
+    ],
+    "IMMQ201": [
+      [
+        "MMQ212",
+        "MMQ213"
+      ]
+    ],
+    "IMMQ203": [
+      [
+        "MMQ240"
+      ]
+    ],
+    "IMMQ301": [
+      [
+        "MMQ103"
+      ]
+    ],
+    "IMMQ302": [
+      [
+        "MMQ244"
+      ]
+    ],
+    "IMMQ304": [
+      [
+        "MMQ214"
+      ]
+    ],
+    "IMMQ305": [
+      [
+        "MMQ104"
+      ]
+    ],
+    "IMMQ306": [
+      [
+        "MMQ341"
+      ]
+    ],
+    "IMMQ308": [
+      [
+        "MMQ216"
+      ]
+    ],
+    "IMMQ402": [
+      [
+        "MMQ342"
+      ]
+    ],
+    "ING119": [
+      [
+        "BMA281",
+        "BMA282"
+      ],
+      [
+        "CNT021"
+      ],
+      [
+        "ETU081",
+        "ETU082"
+      ],
+      [
+        "FLG301",
+        "FLG302"
+      ],
+      [
+        "ING050",
+        "ING051"
+      ],
+      [
+        "ING110"
+      ],
+      [
+        "ING111"
+      ],
+      [
+        "ING116"
+      ],
+      [
+        "ING117"
+      ]
+    ],
+    "ING129": [
+      [
+        "CNT026"
+      ],
+      [
+        "ETU181",
+        "ETU182"
+      ],
+      [
+        "ING120"
+      ],
+      [
+        "ING121"
+      ],
+      [
+        "ING126"
+      ],
+      [
+        "ING127"
+      ],
+      [
+        "ING134"
+      ],
+      [
+        "ING216"
+      ],
+      [
+        "ING229"
+      ]
+    ],
+    "ING239": [
+      [
+        "CNT126"
+      ],
+      [
+        "ETU281",
+        "ETU282"
+      ],
+      [
+        "ING126"
+      ],
+      [
+        "ING210"
+      ],
+      [
+        "ING216"
+      ],
+      [
+        "ING217"
+      ],
+      [
+        "ING224"
+      ]
+    ],
+    "ING249": [
+      [
+        "ING229"
+      ]
+    ]
   }
 }

@@ -46,6 +46,28 @@ const STATIC_UNIVERSIDADES = [
       },
     ],
   },
+  {
+    // Misma URL que en la versión pública: de ella sale el careerId del avance guardado.
+    universidad: "Universidad de Chile",
+    mallas: [
+      {
+        nombre: "Bioquímica",
+        url: "/mallas/BioquimicaUCH.json",
+      },
+      {
+        nombre: "Ingeniería en Alimentos",
+        url: "/mallas/IngenieriaAlimentosUCH.json",
+      },
+      {
+        nombre: "Química",
+        url: "/mallas/QuimicaUCH.json",
+      },
+      {
+        nombre: "Química y Farmacia",
+        url: "/mallas/QuimicaFarmaciaUCH.json",
+      },
+    ],
+  },
 ];
 
 function getApiBase() {

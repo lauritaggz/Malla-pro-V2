@@ -1,6 +1,12 @@
 {
   "carrera": "Ingeniería en Computación e Informática (UNAB)",
-  "total_creditos": 0,
+  "fuente_oficial": {
+    "programa": "UNAB11500",
+    "catalogo": "202010",
+    "catalogoTexto": "PRIMER SEMESTRE 2020",
+    "lectura": "OCR revisado"
+  },
+  "total_creditos": 534,
   "totalSemestres": 8,
   "semestres": [
     {
@@ -51,7 +57,7 @@
           "prerrequisitos": [
             3
           ],
-          "prereq_expr": ""
+          "prereq_expr": "TDFI101 o AUT1301 o IN1201 o ICF121 o INS122 o ICI1201 o IMIN101 o ( GEOL101 o GEO101 ) o ( BIOQ388 o BIOQ398 ) o ( LCBB110 o LCBB100 )"
         },
         {
           "id": 6,
@@ -70,7 +76,7 @@
             1,
             2
           ],
-          "prereq_expr": "CFIS310"
+          "prereq_expr": "( CFIS310 o FMF023 o FMF010 o FMF024 ) y ( FMMP012 o FMM013 o FMM012 o FMM035 )"
         },
         {
           "id": 8,
@@ -80,7 +86,7 @@
           "prerrequisitos": [
             2
           ],
-          "prereq_expr": "FMMP012"
+          "prereq_expr": "FMMP012 o FMM013 o FMM010 o FMM035 o FMM012"
         },
         {
           "id": 9,
@@ -90,7 +96,7 @@
           "prerrequisitos": [
             4
           ],
-          "prereq_expr": "TDFI102"
+          "prereq_expr": "TDFI102 o IND1401 o ICF122 o INS121 o AUT1302"
         }
       ]
     },
@@ -105,7 +111,7 @@
           "prerrequisitos": [
             5
           ],
-          "prereq_expr": "ACAD101"
+          "prereq_expr": "ACAD101 o IIN1201 o ICI1201 o CEGP01"
         },
         {
           "id": 11,
@@ -116,7 +122,7 @@
             7,
             8
           ],
-          "prereq_expr": "CFIS310"
+          "prereq_expr": "( ( CFIS328 o FMF023 o FMF086 ) y ( FMMP112 o FMM033 o FMM112 ) ) o ( ( AUT101 o AUT1303 ) y ( FMMP112 o FMM112 ) )"
         },
         {
           "id": 12,
@@ -126,7 +132,7 @@
           "prerrequisitos": [
             8
           ],
-          "prereq_expr": "FMMP112"
+          "prereq_expr": "FMMP112 o FMM030 o FMM010 o FMM033 o FMM112"
         },
         {
           "id": 13,
@@ -144,7 +150,7 @@
           "prerrequisitos": [
             3
           ],
-          "prereq_expr": ""
+          "prereq_expr": "TDFI101 o IIN1201 o ICF121 o INS122 o ICT1201 o IMIN101 o AUT1301"
         }
       ]
     },
@@ -159,7 +165,7 @@
           "prerrequisitos": [
             12
           ],
-          "prereq_expr": ""
+          "prereq_expr": "FMMP212 o FMM212 o FMM214"
         },
         {
           "id": 16,
@@ -169,7 +175,7 @@
           "prerrequisitos": [
             13
           ],
-          "prereq_expr": "ING119"
+          "prereq_expr": "ING119 o ING111 o ING110 o ING116 o ING117 o CNT021 o ( ING050 y ING051 ) o ( FLG301 y FLG302 ) o ( BMA281 y BMA282 ) o ( ETU081 y ETU082 )"
         },
         {
           "id": 17,
@@ -177,17 +183,17 @@
           "nombre": "Práctica I",
           "sct": 16,
           "prerrequisitos": [
-            10,
-            14
+            14,
+            10
           ],
-          "prereq_expr": "",
+          "prereq_expr": "( TDFI104 o CEGS01 ) y ( ACAD102 o FIC168 )",
           "correquisitos": [
-            15,
             16,
+            15,
             18,
             19
           ],
-          "correq_expr": "FMSP316 y ING129 y INSW221 y PTEC101"
+          "correq_expr": "ING129 y ( FMSP316 o FMM214 ) y ( INSW221 o INS122 ) y ( PTEC101 o INS126 y INS127 )"
         },
         {
           "id": 18,
@@ -197,7 +203,7 @@
           "prerrequisitos": [
             9
           ],
-          "prereq_expr": ""
+          "prereq_expr": "TDFI103 o INS128"
         },
         {
           "id": 19,
@@ -207,7 +213,7 @@
           "prerrequisitos": [
             4
           ],
-          "prereq_expr": "TDFI102"
+          "prereq_expr": "TDFI102 o INS121 o ICF122"
         }
       ]
     },
@@ -222,7 +228,7 @@
           "prerrequisitos": [
             16
           ],
-          "prereq_expr": "ING129"
+          "prereq_expr": "ING129 o ING121 o ING120 o ING216 o ING126 o ING134 o ING127 o CNT026 o ( ETU181 y ETU182 ) o ING229"
         },
         {
           "id": 21,
@@ -232,7 +238,7 @@
           "prerrequisitos": [
             18
           ],
-          "prereq_expr": ""
+          "prereq_expr": "INSW221 o INS122"
         },
         {
           "id": 22,
@@ -242,7 +248,7 @@
           "prerrequisitos": [
             18
           ],
-          "prereq_expr": ""
+          "prereq_expr": "INSW221 INS122"
         },
         {
           "id": 23,
@@ -252,7 +258,7 @@
           "prerrequisitos": [
             19
           ],
-          "prereq_expr": "PTEC101"
+          "prereq_expr": "PTEC101 o ( INS126 y INS127 ) o ICF123"
         },
         {
           "id": 24,
@@ -263,7 +269,7 @@
             15,
             9
           ],
-          "prereq_expr": ""
+          "prereq_expr": "( FMSP316 o ( FMS176 y ICI2206 ) o ( FMM214 ) ) y ( TDFI103 o ICI2402 o INS128 o ( ICF132 y ICF231 ) )"
         }
       ]
     },
@@ -278,7 +284,7 @@
           "prerrequisitos": [
             10
           ],
-          "prereq_expr": "ACAD102"
+          "prereq_expr": "ACAD102 o IND1202 o FIC168"
         },
         {
           "id": 26,
@@ -288,7 +294,7 @@
           "prerrequisitos": [
             20
           ],
-          "prereq_expr": "ING239"
+          "prereq_expr": "ING239 o ING210 o ING216 o ING224 o ING126 o CNT126 o ( ETU281 y ETU282 ) o ING217"
         },
         {
           "id": 27,
@@ -298,7 +304,7 @@
           "prerrequisitos": [
             21
           ],
-          "prereq_expr": ""
+          "prereq_expr": "INSW311 o INS236"
         },
         {
           "id": 28,
@@ -308,7 +314,7 @@
           "prerrequisitos": [
             23
           ],
-          "prereq_expr": "PTEC102"
+          "prereq_expr": "PTEC102 o ( INS124 y INS125 ) o ICF131"
         },
         {
           "id": 29,
@@ -318,7 +324,7 @@
           "prerrequisitos": [
             23
           ],
-          "prereq_expr": ""
+          "prereq_expr": "PTEC102 o ( INS124 y INS125 ) o ICF131"
         },
         {
           "id": 30,
@@ -328,7 +334,7 @@
           "prerrequisitos": [
             14
           ],
-          "prereq_expr": ""
+          "prereq_expr": "TDFI104 o CEGS01 o ICF253"
         }
       ]
     },
@@ -350,14 +356,14 @@
           "sct": 10,
           "prerrequisitos": [
             27,
-            28,
-            29
+            29,
+            28
           ],
-          "prereq_expr": "INSW321",
+          "prereq_expr": "( INSW321 o INS242 ) y ( PTEC105 o ( INS232 o INS235 ) ) y ( PTEC103 o INS234 )",
           "correquisitos": [
             36
           ],
-          "correq_expr": "PTEC106"
+          "correq_expr": "( PTEC106 o INS238 )"
         },
         {
           "id": 33,
@@ -367,7 +373,7 @@
           "prerrequisitos": [
             21
           ],
-          "prereq_expr": ""
+          "prereq_expr": "INSW311 o INS236"
         },
         {
           "id": 34,
@@ -377,7 +383,7 @@
           "prerrequisitos": [
             22
           ],
-          "prereq_expr": ""
+          "prereq_expr": "INSW312 o ITC1701"
         },
         {
           "id": 35,
@@ -387,7 +393,7 @@
           "prerrequisitos": [
             23
           ],
-          "prereq_expr": ""
+          "prereq_expr": "PTEC102 o ( INS124 y INS125 ) o ICF131"
         },
         {
           "id": 36,
@@ -395,10 +401,10 @@
           "nombre": "Ingeniería de Software II",
           "sct": 15,
           "prerrequisitos": [
-            29,
-            28
+            28,
+            29
           ],
-          "prereq_expr": "PTEC105"
+          "prereq_expr": "( PTEC103 o INS234 o ICF331 ) y ( PTEC105 o INS232 o INS235 o ICF232 )"
         }
       ]
     },
@@ -411,11 +417,11 @@
           "nombre": "Práctica II",
           "sct": 26,
           "prerrequisitos": [
-            25,
             27,
-            28
+            28,
+            25
           ],
-          "prereq_expr": "INSW220"
+          "prereq_expr": "( INSW321 o INS242 ) y ( PTEC103 o INS234 ) y ( ACAD103 o FIC168 )"
         },
         {
           "id": 38,
@@ -423,14 +429,14 @@
           "nombre": "Seminario de Licenciatura en Ingeniería",
           "sct": 14,
           "prerrequisitos": [
-            36,
-            32
+            32,
+            36
           ],
-          "prereq_expr": "",
+          "prereq_expr": "( INSW410 o INS237 ) y ( PTEC106 o INS238 )",
           "correquisitos": [
             39
           ],
-          "correq_expr": "INSW422"
+          "correq_expr": "( INSW422 o INS244 )"
         },
         {
           "id": 39,
@@ -440,7 +446,7 @@
           "prerrequisitos": [
             32
           ],
-          "prereq_expr": "INSW421"
+          "prereq_expr": "INSW410 o INS237"
         },
         {
           "id": 40,
@@ -450,9 +456,343 @@
           "prerrequisitos": [
             35
           ],
-          "prereq_expr": ""
+          "prereq_expr": "PTEC104 o ( ICF243 y ICF341 ) o INF1203"
         }
       ]
     }
-  ]
+  ],
+  "equivalencias": {
+    "ACAD101": [
+      [
+        "CEGP01"
+      ],
+      [
+        "ICI1201"
+      ],
+      [
+        "IIN1201"
+      ]
+    ],
+    "ACAD102": [
+      [
+        "FIC168"
+      ],
+      [
+        "IND1202"
+      ]
+    ],
+    "ACAD103": [
+      [
+        "FIC168"
+      ]
+    ],
+    "CFIS310": [
+      [
+        "FMF010"
+      ],
+      [
+        "FMF023"
+      ],
+      [
+        "FMF024"
+      ]
+    ],
+    "CFIS328": [
+      [
+        "FMF023"
+      ],
+      [
+        "FMF086"
+      ]
+    ],
+    "FMMP012": [
+      [
+        "FMM010"
+      ],
+      [
+        "FMM012"
+      ],
+      [
+        "FMM013"
+      ],
+      [
+        "FMM035"
+      ]
+    ],
+    "FMMP112": [
+      [
+        "FMM010"
+      ],
+      [
+        "FMM030"
+      ],
+      [
+        "FMM033"
+      ],
+      [
+        "FMM112"
+      ]
+    ],
+    "FMMP212": [
+      [
+        "FMM212"
+      ],
+      [
+        "FMM214"
+      ]
+    ],
+    "FMSP316": [
+      [
+        "FMM214"
+      ],
+      [
+        "FMS176",
+        "ICI2206"
+      ]
+    ],
+    "ING119": [
+      [
+        "BMA281",
+        "BMA282"
+      ],
+      [
+        "CNT021"
+      ],
+      [
+        "ETU081",
+        "ETU082"
+      ],
+      [
+        "FLG301",
+        "FLG302"
+      ],
+      [
+        "ING050",
+        "ING051"
+      ],
+      [
+        "ING110"
+      ],
+      [
+        "ING111"
+      ],
+      [
+        "ING116"
+      ],
+      [
+        "ING117"
+      ]
+    ],
+    "ING129": [
+      [
+        "CNT026"
+      ],
+      [
+        "ETU181",
+        "ETU182"
+      ],
+      [
+        "ING120"
+      ],
+      [
+        "ING121"
+      ],
+      [
+        "ING126"
+      ],
+      [
+        "ING127"
+      ],
+      [
+        "ING134"
+      ],
+      [
+        "ING216"
+      ],
+      [
+        "ING229"
+      ]
+    ],
+    "ING239": [
+      [
+        "CNT126"
+      ],
+      [
+        "ETU281",
+        "ETU282"
+      ],
+      [
+        "ING126"
+      ],
+      [
+        "ING210"
+      ],
+      [
+        "ING216"
+      ],
+      [
+        "ING217"
+      ],
+      [
+        "ING224"
+      ]
+    ],
+    "INSW221": [
+      [
+        "INS122"
+      ]
+    ],
+    "INSW311": [
+      [
+        "INS236"
+      ]
+    ],
+    "INSW312": [
+      [
+        "ITC1701"
+      ]
+    ],
+    "INSW321": [
+      [
+        "INS242"
+      ]
+    ],
+    "INSW410": [
+      [
+        "INS237"
+      ]
+    ],
+    "INSW422": [
+      [
+        "INS244"
+      ]
+    ],
+    "PTEC101": [
+      [
+        "ICF123"
+      ],
+      [
+        "INS126",
+        "INS127"
+      ]
+    ],
+    "PTEC102": [
+      [
+        "ICF131"
+      ],
+      [
+        "INS124",
+        "INS125"
+      ]
+    ],
+    "PTEC103": [
+      [
+        "ICF331"
+      ],
+      [
+        "INS234"
+      ]
+    ],
+    "PTEC104": [
+      [
+        "ICF243",
+        "ICF341"
+      ],
+      [
+        "INF1203"
+      ]
+    ],
+    "PTEC105": [
+      [
+        "ICF232"
+      ],
+      [
+        "INS232"
+      ],
+      [
+        "INS232",
+        "INS235"
+      ],
+      [
+        "INS235"
+      ]
+    ],
+    "PTEC106": [
+      [
+        "INS238"
+      ]
+    ],
+    "TDFI101": [
+      [
+        "AUT1301"
+      ],
+      [
+        "BIOQ388",
+        "BIOQ398"
+      ],
+      [
+        "GEOL101",
+        "GEO101"
+      ],
+      [
+        "ICF121"
+      ],
+      [
+        "ICI1201"
+      ],
+      [
+        "ICT1201"
+      ],
+      [
+        "IIN1201"
+      ],
+      [
+        "IMIN101"
+      ],
+      [
+        "IN1201"
+      ],
+      [
+        "INS122"
+      ],
+      [
+        "LCBB110",
+        "LCBB100"
+      ]
+    ],
+    "TDFI102": [
+      [
+        "AUT1302"
+      ],
+      [
+        "ICF122"
+      ],
+      [
+        "IND1401"
+      ],
+      [
+        "INS121"
+      ]
+    ],
+    "TDFI103": [
+      [
+        "ICF132",
+        "ICF231"
+      ],
+      [
+        "ICI2402"
+      ],
+      [
+        "INS128"
+      ]
+    ],
+    "TDFI104": [
+      [
+        "CEGS01"
+      ],
+      [
+        "ICF253"
+      ]
+    ]
+  }
 }

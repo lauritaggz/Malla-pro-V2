@@ -1,33 +1,403 @@
 {
   "program": {
-    "id": "7f214b17-8023-423d-8544-a4be28be5f74",
+    "id": "4bd84922-2f4e-41d9-8a6d-1e493be2333b",
     "slug": "ingenieria-civil-industrial",
     "name": "Ingeniería Civil Industrial",
-    "official_name": "Ingeniería Civil Industrial",
+    "official_name": "Ingeniería Civil Industrial (UNAB)",
     "official_code": null,
     "career_key": "unab-industrial",
     "legacy_url": "/mallas/Industrial.json"
   },
   "university": {
-    "id": "baa60218-0377-4052-bddd-a92786b37188",
+    "id": "62ed628d-4645-42d0-b60b-1725be709c32",
     "slug": "unab",
     "name": "Universidad Andrés Bello",
     "short_name": "UNAB",
     "country": "CL"
   },
   "version": {
-    "id": "f4b72eee-cd07-4de7-917f-41cff9c35ce9",
+    "id": "bf2ac6a0-e97e-439b-9f57-4777c8a20f17",
     "label": "legacy",
     "period_regime": "semestral",
     "credit_system": "SCT",
     "total_periods": 10,
-    "total_credits": 400,
+    "total_credits": 673,
     "status": "published",
     "is_current": true,
     "source_type": "legacy_json",
     "source_url": "/mallas/Industrial.json",
-    "source_note": "Imported from frontend/public/mallas/Industrial.json",
-    "reviewed_at": null
+    "source_note": "Imported from frontend/public/mallas/Industrial.json. Checked against the official curriculum: program UNAB12100 catalog 202010 (PRIMER SEMESTRE 2020) reading: OCR revisado",
+    "reviewed_at": null,
+    "attrs": {
+      "equivalencias": {
+        "ING119": [
+          [
+            "BMA281",
+            "BMA282"
+          ],
+          [
+            "CNT021"
+          ],
+          [
+            "ETU081",
+            "ETU082"
+          ],
+          [
+            "FLG301",
+            "FLG302"
+          ],
+          [
+            "ING050",
+            "ING051"
+          ],
+          [
+            "ING110"
+          ],
+          [
+            "ING111"
+          ],
+          [
+            "ING116"
+          ],
+          [
+            "ING117"
+          ]
+        ],
+        "ING129": [
+          [
+            "CNT026"
+          ],
+          [
+            "ETU181",
+            "ETU182"
+          ],
+          [
+            "ING120"
+          ],
+          [
+            "ING121"
+          ],
+          [
+            "ING126"
+          ],
+          [
+            "ING127"
+          ],
+          [
+            "ING134"
+          ],
+          [
+            "ING216"
+          ],
+          [
+            "ING229"
+          ]
+        ],
+        "ING239": [
+          [
+            "CNT126"
+          ],
+          [
+            "ETU281",
+            "ETU282"
+          ],
+          [
+            "ING126"
+          ],
+          [
+            "ING210"
+          ],
+          [
+            "ING216"
+          ],
+          [
+            "ING217"
+          ],
+          [
+            "ING224"
+          ]
+        ],
+        "ACAD101": [
+          [
+            "CEGP01"
+          ],
+          [
+            "ICI1201"
+          ],
+          [
+            "ICT1201"
+          ],
+          [
+            "IIN1201"
+          ]
+        ],
+        "ACAD102": [
+          [
+            "FIC168"
+          ],
+          [
+            "IND1202"
+          ]
+        ],
+        "CEGHC11": [
+          [
+            "CEGHC01"
+          ],
+          [
+            "FIC1604"
+          ]
+        ],
+        "CFIS310": [
+          [
+            "FMF010"
+          ],
+          [
+            "FMF023"
+          ],
+          [
+            "FMF024"
+          ]
+        ],
+        "CFIS328": [
+          [
+            "FME086"
+          ],
+          [
+            "FMF023"
+          ],
+          [
+            "FMF086"
+          ]
+        ],
+        "CFIS332": [
+          [
+            "FMF025"
+          ],
+          [
+            "FMF122"
+          ]
+        ],
+        "CFIS344": [
+          [
+            "FMF144"
+          ]
+        ],
+        "CIND100": [
+          [
+            "IND1205"
+          ]
+        ],
+        "CIND112": [
+          [
+            "IND2209"
+          ]
+        ],
+        "CIND113": [
+          [
+            "IND2211"
+          ]
+        ],
+        "CIND114": [
+          [
+            "IND2213"
+          ]
+        ],
+        "CIND211": [
+          [
+            "ICI2212"
+          ]
+        ],
+        "CIND212": [
+          [
+            "CI2212"
+          ],
+          [
+            "IC2212"
+          ],
+          [
+            "ICI2212"
+          ],
+          [
+            "ICT2212"
+          ]
+        ],
+        "CIND213": [
+          [
+            "ICI3217"
+          ]
+        ],
+        "CIND214": [
+          [
+            "ICI2215"
+          ]
+        ],
+        "CIND313": [
+          [
+            "ICI2611"
+          ]
+        ],
+        "CIND314": [
+          [
+            "ICI3003"
+          ]
+        ],
+        "CIND411": [
+          [
+            "IND1101"
+          ]
+        ],
+        "FMMP012": [
+          [
+            "FMM010"
+          ],
+          [
+            "FMM012"
+          ],
+          [
+            "FMM013"
+          ],
+          [
+            "FMM035"
+          ]
+        ],
+        "FMMP112": [
+          [
+            "FMM010"
+          ],
+          [
+            "FMM030"
+          ],
+          [
+            "FMM033"
+          ],
+          [
+            "FMM112"
+          ]
+        ],
+        "FMMP212": [
+          [
+            "FMM130"
+          ],
+          [
+            "FMM133"
+          ],
+          [
+            "FMM212"
+          ],
+          [
+            "FMM214"
+          ]
+        ],
+        "FMSP316": [
+          [
+            "EMS176",
+            "ICI2206"
+          ],
+          [
+            "FMM214"
+          ],
+          [
+            "FMS176",
+            "ICI2206"
+          ]
+        ],
+        "IIND412": [
+          [
+            "IND2102"
+          ]
+        ],
+        "IIND413": [
+          [
+            "IND2103"
+          ]
+        ],
+        "IIND414": [
+          [
+            "IND2104"
+          ]
+        ],
+        "QUIM090": [
+          [
+            "QUI070"
+          ]
+        ],
+        "TDFI101": [
+          [
+            "AUT1301"
+          ],
+          [
+            "BIOQ388",
+            "BIOQ398"
+          ],
+          [
+            "GEOL101",
+            "GEO101"
+          ],
+          [
+            "ICF121"
+          ],
+          [
+            "ICI1201"
+          ],
+          [
+            "IMIN101"
+          ],
+          [
+            "INS122"
+          ],
+          [
+            "LCBB110",
+            "LCBB100"
+          ],
+          [
+            "LIN1201"
+          ],
+          [
+            "TIN1201"
+          ]
+        ],
+        "TDFI102": [
+          [
+            "AUT1302"
+          ],
+          [
+            "ICF122"
+          ],
+          [
+            "IND1401"
+          ],
+          [
+            "INS121"
+          ]
+        ],
+        "TDFI103": [
+          [
+            "ICF132",
+            "ICF231"
+          ],
+          [
+            "ICI2402"
+          ],
+          [
+            "INS128"
+          ]
+        ],
+        "TDFI104": [
+          [
+            "CEGS01"
+          ],
+          [
+            "ICF253"
+          ]
+        ]
+      },
+      "fuente_oficial": {
+        "lectura": "OCR revisado",
+        "catalogo": "202010",
+        "programa": "UNAB12100",
+        "catalogoTexto": "PRIMER SEMESTRE 2020"
+      }
+    }
   },
   "tracks": [],
   "periods": [
@@ -35,117 +405,117 @@
       "number": 1,
       "track_code": null,
       "course_ids": [
-        "6b76794c-10b8-432d-b6bb-f80da79b95b7",
-        "b98a09e2-4713-4f05-9ec8-7bcf8af63ada",
-        "e4444099-4dfc-4fab-a6aa-802d25dcb8b3",
-        "d183455f-3d76-4ed5-aa96-88e57585d791"
+        "4c0636c3-425d-45be-b4da-0f7c7aede109",
+        "80902f72-f010-4aa3-9a0e-3a8133152525",
+        "0b72fcb1-1d68-4579-9d57-c5a81d8ddb2e",
+        "4659be3c-26a9-40ee-bd37-67c50a35bf98"
       ]
     },
     {
       "number": 2,
       "track_code": null,
       "course_ids": [
-        "428ce44d-d7b3-4981-9b2f-472ecac31f7b",
-        "2ff2fae0-a3c4-4e37-95f8-606449e25074",
-        "cb3ed386-15aa-4865-b9e6-e492529396f0",
-        "f45100ce-78e0-4407-8f67-3a8e8c83a860",
-        "c8651621-ecf3-481e-96e9-73cb1b5a0822"
+        "14db056e-7f56-4546-9b64-5d0c5749860a",
+        "30ef9626-c9c0-4652-a2b8-5e66cc58f74a",
+        "4ce2cf17-65cf-453b-a48e-c1d54855c399",
+        "a7def4e6-9b50-4793-aa4b-03f40777dd7c",
+        "85385e00-d1f9-4db7-81ad-d6008cbdc974"
       ]
     },
     {
       "number": 3,
       "track_code": null,
       "course_ids": [
-        "04c40edd-2acc-41bc-b141-41dd1da7fac9",
-        "ddec06d9-c0bb-4cdf-8d48-ac2a044d8f9c",
-        "84146fa1-86e3-48f9-aba1-aa21b4c4dbe1",
-        "e802363d-3ed5-4f07-aba5-c2a700531797",
-        "0add7a9f-569f-400a-95b2-959989622b78"
+        "7aa1b220-569e-43c6-acd9-680fef5c74dc",
+        "6bec22e5-e8b5-43fb-93b8-06210e7b009f",
+        "57703344-4f4c-4658-8857-124257030e64",
+        "5e49a358-fdc8-4523-9596-ba35011b3b3b",
+        "9a697a64-1b33-48f3-a01d-1dd35d22886f"
       ]
     },
     {
       "number": 4,
       "track_code": null,
       "course_ids": [
-        "e8f3bc38-171c-4bfc-ba94-3b44f7715e16",
-        "dd096998-6808-4cc5-89e9-7e30c031d761",
-        "f9eda547-292f-4dd8-b457-db3e214933df",
-        "ec817857-899c-48e7-82a7-753ea5aced14",
-        "a697fc76-9c96-4b73-ae01-12bb19366d88"
+        "b08aa407-6aa5-4568-b9d4-1e3b3496a204",
+        "d373b2af-7c8c-4300-88c3-dfb93adb5b5c",
+        "50a14596-4b2a-4ab9-8db9-702a5df5dd48",
+        "483760fd-e9b8-49a6-8993-9d8f7dd8bc97",
+        "a11ee5f9-e526-407c-b8fd-27badafaaa32"
       ]
     },
     {
       "number": 5,
       "track_code": null,
       "course_ids": [
-        "0e6f08c3-fb27-4405-bdba-9e093b258326",
-        "eb5eb653-b00c-4f06-ab88-3a7dd84bdd1a",
-        "ea4fe0d8-34dd-4247-87fb-329f0690e2cc",
-        "c7db2470-445a-4eac-a7c1-da7c7325ff4d",
-        "b3a52e39-76fd-4522-bea9-a44663d18b6b"
+        "c7ab9d0a-17f5-44fc-9f99-770226f23def",
+        "db121d3b-ca57-4bbf-93e7-78b3fbe0bde1",
+        "767db5ac-3277-4387-9dfe-c0f7eaf13342",
+        "83969259-8be4-4cfb-9f6b-a01506947633",
+        "1dbcfcf3-59ae-49e9-a4c7-32c485eb19c6"
       ]
     },
     {
       "number": 6,
       "track_code": null,
       "course_ids": [
-        "c0af1463-a1f2-49bc-b583-1039864a2a6c",
-        "b9f807f1-1222-4e9d-b5c1-728ea1b63cd0",
-        "807831e9-a397-4bbf-b9e6-8fa36ae0d675",
-        "6c0a1f8e-0bc6-43b5-8b2e-f3c2dc8f2358",
-        "59a3dc0e-b400-4ec4-bc17-308f35ab6e54",
-        "061dfd14-441a-4f40-ae78-193f01aa920b"
+        "6d93e6f6-16ee-4f56-83e6-0c76ac177329",
+        "63c1c1d8-e540-4f84-9296-b79827f4a56c",
+        "aec19c2a-65ee-4c19-8523-ad6d3acebf44",
+        "8c2f33d9-90f1-48ce-8ee7-c57737a81709",
+        "d89e523a-ebad-44d3-9511-9b97646a633b",
+        "ba2610bb-5f31-4769-815a-8df5d5345f70"
       ]
     },
     {
       "number": 7,
       "track_code": null,
       "course_ids": [
-        "0bba4833-98da-47ff-a147-90e4a2973a84",
-        "83654616-b219-42f5-b5e3-1c9ad4ae4eea",
-        "105f20b6-6c89-4d56-8cbf-5dfcc75c7d14",
-        "6bf745da-f771-45e9-892d-803b39db15e7",
-        "792c474a-e394-4265-81f2-fe097d1de68b",
-        "fc8f0697-a03f-4a31-8d3c-75fb2aa134b7"
+        "6a9a8bad-3969-4a36-9790-3dcc11b1dc7e",
+        "cd955f59-03ae-434b-b89e-50f67c6e21c5",
+        "d74ab958-08ce-4571-ad4d-fda6ab1c64f1",
+        "563641bb-0d44-4aef-b62d-212ef7757d63",
+        "435a898c-5467-4d64-a18f-a97f2efe0a65",
+        "78b55d22-08dc-40b6-a519-77dc0f3cf3a1"
       ]
     },
     {
       "number": 8,
       "track_code": null,
       "course_ids": [
-        "e88ccec3-e45d-4b8f-862f-e6a6b96b07aa",
-        "6790d184-e6e2-48f5-90a3-1685c1b96b90",
-        "a000fff6-eb13-4044-8766-78a7334ae1cf",
-        "715d2df6-73c2-46b0-8469-1506443af9c6",
-        "82eb7ece-83c8-4ff3-8308-ed0f2af88815",
-        "d4eec086-d62a-4f29-82da-52ed17183b63"
+        "a1c6814c-b500-4c27-a858-d80b21154e61",
+        "7e78a6e9-3c7a-4f50-8a44-201f902b58fe",
+        "197a3640-0d16-4a43-99c9-2332b005e336",
+        "82b356ae-9424-45ab-88c6-40e9a9c200e1",
+        "f67339dd-b770-4b32-be09-c3e3e41c5cea",
+        "dfc71e91-d0cd-4b9b-abcd-d340ee4ef8fa"
       ]
     },
     {
       "number": 9,
       "track_code": null,
       "course_ids": [
-        "dfad9582-721b-4612-88b6-0c02ab9506a5",
-        "e81edc5e-4b2d-47f7-a19a-11ce3bddf322",
-        "33b1eceb-d4bc-499c-bdfd-8b264b2c000e",
-        "465eb532-f2f2-492b-8bc9-95ec708a8938",
-        "ce11bc09-67ef-45dd-acc2-3337c0d59b5c",
-        "5c111d86-17fe-47f9-98b1-265152aa9fbf"
+        "9241c0fc-8aed-4334-b488-a10a948656aa",
+        "4d815c85-6315-4c44-8775-79eedbfb8dc4",
+        "d405e4ca-f9a7-455f-8140-9e7e7291749c",
+        "d2f36146-e651-403b-8e05-8e13b5b37fa6",
+        "e1f91721-3080-491d-8644-cea54e4a1957",
+        "07b05fe8-8db9-443a-b914-d20a9ce8d47f"
       ]
     },
     {
       "number": 10,
       "track_code": null,
       "course_ids": [
-        "b4e3ff1b-6481-47fa-bb66-89087ea148bf",
-        "5d430f27-e483-43a2-b56b-a817051b40ce",
-        "4c87fffe-63d9-4037-98f3-2a299575dda1"
+        "d44aeda6-50d8-4f10-8b2d-0806b253d364",
+        "5fed1362-34b0-4a77-8516-2af82a2736d9",
+        "4cea0642-152e-483c-8452-0f5c21cea0d7"
       ]
     }
   ],
   "courses": [
     {
-      "id": "6b76794c-10b8-432d-b6bb-f80da79b95b7",
+      "id": "4c0636c3-425d-45be-b4da-0f7c7aede109",
       "legacy_id": 1,
       "code": "CFIS310",
       "name": "Física General",
@@ -163,7 +533,7 @@
       }
     },
     {
-      "id": "b98a09e2-4713-4f05-9ec8-7bcf8af63ada",
+      "id": "80902f72-f010-4aa3-9a0e-3a8133152525",
       "legacy_id": 2,
       "code": "FMMP012",
       "name": "Introducción a las Matemáticas",
@@ -181,7 +551,7 @@
       }
     },
     {
-      "id": "e4444099-4dfc-4fab-a6aa-802d25dcb8b3",
+      "id": "0b72fcb1-1d68-4579-9d57-c5a81d8ddb2e",
       "legacy_id": 3,
       "code": "TDFI101",
       "name": "Introducción a la Ingeniería",
@@ -199,7 +569,7 @@
       }
     },
     {
-      "id": "d183455f-3d76-4ed5-aa96-88e57585d791",
+      "id": "4659be3c-26a9-40ee-bd37-67c50a35bf98",
       "legacy_id": 4,
       "code": "TDFI102",
       "name": "Introducción a la Programación",
@@ -217,7 +587,7 @@
       }
     },
     {
-      "id": "428ce44d-d7b3-4981-9b2f-472ecac31f7b",
+      "id": "14db056e-7f56-4546-9b64-5d0c5749860a",
       "legacy_id": 5,
       "code": "CEGHC11",
       "name": "Habilidades Comunicativas",
@@ -235,7 +605,7 @@
       }
     },
     {
-      "id": "2ff2fae0-a3c4-4e37-95f8-606449e25074",
+      "id": "30ef9626-c9c0-4652-a2b8-5e66cc58f74a",
       "legacy_id": 6,
       "code": "CFIS328",
       "name": "Física Experimental",
@@ -248,14 +618,14 @@
         "op": "and",
         "items": [
           {
-            "course": "6b76794c-10b8-432d-b6bb-f80da79b95b7"
+            "course": "4c0636c3-425d-45be-b4da-0f7c7aede109"
           },
           {
-            "course": "b98a09e2-4713-4f05-9ec8-7bcf8af63ada"
+            "course": "80902f72-f010-4aa3-9a0e-3a8133152525"
           }
         ]
       },
-      "prereq_raw": null,
+      "prereq_raw": "( CFIS310 o FMF023 o FMF010 o FMF024 ) y ( FMMP012 o FMM013 o FMM012 o FMM035 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -263,7 +633,7 @@
       }
     },
     {
-      "id": "cb3ed386-15aa-4865-b9e6-e492529396f0",
+      "id": "4ce2cf17-65cf-453b-a48e-c1d54855c399",
       "legacy_id": 7,
       "code": "FMMP112",
       "name": "Cálculo Diferencial",
@@ -273,9 +643,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "b98a09e2-4713-4f05-9ec8-7bcf8af63ada"
+        "course": "80902f72-f010-4aa3-9a0e-3a8133152525"
       },
-      "prereq_raw": null,
+      "prereq_raw": "FMMP012 o FMM013 o FMM010 o FMM035 o FMM012",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -283,7 +653,7 @@
       }
     },
     {
-      "id": "f45100ce-78e0-4407-8f67-3a8e8c83a860",
+      "id": "a7def4e6-9b50-4793-aa4b-03f40777dd7c",
       "legacy_id": 8,
       "code": "QUIM090",
       "name": "Química y Ambiente",
@@ -301,7 +671,7 @@
       }
     },
     {
-      "id": "c8651621-ecf3-481e-96e9-73cb1b5a0822",
+      "id": "85385e00-d1f9-4db7-81ad-d6008cbdc974",
       "legacy_id": 9,
       "code": "TDFI103",
       "name": "Base de Datos",
@@ -311,9 +681,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "d183455f-3d76-4ed5-aa96-88e57585d791"
+        "course": "4659be3c-26a9-40ee-bd37-67c50a35bf98"
       },
-      "prereq_raw": null,
+      "prereq_raw": "TDFI102 o IND1401 o ICF122 o INS121 o AUT1302",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -321,7 +691,7 @@
       }
     },
     {
-      "id": "04c40edd-2acc-41bc-b141-41dd1da7fac9",
+      "id": "7aa1b220-569e-43c6-acd9-680fef5c74dc",
       "legacy_id": 10,
       "code": "ACAD101",
       "name": "Taller de Innovación y Emprendimiento I",
@@ -331,9 +701,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "e4444099-4dfc-4fab-a6aa-802d25dcb8b3"
+        "course": "0b72fcb1-1d68-4579-9d57-c5a81d8ddb2e"
       },
-      "prereq_raw": null,
+      "prereq_raw": "TDFI101 o AUT1301 o TIN1201 o ICF121 o INS122 o ICI1201 o IMIN101 o ( GEOL101 o GEO101 ) o ( BIOQ388 o BIOQ398 ) o ( LCBB110 o LCBB100 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -341,7 +711,7 @@
       }
     },
     {
-      "id": "ddec06d9-c0bb-4cdf-8d48-ac2a044d8f9c",
+      "id": "6bec22e5-e8b5-43fb-93b8-06210e7b009f",
       "legacy_id": 11,
       "code": "CFIS332",
       "name": "Mecánica",
@@ -354,14 +724,14 @@
         "op": "and",
         "items": [
           {
-            "course": "2ff2fae0-a3c4-4e37-95f8-606449e25074"
+            "course": "30ef9626-c9c0-4652-a2b8-5e66cc58f74a"
           },
           {
-            "course": "cb3ed386-15aa-4865-b9e6-e492529396f0"
+            "course": "4ce2cf17-65cf-453b-a48e-c1d54855c399"
           }
         ]
       },
-      "prereq_raw": null,
+      "prereq_raw": "( ( CFIS328 o FMF023 o FME086 ) y ( FMMP112 o FMM033 o FMM112 ) ) o ( ( IAUT101 o AUT1303 ) y ( FMMP112 o FMM112 ) )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -369,7 +739,7 @@
       }
     },
     {
-      "id": "84146fa1-86e3-48f9-aba1-aa21b4c4dbe1",
+      "id": "57703344-4f4c-4658-8857-124257030e64",
       "legacy_id": 12,
       "code": "FMMP212",
       "name": "Cálculo Integral",
@@ -379,9 +749,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "cb3ed386-15aa-4865-b9e6-e492529396f0"
+        "course": "4ce2cf17-65cf-453b-a48e-c1d54855c399"
       },
-      "prereq_raw": null,
+      "prereq_raw": "FMMP112 o FMM030 o FMM010 o FMM033 o FMM112",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -389,7 +759,7 @@
       }
     },
     {
-      "id": "e802363d-3ed5-4f07-aba5-c2a700531797",
+      "id": "5e49a358-fdc8-4523-9596-ba35011b3b3b",
       "legacy_id": 13,
       "code": "TDFI104",
       "name": "Compliance & Accountability",
@@ -399,9 +769,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "e4444099-4dfc-4fab-a6aa-802d25dcb8b3"
+        "course": "0b72fcb1-1d68-4579-9d57-c5a81d8ddb2e"
       },
-      "prereq_raw": null,
+      "prereq_raw": "TDFI101 o LIN1201 o ICF121 o INS122 o ICI1201 o IMIN101 o AUT1301",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -409,7 +779,7 @@
       }
     },
     {
-      "id": "0add7a9f-569f-400a-95b2-959989622b78",
+      "id": "9a697a64-1b33-48f3-a01d-1dd35d22886f",
       "legacy_id": 14,
       "code": "CIND100",
       "name": "Procesos Industriales",
@@ -422,14 +792,14 @@
         "op": "and",
         "items": [
           {
-            "course": "6b76794c-10b8-432d-b6bb-f80da79b95b7"
+            "course": "a7def4e6-9b50-4793-aa4b-03f40777dd7c"
           },
           {
-            "course": "f45100ce-78e0-4407-8f67-3a8e8c83a860"
+            "course": "4c0636c3-425d-45be-b4da-0f7c7aede109"
           }
         ]
       },
-      "prereq_raw": null,
+      "prereq_raw": "( QUIM090 o QUI070 ) y ( CFIS310 o FMF024 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -437,7 +807,7 @@
       }
     },
     {
-      "id": "e8f3bc38-171c-4bfc-ba94-3b44f7715e16",
+      "id": "b08aa407-6aa5-4568-b9d4-1e3b3496a204",
       "legacy_id": 15,
       "code": "ACAD102",
       "name": "Taller de Innovación y Emprendimiento II",
@@ -447,9 +817,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "04c40edd-2acc-41bc-b141-41dd1da7fac9"
+        "course": "7aa1b220-569e-43c6-acd9-680fef5c74dc"
       },
-      "prereq_raw": null,
+      "prereq_raw": "ACAD101 o IIN1201 o ICT1201 o CEGP01",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -457,7 +827,7 @@
       }
     },
     {
-      "id": "dd096998-6808-4cc5-89e9-7e30c031d761",
+      "id": "d373b2af-7c8c-4300-88c3-dfb93adb5b5c",
       "legacy_id": 16,
       "code": "CFIS344",
       "name": "Electricidad y Magnetismo",
@@ -470,14 +840,14 @@
         "op": "and",
         "items": [
           {
-            "course": "ddec06d9-c0bb-4cdf-8d48-ac2a044d8f9c"
+            "course": "6bec22e5-e8b5-43fb-93b8-06210e7b009f"
           },
           {
-            "course": "84146fa1-86e3-48f9-aba1-aa21b4c4dbe1"
+            "course": "57703344-4f4c-4658-8857-124257030e64"
           }
         ]
       },
-      "prereq_raw": null,
+      "prereq_raw": "( ( CFIS332 o FMF122 o FMF025 ) y ( FMMP212 o FMM133 o FMM212 ) )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -485,7 +855,7 @@
       }
     },
     {
-      "id": "f9eda547-292f-4dd8-b457-db3e214933df",
+      "id": "50a14596-4b2a-4ab9-8db9-702a5df5dd48",
       "legacy_id": 17,
       "code": "CIND311",
       "name": "Práctica I",
@@ -498,71 +868,74 @@
         "op": "and",
         "items": [
           {
-            "course": "6b76794c-10b8-432d-b6bb-f80da79b95b7"
+            "course": "4c0636c3-425d-45be-b4da-0f7c7aede109"
           },
           {
-            "course": "b98a09e2-4713-4f05-9ec8-7bcf8af63ada"
+            "course": "80902f72-f010-4aa3-9a0e-3a8133152525"
           },
           {
-            "course": "e4444099-4dfc-4fab-a6aa-802d25dcb8b3"
+            "course": "0b72fcb1-1d68-4579-9d57-c5a81d8ddb2e"
           },
           {
-            "course": "d183455f-3d76-4ed5-aa96-88e57585d791"
+            "course": "4659be3c-26a9-40ee-bd37-67c50a35bf98"
           },
           {
-            "course": "2ff2fae0-a3c4-4e37-95f8-606449e25074"
+            "course": "30ef9626-c9c0-4652-a2b8-5e66cc58f74a"
           },
           {
-            "course": "cb3ed386-15aa-4865-b9e6-e492529396f0"
+            "course": "4ce2cf17-65cf-453b-a48e-c1d54855c399"
           },
           {
-            "course": "f45100ce-78e0-4407-8f67-3a8e8c83a860"
+            "course": "a7def4e6-9b50-4793-aa4b-03f40777dd7c"
           },
           {
-            "course": "c8651621-ecf3-481e-96e9-73cb1b5a0822"
+            "course": "85385e00-d1f9-4db7-81ad-d6008cbdc974"
           },
           {
-            "course": "04c40edd-2acc-41bc-b141-41dd1da7fac9"
+            "course": "7aa1b220-569e-43c6-acd9-680fef5c74dc"
           },
           {
-            "course": "ddec06d9-c0bb-4cdf-8d48-ac2a044d8f9c"
+            "course": "6bec22e5-e8b5-43fb-93b8-06210e7b009f"
           },
           {
-            "course": "0add7a9f-569f-400a-95b2-959989622b78"
+            "course": "9a697a64-1b33-48f3-a01d-1dd35d22886f"
           },
           {
-            "course": "84146fa1-86e3-48f9-aba1-aa21b4c4dbe1"
+            "course": "57703344-4f4c-4658-8857-124257030e64"
           },
           {
-            "course": "e802363d-3ed5-4f07-aba5-c2a700531797"
+            "course": "5e49a358-fdc8-4523-9596-ba35011b3b3b"
+          },
+          {
+            "course": "14db056e-7f56-4546-9b64-5d0c5749860a"
           }
         ]
       },
-      "prereq_raw": null,
+      "prereq_raw": "( CFIS310 o FMF024 ) y ( FMMP012 o FMM012 ) y ( TDFI101 o ICI1201 ) y ( TDFI102 o IND1401 ) y ( CFIS328 o FMF086 ) y ( FMMP112 o FMM112 ) y ( QUIM090 o QUI070 ) y ( TDFI103 o ICI2402 ) y ( ACAD101 o ICI1201 ) y ( CFIS332 o FMF025 ) y ( CIND100 o IND1205 ) y ( FMMP212 o FMM212 ) y TDFI104 y ( CEGHC11 o CEGHC01 o FIC1604 )",
       "coreq_expr": {
         "op": "and",
         "items": [
           {
-            "course": "e8f3bc38-171c-4bfc-ba94-3b44f7715e16"
+            "course": "d373b2af-7c8c-4300-88c3-dfb93adb5b5c"
           },
           {
-            "course": "dd096998-6808-4cc5-89e9-7e30c031d761"
+            "course": "483760fd-e9b8-49a6-8993-9d8f7dd8bc97"
           },
           {
-            "course": "ec817857-899c-48e7-82a7-753ea5aced14"
+            "course": "a11ee5f9-e526-407c-b8fd-27badafaaa32"
           },
           {
-            "course": "a697fc76-9c96-4b73-ae01-12bb19366d88"
+            "course": "b08aa407-6aa5-4568-b9d4-1e3b3496a204"
           }
         ]
       },
-      "coreq_raw": "ACAD102 y CFIS344 y FMMP312 y ING119",
+      "coreq_raw": "( CFIS344 o FMF144 ) y ( FMMP312 o FMMP312 ) y ING119 y ( ACAD102 o IND1202 )",
       "attrs": {
         "area": "industrial"
       }
     },
     {
-      "id": "ec817857-899c-48e7-82a7-753ea5aced14",
+      "id": "483760fd-e9b8-49a6-8993-9d8f7dd8bc97",
       "legacy_id": 18,
       "code": "FMMP312",
       "name": "Sistemas y Ecuaciones Diferenciales Lineales",
@@ -572,9 +945,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "84146fa1-86e3-48f9-aba1-aa21b4c4dbe1"
+        "course": "57703344-4f4c-4658-8857-124257030e64"
       },
-      "prereq_raw": null,
+      "prereq_raw": "( FMMP212 o FMM133 ) o ( FMMP212 o FMM130 ) o FMM212",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -582,7 +955,7 @@
       }
     },
     {
-      "id": "a697fc76-9c96-4b73-ae01-12bb19366d88",
+      "id": "a11ee5f9-e526-407c-b8fd-27badafaaa32",
       "legacy_id": 19,
       "code": "ING119",
       "name": "Inglés I",
@@ -600,7 +973,7 @@
       }
     },
     {
-      "id": "0e6f08c3-fb27-4405-bdba-9e093b258326",
+      "id": "c7ab9d0a-17f5-44fc-9f99-770226f23def",
       "legacy_id": 20,
       "code": "CIND111",
       "name": "Economía Circular",
@@ -610,9 +983,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "0add7a9f-569f-400a-95b2-959989622b78"
+        "course": "9a697a64-1b33-48f3-a01d-1dd35d22886f"
       },
-      "prereq_raw": null,
+      "prereq_raw": "CIND100 o IND1205",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -620,7 +993,7 @@
       }
     },
     {
-      "id": "eb5eb653-b00c-4f06-ab88-3a7dd84bdd1a",
+      "id": "db121d3b-ca57-4bbf-93e7-78b3fbe0bde1",
       "legacy_id": 21,
       "code": "CIND112",
       "name": "Investigación de Operaciones",
@@ -630,9 +1003,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "84146fa1-86e3-48f9-aba1-aa21b4c4dbe1"
+        "course": "57703344-4f4c-4658-8857-124257030e64"
       },
-      "prereq_raw": null,
+      "prereq_raw": "FMMP212 o FMM212",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -640,7 +1013,7 @@
       }
     },
     {
-      "id": "ea4fe0d8-34dd-4247-87fb-329f0690e2cc",
+      "id": "767db5ac-3277-4387-9dfe-c0f7eaf13342",
       "legacy_id": 22,
       "code": "CIND411",
       "name": "Economía",
@@ -650,9 +1023,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "84146fa1-86e3-48f9-aba1-aa21b4c4dbe1"
+        "course": "57703344-4f4c-4658-8857-124257030e64"
       },
-      "prereq_raw": null,
+      "prereq_raw": "FMMP212 o FMM212",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -660,7 +1033,7 @@
       }
     },
     {
-      "id": "c7db2470-445a-4eac-a7c1-da7c7325ff4d",
+      "id": "83969259-8be4-4cfb-9f6b-a01506947633",
       "legacy_id": 23,
       "code": "FMSP316",
       "name": "Métodos Cuantitativos",
@@ -670,9 +1043,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "84146fa1-86e3-48f9-aba1-aa21b4c4dbe1"
+        "course": "57703344-4f4c-4658-8857-124257030e64"
       },
-      "prereq_raw": null,
+      "prereq_raw": "FMMP212 o FMM212 o FMM214",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -680,7 +1053,7 @@
       }
     },
     {
-      "id": "b3a52e39-76fd-4522-bea9-a44663d18b6b",
+      "id": "1dbcfcf3-59ae-49e9-a4c7-32c485eb19c6",
       "legacy_id": 24,
       "code": "ING129",
       "name": "Inglés II",
@@ -690,9 +1063,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "a697fc76-9c96-4b73-ae01-12bb19366d88"
+        "course": "a11ee5f9-e526-407c-b8fd-27badafaaa32"
       },
-      "prereq_raw": null,
+      "prereq_raw": "ING119 o ING111 o ING110 o ING116 o ING117 o CNT021 o ( ING050 y ING051 ) o ( FLG301 y FLG302 ) o ( BMA281 y BMA282 ) o ( ETU081 y ETU082 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -700,7 +1073,7 @@
       }
     },
     {
-      "id": "c0af1463-a1f2-49bc-b583-1039864a2a6c",
+      "id": "6d93e6f6-16ee-4f56-83e6-0c76ac177329",
       "legacy_id": 25,
       "code": "ACAD103",
       "name": "Taller de Innovación y Emprendimiento III",
@@ -710,9 +1083,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "e8f3bc38-171c-4bfc-ba94-3b44f7715e16"
+        "course": "b08aa407-6aa5-4568-b9d4-1e3b3496a204"
       },
-      "prereq_raw": null,
+      "prereq_raw": "ACAD102 o IND1202 o FIC168",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -720,7 +1093,7 @@
       }
     },
     {
-      "id": "b9f807f1-1222-4e9d-b5c1-728ea1b63cd0",
+      "id": "63c1c1d8-e540-4f84-9296-b79827f4a56c",
       "legacy_id": 26,
       "code": "CIND113",
       "name": "Gestión de la Cadena de Suministro",
@@ -730,9 +1103,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "eb5eb653-b00c-4f06-ab88-3a7dd84bdd1a"
+        "course": "db121d3b-ca57-4bbf-93e7-78b3fbe0bde1"
       },
-      "prereq_raw": null,
+      "prereq_raw": "CIND112 o IND2209",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -740,7 +1113,7 @@
       }
     },
     {
-      "id": "807831e9-a397-4bbf-b9e6-8fa36ae0d675",
+      "id": "aec19c2a-65ee-4c19-8523-ad6d3acebf44",
       "legacy_id": 27,
       "code": "CIND211",
       "name": "Redes y Sistemas Estocásticos en Ingeniería",
@@ -753,14 +1126,14 @@
         "op": "and",
         "items": [
           {
-            "course": "eb5eb653-b00c-4f06-ab88-3a7dd84bdd1a"
+            "course": "db121d3b-ca57-4bbf-93e7-78b3fbe0bde1"
           },
           {
-            "course": "c7db2470-445a-4eac-a7c1-da7c7325ff4d"
+            "course": "83969259-8be4-4cfb-9f6b-a01506947633"
           }
         ]
       },
-      "prereq_raw": null,
+      "prereq_raw": "( CIND112 o IND2209 ) y ( FMSP316 o ( EMS176 y ICI2206 ) )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -768,7 +1141,7 @@
       }
     },
     {
-      "id": "6c0a1f8e-0bc6-43b5-8b2e-f3c2dc8f2358",
+      "id": "8c2f33d9-90f1-48ce-8ee7-c57737a81709",
       "legacy_id": 28,
       "code": "IIND412",
       "name": "Costos y Presupuestos",
@@ -778,9 +1151,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "84146fa1-86e3-48f9-aba1-aa21b4c4dbe1"
+        "course": "57703344-4f4c-4658-8857-124257030e64"
       },
-      "prereq_raw": null,
+      "prereq_raw": "FMMP212 o FMM212",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -788,7 +1161,7 @@
       }
     },
     {
-      "id": "59a3dc0e-b400-4ec4-bc17-308f35ab6e54",
+      "id": "d89e523a-ebad-44d3-9511-9b97646a633b",
       "legacy_id": 29,
       "code": "ING239",
       "name": "Inglés III",
@@ -798,9 +1171,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "b3a52e39-76fd-4522-bea9-a44663d18b6b"
+        "course": "1dbcfcf3-59ae-49e9-a4c7-32c485eb19c6"
       },
-      "prereq_raw": null,
+      "prereq_raw": "ING129 o ING121 o ING120 o ING216 o ING126 o ING134 o ING127 o CNT026 o ( ETU181 y ETU182 ) o ING229",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -808,7 +1181,7 @@
       }
     },
     {
-      "id": "061dfd14-441a-4f40-ae78-193f01aa920b",
+      "id": "ba2610bb-5f31-4769-815a-8df5d5345f70",
       "legacy_id": 30,
       "code": "TDFI105",
       "name": "Minería de Datos",
@@ -821,14 +1194,14 @@
         "op": "and",
         "items": [
           {
-            "course": "c7db2470-445a-4eac-a7c1-da7c7325ff4d"
+            "course": "83969259-8be4-4cfb-9f6b-a01506947633"
           },
           {
-            "course": "c8651621-ecf3-481e-96e9-73cb1b5a0822"
+            "course": "85385e00-d1f9-4db7-81ad-d6008cbdc974"
           }
         ]
       },
-      "prereq_raw": null,
+      "prereq_raw": "( FMSP316 o ( FMS176 y ICI2206 ) o ( FMM214 ) ) y ( TDFI103 o ICI2402 o INS128 o ( ICF132 y ICF231 ) )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -836,7 +1209,7 @@
       }
     },
     {
-      "id": "0bba4833-98da-47ff-a147-90e4a2973a84",
+      "id": "6a9a8bad-3969-4a36-9790-3dcc11b1dc7e",
       "legacy_id": 31,
       "code": "CEGRS14",
       "name": "Responsabilidad Social",
@@ -854,7 +1227,7 @@
       }
     },
     {
-      "id": "83654616-b219-42f5-b5e3-1c9ad4ae4eea",
+      "id": "cd955f59-03ae-434b-b89e-50f67c6e21c5",
       "legacy_id": 32,
       "code": "CIND114",
       "name": "Toma de Decisiones en la Cadena de Suministro",
@@ -864,9 +1237,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "b9f807f1-1222-4e9d-b5c1-728ea1b63cd0"
+        "course": "63c1c1d8-e540-4f84-9296-b79827f4a56c"
       },
-      "prereq_raw": null,
+      "prereq_raw": "CIND113 o IND2211",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -874,7 +1247,7 @@
       }
     },
     {
-      "id": "105f20b6-6c89-4d56-8cbf-5dfcc75c7d14",
+      "id": "d74ab958-08ce-4571-ad4d-fda6ab1c64f1",
       "legacy_id": 33,
       "code": "CIND212",
       "name": "Toma de Decisiones Bajo Incertidumbre",
@@ -884,9 +1257,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "807831e9-a397-4bbf-b9e6-8fa36ae0d675"
+        "course": "aec19c2a-65ee-4c19-8523-ad6d3acebf44"
       },
-      "prereq_raw": null,
+      "prereq_raw": "CIND211 o ICI2212",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -894,7 +1267,7 @@
       }
     },
     {
-      "id": "6bf745da-f771-45e9-892d-803b39db15e7",
+      "id": "563641bb-0d44-4aef-b62d-212ef7757d63",
       "legacy_id": 34,
       "code": "IIND413",
       "name": "Ingeniería Económica",
@@ -904,9 +1277,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "6c0a1f8e-0bc6-43b5-8b2e-f3c2dc8f2358"
+        "course": "8c2f33d9-90f1-48ce-8ee7-c57737a81709"
       },
-      "prereq_raw": null,
+      "prereq_raw": "IIND412 o IND2102",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -914,7 +1287,7 @@
       }
     },
     {
-      "id": "792c474a-e394-4265-81f2-fe097d1de68b",
+      "id": "435a898c-5467-4d64-a18f-a97f2efe0a65",
       "legacy_id": 35,
       "code": "ING249",
       "name": "Inglés IV",
@@ -924,9 +1297,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "59a3dc0e-b400-4ec4-bc17-308f35ab6e54"
+        "course": "d89e523a-ebad-44d3-9511-9b97646a633b"
       },
-      "prereq_raw": null,
+      "prereq_raw": "ING239 o ING210 o ING216 o ING224 o ING126 o CNT126 o ( ETU281 y ETU282 ) o ING217",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -934,7 +1307,7 @@
       }
     },
     {
-      "id": "fc8f0697-a03f-4a31-8d3c-75fb2aa134b7",
+      "id": "78b55d22-08dc-40b6-a519-77dc0f3cf3a1",
       "legacy_id": 36,
       "code": "TDFI106",
       "name": "Gestión de la Transformación Digital",
@@ -944,9 +1317,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "e802363d-3ed5-4f07-aba5-c2a700531797"
+        "course": "5e49a358-fdc8-4523-9596-ba35011b3b3b"
       },
-      "prereq_raw": null,
+      "prereq_raw": "TDFI104 o CEGS01 o ICF253",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -954,7 +1327,7 @@
       }
     },
     {
-      "id": "e88ccec3-e45d-4b8f-862f-e6a6b96b07aa",
+      "id": "a1c6814c-b500-4c27-a858-d80b21154e61",
       "legacy_id": 37,
       "code": "CIND213",
       "name": "Simulación de Sistemas",
@@ -964,9 +1337,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "105f20b6-6c89-4d56-8cbf-5dfcc75c7d14"
+        "course": "d74ab958-08ce-4571-ad4d-fda6ab1c64f1"
       },
-      "prereq_raw": null,
+      "prereq_raw": "CIND212 o CI2212",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -974,7 +1347,7 @@
       }
     },
     {
-      "id": "6790d184-e6e2-48f5-90a3-1685c1b96b90",
+      "id": "7e78a6e9-3c7a-4f50-8a44-201f902b58fe",
       "legacy_id": 38,
       "code": "CIND214",
       "name": "Estrategia y Sustentabilidad en Cadena de Suministro",
@@ -984,9 +1357,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "105f20b6-6c89-4d56-8cbf-5dfcc75c7d14"
+        "course": "d74ab958-08ce-4571-ad4d-fda6ab1c64f1"
       },
-      "prereq_raw": null,
+      "prereq_raw": "CIND212 o ICT2212",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -994,7 +1367,7 @@
       }
     },
     {
-      "id": "a000fff6-eb13-4044-8766-78a7334ae1cf",
+      "id": "197a3640-0d16-4a43-99c9-2332b005e336",
       "legacy_id": 39,
       "code": "CIND215",
       "name": "Analítica",
@@ -1004,9 +1377,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "105f20b6-6c89-4d56-8cbf-5dfcc75c7d14"
+        "course": "d74ab958-08ce-4571-ad4d-fda6ab1c64f1"
       },
-      "prereq_raw": null,
+      "prereq_raw": "CIND212 o IC2212",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -1014,7 +1387,7 @@
       }
     },
     {
-      "id": "715d2df6-73c2-46b0-8469-1506443af9c6",
+      "id": "82b356ae-9424-45ab-88c6-40e9a9c200e1",
       "legacy_id": 40,
       "code": "CIND312",
       "name": "Seminario de Licenciatura en Ciencias de la Ingeniería",
@@ -1027,28 +1400,47 @@
         "op": "and",
         "items": [
           {
-            "course": "061dfd14-441a-4f40-ae78-193f01aa920b"
+            "course": "ba2610bb-5f31-4769-815a-8df5d5345f70"
           },
           {
-            "course": "6bf745da-f771-45e9-892d-803b39db15e7"
+            "course": "563641bb-0d44-4aef-b62d-212ef7757d63"
           },
           {
-            "course": "105f20b6-6c89-4d56-8cbf-5dfcc75c7d14"
+            "course": "d74ab958-08ce-4571-ad4d-fda6ab1c64f1"
           },
           {
-            "course": "83654616-b219-42f5-b5e3-1c9ad4ae4eea"
+            "course": "cd955f59-03ae-434b-b89e-50f67c6e21c5"
           }
         ]
       },
-      "prereq_raw": null,
-      "coreq_expr": null,
-      "coreq_raw": null,
+      "prereq_raw": "TDFI105 y ( IIND413 o IND2103 ) y ( CIND212 o ICI2212 ) y ( CIND114 o IND2213 )",
+      "coreq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "dfc71e91-d0cd-4b9b-abcd-d340ee4ef8fa"
+          },
+          {
+            "course": "a1c6814c-b500-4c27-a858-d80b21154e61"
+          },
+          {
+            "course": "7e78a6e9-3c7a-4f50-8a44-201f902b58fe"
+          },
+          {
+            "course": "197a3640-0d16-4a43-99c9-2332b005e336"
+          },
+          {
+            "course": "f67339dd-b770-4b32-be09-c3e3e41c5cea"
+          }
+        ]
+      },
+      "coreq_raw": "( IIND414 o IND2104 ) y ( CIND213 o ICI3217 ) y ( CIND214 o ICI2215 ) y CIND215 y ( CIND313 o ICI2611 )",
       "attrs": {
         "area": "industrial"
       }
     },
     {
-      "id": "82eb7ece-83c8-4ff3-8308-ed0f2af88815",
+      "id": "f67339dd-b770-4b32-be09-c3e3e41c5cea",
       "legacy_id": 41,
       "code": "CIND313",
       "name": "Práctica II",
@@ -1061,28 +1453,47 @@
         "op": "and",
         "items": [
           {
-            "course": "061dfd14-441a-4f40-ae78-193f01aa920b"
+            "course": "ba2610bb-5f31-4769-815a-8df5d5345f70"
           },
           {
-            "course": "6bf745da-f771-45e9-892d-803b39db15e7"
+            "course": "563641bb-0d44-4aef-b62d-212ef7757d63"
           },
           {
-            "course": "105f20b6-6c89-4d56-8cbf-5dfcc75c7d14"
+            "course": "d74ab958-08ce-4571-ad4d-fda6ab1c64f1"
           },
           {
-            "course": "83654616-b219-42f5-b5e3-1c9ad4ae4eea"
+            "course": "cd955f59-03ae-434b-b89e-50f67c6e21c5"
           }
         ]
       },
-      "prereq_raw": null,
-      "coreq_expr": null,
-      "coreq_raw": null,
+      "prereq_raw": "TDFI105 y ( IIND413 o IND2103 ) y ( CIND212 o ICI2212 ) y ( CIND114 o IND2213 )",
+      "coreq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "dfc71e91-d0cd-4b9b-abcd-d340ee4ef8fa"
+          },
+          {
+            "course": "a1c6814c-b500-4c27-a858-d80b21154e61"
+          },
+          {
+            "course": "7e78a6e9-3c7a-4f50-8a44-201f902b58fe"
+          },
+          {
+            "course": "197a3640-0d16-4a43-99c9-2332b005e336"
+          },
+          {
+            "course": "82b356ae-9424-45ab-88c6-40e9a9c200e1"
+          }
+        ]
+      },
+      "coreq_raw": "( IIND414 o IND2104 ) y ( CIND213 o ICI3217 ) y ( CIND214 o ICI2215 ) y CIND215 y CIND312",
       "attrs": {
         "area": "industrial"
       }
     },
     {
-      "id": "d4eec086-d62a-4f29-82da-52ed17183b63",
+      "id": "dfc71e91-d0cd-4b9b-abcd-d340ee4ef8fa",
       "legacy_id": 42,
       "code": "IIND414",
       "name": "Evaluación de Proyectos",
@@ -1092,9 +1503,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "6bf745da-f771-45e9-892d-803b39db15e7"
+        "course": "563641bb-0d44-4aef-b62d-212ef7757d63"
       },
-      "prereq_raw": null,
+      "prereq_raw": "IIND413 o IND2103",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -1102,7 +1513,7 @@
       }
     },
     {
-      "id": "dfad9582-721b-4612-88b6-0c02ab9506a5",
+      "id": "9241c0fc-8aed-4334-b488-a10a948656aa",
       "legacy_id": 43,
       "code": "CIND216",
       "name": "Finanzas Corporativas",
@@ -1112,9 +1523,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "6bf745da-f771-45e9-892d-803b39db15e7"
+        "course": "563641bb-0d44-4aef-b62d-212ef7757d63"
       },
-      "prereq_raw": null,
+      "prereq_raw": "IIND413 o IND2103",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -1122,7 +1533,7 @@
       }
     },
     {
-      "id": "e81edc5e-4b2d-47f7-a19a-11ce3bddf322",
+      "id": "4d815c85-6315-4c44-8775-79eedbfb8dc4",
       "legacy_id": 44,
       "code": "CIND217",
       "name": "Inteligencia de Negocios",
@@ -1132,9 +1543,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "a000fff6-eb13-4044-8766-78a7334ae1cf"
+        "course": "197a3640-0d16-4a43-99c9-2332b005e336"
       },
-      "prereq_raw": null,
+      "prereq_raw": "CIND215",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -1142,7 +1553,7 @@
       }
     },
     {
-      "id": "33b1eceb-d4bc-499c-bdfd-8b264b2c000e",
+      "id": "d405e4ca-f9a7-455f-8140-9e7e7291749c",
       "legacy_id": 45,
       "code": "CIND218",
       "name": "Marketing",
@@ -1152,9 +1563,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "ea4fe0d8-34dd-4247-87fb-329f0690e2cc"
+        "course": "767db5ac-3277-4387-9dfe-c0f7eaf13342"
       },
-      "prereq_raw": null,
+      "prereq_raw": "CIND411 o IND1101",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -1162,7 +1573,7 @@
       }
     },
     {
-      "id": "465eb532-f2f2-492b-8bc9-95ec708a8938",
+      "id": "d2f36146-e651-403b-8e05-8e13b5b37fa6",
       "legacy_id": 46,
       "code": "CIND219",
       "name": "Gestión Estratégica",
@@ -1172,9 +1583,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "ea4fe0d8-34dd-4247-87fb-329f0690e2cc"
+        "course": "767db5ac-3277-4387-9dfe-c0f7eaf13342"
       },
-      "prereq_raw": null,
+      "prereq_raw": "CIND411 o IND1101",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -1182,7 +1593,7 @@
       }
     },
     {
-      "id": "ce11bc09-67ef-45dd-acc2-3337c0d59b5c",
+      "id": "e1f91721-3080-491d-8644-cea54e4a1957",
       "legacy_id": 47,
       "code": "CIND220",
       "name": "Tópicos de Especialidad I",
@@ -1192,9 +1603,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "715d2df6-73c2-46b0-8469-1506443af9c6"
+        "course": "82b356ae-9424-45ab-88c6-40e9a9c200e1"
       },
-      "prereq_raw": null,
+      "prereq_raw": "CIND312",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -1202,7 +1613,7 @@
       }
     },
     {
-      "id": "5c111d86-17fe-47f9-98b1-265152aa9fbf",
+      "id": "07b05fe8-8db9-443a-b914-d20a9ce8d47f",
       "legacy_id": 48,
       "code": "CIND314",
       "name": "Portafolio de Proyectos",
@@ -1212,9 +1623,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "715d2df6-73c2-46b0-8469-1506443af9c6"
+        "course": "82b356ae-9424-45ab-88c6-40e9a9c200e1"
       },
-      "prereq_raw": null,
+      "prereq_raw": "CIND312",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -1222,7 +1633,7 @@
       }
     },
     {
-      "id": "b4e3ff1b-6481-47fa-bb66-89087ea148bf",
+      "id": "d44aeda6-50d8-4f10-8b2d-0806b253d364",
       "legacy_id": 49,
       "code": "CIND221",
       "name": "Tópicos de Especialidad II",
@@ -1232,9 +1643,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "715d2df6-73c2-46b0-8469-1506443af9c6"
+        "course": "82b356ae-9424-45ab-88c6-40e9a9c200e1"
       },
-      "prereq_raw": null,
+      "prereq_raw": "CIND312",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -1242,7 +1653,7 @@
       }
     },
     {
-      "id": "5d430f27-e483-43a2-b56b-a817051b40ce",
+      "id": "5fed1362-34b0-4a77-8516-2af82a2736d9",
       "legacy_id": 50,
       "code": "CIND222",
       "name": "Tópicos de Especialidad III",
@@ -1252,9 +1663,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "715d2df6-73c2-46b0-8469-1506443af9c6"
+        "course": "82b356ae-9424-45ab-88c6-40e9a9c200e1"
       },
-      "prereq_raw": null,
+      "prereq_raw": "CIND312",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {
@@ -1262,7 +1673,7 @@
       }
     },
     {
-      "id": "4c87fffe-63d9-4037-98f3-2a299575dda1",
+      "id": "4cea0642-152e-483c-8452-0f5c21cea0d7",
       "legacy_id": 51,
       "code": "CIND315",
       "name": "Proyecto de Título",
@@ -1272,9 +1683,9 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "5c111d86-17fe-47f9-98b1-265152aa9fbf"
+        "course": "07b05fe8-8db9-443a-b914-d20a9ce8d47f"
       },
-      "prereq_raw": null,
+      "prereq_raw": "CIND314 o ICI3003",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {

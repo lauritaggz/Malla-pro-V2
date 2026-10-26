@@ -1,6 +1,13 @@
 {
   "carrera": "Tecnología médica (UNAB)",
   "codigo_programa": "UNAB19600",
+  "fuente_oficial": {
+    "programa": "UNAB19600",
+    "catalogo": "201810",
+    "catalogoTexto": "PRIMER SEMESTRE 2018",
+    "lectura": "texto del documento"
+  },
+  "totalSemestres": 10,
   "menciones_disponibles": [
     {
       "codigo": "BACIMET",
@@ -23,7 +30,6 @@
       "nombre": "OTO"
     }
   ],
-  "totalSemestres": 10,
   "total_creditos_por_mencion": {
     "BACIMET": 628,
     "IFIME": 633,
@@ -104,7 +110,7 @@
           "prerrequisitos": [
             3
           ],
-          "prereq_expr": "FMMP101 o (FMM032 y FMM134)"
+          "prereq_expr": "FMMP101 o ( FMM032 y FMM134 )"
         },
         {
           "id": 9,
@@ -123,7 +129,7 @@
             4,
             2
           ],
-          "prereq_expr": "(MORF010 o (BIO010 y BIO013)) y (BIOL130 o BIO034)"
+          "prereq_expr": "( MORF010 o ( BIO010 y BIO013 ) ) y ( BIOL130 o BIO034 )"
         },
         {
           "id": 11,
@@ -146,13 +152,9 @@
           "nombre": "Bioquímica",
           "sct": 8,
           "prerrequisitos": [
-            6,
-            2,
-            1,
-            11,
-            10
+            11
           ],
-          "prereq_expr": "(TMED001 o TMD001) y (BIOL130 o BIO034) y (BIOL035 o BIO131) y QUIM022 y (MORF122 o (BIO122 y BIO125))"
+          "prereq_expr": "( ( BIOL034 o BIO130 ) y ( QUIM002 o ( QUI001 y QUI002 ) ) y ( BIOL035 o BIO131 ) ) o ( ( QUIM001 o ( QUI001 y QUI002 ) ) y ( BIOL034 o BIOL132 o BIO034 ) ) o ( QUIM022 o ( QUI022 y QUI108 ) )"
         },
         {
           "id": 13,
@@ -160,10 +162,9 @@
           "nombre": "Fisiología humana",
           "sct": 11,
           "prerrequisitos": [
-            8,
-            12
+            10
           ],
-          "prereq_expr": "(CFIS020 o FMF020) y (BIOL166 o BIO268)"
+          "prereq_expr": "( MORF014 o BIO014 ) o ( MORF122 o ( BIO122 y BIO125 ) )"
         },
         {
           "id": 14,
@@ -181,7 +182,7 @@
           "prerrequisitos": [
             9
           ],
-          "prereq_expr": "ING119 o equivalentes"
+          "prereq_expr": "ING119 o ING111 o ING110 o ING116 o ING117 o CNT021 o ( ING050 y ING051 ) o ( FLG301 y FLG302 ) o ( BMA281 y BMA282 ) o ( ETU081 y ETU082 )"
         },
         {
           "id": 16,
@@ -191,7 +192,7 @@
           "prerrequisitos": [
             6
           ],
-          "prereq_expr": "TMED001 o TMD001"
+          "prereq_expr": "( TMED001 o TMD001 )"
         },
         {
           "id": 17,
@@ -199,9 +200,10 @@
           "nombre": "Infectología",
           "sct": 8,
           "prerrequisitos": [
-            12
+            2,
+            1
           ],
-          "prereq_expr": "BIOL166 o BIO268"
+          "prereq_expr": "( BIOL130 o BIO034 ) y ( BIOL035 o BIO035 )"
         }
       ]
     }
@@ -232,7 +234,7 @@
               "prerrequisitos": [
                 15
               ],
-              "prereq_expr": "ING129 o equivalentes"
+              "prereq_expr": "ING129 o ING121 o ING120 o ING216 o ING126 o ING134 o ING127 o CNT026 o ( ETU181 y ETU182 ) o ING229"
             },
             {
               "id": 20,
@@ -242,7 +244,7 @@
               "prerrequisitos": [
                 13
               ],
-              "prereq_expr": "BIOL272 o (BIO372 y BIO171)"
+              "prereq_expr": "BIOL272 o ( BIO372 y BIO171 )"
             },
             {
               "id": 21,
@@ -257,7 +259,7 @@
                 17,
                 15
               ],
-              "prereq_expr": "(CFIS020 o FMF020) y BIOL272 y BIOL166 y TMED003 y TMED004 y ING129"
+              "prereq_expr": "( CFIS020 o FMF020 ) y ( BIOL272 o ( BIO372 y BIO171 ) ) y ( BIOL166 o BIO268 ) y ( TMED003 o ( TMD020 y TMD250 ) ) y ( TMED004 o BIO058 ) y ING129"
             },
             {
               "id": 22,
@@ -272,7 +274,7 @@
                 17,
                 15
               ],
-              "prereq_expr": "(CFIS020 o FMF020) y BIOL272 y BIOL166 y TMED003 y TMED004 y ING129"
+              "prereq_expr": "( CFIS020 o FMF020 ) y ( BIOL272 o ( BIO372 y BIO171 ) ) y ( BIOL166 o BIO268 ) y ( TMED003 o ( TMD020 y TMD250 ) ) y ( TMED004 o BIO058 ) y ING129"
             }
           ]
         },
@@ -287,7 +289,7 @@
               "prerrequisitos": [
                 19
               ],
-              "prereq_expr": "ING239 o equivalentes"
+              "prereq_expr": "ING239 o ING210 o ING216 o ING224 o ING126 o CNT126 o ( ETU281 y ETU282 ) o ING217"
             },
             {
               "id": 24,
@@ -295,10 +297,9 @@
               "nombre": "Salud pública I",
               "sct": 7,
               "prerrequisitos": [
-                19,
                 20
               ],
-              "prereq_expr": "ING239 o equivalentes y (TMED005 o TMD110)"
+              "prereq_expr": "( ODOT602 o ODT116 ) o ( FARM401 o QYF181 ) o ( ( EFER203 o ENF012 ) y ( FMMP001 o MAT002 o ( FMM003 o ENF040 ) ) ) o ( ( FMMP005 o FMM002 ) y ( NUYD011 o NUT012 ) ) o ( TMED005 o TMD110 ) o ( FMMP007 o FMM007 )"
             },
             {
               "id": 25,
@@ -319,7 +320,7 @@
                 21,
                 18
               ],
-              "prereq_expr": "(TMED411 o TMD225) y (FARM171 o BIO184)"
+              "prereq_expr": "( TMED411 o TMD225 ) y ( FARM171 o BIO184 )"
             },
             {
               "id": 27,
@@ -330,7 +331,7 @@
                 22,
                 20
               ],
-              "prereq_expr": "(TMED412 o (BIO286 y TMD255)) y (TMED005 o TMD110)"
+              "prereq_expr": "( TMED412 o ( BIO286 y TMD255 ) ) y ( TMED005 o TMD110 )"
             }
           ]
         },
@@ -345,7 +346,7 @@
               "prerrequisitos": [
                 24
               ],
-              "prereq_expr": "SPAB110 o equivalentes"
+              "prereq_expr": "( SPAB110 o ODT150 y ( ODOT501 o ( ODT120 y ODT122 ) ) ) o ( SPAB110 o QYF331 y ( FARM701 o QYF333 ) ) o ( SPAB110 o FMS117 y ( EFER301 o ( ENF111 y ENF117 ) ) ) o ( SPAB110 o ( NUT040 y FMS171 ) y ( NUYD034 o NUT027 ) ) o ( SPAB110 o FMS171 y ( TMED006 o TMD198 ) )"
             },
             {
               "id": 29,
@@ -355,7 +356,7 @@
               "prerrequisitos": [
                 22
               ],
-              "prereq_expr": "TMED412 o (BIO286 y TMD255)"
+              "prereq_expr": "TMED412 o ( BIO286 y TMD255 )"
             },
             {
               "id": 30,
@@ -388,17 +389,20 @@
               "nombre": "Administración y gestión en salud",
               "sct": 6,
               "prerrequisitos": [
-                28
+                28,
+                29
               ],
-              "prereq_expr": "SPAB111 o equivalentes"
+              "prereq_expr": "( ( SPAB111 o ODT251 ) y ( ODOT901 o ODT285 ) ) o ( ( FARM801 o QYF339 ) y ( SPAB111 o QYF331 ) ) o ( ( SPAB111 o NUT046 ) y ( NUYD043 o NUT110 ) ) o ( ( SPAB111 o TMD103 ) y ( TMED552 o TMD266 o TMED643 o TMD256 o TMED611 o TMD204 o TMED622 o TMD265 o TMED633 ) ) o ( SPAB301 o MED279 ) o ( SPAB113 o SPAB101 )"
             },
             {
               "id": 33,
               "codigo": "TMED002",
               "nombre": "Educación en salud",
               "sct": 4,
-              "prerrequisitos": [],
-              "prereq_expr": ""
+              "prerrequisitos": [
+                28
+              ],
+              "prereq_expr": "SPAB111 o TMD103"
             },
             {
               "id": 34,
@@ -416,10 +420,9 @@
               "nombre": "Inmunohematología",
               "sct": 15,
               "prerrequisitos": [
-                27,
-                29
+                27
               ],
-              "prereq_expr": "(TMED512 o TMD233) y (TMED611 o TMD204)"
+              "prereq_expr": "TMED512 o TMD233"
             },
             {
               "id": 36,
@@ -427,11 +430,9 @@
               "nombre": "Bioquímica clínica II",
               "sct": 18,
               "prerrequisitos": [
-                29,
-                30,
-                31
+                29
               ],
-              "prereq_expr": "(TMED613 o TMD301) y (TMED612 o TMD329) y (TMED611 o TMD204)"
+              "prereq_expr": "TMED611 o TMD204"
             },
             {
               "id": 37,
@@ -439,11 +440,11 @@
               "nombre": "Integrador I: caso clínico BACIMET",
               "sct": 9,
               "prerrequisitos": [
-                29,
+                31,
                 30,
-                31
+                29
               ],
-              "prereq_expr": "(TMED613 o TMD301) y (TMED612 o TMD329) y (TMED611 o TMD204)"
+              "prereq_expr": "( TMED613 o TMD301 ) y ( TMED612 o TMD329 ) y ( TMED611 o TMD204 )"
             }
           ]
         },
@@ -467,7 +468,7 @@
                 32,
                 37
               ],
-              "prereq_expr": "SPAB112 y (TMED714 o TMED721 o TMED731 o TMED744 o TMED752)"
+              "prereq_expr": "( SPAB112 o TMD320 ) y ( TMED714 o TMED721 o TMD293 o TMED731 o TMD337 o TMED744 o TMED752 o TMED316 )"
             },
             {
               "id": 40,
@@ -475,10 +476,10 @@
               "nombre": "Metodología de la investigación",
               "sct": 5,
               "prerrequisitos": [
-                32,
+                28,
                 37
               ],
-              "prereq_expr": "SPAB112 y (TMED714 o TMED721 o TMED731 o TMED744 o TMED752)"
+              "prereq_expr": "( ( SPAB111 o ODT251 ) y ( ODOT702 o ODT270 ) ) o ( ( SPAB111 o NUT046 ) y ( NUYD043 o NUT110 ) ) o ( ( SPAB111 o TMD103 ) y ( ( TMED714 o TMED721 o TMD293 o TMED731 o TMD337 o TMED744 o TMED752 ) o TMD316 ) ) o ( SPAB300 y OBST006 )"
             },
             {
               "id": 41,
@@ -489,7 +490,7 @@
                 35,
                 37
               ],
-              "prereq_expr": "(TMED712 o TMD325) y TMED714"
+              "prereq_expr": "( TMED712 o TMD325 ) y TMED714"
             },
             {
               "id": 42,
@@ -501,7 +502,7 @@
                 37,
                 36
               ],
-              "prereq_expr": "TMED711 y TMED714 y (TMED713 o TMD231)"
+              "prereq_expr": "TMED711 y TMED714 y ( TMED713 o TMD231 )"
             }
           ]
         },
@@ -527,7 +528,7 @@
                 41,
                 42
               ],
-              "prereq_expr": "SPAB303 y SPAB103 y (TMED811 o TMD325) y TMED812"
+              "prereq_expr": "SPAB303 y SPAB103 y ( TMED811 o TMD325 ) y TMED812"
             }
           ]
         },
@@ -540,9 +541,12 @@
               "nombre": "Integrador II: internado clínico BACIMET",
               "sct": 72,
               "prerrequisitos": [
-                44
+                40,
+                39,
+                41,
+                42
               ],
-              "prereq_expr": "TMED911"
+              "prereq_expr": "SPAB303 y SPAB103 y ( TMED811 o TMD325 ) y TMED812"
             }
           ]
         }
@@ -573,7 +577,7 @@
               "prerrequisitos": [
                 15
               ],
-              "prereq_expr": "ING129 o equivalentes"
+              "prereq_expr": "ING129 o ING121 o ING120 o ING216 o ING126 o ING134 o ING127 o CNT026 o ( ETU181 y ETU182 ) o ING229"
             },
             {
               "id": 48,
@@ -583,7 +587,7 @@
               "prerrequisitos": [
                 13
               ],
-              "prereq_expr": "BIOL272 o (BIO372 y BIO171)"
+              "prereq_expr": "BIOL272 o ( BIO372 y BIO171 )"
             },
             {
               "id": 49,
@@ -591,14 +595,14 @@
               "nombre": "Protección radiológica",
               "sct": 6,
               "prerrequisitos": [
-                8,
                 13,
                 12,
                 16,
                 17,
-                15
+                15,
+                8
               ],
-              "prereq_expr": "(CFIS020 o FMF020) y BIOL272 y BIOL166 y TMED003 y TMED004 y ING129"
+              "prereq_expr": "( BIOL272 o ( BIO372 y BIO171 ) ) y ( BIOL166 o BIO268 ) y ( TMED003 o ( TMD020 y TMD250 ) ) y ( TMED004 o BIO058 ) y ING129 y ( CFIS020 o FMF020 )"
             },
             {
               "id": 50,
@@ -606,14 +610,14 @@
               "nombre": "Radiodiagnóstico I",
               "sct": 20,
               "prerrequisitos": [
-                8,
                 13,
                 12,
                 16,
                 17,
-                15
+                15,
+                8
               ],
-              "prereq_expr": "(CFIS020 o FMF020) y BIOL272 y BIOL166 y TMED003 y TMED004 y ING129"
+              "prereq_expr": "( BIOL272 o ( BIO372 y BIO171 ) ) y ( BIOL166 o BIO268 ) y ( TMED003 o ( TMD020 y TMD250 ) ) y ( TMED004 o BIO058 ) y ING129 y ( CFIS020 o FMF020 )"
             },
             {
               "id": 51,
@@ -621,10 +625,14 @@
               "nombre": "Física electromagnética",
               "sct": 10,
               "prerrequisitos": [
+                13,
                 12,
-                13
+                16,
+                17,
+                15,
+                8
               ],
-              "prereq_expr": "BIOL166 o BIO268 y BIOL272 o equivalentes"
+              "prereq_expr": "( BIOL272 o ( BIO372 y BIO171 ) ) y ( BIOL166 o BIO268 ) y ( TMED003 o ( TMD020 y TMD250 ) ) y ( TMED004 o BIO058 ) y ING129 y ( CFIS020 o FMF020 )"
             }
           ]
         },
@@ -639,7 +647,7 @@
               "prerrequisitos": [
                 47
               ],
-              "prereq_expr": "ING239 o equivalentes"
+              "prereq_expr": "ING239 o ING210 o ING216 o ING224 o ING126 o CNT126 o ( ETU281 y ETU282 ) o ING217"
             },
             {
               "id": 53,
@@ -647,10 +655,9 @@
               "nombre": "Salud pública I",
               "sct": 7,
               "prerrequisitos": [
-                47,
                 48
               ],
-              "prereq_expr": "ING239 o equivalentes y (TMED005 o TMD110)"
+              "prereq_expr": "( ODOT602 o ODT116 ) o ( FARM401 o QYF181 ) o ( ( EFER203 o ENF012 ) y ( FMMP001 o MAT002 o ( FMM003 o ENF040 ) ) ) ) o ( ( FMMP005 o FMM002 ) y ( NUYD011 o NUT012 ) ) o ( TMED005 o TMD110 ) o ( FMMP007 o FMM007 )"
             },
             {
               "id": 54,
@@ -671,7 +678,7 @@
                 49,
                 51
               ],
-              "prereq_expr": "(TMED431 o TMD223) y (TMED433 o TMD200)"
+              "prereq_expr": "( TMED431 o TMD223 ) y ( TMED433 o TMD200 )"
             },
             {
               "id": 56,
@@ -682,7 +689,7 @@
                 50,
                 46
               ],
-              "prereq_expr": "(TMED432 o TMD222) y (FARM171 o BIO184)"
+              "prereq_expr": "( TMED432 o TMD222 ) y ( FARM171 o BIO184 )"
             },
             {
               "id": 57,
@@ -693,7 +700,7 @@
                 50,
                 48
               ],
-              "prereq_expr": "(TMED432 o TMD222) y (TMED005 o TMD110)"
+              "prereq_expr": "( TMED432 o TMD222 ) y ( TMED005 o TMD110 )"
             }
           ]
         },
@@ -708,7 +715,7 @@
               "prerrequisitos": [
                 53
               ],
-              "prereq_expr": "SPAB110 o equivalentes"
+              "prereq_expr": "( SPAB110 o ODT150 y ( ODOT501 o ( ODT120 y ODT122 ) ) ) o ( SPAB110 o QYF331 y ( FARM701 o QYF333 ) ) o ( SPAB110 o FMS117 y ( EFER301 o ( ENF111 y ENF117 ) ) ) o ( SPAB110 o ( NUT040 y FMS171 ) y ( NUYD034 o NUT027 ) ) o ( SPAB110 o FMS171 y ( TMED006 o TMD198 ) )"
             },
             {
               "id": 59,
@@ -718,7 +725,7 @@
               "prerrequisitos": [
                 55
               ],
-              "prereq_expr": "TMED531 o TMD264"
+              "prereq_expr": "TMED531"
             },
             {
               "id": 60,
@@ -729,7 +736,7 @@
                 56,
                 57
               ],
-              "prereq_expr": "(TMED532 o TMD249) y (TMED533 o (TMD251 y TMD282))"
+              "prereq_expr": "( TMED532 o TMD249 ) y ( TMED533 o ( TMD251 y TMD282 ) )"
             },
             {
               "id": 61,
@@ -750,7 +757,7 @@
                 56,
                 57
               ],
-              "prereq_expr": "(TMED532 o TMD249) y (TMED533 o (TMD251 y TMD282))"
+              "prereq_expr": "( TMED532 o TMD249 ) y ( TMED533 o ( TMD251 y TMD282 ) )"
             }
           ]
         },
@@ -763,17 +770,20 @@
               "nombre": "Administración y gestión en salud",
               "sct": 6,
               "prerrequisitos": [
-                58
+                58,
+                61
               ],
-              "prereq_expr": "SPAB111 o equivalentes"
+              "prereq_expr": "( ( SPAB111 o ODT251 ) y ( ODOT901 o ODT285 ) ) o ( ( FARM801 o QYF339 ) y ( SPAB111 o QYF331 ) ) o ( ( SPAB111 o NUT046 ) y ( NUYD043 o NUT110 ) ) o ( ( SPAB111 o TMD103 ) y ( TMED552 o TMD266 o TMED643 o TMD256 o TMED611 o TMD204 o TMED622 o TMD265 o TMED633 ) ) o ( SPAB301 o MED279 ) o ( SPAB113 o SPAB101 )"
             },
             {
               "id": 64,
               "codigo": "TMED002",
               "nombre": "Educación en salud",
               "sct": 4,
-              "prerrequisitos": [],
-              "prereq_expr": ""
+              "prerrequisitos": [
+                58
+              ],
+              "prereq_expr": "SPAB111 o TMD103"
             },
             {
               "id": 65,
@@ -793,7 +803,7 @@
               "prerrequisitos": [
                 62
               ],
-              "prereq_expr": "TMED634 o (TMD251 y TMD282)"
+              "prereq_expr": "TMED634 o ( TMD251 y TMD282 )"
             },
             {
               "id": 67,
@@ -805,7 +815,7 @@
                 61,
                 62
               ],
-              "prereq_expr": "(TMED632 o TMD297) y TMED633 y (TMED634 o (TMD251 y TMD282))"
+              "prereq_expr": "( TMED632 o TMD297 ) y TMED633 y ( TMED634 o ( TMD251 y TMD282 ) )"
             },
             {
               "id": 68,
@@ -815,7 +825,7 @@
               "prerrequisitos": [
                 62
               ],
-              "prereq_expr": "TMED634 o (TMD251 y TMD282)"
+              "prereq_expr": "TMED634 o ( TMD251 y TMD282 )"
             }
           ]
         },
@@ -839,7 +849,7 @@
                 63,
                 65
               ],
-              "prereq_expr": "SPAB112 y (TMED714 o TMED721 o TMED731 o TMED744 o TMED752)"
+              "prereq_expr": "( SPAB112 o TMD320 ) y ( TMED714 o TMED721 o TMD293 o TMED731 o TMD337 o TMED744 o TMED752 o TMED316 )"
             },
             {
               "id": 71,
@@ -847,10 +857,10 @@
               "nombre": "Metodología de la investigación",
               "sct": 5,
               "prerrequisitos": [
-                63,
+                58,
                 65
               ],
-              "prereq_expr": "SPAB112 y (TMED714 o TMED721 o TMED731 o TMED744 o TMED752)"
+              "prereq_expr": "( ( SPAB111 o ODT251 ) y ( ODOT702 o ODT270 ) ) o ( ( SPAB111 o NUT046 ) y ( NUYD043 o NUT110 ) ) o ( ( SPAB111 o TMD103 ) y ( ( TMED714 o TMED721 o TMD293 o TMED731 o TMD337 o TMED744 o TMED752 ) o TMD316 ) ) o ( SPAB300 y OBST006 )"
             },
             {
               "id": 72,
@@ -861,7 +871,7 @@
                 66,
                 67
               ],
-              "prereq_expr": "(TMED732 o TMD298) y TMED733"
+              "prereq_expr": "( TMED732 o TMD298 ) y TMED733"
             },
             {
               "id": 73,
@@ -872,7 +882,7 @@
                 67,
                 68
               ],
-              "prereq_expr": "TMED733 y (TMED734 o TMD297)"
+              "prereq_expr": "TMED733 y ( TMED734 o TMD298 )"
             }
           ]
         },
@@ -898,7 +908,7 @@
                 72,
                 73
               ],
-              "prereq_expr": "SPAB303 y SPAB103 y (TMED831 o TMD339) y (TMED832 o TMD297)"
+              "prereq_expr": "SPAB303 y SPAB103 y ( TMED831 o TMD339 ) y ( TMED832 o TMD297 )"
             }
           ]
         },
@@ -911,9 +921,12 @@
               "nombre": "Integrador II: internado clínico IFIME",
               "sct": 72,
               "prerrequisitos": [
-                75
+                71,
+                70,
+                72,
+                73
               ],
-              "prereq_expr": "TMED931"
+              "prereq_expr": "SPAB303 y SPAB103 y ( TMED831 o TMD339 ) y ( TMED832 o TMD297 )"
             }
           ]
         }
@@ -944,7 +957,7 @@
               "prerrequisitos": [
                 15
               ],
-              "prereq_expr": "ING129 o equivalentes"
+              "prereq_expr": "ING129 o ING121 o ING120 o ING216 o ING126 o ING134 o ING127 o CNT026 o ( ETU181 y ETU182 ) o ING229"
             },
             {
               "id": 79,
@@ -954,7 +967,7 @@
               "prerrequisitos": [
                 13
               ],
-              "prereq_expr": "BIOL272 o (BIO372 y BIO171)"
+              "prereq_expr": "BIOL272 o ( BIO372 y BIO171 )"
             },
             {
               "id": 80,
@@ -969,7 +982,7 @@
                 15,
                 8
               ],
-              "prereq_expr": "(BIOL272 o (BIO372 y BIO171)) y (BIOL166 o BIO268) y (TMED003 o (TMD020 y TMD250)) y (TMED004 o BIO058) y ING129 y (CFIS020 o FMF020)"
+              "prereq_expr": "( BIOL272 o ( BIO372 y BIO171 ) ) y ( BIOL166 o BIO268 ) y ( TMED003 o ( TMD020 y TMD250 ) ) y ( TMED004 o BIO058 ) y ING129 y ( CFIS020 o FMF020 )"
             },
             {
               "id": 81,
@@ -984,7 +997,7 @@
                 15,
                 8
               ],
-              "prereq_expr": "(BIOL272 o (BIO372 y BIO171)) y (BIOL166 o BIO268) y (TMED003 o (TMD020 y TMD250)) y (TMED004 o BIO058) y ING129 y (CFIS020 o FMF020)"
+              "prereq_expr": "( BIOL272 o ( BIO372 y BIO171 ) ) y ( BIOL166 o BIO268 ) y ( TMED003 o ( TMD020 y TMD250 ) ) y ( TMED004 o BIO058 ) y ING129 y ( CFIS020 o FMF020 )"
             }
           ]
         },
@@ -999,7 +1012,7 @@
               "prerrequisitos": [
                 78
               ],
-              "prereq_expr": "ING239 o equivalentes"
+              "prereq_expr": "ING239 o ING210 o ING216 o ING224 o ING126 o CNT126 o ( ETU281 y ETU282 ) o ING217"
             },
             {
               "id": 83,
@@ -1007,10 +1020,9 @@
               "nombre": "Salud pública I",
               "sct": 7,
               "prerrequisitos": [
-                78,
                 79
               ],
-              "prereq_expr": "ING239 o equivalentes y (TMED005 o TMD110)"
+              "prereq_expr": "( ODOT602 o ODT116 ) o ( FARM401 o QYF181 ) o ( ( EFER203 o ENF012 ) y ( FMMP001 o MAT002 o ( FMM003 o ENF040 ) ) ) o ( ( FMMP005 o FMM002 ) y ( NUYD011 o NUT012 ) ) o ( TMED005 o TMD110 ) o ( FMMP007 o FMM007 )"
             },
             {
               "id": 84,
@@ -1041,7 +1053,7 @@
                 81,
                 79
               ],
-              "prereq_expr": "(TMED442 o TMD199) y (TMED005 o TMD110)"
+              "prereq_expr": "( TMED442 o TMD199 ) y ( TMED005 o TMD110 )"
             }
           ]
         },
@@ -1064,7 +1076,7 @@
               "prerrequisitos": [
                 83
               ],
-              "prereq_expr": "SPAB110 o equivalentes"
+              "prereq_expr": "( SPAB110 o ODT150 y ( ODOT501 o ( ODT120 y ODT122 ) ) ) o ( SPAB110 o QYF331 y ( FARM701 o QYF333 ) ) o ( SPAB110 o FMS117 y ( EFER301 o ( ENF111 y ENF117 ) ) ) o ( SPAB110 o ( NUT040 y FMS171 ) y ( NUYD034 o NUT027 ) ) o ( SPAB110 o FMS171 y ( TMED006 o TMD198 ) )"
             },
             {
               "id": 89,
@@ -1085,7 +1097,7 @@
                 85,
                 86
               ],
-              "prereq_expr": "(TMED541 o TMD197) y (TMED542 o TMD256)"
+              "prereq_expr": "( TMED541 o TMD197 ) y ( TMED542 o TMD256 )"
             },
             {
               "id": 91,
@@ -1108,17 +1120,20 @@
               "nombre": "Administración y gestión en salud",
               "sct": 6,
               "prerrequisitos": [
-                88
+                88,
+                91
               ],
-              "prereq_expr": "SPAB111 o equivalentes"
+              "prereq_expr": "( ( SPAB111 o ODT251 ) y ( ODOT901 o ODT285 ) ) o ( ( FARM801 o QYF339 ) y ( SPAB111 o QYF331 ) ) o ( ( SPAB111 o NUT046 ) y ( NUYD043 o NUT110 ) ) o ( ( SPAB111 o TMD103 ) y ( TMED552 o TMD266 o TMED643 o TMD256 o TMED611 o TMD204 o TMED622 o TMD265 o TMED633 ) ) o ( SPAB301 o MED279 ) o ( SPAB113 o SPAB101 )"
             },
             {
               "id": 93,
               "codigo": "TMED002",
               "nombre": "Educación en salud",
               "sct": 4,
-              "prerrequisitos": [],
-              "prereq_expr": ""
+              "prerrequisitos": [
+                88
+              ],
+              "prereq_expr": "SPAB111 o TMD103"
             },
             {
               "id": 94,
@@ -1136,11 +1151,10 @@
               "nombre": "Diagnóstico inmunohistoquímico",
               "sct": 18,
               "prerrequisitos": [
-                89,
                 90,
                 91
               ],
-              "prereq_expr": "(TMED641 o BIO040) y (TMED642 o TMD248) y (TMED643 o TMD256)"
+              "prereq_expr": "( TMED642 o TMD248 ) y ( TMED643 o TMD256 )"
             },
             {
               "id": 96,
@@ -1162,7 +1176,7 @@
                 90,
                 91
               ],
-              "prereq_expr": "(TMED641 o BIO040) y (TMED642 o TMD248) y (TMED643 o TMD256)"
+              "prereq_expr": "( TMED641 o BIO040 ) y ( TMED642 o TMD248 ) y ( TMED643 o TMD256 )"
             }
           ]
         },
@@ -1178,7 +1192,7 @@
                 92,
                 97
               ],
-              "prereq_expr": "SPAB112 y (TMED714 o TMED721 o TMED731 o TMED744 o TMED752)"
+              "prereq_expr": "( SPAB112 o TMD320 ) y ( TMED714 o TMED721 o TMD293 o TMED731 o TMD337 o TMED744 o TMED752 o TMED316 )"
             },
             {
               "id": 99,
@@ -1186,10 +1200,10 @@
               "nombre": "Metodología de la investigación",
               "sct": 5,
               "prerrequisitos": [
-                92,
+                88,
                 97
               ],
-              "prereq_expr": "SPAB112 y (TMED714 o TMED721 o TMED731 o TMED744 o TMED752)"
+              "prereq_expr": "( ( SPAB111 o ODT251 ) y ( ODOT702 o ODT270 ) ) o ( ( SPAB111 o NUT046 ) y ( NUYD043 o NUT110 ) ) o ( ( SPAB111 o TMD103 ) y ( ( TMED714 o TMED721 o TMD293 o TMED731 o TMD337 o TMED744 o TMED752 ) o TMD316 ) ) o ( SPAB300 y OBST006 )"
             },
             {
               "id": 100,
@@ -1200,7 +1214,7 @@
                 94,
                 97
               ],
-              "prereq_expr": "(TMED741 o TMD294) y TMED744"
+              "prereq_expr": "( TMED741 o TMD294 ) y TMED744"
             },
             {
               "id": 101,
@@ -1212,7 +1226,7 @@
                 95,
                 97
               ],
-              "prereq_expr": "(TMED741 o TMD294) y (TMED742 o TMD327) y TMED744"
+              "prereq_expr": "( TMED741 o TMD294 ) y ( TMED742 o TMD327 ) y TMED744"
             },
             {
               "id": 102,
@@ -1223,7 +1237,7 @@
                 96,
                 97
               ],
-              "prereq_expr": "(TMED743 o TMD321) y TMED744"
+              "prereq_expr": "( TMED743 o TMD321 ) y TMED744"
             }
           ]
         },
@@ -1250,7 +1264,7 @@
                 101,
                 102
               ],
-              "prereq_expr": "SPAB303 y SPAB103 y (TMED841 o TMD326) y TMED842 y (TMED843 o TMD322)"
+              "prereq_expr": "SPAB303 y SPAB103 y ( TMED841 o TMD326 ) y TMED842 y ( TMED843 o TMD322 )"
             }
           ]
         },
@@ -1263,9 +1277,12 @@
               "nombre": "Integrador II: internado clínico MORFO",
               "sct": 72,
               "prerrequisitos": [
-                104
+                99,
+                98,
+                100,
+                101
               ],
-              "prereq_expr": "TMED941"
+              "prereq_expr": "SPAB303 y SPAB103 y ( TMED841 o TMD326 ) y TMED842 y ( TMED842 o TMD322 )"
             }
           ]
         }
@@ -1296,7 +1313,7 @@
               "prerrequisitos": [
                 15
               ],
-              "prereq_expr": "ING129 o equivalentes"
+              "prereq_expr": "ING129 o ING121 o ING120 o ING216 o ING126 o ING134 o ING127 o CNT026 o ( ETU181 y ETU182 ) o ING229"
             },
             {
               "id": 108,
@@ -1306,7 +1323,7 @@
               "prerrequisitos": [
                 13
               ],
-              "prereq_expr": "BIOL272 o (BIO372 y BIO171)"
+              "prereq_expr": "BIOL272 o ( BIO372 y BIO171 )"
             },
             {
               "id": 109,
@@ -1314,14 +1331,14 @@
               "nombre": "Morfofisiología ocular",
               "sct": 11,
               "prerrequisitos": [
-                8,
                 13,
                 12,
                 16,
                 17,
-                15
+                15,
+                8
               ],
-              "prereq_expr": "(CFIS020 o FMF020) y (BIOL272 o (BIO372 y BIO171)) y (BIOL166 o BIO268) y (TMED003 o (TMD020 y TMD250)) y (TMED004 o BIO058) y ING129"
+              "prereq_expr": "( BIOL272 o ( BIO372 y BIO171 ) ) y ( BIOL166 o BIO268 ) y ( TMED003 o ( TMD020 y TMD250 ) ) y ( TMED004 o BIO058 ) y ING129 y ( CFIS020 o FMF020 )"
             },
             {
               "id": 110,
@@ -1329,14 +1346,14 @@
               "nombre": "Oftalmología general",
               "sct": 18,
               "prerrequisitos": [
-                8,
                 13,
                 12,
                 16,
                 17,
-                15
+                15,
+                8
               ],
-              "prereq_expr": "(CFIS020 o FMF020) y (BIOL272 o (BIO372 y BIO171)) y (BIOL166 o BIO268) y (TMED003 o (TMD020 y TMD250)) y (TMED004 o BIO058) y ING129"
+              "prereq_expr": "( BIOL272 o ( BIO372 y BIO171 ) ) y ( BIOL166 o BIO268 ) y ( TMED003 o ( TMD020 y TMD250 ) ) y ( TMED004 o BIO058 ) y ING129 y ( CFIS020 o FMF020 )"
             },
             {
               "id": 111,
@@ -1344,10 +1361,14 @@
               "nombre": "Biofísica óptica",
               "sct": 7,
               "prerrequisitos": [
+                13,
                 12,
-                15
+                16,
+                17,
+                15,
+                8
               ],
-              "prereq_expr": "(BIOL166 o BIO268) y ING129"
+              "prereq_expr": "( BIOL272 o ( BIO372 y BIO171 ) ) y ( BIOL166 o BIO268 ) y ( TMED003 o ( TMD020 y TMD250 ) ) y ( TMED004 o BIO058 ) y ING129 y ( CFIS020 o FMF020 )"
             }
           ]
         },
@@ -1362,7 +1383,7 @@
               "prerrequisitos": [
                 107
               ],
-              "prereq_expr": "ING239 o equivalentes"
+              "prereq_expr": "ING239 o ING210 o ING216 o ING224 o ING126 o CNT126 o ( ETU281 y ETU282 ) o ING217"
             },
             {
               "id": 113,
@@ -1370,10 +1391,9 @@
               "nombre": "Salud pública I",
               "sct": 7,
               "prerrequisitos": [
-                107,
                 108
               ],
-              "prereq_expr": "ING239 o equivalentes y (TMED005 o TMD110)"
+              "prereq_expr": "( ODOT602 o ODT116 ) o ( FARM401 o QYF181 ) o ( ( EFER203 o ENF012 ) y ( FMMP001 o MAT002 o ( FMM003 o ENF040 ) ) ) o ( ( FMMP005 o FMM002 ) y ( NUYD011 o NUT012 ) ) o ( TMED005 o TMD110 ) o ( FMMP007 o FMM007 )"
             },
             {
               "id": 114,
@@ -1394,7 +1414,7 @@
                 108,
                 109
               ],
-              "prereq_expr": "(TMED005 o TMD110) y (TMED421 o TMD193)"
+              "prereq_expr": "( TMED005 o TMD110 ) y ( TMED421 o TMD193 )"
             },
             {
               "id": 116,
@@ -1405,7 +1425,7 @@
                 110,
                 111
               ],
-              "prereq_expr": "(TMED422 o TMD195) y (TMED423 o TMD192)"
+              "prereq_expr": "( TMED422 o TMD195 ) y ( TMED423 o TMD192 )"
             },
             {
               "id": 117,
@@ -1416,7 +1436,7 @@
                 106,
                 109
               ],
-              "prereq_expr": "(FARM171 o BIO184) y (TMED421 o TMD193)"
+              "prereq_expr": "( FARM171 o BIO184 ) y ( TMED421 o TMD193 )"
             }
           ]
         },
@@ -1431,7 +1451,7 @@
               "prerrequisitos": [
                 113
               ],
-              "prereq_expr": "SPAB110 o equivalentes"
+              "prereq_expr": "( SPAB110 o ODT150 y ( ODOT501 o ( ODT120 y ODT122 ) ) ) o ( SPAB110 o QYF331 y ( FARM701 o QYF333 ) ) o ( SPAB110 o FMS117 y ( EFER301 o ( ENF111 y ENF117 ) ) ) o ( SPAB110 o ( NUT040 y FMS171 ) y ( NUYD034 o NUT027 ) ) o ( SPAB110 o FMS171 y ( TMED006 o TMD198 ) )"
             },
             {
               "id": 119,
@@ -1439,9 +1459,10 @@
               "nombre": "Estudio del campo visual",
               "sct": 20,
               "prerrequisitos": [
-                115
+                115,
+                117
               ],
-              "prereq_expr": "TMED521 o TMD258"
+              "prereq_expr": "( TMED521 o TMD258 ) y ( TMED523 o TMD263 )"
             },
             {
               "id": 120,
@@ -1449,10 +1470,9 @@
               "nombre": "Estrabismo y ortóptica",
               "sct": 21,
               "prerrequisitos": [
-                115,
-                117
+                116
               ],
-              "prereq_expr": "(TMED521 o TMD258) y (TMED523 o TMD263)"
+              "prereq_expr": "TMED522 o TMD194"
             },
             {
               "id": 121,
@@ -1460,9 +1480,9 @@
               "nombre": "Optometría I",
               "sct": 15,
               "prerrequisitos": [
-                116
+                115
               ],
-              "prereq_expr": "TMED522 o TMD194"
+              "prereq_expr": "TMED521 o TMD258"
             }
           ]
         },
@@ -1483,17 +1503,20 @@
               "nombre": "Administración y gestión en salud",
               "sct": 6,
               "prerrequisitos": [
-                118
+                118,
+                120
               ],
-              "prereq_expr": "SPAB111 o equivalentes"
+              "prereq_expr": "( ( SPAB111 o ODT251 ) y ( ODOT901 o ODT285 ) ) o ( ( FARM801 o QYF339 ) y ( SPAB111 o QYF331 ) ) ) o ( ( SPAB111 o NUT046 ) y ( NUYD043 o NUT110 ) ) o ( ( SPAB111 o TMD103 ) y ( TMED552 o TMD266 o TMED643 o TMD256 o TMED611 o TMD204 o TMED622 o TMD265 o TMED633 ) ) o ( SPAB301 o MED279 ) o ( SPAB113 o SPAB101 )"
             },
             {
               "id": 124,
               "codigo": "TMED002",
               "nombre": "Educación en salud",
               "sct": 4,
-              "prerrequisitos": [],
-              "prereq_expr": ""
+              "prerrequisitos": [
+                118
+              ],
+              "prereq_expr": "SPAB111 o TMD103"
             },
             {
               "id": 125,
@@ -1504,7 +1527,7 @@
                 119,
                 120
               ],
-              "prereq_expr": "(TMED621 o TMD268) y (TMED622 o TMD265)"
+              "prereq_expr": "( TMED621 o TMD268 ) y ( TMED622 o TMD265 )"
             },
             {
               "id": 126,
@@ -1522,11 +1545,9 @@
               "nombre": "Procedimientos de apoyo en cirugía refractiva",
               "sct": 15,
               "prerrequisitos": [
-                121,
-                120,
-                119
+                121
               ],
-              "prereq_expr": "(TMED623 o TMD295) y (TMED622 o TMD265) y (TMED621 o TMD268)"
+              "prereq_expr": "TMED623 o TMD295"
             },
             {
               "id": 128,
@@ -1534,11 +1555,11 @@
               "nombre": "Integrador I: atención primaria en oftalmología",
               "sct": 5,
               "prerrequisitos": [
-                119,
+                121,
                 120,
-                121
+                119
               ],
-              "prereq_expr": "(TMED621 o TMD268) y (TMED622 o TMD265) y (TMED623 o TMD295)"
+              "prereq_expr": "( TMED623 o TMD295 ) y ( TMED622 o TMD265 ) y ( TMED621 o TMD268 )"
             }
           ]
         },
@@ -1554,7 +1575,7 @@
                 123,
                 125
               ],
-              "prereq_expr": "SPAB112 y (TMED714 o TMED721 o TMED731 o TMED744 o TMED752)"
+              "prereq_expr": "( SPAB112 o TMD320 ) y ( TMED714 o TMED721 o TMD293 o TMED731 o TMD337 o TMED744 o TMED752 o TMED316 )"
             },
             {
               "id": 130,
@@ -1562,10 +1583,10 @@
               "nombre": "Metodología de la investigación",
               "sct": 5,
               "prerrequisitos": [
-                123,
+                118,
                 125
               ],
-              "prereq_expr": "SPAB112 y (TMED714 o TMED721 o TMED731 o TMED744 o TMED752)"
+              "prereq_expr": "( ( SPAB111 o ODT251 ) y ( ODOT702 o ODT270 ) ) o ( ( SPAB111 o NUT046 ) y ( NUYD043 o NUT110 ) ) o ( ( SPAB111 o TMD103 ) y ( ( TMED714 o TMED721 o TMD293 o TMED731 o TMD337 o TMED744 o TMED752 ) o TMD316 ) ) o ( SPAB300 y OBST006 )"
             },
             {
               "id": 131,
@@ -1597,7 +1618,7 @@
                 127,
                 128
               ],
-              "prereq_expr": "(TMED723 o (TMD323 y TMD296)) y TMED724"
+              "prereq_expr": "( TMED723 o ( TMD323 y TMD296 ) ) y TMED724"
             }
           ]
         },
@@ -1624,7 +1645,7 @@
                 132,
                 133
               ],
-              "prereq_expr": "SPAB303 y SPAB103 y TMED821 y (TMED822 o TMD356) y (TMED823 o TMD357)"
+              "prereq_expr": "SPAB303 y SPAB103 y TMED821 y ( TMED822 o TMD356 ) y ( TMED823 o TMD357 )"
             }
           ]
         },
@@ -1637,9 +1658,13 @@
               "nombre": "Integrador II: internado clínico OFTA",
               "sct": 72,
               "prerrequisitos": [
-                135
+                130,
+                129,
+                131,
+                132,
+                133
               ],
-              "prereq_expr": "TMED921"
+              "prereq_expr": "SPAB303 y SPAB103 y TMED821 y ( TMED822 o TMD356 ) y ( TMED823 o TMD357 )"
             }
           ]
         }
@@ -1670,7 +1695,7 @@
               "prerrequisitos": [
                 15
               ],
-              "prereq_expr": "ING129 o equivalentes"
+              "prereq_expr": "ING129 o ING121 o ING120 o ING216 o ING126 o ING134 o ING127 o CNT026 o ( ETU181 y ETU182 ) o ING229"
             },
             {
               "id": 139,
@@ -1680,7 +1705,7 @@
               "prerrequisitos": [
                 13
               ],
-              "prereq_expr": "BIOL272 o (BIO372 y BIO171)"
+              "prereq_expr": "BIOL272 o ( BIO372 y BIO171 )"
             },
             {
               "id": 140,
@@ -1695,7 +1720,7 @@
                 15,
                 8
               ],
-              "prereq_expr": "(CFIS020 o FMF020) y (BIOL272 o (BIO372 y BIO171)) y (BIOL166 o BIO268) y (TMED003 o (TMD020 y TMD250)) y (TMED004 o BIO058) y ING129"
+              "prereq_expr": "( BIOL272 o ( BIO372 y BIO171 ) ) y ( BIOL166 o BIO268 ) y ( TMED003 o ( TMD020 y TMD250 ) ) y ( TMED004 o BIO058 ) y ING129 y ( CFIS020 o FMF020 )"
             },
             {
               "id": 141,
@@ -1710,7 +1735,7 @@
                 15,
                 8
               ],
-              "prereq_expr": "(CFIS020 o FMF020) y (BIOL272 o (BIO372 y BIO171)) y (BIOL166 o BIO268) y (TMED003 o (TMD020 y TMD250)) y (TMED004 o BIO058) y ING129"
+              "prereq_expr": "( BIOL272 o ( BIO372 y BIO171 ) ) y ( BIOL166 o BIO268 ) y ( TMED003 o ( TMD020 y TMD250 ) ) y ( TMED004 o BIO058 ) y ING129 y ( CFIS020 o FMF020 )"
             },
             {
               "id": 142,
@@ -1725,7 +1750,7 @@
                 15,
                 8
               ],
-              "prereq_expr": "(CFIS020 o FMF020) y (BIOL272 o (BIO372 y BIO171)) y (BIOL166 o BIO268) y (TMED003 o (TMD020 y TMD250)) y (TMED004 o BIO058) y ING129"
+              "prereq_expr": "( BIOL272 o ( BIO372 y BIO171 ) ) y ( BIOL166 o BIO268 ) y ( TMED003 o ( TMD020 y TMD250 ) ) y ( TMED004 o BIO058 ) y ING129 y ( CFIS020 o FMF020 )"
             }
           ]
         },
@@ -1740,7 +1765,7 @@
               "prerrequisitos": [
                 138
               ],
-              "prereq_expr": "ING239 o equivalentes"
+              "prereq_expr": "ING239 o ING210 o ING216 o ING224 o ING126 o CNT126 o ( ETU281 y ETU282 ) o ING217"
             },
             {
               "id": 144,
@@ -1748,10 +1773,9 @@
               "nombre": "Salud pública I",
               "sct": 7,
               "prerrequisitos": [
-                138,
                 139
               ],
-              "prereq_expr": "ING239 o equivalentes y (TMED005 o TMD110)"
+              "prereq_expr": "( ODOT602 o ODT116 ) o ( FARM401 o QYF181 ) o ( ( EFER203 o ENF012 ) y ( FMMP001 o MAT002 o ( FMM003 o ENF040 ) ) ) o ( ( FMMP005 o FMM002 ) y ( NUYD011 o NUT012 ) ) o ( TMED005 o TMD110 ) o ( FMMP007 o FMM007 )"
             },
             {
               "id": 145,
@@ -1769,9 +1793,10 @@
               "nombre": "Morfofisiopatología orl",
               "sct": 15,
               "prerrequisitos": [
-                139
+                139,
+                140
               ],
-              "prereq_expr": "TMED005 o TMD110"
+              "prereq_expr": "( TMED005 o TMD110 ) y ( TMED451 o FMF120 )"
             },
             {
               "id": 147,
@@ -1779,10 +1804,9 @@
               "nombre": "Función nasal",
               "sct": 13,
               "prerrequisitos": [
-                139,
-                140
+                139
               ],
-              "prereq_expr": "(TMED005 o TMD110) y (TMED451 o FMF120)"
+              "prereq_expr": "TMED005 o TMD110"
             },
             {
               "id": 148,
@@ -1815,7 +1839,7 @@
               "prerrequisitos": [
                 144
               ],
-              "prereq_expr": "SPAB110 o equivalentes"
+              "prereq_expr": "( SPAB110 o ODT150 y ( ODOT501 o ( ODT120 y ODT122 ) ) ) o ( SPAB110 o QYF331 y ( FARM701 o QYF333 ) ) o ( SPAB110 o FMS117 y ( EFER301 o ( ENF111 y ENF117 ) ) ) o ( SPAB110 o ( NUT040 y FMS171 ) y ( NUYD034 o NUT027 ) ) o ( SPAB110 o FMS171 y ( TMED006 o TMD198 ) )"
             },
             {
               "id": 151,
@@ -1827,7 +1851,7 @@
                 148,
                 142
               ],
-              "prereq_expr": "(TMED551 o TMD202) y (TMED553 o TMD196) y (TMED453 o TMD267)"
+              "prereq_expr": "( TMED551 o TMD202 ) y ( TMED553 o TMD196 ) y ( TMED453 o TMD267 )"
             },
             {
               "id": 152,
@@ -1838,7 +1862,7 @@
                 146,
                 148
               ],
-              "prereq_expr": "(TMED551 o TMD202) y (TMED553 o TMD196)"
+              "prereq_expr": "( TMED551 o TMD202 ) y ( TMED553 o TMD196 )"
             }
           ]
         },
@@ -1851,17 +1875,20 @@
               "nombre": "Administración y gestión en salud",
               "sct": 6,
               "prerrequisitos": [
-                150
+                150,
+                147
               ],
-              "prereq_expr": "SPAB111 o equivalentes"
+              "prereq_expr": "( ( SPAB111 o ODT251 ) y ( ODOT901 o ODT285 ) ) o ( ( FARM801 o QYF339 ) y ( SPAB111 o QYF331 ) ) o ( ( SPAB111 o NUT046 ) y ( NUYD043 o NUT110 ) ) o ( ( SPAB111 o TMD103 ) y ( TMED552 o TMD266 o TMED643 o TMD256 o TMED611 o TMD204 o TMED622 o TMD265 o TMED633 ) ) o ( SPAB301 o MED279 ) o ( SPAB113 o SPAB101 )"
             },
             {
               "id": 154,
               "codigo": "TMED002",
               "nombre": "Educación en salud",
               "sct": 4,
-              "prerrequisitos": [],
-              "prereq_expr": ""
+              "prerrequisitos": [
+                150
+              ],
+              "prereq_expr": "SPAB111 o TMD103"
             },
             {
               "id": 155,
@@ -1871,7 +1898,7 @@
               "prerrequisitos": [
                 151
               ],
-              "prereq_expr": "TMED651 o (TMD252 y TMD253)"
+              "prereq_expr": "TMED651 o ( TMD252 y TMD253 )"
             },
             {
               "id": 156,
@@ -1882,7 +1909,7 @@
                 151,
                 152
               ],
-              "prereq_expr": "(TMED651 o (TMD252 y TMD253)) y (TMED652 o (TMD202 y TMD316))"
+              "prereq_expr": "( TMED651 o ( TMD252 y TMD253 ) ) y ( TMED652 o ( TMD202 y TMD316 ) )"
             },
             {
               "id": 157,
@@ -1893,7 +1920,7 @@
                 151,
                 152
               ],
-              "prereq_expr": "(TMED651 o (TMD252 y TMD253)) y (TMED652 o (TMD202 y TMD316))"
+              "prereq_expr": "( TMED651 o ( TMD252 y TMD253 ) ) y ( TMED652 o ( TMD202 y TMD316 ) )"
             }
           ]
         },
@@ -1909,7 +1936,7 @@
                 153,
                 156
               ],
-              "prereq_expr": "SPAB112 y (TMED714 o TMED721 o TMED731 o TMED744 o TMED752)"
+              "prereq_expr": "( SPAB112 o TMD320 ) y ( TMED714 o TMED721 o TMD293 o TMED731 o TMD337 o TMED744 o TMED752 o TMED316 )"
             },
             {
               "id": 159,
@@ -1917,10 +1944,10 @@
               "nombre": "Metodología de la investigación",
               "sct": 5,
               "prerrequisitos": [
-                153,
+                150,
                 156
               ],
-              "prereq_expr": "SPAB112 y (TMED714 o TMED721 o TMED731 o TMED744 o TMED752)"
+              "prereq_expr": "( ( SPAB111 o ODT251 ) y ( ODOT702 o ODT270 ) ) o ( ( SPAB111 o NUT046 ) y ( NUYD043 o NUT110 ) ) o ( ( SPAB111 o TMD103 ) y ( ( TMED714 o TMED721 o TMD293 o TMED731 o TMD337 o TMED744 o TMED752 ) o TMD316 ) ) o ( SPAB300 y OBST006 )"
             },
             {
               "id": 160,
@@ -1928,9 +1955,10 @@
               "nombre": "Salud ocupacional",
               "sct": 12,
               "prerrequisitos": [
-                153
+                155,
+                157
               ],
-              "prereq_expr": "SPAB112 o TMD320"
+              "prereq_expr": "( TMED751 o TMD324 ) y TMED753"
             },
             {
               "id": 161,
@@ -1941,7 +1969,7 @@
                 155,
                 157
               ],
-              "prereq_expr": "(TMED751 o TMD324) y TMED753"
+              "prereq_expr": "( TMED751 o TMD324 ) y TMED753"
             },
             {
               "id": 162,
@@ -1952,7 +1980,7 @@
                 155,
                 156
               ],
-              "prereq_expr": "(TMED751 o TMD324) y (TMED752 o TMD316)"
+              "prereq_expr": "( TMED751 o TMD324 ) y ( TMED752 o TMD316 )"
             }
           ]
         },
@@ -1979,7 +2007,7 @@
                 161,
                 162
               ],
-              "prereq_expr": "SPAB303 y SPAB103 y (TMED851 o TMD280) y (TMED852 o TMD259) y (TMED853 o (TMD259 y TMD253))"
+              "prereq_expr": "SPAB303 y SPAB103 y ( TMED851 o TMD280 ) y ( TMED852 o TMD259 ) y ( TMED853 o ( TMD259 y TMD253 ) )"
             }
           ]
         },
@@ -1992,13 +2020,769 @@
               "nombre": "Integrador II: internado clínico OTO",
               "sct": 72,
               "prerrequisitos": [
-                164
+                159,
+                158,
+                160,
+                161,
+                162
               ],
-              "prereq_expr": "TMED951"
+              "prereq_expr": "SPAB303 y SPAB103 y ( TMED851 o TMD280 ) y ( TMED852 o TMD259 ) y ( TMED853 o ( TMD259 y TMD253 ) )"
             }
           ]
         }
       ]
     }
+  },
+  "equivalencias": {
+    "BIOL035": [
+      [
+        "BIO035"
+      ],
+      [
+        "BIO131"
+      ]
+    ],
+    "BIOL130": [
+      [
+        "BIO034"
+      ]
+    ],
+    "BIOL166": [
+      [
+        "BIO268"
+      ]
+    ],
+    "BIOL272": [
+      [
+        "BIO372",
+        "BIO171"
+      ]
+    ],
+    "CFIS020": [
+      [
+        "FMF020"
+      ]
+    ],
+    "FARM171": [
+      [
+        "BIO184"
+      ]
+    ],
+    "FMMP101": [
+      [
+        "FMM032",
+        "FMM134"
+      ]
+    ],
+    "ING119": [
+      [
+        "BMA281",
+        "BMA282"
+      ],
+      [
+        "CNT021"
+      ],
+      [
+        "ETU081",
+        "ETU082"
+      ],
+      [
+        "FLG301",
+        "FLG302"
+      ],
+      [
+        "ING050",
+        "ING051"
+      ],
+      [
+        "ING110"
+      ],
+      [
+        "ING111"
+      ],
+      [
+        "ING116"
+      ],
+      [
+        "ING117"
+      ]
+    ],
+    "ING129": [
+      [
+        "CNT026"
+      ],
+      [
+        "ETU181",
+        "ETU182"
+      ],
+      [
+        "ING120"
+      ],
+      [
+        "ING121"
+      ],
+      [
+        "ING126"
+      ],
+      [
+        "ING127"
+      ],
+      [
+        "ING134"
+      ],
+      [
+        "ING216"
+      ],
+      [
+        "ING229"
+      ]
+    ],
+    "ING239": [
+      [
+        "CNT126"
+      ],
+      [
+        "ETU281",
+        "ETU282"
+      ],
+      [
+        "ING126"
+      ],
+      [
+        "ING210"
+      ],
+      [
+        "ING216"
+      ],
+      [
+        "ING217"
+      ],
+      [
+        "ING224"
+      ]
+    ],
+    "MORF010": [
+      [
+        "BIO010",
+        "BIO013"
+      ]
+    ],
+    "MORF122": [
+      [
+        "BIO122",
+        "BIO125"
+      ]
+    ],
+    "QUIM022": [
+      [
+        "QUI022",
+        "QUI108"
+      ]
+    ],
+    "QUIM102": [
+      [
+        "QUI102"
+      ]
+    ],
+    "SPAB110": [
+      [
+        "FMS117",
+        "EFER301",
+        "ENF111",
+        "ENF117"
+      ],
+      [
+        "NUT040",
+        "FMS171",
+        "NUYD034",
+        "NUT027"
+      ],
+      [
+        "ODT150",
+        "ODOT501",
+        "ODT120",
+        "ODT122"
+      ],
+      [
+        "QYF331",
+        "FARM701",
+        "QYF333"
+      ]
+    ],
+    "SPAB111": [
+      [
+        "NUT046"
+      ],
+      [
+        "ODT251"
+      ],
+      [
+        "QYF331"
+      ],
+      [
+        "TMD103"
+      ]
+    ],
+    "SPAB112": [
+      [
+        "TMD320"
+      ]
+    ],
+    "TMED001": [
+      [
+        "TMD001"
+      ]
+    ],
+    "TMED003": [
+      [
+        "TMD020",
+        "TMD250"
+      ]
+    ],
+    "TMED004": [
+      [
+        "BIO058"
+      ]
+    ],
+    "TMED005": [
+      [
+        "TMD110"
+      ]
+    ],
+    "TMED006": [
+      [
+        "TMD198"
+      ]
+    ],
+    "TMED411": [
+      [
+        "TMD225"
+      ]
+    ],
+    "TMED412": [
+      [
+        "BIO286",
+        "TMD255"
+      ]
+    ],
+    "TMED421": [
+      [
+        "TMD193"
+      ]
+    ],
+    "TMED422": [
+      [
+        "TMD195"
+      ]
+    ],
+    "TMED423": [
+      [
+        "TMD192"
+      ]
+    ],
+    "TMED431": [
+      [
+        "TMD223"
+      ]
+    ],
+    "TMED432": [
+      [
+        "TMD222"
+      ]
+    ],
+    "TMED433": [
+      [
+        "TMD200"
+      ]
+    ],
+    "TMED441": [
+      [
+        "TMD197"
+      ]
+    ],
+    "TMED442": [
+      [
+        "TMD199"
+      ]
+    ],
+    "TMED451": [
+      [
+        "FMF120"
+      ]
+    ],
+    "TMED452": [
+      [
+        "TMD196"
+      ]
+    ],
+    "TMED453": [
+      [
+        "TMD267"
+      ]
+    ],
+    "TMED511": [
+      [
+        "TMD329"
+      ]
+    ],
+    "TMED512": [
+      [
+        "TMD233"
+      ]
+    ],
+    "TMED521": [
+      [
+        "TMD258"
+      ]
+    ],
+    "TMED522": [
+      [
+        "TMD194"
+      ]
+    ],
+    "TMED523": [
+      [
+        "TMD263"
+      ]
+    ],
+    "TMED532": [
+      [
+        "TMD249"
+      ]
+    ],
+    "TMED533": [
+      [
+        "TMD251",
+        "TMD282"
+      ]
+    ],
+    "TMED541": [
+      [
+        "TMD197"
+      ]
+    ],
+    "TMED542": [
+      [
+        "TMD256"
+      ]
+    ],
+    "TMED551": [
+      [
+        "TMD202"
+      ]
+    ],
+    "TMED552": [
+      [
+        "TMD204"
+      ],
+      [
+        "TMD256"
+      ],
+      [
+        "TMD265"
+      ],
+      [
+        "TMD266"
+      ],
+      [
+        "TMED611"
+      ],
+      [
+        "TMED622"
+      ],
+      [
+        "TMED633"
+      ],
+      [
+        "TMED643"
+      ]
+    ],
+    "TMED553": [
+      [
+        "TMD196"
+      ]
+    ],
+    "TMED611": [
+      [
+        "TMD204"
+      ],
+      [
+        "TMD256"
+      ],
+      [
+        "TMD265"
+      ],
+      [
+        "TMD266"
+      ],
+      [
+        "TMED552"
+      ],
+      [
+        "TMED622"
+      ],
+      [
+        "TMED633"
+      ],
+      [
+        "TMED643"
+      ]
+    ],
+    "TMED612": [
+      [
+        "TMD329"
+      ]
+    ],
+    "TMED613": [
+      [
+        "TMD301"
+      ]
+    ],
+    "TMED621": [
+      [
+        "TMD268"
+      ]
+    ],
+    "TMED622": [
+      [
+        "TMD204"
+      ],
+      [
+        "TMD256"
+      ],
+      [
+        "TMD265"
+      ],
+      [
+        "TMD266"
+      ],
+      [
+        "TMED552"
+      ],
+      [
+        "TMED611"
+      ],
+      [
+        "TMED633"
+      ],
+      [
+        "TMED643"
+      ]
+    ],
+    "TMED623": [
+      [
+        "TMD295"
+      ]
+    ],
+    "TMED631": [
+      [
+        "TMD264"
+      ]
+    ],
+    "TMED632": [
+      [
+        "TMD297"
+      ]
+    ],
+    "TMED633": [
+      [
+        "TMD204"
+      ],
+      [
+        "TMD256"
+      ],
+      [
+        "TMD265"
+      ],
+      [
+        "TMD266"
+      ],
+      [
+        "TMED552"
+      ],
+      [
+        "TMED611"
+      ],
+      [
+        "TMED622"
+      ],
+      [
+        "TMED643"
+      ]
+    ],
+    "TMED634": [
+      [
+        "TMD251",
+        "TMD282"
+      ]
+    ],
+    "TMED641": [
+      [
+        "BIO040"
+      ]
+    ],
+    "TMED642": [
+      [
+        "TMD248"
+      ]
+    ],
+    "TMED643": [
+      [
+        "TMD204"
+      ],
+      [
+        "TMD256"
+      ],
+      [
+        "TMD265"
+      ],
+      [
+        "TMD266"
+      ],
+      [
+        "TMED552"
+      ],
+      [
+        "TMED611"
+      ],
+      [
+        "TMED622"
+      ],
+      [
+        "TMED633"
+      ]
+    ],
+    "TMED651": [
+      [
+        "TMD252",
+        "TMD253"
+      ]
+    ],
+    "TMED652": [
+      [
+        "TMD202",
+        "TMD316"
+      ]
+    ],
+    "TMED712": [
+      [
+        "TMD325"
+      ]
+    ],
+    "TMED713": [
+      [
+        "TMD231"
+      ]
+    ],
+    "TMED714": [
+      [
+        "TMD293"
+      ],
+      [
+        "TMD337"
+      ],
+      [
+        "TMED316"
+      ],
+      [
+        "TMED721"
+      ],
+      [
+        "TMED731"
+      ],
+      [
+        "TMED744"
+      ],
+      [
+        "TMED752"
+      ]
+    ],
+    "TMED721": [
+      [
+        "TMD293"
+      ],
+      [
+        "TMD337"
+      ],
+      [
+        "TMED316"
+      ],
+      [
+        "TMED714"
+      ],
+      [
+        "TMED731"
+      ],
+      [
+        "TMED744"
+      ],
+      [
+        "TMED752"
+      ]
+    ],
+    "TMED723": [
+      [
+        "TMD323",
+        "TMD296"
+      ]
+    ],
+    "TMED731": [
+      [
+        "TMD293"
+      ],
+      [
+        "TMD337"
+      ],
+      [
+        "TMED316"
+      ],
+      [
+        "TMED714"
+      ],
+      [
+        "TMED721"
+      ],
+      [
+        "TMED744"
+      ],
+      [
+        "TMED752"
+      ]
+    ],
+    "TMED732": [
+      [
+        "TMD298"
+      ]
+    ],
+    "TMED734": [
+      [
+        "TMD298"
+      ]
+    ],
+    "TMED741": [
+      [
+        "TMD294"
+      ]
+    ],
+    "TMED742": [
+      [
+        "TMD327"
+      ]
+    ],
+    "TMED743": [
+      [
+        "TMD321"
+      ]
+    ],
+    "TMED744": [
+      [
+        "TMD293"
+      ],
+      [
+        "TMD337"
+      ],
+      [
+        "TMED316"
+      ],
+      [
+        "TMED714"
+      ],
+      [
+        "TMED721"
+      ],
+      [
+        "TMED731"
+      ],
+      [
+        "TMED752"
+      ]
+    ],
+    "TMED751": [
+      [
+        "TMD324"
+      ]
+    ],
+    "TMED752": [
+      [
+        "TMD293"
+      ],
+      [
+        "TMD316"
+      ],
+      [
+        "TMD337"
+      ],
+      [
+        "TMED316"
+      ],
+      [
+        "TMED714"
+      ],
+      [
+        "TMED721"
+      ],
+      [
+        "TMED731"
+      ],
+      [
+        "TMED744"
+      ]
+    ],
+    "TMED811": [
+      [
+        "TMD325"
+      ]
+    ],
+    "TMED822": [
+      [
+        "TMD356"
+      ]
+    ],
+    "TMED823": [
+      [
+        "TMD357"
+      ]
+    ],
+    "TMED831": [
+      [
+        "TMD339"
+      ]
+    ],
+    "TMED832": [
+      [
+        "TMD297"
+      ]
+    ],
+    "TMED841": [
+      [
+        "TMD326"
+      ]
+    ],
+    "TMED842": [
+      [
+        "TMD322"
+      ]
+    ],
+    "TMED843": [
+      [
+        "TMD322"
+      ]
+    ],
+    "TMED851": [
+      [
+        "TMD280"
+      ]
+    ],
+    "TMED852": [
+      [
+        "TMD259"
+      ]
+    ],
+    "TMED853": [
+      [
+        "TMD259",
+        "TMD253"
+      ]
+    ]
   }
 }
