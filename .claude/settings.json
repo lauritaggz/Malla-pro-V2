@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./backend/.env)",
+      "Read(./frontend/.env.local)",
+      "Read(./backend/firebase-sa*.json)",
+      "Edit(./.env)",
+      "Edit(./backend/.env)",
+      "Edit(./frontend/.env.local)",
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Bash(git push origin main:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(docker compose down -v:*)"
+    ]
+  }
+}

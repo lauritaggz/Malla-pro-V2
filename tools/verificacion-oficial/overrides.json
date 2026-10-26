@@ -1,0 +1,18 @@
+{
+ "CInf": {
+  "codigos": {
+   "OW01": "CINF101",
+   "CMS102": "CINF102",
+   "CRO": "CINF105",
+   "CMS104": "CINF104",
+   "SON": "ACAD103"
+  },
+  "nombres": {
+   "CINF200": "Integrador II: Seminario de Licenciatura en Ciencias de la Ingeniería"
+  },
+  "sin_enlace": true,
+  "enlaces": {
+   "CINF200": "INSW421"
+  }
+ }
+}
