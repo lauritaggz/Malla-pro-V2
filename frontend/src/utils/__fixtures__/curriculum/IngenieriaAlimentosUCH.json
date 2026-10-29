@@ -32,6 +32,7 @@
       "universidad": "Universidad de Chile",
       "nota_codigos": "Los códigos IA001, IA002, etc. son códigos internos para el visor de mallas; el PDF oficial usado como fuente muestra número de asignatura, nombre, SCT, línea formativa y requisitos, pero no códigos oficiales de asignatura.",
       "fuente_oficial": {
+        "origen": "sitio de la Facultad de Ciencias Químicas y Farmacéuticas, U. de Chile (quimica.uchile.cl), según Laura",
         "lectura": "revisión visual ramo por ramo",
         "documento": "malla ing en alimentos uch}.pdf",
         "verificada": "2026-10-29"

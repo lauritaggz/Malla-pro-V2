@@ -3,6 +3,13 @@
   "universidad": "Universidad de Chile",
   "total_creditos": 330,
   "nota_codigos": "Los códigos QUI001, QUI002, etc. son códigos internos para el visor de mallas; el PDF oficial usado como fuente muestra número de asignatura, nombre, SCT, línea formativa y requisitos, pero no códigos oficiales de asignatura.",
+  "fuente_oficial": {
+    "documento": "MALLA Q - corregido (1).pdf",
+    "url": "https://quimica.uchile.cl/dam/jcr:62985238-31f8-447b-85be-fdf4021bfafd/MALLA%20Q%20-%20corregido%20%281%29.pdf",
+    "decreto": "D.U. N° 0011284 de 3 de abril de 2025",
+    "lectura": "revisión visual ramo por ramo",
+    "verificada": "2026-10-29"
+  },
   "semestres": [
     {
       "numero": 1,

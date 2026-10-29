@@ -31,6 +31,7 @@
     "attrs": {
       "universidad": "Universidad de Chile",
       "fuente_oficial": {
+        "origen": "sitio de la Facultad de Ciencias Químicas y Farmacéuticas, U. de Chile (quimica.uchile.cl), según Laura",
         "lectura": "revisión visual ramo por ramo",
         "documento": "MALLA BQ - corregido (1).pdf",
         "verificada": "2026-10-29"

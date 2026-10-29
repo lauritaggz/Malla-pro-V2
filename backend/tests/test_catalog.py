@@ -12,7 +12,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.models.catalog import Course, CourseAlias, CurriculumVersion, Program, Track, University
 from app.schemas.prereq import validate_prereq_tree
 from app.services.career_key import career_key_from_url
-from app.services.legacy_import import LEGACY_PROGRAMS, import_legacy_folder
+from app.services.legacy_import import LEGACY_PROGRAMS, _source_note, import_legacy_folder
 from app.services.prerequisites import UnsupportedPrereqTree, and_tree, flatten_and_tree
 
 MALLAS_DIR = Path(__file__).resolve().parents[2] / "frontend" / "public" / "mallas"
@@ -338,11 +338,7 @@ async def test_new_top_level_fields_are_kept_verbatim(imported, db_session: Asyn
         "curriculum: program UNAB12210 catalog 202010 (PRIMER SEMESTRE 2020) reading: OCR revisado"
     )
     quimica = await _version_for(db_session, "QuimicaUCH")
-    assert quimica.source_note == (
-        "Imported from frontend/public/mallas/QuimicaUCH.json. "
-        "Not checked against an official document"
-    )
-    assert "fuente_oficial" not in quimica.attrs
+    assert quimica.attrs["fuente_oficial"]["url"].startswith("https://quimica.uchile.cl/")
     bq = await _version_for(db_session, "BioquimicaUCH")
     assert bq.source_note == (
         "Imported from frontend/public/mallas/BioquimicaUCH.json. Checked against the official "
@@ -422,7 +418,7 @@ async def test_unknown_top_level_key_is_kept_and_reported(
 async def test_every_malla_states_whether_it_was_verified(
     imported, db_session: AsyncSession
 ) -> None:
-    """CA-01: the catalog tells verified mallas from the ones never checked (only QuimicaUCH)."""
+    """CA-01: the catalog tells verified mallas from the ones never checked (none left)."""
     unverified = []
     for p in LEGACY_PROGRAMS:
         version = await _version_for(db_session, p.stem)
@@ -431,4 +427,10 @@ async def test_every_malla_states_whether_it_was_verified(
         else:
             assert version.source_note.endswith("Not checked against an official document")
             unverified.append(p.stem)
-    assert unverified == ["QuimicaUCH"]
+    assert unverified == []
+
+
+def test_source_note_flags_a_malla_without_official_source() -> None:
+    assert _source_note("X", {"carrera": "X"}) == (
+        "Imported from frontend/public/mallas/X.json. Not checked against an official document"
+    )
