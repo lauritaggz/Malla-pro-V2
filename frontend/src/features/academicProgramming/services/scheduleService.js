@@ -1,3 +1,5 @@
+import { safeStorage } from "../../../utils/safeStorage";
+
 export const unabTimeSlots = [
   { id: 1,  start: "08:30", end: "09:15" },
   { id: 2,  start: "09:25", end: "10:10" },
@@ -247,6 +249,89 @@ export function getStableCourseColor(courseCode) {
     borderDark: `hsl(${hue}, 35%, 28%)`,
     textDark: `hsl(${hue}, 80%, 85%)`
   };
+}
+
+// ---------------------------------------------------------------------------
+// Colores por asignatura
+// ---------------------------------------------------------------------------
+
+// Orden pensado para que los colores que se asignan seguidos queden lejos entre sí.
+// Se evitan los rojos puros: el rojo queda reservado para los topes.
+export const COURSE_COLOR_HUES = [
+  210, 35, 285, 150, 330, 60, 185, 255, 100, 20, 305, 130, 230, 45, 170, 270, 80, 195,
+];
+
+const COURSE_COLORS_STORAGE_KEY = "mallaPro:v1:courseColors";
+
+export function normalizeCourseKey(courseCode) {
+  return String(courseCode || "").trim().toUpperCase().replace(/[^A-Z0-9]/g, "");
+}
+
+function colorFromHue(hue, tier) {
+  // Pasada la primera vuelta de la paleta se desplaza el matiz y cambia la intensidad.
+  const h = (hue + tier * 12) % 360;
+  const sat = tier === 0 ? 75 : 55;
+  return {
+    bgLight: `hsl(${h}, ${sat}%, 95%)`,
+    borderLight: `hsl(${h}, ${tier === 0 ? 60 : 45}%, 80%)`,
+    textLight: `hsl(${h}, 80%, 25%)`,
+
+    bgDark: `hsl(${h}, ${tier === 0 ? 40 : 30}%, 15%)`,
+    borderDark: `hsl(${h}, ${tier === 0 ? 35 : 28}%, 28%)`,
+    textDark: `hsl(${h}, 80%, 85%)`,
+  };
+}
+
+/** Color de la paleta para un índice (sigue dando colores distintos pasada la primera vuelta). */
+export function getCourseColorByIndex(index) {
+  const i = Number.isInteger(index) && index >= 0 ? index : 0;
+  return colorFromHue(COURSE_COLOR_HUES[i % COURSE_COLOR_HUES.length], Math.floor(i / COURSE_COLOR_HUES.length));
+}
+
+/**
+ * Asigna a cada asignatura un índice de color sin repetir dentro del mismo horario.
+ * Respeta el color que ya tenía asignado mientras nadie más lo use, así los colores no
+ * cambian cuando entra una asignatura nueva (por ejemplo, al actualizarse la malla).
+ * La nueva toma el color libre más cercano al inicio de la paleta.
+ * @param {string[]} courseCodes asignaturas del horario, en orden estable
+ * @param {Record<string, number>} stored asignaciones guardadas
+ * @returns {Record<string, number>} índice de color por código normalizado
+ */
+export function assignCourseColorIndexes(courseCodes, stored = {}) {
+  const codes = [];
+  for (const code of courseCodes || []) {
+    const key = normalizeCourseKey(code);
+    if (key && !codes.includes(key)) codes.push(key);
+  }
+
+  const result = {};
+  const used = new Set();
+
+  for (const key of codes) {
+    const prev = stored?.[key];
+    if (Number.isInteger(prev) && prev >= 0 && !used.has(prev)) {
+      result[key] = prev;
+      used.add(prev);
+    }
+  }
+  for (const key of codes) {
+    if (key in result) continue;
+    let i = 0;
+    while (used.has(i)) i += 1;
+    result[key] = i;
+    used.add(i);
+  }
+  return result;
+}
+
+export function loadCourseColorAssignments() {
+  const raw = safeStorage.get(COURSE_COLORS_STORAGE_KEY, {});
+  return raw && typeof raw === "object" && !Array.isArray(raw) ? raw : {};
+}
+
+export function saveCourseColorAssignments(indexes) {
+  const merged = { ...loadCourseColorAssignments(), ...indexes };
+  safeStorage.set(COURSE_COLORS_STORAGE_KEY, merged);
 }
 
 /**

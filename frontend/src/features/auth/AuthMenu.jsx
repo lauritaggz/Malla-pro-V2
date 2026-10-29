@@ -30,8 +30,11 @@ export function UserAvatar({ user, backendUser, className = "w-8 h-8" }) {
   );
 }
 
-/** Botón de sesión para la Navbar de escritorio (en móvil se usa la barra inferior). */
-export default function AuthMenu() {
+/**
+ * Sesión en el riel lateral de escritorio (la barra superior y la inferior son solo móvil).
+ * Mismo aspecto que los botones del riel: icono arriba y etiqueta abajo.
+ */
+export function RailAccountButton() {
   const { enabled, loading, user, backendUser, signInWithGoogle, signOut } = useAuth();
   const [open, setOpen] = useState(false);
   const ref = useRef(null);
@@ -46,36 +49,36 @@ export default function AuthMenu() {
 
   if (!enabled || loading) return null;
 
+  const railBtn =
+    "relative w-[60px] flex flex-col items-center gap-1 rounded-xl py-2 text-[12px] font-semibold leading-none transition-[background-color,color] duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 text-textSecondary hover:text-textPrimary hover:bg-borderColor/40";
+
   if (!user) {
     return (
-      <button
-        type="button"
-        onClick={signInWithGoogle}
-        className="hidden sm:inline-flex h-8.5 items-center gap-1.5 rounded-full border border-borderColor px-3 text-xs font-semibold text-textPrimary hover:bg-borderColor/20 transition-colors"
-      >
-        <LogIn className="w-3.5 h-3.5" aria-hidden />
-        Entrar con Google
+      <button type="button" onClick={signInWithGoogle} className={railBtn} title="Entrar con Google">
+        <LogIn className="w-5 h-5" aria-hidden />
+        <span>Entrar</span>
       </button>
     );
   }
 
   return (
-    <div ref={ref} className="relative hidden sm:block">
+    <div ref={ref} className="relative">
       <button
         type="button"
         onClick={() => setOpen((prev) => !prev)}
         aria-label="Menú de cuenta"
         aria-expanded={open}
-        className="flex shrink-0 rounded-full ring-1 ring-borderColor"
+        className={railBtn}
       >
-        <UserAvatar user={user} backendUser={backendUser} />
+        <UserAvatar user={user} backendUser={backendUser} className="w-6 h-6" />
+        <span>Cuenta</span>
       </button>
       {open && (
-        <div className="absolute right-0 top-full mt-2 w-60 max-w-[calc(100vw-1.5rem)] rounded-2xl border border-borderColor bg-bgSecondary p-3 shadow-xl z-50">
+        <div className="absolute left-full bottom-0 ml-3 w-60 rounded-2xl border border-borderColor bg-bgSecondary p-3 shadow-xl z-50">
           <p className="truncate text-xs font-bold text-textPrimary">
             {backendUser?.display_name || user.displayName}
           </p>
-          <p className="truncate text-[11px] text-textSecondary">
+          <p className="truncate text-[12px] text-textSecondary">
             {backendUser?.email || user.email}
           </p>
           <button

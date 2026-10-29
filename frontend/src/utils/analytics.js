@@ -21,7 +21,8 @@ export function getDeviceContext() {
 }
 
 export function inferUniversidadFromUrl(url = "") {
-  if (url.includes("uch")) return "Universidad de Chile";
+  // Las mallas de la U. de Chile son /mallas/<Nombre>UCH.json (o /mallas/uch/...).
+  if (/uch\.json$|\/uch\//i.test(url)) return "Universidad de Chile";
   if (url.includes("/mallas/") || url.endsWith(".json")) {
     return "Universidad Andrés Bello";
   }

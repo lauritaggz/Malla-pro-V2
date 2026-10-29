@@ -23,12 +23,13 @@ Estados: `todo` · `ready` · `in progress` · `blocked` · `to audit` · `to me
 | D-02 | Crear malla manual gratis en el nivel básico | decision | bajo | — | todo |
 | D-03 | ¿Solo Google o también correo y contraseña? | decision | bajo | — | todo |
 | T-006 | Corregir los errores de lint del frontend | code | bajo | T-001 | ready |
+| T-007 | Sincronizar el frontend de la V2 con la versión pública (v1) | code | alto | T-010 | review |
 | T-002 | Roles del equipo y registro de auditoría | code | alto | T-001 | ready |
 | T-003 | Manejo de errores y logs sin datos sensibles | code | medio | T-001 | ready |
 | T-004 | Pruebas de aislamiento entre dos usuarios | code | alto | T-001 | ready |
 | T-005 | Concurrencia optimista e idempotencia | code | medio | T-001 | todo |
 | T-010 | Mallas verificadas y mallas de la U. de Chile | data | alto | T-001 | review (auditoría r2 APROBADO) |
-| T-011 | Portar a la V2 los cambios de frontend de v1 para la U. de Chile | code | medio | T-010 | todo |
+| T-011 | Portar a la V2 los cambios de frontend de v1 para la U. de Chile | code | medio | T-010 | incluida en T-007 |
 | T-012 | Evaluar árboles de prerrequisitos en el frontend | code | medio | T-001 | ready |
 | T-013 | Cálculo de notas como módulo puro con casos de referencia | code | medio | T-001 | ready |
 | T-014 | Detección de topes de horario con pruebas | code | bajo | T-001 | ready |
@@ -115,6 +116,18 @@ Hoy solo hay Google (ADR-0003). CU-01 pide al menos un método, así que basta. 
   2. Soporte de `Idempotency-Key` en creaciones: repetir con la misma clave y el mismo usuario devuelve la respuesta original sin crear otro recurso. Las claves expiran a las 24 h.
   3. `Idempotency-Key` permitida en CORS.
 - Pruebas: dos actualizaciones con la misma versión (la segunda da 409); reintento con la misma clave.
+
+### T-007 · Sincronizar el frontend de la V2 con la versión pública (v1)
+- Tipo: code · Riesgo: alto · Requisitos: CA-01, NO-04, NF-05 · Depende de: T-010 · Aprobada por Laura el 29-10-2026.
+- Origen: el frontend de la V2 se copió de v1 en `ddcaebc` (9-10-2026). Desde entonces v1 sumó 29 commits hasta `543e5e6` (Rediseño Tinta, selector de carreras, Horario, panel de notas, U. de Chile). Incluye T-011.
+- Alcance: `frontend/` salvo `public/mallas/` (las mallas ya llegaron con T-010). Se conserva lo propio de la V2: login con Google (`features/auth`, `lib/`), catálogo desde la API (`curriculumApi.js`, `mallasLoader.js`), `career_key` de la API (`storageKeys.js`).
+- Criterios:
+  1. Sin backend, la V2 se ve igual que v1 en `543e5e6`: mismas pantallas en escritorio y móvil (comparación de capturas).
+  2. El login sigue visible y usable: en escritorio en el riel lateral, en móvil en la barra inferior (la barra superior de v1 ahora es solo móvil).
+  3. Con la API, el selector muestra lo mismo que sin ella (área y semestres de las mallas legadas) y no inventa datos para mallas que solo existen en la API.
+  4. Las mallas de la U. de Chile se identifican como tales en la etiqueta de universidad, al compartir configuraciones (`UCH`) y en analítica; no ofrecen toma de ramos.
+  5. Sin dependencias nuevas; las pruebas de v1 y de la V2 pasan; el lint no suma errores.
+- Pruebas: `universityDetection.test.js`, pruebas de v1 incluidas (`courseColors.test.js`, `shareCourseConfig.test.js`), suites existentes; capturas comparadas.
 
 ### T-006 · Corregir los errores de lint del frontend
 - Tipo: code · Riesgo: bajo · Requisitos: NF-09 · Depende de: T-001

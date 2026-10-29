@@ -78,8 +78,9 @@ export default function DrawerPanel({
               position: "fixed",
               inset: 0,
               zIndex: 95,
-              background: isModal || isMobile ? "rgba(0,0,0,0.55)" : "rgba(0,0,0,0.18)",
-              backdropFilter: isModal || isMobile ? "blur(4px)" : "none",
+              // Sin backdrop-filter: el desenfoque obliga a repintar el fondo en cada cambio
+              // y en algunos equipos hace desaparecer el cursor de texto y el puntero.
+              background: isModal || isMobile ? "rgba(0,0,0,0.6)" : "rgba(0,0,0,0.18)",
             }}
           />
 
@@ -133,7 +134,7 @@ export default function DrawerPanel({
                   }}
                 >
                   <div className="min-w-0">
-                    <h2 className="text-base font-semibold text-textPrimary m-0 truncate">{title}</h2>
+                    <h2 className="t-section text-textPrimary m-0 truncate">{title}</h2>
                     {subtitle && (
                       <p className="text-xs text-textSecondary m-0 mt-0.5">{subtitle}</p>
                     )}
@@ -231,7 +232,7 @@ export default function DrawerPanel({
                 }}
               >
                 <div className="min-w-0">
-                  <h2 className="text-base font-semibold text-textPrimary m-0 truncate">{title}</h2>
+                  <h2 className="t-section text-textPrimary m-0 truncate">{title}</h2>
                   {subtitle && (
                     <p className="text-xs text-textSecondary m-0 mt-0.5">{subtitle}</p>
                   )}
