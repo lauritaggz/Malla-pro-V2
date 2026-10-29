@@ -30,7 +30,8 @@ tools/      Herramientas de datos (verificación de mallas contra documentos ofi
 
 ```bash
 # Infraestructura (raíz)
-docker compose up -d                         # PostgreSQL 16
+docker compose up -d postgres                # solo PostgreSQL 16
+docker compose up --build                    # todo: Postgres + backend (8000) + frontend (5174)
 
 # Backend (backend/)
 uv sync

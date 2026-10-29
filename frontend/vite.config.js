@@ -1,3 +1,4 @@
+import process from "node:process";
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
@@ -36,6 +37,9 @@ export default defineConfig({
     // dependen de que sea siempre el 5174.
     strictPort: true,
     host: true,
+    // En Docker con la carpeta montada desde Windows/macOS no llegan eventos de archivos:
+    // docker-compose.yml activa el sondeo con VITE_USE_POLLING.
+    watch: process.env.VITE_USE_POLLING === "true" ? { usePolling: true, interval: 300 } : undefined,
   },
 
   test: {

@@ -1,3 +1,7 @@
+# Local development stack.
+#   docker compose up --build        -> Postgres + backend (8000) + frontend (5174)
+#   docker compose up -d postgres    -> only Postgres (to run backend/frontend on the host)
+# Needs the root .env (copy .env.example). See README "Levantar todo con Docker".
 services:
   postgres:
     image: postgres:16
@@ -16,5 +20,61 @@ services:
       timeout: 5s
       retries: 10
 
+  backend:
+    build: ./backend
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      ENVIRONMENT: development
+      # Inside the compose network Postgres is "postgres:5432", not localhost. These override
+      # backend/.env (pydantic-settings gives environment variables priority).
+      DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+      TEST_DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}_test
+      CORS_ORIGINS: http://localhost:${FRONTEND_PORT:-5174}
+      # Bind mounts from Windows/macOS do not deliver file events: poll for --reload.
+      WATCHFILES_FORCE_POLLING: "true"
+    # Migrations and catalog import on every start (both idempotent). The import report goes
+    # to /tmp so the tracked backend/reports/ file is not rewritten.
+    command: >
+      sh -c "uv sync --locked --no-install-project --quiet &&
+             uv run --no-sync alembic upgrade head &&
+             uv run --no-sync python -m app.scripts.import_legacy_mallas /app/frontend/public/mallas --report /tmp/legacy_inconsistencies.md &&
+             exec uv run --no-sync uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
+    ports:
+      - "${BACKEND_PORT:-8000}:8000"
+    volumes:
+      - ./backend:/app/backend
+      - ./frontend/public/mallas:/app/frontend/public/mallas:ro
+    healthcheck:
+      test: ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://localhost:8000/api/v1/health')\""]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+      start_period: 20s
+
+  frontend:
+    build: ./frontend
+    depends_on:
+      backend:
+        condition: service_healthy
+    environment:
+      # The browser runs on your machine, so it reaches the backend through the published port.
+      VITE_API_URL: http://localhost:${BACKEND_PORT:-8000}
+      VITE_USE_POLLING: "true"
+    # Reinstall dependencies only when package-lock.json changed since the last install.
+    command: >
+      sh -c "h=$$(sha1sum package-lock.json);
+             [ \"$$h\" = \"$$(cat node_modules/.lock-hash 2>/dev/null)\" ] ||
+               { npm ci && echo \"$$h\" > node_modules/.lock-hash; };
+             exec npm run dev -- --host 0.0.0.0"
+    ports:
+      - "${FRONTEND_PORT:-5174}:5174"
+    volumes:
+      - ./frontend:/app/frontend
+      # Keeps the container's node_modules (Linux) apart from the host's (e.g. Windows).
+      - frontend_node_modules:/app/frontend/node_modules
+
 volumes:
   postgres_data:
+  frontend_node_modules:
