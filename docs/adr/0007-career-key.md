@@ -11,3 +11,5 @@ Cada carrera tiene un `career_key` único e inmutable. Para las mallas legadas s
 
 ## Consecuencias
 Ambas funciones tienen pruebas con los mismos casos y no se modifican sin una migración de `localStorage`. Renombrar una carrera o un archivo de malla no cambia su `career_key`.
+
+El `career_key` es un identificador opaco: su prefijo no indica la universidad (eso lo hace `programs.university_id`). Excepción conocida (T-010): las mallas de la U. de Chile se publicaron en la versión pública como `/mallas/<Nombre>UCH.json`, así que su clave es `unab-<nombre>uch` y se mantiene. Las mallas nuevas de otras universidades van en `/mallas/<uni>/<Nombre>.json` (`<uni>-<nombre>`).

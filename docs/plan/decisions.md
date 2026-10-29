@@ -4,7 +4,7 @@ Las cierra Laura. Una decisión técnica cerrada se registra como ADR; una de pr
 
 | ID | Decisión | Propuesta | Bloquea |
 |---|---|---|---|
-| D-01 | Requisitos dudosos de Tecnología Médica (BIOL166 e Integrador II) | Confirmar con la carrera o con un catálogo más reciente | Publicar esos dos ramos en T-010 |
+| D-01 | Requisitos dudosos de Tecnología Médica (BIOL166 e Integrador II) | **Cerrada (29-10-2026, Laura):** se sigue el documento oficial (catálogo 2018), igual que en la versión pública. Si la carrera o un catálogo más reciente dice otra cosa, se corrige en una tarea `data`. Queda por confirmar con la carrera TMED942, cuyo texto oficial repite TMED842 ("TMED842 y (TMED842 o TMD322)") donde el Seminario TMED941 dice TMED843; se importa tal como está escrito | T-010 (ya no bloquea) |
 | D-02 | Crear malla manual gratis en el nivel básico | Sí (sección 17) | T-032 |
 | D-03 | Solo Google o también correo y contraseña | Solo Google mientras no haya demanda | Nada de V2.0 |
 | D-04 | Inicio de la prueba de 2 meses: al registrarse o con la primera acción de suscripción | Primera acción (sección 17) | Épica de suscripción (V2.2) |

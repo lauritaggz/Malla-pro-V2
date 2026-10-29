@@ -14,7 +14,7 @@ const BEFORE = JSON.parse(
 
 const readMalla = (url) => JSON.parse(readFileSync(join(MALLAS, url.replace(/^\/mallas\//, "")), "utf8"));
 
-/** id -> código de todos los cursos de una malla (comunes y de cada mención). */
+/** id -> { codigo, nombre } de todos los cursos de una malla (comunes y de cada mención). */
 function coursesById(data) {
   const m = mapMallaData(data);
   const sems = [
@@ -22,7 +22,57 @@ function coursesById(data) {
     ...m.semestresComunes,
     ...Object.values(m.menciones).flatMap((x) => x.semestres),
   ];
-  return new Map(sems.flatMap((s) => s.cursos.map((c) => [c.id, c.codigo])));
+  return new Map(
+    sems.flatMap((s) => s.cursos.map((c) => [c.id, { codigo: c.codigo, nombre: c.nombre }]))
+  );
+}
+
+/**
+ * Únicos cambios permitidos en T-010 sobre un id existente: los códigos de Civil Informática
+ * pasan a los oficiales (ICF/INSW -> CINF) y un nombre se corrige. Todo lo demás debe quedar
+ * igual, para que el avance guardado por id siga apuntando al mismo ramo.
+ */
+const ALLOWED_CHANGES = {
+  CInf: {
+    17: { codigo: ["INSW220", "CINF100"] },
+    22: { codigo: ["ICF201", "CINF102"] },
+    23: { codigo: ["ICF202", "CINF101"] },
+    28: { codigo: ["ICF203", "CINF103"] },
+    31: { codigo: ["ICF204", "CINF104"] },
+    32: { codigo: ["ICF205", "CINF105"] },
+    38: { codigo: ["INSW411", "CINF107"] },
+    39: {
+      codigo: ["INSW421", "CINF200"],
+      nombre: [
+        "Seminario de Licenciatura en Ingeniería",
+        "Integrador II: Seminario de Licenciatura en Ciencias de la Ingeniería",
+      ],
+    },
+    41: { codigo: ["INSW410", "CINF108"] },
+    42: { codigo: ["ICF206", "CINF109"] },
+    43: { codigo: ["ICF207", "CINF110"] },
+    44: { codigo: ["INSW412", "CINF111"] },
+    45: { codigo: ["INSW413", "CINF112"] },
+    46: { codigo: ["INSW422", "CINF400"] },
+    47: { codigo: ["ICF208", "CINF113"] },
+    48: { codigo: ["INSW420", "CINF300"] },
+  },
+};
+
+/** Lo que debería tener hoy cada id: el valor anterior más los cambios permitidos. */
+function expectedNow(stem) {
+  const allowed = ALLOWED_CHANGES[stem] || {};
+  return new Map(
+    Object.entries(BEFORE[stem]).map(([id, before]) => {
+      const change = allowed[id] || {};
+      const pick = (field) => {
+        if (!change[field]) return before[field];
+        expect(before[field]).toBe(change[field][0]); // la lista de cambios refleja el antes real
+        return change[field][1];
+      };
+      return [Number(id), { codigo: pick("codigo"), nombre: pick("nombre") }];
+    })
+  );
 }
 
 /** localStorage en memoria, como el del navegador. */
@@ -40,25 +90,19 @@ function memoryStorage() {
   };
 }
 
-describe("mallas verificadas (T-010): los ids no cambian", () => {
-  it.each(Object.keys(BEFORE))("%s conserva exactamente los mismos ids", (stem) => {
+describe("mallas verificadas (T-010): cada id sigue siendo el mismo ramo", () => {
+  it.each(Object.keys(BEFORE))("%s: mismo conjunto de ids y mismo código y nombre por id", (stem) => {
     const now = coursesById(readMalla(`/mallas/${stem}.json`));
-    expect([...now.keys()].sort((a, b) => a - b)).toEqual(
-      Object.keys(BEFORE[stem])
-        .map(Number)
-        .sort((a, b) => a - b)
-    );
+    // Map -> objeto ordenado para un diff legible si algo cambia o se intercambia.
+    const asObject = (m) => Object.fromEntries([...m].sort(([a], [b]) => a - b));
+    expect(asObject(now)).toEqual(asObject(expectedNow(stem)));
   });
 
-  it("Civil Informática: los códigos nuevos (CINF) quedan en el mismo id que los antiguos", () => {
-    const now = coursesById(readMalla("/mallas/CInf.json"));
-    const renamed = Object.entries(BEFORE.CInf)
-      .filter(([id, code]) => now.get(Number(id)) !== code)
-      .map(([id, code]) => [Number(id), code, now.get(Number(id))]);
-    expect(renamed).toHaveLength(16);
-    expect(renamed).toContainEqual([22, "ICF201", "CINF102"]);
-    expect(renamed).toContainEqual([17, "INSW220", "CINF100"]);
-    expect(renamed.every(([, , code]) => /^CINF\d{3}$/.test(code))).toBe(true);
+  it("Civil Informática: los 16 códigos nuevos son CINF y no se repiten", () => {
+    const changes = Object.values(ALLOWED_CHANGES.CInf).map((c) => c.codigo[1]);
+    expect(changes).toHaveLength(16);
+    expect(new Set(changes).size).toBe(16);
+    expect(changes.every((code) => /^CINF\d{3}$/.test(code))).toBe(true);
   });
 });
 
@@ -75,6 +119,7 @@ describe("avance guardado en el navegador (localStorage simulado)", () => {
     async (stem) => {
       const url = `/mallas/${stem}.json`;
       const oldIds = Object.keys(BEFORE[stem]).map(Number);
+      expect(oldIds.length).toBeGreaterThan(40);
       // Lo que la versión pública guardó antes de este cambio (misma URL => mismo careerId).
       const saved = {
         aprobados: oldIds.filter((id) => id % 2 === 0),
@@ -95,12 +140,14 @@ describe("avance guardado en el navegador (localStorage simulado)", () => {
       expect(progress.cursando).toEqual(saved.cursando);
       expect(progress.excepciones).toEqual(saved.excepciones);
 
+      // Cada id guardado sigue siendo el mismo ramo (mismo nombre; en CInf, código nuevo).
       const now = coursesById(readMalla(url));
+      const expected = expectedNow(stem);
       for (const id of [...progress.aprobados, ...progress.cursando, ...progress.excepciones]) {
-        expect(now.has(id)).toBe(true);
+        expect(now.get(id)).toEqual(expected.get(id));
       }
       const storedNotas = JSON.parse(localStorage.getItem(LEGACY_KEYS.notas));
-      expect(now.has(Number(Object.keys(storedNotas)[0]))).toBe(true);
+      expect(now.get(Number(Object.keys(storedNotas)[0]))).toEqual(expected.get(oldIds[0]));
     }
   );
 });

@@ -39,4 +39,8 @@ Los `POST` que crean recursos aceptan la cabecera `Idempotency-Key` (hay que agr
 | `GET /api/v1/me` | usuario | s02 |
 | `GET /api/v1/universities` | pública, caché 5 min | s03 |
 | `GET /api/v1/universities/{slug}/programs` | pública, caché 5 min | s03 |
-| `GET /api/v1/programs/{program_id}/curriculum` | pública, caché 5 min | s03 |
+| `GET /api/v1/programs/{program_id}/curriculum` | pública, caché 5 min | s03; T-010 agrega `version.attrs` |
+
+### `GET /programs/{program_id}/curriculum` · `version.attrs`
+
+Objeto con los campos del archivo de la malla que no tienen columna, tal como vienen: `universidad`, `fuente_oficial` (`programa`, `catalogo`, `catalogoTexto`, `lectura`), `nota_codigos`, `equivalencias` (`{código: [[códigos antiguos], …]}`, cada grupo interno es un "y") y cualquier otra clave de primer nivel. Es `{}` si no hay nada. Es informativo: ninguna regla académica lo usa todavía.

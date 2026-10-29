@@ -179,5 +179,5 @@ Fecha: 25-10-2026. Fuente: los documentos “Malla curricular” de Banner UNAB 
 
 Se sumaron Bioquímica, Ingeniería en Alimentos, Química y Química y Farmacia. Pasan la validación sin errores y los créditos cuadran (330 SCT cada una).
 - No venía el documento oficial de estas carreras, así que no se pudieron contrastar como las de la UNAB.
-- Tres de ellas usan códigos internos (QF001, IA001, QUI001…) porque la fuente no publica códigos. En el formato nuevo quedan marcadas con `codigosOficiales: false`. Esos ramos no se cruzan entre carreras, aunque Química General I sea el mismo ramo en las cuatro. Bioquímica usa BQ001…, que tampoco parece oficial.
-- “Semestre 10 aprobado” (Práctica Profesional y Actividad Final) se guarda como un requisito propio (`semestres hasta 10`), en vez de la lista de 67 ramos.
+- Tres de ellas usan códigos internos (QF001, IA001, QUI001…) porque la fuente no publica códigos; lo explica el campo `nota_codigos` de cada JSON. Esos ramos no se cruzan entre carreras, aunque Química General I sea el mismo ramo en las cuatro. Bioquímica usa BQ001…, que tampoco parece oficial (no tiene `nota_codigos`).
+- “Semestre 10 aprobado” (Práctica Profesional y Actividad Final) está en los JSON como la lista de todos los ramos anteriores (AND de ids), con el texto original en `prereq_expr`. El formato actual no tiene un requisito "semestres hasta N"; eso llega con los árboles de prerrequisitos (T-012).

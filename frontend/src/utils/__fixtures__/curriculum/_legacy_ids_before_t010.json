@@ -1,608 +1,2363 @@
 {
-  "_comment": "Ids y códigos de cada malla UNAB antes de T-010 (mallas verificadas). Sirve para probar que el avance guardado por id no se pierde.",
+  "_comment": "Id -> código y nombre de cada malla UNAB antes de T-010 (origin/main 1c3eef1). Sirve para probar que el avance guardado por id no se pierde ni pasa a otro ramo.",
   "mallas": {
     "Industrial": {
-      "1": "CFIS310",
-      "2": "FMMP012",
-      "3": "TDFI101",
-      "4": "TDFI102",
-      "5": "CEGHC11",
-      "6": "CFIS328",
-      "7": "FMMP112",
-      "8": "QUIM090",
-      "9": "TDFI103",
-      "10": "ACAD101",
-      "11": "CFIS332",
-      "12": "FMMP212",
-      "13": "TDFI104",
-      "14": "CIND100",
-      "15": "ACAD102",
-      "16": "CFIS344",
-      "17": "CIND311",
-      "18": "FMMP312",
-      "19": "ING119",
-      "20": "CIND111",
-      "21": "CIND112",
-      "22": "CIND411",
-      "23": "FMSP316",
-      "24": "ING129",
-      "25": "ACAD103",
-      "26": "CIND113",
-      "27": "CIND211",
-      "28": "IIND412",
-      "29": "ING239",
-      "30": "TDFI105",
-      "31": "CEGRS14",
-      "32": "CIND114",
-      "33": "CIND212",
-      "34": "IIND413",
-      "35": "ING249",
-      "36": "TDFI106",
-      "37": "CIND213",
-      "38": "CIND214",
-      "39": "CIND215",
-      "40": "CIND312",
-      "41": "CIND313",
-      "42": "IIND414",
-      "43": "CIND216",
-      "44": "CIND217",
-      "45": "CIND218",
-      "46": "CIND219",
-      "47": "CIND220",
-      "48": "CIND314",
-      "49": "CIND221",
-      "50": "CIND222",
-      "51": "CIND315"
+      "1": {
+        "codigo": "CFIS310",
+        "nombre": "Física General"
+      },
+      "2": {
+        "codigo": "FMMP012",
+        "nombre": "Introducción a las Matemáticas"
+      },
+      "3": {
+        "codigo": "TDFI101",
+        "nombre": "Introducción a la Ingeniería"
+      },
+      "4": {
+        "codigo": "TDFI102",
+        "nombre": "Introducción a la Programación"
+      },
+      "5": {
+        "codigo": "CEGHC11",
+        "nombre": "Habilidades Comunicativas"
+      },
+      "6": {
+        "codigo": "CFIS328",
+        "nombre": "Física Experimental"
+      },
+      "7": {
+        "codigo": "FMMP112",
+        "nombre": "Cálculo Diferencial"
+      },
+      "8": {
+        "codigo": "QUIM090",
+        "nombre": "Química y Ambiente"
+      },
+      "9": {
+        "codigo": "TDFI103",
+        "nombre": "Base de Datos"
+      },
+      "10": {
+        "codigo": "ACAD101",
+        "nombre": "Taller de Innovación y Emprendimiento I"
+      },
+      "11": {
+        "codigo": "CFIS332",
+        "nombre": "Mecánica"
+      },
+      "12": {
+        "codigo": "FMMP212",
+        "nombre": "Cálculo Integral"
+      },
+      "13": {
+        "codigo": "TDFI104",
+        "nombre": "Compliance & Accountability"
+      },
+      "14": {
+        "codigo": "CIND100",
+        "nombre": "Procesos Industriales"
+      },
+      "15": {
+        "codigo": "ACAD102",
+        "nombre": "Taller de Innovación y Emprendimiento II"
+      },
+      "16": {
+        "codigo": "CFIS344",
+        "nombre": "Electricidad y Magnetismo"
+      },
+      "17": {
+        "codigo": "CIND311",
+        "nombre": "Práctica I"
+      },
+      "18": {
+        "codigo": "FMMP312",
+        "nombre": "Sistemas y Ecuaciones Diferenciales Lineales"
+      },
+      "19": {
+        "codigo": "ING119",
+        "nombre": "Inglés I"
+      },
+      "20": {
+        "codigo": "CIND111",
+        "nombre": "Economía Circular"
+      },
+      "21": {
+        "codigo": "CIND112",
+        "nombre": "Investigación de Operaciones"
+      },
+      "22": {
+        "codigo": "CIND411",
+        "nombre": "Economía"
+      },
+      "23": {
+        "codigo": "FMSP316",
+        "nombre": "Métodos Cuantitativos"
+      },
+      "24": {
+        "codigo": "ING129",
+        "nombre": "Inglés II"
+      },
+      "25": {
+        "codigo": "ACAD103",
+        "nombre": "Taller de Innovación y Emprendimiento III"
+      },
+      "26": {
+        "codigo": "CIND113",
+        "nombre": "Gestión de la Cadena de Suministro"
+      },
+      "27": {
+        "codigo": "CIND211",
+        "nombre": "Redes y Sistemas Estocásticos en Ingeniería"
+      },
+      "28": {
+        "codigo": "IIND412",
+        "nombre": "Costos y Presupuestos"
+      },
+      "29": {
+        "codigo": "ING239",
+        "nombre": "Inglés III"
+      },
+      "30": {
+        "codigo": "TDFI105",
+        "nombre": "Minería de Datos"
+      },
+      "31": {
+        "codigo": "CEGRS14",
+        "nombre": "Responsabilidad Social"
+      },
+      "32": {
+        "codigo": "CIND114",
+        "nombre": "Toma de Decisiones en la Cadena de Suministro"
+      },
+      "33": {
+        "codigo": "CIND212",
+        "nombre": "Toma de Decisiones Bajo Incertidumbre"
+      },
+      "34": {
+        "codigo": "IIND413",
+        "nombre": "Ingeniería Económica"
+      },
+      "35": {
+        "codigo": "ING249",
+        "nombre": "Inglés IV"
+      },
+      "36": {
+        "codigo": "TDFI106",
+        "nombre": "Gestión de la Transformación Digital"
+      },
+      "37": {
+        "codigo": "CIND213",
+        "nombre": "Simulación de Sistemas"
+      },
+      "38": {
+        "codigo": "CIND214",
+        "nombre": "Estrategia y Sustentabilidad en Cadena de Suministro"
+      },
+      "39": {
+        "codigo": "CIND215",
+        "nombre": "Analítica"
+      },
+      "40": {
+        "codigo": "CIND312",
+        "nombre": "Seminario de Licenciatura en Ciencias de la Ingeniería"
+      },
+      "41": {
+        "codigo": "CIND313",
+        "nombre": "Práctica II"
+      },
+      "42": {
+        "codigo": "IIND414",
+        "nombre": "Evaluación de Proyectos"
+      },
+      "43": {
+        "codigo": "CIND216",
+        "nombre": "Finanzas Corporativas"
+      },
+      "44": {
+        "codigo": "CIND217",
+        "nombre": "Inteligencia de Negocios"
+      },
+      "45": {
+        "codigo": "CIND218",
+        "nombre": "Marketing"
+      },
+      "46": {
+        "codigo": "CIND219",
+        "nombre": "Gestión Estratégica"
+      },
+      "47": {
+        "codigo": "CIND220",
+        "nombre": "Tópicos de Especialidad I"
+      },
+      "48": {
+        "codigo": "CIND314",
+        "nombre": "Portafolio de Proyectos"
+      },
+      "49": {
+        "codigo": "CIND221",
+        "nombre": "Tópicos de Especialidad II"
+      },
+      "50": {
+        "codigo": "CIND222",
+        "nombre": "Tópicos de Especialidad III"
+      },
+      "51": {
+        "codigo": "CIND315",
+        "nombre": "Proyecto de Título"
+      }
     },
     "Comp": {
-      "1": "CFIS310",
-      "2": "FMMP012",
-      "3": "TDFI101",
-      "4": "TDFI102",
-      "5": "ACAD101",
-      "6": "CEGHC11",
-      "7": "CFIS328",
-      "8": "FMMP112",
-      "9": "TDFI103",
-      "10": "ACAD102",
-      "11": "CFIS332",
-      "12": "FMMP212",
-      "13": "ING119",
-      "14": "TDFI104",
-      "15": "FMSP316",
-      "16": "ING129",
-      "17": "INSW220",
-      "18": "INSW221",
-      "19": "PTEC101",
-      "20": "ING239",
-      "21": "INSW311",
-      "22": "INSW312",
-      "23": "PTEC102",
-      "24": "TDFI105",
-      "25": "ACAD103",
-      "26": "ING249",
-      "27": "INSW321",
-      "28": "PTEC103",
-      "29": "PTEC105",
-      "30": "TDFI106",
-      "31": "CEGRS14",
-      "32": "INSW410",
-      "33": "INSW411",
-      "34": "INSW412",
-      "35": "PTEC104",
-      "36": "PTEC106",
-      "37": "INSW420",
-      "38": "INSW421",
-      "39": "INSW422",
-      "40": "PTEC107"
+      "1": {
+        "codigo": "CFIS310",
+        "nombre": "Física General"
+      },
+      "2": {
+        "codigo": "FMMP012",
+        "nombre": "Introducción a las Matemáticas"
+      },
+      "3": {
+        "codigo": "TDFI101",
+        "nombre": "Introducción a la Ingeniería"
+      },
+      "4": {
+        "codigo": "TDFI102",
+        "nombre": "Introducción a la Programación"
+      },
+      "5": {
+        "codigo": "ACAD101",
+        "nombre": "Taller de Innovación y Emprendimiento I"
+      },
+      "6": {
+        "codigo": "CEGHC11",
+        "nombre": "Habilidades Comunicativas"
+      },
+      "7": {
+        "codigo": "CFIS328",
+        "nombre": "Física Experimental"
+      },
+      "8": {
+        "codigo": "FMMP112",
+        "nombre": "Cálculo Diferencial"
+      },
+      "9": {
+        "codigo": "TDFI103",
+        "nombre": "Base de Datos"
+      },
+      "10": {
+        "codigo": "ACAD102",
+        "nombre": "Taller de Innovación y Emprendimiento II"
+      },
+      "11": {
+        "codigo": "CFIS332",
+        "nombre": "Mecánica"
+      },
+      "12": {
+        "codigo": "FMMP212",
+        "nombre": "Cálculo Integral"
+      },
+      "13": {
+        "codigo": "ING119",
+        "nombre": "Inglés I"
+      },
+      "14": {
+        "codigo": "TDFI104",
+        "nombre": "Compliance & Accountability"
+      },
+      "15": {
+        "codigo": "FMSP316",
+        "nombre": "Métodos Cuantitativos"
+      },
+      "16": {
+        "codigo": "ING129",
+        "nombre": "Inglés II"
+      },
+      "17": {
+        "codigo": "INSW220",
+        "nombre": "Práctica I"
+      },
+      "18": {
+        "codigo": "INSW221",
+        "nombre": "Tecnologías Disruptivas"
+      },
+      "19": {
+        "codigo": "PTEC101",
+        "nombre": "Algoritmos y Estructuras de Datos"
+      },
+      "20": {
+        "codigo": "ING239",
+        "nombre": "Inglés III"
+      },
+      "21": {
+        "codigo": "INSW311",
+        "nombre": "Disrupción Empresarial"
+      },
+      "22": {
+        "codigo": "INSW312",
+        "nombre": "Conectividad y Soluciones Móviles"
+      },
+      "23": {
+        "codigo": "PTEC102",
+        "nombre": "Paradigmas de Programación"
+      },
+      "24": {
+        "codigo": "TDFI105",
+        "nombre": "Minería de Datos"
+      },
+      "25": {
+        "codigo": "ACAD103",
+        "nombre": "Taller de Innovación y Emprendimiento III"
+      },
+      "26": {
+        "codigo": "ING249",
+        "nombre": "Inglés IV"
+      },
+      "27": {
+        "codigo": "INSW321",
+        "nombre": "Desafío Tecnológico"
+      },
+      "28": {
+        "codigo": "PTEC103",
+        "nombre": "Desarrollo Web y Móvil"
+      },
+      "29": {
+        "codigo": "PTEC105",
+        "nombre": "Ingeniería de Software I"
+      },
+      "30": {
+        "codigo": "TDFI106",
+        "nombre": "Gestión de la Transformación Digital"
+      },
+      "31": {
+        "codigo": "CEGRS14",
+        "nombre": "Responsabilidad Social"
+      },
+      "32": {
+        "codigo": "INSW410",
+        "nombre": "Portafolio de Proyectos"
+      },
+      "33": {
+        "codigo": "INSW411",
+        "nombre": "Tópico de Especialidad I"
+      },
+      "34": {
+        "codigo": "INSW412",
+        "nombre": "Tópico de Especialidad II"
+      },
+      "35": {
+        "codigo": "PTEC104",
+        "nombre": "Infraestructura TI"
+      },
+      "36": {
+        "codigo": "PTEC106",
+        "nombre": "Ingeniería de Software II"
+      },
+      "37": {
+        "codigo": "INSW420",
+        "nombre": "Práctica II"
+      },
+      "38": {
+        "codigo": "INSW421",
+        "nombre": "Seminario de Licenciatura en Ingeniería"
+      },
+      "39": {
+        "codigo": "INSW422",
+        "nombre": "Proyecto de Título"
+      },
+      "40": {
+        "codigo": "PTEC107",
+        "nombre": "Ciberseguridad"
+      }
     },
     "Geo": {
-      "1": "CEGHC11",
-      "2": "CFIS310",
-      "3": "FMMP012",
-      "4": "GEOL101",
-      "5": "QUIM090",
-      "6": "CFIS328",
-      "7": "FMMP112",
-      "8": "GEOL201",
-      "9": "GEOL202",
-      "10": "GEOL203",
-      "11": "ACAD101",
-      "12": "CFIS332",
-      "13": "FMMP212",
-      "14": "GEOL301",
-      "15": "GEOL302",
-      "16": "ACAD102",
-      "17": "CFIS344",
-      "18": "FMMP312",
-      "19": "GEOL401",
-      "20": "ING119",
-      "21": "GEOL501",
-      "22": "GEOL502",
-      "23": "GEOL503",
-      "24": "GEOL504",
-      "25": "GEOL505",
-      "26": "ING129",
-      "27": "ACAD103",
-      "28": "GEOL601",
-      "29": "GEOL602",
-      "30": "GEOL603",
-      "31": "ING239",
-      "32": "CEGRS14",
-      "33": "GEOL701",
-      "34": "GEOL702",
-      "35": "GEOL703",
-      "36": "GEOL704",
-      "37": "ING249",
-      "38": "GEOL801",
-      "39": "GEOL802",
-      "40": "GEOL803",
-      "41": "GEOL804",
-      "42": "GEOL805",
-      "43": "GEOL806",
-      "44": "GEOL901",
-      "45": "GEOL902",
-      "46": "GEOL903",
-      "47": "GEOL904",
-      "48": "GEOL905",
-      "49": "GEOL906",
-      "50": "GEOL001",
-      "51": "GEOL002",
-      "52": "GEOL003",
-      "53": "GEOL004",
-      "54": "GEOL005",
-      "55": "GEOL006"
+      "1": {
+        "codigo": "CEGHC11",
+        "nombre": "Habilidades comunicativas"
+      },
+      "2": {
+        "codigo": "CFIS310",
+        "nombre": "Física general"
+      },
+      "3": {
+        "codigo": "FMMP012",
+        "nombre": "Introducción a las matemáticas"
+      },
+      "4": {
+        "codigo": "GEOL101",
+        "nombre": "Sistema tierra"
+      },
+      "5": {
+        "codigo": "QUIM090",
+        "nombre": "Química y ambiente"
+      },
+      "6": {
+        "codigo": "CFIS328",
+        "nombre": "Física experimental"
+      },
+      "7": {
+        "codigo": "FMMP112",
+        "nombre": "Cálculo diferencial"
+      },
+      "8": {
+        "codigo": "GEOL201",
+        "nombre": "Mineralogía y cristalografía"
+      },
+      "9": {
+        "codigo": "GEOL202",
+        "nombre": "Paleontología y evolución"
+      },
+      "10": {
+        "codigo": "GEOL203",
+        "nombre": "Fundamentos de geología"
+      },
+      "11": {
+        "codigo": "ACAD101",
+        "nombre": "Taller de innovación y emprendimiento i"
+      },
+      "12": {
+        "codigo": "CFIS332",
+        "nombre": "Mecánica"
+      },
+      "13": {
+        "codigo": "FMMP212",
+        "nombre": "Cálculo integral"
+      },
+      "14": {
+        "codigo": "GEOL301",
+        "nombre": "Geoquímica endógena"
+      },
+      "15": {
+        "codigo": "GEOL302",
+        "nombre": "Métodos analíticos i: microscopía óptica"
+      },
+      "16": {
+        "codigo": "ACAD102",
+        "nombre": "Taller de innovación y emprendimiento ii"
+      },
+      "17": {
+        "codigo": "CFIS344",
+        "nombre": "Electricidad y magnetismo"
+      },
+      "18": {
+        "codigo": "FMMP312",
+        "nombre": "Sistemas y ecuaciones diferenciales lineales"
+      },
+      "19": {
+        "codigo": "GEOL401",
+        "nombre": "Integrador i: práctica i"
+      },
+      "20": {
+        "codigo": "ING119",
+        "nombre": "Inglés i"
+      },
+      "21": {
+        "codigo": "GEOL501",
+        "nombre": "Petrología endógena"
+      },
+      "22": {
+        "codigo": "GEOL502",
+        "nombre": "Sedimentología y estratigrafía"
+      },
+      "23": {
+        "codigo": "GEOL503",
+        "nombre": "Métodos analíticos ii: sig y teledetección"
+      },
+      "24": {
+        "codigo": "GEOL504",
+        "nombre": "Geoquímica exógena y ambiental"
+      },
+      "25": {
+        "codigo": "GEOL505",
+        "nombre": "Bases de geología de campo"
+      },
+      "26": {
+        "codigo": "ING129",
+        "nombre": "Inglés ii"
+      },
+      "27": {
+        "codigo": "ACAD103",
+        "nombre": "Taller de innovación y emprendimiento iii"
+      },
+      "28": {
+        "codigo": "GEOL601",
+        "nombre": "Fundamentos de programación y análisis numérico"
+      },
+      "29": {
+        "codigo": "GEOL602",
+        "nombre": "Deformación de la corteza"
+      },
+      "30": {
+        "codigo": "GEOL603",
+        "nombre": "Geología de campo i"
+      },
+      "31": {
+        "codigo": "ING239",
+        "nombre": "Inglés iii"
+      },
+      "32": {
+        "codigo": "CEGRS14",
+        "nombre": "Responsabilidad social"
+      },
+      "33": {
+        "codigo": "GEOL701",
+        "nombre": "Depósitos minerales y metalogénesis andina"
+      },
+      "34": {
+        "codigo": "GEOL702",
+        "nombre": "Geomorfología"
+      },
+      "35": {
+        "codigo": "GEOL703",
+        "nombre": "Paleoclima y ambiente"
+      },
+      "36": {
+        "codigo": "GEOL704",
+        "nombre": "Geología de campo ii"
+      },
+      "37": {
+        "codigo": "ING249",
+        "nombre": "Inglés iv"
+      },
+      "38": {
+        "codigo": "GEOL801",
+        "nombre": "Recursos energéticos"
+      },
+      "39": {
+        "codigo": "GEOL802",
+        "nombre": "Geología de chile"
+      },
+      "40": {
+        "codigo": "GEOL803",
+        "nombre": "Hidrogeología"
+      },
+      "41": {
+        "codigo": "GEOL804",
+        "nombre": "Métodos de exploración geofísica"
+      },
+      "42": {
+        "codigo": "GEOL805",
+        "nombre": "Integrador ii: seminario licenciatura en ciencias geológicas"
+      },
+      "43": {
+        "codigo": "GEOL806",
+        "nombre": "Práctica ii"
+      },
+      "44": {
+        "codigo": "GEOL901",
+        "nombre": "Geología de minas"
+      },
+      "45": {
+        "codigo": "GEOL902",
+        "nombre": "Geoestadística y modelamiento geológico"
+      },
+      "46": {
+        "codigo": "GEOL903",
+        "nombre": "Geología de campo iii"
+      },
+      "47": {
+        "codigo": "GEOL904",
+        "nombre": "Peligros geológicos y planificación territorial"
+      },
+      "48": {
+        "codigo": "GEOL905",
+        "nombre": "Tópicos de especialidad i"
+      },
+      "49": {
+        "codigo": "GEOL906",
+        "nombre": "Portafolio de proyectos"
+      },
+      "50": {
+        "codigo": "GEOL001",
+        "nombre": "Tópicos de especialidad ii"
+      },
+      "51": {
+        "codigo": "GEOL002",
+        "nombre": "Economía y evaluación de proyectos geológicos"
+      },
+      "52": {
+        "codigo": "GEOL003",
+        "nombre": "Tópicos de especialidad iii"
+      },
+      "53": {
+        "codigo": "GEOL004",
+        "nombre": "Geoética y geopatrimonio"
+      },
+      "54": {
+        "codigo": "GEOL005",
+        "nombre": "Integrador iii: proyecto de título"
+      },
+      "55": {
+        "codigo": "GEOL006",
+        "nombre": "Geología andina e interpretación avanzada"
+      }
     },
     "MM": {
-      "1": "CEGHC11",
-      "2": "CFIS310",
-      "3": "FMMP012",
-      "4": "IMMC101",
-      "5": "ING119",
-      "6": "CFIS328",
-      "7": "FMMP112",
-      "8": "IMMC102",
-      "9": "IMMC103",
-      "10": "ING129",
-      "11": "IMMC201",
-      "12": "IMMC202",
-      "13": "IMMC203",
-      "14": "IMMC204",
-      "15": "ING239",
-      "16": "IMMC205",
-      "17": "IMMQ201",
-      "18": "IMMQ202",
-      "19": "IMMQ203",
-      "20": "IMMQ204",
-      "21": "ING249",
-      "22": "CEGPC13",
-      "23": "IMMC301",
-      "24": "IMMQ301",
-      "25": "IMMQ302",
-      "26": "IMMQ303",
-      "27": "IMMQ304",
-      "28": "IMMC302",
-      "29": "IMMC303",
-      "30": "IMMQ305",
-      "31": "IMMQ306",
-      "32": "IMMQ307",
-      "33": "IMMQ308",
-      "34": "IMMC401",
-      "35": "IMMC402",
-      "36": "IMMQ401",
-      "37": "IMMQ402",
-      "38": "IMMQ403",
-      "39": "IMMQ404",
-      "40": "IMMC403",
-      "41": "IMMC404",
-      "42": "IMMQ405",
-      "43": "IMMQ406",
-      "44": "IMMQ407",
-      "45": "IMMQ408",
-      "46": "IMMQ409",
-      "47": "IMMC205",
-      "48": "IMMP201",
-      "49": "IMMP202",
-      "50": "IMMP203",
-      "51": "IMMP204",
-      "52": "ING249",
-      "53": "CEGPC13",
-      "54": "IMMC301",
-      "55": "IMMP301",
-      "56": "IMMP302",
-      "57": "IMMP303",
-      "58": "IMMP304",
-      "59": "IMMC302",
-      "60": "IMMC303",
-      "61": "IMMP305",
-      "62": "IMMP306",
-      "63": "IMMP307",
-      "64": "IMMP308",
-      "65": "IMMC401",
-      "66": "IMMC402",
-      "67": "IMMP401",
-      "68": "IMMP402",
-      "69": "IMMP403",
-      "70": "IMMP404",
-      "71": "IMMC403",
-      "72": "IMMC404",
-      "73": "IMMP405",
-      "74": "IMMP406",
-      "75": "IMMP407",
-      "76": "IMMP408",
-      "77": "IMMP409"
+      "1": {
+        "codigo": "CEGHC11",
+        "nombre": "Habilidades Comunicativas"
+      },
+      "2": {
+        "codigo": "CFIS310",
+        "nombre": "Física General"
+      },
+      "3": {
+        "codigo": "FMMP012",
+        "nombre": "Introducción a las Matemáticas"
+      },
+      "4": {
+        "codigo": "IMMC101",
+        "nombre": "Introducción a la Ingeniería en Marina Mercante"
+      },
+      "5": {
+        "codigo": "ING119",
+        "nombre": "Inglés I"
+      },
+      "6": {
+        "codigo": "CFIS328",
+        "nombre": "Física Experimental"
+      },
+      "7": {
+        "codigo": "FMMP112",
+        "nombre": "Cálculo Diferencial"
+      },
+      "8": {
+        "codigo": "IMMC102",
+        "nombre": "Procesos de Ingeniería en Marina Mercante"
+      },
+      "9": {
+        "codigo": "IMMC103",
+        "nombre": "Reglamentación y Legislación"
+      },
+      "10": {
+        "codigo": "ING129",
+        "nombre": "Inglés II"
+      },
+      "11": {
+        "codigo": "IMMC201",
+        "nombre": "Interpretación de Planos y Dibujo Técnico"
+      },
+      "12": {
+        "codigo": "IMMC202",
+        "nombre": "Mecánica Técnica Naval"
+      },
+      "13": {
+        "codigo": "IMMC203",
+        "nombre": "Incendio y Abandono (OMI 1.19-1.23-1.20-2.03)"
+      },
+      "14": {
+        "codigo": "IMMC204",
+        "nombre": "Electricidad"
+      },
+      "15": {
+        "codigo": "ING239",
+        "nombre": "Inglés III"
+      },
+      "16": {
+        "codigo": "IMMC205",
+        "nombre": "Construcción Naval y Flotabilidad"
+      },
+      "17": {
+        "codigo": "IMMQ201",
+        "nombre": "Termodinámica Aplicada"
+      },
+      "18": {
+        "codigo": "IMMQ202",
+        "nombre": "Elasticidad y Resistencia de Materiales"
+      },
+      "19": {
+        "codigo": "IMMQ203",
+        "nombre": "Electrotecnia"
+      },
+      "20": {
+        "codigo": "IMMQ204",
+        "nombre": "Práctica I"
+      },
+      "21": {
+        "codigo": "ING249",
+        "nombre": "Inglés IV"
+      },
+      "22": {
+        "codigo": "CEGPC13",
+        "nombre": "Pensamiento Crítico"
+      },
+      "23": {
+        "codigo": "IMMC301",
+        "nombre": "Cuidado del Medio Ambiente (OMI I.01)"
+      },
+      "24": {
+        "codigo": "IMMQ301",
+        "nombre": "Taller de Máquinas y Herramientas"
+      },
+      "25": {
+        "codigo": "IMMQ302",
+        "nombre": "Máquinas Eléctricas I"
+      },
+      "26": {
+        "codigo": "IMMQ303",
+        "nombre": "Engine Room Management"
+      },
+      "27": {
+        "codigo": "IMMQ304",
+        "nombre": "Combustión Interna I"
+      },
+      "28": {
+        "codigo": "IMMC302",
+        "nombre": "Primeros Auxilios y Cuidados Médicos a Bordo (OMI 1.13-1.14)"
+      },
+      "29": {
+        "codigo": "IMMC303",
+        "nombre": "Costos y Finanzas"
+      },
+      "30": {
+        "codigo": "IMMQ305",
+        "nombre": "Mantención de Motores I"
+      },
+      "31": {
+        "codigo": "IMMQ306",
+        "nombre": "Electrónica"
+      },
+      "32": {
+        "codigo": "IMMQ307",
+        "nombre": "Plantas a Vapor"
+      },
+      "33": {
+        "codigo": "IMMQ308",
+        "nombre": "Combustión Interna II"
+      },
+      "34": {
+        "codigo": "IMMC401",
+        "nombre": "Seguridad de las Personas y Medio Ambiente (OMI 1.21, 3.26, 1.39, 1.38)"
+      },
+      "35": {
+        "codigo": "IMMC402",
+        "nombre": "Evaluación de Inversiones Marítimo Portuario"
+      },
+      "36": {
+        "codigo": "IMMQ401",
+        "nombre": "Mantención de Motores II"
+      },
+      "37": {
+        "codigo": "IMMQ402",
+        "nombre": "Control Automático"
+      },
+      "38": {
+        "codigo": "IMMQ403",
+        "nombre": "Máquinas Marinas"
+      },
+      "39": {
+        "codigo": "IMMQ404",
+        "nombre": "Portafolio de Proyecto"
+      },
+      "40": {
+        "codigo": "IMMC403",
+        "nombre": "Sistemas de Gestión Integrado"
+      },
+      "41": {
+        "codigo": "IMMC404",
+        "nombre": "Seminario de Licenciatura en Ingeniería"
+      },
+      "42": {
+        "codigo": "IMMQ405",
+        "nombre": "Inglés Técnico Marítimo"
+      },
+      "43": {
+        "codigo": "IMMQ406",
+        "nombre": "Máquinas Eléctricas II"
+      },
+      "44": {
+        "codigo": "IMMQ407",
+        "nombre": "Engine Room Resource Management (ERM - OMI 2.07)"
+      },
+      "45": {
+        "codigo": "IMMQ408",
+        "nombre": "Proyecto de Título"
+      },
+      "46": {
+        "codigo": "IMMQ409",
+        "nombre": "Práctica II"
+      },
+      "47": {
+        "codigo": "IMMC205",
+        "nombre": "Construcción Naval y Flotabilidad"
+      },
+      "48": {
+        "codigo": "IMMP201",
+        "nombre": "Meteorología y Oceanografía"
+      },
+      "49": {
+        "codigo": "IMMP202",
+        "nombre": "Fundamentos de Navegación"
+      },
+      "50": {
+        "codigo": "IMMP203",
+        "nombre": "Planificación y Estiba de la Carga"
+      },
+      "51": {
+        "codigo": "IMMP204",
+        "nombre": "Práctica I"
+      },
+      "52": {
+        "codigo": "ING249",
+        "nombre": "Inglés IV"
+      },
+      "53": {
+        "codigo": "CEGPC13",
+        "nombre": "Pensamiento Crítico"
+      },
+      "54": {
+        "codigo": "IMMC301",
+        "nombre": "Cuidado del Medio Ambiente (OMI I.01)"
+      },
+      "55": {
+        "codigo": "IMMP301",
+        "nombre": "Posicionamiento y Pilotaje"
+      },
+      "56": {
+        "codigo": "IMMP302",
+        "nombre": "Comunicaciones I"
+      },
+      "57": {
+        "codigo": "IMMP303",
+        "nombre": "Estiba de los Pesos a Bordo"
+      },
+      "58": {
+        "codigo": "IMMP304",
+        "nombre": "Navegación Electrónica (OMI 1.07-1.27)"
+      },
+      "59": {
+        "codigo": "IMMC302",
+        "nombre": "Primeros Auxilios y Cuidados Médicos a Bordo (OMI 1.13-1.14)"
+      },
+      "60": {
+        "codigo": "IMMC303",
+        "nombre": "Costos y Finanzas"
+      },
+      "61": {
+        "codigo": "IMMP305",
+        "nombre": "Navegación Ortodrómica y Loxodrómica"
+      },
+      "62": {
+        "codigo": "IMMP306",
+        "nombre": "Comunicaciones II"
+      },
+      "63": {
+        "codigo": "IMMP307",
+        "nombre": "Maniobrabilidad de la Nave"
+      },
+      "64": {
+        "codigo": "IMMP308",
+        "nombre": "Esfuerzos y Averías Estructurales"
+      },
+      "65": {
+        "codigo": "IMMC401",
+        "nombre": "Seguridad de las Personas y Medio Ambiente (OMI 1.21, 3.26, 1.39, 1.38)"
+      },
+      "66": {
+        "codigo": "IMMC402",
+        "nombre": "Evaluación de Inversiones Marítimo Portuario"
+      },
+      "67": {
+        "codigo": "IMMP401",
+        "nombre": "Navegación Astronómica"
+      },
+      "68": {
+        "codigo": "IMMP402",
+        "nombre": "Búsqueda y Salvamento (OMI 1.08)"
+      },
+      "69": {
+        "codigo": "IMMP403",
+        "nombre": "Portafolio de Proyecto"
+      },
+      "70": {
+        "codigo": "IMMP404",
+        "nombre": "Seguros del Transporte Marítimo"
+      },
+      "71": {
+        "codigo": "IMMC403",
+        "nombre": "Sistemas de Gestión Integrado"
+      },
+      "72": {
+        "codigo": "IMMC404",
+        "nombre": "Seminario de Licenciatura en Ingeniería"
+      },
+      "73": {
+        "codigo": "IMMP405",
+        "nombre": "Inglés Marítimo Portuario"
+      },
+      "74": {
+        "codigo": "IMMP406",
+        "nombre": "Bridge Resource Management (OMI 1.22-BRM)"
+      },
+      "75": {
+        "codigo": "IMMP407",
+        "nombre": "Gestión del Transporte Marítimo"
+      },
+      "76": {
+        "codigo": "IMMP408",
+        "nombre": "Proyecto de Título"
+      },
+      "77": {
+        "codigo": "IMMP409",
+        "nombre": "Práctica II"
+      }
     },
     "CInf": {
-      "1": "TDFI102",
-      "2": "TDFI101",
-      "3": "FMMP012",
-      "4": "CFIS310",
-      "5": "TDFI103",
-      "6": "FMMP112",
-      "7": "CFIS328",
-      "8": "QUIM090",
-      "9": "CEGHC11",
-      "10": "TDFI104",
-      "11": "PTEC101",
-      "12": "FMMP212",
-      "13": "CFIS332",
-      "14": "ACAD101",
-      "15": "FMMP312",
-      "16": "CFIS344",
-      "17": "INSW220",
-      "18": "ACAD102",
-      "19": "ING119",
-      "20": "FMSP316",
-      "21": "PTEC102",
-      "22": "ICF201",
-      "23": "ICF202",
-      "24": "ING129",
-      "25": "TDFI105",
-      "26": "PTEC103",
-      "27": "PTEC104",
-      "28": "ICF203",
-      "29": "ING239",
-      "30": "PTEC105",
-      "31": "ICF204",
-      "32": "ICF205",
-      "33": "ACAD103",
-      "34": "ING249",
-      "35": "TDFI106",
-      "36": "PTEC106",
-      "37": "PTEC107",
-      "38": "INSW411",
-      "39": "INSW421",
-      "40": "CEGRS14",
-      "41": "INSW410",
-      "42": "ICF206",
-      "43": "ICF207",
-      "44": "INSW412",
-      "45": "INSW413",
-      "46": "INSW422",
-      "47": "ICF208",
-      "48": "INSW420"
+      "1": {
+        "codigo": "TDFI102",
+        "nombre": "Introducción a la Programación"
+      },
+      "2": {
+        "codigo": "TDFI101",
+        "nombre": "Introducción a la Ingeniería"
+      },
+      "3": {
+        "codigo": "FMMP012",
+        "nombre": "Introducción a las Matemáticas"
+      },
+      "4": {
+        "codigo": "CFIS310",
+        "nombre": "Física General"
+      },
+      "5": {
+        "codigo": "TDFI103",
+        "nombre": "Base de Datos"
+      },
+      "6": {
+        "codigo": "FMMP112",
+        "nombre": "Cálculo Diferencial"
+      },
+      "7": {
+        "codigo": "CFIS328",
+        "nombre": "Física Experimental"
+      },
+      "8": {
+        "codigo": "QUIM090",
+        "nombre": "Química y Ambiente"
+      },
+      "9": {
+        "codigo": "CEGHC11",
+        "nombre": "Habilidades Comunicativas"
+      },
+      "10": {
+        "codigo": "TDFI104",
+        "nombre": "Compliance & Accountability"
+      },
+      "11": {
+        "codigo": "PTEC101",
+        "nombre": "Algoritmos y Estructuras de Datos"
+      },
+      "12": {
+        "codigo": "FMMP212",
+        "nombre": "Cálculo Integral"
+      },
+      "13": {
+        "codigo": "CFIS332",
+        "nombre": "Mecánica"
+      },
+      "14": {
+        "codigo": "ACAD101",
+        "nombre": "Taller de Innovación y Emprendimiento I"
+      },
+      "15": {
+        "codigo": "FMMP312",
+        "nombre": "Sistemas y Ecuaciones Diferenciales Lineales"
+      },
+      "16": {
+        "codigo": "CFIS344",
+        "nombre": "Electricidad y Magnetismo"
+      },
+      "17": {
+        "codigo": "INSW220",
+        "nombre": "Práctica I"
+      },
+      "18": {
+        "codigo": "ACAD102",
+        "nombre": "Taller de Innovación y Emprendimiento II"
+      },
+      "19": {
+        "codigo": "ING119",
+        "nombre": "Inglés I"
+      },
+      "20": {
+        "codigo": "FMSP316",
+        "nombre": "Métodos Cuantitativos"
+      },
+      "21": {
+        "codigo": "PTEC102",
+        "nombre": "Paradigmas de Programación"
+      },
+      "22": {
+        "codigo": "ICF201",
+        "nombre": "Fundamentos de Computación de Alto Desempeño"
+      },
+      "23": {
+        "codigo": "ICF202",
+        "nombre": "Análisis y Diseño de Algoritmos"
+      },
+      "24": {
+        "codigo": "ING129",
+        "nombre": "Inglés II"
+      },
+      "25": {
+        "codigo": "TDFI105",
+        "nombre": "Minería de Datos"
+      },
+      "26": {
+        "codigo": "PTEC103",
+        "nombre": "Desarrollo Web y Móvil"
+      },
+      "27": {
+        "codigo": "PTEC104",
+        "nombre": "Infraestructura TI"
+      },
+      "28": {
+        "codigo": "ICF203",
+        "nombre": "Fundamentos de Inteligencia Artificial"
+      },
+      "29": {
+        "codigo": "ING239",
+        "nombre": "Inglés III"
+      },
+      "30": {
+        "codigo": "PTEC105",
+        "nombre": "Ingeniería de Software I"
+      },
+      "31": {
+        "codigo": "ICF204",
+        "nombre": "Aprendizaje de Máquina"
+      },
+      "32": {
+        "codigo": "ICF205",
+        "nombre": "Optimización"
+      },
+      "33": {
+        "codigo": "ACAD103",
+        "nombre": "Taller de Innovación y Emprendimiento III"
+      },
+      "34": {
+        "codigo": "ING249",
+        "nombre": "Inglés IV"
+      },
+      "35": {
+        "codigo": "TDFI106",
+        "nombre": "Gestión de la Transformación Digital"
+      },
+      "36": {
+        "codigo": "PTEC106",
+        "nombre": "Ingeniería de Software II"
+      },
+      "37": {
+        "codigo": "PTEC107",
+        "nombre": "Ciberseguridad"
+      },
+      "38": {
+        "codigo": "INSW411",
+        "nombre": "Tópicos de Especialidad I"
+      },
+      "39": {
+        "codigo": "INSW421",
+        "nombre": "Seminario de Licenciatura en Ingeniería"
+      },
+      "40": {
+        "codigo": "CEGRS14",
+        "nombre": "Responsabilidad Social"
+      },
+      "41": {
+        "codigo": "INSW410",
+        "nombre": "Portafolio de Proyectos"
+      },
+      "42": {
+        "codigo": "ICF206",
+        "nombre": "Administración Financiera de Proyectos I+D+i"
+      },
+      "43": {
+        "codigo": "ICF207",
+        "nombre": "Ciencia de Datos"
+      },
+      "44": {
+        "codigo": "INSW412",
+        "nombre": "Tópicos de Especialidad II"
+      },
+      "45": {
+        "codigo": "INSW413",
+        "nombre": "Tópicos de Especialidad III"
+      },
+      "46": {
+        "codigo": "INSW422",
+        "nombre": "Proyecto de Título"
+      },
+      "47": {
+        "codigo": "ICF208",
+        "nombre": "Taller de Transferencia Tecnológica"
+      },
+      "48": {
+        "codigo": "INSW420",
+        "nombre": "Práctica II"
+      }
     },
     "Minas": {
-      "1": "CFIS310",
-      "2": "FMMP012",
-      "3": "TDFI101",
-      "4": "TDFI102",
-      "5": "CEGHC11",
-      "6": "CFIS328",
-      "7": "FMMP112",
-      "8": "ICMI121",
-      "9": "TDFI103",
-      "10": "CFIS332",
-      "11": "FMMP212",
-      "12": "ICMI211",
-      "13": "QUIM090",
-      "14": "TDFI104",
-      "15": "FMSP316",
-      "16": "ICMI221",
-      "17": "ICMI222",
-      "18": "ICMI223",
-      "19": "ING119",
-      "20": "FMMP312",
-      "21": "ICMI311",
-      "22": "ICMI312",
-      "23": "ICMI313",
-      "24": "ING129",
-      "25": "ACAD101",
-      "26": "ICMI321",
-      "27": "ICMI322",
-      "28": "ING239",
-      "29": "TDFI105",
-      "30": "ACAD102",
-      "31": "ICMI411",
-      "32": "ICMI412",
-      "33": "ING249",
-      "34": "TDFI106",
-      "35": "ACAD103",
-      "36": "CEGRS14",
-      "37": "ICMI421",
-      "38": "ICMI422",
-      "39": "ICMI423",
-      "40": "ICMI511",
-      "41": "ICMI512",
-      "42": "ICMI513",
-      "43": "ICMI514",
-      "44": "ICMI515",
-      "45": "ICMI521",
-      "46": "ICMI522",
-      "47": "ICMI523",
-      "48": "ICMI524",
-      "49": "ICMI525"
+      "1": {
+        "codigo": "CFIS310",
+        "nombre": "Física General"
+      },
+      "2": {
+        "codigo": "FMMP012",
+        "nombre": "Introducción a las Matemáticas"
+      },
+      "3": {
+        "codigo": "TDFI101",
+        "nombre": "Introducción a la Ingeniería"
+      },
+      "4": {
+        "codigo": "TDFI102",
+        "nombre": "Introducción a la Programación"
+      },
+      "5": {
+        "codigo": "CEGHC11",
+        "nombre": "Habilidades Comunicativas"
+      },
+      "6": {
+        "codigo": "CFIS328",
+        "nombre": "Física Experimental"
+      },
+      "7": {
+        "codigo": "FMMP112",
+        "nombre": "Cálculo Diferencial"
+      },
+      "8": {
+        "codigo": "ICMI121",
+        "nombre": "Geología I"
+      },
+      "9": {
+        "codigo": "TDFI103",
+        "nombre": "Base de Datos"
+      },
+      "10": {
+        "codigo": "CFIS332",
+        "nombre": "Mecánica"
+      },
+      "11": {
+        "codigo": "FMMP212",
+        "nombre": "Cálculo Integral"
+      },
+      "12": {
+        "codigo": "ICMI211",
+        "nombre": "Geología II"
+      },
+      "13": {
+        "codigo": "QUIM090",
+        "nombre": "Química y Ambiente"
+      },
+      "14": {
+        "codigo": "TDFI104",
+        "nombre": "Compliance & Accountability"
+      },
+      "15": {
+        "codigo": "FMSP316",
+        "nombre": "Métodos Cuantitativos"
+      },
+      "16": {
+        "codigo": "ICMI221",
+        "nombre": "Integrador I: Práctica I"
+      },
+      "17": {
+        "codigo": "ICMI222",
+        "nombre": "Evaluación de Yacimientos"
+      },
+      "18": {
+        "codigo": "ICMI223",
+        "nombre": "Minería y Energía para Rajo Abierto y Subterránea"
+      },
+      "19": {
+        "codigo": "ING119",
+        "nombre": "Inglés I"
+      },
+      "20": {
+        "codigo": "FMMP312",
+        "nombre": "Sistemas y Ecuaciones Diferenciales Lineales"
+      },
+      "21": {
+        "codigo": "ICMI311",
+        "nombre": "Mecánica de Rocas"
+      },
+      "22": {
+        "codigo": "ICMI312",
+        "nombre": "Conminución"
+      },
+      "23": {
+        "codigo": "ICMI313",
+        "nombre": "Operaciones Unitarias I: Perforación y Tronadura"
+      },
+      "24": {
+        "codigo": "ING129",
+        "nombre": "Inglés II"
+      },
+      "25": {
+        "codigo": "ACAD101",
+        "nombre": "Taller de Innovación y Emprendimiento I"
+      },
+      "26": {
+        "codigo": "ICMI321",
+        "nombre": "Concentración de Minerales"
+      },
+      "27": {
+        "codigo": "ICMI322",
+        "nombre": "Operaciones Unitarias II: Carguío y Transporte"
+      },
+      "28": {
+        "codigo": "ING239",
+        "nombre": "Inglés III"
+      },
+      "29": {
+        "codigo": "TDFI105",
+        "nombre": "Minería de Datos"
+      },
+      "30": {
+        "codigo": "ACAD102",
+        "nombre": "Taller de Innovación y Emprendimiento II"
+      },
+      "31": {
+        "codigo": "ICMI411",
+        "nombre": "Pirometalurgia"
+      },
+      "32": {
+        "codigo": "ICMI412",
+        "nombre": "Métodos de Explotación y Diseño Minero"
+      },
+      "33": {
+        "codigo": "ING249",
+        "nombre": "Inglés IV"
+      },
+      "34": {
+        "codigo": "TDFI106",
+        "nombre": "Gestión de la Transformación Digital"
+      },
+      "35": {
+        "codigo": "ACAD103",
+        "nombre": "Taller de Innovación y Emprendimiento III"
+      },
+      "36": {
+        "codigo": "CEGRS14",
+        "nombre": "Responsabilidad Social"
+      },
+      "37": {
+        "codigo": "ICMI421",
+        "nombre": "Hidrometalurgia"
+      },
+      "38": {
+        "codigo": "ICMI422",
+        "nombre": "Planificación Minera"
+      },
+      "39": {
+        "codigo": "ICMI423",
+        "nombre": "Integrador II: Seminario de Licenciatura en Ciencias de la Ingeniería"
+      },
+      "40": {
+        "codigo": "ICMI511",
+        "nombre": "Ventilación"
+      },
+      "41": {
+        "codigo": "ICMI512",
+        "nombre": "Portafolio de Proyectos"
+      },
+      "42": {
+        "codigo": "ICMI513",
+        "nombre": "Economía, Dirección y Comercialización"
+      },
+      "43": {
+        "codigo": "ICMI514",
+        "nombre": "Práctica II"
+      },
+      "44": {
+        "codigo": "ICMI515",
+        "nombre": "Medio Ambiente y Legislación Minera"
+      },
+      "45": {
+        "codigo": "ICMI521",
+        "nombre": "Tópico de Especialidad I: Control de Procesos Geo-Minero-Metalúrgicos"
+      },
+      "46": {
+        "codigo": "ICMI522",
+        "nombre": "Tópico de Especialidad II: Economía Circular"
+      },
+      "47": {
+        "codigo": "ICMI523",
+        "nombre": "Integrador III: Proyecto de Título"
+      },
+      "48": {
+        "codigo": "ICMI524",
+        "nombre": "Tópico de Especialidad III: Evaluación de Proyectos + Excelencia Operacional"
+      },
+      "49": {
+        "codigo": "ICMI525",
+        "nombre": "Seguridad y Salud Ocupacional"
+      }
     },
     "Med": {
-      "1": "BIOL132",
-      "2": "CEGHC11",
-      "3": "MAT007",
-      "4": "MEDI001",
-      "5": "MORF335",
-      "6": "QUIM500",
-      "7": "BIOL148",
-      "8": "CFIS350",
-      "9": "MEDI002",
-      "10": "MORF336",
-      "11": "SPAB305",
-      "12": "BIOL259",
-      "13": "BIOL276",
-      "14": "ING119",
-      "15": "MEDI003",
-      "16": "SPAB306",
-      "17": "BIOL376",
-      "18": "ING129",
-      "19": "MEDI004",
-      "20": "MEDI005",
-      "21": "SPAB307",
-      "22": "FARM131",
-      "23": "ING239",
-      "24": "MEDI006",
-      "25": "MEDI007",
-      "26": "MEDI0100",
-      "27": "ING249",
-      "28": "MEDI008",
-      "29": "MEDI009",
-      "30": "MEDI010",
-      "31": "MEDI011",
-      "32": "SPAB308",
-      "33": "MEDI012",
-      "34": "MEDI013",
-      "35": "MEDI014",
-      "36": "MEDI015",
-      "37": "MEDI016",
-      "38": "CEGPC13",
-      "39": "MEDI017",
-      "40": "MEDI018",
-      "41": "MEDI019",
-      "42": "MEDI020",
-      "43": "MEDI021",
-      "44": "MEDI0200",
-      "45": "MEDI022",
-      "46": "MEDI023",
-      "47": "MEDI024",
-      "48": "MEDI025",
-      "49": "MEDI026",
-      "50": "MEDI027",
-      "51": "MEDI028",
-      "52": "MEDI029",
-      "53": "MEDI030",
-      "54": "MEDI0300"
+      "1": {
+        "codigo": "BIOL132",
+        "nombre": "Biología Celular"
+      },
+      "2": {
+        "codigo": "CEGHC11",
+        "nombre": "Habilidades Comunicativas"
+      },
+      "3": {
+        "codigo": "MAT007",
+        "nombre": "Razonamiento Matemático Aplicado a la Medicina"
+      },
+      "4": {
+        "codigo": "MEDI001",
+        "nombre": "Fundamentos de la Medicina I"
+      },
+      "5": {
+        "codigo": "MORF335",
+        "nombre": "Bases Morfológicas y Estructurales I"
+      },
+      "6": {
+        "codigo": "QUIM500",
+        "nombre": "Química General y Orgánica"
+      },
+      "7": {
+        "codigo": "BIOL148",
+        "nombre": "Genética y Biología Molecular Humana"
+      },
+      "8": {
+        "codigo": "CFIS350",
+        "nombre": "Física Aplicada a la Medicina"
+      },
+      "9": {
+        "codigo": "MEDI002",
+        "nombre": "Fundamentos de la Medicina II"
+      },
+      "10": {
+        "codigo": "MORF336",
+        "nombre": "Bases Morfológicas y Estructurales II"
+      },
+      "11": {
+        "codigo": "SPAB305",
+        "nombre": "Bioestadística"
+      },
+      "12": {
+        "codigo": "BIOL259",
+        "nombre": "Microbiología y Parasitología"
+      },
+      "13": {
+        "codigo": "BIOL276",
+        "nombre": "Bases Funcionales I"
+      },
+      "14": {
+        "codigo": "ING119",
+        "nombre": "Inglés I"
+      },
+      "15": {
+        "codigo": "MEDI003",
+        "nombre": "Psicología Médica"
+      },
+      "16": {
+        "codigo": "SPAB306",
+        "nombre": "Epidemiología"
+      },
+      "17": {
+        "codigo": "BIOL376",
+        "nombre": "Bases Funcionales II"
+      },
+      "18": {
+        "codigo": "ING129",
+        "nombre": "Inglés II"
+      },
+      "19": {
+        "codigo": "MEDI004",
+        "nombre": "Medicina Familiar y Comunitaria"
+      },
+      "20": {
+        "codigo": "MEDI005",
+        "nombre": "Medicina y Sociedad"
+      },
+      "21": {
+        "codigo": "SPAB307",
+        "nombre": "Salud Pública"
+      },
+      "22": {
+        "codigo": "FARM131",
+        "nombre": "Farmacología"
+      },
+      "23": {
+        "codigo": "ING239",
+        "nombre": "Inglés III"
+      },
+      "24": {
+        "codigo": "MEDI006",
+        "nombre": "Semiología"
+      },
+      "25": {
+        "codigo": "MEDI007",
+        "nombre": "Bases Funcionales III"
+      },
+      "26": {
+        "codigo": "MEDI0100",
+        "nombre": "Integrador I"
+      },
+      "27": {
+        "codigo": "ING249",
+        "nombre": "Inglés IV"
+      },
+      "28": {
+        "codigo": "MEDI008",
+        "nombre": "Ética Médica"
+      },
+      "29": {
+        "codigo": "MEDI009",
+        "nombre": "Clínica Médico Quirúrgica I"
+      },
+      "30": {
+        "codigo": "MEDI010",
+        "nombre": "Neurología"
+      },
+      "31": {
+        "codigo": "MEDI011",
+        "nombre": "Métodos de Investigación"
+      },
+      "32": {
+        "codigo": "SPAB308",
+        "nombre": "Gestión en Salud"
+      },
+      "33": {
+        "codigo": "MEDI012",
+        "nombre": "Clínica Médico Quirúrgica II"
+      },
+      "34": {
+        "codigo": "MEDI013",
+        "nombre": "Dermatología"
+      },
+      "35": {
+        "codigo": "MEDI014",
+        "nombre": "Otorrinolaringología"
+      },
+      "36": {
+        "codigo": "MEDI015",
+        "nombre": "Psiquiatría"
+      },
+      "37": {
+        "codigo": "MEDI016",
+        "nombre": "Medicina Basada en la Evidencia"
+      },
+      "38": {
+        "codigo": "CEGPC13",
+        "nombre": "Pensamiento Crítico"
+      },
+      "39": {
+        "codigo": "MEDI017",
+        "nombre": "Clínica Médico Quirúrgica III"
+      },
+      "40": {
+        "codigo": "MEDI018",
+        "nombre": "Traumatología y Ortopedia"
+      },
+      "41": {
+        "codigo": "MEDI019",
+        "nombre": "Oftalmología"
+      },
+      "42": {
+        "codigo": "MEDI020",
+        "nombre": "Urología"
+      },
+      "43": {
+        "codigo": "MEDI021",
+        "nombre": "Medicina Legal y Forense"
+      },
+      "44": {
+        "codigo": "MEDI0200",
+        "nombre": "Integrador II"
+      },
+      "45": {
+        "codigo": "MEDI022",
+        "nombre": "Pediatría y Cirugía Infantil"
+      },
+      "46": {
+        "codigo": "MEDI023",
+        "nombre": "Obstetricia y Ginecología"
+      },
+      "47": {
+        "codigo": "MEDI024",
+        "nombre": "Internado de Pediatría"
+      },
+      "48": {
+        "codigo": "MEDI025",
+        "nombre": "Internado de Obstetricia y Ginecología"
+      },
+      "49": {
+        "codigo": "MEDI026",
+        "nombre": "Internado de Cirugía"
+      },
+      "50": {
+        "codigo": "MEDI027",
+        "nombre": "Internado de Medicina Interna"
+      },
+      "51": {
+        "codigo": "MEDI028",
+        "nombre": "Internado de Medicina Rural y Comunitaria"
+      },
+      "52": {
+        "codigo": "MEDI029",
+        "nombre": "Internado Psiquiatría"
+      },
+      "53": {
+        "codigo": "MEDI030",
+        "nombre": "Internado Electivo"
+      },
+      "54": {
+        "codigo": "MEDI0300",
+        "nombre": "Integrador III"
+      }
     },
     "TM": {
-      "1": "BIOL035",
-      "2": "BIOL130",
-      "3": "FMMP101",
-      "4": "MORF010",
-      "5": "QUIM102",
-      "6": "TMED001",
-      "7": "CEGHC11",
-      "8": "CFIS020",
-      "9": "ING119",
-      "10": "MORF122",
-      "11": "QUIM022",
-      "12": "BIOL166",
-      "13": "BIOL272",
-      "14": "CEGCT12",
-      "15": "ING129",
-      "16": "TMED003",
-      "17": "TMED004",
-      "18": "FARM171",
-      "19": "ING239",
-      "20": "TMED005",
-      "21": "TMED411",
-      "22": "TMED412",
-      "23": "ING249",
-      "24": "SPAB110",
-      "25": "TMED006",
-      "26": "TMED511",
-      "27": "TMED512",
-      "28": "SPAB111",
-      "29": "TMED611",
-      "30": "TMED612",
-      "31": "TMED613",
-      "32": "SPAB112",
-      "33": "TMED002",
-      "34": "TMED711",
-      "35": "TMED712",
-      "36": "TMED713",
-      "37": "TMED714",
-      "38": "CEGPC13",
-      "39": "SPAB103",
-      "40": "SPAB303",
-      "41": "TMED811",
-      "42": "TMED812",
-      "43": "CEGRS14",
-      "44": "TMED911",
-      "45": "TMED912",
-      "46": "FARM171",
-      "47": "ING239",
-      "48": "TMED005",
-      "49": "TMED431",
-      "50": "TMED432",
-      "51": "TMED433",
-      "52": "ING249",
-      "53": "SPAB110",
-      "54": "TMED006",
-      "55": "TMED531",
-      "56": "TMED532",
-      "57": "TMED533",
-      "58": "SPAB111",
-      "59": "TMED631",
-      "60": "TMED632",
-      "61": "TMED633",
-      "62": "TMED634",
-      "63": "SPAB112",
-      "64": "TMED002",
-      "65": "TMED731",
-      "66": "TMED732",
-      "67": "TMED733",
-      "68": "TMED734",
-      "69": "CEGPC13",
-      "70": "SPAB103",
-      "71": "SPAB303",
-      "72": "TMED831",
-      "73": "TMED832",
-      "74": "CEGRS14",
-      "75": "TMED931",
-      "76": "TMED932",
-      "77": "FARM171",
-      "78": "ING239",
-      "79": "TMED005",
-      "80": "TMED441",
-      "81": "TMED442",
-      "82": "ING249",
-      "83": "SPAB110",
-      "84": "TMED006",
-      "85": "TMED541",
-      "86": "TMED542",
-      "87": "CEGPC13",
-      "88": "SPAB111",
-      "89": "TMED641",
-      "90": "TMED642",
-      "91": "TMED643",
-      "92": "SPAB112",
-      "93": "TMED002",
-      "94": "TMED741",
-      "95": "TMED742",
-      "96": "TMED743",
-      "97": "TMED744",
-      "98": "SPAB103",
-      "99": "SPAB303",
-      "100": "TMED841",
-      "101": "TMED842",
-      "102": "TMED843",
-      "103": "CEGRS14",
-      "104": "TMED941",
-      "105": "TMED942",
-      "106": "FARM171",
-      "107": "ING239",
-      "108": "TMED005",
-      "109": "TMED421",
-      "110": "TMED422",
-      "111": "TMED423",
-      "112": "ING249",
-      "113": "SPAB110",
-      "114": "TMED006",
-      "115": "TMED521",
-      "116": "TMED522",
-      "117": "TMED523",
-      "118": "SPAB111",
-      "119": "TMED621",
-      "120": "TMED622",
-      "121": "TMED623",
-      "122": "CEGPC13",
-      "123": "SPAB112",
-      "124": "TMED002",
-      "125": "TMED721",
-      "126": "TMED722",
-      "127": "TMED723",
-      "128": "TMED724",
-      "129": "SPAB103",
-      "130": "SPAB303",
-      "131": "TMED821",
-      "132": "TMED822",
-      "133": "TMED823",
-      "134": "CEGRS14",
-      "135": "TMED921",
-      "136": "TMED922",
-      "137": "FARM171",
-      "138": "ING239",
-      "139": "TMED005",
-      "140": "TMED451",
-      "141": "TMED452",
-      "142": "TMED453",
-      "143": "ING249",
-      "144": "SPAB110",
-      "145": "TMED006",
-      "146": "TMED551",
-      "147": "TMED552",
-      "148": "TMED553",
-      "149": "CEGPC13",
-      "150": "SPAB111",
-      "151": "TMED651",
-      "152": "TMED652",
-      "153": "SPAB112",
-      "154": "TMED002",
-      "155": "TMED751",
-      "156": "TMED752",
-      "157": "TMED753",
-      "158": "SPAB103",
-      "159": "SPAB303",
-      "160": "TMED851",
-      "161": "TMED852",
-      "162": "TMED853",
-      "163": "CEGRS14",
-      "164": "TMED951",
-      "165": "TMED952"
+      "1": {
+        "codigo": "BIOL035",
+        "nombre": "Laboratorio biología celular"
+      },
+      "2": {
+        "codigo": "BIOL130",
+        "nombre": "Biología celular"
+      },
+      "3": {
+        "codigo": "FMMP101",
+        "nombre": "Elementos de álgebra y cálculo"
+      },
+      "4": {
+        "codigo": "MORF010",
+        "nombre": "Anatomía humana"
+      },
+      "5": {
+        "codigo": "QUIM102",
+        "nombre": "Química general"
+      },
+      "6": {
+        "codigo": "TMED001",
+        "nombre": "Introducción a la tecnología médica"
+      },
+      "7": {
+        "codigo": "CEGHC11",
+        "nombre": "Habilidades comunicativas"
+      },
+      "8": {
+        "codigo": "CFIS020",
+        "nombre": "Física general"
+      },
+      "9": {
+        "codigo": "ING119",
+        "nombre": "Inglés I"
+      },
+      "10": {
+        "codigo": "MORF122",
+        "nombre": "Histoembriología"
+      },
+      "11": {
+        "codigo": "QUIM022",
+        "nombre": "Química orgánica"
+      },
+      "12": {
+        "codigo": "BIOL166",
+        "nombre": "Bioquímica"
+      },
+      "13": {
+        "codigo": "BIOL272",
+        "nombre": "Fisiología humana"
+      },
+      "14": {
+        "codigo": "CEGCT12",
+        "nombre": "Razonamiento científico y tecnologías de información"
+      },
+      "15": {
+        "codigo": "ING129",
+        "nombre": "Inglés II"
+      },
+      "16": {
+        "codigo": "TMED003",
+        "nombre": "Bioética"
+      },
+      "17": {
+        "codigo": "TMED004",
+        "nombre": "Infectología"
+      },
+      "18": {
+        "codigo": "FARM171",
+        "nombre": "Farmacología general"
+      },
+      "19": {
+        "codigo": "ING239",
+        "nombre": "Inglés III"
+      },
+      "20": {
+        "codigo": "TMED005",
+        "nombre": "Fisiopatología"
+      },
+      "21": {
+        "codigo": "TMED411",
+        "nombre": "Parasitología"
+      },
+      "22": {
+        "codigo": "TMED412",
+        "nombre": "Inmunología diagnóstica"
+      },
+      "23": {
+        "codigo": "ING249",
+        "nombre": "Inglés IV"
+      },
+      "24": {
+        "codigo": "SPAB110",
+        "nombre": "Salud pública I"
+      },
+      "25": {
+        "codigo": "TMED006",
+        "nombre": "Procedimientos de tecnología médica y bioseguridad"
+      },
+      "26": {
+        "codigo": "TMED511",
+        "nombre": "Microbiología I"
+      },
+      "27": {
+        "codigo": "TMED512",
+        "nombre": "Hematología I"
+      },
+      "28": {
+        "codigo": "SPAB111",
+        "nombre": "Salud pública II"
+      },
+      "29": {
+        "codigo": "TMED611",
+        "nombre": "Bioquímica clínica I"
+      },
+      "30": {
+        "codigo": "TMED612",
+        "nombre": "Microbiología II"
+      },
+      "31": {
+        "codigo": "TMED613",
+        "nombre": "Hematología II"
+      },
+      "32": {
+        "codigo": "SPAB112",
+        "nombre": "Administración y gestión en salud"
+      },
+      "33": {
+        "codigo": "TMED002",
+        "nombre": "Educación en salud"
+      },
+      "34": {
+        "codigo": "TMED711",
+        "nombre": "Biología molecular"
+      },
+      "35": {
+        "codigo": "TMED712",
+        "nombre": "Inmunohematología"
+      },
+      "36": {
+        "codigo": "TMED713",
+        "nombre": "Bioquímica clínica II"
+      },
+      "37": {
+        "codigo": "TMED714",
+        "nombre": "Integrador I: caso clínico BACIMET"
+      },
+      "38": {
+        "codigo": "CEGPC13",
+        "nombre": "Pensamiento crítico"
+      },
+      "39": {
+        "codigo": "SPAB103",
+        "nombre": "Gestión y aseguramiento de la calidad"
+      },
+      "40": {
+        "codigo": "SPAB303",
+        "nombre": "Metodología de la investigación"
+      },
+      "41": {
+        "codigo": "TMED811",
+        "nombre": "Medicina transfusional"
+      },
+      "42": {
+        "codigo": "TMED812",
+        "nombre": "Diagnóstico molecular clínico"
+      },
+      "43": {
+        "codigo": "CEGRS14",
+        "nombre": "Responsabilidad social"
+      },
+      "44": {
+        "codigo": "TMED911",
+        "nombre": "Seminario de investigación BACIMET"
+      },
+      "45": {
+        "codigo": "TMED912",
+        "nombre": "Integrador II: internado clínico BACIMET"
+      },
+      "46": {
+        "codigo": "FARM171",
+        "nombre": "Farmacología general"
+      },
+      "47": {
+        "codigo": "ING239",
+        "nombre": "Inglés III"
+      },
+      "48": {
+        "codigo": "TMED005",
+        "nombre": "Fisiopatología"
+      },
+      "49": {
+        "codigo": "TMED431",
+        "nombre": "Protección radiológica"
+      },
+      "50": {
+        "codigo": "TMED432",
+        "nombre": "Radiodiagnóstico I"
+      },
+      "51": {
+        "codigo": "TMED433",
+        "nombre": "Física electromagnética"
+      },
+      "52": {
+        "codigo": "ING249",
+        "nombre": "Inglés IV"
+      },
+      "53": {
+        "codigo": "SPAB110",
+        "nombre": "Salud pública I"
+      },
+      "54": {
+        "codigo": "TMED006",
+        "nombre": "Procedimientos de tecnología médica y bioseguridad"
+      },
+      "55": {
+        "codigo": "TMED531",
+        "nombre": "Física moderna"
+      },
+      "56": {
+        "codigo": "TMED532",
+        "nombre": "Radiodiagnóstico II"
+      },
+      "57": {
+        "codigo": "TMED533",
+        "nombre": "Anatomía imagenológica"
+      },
+      "58": {
+        "codigo": "SPAB111",
+        "nombre": "Salud pública II"
+      },
+      "59": {
+        "codigo": "TMED631",
+        "nombre": "Física nuclear"
+      },
+      "60": {
+        "codigo": "TMED632",
+        "nombre": "Tomografía computada"
+      },
+      "61": {
+        "codigo": "TMED633",
+        "nombre": "Sistema informático en radiología"
+      },
+      "62": {
+        "codigo": "TMED634",
+        "nombre": "Patología imagenológica"
+      },
+      "63": {
+        "codigo": "SPAB112",
+        "nombre": "Administración y gestión en salud"
+      },
+      "64": {
+        "codigo": "TMED002",
+        "nombre": "Educación en salud"
+      },
+      "65": {
+        "codigo": "TMED731",
+        "nombre": "Medicina nuclear"
+      },
+      "66": {
+        "codigo": "TMED732",
+        "nombre": "Intervencionismo endovascular"
+      },
+      "67": {
+        "codigo": "TMED733",
+        "nombre": "Integrador I: caso clínico IFIME"
+      },
+      "68": {
+        "codigo": "TMED734",
+        "nombre": "Ultrasonido"
+      },
+      "69": {
+        "codigo": "CEGPC13",
+        "nombre": "Pensamiento crítico"
+      },
+      "70": {
+        "codigo": "SPAB103",
+        "nombre": "Gestión y aseguramiento de la calidad"
+      },
+      "71": {
+        "codigo": "SPAB303",
+        "nombre": "Metodología de la investigación"
+      },
+      "72": {
+        "codigo": "TMED831",
+        "nombre": "Radioterapia"
+      },
+      "73": {
+        "codigo": "TMED832",
+        "nombre": "Resonancia magnética"
+      },
+      "74": {
+        "codigo": "CEGRS14",
+        "nombre": "Responsabilidad social"
+      },
+      "75": {
+        "codigo": "TMED931",
+        "nombre": "Seminario de investigación IFIME"
+      },
+      "76": {
+        "codigo": "TMED932",
+        "nombre": "Integrador II: internado clínico IFIME"
+      },
+      "77": {
+        "codigo": "FARM171",
+        "nombre": "Farmacología general"
+      },
+      "78": {
+        "codigo": "ING239",
+        "nombre": "Inglés III"
+      },
+      "79": {
+        "codigo": "TMED005",
+        "nombre": "Fisiopatología"
+      },
+      "80": {
+        "codigo": "TMED441",
+        "nombre": "Técnicas histológicas y citológicas I"
+      },
+      "81": {
+        "codigo": "TMED442",
+        "nombre": "Histología clínica"
+      },
+      "82": {
+        "codigo": "ING249",
+        "nombre": "Inglés IV"
+      },
+      "83": {
+        "codigo": "SPAB110",
+        "nombre": "Salud pública I"
+      },
+      "84": {
+        "codigo": "TMED006",
+        "nombre": "Procedimientos de tecnología médica y bioseguridad"
+      },
+      "85": {
+        "codigo": "TMED541",
+        "nombre": "Técnicas histológicas y citológicas II"
+      },
+      "86": {
+        "codigo": "TMED542",
+        "nombre": "Anatomía patológica I"
+      },
+      "87": {
+        "codigo": "CEGPC13",
+        "nombre": "Pensamiento crítico"
+      },
+      "88": {
+        "codigo": "SPAB111",
+        "nombre": "Salud pública II"
+      },
+      "89": {
+        "codigo": "TMED641",
+        "nombre": "Biología molecular y genética"
+      },
+      "90": {
+        "codigo": "TMED642",
+        "nombre": "Diagnóstico histoquímico"
+      },
+      "91": {
+        "codigo": "TMED643",
+        "nombre": "Anatomía patológica II"
+      },
+      "92": {
+        "codigo": "SPAB112",
+        "nombre": "Administración y gestión en salud"
+      },
+      "93": {
+        "codigo": "TMED002",
+        "nombre": "Educación en salud"
+      },
+      "94": {
+        "codigo": "TMED741",
+        "nombre": "Fundamentos de citogénetica"
+      },
+      "95": {
+        "codigo": "TMED742",
+        "nombre": "Diagnóstico inmunohistoquímico"
+      },
+      "96": {
+        "codigo": "TMED743",
+        "nombre": "Citopatología I"
+      },
+      "97": {
+        "codigo": "TMED744",
+        "nombre": "Integrador I: caso clínico MORFO"
+      },
+      "98": {
+        "codigo": "SPAB103",
+        "nombre": "Gestión y aseguramiento de la calidad"
+      },
+      "99": {
+        "codigo": "SPAB303",
+        "nombre": "Metodología de la investigación"
+      },
+      "100": {
+        "codigo": "TMED841",
+        "nombre": "Diagnóstico citogenético"
+      },
+      "101": {
+        "codigo": "TMED842",
+        "nombre": "Diagnóstico molecular"
+      },
+      "102": {
+        "codigo": "TMED843",
+        "nombre": "Citopatología II"
+      },
+      "103": {
+        "codigo": "CEGRS14",
+        "nombre": "Responsabilidad social"
+      },
+      "104": {
+        "codigo": "TMED941",
+        "nombre": "Seminario de investigación MORFO"
+      },
+      "105": {
+        "codigo": "TMED942",
+        "nombre": "Integrador II: internado clínico MORFO"
+      },
+      "106": {
+        "codigo": "FARM171",
+        "nombre": "Farmacología general"
+      },
+      "107": {
+        "codigo": "ING239",
+        "nombre": "Inglés III"
+      },
+      "108": {
+        "codigo": "TMED005",
+        "nombre": "Fisiopatología"
+      },
+      "109": {
+        "codigo": "TMED421",
+        "nombre": "Morfofisiología ocular"
+      },
+      "110": {
+        "codigo": "TMED422",
+        "nombre": "Oftalmología general"
+      },
+      "111": {
+        "codigo": "TMED423",
+        "nombre": "Biofísica óptica"
+      },
+      "112": {
+        "codigo": "ING249",
+        "nombre": "Inglés IV"
+      },
+      "113": {
+        "codigo": "SPAB110",
+        "nombre": "Salud pública I"
+      },
+      "114": {
+        "codigo": "TMED006",
+        "nombre": "Procedimientos de tecnología médica y bioseguridad"
+      },
+      "115": {
+        "codigo": "TMED521",
+        "nombre": "Morfofisiopatología ocular"
+      },
+      "116": {
+        "codigo": "TMED522",
+        "nombre": "Exploración del sistema visual"
+      },
+      "117": {
+        "codigo": "TMED523",
+        "nombre": "Oftalmofarmacología"
+      },
+      "118": {
+        "codigo": "SPAB111",
+        "nombre": "Salud pública II"
+      },
+      "119": {
+        "codigo": "TMED621",
+        "nombre": "Estudio del campo visual"
+      },
+      "120": {
+        "codigo": "TMED622",
+        "nombre": "Estrabismo y ortóptica"
+      },
+      "121": {
+        "codigo": "TMED623",
+        "nombre": "Optometría I"
+      },
+      "122": {
+        "codigo": "CEGPC13",
+        "nombre": "Pensamiento crítico"
+      },
+      "123": {
+        "codigo": "SPAB112",
+        "nombre": "Administración y gestión en salud"
+      },
+      "124": {
+        "codigo": "TMED002",
+        "nombre": "Educación en salud"
+      },
+      "125": {
+        "codigo": "TMED721",
+        "nombre": "Neurooftalmología"
+      },
+      "126": {
+        "codigo": "TMED722",
+        "nombre": "Optometría II"
+      },
+      "127": {
+        "codigo": "TMED723",
+        "nombre": "Procedimientos de apoyo en cirugía refractiva"
+      },
+      "128": {
+        "codigo": "TMED724",
+        "nombre": "Integrador I: atención primaria en oftalmología"
+      },
+      "129": {
+        "codigo": "SPAB103",
+        "nombre": "Gestión y aseguramiento de la calidad"
+      },
+      "130": {
+        "codigo": "SPAB303",
+        "nombre": "Metodología de la investigación"
+      },
+      "131": {
+        "codigo": "TMED821",
+        "nombre": "Formulación y evaluación de proyectos en oftalmología"
+      },
+      "132": {
+        "codigo": "TMED822",
+        "nombre": "Exámenes funcionales del sistema visual"
+      },
+      "133": {
+        "codigo": "TMED823",
+        "nombre": "Imagenología ocular"
+      },
+      "134": {
+        "codigo": "CEGRS14",
+        "nombre": "Responsabilidad social"
+      },
+      "135": {
+        "codigo": "TMED921",
+        "nombre": "Seminario de investigación OFTA"
+      },
+      "136": {
+        "codigo": "TMED922",
+        "nombre": "Integrador II: internado clínico OFTA"
+      },
+      "137": {
+        "codigo": "FARM171",
+        "nombre": "Farmacología general"
+      },
+      "138": {
+        "codigo": "ING239",
+        "nombre": "Inglés III"
+      },
+      "139": {
+        "codigo": "TMED005",
+        "nombre": "Fisiopatología"
+      },
+      "140": {
+        "codigo": "TMED451",
+        "nombre": "Psicoacústica y fonología"
+      },
+      "141": {
+        "codigo": "TMED452",
+        "nombre": "Neuroanatomía otorrinolaringológica"
+      },
+      "142": {
+        "codigo": "TMED453",
+        "nombre": "Lengua de señas"
+      },
+      "143": {
+        "codigo": "ING249",
+        "nombre": "Inglés IV"
+      },
+      "144": {
+        "codigo": "SPAB110",
+        "nombre": "Salud pública I"
+      },
+      "145": {
+        "codigo": "TMED006",
+        "nombre": "Procedimientos de tecnología médica y bioseguridad"
+      },
+      "146": {
+        "codigo": "TMED551",
+        "nombre": "Morfofisiopatología orl"
+      },
+      "147": {
+        "codigo": "TMED552",
+        "nombre": "Función nasal"
+      },
+      "148": {
+        "codigo": "TMED553",
+        "nombre": "Neurofisiología aplicada a la orl"
+      },
+      "149": {
+        "codigo": "CEGPC13",
+        "nombre": "Pensamiento crítico"
+      },
+      "150": {
+        "codigo": "SPAB111",
+        "nombre": "Salud pública II"
+      },
+      "151": {
+        "codigo": "TMED651",
+        "nombre": "Audiología básica"
+      },
+      "152": {
+        "codigo": "TMED652",
+        "nombre": "Otoneurología I"
+      },
+      "153": {
+        "codigo": "SPAB112",
+        "nombre": "Administración y gestión en salud"
+      },
+      "154": {
+        "codigo": "TMED002",
+        "nombre": "Educación en salud"
+      },
+      "155": {
+        "codigo": "TMED751",
+        "nombre": "Audiología avanzada y electrofisiología"
+      },
+      "156": {
+        "codigo": "TMED752",
+        "nombre": "Otoneurología II"
+      },
+      "157": {
+        "codigo": "TMED753",
+        "nombre": "Integrador I: caso clínico OTO"
+      },
+      "158": {
+        "codigo": "SPAB103",
+        "nombre": "Gestión y aseguramiento de la calidad"
+      },
+      "159": {
+        "codigo": "SPAB303",
+        "nombre": "Metodología de la investigación"
+      },
+      "160": {
+        "codigo": "TMED851",
+        "nombre": "Salud ocupacional"
+      },
+      "161": {
+        "codigo": "TMED852",
+        "nombre": "Prótesis y ortesis auditivas"
+      },
+      "162": {
+        "codigo": "TMED853",
+        "nombre": "Rehabilitación vestibular auditiva"
+      },
+      "163": {
+        "codigo": "CEGRS14",
+        "nombre": "Responsabilidad social"
+      },
+      "164": {
+        "codigo": "TMED951",
+        "nombre": "Seminario de investigación OTO"
+      },
+      "165": {
+        "codigo": "TMED952",
+        "nombre": "Integrador II: internado clínico OTO"
+      }
     },
     "Psicologia": {
-      "1": "BIOL080",
-      "2": "FHCS211",
-      "3": "ING119",
-      "4": "PSIC111",
-      "5": "PSIC112",
-      "6": "CEGHC11",
-      "7": "ING129",
-      "8": "PSIC121",
-      "9": "PSIC122",
-      "10": "PSIC123",
-      "11": "CEGCT12",
-      "12": "ING239",
-      "13": "PSIC211",
-      "14": "PSIC212",
-      "15": "PSIC213",
-      "16": "FHCS221",
-      "17": "ING249",
-      "18": "PSIC221",
-      "19": "PSIC222",
-      "20": "PSIC223",
-      "21": "FHCS311",
-      "22": "PSIC311",
-      "23": "PSIC312",
-      "24": "PSIC313",
-      "25": "PSIC314",
-      "26": "PSIC321",
-      "27": "PSIC322",
-      "28": "PSIC323",
-      "29": "PSIC324",
-      "30": "PSIC325",
-      "31": "PSIC411",
-      "32": "PSIC412",
-      "33": "PSIC413",
-      "34": "PSIC414",
-      "35": "PSIC415",
-      "36": "PSIC421",
-      "37": "PSIC422",
-      "38": "PSIC423",
-      "39": "PSIC424",
-      "40": "PSIC425",
-      "41": "PSIC511",
-      "42": "PSIC512",
-      "43": "PSIC513",
-      "44": "PSIC514",
-      "45": "PSIC515",
-      "46": "PSIC521"
+      "1": {
+        "codigo": "BIOL080",
+        "nombre": "Tópicos de neurobiología"
+      },
+      "2": {
+        "codigo": "FHCS211",
+        "nombre": "Eje de formación interdisciplinaria I"
+      },
+      "3": {
+        "codigo": "ING119",
+        "nombre": "Inglés I"
+      },
+      "4": {
+        "codigo": "PSIC111",
+        "nombre": "Historia y fundamentos de la psicología"
+      },
+      "5": {
+        "codigo": "PSIC112",
+        "nombre": "Psicología y sociedad"
+      },
+      "6": {
+        "codigo": "CEGHC11",
+        "nombre": "Habilidades comunicativas"
+      },
+      "7": {
+        "codigo": "ING129",
+        "nombre": "Inglés II"
+      },
+      "8": {
+        "codigo": "PSIC121",
+        "nombre": "Sistemas psicológicos"
+      },
+      "9": {
+        "codigo": "PSIC122",
+        "nombre": "Procesos psicológicos y neurociencias"
+      },
+      "10": {
+        "codigo": "PSIC123",
+        "nombre": "Psicología y epistemología"
+      },
+      "11": {
+        "codigo": "CEGCT12",
+        "nombre": "Razonamiento científico y tecnologías de información"
+      },
+      "12": {
+        "codigo": "ING239",
+        "nombre": "Inglés III"
+      },
+      "13": {
+        "codigo": "PSIC211",
+        "nombre": "Psicoanálisis I"
+      },
+      "14": {
+        "codigo": "PSIC212",
+        "nombre": "Psicología del desarrollo I"
+      },
+      "15": {
+        "codigo": "PSIC213",
+        "nombre": "Investigación I"
+      },
+      "16": {
+        "codigo": "FHCS221",
+        "nombre": "Eje de formación interdisciplinaria II"
+      },
+      "17": {
+        "codigo": "ING249",
+        "nombre": "Inglés IV"
+      },
+      "18": {
+        "codigo": "PSIC221",
+        "nombre": "Psicoanálisis II"
+      },
+      "19": {
+        "codigo": "PSIC222",
+        "nombre": "Psicología del desarrollo II"
+      },
+      "20": {
+        "codigo": "PSIC223",
+        "nombre": "Investigación II"
+      },
+      "21": {
+        "codigo": "FHCS311",
+        "nombre": "Eje de formación interdisciplinaria III"
+      },
+      "22": {
+        "codigo": "PSIC311",
+        "nombre": "Psicodiagnóstico clínico I"
+      },
+      "23": {
+        "codigo": "PSIC312",
+        "nombre": "Psicopatología y psiquiatría I"
+      },
+      "24": {
+        "codigo": "PSIC313",
+        "nombre": "Taller de integración"
+      },
+      "25": {
+        "codigo": "PSIC314",
+        "nombre": "Psicología social"
+      },
+      "26": {
+        "codigo": "PSIC321",
+        "nombre": "Psicodiagnóstico clínico II"
+      },
+      "27": {
+        "codigo": "PSIC322",
+        "nombre": "Psicopatología y psiquiatría II"
+      },
+      "28": {
+        "codigo": "PSIC323",
+        "nombre": "Psicología educacional"
+      },
+      "29": {
+        "codigo": "PSIC324",
+        "nombre": "Diagnóstico e intervención social"
+      },
+      "30": {
+        "codigo": "PSIC325",
+        "nombre": "Psicología del trabajo y las organizaciones"
+      },
+      "31": {
+        "codigo": "PSIC411",
+        "nombre": "Clínica sistémica"
+      },
+      "32": {
+        "codigo": "PSIC412",
+        "nombre": "Psicopatología infanto juvenil"
+      },
+      "33": {
+        "codigo": "PSIC413",
+        "nombre": "Diagnóstico e intervención educacional"
+      },
+      "34": {
+        "codigo": "PSIC414",
+        "nombre": "Psicología jurídica"
+      },
+      "35": {
+        "codigo": "PSIC415",
+        "nombre": "Diagnóstico e intervención organizacional"
+      },
+      "36": {
+        "codigo": "PSIC421",
+        "nombre": "Clínica psicoanalítica"
+      },
+      "37": {
+        "codigo": "PSIC422",
+        "nombre": "Clínica infanto juvenil"
+      },
+      "38": {
+        "codigo": "PSIC423",
+        "nombre": "Taller de investigación"
+      },
+      "39": {
+        "codigo": "PSIC424",
+        "nombre": "Diagnóstico e intervención jurídica"
+      },
+      "40": {
+        "codigo": "PSIC425",
+        "nombre": "Intervención clínica sistémica"
+      },
+      "41": {
+        "codigo": "PSIC511",
+        "nombre": "Taller de intervención clínica"
+      },
+      "42": {
+        "codigo": "PSIC512",
+        "nombre": "Psicología y salud"
+      },
+      "43": {
+        "codigo": "PSIC513",
+        "nombre": "Taller de diagnóstico e intervención psicosocial"
+      },
+      "44": {
+        "codigo": "PSIC514",
+        "nombre": "Electivo de formación profesional I"
+      },
+      "45": {
+        "codigo": "PSIC515",
+        "nombre": "Electivo de formación profesional II"
+      },
+      "46": {
+        "codigo": "PSIC521",
+        "nombre": "Práctica profesional"
+      }
     }
   }
 }

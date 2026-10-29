@@ -19,7 +19,7 @@ Generado con `python3 tools/docs/traceability.py` desde los requerimientos y el 
 | AV-04 | Explicar disponibilidad de un curso | V2.0 | T-012 |  |
 | AV-05 | Registrar excepciones personales | V2.0 | T-024 |  |
 | AV-06 | Cambios masivos con revisión y recuperación | V2.0 | T-026 |  |
-| CA-01 | Buscar catálogo por institución y carrera | V2.0 | T-010, T-030, s03 (parcial) |  |
+| CA-01 | Buscar catálogo por institución y carrera | V2.0 | T-010, T-030, s03 (parcial) | `backend/tests/test_catalog.py::test_universities_endpoint`, `::test_programs_endpoint_lists_uch_in_order`, `::test_uch_programs_belong_to_their_own_university`; `frontend/src/utils/verifiedMallas.test.js` › "lista UNAB y U. de Chile por separado" (T-010) |
 | CA-02 | Separar mallas de catálogo y mallas personales | V2.0 | T-030, T-032 |  |
 | CA-03 | Versionar el catálogo | V2.0 | T-031, s03 (parcial) |  |
 | CO-01 | Mostrar planes y condiciones | V2.2 | épica V2.2 · Prueba de 2 meses y suscripción |  |

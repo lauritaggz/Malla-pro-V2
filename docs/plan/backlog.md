@@ -19,7 +19,7 @@ Estados: `todo` · `ready` · `in progress` · `blocked` · `to audit` · `to me
 
 | ID | Tarea | Tipo | Riesgo | Depende de | Estado |
 |---|---|---|---|---|---|
-| D-01 | Confirmar con Tecnología Médica los 2 requisitos dudosos | decision | — | — | todo |
+| D-01 | Confirmar con Tecnología Médica los 2 requisitos dudosos | decision | — | — | done (se sigue el documento oficial) |
 | D-02 | Crear malla manual gratis en el nivel básico | decision | bajo | — | todo |
 | D-03 | ¿Solo Google o también correo y contraseña? | decision | bajo | — | todo |
 | T-006 | Corregir los errores de lint del frontend | code | bajo | T-001 | ready |
@@ -28,6 +28,7 @@ Estados: `todo` · `ready` · `in progress` · `blocked` · `to audit` · `to me
 | T-004 | Pruebas de aislamiento entre dos usuarios | code | alto | T-001 | ready |
 | T-005 | Concurrencia optimista e idempotencia | code | medio | T-001 | todo |
 | T-010 | Mallas verificadas y mallas de la U. de Chile | data | alto | T-001 | ready |
+| T-011 | Portar a la V2 los cambios de frontend de v1 para la U. de Chile | code | medio | T-010 | todo |
 | T-012 | Evaluar árboles de prerrequisitos en el frontend | code | medio | T-001 | ready |
 | T-013 | Cálculo de notas como módulo puro con casos de referencia | code | medio | T-001 | ready |
 | T-014 | Detección de topes de horario con pruebas | code | bajo | T-001 | ready |
@@ -65,7 +66,7 @@ Estados: `todo` · `ready` · `in progress` · `blocked` · `to audit` · `to me
 ## Decisiones (las cierra Laura)
 
 ### D-01 · Requisitos dudosos de Tecnología Médica
-El documento oficial (catálogo 2018) dice que Bioquímica (BIOL166) solo exige Química Orgánica y que el Integrador II de 10° semestre exige lo mismo que el Seminario de 9°, no el Seminario. Confirmar con la carrera o conseguir un catálogo más reciente. Afecta T-010.
+El documento oficial (catálogo 2018) dice que Bioquímica (BIOL166) solo exige Química Orgánica y que el Integrador II de 10° semestre exige lo mismo que el Seminario de 9°, no el Seminario. **Cerrada el 29-10-2026:** se sigue el documento oficial (ver `docs/plan/decisions.md`).
 
 ### D-02 · Malla manual en el nivel básico
 La recomendación del documento es que sea gratis, porque alimenta la base comunitaria. Afecta T-032.
@@ -117,11 +118,12 @@ Hoy solo hay Google (ADR-0003). CU-01 pide al menos un método, así que basta. 
 
 ### T-006 · Corregir los errores de lint del frontend
 - Tipo: code · Riesgo: bajo · Requisitos: NF-09 · Depende de: T-001
-- Alcance: archivos con errores de `npm run lint` en `frontend/src/`, `frontend/eslint.config.js`, `.github/workflows/ci.yml` (solo para quitar `continue-on-error` del lint).
+- Alcance: archivos con errores de `npm run lint` en `frontend/src/`, `frontend/eslint.config.js`, `.github/workflows/ci.yml` (solo para quitar `continue-on-error` del lint y los disparadores del job `catalog-data`).
 - Criterios:
   1. `npm run lint` termina sin errores. Hoy hay 10: variables sin usar en `App.jsx`, `Navbar.jsx`, `LandingPage.jsx` y `academicProgressStorage.js`; `react-refresh/only-export-components` en `ImportCourseConfigModal.jsx`; `Buffer` no definido en `shareCourseConfig.js`, que es un respaldo para Node y se resuelve en la configuración de ESLint o con `globalThis.Buffer`, sin cambiar el comportamiento.
   2. Ningún cambio de comportamiento: si quitar una variable sin usar revela una función que se perdió (p. ej. `handleVerProgresoNav`), se reporta en el PR en vez de borrarla a ciegas.
   3. El lint pasa a ser bloqueante en CI.
+  4. El job `catalog-data` también corre al agregar o quitar una etiqueta (`pull_request: types: [opened, synchronize, reopened, labeled, unlabeled]`), para que poner `type:data` después de abrir el PR no deje el CI en rojo (auditoría T-010, A12).
 - Pruebas: `npm test` y `npm run build` siguen en verde; CI con el lint bloqueante en verde.
 
 ## E1 · Datos y reglas académicas
@@ -132,11 +134,22 @@ Hoy solo hay Google (ADR-0003). CU-01 pide al menos un método, así que basta. 
 - Criterios:
   1. Las 9 mallas UNAB se reemplazan por las verificadas (`docs/data/verificacion-mallas-oficiales.md`). Los `id` de los cursos no cambian; el `career_key` de cada carrera tampoco.
   2. Se agregan Bioquímica, Ingeniería en Alimentos, Química y Química y Farmacia de la U. de Chile, con su propia universidad en el catálogo (`slug` `uch`) y un `career_key` estable.
-  3. El importador reconoce `universidad`, `linea`, `nota_codigos`, `fuente_oficial` y `equivalencias`: las equivalencias pasan a `course_aliases`; la fuente, a `source_type`/`source_note`; lo demás se conserva en `attrs`. Ningún campo se pierde en silencio.
+  3. El importador reconoce `universidad`, `linea`, `nota_codigos`, `fuente_oficial` y `equivalencias`. Las equivalencias se guardan completas en `curriculum_versions.attrs` y **no** pasan a `course_aliases` (decisión de Laura, 29-10-2026: un alias cambiaría el cruce del horario con la API y no representa grupos "A y B"; usarlas en el avance va en otra tarea). La fuente oficial se resume en `source_note` (`source_type` sigue `legacy_json`) y se guarda completa en `attrs`. Lo demás se conserva en `attrs`. Ningún campo se pierde en silencio.
   4. Un avance guardado antes del cambio en Ingeniería Civil Informática (códigos ICF → CINF, mismos ids) y en Tecnología Médica se conserva (prueba con datos de `localStorage` simulados).
   5. El frontend lista las carreras agrupadas o rotuladas por universidad, sin asumir que todo es UNAB.
   6. `legacy_inconsistencies.md` se regenera; ningún test existente falla.
 - Pruebas: importación de las 13 mallas; idempotencia del importador; conservación del avance; listado por universidad.
+
+### T-011 · Portar a la V2 los cambios de frontend de v1 para la U. de Chile
+- Tipo: code · Riesgo: medio · Requisitos: CA-01, NO-04 · Depende de: T-010
+- Origen: auditoría de T-010 (A9) y commit `543e5e6` de la versión pública.
+- Alcance: `frontend/src/utils/shareCourseConfig.js`, `frontend/src/utils/analytics.js`, `frontend/src/utils/mallasLoader.js`, `frontend/src/components/MallaSelector.jsx`, `Navbar.jsx`, `MobileBottomNav.jsx`, `SideRail.jsx`, `App.jsx`, pruebas.
+- Criterios:
+  1. Compartir o importar la configuración de un ramo de la U. de Chile la identifica como `UCH`, no como UNAB; una configuración UNAB no se acepta en un ramo UCH ni al revés.
+  2. `inferUniversidadFromUrl` reconoce las mallas UCH (`...UCH.json` y `/mallas/uch/`).
+  3. Toma de ramos (programación académica UNAB) no se ofrece en mallas de la U. de Chile.
+  4. El selector muestra lo mismo que la versión pública (universidad, área, semestres), usable desde 360 px y con teclado.
+- Pruebas: compatibilidad de configuraciones entre universidades; detección de universidad por URL y por `universidad`; visibilidad de toma de ramos.
 
 ### T-012 · Evaluar árboles de prerrequisitos en el frontend
 - Tipo: code · Riesgo: medio · Requisitos: AV-04, sección 6 · Depende de: T-001

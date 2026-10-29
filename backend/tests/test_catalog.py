@@ -388,3 +388,22 @@ async def test_cinf_keeps_ids_with_new_codes(imported, db_session: AsyncSession)
     assert sorted(by_id) == list(range(1, 49))
     for legacy_id, code in renamed.items():
         assert by_id[legacy_id] == code
+
+
+async def test_unknown_top_level_key_is_kept_and_reported(
+    db_session: AsyncSession, tmp_path: Path
+) -> None:
+    """Any top-level key with no column lands in version.attrs and in the report."""
+    for stem in [p.stem for p in LEGACY_PROGRAMS]:
+        data = load_json(stem)
+        if stem == "Geo":
+            data["campo_inventado"] = {"x": [1, 2]}
+        (tmp_path / f"{stem}.json").write_text(json.dumps(data), encoding="utf-8")
+    report = await import_legacy_folder(db_session, tmp_path)
+    version = await _version_for(db_session, "Geo")
+    assert version.attrs["campo_inventado"] == {"x": [1, 2]}
+    assert version.attrs["fuente_oficial"] == load_json("Geo")["fuente_oficial"]
+    unmodeled = [i for i in report.inconsistencies if i.kind == "campo_no_modelado"]
+    assert [(i.malla, i.detail) for i in unmodeled] == [
+        ("Geología", "clave de primer nivel `campo_inventado`")
+    ]
