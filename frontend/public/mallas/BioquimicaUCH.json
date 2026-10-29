@@ -2,9 +2,11 @@
   "carrera": "Bioquímica (UCH)",
   "universidad": "Universidad de Chile",
   "total_creditos": 330,
+  "nota_codigos": "Los códigos BQ001, BQ002, etc. son códigos internos para el visor de mallas; el documento usado como fuente muestra número de asignatura, nombre, SCT y requisitos, pero no códigos oficiales de asignatura.",
   "fuente_oficial": {
     "documento": "MALLA BQ - corregido (1).pdf",
-    "origen": "sitio de la Facultad de Ciencias Químicas y Farmacéuticas, U. de Chile (quimica.uchile.cl), según Laura",
+    "origen": "Facultad de Ciencias Químicas y Farmacéuticas, U. de Chile (quimica.uchile.cl)",
+    "sha256": "8255c674576505fc0effa92fbec56a4c38d9a0c7b2ab852629b736b5b0e5a972",
     "lectura": "revisión visual ramo por ramo",
     "verificada": "2026-10-29"
   },

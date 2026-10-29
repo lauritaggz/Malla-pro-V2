@@ -43,4 +43,4 @@ Los `POST` que crean recursos aceptan la cabecera `Idempotency-Key` (hay que agr
 
 ### `GET /programs/{program_id}/curriculum` · `version.attrs`
 
-Objeto con los campos del archivo de la malla que no tienen columna, tal como vienen: `universidad`, `fuente_oficial` (`programa`, `catalogo`, `catalogoTexto`, `lectura`), `nota_codigos`, `equivalencias` (`{código: [[códigos antiguos], …]}`, cada grupo interno es un "y") y cualquier otra clave de primer nivel. Es `{}` si no hay nada. Es informativo: ninguna regla académica lo usa todavía.
+Objeto con los campos del archivo de la malla que no tienen columna, tal como vienen: `universidad`, `fuente_oficial` (UNAB: `programa`, `catalogo`, `catalogoTexto`, `lectura`; U. de Chile: `documento`, `origen` o `url`, `decreto`, `sha256`, `lectura`, `verificada`), `nota_codigos`, `equivalencias` (`{código: [[códigos antiguos], …]}`, cada grupo interno es un "y") y cualquier otra clave de primer nivel. Es `{}` si no hay nada. Es informativo: ninguna regla académica lo usa todavía.

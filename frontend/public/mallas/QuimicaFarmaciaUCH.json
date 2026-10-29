@@ -5,7 +5,8 @@
   "nota_codigos": "Los códigos QF001, QF002, etc. son códigos internos para el visor de mallas; la fuente oficial consultada entrega nombres, SCT, línea formativa y requisitos, pero no códigos de asignatura.",
   "fuente_oficial": {
     "documento": "imagen-20260428-001.webp",
-    "origen": "sitio de la Facultad de Ciencias Químicas y Farmacéuticas, U. de Chile (quimica.uchile.cl), según Laura",
+    "origen": "Facultad de Ciencias Químicas y Farmacéuticas, U. de Chile (quimica.uchile.cl)",
+    "sha256": "09d2e00af0d3dcbf6b31cc2571b61c7b102ebdeb75810d880cf121e917bb8941",
     "lectura": "revisión visual ramo por ramo",
     "verificada": "2026-10-29"
   },

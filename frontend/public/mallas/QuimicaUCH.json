@@ -6,7 +6,8 @@
   "fuente_oficial": {
     "documento": "MALLA Q - corregido (1).pdf",
     "url": "https://quimica.uchile.cl/dam/jcr:62985238-31f8-447b-85be-fdf4021bfafd/MALLA%20Q%20-%20corregido%20%281%29.pdf",
-    "decreto": "D.U. N° 0011284 de 3 de abril de 2025",
+    "decreto": "D.U. N° 0011284 de 3 de abril de 2025 (citado en la página de la malla de Química)",
+    "sha256": "62b1472fe1d1f62a79523257baa53082da7a9388fff57b931c817a9497341dac",
     "lectura": "revisión visual ramo por ramo",
     "verificada": "2026-10-29"
   },

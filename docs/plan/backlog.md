@@ -27,7 +27,7 @@ Estados: `todo` · `ready` · `in progress` · `blocked` · `to audit` · `to me
 | T-003 | Manejo de errores y logs sin datos sensibles | code | medio | T-001 | ready |
 | T-004 | Pruebas de aislamiento entre dos usuarios | code | alto | T-001 | ready |
 | T-005 | Concurrencia optimista e idempotencia | code | medio | T-001 | todo |
-| T-010 | Mallas verificadas y mallas de la U. de Chile | data | alto | T-001 | ready |
+| T-010 | Mallas verificadas y mallas de la U. de Chile | data | alto | T-001 | review (auditoría r2 APROBADO) |
 | T-011 | Portar a la V2 los cambios de frontend de v1 para la U. de Chile | code | medio | T-010 | todo |
 | T-012 | Evaluar árboles de prerrequisitos en el frontend | code | medio | T-001 | ready |
 | T-013 | Cálculo de notas como módulo puro con casos de referencia | code | medio | T-001 | ready |
@@ -66,7 +66,7 @@ Estados: `todo` · `ready` · `in progress` · `blocked` · `to audit` · `to me
 ## Decisiones (las cierra Laura)
 
 ### D-01 · Requisitos dudosos de Tecnología Médica
-El documento oficial (catálogo 2018) dice que Bioquímica (BIOL166) solo exige Química Orgánica y que el Integrador II de 10° semestre exige lo mismo que el Seminario de 9°, no el Seminario. **Cerrada el 29-10-2026:** se sigue el documento oficial (ver `docs/plan/decisions.md`).
+El documento oficial (catálogo 2018) dice que Bioquímica (BIOL166) solo exige Química Orgánica y que el Integrador II de 10° semestre exige lo mismo que el Seminario de 9°, no el Seminario. **Cerrada el 29-10-2026:** se sigue el documento oficial, incluida la excepción de TMED942, que se importa tal como está escrito y queda por confirmar con la carrera (ver `docs/plan/decisions.md`).
 
 ### D-02 · Malla manual en el nivel básico
 La recomendación del documento es que sea gratis, porque alimenta la base comunitaria. Afecta T-032.
