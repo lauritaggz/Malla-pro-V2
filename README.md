@@ -22,17 +22,31 @@ npm test         # vitest
 npm run build    # salida en frontend/dist
 ```
 
-**Infraestructura local** (Postgres):
+**Levantar todo con Docker** (Postgres + backend + frontend, para probar):
+
+```bash
+cp .env.example .env          # ajusta POSTGRES_PASSWORD (solo letras y números: va dentro de una URL)
+docker compose up --build     # la primera vez tarda: construye las imágenes e instala dependencias
+```
+
+- Frontend: http://localhost:5174 · API: http://localhost:8000/api/v1/health
+- Al arrancar, el backend aplica las migraciones e importa las mallas de `frontend/public/mallas` (las dos cosas son idempotentes).
+- Los cambios en `backend/` y `frontend/src/` se recargan solos.
+- Si cambias dependencias: `uv.lock` se sincroniza al reiniciar el backend; `package-lock.json` hace que el frontend ejecute `npm ci` al arrancar.
+- Login con Google: igual que sin Docker (`frontend/.env.local` y `backend/firebase-sa.json`); las carpetas están montadas.
+- `docker compose down` para todo y conserva la base; `docker compose down -v` la borra.
+
+**Infraestructura local** (solo Postgres, para correr backend y frontend en tu máquina):
 
 ```bash
 cp .env.example .env   # ajusta POSTGRES_PASSWORD
-docker compose up -d
+docker compose up -d postgres
 ```
 
 **Backend** (Python 3.12 con [uv](https://docs.astral.sh/uv/), FastAPI):
 
 ```bash
-docker compose up -d                   # Postgres (desde la raíz)
+docker compose up -d postgres          # Postgres (desde la raíz)
 cd backend
 cp .env.example .env                   # la clave debe coincidir con POSTGRES_PASSWORD
 uv sync
