@@ -1,0 +1,704 @@
+{
+  "carrera": "Química (UCH)",
+  "universidad": "Universidad de Chile",
+  "total_creditos": 330,
+  "nota_codigos": "Los códigos QUI001, QUI002, etc. son códigos internos para el visor de mallas; el PDF oficial usado como fuente muestra número de asignatura, nombre, SCT, línea formativa y requisitos, pero no códigos oficiales de asignatura.",
+  "fuente_oficial": {
+    "documento": "MALLA Q - corregido (1).pdf",
+    "url": "https://quimica.uchile.cl/dam/jcr:62985238-31f8-447b-85be-fdf4021bfafd/MALLA%20Q%20-%20corregido%20%281%29.pdf",
+    "decreto": "D.U. N° 0011284 de 3 de abril de 2025 (citado en la página de la malla de Química)",
+    "sha256": "62b1472fe1d1f62a79523257baa53082da7a9388fff57b931c817a9497341dac",
+    "lectura": "revisión visual ramo por ramo",
+    "verificada": "2026-10-29"
+  },
+  "semestres": [
+    {
+      "numero": 1,
+      "cursos": [
+        {
+          "id": 1,
+          "codigo": "QUI001",
+          "nombre": "Química General I",
+          "sct": 8,
+          "prerrequisitos": [],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 2,
+          "codigo": "QUI002",
+          "nombre": "Técnicas de Laboratorio Químico",
+          "sct": 4,
+          "prerrequisitos": [],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 3,
+          "codigo": "QUI003",
+          "nombre": "Introducción al Álgebra y Cálculo",
+          "sct": 8,
+          "prerrequisitos": [],
+          "area": "matematica",
+          "linea": "pfi"
+        },
+        {
+          "id": 4,
+          "codigo": "QUI004",
+          "nombre": "Química Transformadora",
+          "sct": 3,
+          "prerrequisitos": [],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 5,
+          "codigo": "QUI005",
+          "nombre": "Curso de Formación General",
+          "sct": 4,
+          "prerrequisitos": [],
+          "area": "formacion",
+          "linea": "pfi"
+        },
+        {
+          "id": 6,
+          "codigo": "QUI006",
+          "nombre": "Inglés I",
+          "sct": 3,
+          "prerrequisitos": [],
+          "area": "formacion",
+          "linea": "pfi"
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "cursos": [
+        {
+          "id": 7,
+          "codigo": "QUI007",
+          "nombre": "Química General II",
+          "sct": 5,
+          "prerrequisitos": [
+            1
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 8,
+          "codigo": "QUI008",
+          "nombre": "Laboratorio de Química General",
+          "sct": 3,
+          "prerrequisitos": [
+            1,
+            2
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 9,
+          "codigo": "QUI009",
+          "nombre": "Física General",
+          "sct": 5,
+          "prerrequisitos": [
+            3
+          ],
+          "area": "fisica",
+          "linea": "pfi"
+        },
+        {
+          "id": 10,
+          "codigo": "QUI010",
+          "nombre": "Cálculo Diferencial e Integral",
+          "sct": 6,
+          "prerrequisitos": [
+            3
+          ],
+          "area": "matematica",
+          "linea": "pfi"
+        },
+        {
+          "id": 11,
+          "codigo": "QUI011",
+          "nombre": "Introducción a las Ciencias Químicas",
+          "sct": 4,
+          "prerrequisitos": [
+            4
+          ],
+          "area": "quimica",
+          "linea": "inv"
+        },
+        {
+          "id": 12,
+          "codigo": "QUI012",
+          "nombre": "Curso de Formación General",
+          "sct": 4,
+          "prerrequisitos": [],
+          "area": "formacion",
+          "linea": "pfi"
+        },
+        {
+          "id": 13,
+          "codigo": "QUI013",
+          "nombre": "Inglés II",
+          "sct": 3,
+          "prerrequisitos": [
+            6
+          ],
+          "area": "formacion",
+          "linea": "pfi"
+        }
+      ]
+    },
+    {
+      "numero": 3,
+      "cursos": [
+        {
+          "id": 14,
+          "codigo": "QUI014",
+          "nombre": "Química Orgánica I",
+          "sct": 5,
+          "prerrequisitos": [
+            7
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 15,
+          "codigo": "QUI015",
+          "nombre": "Química Analítica I",
+          "sct": 5,
+          "prerrequisitos": [
+            7,
+            8
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 16,
+          "codigo": "QUI016",
+          "nombre": "Laboratorio I de Química Orgánica",
+          "sct": 4,
+          "prerrequisitos": [
+            7,
+            8
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 17,
+          "codigo": "QUI017",
+          "nombre": "Estadística y Análisis de Datos",
+          "sct": 4,
+          "prerrequisitos": [
+            10
+          ],
+          "area": "matematica",
+          "linea": "pfi"
+        },
+        {
+          "id": 18,
+          "codigo": "QUI018",
+          "nombre": "Física Aplicada a la Química",
+          "sct": 4,
+          "prerrequisitos": [
+            9
+          ],
+          "area": "fisica",
+          "linea": "inv"
+        },
+        {
+          "id": 19,
+          "codigo": "QUI019",
+          "nombre": "Cálculo Multivariado",
+          "sct": 4,
+          "prerrequisitos": [
+            10
+          ],
+          "area": "matematica",
+          "linea": "pfi"
+        },
+        {
+          "id": 20,
+          "codigo": "QUI020",
+          "nombre": "Química Inorgánica I",
+          "sct": 4,
+          "prerrequisitos": [
+            7,
+            11
+          ],
+          "area": "quimica",
+          "linea": "inv"
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "cursos": [
+        {
+          "id": 21,
+          "codigo": "QUI021",
+          "nombre": "Química Orgánica II",
+          "sct": 5,
+          "prerrequisitos": [
+            14
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 22,
+          "codigo": "QUI022",
+          "nombre": "Laboratorio de Análisis Químico",
+          "sct": 4,
+          "prerrequisitos": [
+            8,
+            15,
+            17
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 23,
+          "codigo": "QUI023",
+          "nombre": "Química Analítica II",
+          "sct": 5,
+          "prerrequisitos": [
+            15
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 24,
+          "codigo": "QUI024",
+          "nombre": "Fisicoquímica I",
+          "sct": 6,
+          "prerrequisitos": [
+            9,
+            10,
+            14
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 25,
+          "codigo": "QUI025",
+          "nombre": "Álgebra Lineal y Métodos Numéricos",
+          "sct": 4,
+          "prerrequisitos": [
+            19
+          ],
+          "area": "matematica",
+          "linea": "inv"
+        },
+        {
+          "id": 26,
+          "codigo": "QUI026",
+          "nombre": "Laboratorio de Química Inorgánica",
+          "sct": 4,
+          "prerrequisitos": [
+            8,
+            20
+          ],
+          "area": "quimica",
+          "linea": "inv"
+        },
+        {
+          "id": 27,
+          "codigo": "QUI027",
+          "nombre": "Curso de Formación General",
+          "sct": 2,
+          "prerrequisitos": [],
+          "area": "formacion",
+          "linea": "pfi"
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "cursos": [
+        {
+          "id": 28,
+          "codigo": "QUI028",
+          "nombre": "Laboratorio de Análisis Instrumental",
+          "sct": 4,
+          "prerrequisitos": [
+            22,
+            23
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 29,
+          "codigo": "QUI029",
+          "nombre": "Química Orgánica III",
+          "sct": 5,
+          "prerrequisitos": [
+            21
+          ],
+          "area": "quimica",
+          "linea": "inv"
+        },
+        {
+          "id": 30,
+          "codigo": "QUI030",
+          "nombre": "Laboratorio II de Química Orgánica",
+          "sct": 4,
+          "prerrequisitos": [
+            16,
+            21
+          ],
+          "area": "quimica",
+          "linea": "prd"
+        },
+        {
+          "id": 31,
+          "codigo": "QUI031",
+          "nombre": "Fisicoquímica II",
+          "sct": 5,
+          "prerrequisitos": [
+            18,
+            24
+          ],
+          "area": "quimica",
+          "linea": "inv"
+        },
+        {
+          "id": 32,
+          "codigo": "QUI032",
+          "nombre": "Química Inorgánica II",
+          "sct": 7,
+          "prerrequisitos": [
+            26
+          ],
+          "area": "quimica",
+          "linea": "inv"
+        },
+        {
+          "id": 33,
+          "codigo": "QUI033",
+          "nombre": "Ecuaciones Diferenciales",
+          "sct": 5,
+          "prerrequisitos": [
+            25
+          ],
+          "area": "matematica",
+          "linea": "inv"
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "cursos": [
+        {
+          "id": 34,
+          "codigo": "QUI034",
+          "nombre": "Análisis Orgánico",
+          "sct": 6,
+          "prerrequisitos": [
+            29
+          ],
+          "area": "quimica",
+          "linea": "inv"
+        },
+        {
+          "id": 35,
+          "codigo": "QUI035",
+          "nombre": "Química Analítica III",
+          "sct": 6,
+          "prerrequisitos": [
+            28
+          ],
+          "area": "quimica",
+          "linea": "prd"
+        },
+        {
+          "id": 36,
+          "codigo": "QUI036",
+          "nombre": "Introducción a la Química Cuántica",
+          "sct": 6,
+          "prerrequisitos": [
+            25,
+            33
+          ],
+          "area": "quimica",
+          "linea": "inv"
+        },
+        {
+          "id": 37,
+          "codigo": "QUI037",
+          "nombre": "Laboratorio Fisicoquímica",
+          "sct": 5,
+          "prerrequisitos": [
+            28,
+            31
+          ],
+          "area": "quimica",
+          "linea": "prd"
+        },
+        {
+          "id": 38,
+          "codigo": "QUI038",
+          "nombre": "Operaciones Unitarias I",
+          "sct": 7,
+          "prerrequisitos": [
+            28,
+            31
+          ],
+          "area": "industrial",
+          "linea": "prd"
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "cursos": [
+        {
+          "id": 39,
+          "codigo": "QUI039",
+          "nombre": "Elementos de Bioquímica y Microbiología",
+          "sct": 5,
+          "prerrequisitos": [
+            29
+          ],
+          "area": "biologia",
+          "linea": "inv"
+        },
+        {
+          "id": 40,
+          "codigo": "QUI040",
+          "nombre": "Electroquímica",
+          "sct": 5,
+          "prerrequisitos": [
+            37
+          ],
+          "area": "quimica",
+          "linea": "inv"
+        },
+        {
+          "id": 41,
+          "codigo": "QUI041",
+          "nombre": "Fisicoquímica III",
+          "sct": 5,
+          "prerrequisitos": [
+            31,
+            36
+          ],
+          "area": "quimica",
+          "linea": "inv"
+        },
+        {
+          "id": 42,
+          "codigo": "QUI042",
+          "nombre": "Operaciones Unitarias II",
+          "sct": 7,
+          "prerrequisitos": [
+            38
+          ],
+          "area": "industrial",
+          "linea": "prd"
+        },
+        {
+          "id": 43,
+          "codigo": "QUI043",
+          "nombre": "Electivo Especializado",
+          "sct": 5,
+          "prerrequisitos": [],
+          "area": "otros",
+          "linea": "inv"
+        },
+        {
+          "id": 44,
+          "codigo": "QUI044",
+          "nombre": "Inglés III",
+          "sct": 3,
+          "prerrequisitos": [
+            13
+          ],
+          "area": "formacion",
+          "linea": "pfi"
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "cursos": [
+        {
+          "id": 45,
+          "codigo": "QUI045",
+          "nombre": "Química de Polímeros",
+          "sct": 5,
+          "prerrequisitos": [
+            29,
+            37
+          ],
+          "area": "quimica",
+          "linea": "inv"
+        },
+        {
+          "id": 46,
+          "codigo": "QUI046",
+          "nombre": "Tópicos de Análisis Instrumental Avanzado",
+          "sct": 5,
+          "prerrequisitos": [
+            35
+          ],
+          "area": "quimica",
+          "linea": "prd"
+        },
+        {
+          "id": 47,
+          "codigo": "QUI047",
+          "nombre": "Aseguramiento y Gestión de Calidad",
+          "sct": 4,
+          "prerrequisitos": [
+            35
+          ],
+          "area": "gestion",
+          "linea": "gst"
+        },
+        {
+          "id": 48,
+          "codigo": "QUI048",
+          "nombre": "Unidad de Investigación",
+          "sct": 8,
+          "prerrequisitos": [
+            40,
+            41,
+            42
+          ],
+          "area": "investigacion",
+          "linea": "inv"
+        },
+        {
+          "id": 49,
+          "codigo": "QUI049",
+          "nombre": "Laboratorio III de Química Orgánica",
+          "sct": 5,
+          "prerrequisitos": [
+            30,
+            34
+          ],
+          "area": "quimica",
+          "linea": "gst"
+        },
+        {
+          "id": 50,
+          "codigo": "QUI050",
+          "nombre": "Inglés IV",
+          "sct": 3,
+          "prerrequisitos": [
+            44
+          ],
+          "area": "formacion",
+          "linea": "pfi"
+        }
+      ]
+    },
+    {
+      "numero": 9,
+      "cursos": [
+        {
+          "id": 51,
+          "codigo": "QUI051",
+          "nombre": "Legislación Ambiental",
+          "sct": 6,
+          "prerrequisitos": [
+            42,
+            47
+          ],
+          "area": "gestion",
+          "linea": "gst"
+        },
+        {
+          "id": 52,
+          "codigo": "QUI052",
+          "nombre": "Procesos y Formulación de Proyectos en la Industria Química",
+          "sct": 6,
+          "prerrequisitos": [
+            42,
+            46,
+            47
+          ],
+          "area": "industrial",
+          "linea": "gst"
+        },
+        {
+          "id": 53,
+          "codigo": "QUI053",
+          "nombre": "Electivos Especializados",
+          "sct": 18,
+          "prerrequisitos": [],
+          "area": "otros",
+          "linea": "inv"
+        }
+      ]
+    },
+    {
+      "numero": 10,
+      "cursos": [
+        {
+          "id": 54,
+          "codigo": "QUI054",
+          "nombre": "Memoria de Título I",
+          "sct": 18,
+          "prerrequisitos": [
+            48,
+            51,
+            52
+          ],
+          "area": "investigacion",
+          "linea": "inv"
+        },
+        {
+          "id": 55,
+          "codigo": "QUI055",
+          "nombre": "Electivos Especializados",
+          "sct": 12,
+          "prerrequisitos": [],
+          "area": "otros",
+          "linea": "inv"
+        }
+      ]
+    },
+    {
+      "numero": 11,
+      "cursos": [
+        {
+          "id": 56,
+          "codigo": "QUI056",
+          "nombre": "Memoria de Título II",
+          "sct": 18,
+          "prerrequisitos": [
+            54
+          ],
+          "area": "investigacion",
+          "linea": "inv"
+        },
+        {
+          "id": 57,
+          "codigo": "QUI057",
+          "nombre": "Práctica Profesional",
+          "sct": 12,
+          "prerrequisitos": [
+            45,
+            46,
+            47,
+            48
+          ],
+          "area": "profesional",
+          "linea": "gst"
+        }
+      ]
+    }
+  ]
+}

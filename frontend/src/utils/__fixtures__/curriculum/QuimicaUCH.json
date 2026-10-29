@@ -1,0 +1,1537 @@
+{
+  "program": {
+    "id": "b8389fcc-ed1d-41dc-aba5-5fedb56eb242",
+    "slug": "quimica",
+    "name": "Química",
+    "official_name": "Química (UCH)",
+    "official_code": null,
+    "career_key": "unab-quimicauch",
+    "legacy_url": "/mallas/QuimicaUCH.json"
+  },
+  "university": {
+    "id": "095ed5c8-0270-403b-b0d4-5af8573d17a8",
+    "slug": "uch",
+    "name": "Universidad de Chile",
+    "short_name": "UCH",
+    "country": "CL"
+  },
+  "version": {
+    "id": "5af10bd6-5c47-4d6f-be0b-58836cf77da8",
+    "label": "legacy",
+    "period_regime": "semestral",
+    "credit_system": "SCT",
+    "total_periods": 11,
+    "total_credits": 330,
+    "status": "published",
+    "is_current": true,
+    "source_type": "legacy_json",
+    "source_url": "/mallas/QuimicaUCH.json",
+    "source_note": "Imported from frontend/public/mallas/QuimicaUCH.json. Checked against the official curriculum: document 'MALLA Q - corregido (1).pdf' reading: revisión visual ramo por ramo on 2026-10-29",
+    "reviewed_at": null,
+    "attrs": {
+      "universidad": "Universidad de Chile",
+      "nota_codigos": "Los códigos QUI001, QUI002, etc. son códigos internos para el visor de mallas; el PDF oficial usado como fuente muestra número de asignatura, nombre, SCT, línea formativa y requisitos, pero no códigos oficiales de asignatura.",
+      "fuente_oficial": {
+        "url": "https://quimica.uchile.cl/dam/jcr:62985238-31f8-447b-85be-fdf4021bfafd/MALLA%20Q%20-%20corregido%20%281%29.pdf",
+        "sha256": "62b1472fe1d1f62a79523257baa53082da7a9388fff57b931c817a9497341dac",
+        "decreto": "D.U. N° 0011284 de 3 de abril de 2025 (citado en la página de la malla de Química)",
+        "lectura": "revisión visual ramo por ramo",
+        "documento": "MALLA Q - corregido (1).pdf",
+        "verificada": "2026-10-29"
+      }
+    }
+  },
+  "tracks": [],
+  "periods": [
+    {
+      "number": 1,
+      "track_code": null,
+      "course_ids": [
+        "a892ddf9-31e1-460e-86aa-aca0470f0c9b",
+        "87338e35-3a44-4f05-9462-43949a36f014",
+        "4851a231-675c-41ba-b229-cfe8695c0756",
+        "8b531c7f-e6db-454c-8996-b98d54d7b73c",
+        "d16bfb34-9bef-4490-a016-97ba7cf029de",
+        "0749d53d-c63b-4f45-a127-883718cd6560"
+      ]
+    },
+    {
+      "number": 2,
+      "track_code": null,
+      "course_ids": [
+        "6f6cbe94-683a-4475-9593-5d7ddd06846f",
+        "37f41f3d-6426-4a4e-80b3-f8ee34e19354",
+        "c67edbb8-ab45-48fd-903a-1f059b752c87",
+        "9624c099-7ba5-4a43-94f5-0021bd2136ac",
+        "d6b96194-5889-4790-b421-f78d3980ff7b",
+        "af4ab95d-023a-4269-b23d-ade63a5d4743",
+        "dcf5c2c7-be6d-49a5-ba56-6a9c017321cb"
+      ]
+    },
+    {
+      "number": 3,
+      "track_code": null,
+      "course_ids": [
+        "ab4f7f2f-0fdd-4e60-891f-a3d25534be80",
+        "fddd1252-e2ec-4935-95a5-b4eda2077d1e",
+        "93a9e117-bc97-4a83-9f8c-fb44d7bbc29d",
+        "f283ed4c-101c-4b98-878e-e870c7cda141",
+        "ab0abc2f-fb2a-4568-841b-695b3150c87a",
+        "a3138c9b-9ca7-4fec-a6bc-476d365c1d46",
+        "7105971a-4d63-41d0-8152-cf6e92dfe1d5"
+      ]
+    },
+    {
+      "number": 4,
+      "track_code": null,
+      "course_ids": [
+        "9d48a273-5bfc-411f-9cfd-3fdaabbf694d",
+        "1d0c429e-caab-45ff-9b34-41f6b7c20d95",
+        "a9eb3a2a-bd01-499c-9f67-5d820a328102",
+        "2e8eaeb9-c5d7-438a-a62c-209301df5977",
+        "0c069ee3-313f-42c3-9d1a-99c3b70801f0",
+        "accfd209-fc6c-46d4-b6bd-1589f8a0c34b",
+        "485abbee-7d92-4b36-8b52-30580503b86c"
+      ]
+    },
+    {
+      "number": 5,
+      "track_code": null,
+      "course_ids": [
+        "e5c431b9-8a91-4092-8bb9-e5808323c9c0",
+        "a5172e84-d368-4817-ad7e-a844bbecdacc",
+        "3a8352de-d39e-4a4a-987d-0b895c1aefda",
+        "f0c1a311-c0e1-4a19-8937-3316f1cc10fc",
+        "8e244f12-1179-44d3-8d5c-85919c15f827",
+        "980bcb11-25e6-4b5e-ba47-587d6e0a353f"
+      ]
+    },
+    {
+      "number": 6,
+      "track_code": null,
+      "course_ids": [
+        "466a1936-54d9-4a83-b14e-499f844864e3",
+        "e51a7edc-5350-44e2-b4b2-2b9e2acbf998",
+        "979a91f7-0dd3-4cc5-9191-4d572a55e590",
+        "fccea8cf-4483-4b61-987f-22b9ac471d2f",
+        "85faa7d4-38c3-42a7-9da6-4779888cb786"
+      ]
+    },
+    {
+      "number": 7,
+      "track_code": null,
+      "course_ids": [
+        "8895f189-87a9-4f23-8622-980a4d302b3c",
+        "88d6dcc1-0a9f-428c-884e-aff3cd6df082",
+        "ba32874d-8c7f-49ef-8a16-2f2ab445fd68",
+        "1d67caab-8aa0-48fc-86c1-c39058df833b",
+        "878035da-cdd0-4500-9b8a-e91bac6f5cc6",
+        "6dd257dd-9cbe-4077-b486-2ada95484b88"
+      ]
+    },
+    {
+      "number": 8,
+      "track_code": null,
+      "course_ids": [
+        "3aca8e68-f509-48f7-b5b1-d97c6426a62c",
+        "793493a6-6386-417f-b354-754c04de788c",
+        "ff10723e-5d74-4ef0-b6ea-26fc8af5ba01",
+        "1fc4ca8f-a136-480c-a2cf-1f1f28b2ded4",
+        "5fc1975d-5907-4b3a-9547-f6681d094cd6",
+        "234ed335-8d79-4f95-a206-e61d380a759c"
+      ]
+    },
+    {
+      "number": 9,
+      "track_code": null,
+      "course_ids": [
+        "38813558-9ba4-4baa-bc8b-b49ee40d72cf",
+        "e662a6d5-f626-4d46-8b9a-38d8121a1aea",
+        "dd19c8dd-71f1-4748-a70b-989b5655097e"
+      ]
+    },
+    {
+      "number": 10,
+      "track_code": null,
+      "course_ids": [
+        "9c075be5-5c51-4b03-a5eb-f0d257a68586",
+        "cda19ae0-0d53-4fe3-9ae1-e59832732d4a"
+      ]
+    },
+    {
+      "number": 11,
+      "track_code": null,
+      "course_ids": [
+        "55bbfe69-4061-4180-b508-fa10eb09bef6",
+        "1eaea754-7fa3-44c3-8cb1-859939c14bf7"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "id": "a892ddf9-31e1-460e-86aa-aca0470f0c9b",
+      "legacy_id": 1,
+      "code": "QUI001",
+      "name": "Química General I",
+      "credits": 8,
+      "period_number": 1,
+      "sort_order": 0,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "87338e35-3a44-4f05-9462-43949a36f014",
+      "legacy_id": 2,
+      "code": "QUI002",
+      "name": "Técnicas de Laboratorio Químico",
+      "credits": 4,
+      "period_number": 1,
+      "sort_order": 1,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "4851a231-675c-41ba-b229-cfe8695c0756",
+      "legacy_id": 3,
+      "code": "QUI003",
+      "name": "Introducción al Álgebra y Cálculo",
+      "credits": 8,
+      "period_number": 1,
+      "sort_order": 2,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "matematica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "8b531c7f-e6db-454c-8996-b98d54d7b73c",
+      "legacy_id": 4,
+      "code": "QUI004",
+      "name": "Química Transformadora",
+      "credits": 3,
+      "period_number": 1,
+      "sort_order": 3,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "d16bfb34-9bef-4490-a016-97ba7cf029de",
+      "legacy_id": 5,
+      "code": "QUI005",
+      "name": "Curso de Formación General",
+      "credits": 4,
+      "period_number": 1,
+      "sort_order": 4,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "0749d53d-c63b-4f45-a127-883718cd6560",
+      "legacy_id": 6,
+      "code": "QUI006",
+      "name": "Inglés I",
+      "credits": 3,
+      "period_number": 1,
+      "sort_order": 5,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "6f6cbe94-683a-4475-9593-5d7ddd06846f",
+      "legacy_id": 7,
+      "code": "QUI007",
+      "name": "Química General II",
+      "credits": 5,
+      "period_number": 2,
+      "sort_order": 6,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "a892ddf9-31e1-460e-86aa-aca0470f0c9b"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "37f41f3d-6426-4a4e-80b3-f8ee34e19354",
+      "legacy_id": 8,
+      "code": "QUI008",
+      "name": "Laboratorio de Química General",
+      "credits": 3,
+      "period_number": 2,
+      "sort_order": 7,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "a892ddf9-31e1-460e-86aa-aca0470f0c9b"
+          },
+          {
+            "course": "87338e35-3a44-4f05-9462-43949a36f014"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "c67edbb8-ab45-48fd-903a-1f059b752c87",
+      "legacy_id": 9,
+      "code": "QUI009",
+      "name": "Física General",
+      "credits": 5,
+      "period_number": 2,
+      "sort_order": 8,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "4851a231-675c-41ba-b229-cfe8695c0756"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "fisica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "9624c099-7ba5-4a43-94f5-0021bd2136ac",
+      "legacy_id": 10,
+      "code": "QUI010",
+      "name": "Cálculo Diferencial e Integral",
+      "credits": 6,
+      "period_number": 2,
+      "sort_order": 9,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "4851a231-675c-41ba-b229-cfe8695c0756"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "matematica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "d6b96194-5889-4790-b421-f78d3980ff7b",
+      "legacy_id": 11,
+      "code": "QUI011",
+      "name": "Introducción a las Ciencias Químicas",
+      "credits": 4,
+      "period_number": 2,
+      "sort_order": 10,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "8b531c7f-e6db-454c-8996-b98d54d7b73c"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "af4ab95d-023a-4269-b23d-ade63a5d4743",
+      "legacy_id": 12,
+      "code": "QUI012",
+      "name": "Curso de Formación General",
+      "credits": 4,
+      "period_number": 2,
+      "sort_order": 11,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "dcf5c2c7-be6d-49a5-ba56-6a9c017321cb",
+      "legacy_id": 13,
+      "code": "QUI013",
+      "name": "Inglés II",
+      "credits": 3,
+      "period_number": 2,
+      "sort_order": 12,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "0749d53d-c63b-4f45-a127-883718cd6560"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "ab4f7f2f-0fdd-4e60-891f-a3d25534be80",
+      "legacy_id": 14,
+      "code": "QUI014",
+      "name": "Química Orgánica I",
+      "credits": 5,
+      "period_number": 3,
+      "sort_order": 13,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "6f6cbe94-683a-4475-9593-5d7ddd06846f"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "fddd1252-e2ec-4935-95a5-b4eda2077d1e",
+      "legacy_id": 15,
+      "code": "QUI015",
+      "name": "Química Analítica I",
+      "credits": 5,
+      "period_number": 3,
+      "sort_order": 14,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "6f6cbe94-683a-4475-9593-5d7ddd06846f"
+          },
+          {
+            "course": "37f41f3d-6426-4a4e-80b3-f8ee34e19354"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "93a9e117-bc97-4a83-9f8c-fb44d7bbc29d",
+      "legacy_id": 16,
+      "code": "QUI016",
+      "name": "Laboratorio I de Química Orgánica",
+      "credits": 4,
+      "period_number": 3,
+      "sort_order": 15,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "6f6cbe94-683a-4475-9593-5d7ddd06846f"
+          },
+          {
+            "course": "37f41f3d-6426-4a4e-80b3-f8ee34e19354"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "f283ed4c-101c-4b98-878e-e870c7cda141",
+      "legacy_id": 17,
+      "code": "QUI017",
+      "name": "Estadística y Análisis de Datos",
+      "credits": 4,
+      "period_number": 3,
+      "sort_order": 16,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "9624c099-7ba5-4a43-94f5-0021bd2136ac"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "matematica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "ab0abc2f-fb2a-4568-841b-695b3150c87a",
+      "legacy_id": 18,
+      "code": "QUI018",
+      "name": "Física Aplicada a la Química",
+      "credits": 4,
+      "period_number": 3,
+      "sort_order": 17,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "c67edbb8-ab45-48fd-903a-1f059b752c87"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "fisica",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "a3138c9b-9ca7-4fec-a6bc-476d365c1d46",
+      "legacy_id": 19,
+      "code": "QUI019",
+      "name": "Cálculo Multivariado",
+      "credits": 4,
+      "period_number": 3,
+      "sort_order": 18,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "9624c099-7ba5-4a43-94f5-0021bd2136ac"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "matematica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "7105971a-4d63-41d0-8152-cf6e92dfe1d5",
+      "legacy_id": 20,
+      "code": "QUI020",
+      "name": "Química Inorgánica I",
+      "credits": 4,
+      "period_number": 3,
+      "sort_order": 19,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "6f6cbe94-683a-4475-9593-5d7ddd06846f"
+          },
+          {
+            "course": "d6b96194-5889-4790-b421-f78d3980ff7b"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "9d48a273-5bfc-411f-9cfd-3fdaabbf694d",
+      "legacy_id": 21,
+      "code": "QUI021",
+      "name": "Química Orgánica II",
+      "credits": 5,
+      "period_number": 4,
+      "sort_order": 20,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "ab4f7f2f-0fdd-4e60-891f-a3d25534be80"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "1d0c429e-caab-45ff-9b34-41f6b7c20d95",
+      "legacy_id": 22,
+      "code": "QUI022",
+      "name": "Laboratorio de Análisis Químico",
+      "credits": 4,
+      "period_number": 4,
+      "sort_order": 21,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "37f41f3d-6426-4a4e-80b3-f8ee34e19354"
+          },
+          {
+            "course": "fddd1252-e2ec-4935-95a5-b4eda2077d1e"
+          },
+          {
+            "course": "f283ed4c-101c-4b98-878e-e870c7cda141"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "a9eb3a2a-bd01-499c-9f67-5d820a328102",
+      "legacy_id": 23,
+      "code": "QUI023",
+      "name": "Química Analítica II",
+      "credits": 5,
+      "period_number": 4,
+      "sort_order": 22,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "fddd1252-e2ec-4935-95a5-b4eda2077d1e"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "2e8eaeb9-c5d7-438a-a62c-209301df5977",
+      "legacy_id": 24,
+      "code": "QUI024",
+      "name": "Fisicoquímica I",
+      "credits": 6,
+      "period_number": 4,
+      "sort_order": 23,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "c67edbb8-ab45-48fd-903a-1f059b752c87"
+          },
+          {
+            "course": "9624c099-7ba5-4a43-94f5-0021bd2136ac"
+          },
+          {
+            "course": "ab4f7f2f-0fdd-4e60-891f-a3d25534be80"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "0c069ee3-313f-42c3-9d1a-99c3b70801f0",
+      "legacy_id": 25,
+      "code": "QUI025",
+      "name": "Álgebra Lineal y Métodos Numéricos",
+      "credits": 4,
+      "period_number": 4,
+      "sort_order": 24,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "a3138c9b-9ca7-4fec-a6bc-476d365c1d46"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "matematica",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "accfd209-fc6c-46d4-b6bd-1589f8a0c34b",
+      "legacy_id": 26,
+      "code": "QUI026",
+      "name": "Laboratorio de Química Inorgánica",
+      "credits": 4,
+      "period_number": 4,
+      "sort_order": 25,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "37f41f3d-6426-4a4e-80b3-f8ee34e19354"
+          },
+          {
+            "course": "7105971a-4d63-41d0-8152-cf6e92dfe1d5"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "485abbee-7d92-4b36-8b52-30580503b86c",
+      "legacy_id": 27,
+      "code": "QUI027",
+      "name": "Curso de Formación General",
+      "credits": 2,
+      "period_number": 4,
+      "sort_order": 26,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "e5c431b9-8a91-4092-8bb9-e5808323c9c0",
+      "legacy_id": 28,
+      "code": "QUI028",
+      "name": "Laboratorio de Análisis Instrumental",
+      "credits": 4,
+      "period_number": 5,
+      "sort_order": 27,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "1d0c429e-caab-45ff-9b34-41f6b7c20d95"
+          },
+          {
+            "course": "a9eb3a2a-bd01-499c-9f67-5d820a328102"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "a5172e84-d368-4817-ad7e-a844bbecdacc",
+      "legacy_id": 29,
+      "code": "QUI029",
+      "name": "Química Orgánica III",
+      "credits": 5,
+      "period_number": 5,
+      "sort_order": 28,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "9d48a273-5bfc-411f-9cfd-3fdaabbf694d"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "3a8352de-d39e-4a4a-987d-0b895c1aefda",
+      "legacy_id": 30,
+      "code": "QUI030",
+      "name": "Laboratorio II de Química Orgánica",
+      "credits": 4,
+      "period_number": 5,
+      "sort_order": 29,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "93a9e117-bc97-4a83-9f8c-fb44d7bbc29d"
+          },
+          {
+            "course": "9d48a273-5bfc-411f-9cfd-3fdaabbf694d"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "prd"
+      }
+    },
+    {
+      "id": "f0c1a311-c0e1-4a19-8937-3316f1cc10fc",
+      "legacy_id": 31,
+      "code": "QUI031",
+      "name": "Fisicoquímica II",
+      "credits": 5,
+      "period_number": 5,
+      "sort_order": 30,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "ab0abc2f-fb2a-4568-841b-695b3150c87a"
+          },
+          {
+            "course": "2e8eaeb9-c5d7-438a-a62c-209301df5977"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "8e244f12-1179-44d3-8d5c-85919c15f827",
+      "legacy_id": 32,
+      "code": "QUI032",
+      "name": "Química Inorgánica II",
+      "credits": 7,
+      "period_number": 5,
+      "sort_order": 31,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "accfd209-fc6c-46d4-b6bd-1589f8a0c34b"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "980bcb11-25e6-4b5e-ba47-587d6e0a353f",
+      "legacy_id": 33,
+      "code": "QUI033",
+      "name": "Ecuaciones Diferenciales",
+      "credits": 5,
+      "period_number": 5,
+      "sort_order": 32,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "0c069ee3-313f-42c3-9d1a-99c3b70801f0"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "matematica",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "466a1936-54d9-4a83-b14e-499f844864e3",
+      "legacy_id": 34,
+      "code": "QUI034",
+      "name": "Análisis Orgánico",
+      "credits": 6,
+      "period_number": 6,
+      "sort_order": 33,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "a5172e84-d368-4817-ad7e-a844bbecdacc"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "e51a7edc-5350-44e2-b4b2-2b9e2acbf998",
+      "legacy_id": 35,
+      "code": "QUI035",
+      "name": "Química Analítica III",
+      "credits": 6,
+      "period_number": 6,
+      "sort_order": 34,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "e5c431b9-8a91-4092-8bb9-e5808323c9c0"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "prd"
+      }
+    },
+    {
+      "id": "979a91f7-0dd3-4cc5-9191-4d572a55e590",
+      "legacy_id": 36,
+      "code": "QUI036",
+      "name": "Introducción a la Química Cuántica",
+      "credits": 6,
+      "period_number": 6,
+      "sort_order": 35,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "0c069ee3-313f-42c3-9d1a-99c3b70801f0"
+          },
+          {
+            "course": "980bcb11-25e6-4b5e-ba47-587d6e0a353f"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "fccea8cf-4483-4b61-987f-22b9ac471d2f",
+      "legacy_id": 37,
+      "code": "QUI037",
+      "name": "Laboratorio Fisicoquímica",
+      "credits": 5,
+      "period_number": 6,
+      "sort_order": 36,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "e5c431b9-8a91-4092-8bb9-e5808323c9c0"
+          },
+          {
+            "course": "f0c1a311-c0e1-4a19-8937-3316f1cc10fc"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "prd"
+      }
+    },
+    {
+      "id": "85faa7d4-38c3-42a7-9da6-4779888cb786",
+      "legacy_id": 38,
+      "code": "QUI038",
+      "name": "Operaciones Unitarias I",
+      "credits": 7,
+      "period_number": 6,
+      "sort_order": 37,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "e5c431b9-8a91-4092-8bb9-e5808323c9c0"
+          },
+          {
+            "course": "f0c1a311-c0e1-4a19-8937-3316f1cc10fc"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "industrial",
+        "linea": "prd"
+      }
+    },
+    {
+      "id": "8895f189-87a9-4f23-8622-980a4d302b3c",
+      "legacy_id": 39,
+      "code": "QUI039",
+      "name": "Elementos de Bioquímica y Microbiología",
+      "credits": 5,
+      "period_number": 7,
+      "sort_order": 38,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "a5172e84-d368-4817-ad7e-a844bbecdacc"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "biologia",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "88d6dcc1-0a9f-428c-884e-aff3cd6df082",
+      "legacy_id": 40,
+      "code": "QUI040",
+      "name": "Electroquímica",
+      "credits": 5,
+      "period_number": 7,
+      "sort_order": 39,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "fccea8cf-4483-4b61-987f-22b9ac471d2f"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "ba32874d-8c7f-49ef-8a16-2f2ab445fd68",
+      "legacy_id": 41,
+      "code": "QUI041",
+      "name": "Fisicoquímica III",
+      "credits": 5,
+      "period_number": 7,
+      "sort_order": 40,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "f0c1a311-c0e1-4a19-8937-3316f1cc10fc"
+          },
+          {
+            "course": "979a91f7-0dd3-4cc5-9191-4d572a55e590"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "1d67caab-8aa0-48fc-86c1-c39058df833b",
+      "legacy_id": 42,
+      "code": "QUI042",
+      "name": "Operaciones Unitarias II",
+      "credits": 7,
+      "period_number": 7,
+      "sort_order": 41,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "85faa7d4-38c3-42a7-9da6-4779888cb786"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "industrial",
+        "linea": "prd"
+      }
+    },
+    {
+      "id": "878035da-cdd0-4500-9b8a-e91bac6f5cc6",
+      "legacy_id": 43,
+      "code": "QUI043",
+      "name": "Electivo Especializado",
+      "credits": 5,
+      "period_number": 7,
+      "sort_order": 42,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "otros",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "6dd257dd-9cbe-4077-b486-2ada95484b88",
+      "legacy_id": 44,
+      "code": "QUI044",
+      "name": "Inglés III",
+      "credits": 3,
+      "period_number": 7,
+      "sort_order": 43,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "dcf5c2c7-be6d-49a5-ba56-6a9c017321cb"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "3aca8e68-f509-48f7-b5b1-d97c6426a62c",
+      "legacy_id": 45,
+      "code": "QUI045",
+      "name": "Química de Polímeros",
+      "credits": 5,
+      "period_number": 8,
+      "sort_order": 44,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "a5172e84-d368-4817-ad7e-a844bbecdacc"
+          },
+          {
+            "course": "fccea8cf-4483-4b61-987f-22b9ac471d2f"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "793493a6-6386-417f-b354-754c04de788c",
+      "legacy_id": 46,
+      "code": "QUI046",
+      "name": "Tópicos de Análisis Instrumental Avanzado",
+      "credits": 5,
+      "period_number": 8,
+      "sort_order": 45,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "e51a7edc-5350-44e2-b4b2-2b9e2acbf998"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "prd"
+      }
+    },
+    {
+      "id": "ff10723e-5d74-4ef0-b6ea-26fc8af5ba01",
+      "legacy_id": 47,
+      "code": "QUI047",
+      "name": "Aseguramiento y Gestión de Calidad",
+      "credits": 4,
+      "period_number": 8,
+      "sort_order": 46,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "e51a7edc-5350-44e2-b4b2-2b9e2acbf998"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "gestion",
+        "linea": "gst"
+      }
+    },
+    {
+      "id": "1fc4ca8f-a136-480c-a2cf-1f1f28b2ded4",
+      "legacy_id": 48,
+      "code": "QUI048",
+      "name": "Unidad de Investigación",
+      "credits": 8,
+      "period_number": 8,
+      "sort_order": 47,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "88d6dcc1-0a9f-428c-884e-aff3cd6df082"
+          },
+          {
+            "course": "ba32874d-8c7f-49ef-8a16-2f2ab445fd68"
+          },
+          {
+            "course": "1d67caab-8aa0-48fc-86c1-c39058df833b"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "investigacion",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "5fc1975d-5907-4b3a-9547-f6681d094cd6",
+      "legacy_id": 49,
+      "code": "QUI049",
+      "name": "Laboratorio III de Química Orgánica",
+      "credits": 5,
+      "period_number": 8,
+      "sort_order": 48,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "3a8352de-d39e-4a4a-987d-0b895c1aefda"
+          },
+          {
+            "course": "466a1936-54d9-4a83-b14e-499f844864e3"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "gst"
+      }
+    },
+    {
+      "id": "234ed335-8d79-4f95-a206-e61d380a759c",
+      "legacy_id": 50,
+      "code": "QUI050",
+      "name": "Inglés IV",
+      "credits": 3,
+      "period_number": 8,
+      "sort_order": 49,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "6dd257dd-9cbe-4077-b486-2ada95484b88"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "38813558-9ba4-4baa-bc8b-b49ee40d72cf",
+      "legacy_id": 51,
+      "code": "QUI051",
+      "name": "Legislación Ambiental",
+      "credits": 6,
+      "period_number": 9,
+      "sort_order": 50,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "1d67caab-8aa0-48fc-86c1-c39058df833b"
+          },
+          {
+            "course": "ff10723e-5d74-4ef0-b6ea-26fc8af5ba01"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "gestion",
+        "linea": "gst"
+      }
+    },
+    {
+      "id": "e662a6d5-f626-4d46-8b9a-38d8121a1aea",
+      "legacy_id": 52,
+      "code": "QUI052",
+      "name": "Procesos y Formulación de Proyectos en la Industria Química",
+      "credits": 6,
+      "period_number": 9,
+      "sort_order": 51,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "1d67caab-8aa0-48fc-86c1-c39058df833b"
+          },
+          {
+            "course": "793493a6-6386-417f-b354-754c04de788c"
+          },
+          {
+            "course": "ff10723e-5d74-4ef0-b6ea-26fc8af5ba01"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "industrial",
+        "linea": "gst"
+      }
+    },
+    {
+      "id": "dd19c8dd-71f1-4748-a70b-989b5655097e",
+      "legacy_id": 53,
+      "code": "QUI053",
+      "name": "Electivos Especializados",
+      "credits": 18,
+      "period_number": 9,
+      "sort_order": 52,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "otros",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "9c075be5-5c51-4b03-a5eb-f0d257a68586",
+      "legacy_id": 54,
+      "code": "QUI054",
+      "name": "Memoria de Título I",
+      "credits": 18,
+      "period_number": 10,
+      "sort_order": 53,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "1fc4ca8f-a136-480c-a2cf-1f1f28b2ded4"
+          },
+          {
+            "course": "38813558-9ba4-4baa-bc8b-b49ee40d72cf"
+          },
+          {
+            "course": "e662a6d5-f626-4d46-8b9a-38d8121a1aea"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "investigacion",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "cda19ae0-0d53-4fe3-9ae1-e59832732d4a",
+      "legacy_id": 55,
+      "code": "QUI055",
+      "name": "Electivos Especializados",
+      "credits": 12,
+      "period_number": 10,
+      "sort_order": 54,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "otros",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "55bbfe69-4061-4180-b508-fa10eb09bef6",
+      "legacy_id": 56,
+      "code": "QUI056",
+      "name": "Memoria de Título II",
+      "credits": 18,
+      "period_number": 11,
+      "sort_order": 55,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "9c075be5-5c51-4b03-a5eb-f0d257a68586"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "investigacion",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "1eaea754-7fa3-44c3-8cb1-859939c14bf7",
+      "legacy_id": 57,
+      "code": "QUI057",
+      "name": "Práctica Profesional",
+      "credits": 12,
+      "period_number": 11,
+      "sort_order": 56,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "3aca8e68-f509-48f7-b5b1-d97c6426a62c"
+          },
+          {
+            "course": "793493a6-6386-417f-b354-754c04de788c"
+          },
+          {
+            "course": "ff10723e-5d74-4ef0-b6ea-26fc8af5ba01"
+          },
+          {
+            "course": "1fc4ca8f-a136-480c-a2cf-1f1f28b2ded4"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "profesional",
+        "linea": "gst"
+      }
+    }
+  ],
+  "aliases": {}
+}

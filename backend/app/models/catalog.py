@@ -90,6 +90,10 @@ class CurriculumVersion(IdTimestampMixin, Base):
     source_url: Mapped[str | None] = mapped_column(String(2048))
     source_note: Mapped[str | None] = mapped_column(Text)
     reviewed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    # Source fields with no column of their own (official source, equivalences, notes).
+    attrs: Mapped[dict[str, Any]] = mapped_column(
+        JSONB, default=dict, server_default=text("'{}'::jsonb")
+    )
 
     program: Mapped[Program] = relationship(back_populates="versions")
     tracks: Mapped[list["Track"]] = relationship(back_populates="version")

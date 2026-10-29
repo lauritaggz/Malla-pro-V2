@@ -9,10 +9,10 @@ Fuente de verdad: `backend/app/models/` y las migraciones de `backend/alembic/ve
 | `users` | Usuario identificado por Firebase | CU-01 | `firebase_uid` único; `is_admin` se reemplaza por `role` en T-002 |
 | `universities` | Institución | CA-01 | `slug` único |
 | `programs` | Carrera | CA-01 | `career_key` único e inmutable (ADR-0007); `legacy_url` para las mallas estáticas |
-| `curriculum_versions` | Versión del plan | CA-03, sección 6 | `period_regime`, `credit_system`, `status` (draft/published/archived), una sola `is_current` por carrera, `source_type` y fuente |
+| `curriculum_versions` | Versión del plan | CA-03, sección 6 | `period_regime`, `credit_system`, `status` (draft/published/archived), una sola `is_current` por carrera, `source_type` y fuente, `attrs` (JSONB: fuente oficial, equivalencias y otros campos del archivo sin columna, T-010) |
 | `tracks` | Mención | sección 6 | Cursos comunes sin `track_id` |
 | `courses` | Curso dentro de una versión | sección 6 | `legacy_id` (id del JSON, del que depende el avance guardado), `prereq_status` none/known/unknown, `prereq_expr`/`coreq_expr` (JSONB, ADR-0008), `prereq_raw`/`coreq_raw`, `attrs` |
-| `course_aliases` | Códigos alternativos de un curso (equivalencias de planes antiguos) | sección 6 | Único por (versión, alias, curso) |
+| `course_aliases` | Otra forma de escribir el código de un mismo curso (`courseCodeAliases` del JSON; los usa la importación del horario) | sección 6 | Único por (versión, alias, curso). Las equivalencias de planes antiguos **no** van aquí: quedan en `curriculum_versions.attrs.equivalencias` (T-010) |
 
 ## Tablas planificadas
 

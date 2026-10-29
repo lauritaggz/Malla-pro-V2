@@ -1,0 +1,736 @@
+{
+  "carrera": "Bioquímica (UCH)",
+  "universidad": "Universidad de Chile",
+  "total_creditos": 330,
+  "nota_codigos": "Los códigos BQ001, BQ002, etc. son códigos internos para el visor de mallas; el documento usado como fuente muestra número de asignatura, nombre, SCT y requisitos, pero no códigos oficiales de asignatura.",
+  "fuente_oficial": {
+    "documento": "MALLA BQ - corregido (1).pdf",
+    "origen": "Facultad de Ciencias Químicas y Farmacéuticas, U. de Chile (quimica.uchile.cl)",
+    "sha256": "8255c674576505fc0effa92fbec56a4c38d9a0c7b2ab852629b736b5b0e5a972",
+    "lectura": "revisión visual ramo por ramo",
+    "verificada": "2026-10-29"
+  },
+  "semestres": [
+    {
+      "numero": 1,
+      "cursos": [
+        {
+          "id": 1,
+          "codigo": "BQ001",
+          "nombre": "Química General I",
+          "sct": 8,
+          "prerrequisitos": [],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 2,
+          "codigo": "BQ002",
+          "nombre": "Técnicas de Laboratorio Químico",
+          "sct": 4,
+          "prerrequisitos": [],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 3,
+          "codigo": "BQ003",
+          "nombre": "Introducción al Álgebra y Cálculo",
+          "sct": 8,
+          "prerrequisitos": [],
+          "area": "matematica",
+          "linea": "pfi"
+        },
+        {
+          "id": 4,
+          "codigo": "BQ004",
+          "nombre": "Química Transformadora",
+          "sct": 3,
+          "prerrequisitos": [],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 5,
+          "codigo": "BQ005",
+          "nombre": "Razonamiento y Comunicación Científica",
+          "sct": 4,
+          "prerrequisitos": [],
+          "area": "formacion",
+          "linea": "pfi"
+        },
+        {
+          "id": 6,
+          "codigo": "BQ006",
+          "nombre": "Inglés I",
+          "sct": 3,
+          "prerrequisitos": [],
+          "area": "formacion",
+          "linea": "complementaria"
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "cursos": [
+        {
+          "id": 7,
+          "codigo": "BQ007",
+          "nombre": "Química General II",
+          "sct": 5,
+          "prerrequisitos": [
+            1
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 8,
+          "codigo": "BQ008",
+          "nombre": "Laboratorio de Química General",
+          "sct": 3,
+          "prerrequisitos": [
+            1,
+            2
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 9,
+          "codigo": "BQ009",
+          "nombre": "Física General",
+          "sct": 5,
+          "prerrequisitos": [
+            3
+          ],
+          "area": "fisica",
+          "linea": "pfi"
+        },
+        {
+          "id": 10,
+          "codigo": "BQ010",
+          "nombre": "Cálculo Diferencial e Integral",
+          "sct": 6,
+          "prerrequisitos": [
+            3
+          ],
+          "area": "matematica",
+          "linea": "pfi"
+        },
+        {
+          "id": 11,
+          "codigo": "BQ011",
+          "nombre": "Biología Celular",
+          "sct": 5,
+          "prerrequisitos": [
+            2
+          ],
+          "area": "biologia",
+          "linea": "pfi"
+        },
+        {
+          "id": 12,
+          "codigo": "BQ012",
+          "nombre": "Curso de Formación General",
+          "sct": 3,
+          "prerrequisitos": [],
+          "area": "formacion",
+          "linea": "general"
+        },
+        {
+          "id": 13,
+          "codigo": "BQ013",
+          "nombre": "Inglés II",
+          "sct": 3,
+          "prerrequisitos": [
+            6
+          ],
+          "area": "formacion",
+          "linea": "complementaria"
+        }
+      ]
+    },
+    {
+      "numero": 3,
+      "cursos": [
+        {
+          "id": 14,
+          "codigo": "BQ014",
+          "nombre": "Química Orgánica I",
+          "sct": 5,
+          "prerrequisitos": [
+            7
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 15,
+          "codigo": "BQ015",
+          "nombre": "Química Analítica I",
+          "sct": 5,
+          "prerrequisitos": [
+            7,
+            8
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 16,
+          "codigo": "BQ016",
+          "nombre": "Laboratorio I de Química Orgánica",
+          "sct": 4,
+          "prerrequisitos": [
+            7,
+            8
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 17,
+          "codigo": "BQ017",
+          "nombre": "Estadística y Análisis de Datos",
+          "sct": 4,
+          "prerrequisitos": [
+            10
+          ],
+          "area": "matematica",
+          "linea": "pfi"
+        },
+        {
+          "id": 18,
+          "codigo": "BQ018",
+          "nombre": "Física Aplicada a la Bioquímica",
+          "sct": 4,
+          "prerrequisitos": [
+            9
+          ],
+          "area": "fisica",
+          "linea": "pfi"
+        },
+        {
+          "id": 19,
+          "codigo": "BQ019",
+          "nombre": "Fisiología Celular",
+          "sct": 5,
+          "prerrequisitos": [
+            9,
+            11
+          ],
+          "area": "biologia",
+          "linea": "pfi"
+        },
+        {
+          "id": 20,
+          "codigo": "BQ020",
+          "nombre": "Cultura Científica: Divulgación y Enseñanza",
+          "sct": 3,
+          "prerrequisitos": [
+            4,
+            5
+          ],
+          "area": "formacion",
+          "linea": "pfi"
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "cursos": [
+        {
+          "id": 21,
+          "codigo": "BQ021",
+          "nombre": "Química Orgánica II",
+          "sct": 5,
+          "prerrequisitos": [
+            14
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 22,
+          "codigo": "BQ022",
+          "nombre": "Laboratorio de Análisis Químico",
+          "sct": 4,
+          "prerrequisitos": [
+            8,
+            15,
+            17
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 23,
+          "codigo": "BQ023",
+          "nombre": "Química Analítica II",
+          "sct": 5,
+          "prerrequisitos": [
+            15
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 24,
+          "codigo": "BQ024",
+          "nombre": "Fisicoquímica I",
+          "sct": 6,
+          "prerrequisitos": [
+            9,
+            10,
+            14
+          ],
+          "area": "quimica",
+          "linea": "pfi"
+        },
+        {
+          "id": 25,
+          "codigo": "BQ025",
+          "nombre": "Fisiología de Sistemas",
+          "sct": 4,
+          "prerrequisitos": [
+            19
+          ],
+          "area": "biologia",
+          "linea": "pfi"
+        },
+        {
+          "id": 26,
+          "codigo": "BQ026",
+          "nombre": "Taller de Cultura Científica",
+          "sct": 3,
+          "prerrequisitos": [
+            20
+          ],
+          "area": "formacion",
+          "linea": "pfi"
+        },
+        {
+          "id": 27,
+          "codigo": "BQ027",
+          "nombre": "Curso de Formación General",
+          "sct": 3,
+          "prerrequisitos": [],
+          "area": "formacion",
+          "linea": "general"
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "cursos": [
+        {
+          "id": 28,
+          "codigo": "BQ028",
+          "nombre": "Laboratorio de Análisis Instrumental",
+          "sct": 4,
+          "prerrequisitos": [
+            22,
+            23
+          ],
+          "area": "quimica",
+          "linea": "especializada"
+        },
+        {
+          "id": 29,
+          "codigo": "BQ029",
+          "nombre": "Bioquímica General",
+          "sct": 9,
+          "prerrequisitos": [
+            21,
+            24
+          ],
+          "area": "biologia",
+          "linea": "especializada"
+        },
+        {
+          "id": 30,
+          "codigo": "BQ030",
+          "nombre": "Estructura y Función de Organelos Celulares",
+          "sct": 6,
+          "prerrequisitos": [
+            21,
+            25
+          ],
+          "area": "biologia",
+          "linea": "especializada"
+        },
+        {
+          "id": 31,
+          "codigo": "BQ031",
+          "nombre": "Fisicoquímica para Ciencias Biológicas",
+          "sct": 7,
+          "prerrequisitos": [
+            18,
+            24
+          ],
+          "area": "quimica",
+          "linea": "especializada"
+        },
+        {
+          "id": 32,
+          "codigo": "BQ032",
+          "nombre": "Inglés III",
+          "sct": 3,
+          "prerrequisitos": [
+            13
+          ],
+          "area": "formacion",
+          "linea": "complementaria"
+        }
+      ]
+    },
+    {
+      "numero": 6,
+      "cursos": [
+        {
+          "id": 33,
+          "codigo": "BQ033",
+          "nombre": "Estructura y Función de Proteínas",
+          "sct": 8,
+          "prerrequisitos": [
+            29,
+            31
+          ],
+          "area": "biologia",
+          "linea": "inv"
+        },
+        {
+          "id": 34,
+          "codigo": "BQ034",
+          "nombre": "Genética Molecular",
+          "sct": 8,
+          "prerrequisitos": [
+            29
+          ],
+          "area": "biologia",
+          "linea": "inv"
+        },
+        {
+          "id": 35,
+          "codigo": "BQ035",
+          "nombre": "Inmunología Celular y Molecular",
+          "sct": 7,
+          "prerrequisitos": [
+            30
+          ],
+          "area": "biologia",
+          "linea": "inv"
+        },
+        {
+          "id": 36,
+          "codigo": "BQ036",
+          "nombre": "Microbiología General",
+          "sct": 5,
+          "prerrequisitos": [
+            30
+          ],
+          "area": "biologia",
+          "linea": "inv"
+        },
+        {
+          "id": 37,
+          "codigo": "BQ037",
+          "nombre": "Inglés IV",
+          "sct": 3,
+          "prerrequisitos": [
+            32
+          ],
+          "area": "formacion",
+          "linea": "complementaria"
+        }
+      ]
+    },
+    {
+      "numero": 7,
+      "cursos": [
+        {
+          "id": 38,
+          "codigo": "BQ038",
+          "nombre": "Química Fisiológica y Patológica",
+          "sct": 6,
+          "prerrequisitos": [
+            33,
+            35
+          ],
+          "area": "quimica",
+          "linea": "cli"
+        },
+        {
+          "id": 39,
+          "codigo": "BQ039",
+          "nombre": "Genética Molecular de Eucariontes",
+          "sct": 6,
+          "prerrequisitos": [
+            34
+          ],
+          "area": "biologia",
+          "linea": "inv"
+        },
+        {
+          "id": 40,
+          "codigo": "BQ040",
+          "nombre": "Fisiología y Genética Microbiana",
+          "sct": 8,
+          "prerrequisitos": [
+            34,
+            36
+          ],
+          "area": "biologia",
+          "linea": "inv"
+        },
+        {
+          "id": 41,
+          "codigo": "BQ041",
+          "nombre": "Administración y Gestión",
+          "sct": 4,
+          "prerrequisitos": [
+            26
+          ],
+          "area": "formacion",
+          "linea": "ind"
+        },
+        {
+          "id": 42,
+          "codigo": "BQ042",
+          "nombre": "Unidad de Investigación en Bioquímica",
+          "sct": 6,
+          "prerrequisitos": [
+            28,
+            29
+          ],
+          "area": "otros",
+          "linea": "inv"
+        }
+      ]
+    },
+    {
+      "numero": 8,
+      "cursos": [
+        {
+          "id": 43,
+          "codigo": "BQ043",
+          "nombre": "Bioquímica Clínica y Patológica",
+          "sct": 8,
+          "prerrequisitos": [
+            38
+          ],
+          "area": "biologia",
+          "linea": "cli"
+        },
+        {
+          "id": 44,
+          "codigo": "BQ044",
+          "nombre": "Fisiología y Bioquímica Vegetal",
+          "sct": 4,
+          "prerrequisitos": [
+            39
+          ],
+          "area": "biologia",
+          "linea": "inv"
+        },
+        {
+          "id": 45,
+          "codigo": "BQ045",
+          "nombre": "Bioética",
+          "sct": 3,
+          "prerrequisitos": [
+            38
+          ],
+          "area": "formacion",
+          "linea": "cli"
+        },
+        {
+          "id": 46,
+          "codigo": "BQ046",
+          "nombre": "Formulación y Evaluación de Proyectos Científicos",
+          "sct": 4,
+          "prerrequisitos": [
+            33
+          ],
+          "area": "formacion",
+          "linea": "ind"
+        },
+        {
+          "id": 47,
+          "codigo": "BQ047",
+          "nombre": "Bioinformática",
+          "sct": 5,
+          "prerrequisitos": [
+            33,
+            39
+          ],
+          "area": "biologia",
+          "linea": "ind"
+        },
+        {
+          "id": 48,
+          "codigo": "BQ048",
+          "nombre": "Práctica Profesional I",
+          "sct": 6,
+          "prerrequisitos": [
+            33,
+            34
+          ],
+          "area": "otros",
+          "linea": "cli"
+        }
+      ]
+    },
+    {
+      "numero": 9,
+      "cursos": [
+        {
+          "id": 49,
+          "codigo": "BQ049",
+          "nombre": "Laboratorio de Bioquímica Clínica",
+          "sct": 6,
+          "prerrequisitos": [
+            41,
+            43
+          ],
+          "area": "biologia",
+          "linea": "cli"
+        },
+        {
+          "id": 50,
+          "codigo": "BQ050",
+          "nombre": "Tópicos de Farmacología",
+          "sct": 4,
+          "prerrequisitos": [
+            43,
+            45
+          ],
+          "area": "biologia",
+          "linea": "cli"
+        },
+        {
+          "id": 51,
+          "codigo": "BQ051",
+          "nombre": "Biotecnología",
+          "sct": 6,
+          "prerrequisitos": [
+            43,
+            45
+          ],
+          "area": "biologia",
+          "linea": "inv"
+        },
+        {
+          "id": 52,
+          "codigo": "BQ052",
+          "nombre": "Electivo Especializado",
+          "sct": 4,
+          "prerrequisitos": [],
+          "area": "otros",
+          "linea": "especializada"
+        },
+        {
+          "id": 53,
+          "codigo": "BQ053",
+          "nombre": "Electivo Especializado",
+          "sct": 4,
+          "prerrequisitos": [],
+          "area": "otros",
+          "linea": "especializada"
+        },
+        {
+          "id": 54,
+          "codigo": "BQ054",
+          "nombre": "Práctica Profesional II",
+          "sct": 6,
+          "prerrequisitos": [
+            43,
+            47,
+            48
+          ],
+          "area": "otros",
+          "linea": "profesional"
+        }
+      ]
+    },
+    {
+      "numero": 10,
+      "cursos": [
+        {
+          "id": 55,
+          "codigo": "BQ055",
+          "nombre": "Unidad de Investigación Avanzada en Bioquímica",
+          "sct": 7,
+          "prerrequisitos": [
+            42,
+            49,
+            51
+          ],
+          "area": "otros",
+          "linea": "inv"
+        },
+        {
+          "id": 56,
+          "codigo": "BQ056",
+          "nombre": "Bioprocesos Industriales",
+          "sct": 6,
+          "prerrequisitos": [
+            41,
+            51
+          ],
+          "area": "quimica",
+          "linea": "ind"
+        },
+        {
+          "id": 57,
+          "codigo": "BQ057",
+          "nombre": "Electivo Especializado",
+          "sct": 4,
+          "prerrequisitos": [],
+          "area": "otros",
+          "linea": "especializada"
+        },
+        {
+          "id": 58,
+          "codigo": "BQ058",
+          "nombre": "Electivo Especializado",
+          "sct": 5,
+          "prerrequisitos": [],
+          "area": "otros",
+          "linea": "especializada"
+        },
+        {
+          "id": 59,
+          "codigo": "BQ059",
+          "nombre": "Proyecto de Memoria de Título",
+          "sct": 8,
+          "prerrequisitos": [
+            46,
+            49,
+            50,
+            51
+          ],
+          "area": "otros",
+          "linea": "profesional"
+        }
+      ]
+    },
+    {
+      "numero": 11,
+      "cursos": [
+        {
+          "id": 60,
+          "codigo": "BQ060",
+          "nombre": "Memoria de Título",
+          "sct": 30,
+          "prerrequisitos": [
+            59
+          ],
+          "area": "otros",
+          "linea": "profesional"
+        }
+      ]
+    }
+  ]
+}

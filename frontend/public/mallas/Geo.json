@@ -1,6 +1,12 @@
 {
   "carrera": "Geología (UNAB)",
-  "total_creditos": 0,
+  "fuente_oficial": {
+    "programa": "UNAB11350",
+    "catalogo": "202210",
+    "catalogoTexto": "PRIMER SEMESTRE 2022",
+    "lectura": "OCR revisado"
+  },
+  "total_creditos": 664,
   "totalSemestres": 10,
   "semestres": [
     {
@@ -60,7 +66,7 @@
             2,
             3
           ],
-          "prereq_expr": "(CFIS310 o FMF023 o FMF010 o FMF024) y (FMMP012 o FMM013 o FMM012 o FMM035)"
+          "prereq_expr": "( CFIS310 o FMF023 o FMF010 o FMF024 ) y ( FMMP012 o FMM013 o FMM012 o FMM035 )"
         },
         {
           "id": 7,
@@ -81,7 +87,7 @@
             4,
             5
           ],
-          "prereq_expr": "(GEOL101 o GEO101) y (QUIM090 o QUI104)"
+          "prereq_expr": "( ( GEOL101 o GEO101 ) y ( QUIM090 o QUI104 ) )"
         },
         {
           "id": 9,
@@ -116,7 +122,7 @@
           "prerrequisitos": [
             4
           ],
-          "prereq_expr": "TDFI101 o AUT1301 o INN1201 o ICF121 o INS122 o ICI1201 o IMIN101 o GEOL101 o GEO101 o BIOQ388 o BIOQ398 o LCEBB110 o LCEBB100"
+          "prereq_expr": "TDFI101 o AUT1301 o IIN1201 o ICF121 o INS122 o ICI1201 o IMIN101 o ( GEOL101 o GEO101 ) o ( BIOQ388 o BIOQ398 ) o ( LCBB110 o LCBB100 )"
         },
         {
           "id": 12,
@@ -127,7 +133,7 @@
             6,
             7
           ],
-          "prereq_expr": "(CFIS328 o FMF023 o FMF066) y (FMMP112 o FMM033 o FMM112)"
+          "prereq_expr": "( ( CFIS328 o FMF023 o FMF086 ) y ( FMMP112 o FMM033 o FMM112 ) ) o ( ( IAUT101 o AUT1303 ) y ( FMMP112 o FMM112 ) )"
         },
         {
           "id": 13,
@@ -137,7 +143,7 @@
           "prerrequisitos": [
             7
           ],
-          "prereq_expr": "FMMP112 o FMM040 o FMM010 o FMM033 o FMM112"
+          "prereq_expr": "FMMP112 o FMM030 o FMM010 o FMM033 o FMM112"
         },
         {
           "id": 14,
@@ -148,7 +154,7 @@
             5,
             10
           ],
-          "prereq_expr": "(QUIM090 o QUI104) y (GEOL203 o GEO102)"
+          "prereq_expr": "( ( QUIM090 o QUI104 ) y ( GEOL203 o GEO102 ) )"
         },
         {
           "id": 15,
@@ -156,10 +162,10 @@
           "nombre": "Métodos analíticos i: microscopía óptica",
           "sct": 12,
           "prerrequisitos": [
-            14,
+            8,
             10
           ],
-          "prereq_expr": "(GEOL301 o GEO201) y (GEOL203 o GEO102)"
+          "prereq_expr": "( GEOL201 o GEO201 ) y ( GEOL203 o GEO102 )"
         }
       ]
     },
@@ -174,7 +180,7 @@
           "prerrequisitos": [
             11
           ],
-          "prereq_expr": "ACAD101 o INN1201 o ICI1201 o CEGP01"
+          "prereq_expr": "ACAD101 o TIN1201 o ICI1201 o"
         },
         {
           "id": 17,
@@ -185,7 +191,7 @@
             12,
             13
           ],
-          "prereq_expr": "(CFIS332 o FMF122 o FMF025) y (FMMP212 o FMM133 o FMM212)"
+          "prereq_expr": "( ( CFIS332 o FMF122 o FMF025 ) y ( FMMP212 o FMM133 o FMM212 ) )"
         },
         {
           "id": 18,
@@ -195,18 +201,25 @@
           "prerrequisitos": [
             13
           ],
-          "prereq_expr": "FMMP212 o FMM133 o FMM130 o FMM212"
+          "prereq_expr": "( FMMP212 o FMM133 ) o ( FMMP212 o FMM130 ) o FMM212"
         },
         {
           "id": 19,
           "codigo": "GEOL401",
           "nombre": "Integrador i: práctica i",
-          "sct": 10,
+          "sct": 16,
           "prerrequisitos": [
             14,
             15
           ],
-          "prereq_expr": "(GEOL301 o GEO302) y (GEOL304 o GEO304) y (GEOL302 o GEO305)"
+          "prereq_expr": "( GEOL301 o ( GEO302 y GEO304 ) ) y ( GEOL302 o GEO305 )",
+          "correquisitos": [
+            20,
+            16,
+            17,
+            18
+          ],
+          "correq_expr": "ING119 y ACAD102 y CFIS344 y FMMP312"
         },
         {
           "id": 20,
@@ -259,7 +272,7 @@
           "prerrequisitos": [
             14
           ],
-          "prereq_expr": "GEOL301 o GEO302 y GEO304"
+          "prereq_expr": "( GEOL301 o ( GEO302 y GEO304 ) )"
         },
         {
           "id": 25,
@@ -279,7 +292,7 @@
           "prerrequisitos": [
             20
           ],
-          "prereq_expr": "ING119 o ING111 o ING110 o ING116 o ING117 o CNT021 o ING050 o ING051 o FLG301"
+          "prereq_expr": "ING119 o ING111 o ING110 o ING116 o ING117 o CNT021 o ( ING050 y ING051 ) o ( FLG301 y FLG302 ) o ( BMA281 y BMA282 ) o ( ETU081 y ETU082 )"
         }
       ]
     },
@@ -294,7 +307,7 @@
           "prerrequisitos": [
             16
           ],
-          "prereq_expr": "ACAD102 o INB1202 o FIC168"
+          "prereq_expr": "ACAD102 o IND1202 o FIC168"
         },
         {
           "id": 28,
@@ -305,7 +318,7 @@
             18,
             23
           ],
-          "prereq_expr": "(FMMP312 o FMM254) y (GEOL503 o GEO406)"
+          "prereq_expr": "( ( FMMP312 o FMM254 ) y ( GEOL503 o GEO406 ) )"
         },
         {
           "id": 29,
@@ -316,7 +329,7 @@
             21,
             22
           ],
-          "prereq_expr": "(GEOL501 o GEO403) y (GEOL502 o GEO301)"
+          "prereq_expr": "( ( GEOL501 o GEO403 ) y ( GEOL502 o GEO301 ) )"
         },
         {
           "id": 30,
@@ -327,7 +340,11 @@
             25,
             23
           ],
-          "prereq_expr": "(GEOL505 o GEO307) y (GEOL503 o GEO406)"
+          "prereq_expr": "( ( GEOL505 o GEO307 ) y ( GEOL503 o GEO406 ) )",
+          "correquisitos": [
+            29
+          ],
+          "correq_expr": "GEOL602"
         },
         {
           "id": 31,
@@ -337,7 +354,7 @@
           "prerrequisitos": [
             26
           ],
-          "prereq_expr": "ING129 o ING121 o ING120 o ING216 o ING126 o ING134 o ING127 o CNT026 o ETU181 y ETU182"
+          "prereq_expr": "ING129 o ING121 o ING120 o ING216 o ING126 o ING134 o ING127 o CNT026 o ( ETU181 y ETU182 ) o ING229"
         }
       ]
     },
@@ -361,7 +378,7 @@
             30,
             29
           ],
-          "prereq_expr": "(GEOL603 o GEO403) y (GEOL602 o GEO307)"
+          "prereq_expr": "( ( GEOL603 o GEO403 ) y ( GEOL602 o GEO307 ) )"
         },
         {
           "id": 34,
@@ -372,7 +389,7 @@
             29,
             24
           ],
-          "prereq_expr": "(GEOL602 o GEO307) y (GEOL504 o GEO506)"
+          "prereq_expr": "( ( GEOL602 o GEO307 ) y ( GEOL504 o GEO506 ) )"
         },
         {
           "id": 35,
@@ -393,12 +410,12 @@
             30,
             29
           ],
-          "prereq_expr": "(GEOL603 o GEO403) y (GEOL602 o GEO307). Correquisitos: GEOL703 y GEOL702",
+          "prereq_expr": "( ( GEOL603 o GEO403 ) y ( GEOL602 o GEO307 ) )",
           "correquisitos": [
-            34,
-            35
+            35,
+            34
           ],
-          "correq_expr": "GEOL702 y GEOL703"
+          "correq_expr": "GEOL703 y GEOL702"
         },
         {
           "id": 37,
@@ -408,7 +425,7 @@
           "prerrequisitos": [
             31
           ],
-          "prereq_expr": "ING239 o ING210 o ING216 o ING224 o ING126 o ING134 o otros equivalentes"
+          "prereq_expr": "ING239 o ING210 o ING216 o ING224 o ING126 o CNT126 o ( ETU281 y ETU282 ) o ING217"
         }
       ]
     },
@@ -423,7 +440,7 @@
           "prerrequisitos": [
             33
           ],
-          "prereq_expr": "GEOL701 o GEO407 y GEO402"
+          "prereq_expr": "( GEOL701 o ( GEO407 y GEO402 ) )"
         },
         {
           "id": 39,
@@ -434,7 +451,7 @@
             36,
             33
           ],
-          "prereq_expr": "(GEOL704 o GEO407) y (GEOL701 o GEO407 y GEO402)"
+          "prereq_expr": "( ( GEOL704 o GEO407 ) y ( GEOL701 o ( GEO407 y GEO402 ) ) )"
         },
         {
           "id": 40,
@@ -444,12 +461,12 @@
           "prerrequisitos": [
             34
           ],
-          "prereq_expr": "GEOL702 o GEO306. Correquisitos: GEOL804 y GEOL801",
+          "prereq_expr": "( GEOL702 o GEO306 )",
           "correquisitos": [
-            38,
-            41
+            41,
+            38
           ],
-          "correq_expr": "GEOL801 y GEOL804"
+          "correq_expr": "( GEOL804 y GEOL801 )"
         },
         {
           "id": 41,
@@ -460,7 +477,7 @@
             33,
             28
           ],
-          "prereq_expr": "GEOL701 o GEO407 y GEO402 y GEOL601"
+          "prereq_expr": "( GEOL701 o ( GEO407 y GEO402 ) y GEOL601 )"
         },
         {
           "id": 42,
@@ -471,12 +488,12 @@
             36,
             33
           ],
-          "prereq_expr": "(GEOL704 o GEO407) y (GEOL701 o GEO407 y GEO402). Correquisitos: GEOL804 y GEOL803",
+          "prereq_expr": "( ( GEOL704 o GEO407 ) y ( GEOL701 o ( GEO407 y GEO402 ) ) )",
           "correquisitos": [
-            40,
-            41
+            41,
+            40
           ],
-          "correq_expr": "GEOL803 y GEOL804"
+          "correq_expr": "GEOL804 y GEOL803"
         },
         {
           "id": 43,
@@ -502,7 +519,7 @@
             41,
             38
           ],
-          "prereq_expr": "(GEOL804 o GEO308) y (GEOL801 o GEO408)"
+          "prereq_expr": "( ( GEOL804 o GEO308 ) y ( GEOL801 o GEO408 ) )"
         },
         {
           "id": 45,
@@ -522,7 +539,7 @@
           "prerrequisitos": [
             42
           ],
-          "prereq_expr": "GEOL805 o GEO405. Correquisitos: GEOL901 y GEOL904",
+          "prereq_expr": "GEOL805 o GEO405",
           "correquisitos": [
             44,
             47
@@ -557,7 +574,7 @@
           "prerrequisitos": [
             42
           ],
-          "prereq_expr": "GEOL805 o GEO405. Correquisito: GEOL903",
+          "prereq_expr": "GEOL805 o GEO405",
           "correquisitos": [
             46
           ],
@@ -587,7 +604,7 @@
             44,
             46
           ],
-          "prereq_expr": "(GEOL901 o GEO412 y GEO501) y (GEOL903 o GEO410)"
+          "prereq_expr": "( GEOL901 o ( GEO412 y GEO501 ) ) y ( GEOL903 o GEO410 )"
         },
         {
           "id": 52,
@@ -615,9 +632,10 @@
           "nombre": "Integrador iii: proyecto de título",
           "sct": 45,
           "prerrequisitos": [
-            49
+            49,
+            43
           ],
-          "prereq_expr": "(GEOL906 o GEO505) y (GEOL906 o GEO599)"
+          "prereq_expr": "( ( GEOL906 o GEO505 ) y ( GEOL806 o GEO599 ) )"
         },
         {
           "id": 55,
@@ -627,14 +645,354 @@
           "prerrequisitos": [
             46
           ],
-          "prereq_expr": "GEOL903 o GEO410. Correquisitos: (GEOL001 o GEOLP014) y GEOL003",
+          "prereq_expr": "( GEOL903 o GEO410 )",
           "correquisitos": [
             50,
             52
           ],
-          "correq_expr": "GEOL001 y GEOL003"
+          "correq_expr": "( GEOL001 o GEOLP014 ) y GEOL003"
         }
       ]
     }
-  ]
+  ],
+  "equivalencias": {
+    "ACAD101": [
+      [
+        "ICI1201"
+      ],
+      [
+        "TIN1201"
+      ]
+    ],
+    "ACAD102": [
+      [
+        "FIC168"
+      ],
+      [
+        "IND1202"
+      ]
+    ],
+    "CFIS310": [
+      [
+        "FMF010"
+      ],
+      [
+        "FMF023"
+      ],
+      [
+        "FMF024"
+      ]
+    ],
+    "CFIS328": [
+      [
+        "FMF023"
+      ],
+      [
+        "FMF086"
+      ]
+    ],
+    "CFIS332": [
+      [
+        "FMF025"
+      ],
+      [
+        "FMF122"
+      ]
+    ],
+    "FMMP012": [
+      [
+        "FMM010"
+      ],
+      [
+        "FMM012"
+      ],
+      [
+        "FMM013"
+      ],
+      [
+        "FMM035"
+      ]
+    ],
+    "FMMP112": [
+      [
+        "FMM010"
+      ],
+      [
+        "FMM030"
+      ],
+      [
+        "FMM033"
+      ],
+      [
+        "FMM112"
+      ]
+    ],
+    "FMMP212": [
+      [
+        "FMM130"
+      ],
+      [
+        "FMM133"
+      ],
+      [
+        "FMM212"
+      ]
+    ],
+    "FMMP312": [
+      [
+        "FMM254"
+      ]
+    ],
+    "GEOL001": [
+      [
+        "GEOLP014"
+      ]
+    ],
+    "GEOL101": [
+      [
+        "GEO101"
+      ]
+    ],
+    "GEOL201": [
+      [
+        "GEO201"
+      ]
+    ],
+    "GEOL203": [
+      [
+        "GEO102"
+      ]
+    ],
+    "GEOL301": [
+      [
+        "GEO302",
+        "GEO304"
+      ]
+    ],
+    "GEOL302": [
+      [
+        "GEO305"
+      ]
+    ],
+    "GEOL401": [
+      [
+        "GEO499"
+      ]
+    ],
+    "GEOL501": [
+      [
+        "GEO403"
+      ]
+    ],
+    "GEOL502": [
+      [
+        "GEO301"
+      ]
+    ],
+    "GEOL503": [
+      [
+        "GEO406"
+      ]
+    ],
+    "GEOL504": [
+      [
+        "GEO506"
+      ]
+    ],
+    "GEOL505": [
+      [
+        "GEO307"
+      ]
+    ],
+    "GEOL602": [
+      [
+        "GEO307"
+      ]
+    ],
+    "GEOL603": [
+      [
+        "GEO403"
+      ]
+    ],
+    "GEOL701": [
+      [
+        "GEO407",
+        "GEO402"
+      ]
+    ],
+    "GEOL702": [
+      [
+        "GEO306"
+      ]
+    ],
+    "GEOL704": [
+      [
+        "GEO407"
+      ]
+    ],
+    "GEOL801": [
+      [
+        "GEO408"
+      ]
+    ],
+    "GEOL802": [
+      [
+        "GEO411"
+      ]
+    ],
+    "GEOL803": [
+      [
+        "GEO502"
+      ]
+    ],
+    "GEOL804": [
+      [
+        "GEO308"
+      ]
+    ],
+    "GEOL805": [
+      [
+        "GEO405"
+      ]
+    ],
+    "GEOL806": [
+      [
+        "GEO599"
+      ]
+    ],
+    "GEOL901": [
+      [
+        "GEO412",
+        "GEO501"
+      ]
+    ],
+    "GEOL903": [
+      [
+        "GEO410"
+      ]
+    ],
+    "GEOL905": [
+      [
+        "GEOLP001"
+      ],
+      [
+        "GEOLP002"
+      ],
+      [
+        "GEOLP003"
+      ],
+      [
+        "GEOLP004"
+      ],
+      [
+        "GEOLP005"
+      ],
+      [
+        "GEOLP006"
+      ],
+      [
+        "GEOLP007"
+      ],
+      [
+        "GEOLP008"
+      ]
+    ],
+    "GEOL906": [
+      [
+        "GEO505"
+      ]
+    ],
+    "ING119": [
+      [
+        "BMA281",
+        "BMA282"
+      ],
+      [
+        "CNT021"
+      ],
+      [
+        "ETU081",
+        "ETU082"
+      ],
+      [
+        "FLG301",
+        "FLG302"
+      ],
+      [
+        "ING050",
+        "ING051"
+      ],
+      [
+        "ING110"
+      ],
+      [
+        "ING111"
+      ],
+      [
+        "ING116"
+      ],
+      [
+        "ING117"
+      ]
+    ],
+    "ING129": [
+      [
+        "CNT026"
+      ],
+      [
+        "ETU181",
+        "ETU182"
+      ],
+      [
+        "ING120"
+      ],
+      [
+        "ING121"
+      ],
+      [
+        "ING126"
+      ],
+      [
+        "ING127"
+      ],
+      [
+        "ING134"
+      ],
+      [
+        "ING216"
+      ],
+      [
+        "ING229"
+      ]
+    ],
+    "ING239": [
+      [
+        "CNT126"
+      ],
+      [
+        "ETU281",
+        "ETU282"
+      ],
+      [
+        "ING126"
+      ],
+      [
+        "ING210"
+      ],
+      [
+        "ING216"
+      ],
+      [
+        "ING217"
+      ],
+      [
+        "ING224"
+      ]
+    ],
+    "QUIM090": [
+      [
+        "QUI104"
+      ]
+    ]
+  }
 }

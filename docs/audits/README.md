@@ -4,3 +4,5 @@ Un archivo por ronda: `AAAA-MM-DD-T-XXX-rN.md`, con la plantilla de `docs/proces
 
 | Fecha | Tarea | Ronda | Veredicto | PR |
 |---|---|---|---|---|
+| 2026-10-29 | [T-010](2026-10-29-T-010-r1.md) | 1 | BLOQUEADO | #2 |
+| 2026-10-29 | [T-010](2026-10-29-T-010-r2.md) | 2 | APROBADO | #2 |

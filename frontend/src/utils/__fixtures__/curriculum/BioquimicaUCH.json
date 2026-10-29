@@ -1,0 +1,1621 @@
+{
+  "program": {
+    "id": "b5688681-30fd-4b16-a44d-f9b61f0d455b",
+    "slug": "bioquimica",
+    "name": "Bioquímica",
+    "official_name": "Bioquímica (UCH)",
+    "official_code": null,
+    "career_key": "unab-bioquimicauch",
+    "legacy_url": "/mallas/BioquimicaUCH.json"
+  },
+  "university": {
+    "id": "095ed5c8-0270-403b-b0d4-5af8573d17a8",
+    "slug": "uch",
+    "name": "Universidad de Chile",
+    "short_name": "UCH",
+    "country": "CL"
+  },
+  "version": {
+    "id": "11cb3588-1d7f-47f3-adf6-4bd783d99d9e",
+    "label": "legacy",
+    "period_regime": "semestral",
+    "credit_system": "SCT",
+    "total_periods": 11,
+    "total_credits": 330,
+    "status": "published",
+    "is_current": true,
+    "source_type": "legacy_json",
+    "source_url": "/mallas/BioquimicaUCH.json",
+    "source_note": "Imported from frontend/public/mallas/BioquimicaUCH.json. Checked against the official curriculum: document 'MALLA BQ - corregido (1).pdf' reading: revisión visual ramo por ramo on 2026-10-29",
+    "reviewed_at": null,
+    "attrs": {
+      "universidad": "Universidad de Chile",
+      "nota_codigos": "Los códigos BQ001, BQ002, etc. son códigos internos para el visor de mallas; el documento usado como fuente muestra número de asignatura, nombre, SCT y requisitos, pero no códigos oficiales de asignatura.",
+      "fuente_oficial": {
+        "origen": "Facultad de Ciencias Químicas y Farmacéuticas, U. de Chile (quimica.uchile.cl)",
+        "sha256": "8255c674576505fc0effa92fbec56a4c38d9a0c7b2ab852629b736b5b0e5a972",
+        "lectura": "revisión visual ramo por ramo",
+        "documento": "MALLA BQ - corregido (1).pdf",
+        "verificada": "2026-10-29"
+      }
+    }
+  },
+  "tracks": [],
+  "periods": [
+    {
+      "number": 1,
+      "track_code": null,
+      "course_ids": [
+        "51989de0-f03b-4080-8e9d-895a81c8bb4e",
+        "38688c5c-1216-4f9f-80c3-cfe86aabc0df",
+        "297396d6-ff06-4068-83be-3af29ba2441a",
+        "2fbd7541-1110-48c2-90d7-9fcd7814670c",
+        "ddd62244-394b-4ce9-84b0-61314f5b995f",
+        "3c9f77bc-79c0-42e5-904c-d53a39801fe1"
+      ]
+    },
+    {
+      "number": 2,
+      "track_code": null,
+      "course_ids": [
+        "3444a7bf-1296-4839-8139-65bc17d4dfab",
+        "8966ace3-c3a0-4f15-ae44-635085f35e1c",
+        "6bf2da9b-00a7-46d1-b622-b4b1aa92be74",
+        "57a04b0a-158e-41a4-bf92-b6aecd62708f",
+        "1871db7b-f667-4f13-a2a7-6af8e16e5132",
+        "e798729a-a0f4-4a3d-b313-0ff145cfa2d2",
+        "099d283d-5cae-4b88-b05c-70708aaf9fcc"
+      ]
+    },
+    {
+      "number": 3,
+      "track_code": null,
+      "course_ids": [
+        "f2c664dd-790a-4b98-b4ce-b88e51dad9e7",
+        "70644425-de1b-45db-808d-895ffea9a271",
+        "2e72a585-f929-49f1-ace5-75a663428685",
+        "b8acabca-bd54-4610-96ca-d8551c2df6cd",
+        "b8636ac7-8a11-45d7-b1f8-f85deda03b0a",
+        "c476ba50-0f2a-4016-a51a-eb5bf2f347a6",
+        "7c2ea87d-a169-481a-b243-a18cf23ff374"
+      ]
+    },
+    {
+      "number": 4,
+      "track_code": null,
+      "course_ids": [
+        "75fec88c-0c3d-4526-8737-6e84e0ee64a5",
+        "1516e636-4148-425f-8ecb-978961974e12",
+        "6359d337-c4ab-440d-8565-bf14b0a60d44",
+        "ff147336-aced-4f01-a000-52d586f0f562",
+        "078465a3-7aa6-4a19-a0be-1e4015f6421a",
+        "85148f6d-d86f-4092-a5b7-916e9e076555",
+        "5aac5675-fa15-4fbf-814a-b12c8d4f1ea3"
+      ]
+    },
+    {
+      "number": 5,
+      "track_code": null,
+      "course_ids": [
+        "fc26191e-98f7-4123-99be-c973d668ac10",
+        "ab111f10-37e7-4973-8ba5-9ea6cdc72d7f",
+        "31c173e2-9226-4a39-8f57-a0a2eb6c38e3",
+        "90657049-e673-435f-a379-53de7dab8f86",
+        "c9a789fe-242e-4a99-b63b-8bb71407dc49"
+      ]
+    },
+    {
+      "number": 6,
+      "track_code": null,
+      "course_ids": [
+        "7465ce16-5c60-4e1d-8b09-c7fe75ede8db",
+        "cd5ced05-1d53-46c8-9334-4b4e54bd0bcd",
+        "8a39a37a-e300-4d47-8071-636cc27ed8c8",
+        "6a99cc9f-12d2-4c16-b02b-d57c7343e15b",
+        "08e076fb-f956-48e7-9f97-84c669b55cdb"
+      ]
+    },
+    {
+      "number": 7,
+      "track_code": null,
+      "course_ids": [
+        "fac8c490-755b-428e-a95c-b5ac635c2166",
+        "7d8ae6cc-eb75-4cd4-aa74-10f7ad98f4fe",
+        "a8a2e8eb-973e-499b-9f2c-42799210f274",
+        "7bdb7d0a-469a-461b-820a-00579c5f97da",
+        "5b33f88c-a3e8-45bc-a4e3-41af98ee3ae1"
+      ]
+    },
+    {
+      "number": 8,
+      "track_code": null,
+      "course_ids": [
+        "b589f361-a12b-4d4c-b394-aef258461556",
+        "77207396-e6fc-408c-9316-f9fa337d0c2f",
+        "e12dfc9e-e551-454d-9881-49f34bf82572",
+        "afd77ccc-3587-41b7-a1cd-e99f64245232",
+        "8f2ee66b-e477-43e8-be77-8fcd55f80b4e",
+        "348cbdf5-56c7-496e-9326-5026754a6ef9"
+      ]
+    },
+    {
+      "number": 9,
+      "track_code": null,
+      "course_ids": [
+        "7d5fcb0f-bad9-451b-a18d-5f238554618a",
+        "ce1897e2-0cd4-4a30-a540-66dd8fc364cf",
+        "b1e6c94e-f605-4868-9088-6a32978dfa31",
+        "72c98251-79ca-46fa-8529-62ca52133167",
+        "01b85d86-ce86-4453-89a0-aeb50e5cbb07",
+        "84ede12f-95f8-4477-b51f-c20308e098b2"
+      ]
+    },
+    {
+      "number": 10,
+      "track_code": null,
+      "course_ids": [
+        "a9d2b8f8-e492-4c24-a24b-985071379889",
+        "8e3c4e5c-a828-42b9-95a9-8315d760e49b",
+        "e9c0ff3b-f795-458c-a5b1-7b7e18c3e9ac",
+        "37310e20-4c42-4c7f-a782-48b670efdf78",
+        "77f71afe-310d-4a88-bb9e-b4efd617e685"
+      ]
+    },
+    {
+      "number": 11,
+      "track_code": null,
+      "course_ids": [
+        "41af9edf-6808-481a-ac30-cd10692af8fe"
+      ]
+    }
+  ],
+  "courses": [
+    {
+      "id": "51989de0-f03b-4080-8e9d-895a81c8bb4e",
+      "legacy_id": 1,
+      "code": "BQ001",
+      "name": "Química General I",
+      "credits": 8,
+      "period_number": 1,
+      "sort_order": 0,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "38688c5c-1216-4f9f-80c3-cfe86aabc0df",
+      "legacy_id": 2,
+      "code": "BQ002",
+      "name": "Técnicas de Laboratorio Químico",
+      "credits": 4,
+      "period_number": 1,
+      "sort_order": 1,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "297396d6-ff06-4068-83be-3af29ba2441a",
+      "legacy_id": 3,
+      "code": "BQ003",
+      "name": "Introducción al Álgebra y Cálculo",
+      "credits": 8,
+      "period_number": 1,
+      "sort_order": 2,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "matematica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "2fbd7541-1110-48c2-90d7-9fcd7814670c",
+      "legacy_id": 4,
+      "code": "BQ004",
+      "name": "Química Transformadora",
+      "credits": 3,
+      "period_number": 1,
+      "sort_order": 3,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "ddd62244-394b-4ce9-84b0-61314f5b995f",
+      "legacy_id": 5,
+      "code": "BQ005",
+      "name": "Razonamiento y Comunicación Científica",
+      "credits": 4,
+      "period_number": 1,
+      "sort_order": 4,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "3c9f77bc-79c0-42e5-904c-d53a39801fe1",
+      "legacy_id": 6,
+      "code": "BQ006",
+      "name": "Inglés I",
+      "credits": 3,
+      "period_number": 1,
+      "sort_order": 5,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "complementaria"
+      }
+    },
+    {
+      "id": "3444a7bf-1296-4839-8139-65bc17d4dfab",
+      "legacy_id": 7,
+      "code": "BQ007",
+      "name": "Química General II",
+      "credits": 5,
+      "period_number": 2,
+      "sort_order": 6,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "51989de0-f03b-4080-8e9d-895a81c8bb4e"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "8966ace3-c3a0-4f15-ae44-635085f35e1c",
+      "legacy_id": 8,
+      "code": "BQ008",
+      "name": "Laboratorio de Química General",
+      "credits": 3,
+      "period_number": 2,
+      "sort_order": 7,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "51989de0-f03b-4080-8e9d-895a81c8bb4e"
+          },
+          {
+            "course": "38688c5c-1216-4f9f-80c3-cfe86aabc0df"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "6bf2da9b-00a7-46d1-b622-b4b1aa92be74",
+      "legacy_id": 9,
+      "code": "BQ009",
+      "name": "Física General",
+      "credits": 5,
+      "period_number": 2,
+      "sort_order": 8,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "297396d6-ff06-4068-83be-3af29ba2441a"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "fisica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "57a04b0a-158e-41a4-bf92-b6aecd62708f",
+      "legacy_id": 10,
+      "code": "BQ010",
+      "name": "Cálculo Diferencial e Integral",
+      "credits": 6,
+      "period_number": 2,
+      "sort_order": 9,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "297396d6-ff06-4068-83be-3af29ba2441a"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "matematica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "1871db7b-f667-4f13-a2a7-6af8e16e5132",
+      "legacy_id": 11,
+      "code": "BQ011",
+      "name": "Biología Celular",
+      "credits": 5,
+      "period_number": 2,
+      "sort_order": 10,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "38688c5c-1216-4f9f-80c3-cfe86aabc0df"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "biologia",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "e798729a-a0f4-4a3d-b313-0ff145cfa2d2",
+      "legacy_id": 12,
+      "code": "BQ012",
+      "name": "Curso de Formación General",
+      "credits": 3,
+      "period_number": 2,
+      "sort_order": 11,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "general"
+      }
+    },
+    {
+      "id": "099d283d-5cae-4b88-b05c-70708aaf9fcc",
+      "legacy_id": 13,
+      "code": "BQ013",
+      "name": "Inglés II",
+      "credits": 3,
+      "period_number": 2,
+      "sort_order": 12,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "3c9f77bc-79c0-42e5-904c-d53a39801fe1"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "complementaria"
+      }
+    },
+    {
+      "id": "f2c664dd-790a-4b98-b4ce-b88e51dad9e7",
+      "legacy_id": 14,
+      "code": "BQ014",
+      "name": "Química Orgánica I",
+      "credits": 5,
+      "period_number": 3,
+      "sort_order": 13,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "3444a7bf-1296-4839-8139-65bc17d4dfab"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "70644425-de1b-45db-808d-895ffea9a271",
+      "legacy_id": 15,
+      "code": "BQ015",
+      "name": "Química Analítica I",
+      "credits": 5,
+      "period_number": 3,
+      "sort_order": 14,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "3444a7bf-1296-4839-8139-65bc17d4dfab"
+          },
+          {
+            "course": "8966ace3-c3a0-4f15-ae44-635085f35e1c"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "2e72a585-f929-49f1-ace5-75a663428685",
+      "legacy_id": 16,
+      "code": "BQ016",
+      "name": "Laboratorio I de Química Orgánica",
+      "credits": 4,
+      "period_number": 3,
+      "sort_order": 15,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "3444a7bf-1296-4839-8139-65bc17d4dfab"
+          },
+          {
+            "course": "8966ace3-c3a0-4f15-ae44-635085f35e1c"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "b8acabca-bd54-4610-96ca-d8551c2df6cd",
+      "legacy_id": 17,
+      "code": "BQ017",
+      "name": "Estadística y Análisis de Datos",
+      "credits": 4,
+      "period_number": 3,
+      "sort_order": 16,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "57a04b0a-158e-41a4-bf92-b6aecd62708f"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "matematica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "b8636ac7-8a11-45d7-b1f8-f85deda03b0a",
+      "legacy_id": 18,
+      "code": "BQ018",
+      "name": "Física Aplicada a la Bioquímica",
+      "credits": 4,
+      "period_number": 3,
+      "sort_order": 17,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "6bf2da9b-00a7-46d1-b622-b4b1aa92be74"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "fisica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "c476ba50-0f2a-4016-a51a-eb5bf2f347a6",
+      "legacy_id": 19,
+      "code": "BQ019",
+      "name": "Fisiología Celular",
+      "credits": 5,
+      "period_number": 3,
+      "sort_order": 18,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "6bf2da9b-00a7-46d1-b622-b4b1aa92be74"
+          },
+          {
+            "course": "1871db7b-f667-4f13-a2a7-6af8e16e5132"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "biologia",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "7c2ea87d-a169-481a-b243-a18cf23ff374",
+      "legacy_id": 20,
+      "code": "BQ020",
+      "name": "Cultura Científica: Divulgación y Enseñanza",
+      "credits": 3,
+      "period_number": 3,
+      "sort_order": 19,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "2fbd7541-1110-48c2-90d7-9fcd7814670c"
+          },
+          {
+            "course": "ddd62244-394b-4ce9-84b0-61314f5b995f"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "75fec88c-0c3d-4526-8737-6e84e0ee64a5",
+      "legacy_id": 21,
+      "code": "BQ021",
+      "name": "Química Orgánica II",
+      "credits": 5,
+      "period_number": 4,
+      "sort_order": 20,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "f2c664dd-790a-4b98-b4ce-b88e51dad9e7"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "1516e636-4148-425f-8ecb-978961974e12",
+      "legacy_id": 22,
+      "code": "BQ022",
+      "name": "Laboratorio de Análisis Químico",
+      "credits": 4,
+      "period_number": 4,
+      "sort_order": 21,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "8966ace3-c3a0-4f15-ae44-635085f35e1c"
+          },
+          {
+            "course": "70644425-de1b-45db-808d-895ffea9a271"
+          },
+          {
+            "course": "b8acabca-bd54-4610-96ca-d8551c2df6cd"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "6359d337-c4ab-440d-8565-bf14b0a60d44",
+      "legacy_id": 23,
+      "code": "BQ023",
+      "name": "Química Analítica II",
+      "credits": 5,
+      "period_number": 4,
+      "sort_order": 22,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "70644425-de1b-45db-808d-895ffea9a271"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "ff147336-aced-4f01-a000-52d586f0f562",
+      "legacy_id": 24,
+      "code": "BQ024",
+      "name": "Fisicoquímica I",
+      "credits": 6,
+      "period_number": 4,
+      "sort_order": 23,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "6bf2da9b-00a7-46d1-b622-b4b1aa92be74"
+          },
+          {
+            "course": "57a04b0a-158e-41a4-bf92-b6aecd62708f"
+          },
+          {
+            "course": "f2c664dd-790a-4b98-b4ce-b88e51dad9e7"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "078465a3-7aa6-4a19-a0be-1e4015f6421a",
+      "legacy_id": 25,
+      "code": "BQ025",
+      "name": "Fisiología de Sistemas",
+      "credits": 4,
+      "period_number": 4,
+      "sort_order": 24,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "c476ba50-0f2a-4016-a51a-eb5bf2f347a6"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "biologia",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "85148f6d-d86f-4092-a5b7-916e9e076555",
+      "legacy_id": 26,
+      "code": "BQ026",
+      "name": "Taller de Cultura Científica",
+      "credits": 3,
+      "period_number": 4,
+      "sort_order": 25,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "7c2ea87d-a169-481a-b243-a18cf23ff374"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "pfi"
+      }
+    },
+    {
+      "id": "5aac5675-fa15-4fbf-814a-b12c8d4f1ea3",
+      "legacy_id": 27,
+      "code": "BQ027",
+      "name": "Curso de Formación General",
+      "credits": 3,
+      "period_number": 4,
+      "sort_order": 26,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "general"
+      }
+    },
+    {
+      "id": "fc26191e-98f7-4123-99be-c973d668ac10",
+      "legacy_id": 28,
+      "code": "BQ028",
+      "name": "Laboratorio de Análisis Instrumental",
+      "credits": 4,
+      "period_number": 5,
+      "sort_order": 27,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "1516e636-4148-425f-8ecb-978961974e12"
+          },
+          {
+            "course": "6359d337-c4ab-440d-8565-bf14b0a60d44"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "especializada"
+      }
+    },
+    {
+      "id": "ab111f10-37e7-4973-8ba5-9ea6cdc72d7f",
+      "legacy_id": 29,
+      "code": "BQ029",
+      "name": "Bioquímica General",
+      "credits": 9,
+      "period_number": 5,
+      "sort_order": 28,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "75fec88c-0c3d-4526-8737-6e84e0ee64a5"
+          },
+          {
+            "course": "ff147336-aced-4f01-a000-52d586f0f562"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "biologia",
+        "linea": "especializada"
+      }
+    },
+    {
+      "id": "31c173e2-9226-4a39-8f57-a0a2eb6c38e3",
+      "legacy_id": 30,
+      "code": "BQ030",
+      "name": "Estructura y Función de Organelos Celulares",
+      "credits": 6,
+      "period_number": 5,
+      "sort_order": 29,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "75fec88c-0c3d-4526-8737-6e84e0ee64a5"
+          },
+          {
+            "course": "078465a3-7aa6-4a19-a0be-1e4015f6421a"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "biologia",
+        "linea": "especializada"
+      }
+    },
+    {
+      "id": "90657049-e673-435f-a379-53de7dab8f86",
+      "legacy_id": 31,
+      "code": "BQ031",
+      "name": "Fisicoquímica para Ciencias Biológicas",
+      "credits": 7,
+      "period_number": 5,
+      "sort_order": 30,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "b8636ac7-8a11-45d7-b1f8-f85deda03b0a"
+          },
+          {
+            "course": "ff147336-aced-4f01-a000-52d586f0f562"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "especializada"
+      }
+    },
+    {
+      "id": "c9a789fe-242e-4a99-b63b-8bb71407dc49",
+      "legacy_id": 32,
+      "code": "BQ032",
+      "name": "Inglés III",
+      "credits": 3,
+      "period_number": 5,
+      "sort_order": 31,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "099d283d-5cae-4b88-b05c-70708aaf9fcc"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "complementaria"
+      }
+    },
+    {
+      "id": "7465ce16-5c60-4e1d-8b09-c7fe75ede8db",
+      "legacy_id": 33,
+      "code": "BQ033",
+      "name": "Estructura y Función de Proteínas",
+      "credits": 8,
+      "period_number": 6,
+      "sort_order": 32,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "ab111f10-37e7-4973-8ba5-9ea6cdc72d7f"
+          },
+          {
+            "course": "90657049-e673-435f-a379-53de7dab8f86"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "biologia",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "cd5ced05-1d53-46c8-9334-4b4e54bd0bcd",
+      "legacy_id": 34,
+      "code": "BQ034",
+      "name": "Genética Molecular",
+      "credits": 8,
+      "period_number": 6,
+      "sort_order": 33,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "ab111f10-37e7-4973-8ba5-9ea6cdc72d7f"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "biologia",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "8a39a37a-e300-4d47-8071-636cc27ed8c8",
+      "legacy_id": 35,
+      "code": "BQ035",
+      "name": "Inmunología Celular y Molecular",
+      "credits": 7,
+      "period_number": 6,
+      "sort_order": 34,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "31c173e2-9226-4a39-8f57-a0a2eb6c38e3"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "biologia",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "6a99cc9f-12d2-4c16-b02b-d57c7343e15b",
+      "legacy_id": 36,
+      "code": "BQ036",
+      "name": "Microbiología General",
+      "credits": 5,
+      "period_number": 6,
+      "sort_order": 35,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "31c173e2-9226-4a39-8f57-a0a2eb6c38e3"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "biologia",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "08e076fb-f956-48e7-9f97-84c669b55cdb",
+      "legacy_id": 37,
+      "code": "BQ037",
+      "name": "Inglés IV",
+      "credits": 3,
+      "period_number": 6,
+      "sort_order": 36,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "c9a789fe-242e-4a99-b63b-8bb71407dc49"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "complementaria"
+      }
+    },
+    {
+      "id": "fac8c490-755b-428e-a95c-b5ac635c2166",
+      "legacy_id": 38,
+      "code": "BQ038",
+      "name": "Química Fisiológica y Patológica",
+      "credits": 6,
+      "period_number": 7,
+      "sort_order": 37,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "7465ce16-5c60-4e1d-8b09-c7fe75ede8db"
+          },
+          {
+            "course": "8a39a37a-e300-4d47-8071-636cc27ed8c8"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "cli"
+      }
+    },
+    {
+      "id": "7d8ae6cc-eb75-4cd4-aa74-10f7ad98f4fe",
+      "legacy_id": 39,
+      "code": "BQ039",
+      "name": "Genética Molecular de Eucariontes",
+      "credits": 6,
+      "period_number": 7,
+      "sort_order": 38,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "cd5ced05-1d53-46c8-9334-4b4e54bd0bcd"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "biologia",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "a8a2e8eb-973e-499b-9f2c-42799210f274",
+      "legacy_id": 40,
+      "code": "BQ040",
+      "name": "Fisiología y Genética Microbiana",
+      "credits": 8,
+      "period_number": 7,
+      "sort_order": 39,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "cd5ced05-1d53-46c8-9334-4b4e54bd0bcd"
+          },
+          {
+            "course": "6a99cc9f-12d2-4c16-b02b-d57c7343e15b"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "biologia",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "7bdb7d0a-469a-461b-820a-00579c5f97da",
+      "legacy_id": 41,
+      "code": "BQ041",
+      "name": "Administración y Gestión",
+      "credits": 4,
+      "period_number": 7,
+      "sort_order": 40,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "85148f6d-d86f-4092-a5b7-916e9e076555"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "5b33f88c-a3e8-45bc-a4e3-41af98ee3ae1",
+      "legacy_id": 42,
+      "code": "BQ042",
+      "name": "Unidad de Investigación en Bioquímica",
+      "credits": 6,
+      "period_number": 7,
+      "sort_order": 41,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "fc26191e-98f7-4123-99be-c973d668ac10"
+          },
+          {
+            "course": "ab111f10-37e7-4973-8ba5-9ea6cdc72d7f"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "otros",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "b589f361-a12b-4d4c-b394-aef258461556",
+      "legacy_id": 43,
+      "code": "BQ043",
+      "name": "Bioquímica Clínica y Patológica",
+      "credits": 8,
+      "period_number": 8,
+      "sort_order": 42,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "fac8c490-755b-428e-a95c-b5ac635c2166"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "biologia",
+        "linea": "cli"
+      }
+    },
+    {
+      "id": "77207396-e6fc-408c-9316-f9fa337d0c2f",
+      "legacy_id": 44,
+      "code": "BQ044",
+      "name": "Fisiología y Bioquímica Vegetal",
+      "credits": 4,
+      "period_number": 8,
+      "sort_order": 43,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "7d8ae6cc-eb75-4cd4-aa74-10f7ad98f4fe"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "biologia",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "e12dfc9e-e551-454d-9881-49f34bf82572",
+      "legacy_id": 45,
+      "code": "BQ045",
+      "name": "Bioética",
+      "credits": 3,
+      "period_number": 8,
+      "sort_order": 44,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "fac8c490-755b-428e-a95c-b5ac635c2166"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "cli"
+      }
+    },
+    {
+      "id": "afd77ccc-3587-41b7-a1cd-e99f64245232",
+      "legacy_id": 46,
+      "code": "BQ046",
+      "name": "Formulación y Evaluación de Proyectos Científicos",
+      "credits": 4,
+      "period_number": 8,
+      "sort_order": 45,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "7465ce16-5c60-4e1d-8b09-c7fe75ede8db"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "formacion",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "8f2ee66b-e477-43e8-be77-8fcd55f80b4e",
+      "legacy_id": 47,
+      "code": "BQ047",
+      "name": "Bioinformática",
+      "credits": 5,
+      "period_number": 8,
+      "sort_order": 46,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "7465ce16-5c60-4e1d-8b09-c7fe75ede8db"
+          },
+          {
+            "course": "7d8ae6cc-eb75-4cd4-aa74-10f7ad98f4fe"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "biologia",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "348cbdf5-56c7-496e-9326-5026754a6ef9",
+      "legacy_id": 48,
+      "code": "BQ048",
+      "name": "Práctica Profesional I",
+      "credits": 6,
+      "period_number": 8,
+      "sort_order": 47,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "7465ce16-5c60-4e1d-8b09-c7fe75ede8db"
+          },
+          {
+            "course": "cd5ced05-1d53-46c8-9334-4b4e54bd0bcd"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "otros",
+        "linea": "cli"
+      }
+    },
+    {
+      "id": "7d5fcb0f-bad9-451b-a18d-5f238554618a",
+      "legacy_id": 49,
+      "code": "BQ049",
+      "name": "Laboratorio de Bioquímica Clínica",
+      "credits": 6,
+      "period_number": 9,
+      "sort_order": 48,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "7bdb7d0a-469a-461b-820a-00579c5f97da"
+          },
+          {
+            "course": "b589f361-a12b-4d4c-b394-aef258461556"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "biologia",
+        "linea": "cli"
+      }
+    },
+    {
+      "id": "ce1897e2-0cd4-4a30-a540-66dd8fc364cf",
+      "legacy_id": 50,
+      "code": "BQ050",
+      "name": "Tópicos de Farmacología",
+      "credits": 4,
+      "period_number": 9,
+      "sort_order": 49,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "b589f361-a12b-4d4c-b394-aef258461556"
+          },
+          {
+            "course": "e12dfc9e-e551-454d-9881-49f34bf82572"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "biologia",
+        "linea": "cli"
+      }
+    },
+    {
+      "id": "b1e6c94e-f605-4868-9088-6a32978dfa31",
+      "legacy_id": 51,
+      "code": "BQ051",
+      "name": "Biotecnología",
+      "credits": 6,
+      "period_number": 9,
+      "sort_order": 50,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "b589f361-a12b-4d4c-b394-aef258461556"
+          },
+          {
+            "course": "e12dfc9e-e551-454d-9881-49f34bf82572"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "biologia",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "72c98251-79ca-46fa-8529-62ca52133167",
+      "legacy_id": 52,
+      "code": "BQ052",
+      "name": "Electivo Especializado",
+      "credits": 4,
+      "period_number": 9,
+      "sort_order": 51,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "otros",
+        "linea": "especializada"
+      }
+    },
+    {
+      "id": "01b85d86-ce86-4453-89a0-aeb50e5cbb07",
+      "legacy_id": 53,
+      "code": "BQ053",
+      "name": "Electivo Especializado",
+      "credits": 4,
+      "period_number": 9,
+      "sort_order": 52,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "otros",
+        "linea": "especializada"
+      }
+    },
+    {
+      "id": "84ede12f-95f8-4477-b51f-c20308e098b2",
+      "legacy_id": 54,
+      "code": "BQ054",
+      "name": "Práctica Profesional II",
+      "credits": 6,
+      "period_number": 9,
+      "sort_order": 53,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "b589f361-a12b-4d4c-b394-aef258461556"
+          },
+          {
+            "course": "8f2ee66b-e477-43e8-be77-8fcd55f80b4e"
+          },
+          {
+            "course": "348cbdf5-56c7-496e-9326-5026754a6ef9"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "otros",
+        "linea": "profesional"
+      }
+    },
+    {
+      "id": "a9d2b8f8-e492-4c24-a24b-985071379889",
+      "legacy_id": 55,
+      "code": "BQ055",
+      "name": "Unidad de Investigación Avanzada en Bioquímica",
+      "credits": 7,
+      "period_number": 10,
+      "sort_order": 54,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "5b33f88c-a3e8-45bc-a4e3-41af98ee3ae1"
+          },
+          {
+            "course": "7d5fcb0f-bad9-451b-a18d-5f238554618a"
+          },
+          {
+            "course": "b1e6c94e-f605-4868-9088-6a32978dfa31"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "otros",
+        "linea": "inv"
+      }
+    },
+    {
+      "id": "8e3c4e5c-a828-42b9-95a9-8315d760e49b",
+      "legacy_id": 56,
+      "code": "BQ056",
+      "name": "Bioprocesos Industriales",
+      "credits": 6,
+      "period_number": 10,
+      "sort_order": 55,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "7bdb7d0a-469a-461b-820a-00579c5f97da"
+          },
+          {
+            "course": "b1e6c94e-f605-4868-9088-6a32978dfa31"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "quimica",
+        "linea": "ind"
+      }
+    },
+    {
+      "id": "e9c0ff3b-f795-458c-a5b1-7b7e18c3e9ac",
+      "legacy_id": 57,
+      "code": "BQ057",
+      "name": "Electivo Especializado",
+      "credits": 4,
+      "period_number": 10,
+      "sort_order": 56,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "otros",
+        "linea": "especializada"
+      }
+    },
+    {
+      "id": "37310e20-4c42-4c7f-a782-48b670efdf78",
+      "legacy_id": 58,
+      "code": "BQ058",
+      "name": "Electivo Especializado",
+      "credits": 5,
+      "period_number": 10,
+      "sort_order": 57,
+      "track_code": null,
+      "prereq_status": "none",
+      "prereq_expr": null,
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "otros",
+        "linea": "especializada"
+      }
+    },
+    {
+      "id": "77f71afe-310d-4a88-bb9e-b4efd617e685",
+      "legacy_id": 59,
+      "code": "BQ059",
+      "name": "Proyecto de Memoria de Título",
+      "credits": 8,
+      "period_number": 10,
+      "sort_order": 58,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "op": "and",
+        "items": [
+          {
+            "course": "afd77ccc-3587-41b7-a1cd-e99f64245232"
+          },
+          {
+            "course": "7d5fcb0f-bad9-451b-a18d-5f238554618a"
+          },
+          {
+            "course": "ce1897e2-0cd4-4a30-a540-66dd8fc364cf"
+          },
+          {
+            "course": "b1e6c94e-f605-4868-9088-6a32978dfa31"
+          }
+        ]
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "otros",
+        "linea": "profesional"
+      }
+    },
+    {
+      "id": "41af9edf-6808-481a-ac30-cd10692af8fe",
+      "legacy_id": 60,
+      "code": "BQ060",
+      "name": "Memoria de Título",
+      "credits": 30,
+      "period_number": 11,
+      "sort_order": 59,
+      "track_code": null,
+      "prereq_status": "known",
+      "prereq_expr": {
+        "course": "77f71afe-310d-4a88-bb9e-b4efd617e685"
+      },
+      "prereq_raw": null,
+      "coreq_expr": null,
+      "coreq_raw": null,
+      "attrs": {
+        "area": "otros",
+        "linea": "profesional"
+      }
+    }
+  ],
+  "aliases": {}
+}

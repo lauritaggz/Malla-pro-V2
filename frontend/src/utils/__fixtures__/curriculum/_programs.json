@@ -1,15 +1,15 @@
 [
   {
-    "id": "7f214b17-8023-423d-8544-a4be28be5f74",
+    "id": "4bd84922-2f4e-41d9-8a6d-1e493be2333b",
     "slug": "ingenieria-civil-industrial",
     "name": "Ingeniería Civil Industrial",
-    "official_name": "Ingeniería Civil Industrial",
+    "official_name": "Ingeniería Civil Industrial (UNAB)",
     "official_code": null,
     "career_key": "unab-industrial",
     "legacy_url": "/mallas/Industrial.json"
   },
   {
-    "id": "4e3822b1-3781-4e67-9281-cce02f0d325a",
+    "id": "505fd302-7dd9-4434-95ef-1600268fd10b",
     "slug": "ingenieria-computacion-informatica",
     "name": "Ingeniería en Computación e Informática",
     "official_name": "Ingeniería en Computación e Informática (UNAB)",
@@ -18,7 +18,7 @@
     "legacy_url": "/mallas/Comp.json"
   },
   {
-    "id": "59b1c016-5d1e-4874-9d30-865faac1ff2b",
+    "id": "c210760d-4ae2-48e4-9052-b64204e33539",
     "slug": "geologia",
     "name": "Geología",
     "official_name": "Geología (UNAB)",
@@ -27,7 +27,7 @@
     "legacy_url": "/mallas/Geo.json"
   },
   {
-    "id": "cfc912db-4a17-4efc-89bc-00473279aad8",
+    "id": "5b7a1640-5466-481e-9d1e-101d7c316dfb",
     "slug": "ingenieria-marina-mercante",
     "name": "Ingeniería en Marina Mercante",
     "official_name": "Ingeniería en Marina Mercante (UNAB)",
@@ -36,7 +36,7 @@
     "legacy_url": "/mallas/MM.json"
   },
   {
-    "id": "49b1fa26-a629-450a-b91a-893338592c2c",
+    "id": "031a2564-6ee4-4979-b3ff-97237fd874fa",
     "slug": "ingenieria-civil-informatica",
     "name": "Ingeniería Civil Informática",
     "official_name": "Ingeniería Civil Informática (UNAB)",
@@ -45,7 +45,7 @@
     "legacy_url": "/mallas/CInf.json"
   },
   {
-    "id": "8eabf0a5-45fe-4d16-802a-d1f926011324",
+    "id": "1a26c241-6cc0-4489-8720-2676fb0ebcb4",
     "slug": "ingenieria-civil-minas",
     "name": "Ingeniería Civil en Minas",
     "official_name": "Ingeniería Civil en Minas (UNAB)",
@@ -54,7 +54,7 @@
     "legacy_url": "/mallas/Minas.json"
   },
   {
-    "id": "999823dd-5e50-46d6-b029-40c9c7f30959",
+    "id": "e9946a9d-73c7-43b4-ae89-0c3b9e5a22ce",
     "slug": "medicina",
     "name": "Medicina",
     "official_name": "Medicina (UNAB)",
@@ -63,7 +63,7 @@
     "legacy_url": "/mallas/Med.json"
   },
   {
-    "id": "ed223eed-537a-45de-9ab3-be78ee5b9141",
+    "id": "d95d3e18-079c-4829-a2fe-cb55776044c8",
     "slug": "tecnologia-medica",
     "name": "Tecnología Médica",
     "official_name": "Tecnología médica (UNAB)",
@@ -72,7 +72,7 @@
     "legacy_url": "/mallas/TM.json"
   },
   {
-    "id": "57523790-22cd-48e8-9ac5-64cc57002a7e",
+    "id": "e536ee9f-135c-46ac-9890-f27fe22995be",
     "slug": "psicologia",
     "name": "Psicología",
     "official_name": "Psicología (UNAB)",

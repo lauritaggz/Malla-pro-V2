@@ -1,6 +1,6 @@
 {
   "program": {
-    "id": "999823dd-5e50-46d6-b029-40c9c7f30959",
+    "id": "e9946a9d-73c7-43b4-ae89-0c3b9e5a22ce",
     "slug": "medicina",
     "name": "Medicina",
     "official_name": "Medicina (UNAB)",
@@ -9,25 +9,314 @@
     "legacy_url": "/mallas/Med.json"
   },
   "university": {
-    "id": "baa60218-0377-4052-bddd-a92786b37188",
+    "id": "62ed628d-4645-42d0-b60b-1725be709c32",
     "slug": "unab",
     "name": "Universidad Andrés Bello",
     "short_name": "UNAB",
     "country": "CL"
   },
   "version": {
-    "id": "3f81e33c-1fb3-4150-8dd4-4fbf1cb44487",
+    "id": "e64d13fc-1992-4a4c-af58-30cc2a0827f2",
     "label": "legacy",
     "period_regime": "semestral",
     "credit_system": "SCT",
     "total_periods": 12,
-    "total_credits": null,
+    "total_credits": 1039,
     "status": "published",
     "is_current": true,
     "source_type": "legacy_json",
     "source_url": "/mallas/Med.json",
-    "source_note": "Imported from frontend/public/mallas/Med.json",
-    "reviewed_at": null
+    "source_note": "Imported from frontend/public/mallas/Med.json. Checked against the official curriculum: program UNAB19710 catalog 202510 (PRIMER SEMESTRE 2025) reading: texto del documento",
+    "reviewed_at": null,
+    "attrs": {
+      "equivalencias": {
+        "ING119": [
+          [
+            "BMA281",
+            "BMA282"
+          ],
+          [
+            "CNT021"
+          ],
+          [
+            "ETU081",
+            "ETU082"
+          ],
+          [
+            "FLG301",
+            "FLG302"
+          ],
+          [
+            "ING050",
+            "ING051"
+          ],
+          [
+            "ING110"
+          ],
+          [
+            "ING111"
+          ],
+          [
+            "ING116"
+          ],
+          [
+            "ING117"
+          ]
+        ],
+        "ING129": [
+          [
+            "CNT026"
+          ],
+          [
+            "ETU181",
+            "ETU182"
+          ],
+          [
+            "ING120"
+          ],
+          [
+            "ING121"
+          ],
+          [
+            "ING126"
+          ],
+          [
+            "ING127"
+          ],
+          [
+            "ING134"
+          ],
+          [
+            "ING216"
+          ],
+          [
+            "ING229"
+          ]
+        ],
+        "ING239": [
+          [
+            "CNT126"
+          ],
+          [
+            "ETU281",
+            "ETU282"
+          ],
+          [
+            "ING126"
+          ],
+          [
+            "ING210"
+          ],
+          [
+            "ING216"
+          ],
+          [
+            "ING217"
+          ],
+          [
+            "ING224"
+          ]
+        ],
+        "MAT007": [
+          [
+            "FMM007"
+          ]
+        ],
+        "BIOL132": [
+          [
+            "BIO130",
+            "BIO131"
+          ]
+        ],
+        "BIOL148": [
+          [
+            "BIO148",
+            "BIO242"
+          ]
+        ],
+        "BIOL259": [
+          [
+            "BIO250",
+            "BIO251"
+          ]
+        ],
+        "BIOL276": [
+          [
+            "BIO376",
+            "BIO266"
+          ]
+        ],
+        "BIOL376": [
+          [
+            "MED294",
+            "BIO377"
+          ]
+        ],
+        "CFIS350": [
+          [
+            "FMF019"
+          ]
+        ],
+        "FARM131": [
+          [
+            "BIO288"
+          ]
+        ],
+        "MEDI001": [
+          [
+            "MED016"
+          ]
+        ],
+        "MEDI002": [
+          [
+            "MED017",
+            "MED121",
+            "MED122"
+          ]
+        ],
+        "MEDI003": [
+          [
+            "MED131"
+          ]
+        ],
+        "MEDI004": [
+          [
+            "MED292"
+          ]
+        ],
+        "MEDI005": [
+          [
+            "MED131",
+            "HUF124"
+          ]
+        ],
+        "MEDI007": [
+          [
+            "MED260",
+            "MED295",
+            "MED257"
+          ]
+        ],
+        "MEDI008": [
+          [
+            "MED258",
+            "MED259"
+          ]
+        ],
+        "MEDI009": [
+          [
+            "MED257",
+            "MED249"
+          ]
+        ],
+        "MEDI010": [
+          [
+            "MED244"
+          ]
+        ],
+        "MEDI011": [
+          [
+            "MED278",
+            "MED279"
+          ]
+        ],
+        "MEDI012": [
+          [
+            "MED296",
+            "MED287",
+            "MED257"
+          ]
+        ],
+        "MEDI015": [
+          [
+            "MED245"
+          ]
+        ],
+        "MEDI017": [
+          [
+            "MED296",
+            "MED287",
+            "MED257"
+          ]
+        ],
+        "MEDI018": [
+          [
+            "MED296"
+          ]
+        ],
+        "MEDI022": [
+          [
+            "MED297"
+          ]
+        ],
+        "MEDI023": [
+          [
+            "MED298"
+          ]
+        ],
+        "MEDI024": [
+          [
+            "MED374"
+          ]
+        ],
+        "MEDI025": [
+          [
+            "MED376"
+          ]
+        ],
+        "MEDI026": [
+          [
+            "MED375"
+          ]
+        ],
+        "MEDI027": [
+          [
+            "MED377"
+          ]
+        ],
+        "MORF335": [
+          [
+            "MOR330",
+            "MOR331",
+            "BIO320",
+            "BIO321"
+          ]
+        ],
+        "MORF336": [
+          [
+            "MOR332",
+            "MOR333"
+          ]
+        ],
+        "QUIM500": [
+          [
+            "QUI109",
+            "QUI024"
+          ]
+        ],
+        "SPAB305": [
+          [
+            "MED293"
+          ]
+        ],
+        "SPAB306": [
+          [
+            "MED293"
+          ]
+        ],
+        "SPAB307": [
+          [
+            "MED292"
+          ]
+        ]
+      },
+      "fuente_oficial": {
+        "lectura": "texto del documento",
+        "catalogo": "202510",
+        "programa": "UNAB19710",
+        "catalogoTexto": "PRIMER SEMESTRE 2025"
+      }
+    }
   },
   "tracks": [],
   "periods": [
@@ -35,132 +324,132 @@
       "number": 1,
       "track_code": null,
       "course_ids": [
-        "0c7e3c11-3d51-41a8-848e-0748b21cf0a1",
-        "bc19a4c8-58bf-4037-a8b6-7ef603ccb5bd",
-        "9689e210-c80b-4374-804c-e3a9ad5a0948",
-        "0b0cb7c7-739d-4792-87dc-4b06b0590c11",
-        "c03a7e30-7a3f-4123-8039-a21308ba3f99",
-        "7ee621ab-a453-42cf-9d14-648f4171d4e9"
+        "9b5960dc-3c29-4dc7-844e-24226520ac08",
+        "104283c3-c2c3-4f59-9d3e-88d0227159f9",
+        "47bd4941-a71e-4625-835e-8f3a2c2e26f2",
+        "ef860b52-f97c-4211-a4d0-ed5c529e2005",
+        "52a7bbcd-a3ac-489c-acba-7fca0e7aa3ba",
+        "2384424a-185e-4b7e-9ca4-1a7c6e74ddd2"
       ]
     },
     {
       "number": 2,
       "track_code": null,
       "course_ids": [
-        "361b3d3f-b73c-43ae-837b-44868289282d",
-        "8b7c4e46-bcab-4ab0-a866-c095e896695e",
-        "b6e9443c-11e6-40de-807c-493d0d659d6c",
-        "44d992f5-867a-482a-ae4a-2882bb8f8abe",
-        "f6b05a87-57e6-4b31-aa35-261cecc4486d"
+        "45f58956-1eec-463a-a317-a8bbecc30223",
+        "ffbbc467-007f-437e-82c6-ab03cb9c59a4",
+        "52f50b75-96cc-4f76-9b36-e19871c930b0",
+        "1350739d-85d4-4889-8245-4e5360345027",
+        "3a5747fc-720c-4602-8ed3-e61a46ee9c08"
       ]
     },
     {
       "number": 3,
       "track_code": null,
       "course_ids": [
-        "4a06a741-ecec-4137-951d-550f77aed2d5",
-        "041f1423-8e72-4d11-b435-4146c47768d5",
-        "987dd79a-aa96-498d-8984-bd01ffdc9612",
-        "e93a3063-06ea-4ee1-8483-450ad521a402",
-        "a0fd8c66-3f78-4176-8365-f018a29657a3"
+        "3ae18217-dd81-40f9-956e-1a7ab1764132",
+        "34f19010-db9e-4fd2-8de2-efcd1aa32fde",
+        "5167372f-9f27-44e0-9c2c-0124ef8abbf5",
+        "619c24b2-4141-472a-a717-3318896dda7f",
+        "dbc62c08-b053-4ab3-83f0-388576118ec9"
       ]
     },
     {
       "number": 4,
       "track_code": null,
       "course_ids": [
-        "c1d8d0c0-b978-48d8-b213-8b5010a3b02f",
-        "16e54658-7cb4-4ad1-b04d-7baed78aaa9b",
-        "d186d7c9-ff00-4e0f-b4ff-c32380940498",
-        "49e4e041-45fa-475a-b547-25265df74471",
-        "643ab0fd-2094-44ad-9328-6ad050b7a347"
+        "b89001f7-f5bc-4417-afc9-56d737203ecf",
+        "6f96fbd4-c9e2-4722-ac6c-3faa817ce8d1",
+        "39aa03a2-7c1d-47fe-b9d2-e6a0e44c07dd",
+        "3f64f41f-ab89-46f1-b2ab-da462858ff56",
+        "1621355a-1164-4688-86b5-f912c1218a90"
       ]
     },
     {
       "number": 5,
       "track_code": null,
       "course_ids": [
-        "b9dfb8c4-d2f8-46f9-bfc5-7f4505a5f7c8",
-        "0e16b31b-5ad6-4a4b-aa7d-05dd7b1d1dd6",
-        "a8894a8e-c106-4e14-ba19-6a3a759d8fb7",
-        "da6600c5-fa02-47ce-a491-ff84e3d7d144",
-        "6efb1c65-87ba-4d82-b5ca-fb9fb4a7352b"
+        "95ac8a6a-c570-41b3-b858-12039aaec1ca",
+        "5a9388cc-3ff9-4440-9d6d-97610e67f842",
+        "d9b075c1-2662-4805-aa72-17ddb30df7b7",
+        "68dc67d0-6927-41a6-bae8-566e994fbf54",
+        "3e8577b8-9912-401d-a157-12aa304a6de6"
       ]
     },
     {
       "number": 6,
       "track_code": null,
       "course_ids": [
-        "23325c11-ec80-4315-9535-ffa19ddb2b34",
-        "00ec5314-69dd-4125-b612-d845bc21480a",
-        "91dc8743-1a7e-4194-8e45-eef45d145060",
-        "2a3abf07-7216-42fd-8ea8-b2948a5eba9c",
-        "6bc669e0-8344-49cd-8f07-da27726a4708",
-        "c82d7e1c-2371-4439-9d6d-2f1ba3b30bab"
+        "cc97f4f3-1b73-4765-98e1-bc9ee7ffecfb",
+        "5b7bb115-526e-44d8-85e5-d9458a8ac63a",
+        "70b4bd41-86d3-4d7a-ad8e-633bcb9a872d",
+        "8b9d5e88-bfd1-43ff-9f3e-d95154df0d93",
+        "b27ef01a-9b8e-43d4-8709-e14ae5e5e9b9",
+        "58a422db-4946-493b-bef2-69552dcfb333"
       ]
     },
     {
       "number": 7,
       "track_code": null,
       "course_ids": [
-        "5383a615-7e4c-4353-9604-324b7beaf0a7",
-        "66865fa4-c17d-4915-b7c1-5be20852c56a",
-        "59b69393-9ce3-445d-9bdf-89b3bfd8740d",
-        "2e6e5a99-60fe-47c6-905f-c647b0bc13b4",
-        "f3aff5ec-e7ba-4527-958c-1711af1f1772"
+        "d1147b62-ee1e-4deb-9b9c-5117746af51b",
+        "1e3e3022-b984-4379-8732-21a82ebce1c5",
+        "d983feb2-cb25-4432-9022-aa5d989f47c6",
+        "e7672e8f-1b81-4299-b6a8-8811f33c178f",
+        "ec41f43c-3eae-4522-8462-b056be89c82d"
       ]
     },
     {
       "number": 8,
       "track_code": null,
       "course_ids": [
-        "51a1c3fe-a40f-4ade-9f14-b5919f8d718d",
-        "caca4612-f0fd-419b-9e49-51708d3864ad",
-        "c23aef84-1ab7-437b-9199-93d1a5198b72",
-        "2eb6cd6c-5a32-4afe-aeba-c1098fd80641",
-        "3e3c0b1b-2341-4844-8ffa-b9072815095e",
-        "68cf14e2-8db0-4418-a508-6897d2ff546b"
+        "8c9a1999-490e-4def-afd5-c8adff2a5680",
+        "788c891c-efde-400e-a3f3-a6e5caf14030",
+        "52f389e9-1334-4fae-90b3-a8f68611d705",
+        "e7be2848-1b59-409f-aed8-f127f572de6d",
+        "a53e4d15-b975-4b54-8a6f-15a1678d52f8",
+        "dd5a55a5-f0dd-4713-ba7f-62031e9f28c5"
       ]
     },
     {
       "number": 9,
       "track_code": null,
       "course_ids": [
-        "753450ab-4edd-4ee7-9664-6b04966be6e7",
-        "4fef0746-e889-4057-9987-1a3575bc8c45",
-        "cef639c1-ea93-4094-983b-09d535d9132d"
+        "b3c3f905-1af4-43b2-ac80-4137b7f16951",
+        "7cb18791-943c-4942-96bb-ba884db97d85",
+        "dc43a9c7-263c-4c76-b739-0411241a5cf6"
       ]
     },
     {
       "number": 10,
       "track_code": null,
       "course_ids": [
-        "351929fb-6c7c-406a-941b-1c3bf705c0ac",
-        "6d727307-93f5-4236-a0d4-1bc1800019f8"
+        "3ef483a8-1bf2-4c9f-b1ff-5904c424cc01",
+        "8b801bc7-b5c1-4661-b079-13706386a40e"
       ]
     },
     {
       "number": 11,
       "track_code": null,
       "course_ids": [
-        "9f30041b-9b2b-4742-b0ed-3dc3636aa6a2",
-        "81e26ff7-ffd0-4edd-9837-58011814a0a0"
+        "cfbd83df-70b2-4fe3-a053-f3b811f61f99",
+        "9786be78-70c2-4a44-ba47-326dbf9ba57b"
       ]
     },
     {
       "number": 12,
       "track_code": null,
       "course_ids": [
-        "47388cb6-1f72-4786-b555-76539f9c3ec4",
-        "f2670529-1a91-4563-89ca-9b02066d1ab5",
-        "ce868a63-c560-4e94-b254-31b3ae67db70",
-        "d0b2f0ba-0e82-4034-99f5-64dd6c22b1c6"
+        "f5661d2a-7fba-4079-8081-6f9b9397d8aa",
+        "24ad3fbf-0ab9-4510-82ba-f508843fd95a",
+        "cd417d00-3b65-4d9f-bb20-0c9a6534c8f7",
+        "6ae7972d-6cc6-44bc-bf5f-744f89e3b8cb"
       ]
     }
   ],
   "courses": [
     {
-      "id": "0c7e3c11-3d51-41a8-848e-0748b21cf0a1",
+      "id": "9b5960dc-3c29-4dc7-844e-24226520ac08",
       "legacy_id": 1,
       "code": "BIOL132",
       "name": "Biología Celular",
@@ -176,7 +465,7 @@
       "attrs": {}
     },
     {
-      "id": "bc19a4c8-58bf-4037-a8b6-7ef603ccb5bd",
+      "id": "104283c3-c2c3-4f59-9d3e-88d0227159f9",
       "legacy_id": 2,
       "code": "CEGHC11",
       "name": "Habilidades Comunicativas",
@@ -192,7 +481,7 @@
       "attrs": {}
     },
     {
-      "id": "9689e210-c80b-4374-804c-e3a9ad5a0948",
+      "id": "47bd4941-a71e-4625-835e-8f3a2c2e26f2",
       "legacy_id": 3,
       "code": "MAT007",
       "name": "Razonamiento Matemático Aplicado a la Medicina",
@@ -208,7 +497,7 @@
       "attrs": {}
     },
     {
-      "id": "0b0cb7c7-739d-4792-87dc-4b06b0590c11",
+      "id": "ef860b52-f97c-4211-a4d0-ed5c529e2005",
       "legacy_id": 4,
       "code": "MEDI001",
       "name": "Fundamentos de la Medicina I",
@@ -224,7 +513,7 @@
       "attrs": {}
     },
     {
-      "id": "c03a7e30-7a3f-4123-8039-a21308ba3f99",
+      "id": "52a7bbcd-a3ac-489c-acba-7fca0e7aa3ba",
       "legacy_id": 5,
       "code": "MORF335",
       "name": "Bases Morfológicas y Estructurales I",
@@ -240,7 +529,7 @@
       "attrs": {}
     },
     {
-      "id": "7ee621ab-a453-42cf-9d14-648f4171d4e9",
+      "id": "2384424a-185e-4b7e-9ca4-1a7c6e74ddd2",
       "legacy_id": 6,
       "code": "QUIM500",
       "name": "Química General y Orgánica",
@@ -256,7 +545,7 @@
       "attrs": {}
     },
     {
-      "id": "361b3d3f-b73c-43ae-837b-44868289282d",
+      "id": "45f58956-1eec-463a-a317-a8bbecc30223",
       "legacy_id": 7,
       "code": "BIOL148",
       "name": "Genética y Biología Molecular Humana",
@@ -266,15 +555,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "0c7e3c11-3d51-41a8-848e-0748b21cf0a1"
+        "course": "9b5960dc-3c29-4dc7-844e-24226520ac08"
       },
-      "prereq_raw": "BIOL132 o (BIO130 y BIO131)",
+      "prereq_raw": "BIOL132 o ( BIO130 y BIO131 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "8b7c4e46-bcab-4ab0-a866-c095e896695e",
+      "id": "ffbbc467-007f-437e-82c6-ab03cb9c59a4",
       "legacy_id": 8,
       "code": "CFIS350",
       "name": "Física Aplicada a la Medicina",
@@ -284,7 +573,7 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "9689e210-c80b-4374-804c-e3a9ad5a0948"
+        "course": "47bd4941-a71e-4625-835e-8f3a2c2e26f2"
       },
       "prereq_raw": "MAT007 o FMM007",
       "coreq_expr": null,
@@ -292,7 +581,7 @@
       "attrs": {}
     },
     {
-      "id": "b6e9443c-11e6-40de-807c-493d0d659d6c",
+      "id": "52f50b75-96cc-4f76-9b36-e19871c930b0",
       "legacy_id": 9,
       "code": "MEDI002",
       "name": "Fundamentos de la Medicina II",
@@ -302,7 +591,7 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "0b0cb7c7-739d-4792-87dc-4b06b0590c11"
+        "course": "ef860b52-f97c-4211-a4d0-ed5c529e2005"
       },
       "prereq_raw": "MEDI001 o MED016",
       "coreq_expr": null,
@@ -310,7 +599,7 @@
       "attrs": {}
     },
     {
-      "id": "44d992f5-867a-482a-ae4a-2882bb8f8abe",
+      "id": "1350739d-85d4-4889-8245-4e5360345027",
       "legacy_id": 10,
       "code": "MORF336",
       "name": "Bases Morfológicas y Estructurales II",
@@ -320,15 +609,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "c03a7e30-7a3f-4123-8039-a21308ba3f99"
+        "course": "52a7bbcd-a3ac-489c-acba-7fca0e7aa3ba"
       },
-      "prereq_raw": "MORF335 o (MOR330 y MOR331 y BIO320 y BIO321)",
+      "prereq_raw": "MORF335 o ( MOR330 y MOR331 y BIO320 y BIO321 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "f6b05a87-57e6-4b31-aa35-261cecc4486d",
+      "id": "3a5747fc-720c-4602-8ed3-e61a46ee9c08",
       "legacy_id": 11,
       "code": "SPAB305",
       "name": "Bioestadística",
@@ -338,7 +627,7 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "9689e210-c80b-4374-804c-e3a9ad5a0948"
+        "course": "47bd4941-a71e-4625-835e-8f3a2c2e26f2"
       },
       "prereq_raw": "MAT007 o FMM007",
       "coreq_expr": null,
@@ -346,7 +635,7 @@
       "attrs": {}
     },
     {
-      "id": "4a06a741-ecec-4137-951d-550f77aed2d5",
+      "id": "3ae18217-dd81-40f9-956e-1a7ab1764132",
       "legacy_id": 12,
       "code": "BIOL259",
       "name": "Microbiología y Parasitología",
@@ -356,15 +645,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "0c7e3c11-3d51-41a8-848e-0748b21cf0a1"
+        "course": "9b5960dc-3c29-4dc7-844e-24226520ac08"
       },
-      "prereq_raw": "BIOL132 o (BIO130 y BIO131)",
+      "prereq_raw": "BIOL132 o ( BIO130 y BIO131 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "041f1423-8e72-4d11-b435-4146c47768d5",
+      "id": "34f19010-db9e-4fd2-8de2-efcd1aa32fde",
       "legacy_id": 13,
       "code": "BIOL276",
       "name": "Bases Funcionales I",
@@ -377,23 +666,23 @@
         "op": "and",
         "items": [
           {
-            "course": "361b3d3f-b73c-43ae-837b-44868289282d"
+            "course": "45f58956-1eec-463a-a317-a8bbecc30223"
           },
           {
-            "course": "7ee621ab-a453-42cf-9d14-648f4171d4e9"
+            "course": "2384424a-185e-4b7e-9ca4-1a7c6e74ddd2"
           },
           {
-            "course": "8b7c4e46-bcab-4ab0-a866-c095e896695e"
+            "course": "ffbbc467-007f-437e-82c6-ab03cb9c59a4"
           }
         ]
       },
-      "prereq_raw": "(BIOL148 o (BIO148 y BIO242)) y (QUIM500 o (QUI109 y QUI024)) y (CFIS350 o FMF019)",
+      "prereq_raw": "( BIOL148 o ( BIO148 y BIO242 ) ) y ( QUIM500 o ( QUI109 y QUI024 ) ) y ( CFIS350 o FMF019 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "987dd79a-aa96-498d-8984-bd01ffdc9612",
+      "id": "5167372f-9f27-44e0-9c2c-0124ef8abbf5",
       "legacy_id": 14,
       "code": "ING119",
       "name": "Inglés I",
@@ -409,7 +698,7 @@
       "attrs": {}
     },
     {
-      "id": "e93a3063-06ea-4ee1-8483-450ad521a402",
+      "id": "619c24b2-4141-472a-a717-3318896dda7f",
       "legacy_id": 15,
       "code": "MEDI003",
       "name": "Psicología Médica",
@@ -419,15 +708,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "b6e9443c-11e6-40de-807c-493d0d659d6c"
+        "course": "52f50b75-96cc-4f76-9b36-e19871c930b0"
       },
-      "prereq_raw": "MEDI002 o (MED017 o MED121 o MED122)",
+      "prereq_raw": "MEDI002 o ( MED017 o MED121 o MED122 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "a0fd8c66-3f78-4176-8365-f018a29657a3",
+      "id": "dbc62c08-b053-4ab3-83f0-388576118ec9",
       "legacy_id": 16,
       "code": "SPAB306",
       "name": "Epidemiología",
@@ -437,7 +726,7 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "f6b05a87-57e6-4b31-aa35-261cecc4486d"
+        "course": "3a5747fc-720c-4602-8ed3-e61a46ee9c08"
       },
       "prereq_raw": "SPAB305 o MED293",
       "coreq_expr": null,
@@ -445,7 +734,7 @@
       "attrs": {}
     },
     {
-      "id": "c1d8d0c0-b978-48d8-b213-8b5010a3b02f",
+      "id": "b89001f7-f5bc-4417-afc9-56d737203ecf",
       "legacy_id": 17,
       "code": "BIOL376",
       "name": "Bases Funcionales II",
@@ -455,15 +744,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "041f1423-8e72-4d11-b435-4146c47768d5"
+        "course": "34f19010-db9e-4fd2-8de2-efcd1aa32fde"
       },
-      "prereq_raw": "BIOL276 o (BIO376 y BIO266)",
+      "prereq_raw": "BIOL276 o ( BIO376 y BIO266 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "16e54658-7cb4-4ad1-b04d-7baed78aaa9b",
+      "id": "6f96fbd4-c9e2-4722-ac6c-3faa817ce8d1",
       "legacy_id": 18,
       "code": "ING129",
       "name": "Inglés II",
@@ -473,15 +762,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "987dd79a-aa96-498d-8984-bd01ffdc9612"
+        "course": "5167372f-9f27-44e0-9c2c-0124ef8abbf5"
       },
-      "prereq_raw": "ING119 o ING111 o ING110 o ING116 o ING117 o CNT021 o (ING050 y ING051) o (FLG301 y FLG302) o (BMA281 y BMA282) o (ETU081 y ETU082)",
+      "prereq_raw": "ING119 o ING111 o ING110 o ING116 o ING117 o CNT021 o ( ING050 y ING051 ) o ( FLG301 y FLG302 ) o ( BMA281 y BMA282 ) o ( ETU081 y ETU082 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "d186d7c9-ff00-4e0f-b4ff-c32380940498",
+      "id": "39aa03a2-7c1d-47fe-b9d2-e6a0e44c07dd",
       "legacy_id": 19,
       "code": "MEDI004",
       "name": "Medicina Familiar y Comunitaria",
@@ -494,20 +783,20 @@
         "op": "and",
         "items": [
           {
-            "course": "b6e9443c-11e6-40de-807c-493d0d659d6c"
+            "course": "52f50b75-96cc-4f76-9b36-e19871c930b0"
           },
           {
-            "course": "e93a3063-06ea-4ee1-8483-450ad521a402"
+            "course": "619c24b2-4141-472a-a717-3318896dda7f"
           }
         ]
       },
-      "prereq_raw": "(MEDI002 o (MED017 o MED121 o MED122)) y (MEDI003 o MED131)",
+      "prereq_raw": "( MEDI002 o ( MED017 o MED121 o MED122 ) ) y ( MEDI003 o MED131 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "49e4e041-45fa-475a-b547-25265df74471",
+      "id": "3f64f41f-ab89-46f1-b2ab-da462858ff56",
       "legacy_id": 20,
       "code": "MEDI005",
       "name": "Medicina y Sociedad",
@@ -517,15 +806,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "b6e9443c-11e6-40de-807c-493d0d659d6c"
+        "course": "52f50b75-96cc-4f76-9b36-e19871c930b0"
       },
-      "prereq_raw": "MEDI002 o (MED017 o MED121 o MED122)",
+      "prereq_raw": "MEDI002 o ( MED017 o MED121 o MED122 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "643ab0fd-2094-44ad-9328-6ad050b7a347",
+      "id": "1621355a-1164-4688-86b5-f912c1218a90",
       "legacy_id": 21,
       "code": "SPAB307",
       "name": "Salud Pública",
@@ -535,7 +824,7 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "a0fd8c66-3f78-4176-8365-f018a29657a3"
+        "course": "dbc62c08-b053-4ab3-83f0-388576118ec9"
       },
       "prereq_raw": "SPAB306 o MED293",
       "coreq_expr": null,
@@ -543,7 +832,7 @@
       "attrs": {}
     },
     {
-      "id": "b9dfb8c4-d2f8-46f9-bfc5-7f4505a5f7c8",
+      "id": "95ac8a6a-c570-41b3-b858-12039aaec1ca",
       "legacy_id": 22,
       "code": "FARM131",
       "name": "Farmacología",
@@ -553,15 +842,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "c1d8d0c0-b978-48d8-b213-8b5010a3b02f"
+        "course": "b89001f7-f5bc-4417-afc9-56d737203ecf"
       },
-      "prereq_raw": "BIOL376 o (MED294 y BIO377)",
+      "prereq_raw": "BIOL376 o ( MED294 y BIO377 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "0e16b31b-5ad6-4a4b-aa7d-05dd7b1d1dd6",
+      "id": "5a9388cc-3ff9-4440-9d6d-97610e67f842",
       "legacy_id": 23,
       "code": "ING239",
       "name": "Inglés III",
@@ -571,15 +860,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "16e54658-7cb4-4ad1-b04d-7baed78aaa9b"
+        "course": "6f96fbd4-c9e2-4722-ac6c-3faa817ce8d1"
       },
-      "prereq_raw": "ING129 o ING121 o ING120 o ING216 o ING126 o ING134 o ING127 o CNT026 o (ETU181 y ETU182) o ING229",
+      "prereq_raw": "ING129 o ING121 o ING120 o ING216 o ING126 o ING134 o ING127 o CNT026 o ( ETU181 y ETU182 ) o ING229",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "a8894a8e-c106-4e14-ba19-6a3a759d8fb7",
+      "id": "d9b075c1-2662-4805-aa72-17ddb30df7b7",
       "legacy_id": 24,
       "code": "MEDI006",
       "name": "Semiología",
@@ -592,20 +881,20 @@
         "op": "and",
         "items": [
           {
-            "course": "b6e9443c-11e6-40de-807c-493d0d659d6c"
+            "course": "52f50b75-96cc-4f76-9b36-e19871c930b0"
           },
           {
-            "course": "c1d8d0c0-b978-48d8-b213-8b5010a3b02f"
+            "course": "b89001f7-f5bc-4417-afc9-56d737203ecf"
           }
         ]
       },
-      "prereq_raw": "MEDI002 o (MED017 o MED121 o MED122) y BIOL376",
+      "prereq_raw": "( MEDI002 o ( MED017 o MED121 o MED122 ) ) y ( BIOL376 o ( MED294 y BIO377 ) )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "da6600c5-fa02-47ce-a491-ff84e3d7d144",
+      "id": "68dc67d0-6927-41a6-bae8-566e994fbf54",
       "legacy_id": 25,
       "code": "MEDI007",
       "name": "Bases Funcionales III",
@@ -615,15 +904,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "c1d8d0c0-b978-48d8-b213-8b5010a3b02f"
+        "course": "b89001f7-f5bc-4417-afc9-56d737203ecf"
       },
-      "prereq_raw": "BIOL376 o (MED294 y BIO377)",
+      "prereq_raw": "BIOL376 o ( MED294 y BIO377 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "6efb1c65-87ba-4d82-b5ca-fb9fb4a7352b",
+      "id": "3e8577b8-9912-401d-a157-12aa304a6de6",
       "legacy_id": 26,
       "code": "MEDI0100",
       "name": "Integrador I",
@@ -636,38 +925,38 @@
         "op": "and",
         "items": [
           {
-            "course": "b6e9443c-11e6-40de-807c-493d0d659d6c"
+            "course": "52f50b75-96cc-4f76-9b36-e19871c930b0"
           },
           {
-            "course": "e93a3063-06ea-4ee1-8483-450ad521a402"
+            "course": "619c24b2-4141-472a-a717-3318896dda7f"
           },
           {
-            "course": "d186d7c9-ff00-4e0f-b4ff-c32380940498"
+            "course": "39aa03a2-7c1d-47fe-b9d2-e6a0e44c07dd"
           },
           {
-            "course": "4a06a741-ecec-4137-951d-550f77aed2d5"
+            "course": "3ae18217-dd81-40f9-956e-1a7ab1764132"
           },
           {
-            "course": "49e4e041-45fa-475a-b547-25265df74471"
+            "course": "3f64f41f-ab89-46f1-b2ab-da462858ff56"
           },
           {
-            "course": "c1d8d0c0-b978-48d8-b213-8b5010a3b02f"
+            "course": "b89001f7-f5bc-4417-afc9-56d737203ecf"
           },
           {
-            "course": "44d992f5-867a-482a-ae4a-2882bb8f8abe"
+            "course": "1350739d-85d4-4889-8245-4e5360345027"
           },
           {
-            "course": "643ab0fd-2094-44ad-9328-6ad050b7a347"
+            "course": "1621355a-1164-4688-86b5-f912c1218a90"
           }
         ]
       },
-      "prereq_raw": "(MEDI002 o (MED017 o MED121 o MED122)) y (MEDI003 o MED131) y (MEDI004 o MED292) y (BIOL259 o (BIO250 y BIO251)) y (MEDI005 o (MED131 o HUF124)) y (BIOL376 o (MED294 y BIO377)) y (MORF336 o (MOR332 y MOR333)) y (SPAB307 o MED292)",
+      "prereq_raw": "( MEDI002 o ( MED017 o MED121 o MED122 ) ) y ( MEDI003 o MED131 ) y ( MEDI004 o MED292 ) y ( BIOL259 o ( BIO250 y BIO251 ) ) y ( MEDI005 o ( MED131 o HUF124 ) ) y ( BIOL376 o ( MED294 y BIO377 ) ) y ( MORF336 o ( MOR332 y MOR333 ) ) y ( SPAB307 o MED292 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "23325c11-ec80-4315-9535-ffa19ddb2b34",
+      "id": "cc97f4f3-1b73-4765-98e1-bc9ee7ffecfb",
       "legacy_id": 27,
       "code": "ING249",
       "name": "Inglés IV",
@@ -677,15 +966,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "0e16b31b-5ad6-4a4b-aa7d-05dd7b1d1dd6"
+        "course": "5a9388cc-3ff9-4440-9d6d-97610e67f842"
       },
-      "prereq_raw": "ING239 o ING210 o ING216 o ING224 o ING126 o CNT126 o (ETU281 y ETU282) o ING217",
+      "prereq_raw": "ING239 o ING210 o ING216 o ING224 o ING126 o CNT126 o ( ETU281 y ETU282 ) o ING217",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "00ec5314-69dd-4125-b612-d845bc21480a",
+      "id": "5b7bb115-526e-44d8-85e5-d9458a8ac63a",
       "legacy_id": 28,
       "code": "MEDI008",
       "name": "Ética Médica",
@@ -695,15 +984,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "b6e9443c-11e6-40de-807c-493d0d659d6c"
+        "course": "52f50b75-96cc-4f76-9b36-e19871c930b0"
       },
-      "prereq_raw": "MEDI002 o (MED017 o MED121 o MED122)",
+      "prereq_raw": "MEDI002 o ( MED017 o MED121 o MED122 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "91dc8743-1a7e-4194-8e45-eef45d145060",
+      "id": "70b4bd41-86d3-4d7a-ad8e-633bcb9a872d",
       "legacy_id": 29,
       "code": "MEDI009",
       "name": "Clínica Médico Quirúrgica I",
@@ -713,15 +1002,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "da6600c5-fa02-47ce-a491-ff84e3d7d144"
+        "course": "68dc67d0-6927-41a6-bae8-566e994fbf54"
       },
-      "prereq_raw": "MEDI007 o (MED260 y MED295 y MED257)",
+      "prereq_raw": "MEDI007 o ( MED260 y MED295 y MED257 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "2a3abf07-7216-42fd-8ea8-b2948a5eba9c",
+      "id": "8b9d5e88-bfd1-43ff-9f3e-d95154df0d93",
       "legacy_id": 30,
       "code": "MEDI010",
       "name": "Neurología",
@@ -731,15 +1020,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "da6600c5-fa02-47ce-a491-ff84e3d7d144"
+        "course": "68dc67d0-6927-41a6-bae8-566e994fbf54"
       },
-      "prereq_raw": "MEDI007 o (MED260 y MED295 y MED257)",
+      "prereq_raw": "MEDI007 o ( MED260 y MED295 y MED257 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "6bc669e0-8344-49cd-8f07-da27726a4708",
+      "id": "b27ef01a-9b8e-43d4-8709-e14ae5e5e9b9",
       "legacy_id": 31,
       "code": "MEDI011",
       "name": "Métodos de Investigación",
@@ -749,7 +1038,7 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "f6b05a87-57e6-4b31-aa35-261cecc4486d"
+        "course": "3a5747fc-720c-4602-8ed3-e61a46ee9c08"
       },
       "prereq_raw": "SPAB305 o MED293",
       "coreq_expr": null,
@@ -757,7 +1046,7 @@
       "attrs": {}
     },
     {
-      "id": "c82d7e1c-2371-4439-9d6d-2f1ba3b30bab",
+      "id": "58a422db-4946-493b-bef2-69552dcfb333",
       "legacy_id": 32,
       "code": "SPAB308",
       "name": "Gestión en Salud",
@@ -770,20 +1059,20 @@
         "op": "and",
         "items": [
           {
-            "course": "643ab0fd-2094-44ad-9328-6ad050b7a347"
+            "course": "1621355a-1164-4688-86b5-f912c1218a90"
           },
           {
-            "course": "b9dfb8c4-d2f8-46f9-bfc5-7f4505a5f7c8"
+            "course": "95ac8a6a-c570-41b3-b858-12039aaec1ca"
           }
         ]
       },
-      "prereq_raw": "(SPAB307 o MED292) y (FARM131 o BIO288)",
+      "prereq_raw": "( SPAB307 o MED292 ) y ( FARM131 o BIO288 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "5383a615-7e4c-4353-9604-324b7beaf0a7",
+      "id": "d1147b62-ee1e-4deb-9b9c-5117746af51b",
       "legacy_id": 33,
       "code": "MEDI012",
       "name": "Clínica Médico Quirúrgica II",
@@ -793,15 +1082,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "91dc8743-1a7e-4194-8e45-eef45d145060"
+        "course": "70b4bd41-86d3-4d7a-ad8e-633bcb9a872d"
       },
-      "prereq_raw": "MEDI009 o (MED257 y MED249)",
+      "prereq_raw": "MEDI009 o ( MED257 y MED249 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "66865fa4-c17d-4915-b7c1-5be20852c56a",
+      "id": "1e3e3022-b984-4379-8732-21a82ebce1c5",
       "legacy_id": 34,
       "code": "MEDI013",
       "name": "Dermatología",
@@ -811,15 +1100,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "91dc8743-1a7e-4194-8e45-eef45d145060"
+        "course": "70b4bd41-86d3-4d7a-ad8e-633bcb9a872d"
       },
-      "prereq_raw": "MEDI009 o (MED257 y MED249)",
+      "prereq_raw": "MEDI009 o ( MED257 y MED249 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "59b69393-9ce3-445d-9bdf-89b3bfd8740d",
+      "id": "d983feb2-cb25-4432-9022-aa5d989f47c6",
       "legacy_id": 35,
       "code": "MEDI014",
       "name": "Otorrinolaringología",
@@ -829,15 +1118,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "91dc8743-1a7e-4194-8e45-eef45d145060"
+        "course": "70b4bd41-86d3-4d7a-ad8e-633bcb9a872d"
       },
-      "prereq_raw": "MEDI009 o (MED257 y MED249)",
+      "prereq_raw": "MEDI009 o ( MED257 y MED249 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "2e6e5a99-60fe-47c6-905f-c647b0bc13b4",
+      "id": "e7672e8f-1b81-4299-b6a8-8811f33c178f",
       "legacy_id": 36,
       "code": "MEDI015",
       "name": "Psiquiatría",
@@ -847,7 +1136,7 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "e93a3063-06ea-4ee1-8483-450ad521a402"
+        "course": "619c24b2-4141-472a-a717-3318896dda7f"
       },
       "prereq_raw": "MEDI003 o MED131",
       "coreq_expr": null,
@@ -855,7 +1144,7 @@
       "attrs": {}
     },
     {
-      "id": "f3aff5ec-e7ba-4527-958c-1711af1f1772",
+      "id": "ec41f43c-3eae-4522-8462-b056be89c82d",
       "legacy_id": 37,
       "code": "MEDI016",
       "name": "Medicina Basada en la Evidencia",
@@ -865,15 +1154,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "6bc669e0-8344-49cd-8f07-da27726a4708"
+        "course": "b27ef01a-9b8e-43d4-8709-e14ae5e5e9b9"
       },
-      "prereq_raw": "MEDI011 o (MED278 y MED279)",
+      "prereq_raw": "MEDI011 o ( MED278 y MED279 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "51a1c3fe-a40f-4ade-9f14-b5919f8d718d",
+      "id": "8c9a1999-490e-4def-afd5-c8adff2a5680",
       "legacy_id": 38,
       "code": "CEGPC13",
       "name": "Pensamiento Crítico",
@@ -889,7 +1178,7 @@
       "attrs": {}
     },
     {
-      "id": "caca4612-f0fd-419b-9e49-51708d3864ad",
+      "id": "788c891c-efde-400e-a3f3-a6e5caf14030",
       "legacy_id": 39,
       "code": "MEDI017",
       "name": "Clínica Médico Quirúrgica III",
@@ -899,15 +1188,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "5383a615-7e4c-4353-9604-324b7beaf0a7"
+        "course": "d1147b62-ee1e-4deb-9b9c-5117746af51b"
       },
-      "prereq_raw": "MEDI012 o (MED296 y MED287 y MED257)",
+      "prereq_raw": "MEDI012 o ( MED296 y MED287 y MED257 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "c23aef84-1ab7-437b-9199-93d1a5198b72",
+      "id": "52f389e9-1334-4fae-90b3-a8f68611d705",
       "legacy_id": 40,
       "code": "MEDI018",
       "name": "Traumatología y Ortopedia",
@@ -917,15 +1206,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "5383a615-7e4c-4353-9604-324b7beaf0a7"
+        "course": "d1147b62-ee1e-4deb-9b9c-5117746af51b"
       },
-      "prereq_raw": "MEDI012 o (MED296 y MED287 y MED257)",
+      "prereq_raw": "MEDI012 o ( MED296 y MED287 y MED257 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "2eb6cd6c-5a32-4afe-aeba-c1098fd80641",
+      "id": "e7be2848-1b59-409f-aed8-f127f572de6d",
       "legacy_id": 41,
       "code": "MEDI019",
       "name": "Oftalmología",
@@ -935,15 +1224,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "5383a615-7e4c-4353-9604-324b7beaf0a7"
+        "course": "d1147b62-ee1e-4deb-9b9c-5117746af51b"
       },
-      "prereq_raw": "MEDI012 o (MED296 y MED287 y MED257)",
+      "prereq_raw": "MEDI012 o ( MED296 y MED287 y MED257 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "3e3c0b1b-2341-4844-8ffa-b9072815095e",
+      "id": "a53e4d15-b975-4b54-8a6f-15a1678d52f8",
       "legacy_id": 42,
       "code": "MEDI020",
       "name": "Urología",
@@ -953,15 +1242,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "5383a615-7e4c-4353-9604-324b7beaf0a7"
+        "course": "d1147b62-ee1e-4deb-9b9c-5117746af51b"
       },
-      "prereq_raw": "MEDI012 o (MED296 y MED287 y MED257)",
+      "prereq_raw": "MEDI012 o ( MED296 y MED287 y MED257 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "68cf14e2-8db0-4418-a508-6897d2ff546b",
+      "id": "dd5a55a5-f0dd-4713-ba7f-62031e9f28c5",
       "legacy_id": 43,
       "code": "MEDI021",
       "name": "Medicina Legal y Forense",
@@ -971,15 +1260,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "5383a615-7e4c-4353-9604-324b7beaf0a7"
+        "course": "d1147b62-ee1e-4deb-9b9c-5117746af51b"
       },
-      "prereq_raw": "MEDI012 o (MED296 y MED287 y MED257)",
+      "prereq_raw": "MEDI012 o ( MED296 y MED287 y MED257 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "753450ab-4edd-4ee7-9664-6b04966be6e7",
+      "id": "b3c3f905-1af4-43b2-ac80-4137b7f16951",
       "legacy_id": 44,
       "code": "MEDI0200",
       "name": "Integrador II",
@@ -992,41 +1281,41 @@
         "op": "and",
         "items": [
           {
-            "course": "00ec5314-69dd-4125-b612-d845bc21480a"
+            "course": "5b7bb115-526e-44d8-85e5-d9458a8ac63a"
           },
           {
-            "course": "91dc8743-1a7e-4194-8e45-eef45d145060"
+            "course": "70b4bd41-86d3-4d7a-ad8e-633bcb9a872d"
           },
           {
-            "course": "2a3abf07-7216-42fd-8ea8-b2948a5eba9c"
+            "course": "8b9d5e88-bfd1-43ff-9f3e-d95154df0d93"
           },
           {
-            "course": "5383a615-7e4c-4353-9604-324b7beaf0a7"
+            "course": "d1147b62-ee1e-4deb-9b9c-5117746af51b"
           },
           {
-            "course": "2e6e5a99-60fe-47c6-905f-c647b0bc13b4"
+            "course": "e7672e8f-1b81-4299-b6a8-8811f33c178f"
           },
           {
-            "course": "caca4612-f0fd-419b-9e49-51708d3864ad"
+            "course": "788c891c-efde-400e-a3f3-a6e5caf14030"
           },
           {
-            "course": "c23aef84-1ab7-437b-9199-93d1a5198b72"
+            "course": "52f389e9-1334-4fae-90b3-a8f68611d705"
           },
           {
-            "course": "c82d7e1c-2371-4439-9d6d-2f1ba3b30bab"
+            "course": "58a422db-4946-493b-bef2-69552dcfb333"
           },
           {
-            "course": "f3aff5ec-e7ba-4527-958c-1711af1f1772"
+            "course": "ec41f43c-3eae-4522-8462-b056be89c82d"
           }
         ]
       },
-      "prereq_raw": "(MEDI008 o (MED258 y MED259)) y (MEDI009 o (MED257 y MED249)) y (MEDI010 o MED244) y (MEDI012 o (MED296 y MED287 y MED257)) y (MEDI015 o MED245) y (MEDI017 o (MED296 o MED287 o MED257)) y (MEDI018 o MED296) y SPAB308 y MEDI016",
+      "prereq_raw": "( MEDI008 o ( MED258 y MED259 ) ) y ( MEDI009 o ( MED257 y MED249 ) ) y ( MEDI010 o MED244 ) y ( MEDI012 o ( MED296 y MED287 y MED257 ) ) y ( MEDI015 o MED245 ) y ( MEDI017 o ( MED296 o MED287 o MED257 ) ) y ( MEDI018 o MED296 ) y SPAB308 y MEDI016",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "4fef0746-e889-4057-9987-1a3575bc8c45",
+      "id": "7cb18791-943c-4942-96bb-ba884db97d85",
       "legacy_id": 45,
       "code": "MEDI022",
       "name": "Pediatría y Cirugía Infantil",
@@ -1036,15 +1325,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "caca4612-f0fd-419b-9e49-51708d3864ad"
+        "course": "788c891c-efde-400e-a3f3-a6e5caf14030"
       },
-      "prereq_raw": "MEDI017 o (MED296 o MED287 o MED257)",
+      "prereq_raw": "MEDI017 o ( MED296 o MED287 o MED257 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "cef639c1-ea93-4094-983b-09d535d9132d",
+      "id": "dc43a9c7-263c-4c76-b739-0411241a5cf6",
       "legacy_id": 46,
       "code": "MEDI023",
       "name": "Obstetricia y Ginecología",
@@ -1054,15 +1343,15 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "caca4612-f0fd-419b-9e49-51708d3864ad"
+        "course": "788c891c-efde-400e-a3f3-a6e5caf14030"
       },
-      "prereq_raw": "MEDI017 o (MED296 o MED287 o MED257)",
+      "prereq_raw": "MEDI017 o ( MED296 o MED287 o MED257 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
     },
     {
-      "id": "351929fb-6c7c-406a-941b-1c3bf705c0ac",
+      "id": "3ef483a8-1bf2-4c9f-b1ff-5904c424cc01",
       "legacy_id": 47,
       "code": "MEDI024",
       "name": "Internado de Pediatría",
@@ -1072,7 +1361,7 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "4fef0746-e889-4057-9987-1a3575bc8c45"
+        "course": "7cb18791-943c-4942-96bb-ba884db97d85"
       },
       "prereq_raw": "MEDI022 o MED297",
       "coreq_expr": null,
@@ -1080,7 +1369,7 @@
       "attrs": {}
     },
     {
-      "id": "6d727307-93f5-4236-a0d4-1bc1800019f8",
+      "id": "8b801bc7-b5c1-4661-b079-13706386a40e",
       "legacy_id": 48,
       "code": "MEDI025",
       "name": "Internado de Obstetricia y Ginecología",
@@ -1090,7 +1379,7 @@
       "track_code": null,
       "prereq_status": "known",
       "prereq_expr": {
-        "course": "cef639c1-ea93-4094-983b-09d535d9132d"
+        "course": "dc43a9c7-263c-4c76-b739-0411241a5cf6"
       },
       "prereq_raw": "MEDI023 o MED298",
       "coreq_expr": null,
@@ -1098,7 +1387,7 @@
       "attrs": {}
     },
     {
-      "id": "9f30041b-9b2b-4742-b0ed-3dc3636aa6a2",
+      "id": "cfbd83df-70b2-4fe3-a053-f3b811f61f99",
       "legacy_id": 49,
       "code": "MEDI026",
       "name": "Internado de Cirugía",
@@ -1114,7 +1403,7 @@
       "attrs": {}
     },
     {
-      "id": "81e26ff7-ffd0-4edd-9837-58011814a0a0",
+      "id": "9786be78-70c2-4a44-ba47-326dbf9ba57b",
       "legacy_id": 50,
       "code": "MEDI027",
       "name": "Internado de Medicina Interna",
@@ -1130,7 +1419,7 @@
       "attrs": {}
     },
     {
-      "id": "47388cb6-1f72-4786-b555-76539f9c3ec4",
+      "id": "f5661d2a-7fba-4079-8081-6f9b9397d8aa",
       "legacy_id": 51,
       "code": "MEDI028",
       "name": "Internado de Medicina Rural y Comunitaria",
@@ -1146,7 +1435,7 @@
       "attrs": {}
     },
     {
-      "id": "f2670529-1a91-4563-89ca-9b02066d1ab5",
+      "id": "24ad3fbf-0ab9-4510-82ba-f508843fd95a",
       "legacy_id": 52,
       "code": "MEDI029",
       "name": "Internado Psiquiatría",
@@ -1162,7 +1451,7 @@
       "attrs": {}
     },
     {
-      "id": "ce868a63-c560-4e94-b254-31b3ae67db70",
+      "id": "cd417d00-3b65-4d9f-bb20-0c9a6534c8f7",
       "legacy_id": 53,
       "code": "MEDI030",
       "name": "Internado Electivo",
@@ -1178,7 +1467,7 @@
       "attrs": {}
     },
     {
-      "id": "d0b2f0ba-0e82-4034-99f5-64dd6c22b1c6",
+      "id": "6ae7972d-6cc6-44bc-bf5f-744f89e3b8cb",
       "legacy_id": 54,
       "code": "MEDI0300",
       "name": "Integrador III",
@@ -1191,32 +1480,32 @@
         "op": "and",
         "items": [
           {
-            "course": "d186d7c9-ff00-4e0f-b4ff-c32380940498"
+            "course": "39aa03a2-7c1d-47fe-b9d2-e6a0e44c07dd"
           },
           {
-            "course": "da6600c5-fa02-47ce-a491-ff84e3d7d144"
+            "course": "68dc67d0-6927-41a6-bae8-566e994fbf54"
           },
           {
-            "course": "a0fd8c66-3f78-4176-8365-f018a29657a3"
+            "course": "dbc62c08-b053-4ab3-83f0-388576118ec9"
           },
           {
-            "course": "643ab0fd-2094-44ad-9328-6ad050b7a347"
+            "course": "1621355a-1164-4688-86b5-f912c1218a90"
           },
           {
-            "course": "351929fb-6c7c-406a-941b-1c3bf705c0ac"
+            "course": "3ef483a8-1bf2-4c9f-b1ff-5904c424cc01"
           },
           {
-            "course": "6d727307-93f5-4236-a0d4-1bc1800019f8"
+            "course": "8b801bc7-b5c1-4661-b079-13706386a40e"
           },
           {
-            "course": "9f30041b-9b2b-4742-b0ed-3dc3636aa6a2"
+            "course": "cfbd83df-70b2-4fe3-a053-f3b811f61f99"
           },
           {
-            "course": "81e26ff7-ffd0-4edd-9837-58011814a0a0"
+            "course": "9786be78-70c2-4a44-ba47-326dbf9ba57b"
           }
         ]
       },
-      "prereq_raw": "(MEDI004 o MED292) y (MEDI007 o (MED260 y MED295 y MED257)) y (SPAB306 o MED293) y (SPAB307 o MED292) y (MEDI024 o MED374) y (MEDI025 o MED376) y (MEDI026 o MED375) y (MEDI027 o MED377)",
+      "prereq_raw": "( MEDI004 o MED292 ) y ( MEDI007 o ( MED260 y MED295 y MED257 ) ) ) y ( SPAB306 o MED293 ) y ( SPAB307 o MED292 ) y ( MEDI024 o MED374 ) y ( MEDI025 o MED376 ) y ( MEDI026 o MED375 ) y ( MEDI027 o MED377 )",
       "coreq_expr": null,
       "coreq_raw": null,
       "attrs": {}
