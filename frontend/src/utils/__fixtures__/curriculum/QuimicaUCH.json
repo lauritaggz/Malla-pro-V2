@@ -26,7 +26,7 @@
     "is_current": true,
     "source_type": "legacy_json",
     "source_url": "/mallas/QuimicaUCH.json",
-    "source_note": "Imported from frontend/public/mallas/QuimicaUCH.json",
+    "source_note": "Imported from frontend/public/mallas/QuimicaUCH.json. Not checked against an official document",
     "reviewed_at": null,
     "attrs": {
       "universidad": "Universidad de Chile",

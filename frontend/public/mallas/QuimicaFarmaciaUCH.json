@@ -3,6 +3,11 @@
   "universidad": "Universidad de Chile",
   "total_creditos": 330,
   "nota_codigos": "Los códigos QF001, QF002, etc. son códigos internos para el visor de mallas; la fuente oficial consultada entrega nombres, SCT, línea formativa y requisitos, pero no códigos de asignatura.",
+  "fuente_oficial": {
+    "documento": "imagen-20260428-001.webp",
+    "lectura": "revisión visual ramo por ramo",
+    "verificada": "2026-10-29"
+  },
   "semestres": [
     {
       "numero": 1,

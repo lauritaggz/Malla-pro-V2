@@ -350,12 +350,17 @@ def _source_note(stem: str, data: dict[str, Any]) -> str:
     source = data.get("fuente_oficial")
     if isinstance(source, dict) and source:
         parts = [
+            f"document {source['documento']!r}" if source.get("documento") else None,
             f"program {source['programa']}" if source.get("programa") else None,
             f"catalog {source['catalogo']}" if source.get("catalogo") else None,
             f"({source['catalogoTexto']})" if source.get("catalogoTexto") else None,
             f"reading: {source['lectura']}" if source.get("lectura") else None,
+            f"on {source['verificada']}" if source.get("verificada") else None,
         ]
         note += ". Checked against the official curriculum: " + " ".join(p for p in parts if p)
+    else:
+        # Without fuente_oficial the data was never compared with an official document.
+        note += ". Not checked against an official document"
     return note
 
 

@@ -26,10 +26,15 @@
     "is_current": true,
     "source_type": "legacy_json",
     "source_url": "/mallas/BioquimicaUCH.json",
-    "source_note": "Imported from frontend/public/mallas/BioquimicaUCH.json",
+    "source_note": "Imported from frontend/public/mallas/BioquimicaUCH.json. Checked against the official curriculum: document 'MALLA BQ - corregido (1).pdf' reading: revisión visual ramo por ramo on 2026-10-29",
     "reviewed_at": null,
     "attrs": {
-      "universidad": "Universidad de Chile"
+      "universidad": "Universidad de Chile",
+      "fuente_oficial": {
+        "lectura": "revisión visual ramo por ramo",
+        "documento": "MALLA BQ - corregido (1).pdf",
+        "verificada": "2026-10-29"
+      }
     }
   },
   "tracks": [],

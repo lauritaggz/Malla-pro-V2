@@ -178,6 +178,21 @@ Fecha: 25-10-2026. Fuente: los documentos “Malla curricular” de Banner UNAB 
 ## Universidad de Chile
 
 Se sumaron Bioquímica, Ingeniería en Alimentos, Química y Química y Farmacia. Pasan la validación sin errores y los créditos cuadran (330 SCT cada una).
-- No venía el documento oficial de estas carreras, así que no se pudieron contrastar como las de la UNAB.
+
+### Verificación del 29-10-2026 (T-010, auditoría r1 A2)
+
+Laura envió las mallas de tres carreras (carpeta "Mallas PDF"). Son los diagramas de malla de la carrera: cada ramo trae número (= `id` del JSON), nombre, SCT y requisitos por número ("R: 22 y 23"). Se revisaron ramo por ramo, mirando el documento a 200–220 ppp, contra el JSON: semestre, SCT, nombre y requisitos. Para los dos PDF se usó además una extracción automática del texto como apoyo; las diferencias que dio se revisaron una por una en la imagen y todas eran errores de la extracción, no de los datos.
+
+| Carrera | Documento | Ramos | Resultado |
+|---|---|---|---|
+| Bioquímica | `MALLA BQ - corregido (1).pdf` (PDF con texto, 1 página) | 60 | Coincide completo: semestres, SCT y requisitos. Sin correcciones |
+| Ingeniería en Alimentos | `malla ing en alimentos uch}.pdf` (PDF con texto, 1 página) | 69 | Coincide completo. "R: Semestre 10 aprobado" en 68 y 69, como en el JSON. Sin correcciones |
+| Química y Farmacia | `imagen-20260428-001.webp` (imagen) | 66 | Coincide completo en semestres, SCT y requisitos. "R: 10 semestres aprobados" en 66. Sin correcciones |
+| Química | — | 57 | **Sin contrastar**: no llegó documento |
+
+- Los electivos que el JSON deja "sin prerrequisitos" (BQ052, BQ053, BQ057, BQ058, IA062, IA067, QF059, QF065) tampoco tienen requisito en el documento: el "sin prerrequisitos" está respaldado. Los de Química (QUI043, QUI053, QUI055) siguen sin respaldo hasta tener su documento.
+- Diferencias de nombre sin efecto en reglas, que se dejaron como están para no separarse de la versión pública: QF046 dice "Operaciones Unitarias para Q&F" (documento: "QyF") y QF047 "Análisis de Medicamento…" (documento: "Medicamentos"). En Bioquímica, los colores de "ámbito" del documento no coinciden con el campo `linea` del JSON (p. ej. Biología Celular sale como ámbito investigación); `linea` es solo para mostrar y no se usa en ninguna regla.
+- Las tres mallas verificadas llevan ahora `fuente_oficial` (`documento`, `lectura`, `verificada`). Química no lo tiene, y el importador lo deja dicho en `source_note` ("Not checked against an official document"), para que el catálogo distinga las verificadas de las que no (CA-01).
+- Falta saber de dónde salieron los documentos (sitio de la facultad, secretaría de estudios): conviene anotar la URL o el origen en `fuente_oficial` cuando se sepa.
 - Tres de ellas usan códigos internos (QF001, IA001, QUI001…) porque la fuente no publica códigos; lo explica el campo `nota_codigos` de cada JSON. Esos ramos no se cruzan entre carreras, aunque Química General I sea el mismo ramo en las cuatro. Bioquímica usa BQ001…, que tampoco parece oficial (no tiene `nota_codigos`).
 - “Semestre 10 aprobado” (Práctica Profesional y Actividad Final) está en los JSON como la lista de todos los ramos anteriores (AND de ids), con el texto original en `prereq_expr`. El formato actual no tiene un requisito "semestres hasta N"; eso llega con los árboles de prerrequisitos (T-012).

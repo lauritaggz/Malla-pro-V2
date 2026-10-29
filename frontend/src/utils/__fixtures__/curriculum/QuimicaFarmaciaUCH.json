@@ -26,11 +26,16 @@
     "is_current": true,
     "source_type": "legacy_json",
     "source_url": "/mallas/QuimicaFarmaciaUCH.json",
-    "source_note": "Imported from frontend/public/mallas/QuimicaFarmaciaUCH.json",
+    "source_note": "Imported from frontend/public/mallas/QuimicaFarmaciaUCH.json. Checked against the official curriculum: document 'imagen-20260428-001.webp' reading: revisión visual ramo por ramo on 2026-10-29",
     "reviewed_at": null,
     "attrs": {
       "universidad": "Universidad de Chile",
-      "nota_codigos": "Los códigos QF001, QF002, etc. son códigos internos para el visor de mallas; la fuente oficial consultada entrega nombres, SCT, línea formativa y requisitos, pero no códigos de asignatura."
+      "nota_codigos": "Los códigos QF001, QF002, etc. son códigos internos para el visor de mallas; la fuente oficial consultada entrega nombres, SCT, línea formativa y requisitos, pero no códigos de asignatura.",
+      "fuente_oficial": {
+        "lectura": "revisión visual ramo por ramo",
+        "documento": "imagen-20260428-001.webp",
+        "verificada": "2026-10-29"
+      }
     }
   },
   "tracks": [],

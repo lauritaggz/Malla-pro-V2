@@ -2,7 +2,7 @@
 
 `frontend/public/mallas/` tiene las mallas en el formato JSON de la versión pública. El frontend las usa directamente cuando no hay API, y el backend las importa al catálogo con `uv run python -m app.scripts.import_legacy_mallas ../frontend/public/mallas`.
 
-**Estado (26-10-2026, T-010):** las 9 mallas UNAB son las verificadas contra los documentos oficiales y están las 4 de la U. de Chile. Son idénticas, byte a byte, a las que publica la versión pública (repo `Malla_Pro`, commit `543e5e6`). El detalle de cada corrección está en `docs/data/verificacion-mallas-oficiales.md`.
+**Estado (29-10-2026, T-010):** las 9 mallas UNAB son las verificadas contra los documentos oficiales y están las 4 de la U. de Chile, 3 de ellas verificadas. Las UNAB son idénticas, byte a byte, a las que publica la versión pública (repo `Malla_Pro`, commit `543e5e6`); las 3 UCH verificadas solo agregan el campo `fuente_oficial`. El detalle de cada corrección está en `docs/data/verificacion-mallas-oficiales.md`.
 
 | Archivo | Carrera | Documento oficial | Lectura |
 |---|---|---|---|
@@ -15,7 +15,12 @@
 | Med.json | Medicina | UNAB19710, 2025 | texto |
 | TM.json | Tecnología Médica | UNAB19600, 2018 | texto |
 | Psicologia.json | Psicología | UNAB11900, 2018 | texto |
-| BioquimicaUCH.json, IngenieriaAlimentosUCH.json, QuimicaUCH.json, QuimicaFarmaciaUCH.json | Bioquímica, Ing. en Alimentos, Química, Química y Farmacia (U. de Chile) | sin contrastar | códigos internos |
+| BioquimicaUCH.json | Bioquímica (U. de Chile) | `MALLA BQ - corregido (1).pdf` | revisión visual (29-10-2026) |
+| IngenieriaAlimentosUCH.json | Ingeniería en Alimentos (U. de Chile) | `malla ing en alimentos uch}.pdf` | revisión visual (29-10-2026) |
+| QuimicaFarmaciaUCH.json | Química y Farmacia (U. de Chile) | `imagen-20260428-001.webp` | revisión visual (29-10-2026) |
+| QuimicaUCH.json | Química (U. de Chile) | **sin contrastar** | — |
+
+Regla: una malla con `fuente_oficial` fue verificada contra un documento; sin `fuente_oficial`, no. El importador lo deja escrito en `source_note`.
 
 ## Campos y cómo los importa el backend
 

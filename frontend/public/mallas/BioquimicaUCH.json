@@ -2,6 +2,11 @@
   "carrera": "Bioquímica (UCH)",
   "universidad": "Universidad de Chile",
   "total_creditos": 330,
+  "fuente_oficial": {
+    "documento": "MALLA BQ - corregido (1).pdf",
+    "lectura": "revisión visual ramo por ramo",
+    "verificada": "2026-10-29"
+  },
   "semestres": [
     {
       "numero": 1,

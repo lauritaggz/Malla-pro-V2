@@ -338,7 +338,17 @@ async def test_new_top_level_fields_are_kept_verbatim(imported, db_session: Asyn
         "curriculum: program UNAB12210 catalog 202010 (PRIMER SEMESTRE 2020) reading: OCR revisado"
     )
     quimica = await _version_for(db_session, "QuimicaUCH")
-    assert quimica.source_note == "Imported from frontend/public/mallas/QuimicaUCH.json"
+    assert quimica.source_note == (
+        "Imported from frontend/public/mallas/QuimicaUCH.json. "
+        "Not checked against an official document"
+    )
+    assert "fuente_oficial" not in quimica.attrs
+    bq = await _version_for(db_session, "BioquimicaUCH")
+    assert bq.source_note == (
+        "Imported from frontend/public/mallas/BioquimicaUCH.json. Checked against the official "
+        "curriculum: document 'MALLA BQ - corregido (1).pdf' reading: revisión visual ramo por "
+        "ramo on 2026-10-29"
+    )
     assert "códigos internos" in quimica.attrs["nota_codigos"]
 
 
@@ -407,3 +417,18 @@ async def test_unknown_top_level_key_is_kept_and_reported(
     assert [(i.malla, i.detail) for i in unmodeled] == [
         ("Geología", "clave de primer nivel `campo_inventado`")
     ]
+
+
+async def test_every_malla_states_whether_it_was_verified(
+    imported, db_session: AsyncSession
+) -> None:
+    """CA-01: the catalog tells verified mallas from the ones never checked (only QuimicaUCH)."""
+    unverified = []
+    for p in LEGACY_PROGRAMS:
+        version = await _version_for(db_session, p.stem)
+        if "fuente_oficial" in version.attrs:
+            assert "Checked against the official curriculum" in version.source_note
+        else:
+            assert version.source_note.endswith("Not checked against an official document")
+            unverified.append(p.stem)
+    assert unverified == ["QuimicaUCH"]

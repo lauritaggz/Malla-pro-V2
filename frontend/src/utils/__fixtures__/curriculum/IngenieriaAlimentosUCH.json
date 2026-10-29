@@ -26,11 +26,16 @@
     "is_current": true,
     "source_type": "legacy_json",
     "source_url": "/mallas/IngenieriaAlimentosUCH.json",
-    "source_note": "Imported from frontend/public/mallas/IngenieriaAlimentosUCH.json",
+    "source_note": "Imported from frontend/public/mallas/IngenieriaAlimentosUCH.json. Checked against the official curriculum: document 'malla ing en alimentos uch}.pdf' reading: revisión visual ramo por ramo on 2026-10-29",
     "reviewed_at": null,
     "attrs": {
       "universidad": "Universidad de Chile",
-      "nota_codigos": "Los códigos IA001, IA002, etc. son códigos internos para el visor de mallas; el PDF oficial usado como fuente muestra número de asignatura, nombre, SCT, línea formativa y requisitos, pero no códigos oficiales de asignatura."
+      "nota_codigos": "Los códigos IA001, IA002, etc. son códigos internos para el visor de mallas; el PDF oficial usado como fuente muestra número de asignatura, nombre, SCT, línea formativa y requisitos, pero no códigos oficiales de asignatura.",
+      "fuente_oficial": {
+        "lectura": "revisión visual ramo por ramo",
+        "documento": "malla ing en alimentos uch}.pdf",
+        "verificada": "2026-10-29"
+      }
     }
   },
   "tracks": [],
