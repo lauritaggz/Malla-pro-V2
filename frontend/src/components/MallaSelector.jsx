@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowLeft, BookMarked, ChevronRight, Moon, Search, Sun } from "lucide-react";
+import { selectionFromListing } from "../utils/mallasLoader";
 
 const AREA_ORDER = ["Ingeniería", "Salud", "Ciencias", "Ciencias sociales"];
 const UNI_ORDER = ["Universidad Andrés Bello", "Universidad de Chile"];
@@ -79,7 +80,7 @@ export default function MallaSelector({
     return () => window.removeEventListener("keydown", onKey);
   }, []);
 
-  const pick = (m) => onSelect({ nombre: m.nombre, url: m.url }, m.universidad);
+  const pick = (m) => onSelect(selectionFromListing(m), m.universidad);
 
   const onInputKey = (e) => {
     if (e.key === "ArrowDown") {

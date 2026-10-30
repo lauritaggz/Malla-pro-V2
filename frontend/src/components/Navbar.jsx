@@ -7,7 +7,7 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 import GooeyNav from "./GooeyNav";
 import AppSettingsPanel from "./AppSettingsPanel";
-import { isUniversidadDeChile, supportsTomaDeRamos } from "../utils/mallasLoader";
+import { supportsTomaDeRamos, universityLabel } from "../utils/mallasLoader";
 
 function NavBtn({ onClick, label, active, children, amber }) {
   return (
@@ -155,7 +155,7 @@ export default function Navbar({
     return () => document.removeEventListener("mousedown", handler);
   }, []);
 
-  const uni = isUniversidadDeChile(mallaSeleccionada) ? "U. de Chile" : "UNAB";
+  const uni = universityLabel(mallaSeleccionada);
 
   return (
     <>

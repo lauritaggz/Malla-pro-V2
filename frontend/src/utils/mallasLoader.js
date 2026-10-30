@@ -13,6 +13,28 @@ export function isUniversidadDeChile(malla) {
 }
 
 /**
+ * Etiqueta de universidad para el riel, la barra superior y el encabezado de la malla.
+ * @param {{ universidad?: string, url?: string } | null | undefined} malla
+ * @param {"short" | "long"} [size]
+ */
+export function universityLabel(malla, size = "short") {
+  if (isUniversidadDeChile(malla)) return size === "long" ? "Universidad de Chile" : "U. de Chile";
+  return "UNAB";
+}
+
+/**
+ * Lo que se guarda al elegir una malla del selector. Conserva careerKey y programId:
+ * de careerKey sale la clave del avance guardado de las mallas que vienen de la API.
+ * @param {{ nombre: string, url: string, careerKey?: string, programId?: string }} malla
+ */
+export function selectionFromListing(malla) {
+  const out = { nombre: malla.nombre, url: malla.url };
+  if (malla.careerKey) out.careerKey = malla.careerKey;
+  if (malla.programId) out.programId = malla.programId;
+  return out;
+}
+
+/**
  * Toma de ramos / programación académica solo está disponible para UNAB.
  * @param {{ universidad?: string, url?: string } | null | undefined} malla
  */

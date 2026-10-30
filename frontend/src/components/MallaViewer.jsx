@@ -29,7 +29,7 @@ import {
   writeAcademicProgress,
 } from "../utils/academicProgressStorage";
 import { getUserSafeMessage, normalizeAppError } from "../utils/appErrors";
-import { fetchMallaJson, isUniversidadDeChile, mapMallaData } from "../utils/mallasLoader";
+import { fetchMallaJson, mapMallaData, universityLabel } from "../utils/mallasLoader";
 
 const MallaViewer = ({
   mallaSeleccionada,
@@ -1312,7 +1312,7 @@ const MallaViewer = ({
 
   const inspectorOpen = !isMobileView && !!selectedCurso && !fullscreenMalla;
   const visibleSemesters = getVisibleSemesters();
-  const uni = isUniversidadDeChile(mallaSeleccionada) ? "Universidad de Chile" : "UNAB";
+  const uni = universityLabel(mallaSeleccionada, "long");
 
   return (
     <div

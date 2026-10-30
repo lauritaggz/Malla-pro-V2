@@ -4,8 +4,11 @@ import {
   isUniversidadDeChile,
   listarMallas,
   resetCatalogCache,
+  selectionFromListing,
   supportsTomaDeRamos,
+  universityLabel,
 } from "./mallasLoader.js";
+import { getCareerId } from "./storageKeys.js";
 import { normalizeInstitution, validateCourseCompatibility } from "./shareCourseConfig.js";
 
 const UCH_URLS = [
@@ -91,5 +94,34 @@ describe("selector con la API: mismas áreas y semestres que sin API", () => {
     // Una malla que solo existe en la API no inventa área ni semestres.
     expect(nueva.area).toBeUndefined();
     expect(nueva.semestres).toBeUndefined();
+  });
+});
+
+describe("etiqueta de universidad", () => {
+  it.each(UCH_URLS)("%s se rotula U. de Chile", (url) => {
+    expect(universityLabel({ url })).toBe("U. de Chile");
+    expect(universityLabel({ url }, "long")).toBe("Universidad de Chile");
+  });
+  it.each(UNAB_URLS)("%s se rotula UNAB", (url) => {
+    expect(universityLabel({ url })).toBe("UNAB");
+    expect(universityLabel({ url }, "long")).toBe("UNAB");
+  });
+});
+
+describe("elegir una malla en el selector conserva su careerKey", () => {
+  it("una malla que solo existe en la API guarda el avance con su careerKey, no con el nombre", () => {
+    const listed = [
+      { nombre: "Medicina", url: "/api/v1/programs/a1/curriculum", careerKey: "uch-medicina", programId: "a1", area: "Salud", universidad: "Universidad de Chile", uni: {} },
+      { nombre: "Medicina", url: "/api/v1/programs/b2/curriculum", careerKey: "uv-medicina", programId: "b2", area: "Salud", universidad: "Universidad de Valparaíso", uni: {} },
+    ];
+    const picked = listed.map(selectionFromListing);
+    expect(picked[0]).toEqual({ nombre: "Medicina", url: "/api/v1/programs/a1/curriculum", careerKey: "uch-medicina", programId: "a1" });
+    expect(picked.map(getCareerId)).toEqual(["uch-medicina", "uv-medicina"]);
+  });
+
+  it("una malla legada sin careerKey sigue usando la clave de su URL", () => {
+    const picked = selectionFromListing({ nombre: "Ingeniería Civil Informática", url: "/mallas/CInf.json", area: "Ingeniería" });
+    expect(picked).toEqual({ nombre: "Ingeniería Civil Informática", url: "/mallas/CInf.json" });
+    expect(getCareerId(picked)).toBe("unab-cinf");
   });
 });

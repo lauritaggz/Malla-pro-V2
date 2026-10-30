@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { ArrowLeft, BookMarked, CalendarDays, CalendarRange, GraduationCap, MessageCircle, Settings } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import AppSettingsPanel from "./AppSettingsPanel";
-import { isUniversidadDeChile, supportsTomaDeRamos } from "../utils/mallasLoader";
+import { supportsTomaDeRamos, universityLabel } from "../utils/mallasLoader";
 import { RailAccountButton } from "../features/auth/AuthMenu";
 
 function RailButton({ label, active, onClick, children, badge, tone = "ink" }) {
@@ -57,7 +57,7 @@ export default function SideRail({
     return () => document.removeEventListener("mousedown", handler);
   }, []);
 
-  const uni = isUniversidadDeChile(mallaSeleccionada) ? "U. de Chile" : "UNAB";
+  const uni = universityLabel(mallaSeleccionada);
   const showTomaDeRamos = supportsTomaDeRamos(mallaSeleccionada);
 
   const go = (view, path, guard = true) => {

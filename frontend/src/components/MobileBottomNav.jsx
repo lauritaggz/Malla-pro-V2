@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { BookMarked, CalendarDays, CalendarRange, LogIn, LogOut, MessageCircle } from "lucide-react";
 import { useAuth } from "../features/auth/useAuth";
@@ -18,7 +18,25 @@ export default function MobileBottomNav({
   const showTomaDeRamos = supportsTomaDeRamos(mallaSeleccionada);
   const { enabled, loading, user, backendUser, signInWithGoogle, signOut } = useAuth();
   const [accountOpen, setAccountOpen] = useState(false);
+  const accountRef = useRef(null);
   const showAuth = enabled && !loading;
+
+  // El menú de cuenta se cierra al tocar fuera o con Escape.
+  useEffect(() => {
+    if (!accountOpen) return undefined;
+    const onPointer = (e) => {
+      if (accountRef.current && !accountRef.current.contains(e.target)) setAccountOpen(false);
+    };
+    const onKey = (e) => {
+      if (e.key === "Escape") setAccountOpen(false);
+    };
+    document.addEventListener("pointerdown", onPointer);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("pointerdown", onPointer);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [accountOpen]);
 
   const navItems = [
     {
@@ -93,7 +111,7 @@ export default function MobileBottomNav({
         );
       })}
       {showAuth && (
-        <div className="relative flex items-center justify-center">
+        <div ref={accountRef} className="relative flex items-center justify-center">
           <button
             type="button"
             onClick={() => (user ? setAccountOpen((v) => !v) : signInWithGoogle())}

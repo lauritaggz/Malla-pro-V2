@@ -133,7 +133,7 @@ Hoy solo hay Google (ADR-0003). CU-01 pide al menos un método, así que basta. 
 - Tipo: code · Riesgo: bajo · Requisitos: NF-09 · Depende de: T-001
 - Alcance: archivos con errores de `npm run lint` en `frontend/src/`, `frontend/eslint.config.js`, `.github/workflows/ci.yml` (solo para quitar `continue-on-error` del lint y los disparadores del job `catalog-data`).
 - Criterios:
-  1. `npm run lint` termina sin errores. Hoy hay 10: variables sin usar en `App.jsx`, `Navbar.jsx`, `LandingPage.jsx` y `academicProgressStorage.js`; `react-refresh/only-export-components` en `ImportCourseConfigModal.jsx`; `Buffer` no definido en `shareCourseConfig.js`, que es un respaldo para Node y se resuelve en la configuración de ESLint o con `globalThis.Buffer`, sin cambiar el comportamiento.
+  1. `npm run lint` termina sin errores. Hoy (después de T-007) hay 8: variables sin usar en `App.jsx` (`progreso`, `cursosCursando`, `handleVerProgresoNav`), `Navbar.jsx` (`cantidadSemestres`) y `academicProgressStorage.js` (`emptyProgress`); `react-refresh/only-export-components` en `ImportCourseConfigModal.jsx`; `Buffer` no definido en `shareCourseConfig.js`, que es un respaldo para Node y se resuelve en la configuración de ESLint o con `globalThis.Buffer`, sin cambiar el comportamiento.
   2. Ningún cambio de comportamiento: si quitar una variable sin usar revela una función que se perdió (p. ej. `handleVerProgresoNav`), se reporta en el PR en vez de borrarla a ciegas.
   3. El lint pasa a ser bloqueante en CI.
   4. El job `catalog-data` también corre al agregar o quitar una etiqueta (`pull_request: types: [opened, synchronize, reopened, labeled, unlabeled]`), para que poner `type:data` después de abrir el PR no deje el CI en rojo (auditoría T-010, A12).
@@ -180,7 +180,7 @@ Hoy solo hay Google (ADR-0003). CU-01 pide al menos un método, así que basta. 
 - Tipo: code · Riesgo: medio · Requisitos: NO-01, NO-02, NO-03 · Depende de: T-001
 - Alcance: `frontend/src/utils/grades.js` (nuevo), `frontend/src/utils/gradeUtils.js`, `frontend/src/components/NotasModal.jsx`, `testdata/academic-cases/grades.json`, pruebas.
 - Criterios:
-  1. La lógica de promedio ponderado, nota necesaria y eximición sale de `NotasModal.jsx` a funciones puras, sin cambiar el resultado para los datos existentes.
+  1. La lógica de promedio ponderado, nota necesaria y eximición sale de `NotasModal.jsx` a funciones puras, sin cambiar el resultado para los datos existentes. Ojo: con T-007 (paridad con v1) la nota necesaria para eximirse se divide por lo que falta **calificar** (evaluaciones sin nota más el porcentaje sin asignar, `pesoPendiente`) y ya no solo por lo que faltaba **asignar**; ese comportamiento es el caso de referencia.
   2. Aviso si las ponderaciones no suman 100 %.
   3. Nota necesaria: informa "imposible" si no alcanza ni con 7,0 y "falta información" si hay ponderaciones desconocidas.
   4. Escala y umbral configurables (por defecto 1,0–7,0, aprueba con 4,0); redondeo documentado y probado en los bordes (3,95 / 3,949).
