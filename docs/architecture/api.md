@@ -36,6 +36,8 @@ Toda ruta que depende de `get_current_user` se registra en `backend/tests/isolat
 
 Límites: solo cuenta `get_current_user` como autenticación y solo se revisan rutas HTTP (no `app.mount` ni websockets); si se agrega algo así, hay que extender `tests/isolation/framework.py`. Tampoco se pueden expresar todavía rutas anidadas que necesiten el id de un padre creado en la prueba (por ejemplo, los intentos de un perfil): `create` devuelve un solo id y `params` solo acepta valores fijos. Hoy eso falla de forma visible; se amplía en T-021.
 
+Las rutas del equipo van en **`TEAM_ROUTES`** con los roles que permiten (`require_role`). Las pruebas comprueban que la ruta usa exactamente esos roles y que un estudiante recibe 403.
+
 `tests/isolation/test_isolation.py` falla si aparece una ruta privada sin registrar (también si la protección viene de una dependencia anidada o de las dependencias del router) o si queda registrada una ruta que ya no existe. En las pruebas, `user_a` y `user_b` son clientes autenticados con tokens falsos (`fake_firebase`), sin llamar a Google.
 
 ## Idempotencia
@@ -47,7 +49,8 @@ Los `POST` que crean recursos aceptan la cabecera `Idempotency-Key` (hay que agr
 | Método y ruta | Acceso | Tarea |
 |---|---|---|
 | `GET /api/v1/health` | pública | s01 |
-| `GET /api/v1/me` | usuario | s02 |
+| `GET /api/v1/me` | usuario | s02; T-002 cambia `is_admin` por `role` |
+| `PATCH /api/v1/admin/users/{user_id}/role` | `superadmin` | T-002. Cuerpo `{"role": "student" \| "curator" \| "superadmin"}`. 404 si no existe, 409 si un superadmin intenta quitarse su propio rol, 422 si el rol no existe. Cada cambio real queda en `audit_log`; repetir el mismo rol no cambia nada ni se audita |
 | `GET /api/v1/universities` | pública, caché 5 min | s03 |
 | `GET /api/v1/universities/{slug}/programs` | pública, caché 5 min | s03 |
 | `GET /api/v1/programs/{program_id}/curriculum` | pública, caché 5 min | s03; T-010 agrega `version.attrs` |

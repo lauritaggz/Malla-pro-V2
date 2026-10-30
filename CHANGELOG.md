@@ -4,6 +4,7 @@ Una línea por tarea terminada, la más reciente arriba: `AAAA-MM-DD · T-XXX ·
 
 ## Sin publicar
 
+- 2026-10-30 · T-002 · Roles del equipo (`student`, `curator`, `superadmin`), `require_role`, registro de auditoría, cambio de rol por API y comando `set_role`.
 - 2026-10-30 · T-004 · Pruebas de aislamiento entre usuarios: `user_a`/`user_b`, `assert_isolated` y registro obligatorio de rutas privadas.
 - 2026-10-30 · T-007 · Frontend de la V2 al día con la versión pública (Rediseño Tinta, selector, Horario, U. de Chile), con login en el riel lateral.
 - 2026-10-29 · T-010 · Mallas UNAB y de la U. de Chile (4, nuevas) verificadas contra sus documentos oficiales; `curriculum_versions.attrs`; D-01 cerrada (#2).

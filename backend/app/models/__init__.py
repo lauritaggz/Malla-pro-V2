@@ -1,3 +1,4 @@
+from app.models.audit import AuditLog
 from app.models.catalog import (
     Course,
     CourseAlias,
@@ -9,6 +10,7 @@ from app.models.catalog import (
 from app.models.user import User
 
 __all__ = [
+    "AuditLog",
     "Course",
     "CourseAlias",
     "CurriculumVersion",

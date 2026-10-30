@@ -59,6 +59,8 @@ uv run ruff check
 
 Los tests crean la base `mallapro_test` en el mismo Postgres si no existe.
 
+**Primer superadministrador:** la persona inicia sesión una vez (eso crea su cuenta) y luego, desde `backend/`, `uv run python -m app.scripts.set_role <correo> superadmin` (con Docker: `docker compose exec backend uv run --no-sync python -m app.scripts.set_role <correo> superadmin`). Queda en el registro de auditoría como acción de `cli`. Después, los roles se cambian desde la API (`PATCH /api/v1/admin/users/{id}/role`).
+
 **Login con Google (opcional):** el frontend funciona sin login. Para activarlo copia `frontend/.env.example` a `frontend/.env.local` y coloca `firebase-sa.json` (service account, ignorado por git) en `backend/`. Los tests aplican las migraciones de Alembic sobre `mallapro_test`.
 
 ## Despliegue del frontend

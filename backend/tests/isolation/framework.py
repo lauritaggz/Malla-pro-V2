@@ -1,9 +1,10 @@
 """Tools to prove that one user can never reach another user's data (NF-01, T-004).
 
-Every route that depends on `get_current_user` must be either:
+Every route that depends on `get_current_user` must be one of:
 - registered in `registry.PRIVATE_RESOURCES` (a resource owned by a user, checked with
-  `assert_isolated`), or
-- listed in `registry.SELF_SCOPED_ROUTES` (it only ever acts on the caller, like `/me`).
+  `assert_isolated`);
+- listed in `registry.SELF_SCOPED_ROUTES` (it only ever acts on the caller, like `/me`);
+- listed in `registry.TEAM_ROUTES` with the roles it allows (guarded by `require_role`, T-002).
 
 `find_unregistered_private_routes` makes a test fail as soon as a new private route is added
 without one of the two.
@@ -180,8 +181,10 @@ def find_unregistered_private_routes(
     app: FastAPI,
     resources: Iterable[PrivateResource],
     self_scoped: Iterable[RouteKey],
+    team_routes: Iterable[RouteKey] = (),
 ) -> set[RouteKey]:
-    covered = {key for r in resources for key in r.route_keys()} | set(self_scoped)
+    covered = {key for r in resources for key in r.route_keys()}
+    covered |= set(self_scoped) | set(team_routes)
     return private_route_keys(app) - covered
 
 
@@ -189,7 +192,30 @@ def find_stale_registrations(
     app: FastAPI,
     resources: Iterable[PrivateResource],
     self_scoped: Iterable[RouteKey],
+    team_routes: Iterable[RouteKey] = (),
 ) -> set[RouteKey]:
     """Registered routes that no longer exist (renamed or deleted)."""
-    registered = {key for r in resources for key in r.route_keys()} | set(self_scoped)
+    registered = {key for r in resources for key in r.route_keys()}
+    registered |= set(self_scoped) | set(team_routes)
     return registered - all_route_keys(app)
+
+
+def _role_guards(dependant: Dependant) -> list[frozenset[str]]:
+    found: list[frozenset[str]] = []
+    for dep in dependant.dependencies:
+        roles = getattr(dep.call, "required_roles", None)
+        if roles is not None:
+            found.append(frozenset(roles))
+        found += _role_guards(dep)
+    return found
+
+
+def route_role_guards(app: FastAPI) -> dict[RouteKey, frozenset[str] | None]:
+    """Roles each route requires through `require_role` (intersection if several), else None."""
+    out: dict[RouteKey, frozenset[str] | None] = {}
+    for path, methods, dependant in _effective_routes(app):
+        guards = _role_guards(dependant) if dependant is not None else []
+        allowed = frozenset.intersection(*guards) if guards else None
+        for method in methods:
+            out[(method, path)] = allowed
+    return out

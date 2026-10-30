@@ -91,6 +91,7 @@ async def client(db_session: AsyncSession) -> AsyncIterator[AsyncClient]:
 TEST_CLAIMS: dict[str, dict[str, str]] = {
     "token-user-a": {"uid": "uid-user-a", "email": "a@example.com", "name": "Usuaria A"},
     "token-user-b": {"uid": "uid-user-b", "email": "b@example.com", "name": "Usuario B"},
+    "token-user-c": {"uid": "uid-user-c", "email": "c@example.com", "name": "Usuarie C"},
 }
 
 
@@ -125,4 +126,11 @@ async def user_a(client: AsyncClient, fake_firebase: None) -> AsyncIterator[Asyn
 async def user_b(client: AsyncClient, fake_firebase: None) -> AsyncIterator[AsyncClient]:
     """HTTP client authenticated as user B."""
     async with await _authed_client("token-user-b") as c:
+        yield c
+
+
+@pytest_asyncio.fixture
+async def user_c(client: AsyncClient, fake_firebase: None) -> AsyncIterator[AsyncClient]:
+    """A third authenticated user, for role tests that need actor, target and bystander."""
+    async with await _authed_client("token-user-c") as c:
         yield c
