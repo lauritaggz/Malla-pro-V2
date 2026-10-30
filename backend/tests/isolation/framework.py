@@ -42,6 +42,11 @@ class Op:
     so it can be matched against the registry. Every path parameter is filled with the resource
     id unless `params` gives another value. In `json`, the literal "{id}" is replaced by the
     resource id, which covers the id in the body.
+
+    Limit: `params` holds fixed values and `create` returns a single id, so nested routes that
+    need the id of a parent created during the test (e.g. a profile's attempts, T-021) cannot be
+    expressed yet. Trying fails visibly (owner control or render error), never silently; extend
+    `create` to return several ids when the first nested route arrives.
     """
 
     method: str

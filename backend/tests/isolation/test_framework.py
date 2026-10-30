@@ -188,6 +188,32 @@ async def test_an_attempt_that_never_works_is_rejected(toy_clients: Any) -> None
         await assert_isolated(broken, owner, other)
 
 
+@pytest.mark.parametrize(
+    "broken",
+    [
+        Op("GET", "/notes/{note_id}", params={"note_id": "does-not-exist"}),  # wrong id
+        Op("GET", "/note/{note_id}"),  # typo in the route
+    ],
+    ids=["param-to-missing-id", "route-typo"],
+)
+async def test_an_attempt_that_404s_for_the_owner_too_is_rejected(
+    toy_clients: Any, broken: Op
+) -> None:
+    """The case behind A1: with a real leak, a probe that 404s for everyone must not pass.
+
+    The broken probe comes after a valid one, so the control has to check every attempt.
+    """
+    owner, other = toy_clients({"read"})
+    resource = PrivateResource(
+        name="toy note with a probe that never reaches the note",
+        create=_create_note,
+        read=NOTES.read,
+        attempts=(Op("PATCH", "/notes/{note_id}", json={"text": "x"}), broken),
+    )
+    with pytest.raises(AssertionError, match="control failed.*returned 404"):
+        await assert_isolated(resource, owner, other)
+
+
 def test_op_fills_every_path_parameter() -> None:
     op = Op("GET", "/profiles/{profile_id}/attempts/{attempt_id}", params={"profile_id": "p1"})
     assert op.render("a9") == ("/profiles/p1/attempts/a9", None)
