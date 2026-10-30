@@ -61,15 +61,17 @@ async def change_role(
             )
         ).all()
     }
-    target = locked.get(target_id)
-    if target is None:
-        raise UserNotFound("target user does not exist")
+    # The actor is checked first: someone who is no longer a superadmin learns nothing about
+    # which users exist (403 before 404).
     if actor is not None:
         current_actor = locked.get(actor.id)
         if current_actor is None or current_actor.role != ROLE_SUPERADMIN:
             raise ActorNotAllowed("actor is not a superadmin")
-        if current_actor.id == target.id and new_role != ROLE_SUPERADMIN:
-            raise SelfDemotion("a superadmin cannot remove their own role")
+    target = locked.get(target_id)
+    if target is None:
+        raise UserNotFound("target user does not exist")
+    if actor is not None and actor.id == target.id and new_role != ROLE_SUPERADMIN:
+        raise SelfDemotion("a superadmin cannot remove their own role")
     if target.role == new_role:
         return target, False
     old_role = target.role

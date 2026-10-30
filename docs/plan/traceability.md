@@ -6,7 +6,7 @@ Generado con `python3 tools/docs/traceability.py` desde los requerimientos y el 
 |---|---|---|---|---|
 | AD-01 | Administrar catálogo y revisión | V2.0 | T-002, T-031, T-050 | Base de permisos: `backend/tests/isolation/test_isolation.py::test_team_routes_declare_exactly_their_roles`, `::test_a_student_gets_403_on_every_team_route` (T-002; las acciones de catálogo llegan en T-031) |
 | AD-02 | Recibir y gestionar reportes | V2.0 | T-034, T-050 |  |
-| AD-03 | Gestionar roles del equipo | V2.0 | T-002, T-050 | `backend/tests/test_roles.py::test_only_a_superadmin_changes_roles`, `::test_a_superadmin_cannot_remove_their_own_role`, `::test_set_role_script_names_the_first_superadmin`, `::test_migration_maps_admins_to_superadmin_and_back` (T-002) |
+| AD-03 | Gestionar roles del equipo | V2.0 | T-002, T-050 | `backend/tests/test_roles.py::test_only_a_superadmin_changes_roles`, `::test_a_superadmin_cannot_remove_their_own_role`, `::test_set_role_script_names_the_first_superadmin`, `::test_migration_maps_admins_to_superadmin_and_back`, `::test_two_superadmins_demoting_each_other_cannot_both_win`, `::test_a_demoted_superadmin_gets_403_even_with_a_stale_user`, `::test_rows_are_locked_in_id_order`, `::test_api_answers_403_when_the_actor_lost_the_role_meanwhile`; `backend/tests/isolation/test_isolation.py::test_every_admin_route_is_a_team_route` (T-002) |
 | AD-04 | Listar y filtrar mallas | V2.1 | épica V2.1 · Mallas comunitarias y curaduría |  |
 | AD-05 | Comparar dos mallas o versiones | V2.1 | épica V2.1 · Mallas comunitarias y curaduría |  |
 | AD-06 | Editar, refinar y promover | V2.1 | épica V2.1 · Mallas comunitarias y curaduría |  |
@@ -64,7 +64,7 @@ Generado con `python3 tools/docs/traceability.py` desde los requerimientos y el 
 | NF-08 | Configuración operativa | Transversal | épica V2.1 · Importación con IA de mallas |  |
 | NF-09 | Calidad | Transversal | T-006, T-063 |  |
 | NF-10 | Privacidad en datos agregados | Transversal | T-052, épica Posterior · Sugerencias por coincidencia |  |
-| NF-11 | Registro de auditoría del equipo | Transversal | T-002, T-031, T-042 | `backend/tests/test_roles.py::test_role_change_is_audited`, `::test_setting_the_same_role_changes_nothing_and_is_not_audited`, `::test_record_audit_needs_an_actor_or_a_label` (T-002) |
+| NF-11 | Registro de auditoría del equipo | Transversal | T-002, T-031, T-042 | `backend/tests/test_roles.py::test_role_change_is_audited`, `::test_setting_the_same_role_changes_nothing_and_is_not_audited`, `::test_record_audit_needs_an_actor_or_a_label`, `::test_change_and_audit_are_saved_together_or_not_at_all` (T-002) |
 | NF-12 | Infraestructura escalable | Transversal | T-060 |  |
 | NO-01 | Registrar evaluaciones, notas y ponderaciones por intento | V2.0 | T-013, T-025 |  |
 | NO-02 | Configurar escala y calcular nota necesaria | V2.0 | T-013, T-025 |  |

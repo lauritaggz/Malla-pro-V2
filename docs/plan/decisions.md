@@ -16,4 +16,4 @@ Las cierra Laura. Una decisión técnica cerrada se registra como ADR; una de pr
 | D-10 | Mínimo de anonimato para métricas agregadas (NF-10) | p. ej. 10 usuarios | T-052 |
 | D-11 | Dónde se aloja el backend en producción | VPS con Docker Compose y Caddy | T-060 |
 | D-12 | Primer superadministrador | **Cerrada (30-10-2026, Laura):** se nombra con `uv run python -m app.scripts.set_role <correo> superadmin`; queda en `audit_log` como acción de `cli` | T-002 |
-| D-13 | Revertir la migración de roles | **Cerrada (30-10-2026, Laura):** al revertir, los curadores pasan a usuarios normales (el modelo anterior solo tenía `is_admin`). La reversión se niega si `audit_log` tiene filas, para no perder el historial | T-002 |
+| D-13 | Revertir la migración de roles | **Cerrada (30-10-2026, Laura):** al revertir, los curadores pasan a usuarios normales (el modelo anterior solo tenía `is_admin`). Además, por la auditoría de T-002 (r1, A4) y no por decisión de Laura, la reversión se niega si `audit_log` tiene filas, para no perder el historial; Laura puede confirmarlo o cambiarlo | T-002 |

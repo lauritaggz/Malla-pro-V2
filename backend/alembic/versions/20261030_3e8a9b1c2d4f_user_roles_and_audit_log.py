@@ -61,7 +61,10 @@ def upgrade() -> None:
 def downgrade() -> None:
     # Never drop the team's audit history silently (NF-11). Export it first, then empty the
     # table on purpose if the downgrade is really needed.
-    rows = op.get_bind().execute(sa.text("SELECT count(*) FROM audit_log")).scalar_one()
+    bind = op.get_bind()
+    # Lock first, so no row can be added between the count and the drop.
+    bind.execute(sa.text("LOCK TABLE audit_log IN ACCESS EXCLUSIVE MODE"))
+    rows = bind.execute(sa.text("SELECT count(*) FROM audit_log")).scalar_one()
     if rows:
         raise RuntimeError(
             f"audit_log has {rows} rows: export them and empty the table before downgrading"

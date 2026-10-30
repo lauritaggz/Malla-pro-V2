@@ -244,7 +244,7 @@ async def test_two_superadmins_demoting_each_other_cannot_both_win(
         assert not second.done(), "the second change must wait for the first one's locks"
         await s1.commit()
         with pytest.raises(ActorNotAllowed):
-            await second
+            await asyncio.wait_for(second, timeout=10)
         await s2.rollback()
 
     db_session.expire_all()
@@ -256,18 +256,76 @@ async def test_two_superadmins_demoting_each_other_cannot_both_win(
 async def test_a_demoted_superadmin_gets_403_even_with_a_stale_user(
     user_a: AsyncClient, user_b: AsyncClient, db_session: AsyncSession, test_engine: AsyncEngine
 ) -> None:
-    """The role is read under the lock, not from the User object loaded at login."""
+    """The role is read from the locked row, not from the User object loaded at login.
+
+    The actor object comes from a different session (like the one built by get_current_user),
+    so reading `actor.role` instead of the locked row would let the stale superadmin through.
+    """
     a_id = uuid.UUID((await _me(user_a))["id"])
     b_id = uuid.UUID((await _me(user_b))["id"])
     await _set_role(db_session, str(a_id), "superadmin")
     maker = async_sessionmaker(test_engine, expire_on_commit=False)
+    async with maker() as login_session:
+        stale_actor = await login_session.get(User, a_id)  # loaded while still superadmin
+    await _set_role(db_session, str(a_id), "student")
+    assert stale_actor.role == "superadmin"
     async with maker() as session:
-        stale_actor = await session.get(User, a_id)  # loaded while still superadmin
-        async with maker() as other:
-            await _set_role(other, str(a_id), "student")
         with pytest.raises(ActorNotAllowed):
             await change_role(session, target_id=b_id, new_role="curator", actor=stale_actor)
         await session.rollback()
+
+
+async def test_rows_are_locked_in_id_order(
+    user_a: AsyncClient, user_b: AsyncClient, db_session: AsyncSession, test_engine: AsyncEngine
+) -> None:
+    """Deadlock guard: change_role locks the lower id first, whoever the actor is.
+
+    Another session holds the higher-id row. change_role must already hold the lower-id row
+    while it waits, which a NOWAIT lock on that row proves.
+    """
+    a_id = uuid.UUID((await _me(user_a))["id"])
+    b_id = uuid.UUID((await _me(user_b))["id"])
+    low, high = sorted([a_id, b_id])
+    # The actor is the higher id, so "actor first" would wait without holding the lower row.
+    await _set_role(db_session, str(high), "superadmin")
+    maker = async_sessionmaker(test_engine, expire_on_commit=False)
+    lock_row = text("SELECT id FROM users WHERE id = :id FOR UPDATE NOWAIT")
+    async with maker() as holder, maker() as worker, maker() as probe:
+        await holder.execute(lock_row, {"id": high})
+        actor = await worker.get(User, high)
+        await worker.commit()
+        task = asyncio.create_task(
+            change_role(worker, target_id=low, new_role="curator", actor=actor)
+        )
+        try:
+            await asyncio.sleep(0.3)
+            assert not task.done(), "change_role must wait for the higher-id row"
+            with pytest.raises(Exception, match="could not obtain lock"):
+                await probe.execute(lock_row, {"id": low})
+        finally:
+            await probe.rollback()
+            await holder.rollback()
+            await asyncio.wait_for(task, timeout=10)
+            await worker.rollback()
+
+
+async def test_api_answers_403_when_the_actor_lost_the_role_meanwhile(
+    user_a: AsyncClient, user_b: AsyncClient, db_session: AsyncSession, monkeypatch
+) -> None:
+    """The route passes require_role, then the service finds the actor demoted: 403, not 500."""
+    from app.api.v1 import admin
+
+    actor = await _me(user_a)
+    target = await _me(user_b)
+    await _set_role(db_session, actor["id"], "superadmin")
+
+    async def demoted_meanwhile(*args, **kwargs):
+        raise ActorNotAllowed("actor is not a superadmin")
+
+    monkeypatch.setattr(admin, "change_role", demoted_meanwhile)
+    response = await user_a.patch(ROLE_URL.format(target["id"]), json={"role": "curator"})
+    assert response.status_code == 403
+    assert response.json()["detail"] == "No tienes permisos para esta acción."
 
 
 def test_require_role_rejects_unknown_role_names() -> None:
