@@ -49,7 +49,7 @@ export default function MobileBottomNav({
       }
     },
     {
-      label: "Periodo actual",
+      label: "Periodo",
       value: "periodo-actual",
       icon: <CalendarDays className="w-5.5 h-5.5" />,
       onClick: () => {
