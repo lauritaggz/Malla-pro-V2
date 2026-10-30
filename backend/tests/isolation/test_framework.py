@@ -29,7 +29,8 @@ from tests.isolation.framework import (
 )
 
 CurrentUser = Annotated[User, Depends(get_current_user)]
-LEAKS = ("read", "update", "delete", "body")
+# Leaks where the other user gets 200.
+OPEN_LEAKS = ("read", "update", "delete", "body")
 
 
 class NoteIn(BaseModel):
@@ -40,14 +41,24 @@ class ShareIn(BaseModel):
     note_id: str
 
 
-def make_notes_app(leaks: set[str]) -> FastAPI:
-    """A tiny private resource. Each name in `leaks` drops the owner check on that operation."""
+def make_notes_app(leaks: set[str] = frozenset()) -> FastAPI:  # type: ignore[assignment]
+    """A tiny private resource. `leaks` breaks it on purpose:
+
+    - "read" / "update" / "delete" / "body": that operation skips the owner check (200).
+    - "forbidden": another user gets 403 instead of 404 (reveals that the note exists).
+    - "silent_update" / "silent_delete": another user's PATCH / DELETE changes the note but
+      answers 404, as if nothing happened.
+    """
     notes: dict[str, dict[str, Any]] = {}
     app = FastAPI()
 
-    def find(note_id: str, user: User, leak: str) -> dict[str, Any]:
+    def find(note_id: str, user: User, op: str) -> dict[str, Any]:
         note = notes.get(note_id)
-        if note is None or (leak not in leaks and note["owner"] != user.id):
+        if note is None:
+            raise HTTPException(status_code=404, detail="No existe")
+        if note["owner"] != user.id and op not in leaks:
+            if "forbidden" in leaks:
+                raise HTTPException(status_code=403, detail="No es tuya")
             raise HTTPException(status_code=404, detail="No existe")
         return note
 
@@ -64,11 +75,16 @@ def make_notes_app(leaks: set[str]) -> FastAPI:
 
     @app.patch("/notes/{note_id}")
     async def update(note_id: str, body: NoteIn, user: CurrentUser) -> dict[str, str]:
+        if "silent_update" in leaks and note_id in notes:
+            notes[note_id]["text"] = body.text
         find(note_id, user, "update")["text"] = body.text
         return {"ok": "yes"}
 
     @app.delete("/notes/{note_id}")
     async def delete(note_id: str, user: CurrentUser) -> dict[str, str]:
+        if "silent_delete" in leaks and note_id in notes and notes[note_id]["owner"] != user.id:
+            del notes[note_id]
+            raise HTTPException(status_code=404, detail="No existe")
         find(note_id, user, "delete")
         del notes[note_id]
         return {"ok": "yes"}
@@ -87,15 +103,16 @@ async def _create_note(owner: AsyncClient) -> str:
     return response.json()["id"]
 
 
+# Path parameter named note_id (not "id"): the Op uses the declared route, as the registry needs.
 NOTES = PrivateResource(
     name="toy note",
     create=_create_note,
-    read=Op("GET", "/notes/{id}"),
+    read=Op("GET", "/notes/{note_id}"),
     attempts=(
-        Op("GET", "/notes/{id}"),
-        Op("PATCH", "/notes/{id}", json={"text": "cambiada por otro"}),
+        Op("GET", "/notes/{note_id}"),
+        Op("PATCH", "/notes/{note_id}", json={"text": "cambiada por otro"}),
         Op("POST", "/notes/share", json={"note_id": "{id}"}),
-        Op("DELETE", "/notes/{id}"),
+        Op("DELETE", "/notes/{note_id}"),
     ),
     create_routes=(("POST", "/notes"),),
 )
@@ -133,11 +150,60 @@ async def test_isolated_resource_passes(toy_clients: Any) -> None:
     await assert_isolated(NOTES, owner, other)
 
 
-@pytest.mark.parametrize("leak", LEAKS)
+@pytest.mark.parametrize("leak", OPEN_LEAKS)
 async def test_each_kind_of_leak_is_caught(toy_clients: Any, leak: str) -> None:
     owner, other = toy_clients({leak})
     with pytest.raises(AssertionError, match="by another user returned 200"):
         await assert_isolated(NOTES, owner, other)
+
+
+async def test_403_instead_of_404_is_caught(toy_clients: Any) -> None:
+    owner, other = toy_clients({"forbidden"})
+    with pytest.raises(AssertionError, match="by another user returned 403, expected 404"):
+        await assert_isolated(NOTES, owner, other)
+
+
+async def test_silent_change_is_caught(toy_clients: Any) -> None:
+    owner, other = toy_clients({"silent_update"})
+    with pytest.raises(AssertionError, match="another user changed the resource"):
+        await assert_isolated(NOTES, owner, other)
+
+
+async def test_silent_delete_is_caught(toy_clients: Any) -> None:
+    owner, other = toy_clients({"silent_delete"})
+    with pytest.raises(AssertionError, match="the resource disappeared"):
+        await assert_isolated(NOTES, owner, other)
+
+
+async def test_an_attempt_that_never_works_is_rejected(toy_clients: Any) -> None:
+    """A 404 from a route that fails for everyone proves nothing: the owner control catches it."""
+    owner, other = toy_clients(set())
+    broken = PrivateResource(
+        name="toy note with a wrong body",
+        create=_create_note,
+        read=NOTES.read,
+        attempts=(Op("PATCH", "/notes/{note_id}", json={"wrong": "field"}),),
+    )
+    with pytest.raises(AssertionError, match="control failed"):
+        await assert_isolated(broken, owner, other)
+
+
+def test_op_fills_every_path_parameter() -> None:
+    op = Op("GET", "/profiles/{profile_id}/attempts/{attempt_id}", params={"profile_id": "p1"})
+    assert op.render("a9") == ("/profiles/p1/attempts/a9", None)
+    assert Op("POST", "/x", json={"ids": ["{id}"], "n": 1}).render("r1") == (
+        "/x",
+        {"ids": ["r1"], "n": 1},
+    )
+    with pytest.raises(ValueError, match="Unfilled path parameter"):
+        Op("GET", "/notes/{note-id}").render("r1")
+
+
+def test_toy_resource_registers_against_its_own_app() -> None:
+    """The Op paths are the declared routes, so the registry recognises them."""
+    app = make_notes_app()
+    assert find_unregistered_private_routes(app, [NOTES], set()) == set()
+    assert find_stale_registrations(app, [NOTES], set()) == set()
 
 
 # ---------------------------------------------------------------- route registry
@@ -194,3 +260,4 @@ def test_registry_flags_stale_entries() -> None:
     stale = find_stale_registrations(app, [NOTES], {("GET", "/me"), ("GET", "/gone")})
     assert ("GET", "/gone") in stale
     assert ("POST", "/notes/share") in stale  # NOTES routes do not exist in this app
+    assert ("GET", "/me") not in stale

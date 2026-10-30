@@ -7,10 +7,16 @@ Every route that depends on `get_current_user` must be either:
 
 `find_unregistered_private_routes` makes a test fail as soon as a new private route is added
 without one of the two.
+
+Limits (no such routes exist today; extend this module before adding one):
+- only `get_current_user` counts as "authenticated"; another auth dependency would be missed;
+- only HTTP routes (`APIRoute` and FastAPI's included routers) are inspected, not `app.mount`
+  sub-apps or websocket routes.
 """
 
 from __future__ import annotations
 
+import re
 from collections.abc import Awaitable, Callable, Iterable, Iterator
 from dataclasses import dataclass, field
 from typing import Any
@@ -25,21 +31,30 @@ from app.core.security import get_current_user
 RouteKey = tuple[str, str]  # (HTTP method, path template as declared, e.g. "/api/v1/me/x/{id}")
 
 
+PATH_PARAM = re.compile(r"\{([A-Za-z_][A-Za-z0-9_]*)\}")
+
+
 @dataclass(frozen=True)
 class Op:
     """A request another user must not be able to make on the owner's resource.
 
-    `path` and any string value in `json` may contain "{id}", replaced by the resource id: that
-    covers both the id in the URL and the id in the body.
+    `path` is the route exactly as FastAPI declares it (e.g. "/api/v1/me/profiles/{profile_id}"),
+    so it can be matched against the registry. Every path parameter is filled with the resource
+    id unless `params` gives another value. In `json`, the literal "{id}" is replaced by the
+    resource id, which covers the id in the body.
     """
 
     method: str
     path: str
     json: dict[str, Any] | None = None
+    params: dict[str, str] = field(default_factory=dict)
 
     def render(self, resource_id: str) -> tuple[str, dict[str, Any] | None]:
+        path = PATH_PARAM.sub(lambda m: self.params.get(m.group(1), resource_id), self.path)
+        if "{" in path or "}" in path:
+            raise ValueError(f"Unfilled path parameter in {self.path!r} -> {path!r}")
         body = _fill(self.json, resource_id) if self.json is not None else None
-        return self.path.replace("{id}", resource_id), body
+        return path, body
 
     @property
     def route_key(self) -> RouteKey:
@@ -82,7 +97,19 @@ async def assert_isolated(
 
     404 and not 403: another user's resource is indistinguishable from one that does not exist
     (docs/architecture/api.md).
+
+    Control: each attempt, made by the owner on a fresh resource of its own, must succeed (2xx).
+    Otherwise a 404 would prove nothing (wrong path, wrong body, route that never works).
     """
+    for op in resource.attempts:
+        control_id = await resource.create(owner)
+        path, body = op.render(control_id)
+        response = await owner.request(op.method, path, json=body)
+        assert 200 <= response.status_code < 300, (
+            f"{resource.name}: control failed, the owner's own {op.method} {op.path} returned "
+            f"{response.status_code}; fix the Op so the isolation check means something"
+        )
+
     resource_id = await resource.create(owner)
     read_path, _ = resource.read.render(resource_id)
     before = await owner.request(resource.read.method, read_path)

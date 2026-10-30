@@ -31,8 +31,10 @@ Se mantiene el formato de FastAPI, que el frontend ya interpreta:
 
 Toda ruta que depende de `get_current_user` se registra en `backend/tests/isolation/registry.py`, en el mismo PR que la crea:
 
-- **`PRIVATE_RESOURCES`**: datos de un usuario (perfil, intentos, notas, horario…). Se declara cómo crearlo, cómo lo lee su dueño y qué intentará otro usuario: leer, modificar y borrar, con el id en la URL **y** en el cuerpo (`Op(..., json={"profile_id": "{id}"})`). `assert_isolated` exige 404 en cada intento y que el recurso del dueño quede igual.
+- **`PRIVATE_RESOURCES`**: datos de un usuario (perfil, intentos, notas, horario…). Se declara cómo crearlo, cómo lo lee su dueño y qué intentará otro usuario: leer, modificar y borrar, con el id en la URL **y** en el cuerpo. La ruta del `Op` se escribe tal como la declara FastAPI (`/api/v1/me/profiles/{profile_id}`): cada parámetro se rellena con el id del recurso (o con `params`), y en el cuerpo se usa `"{id}"` (`json={"profile_id": "{id}"}`). `assert_isolated` exige 404 en cada intento, que el recurso del dueño quede igual y, como control, que cada intento hecho por el propio dueño responda 2xx (si no, el 404 no probaría nada).
 - **`SELF_SCOPED_ROUTES`**: rutas que solo actúan sobre quien llama y no reciben ids (como `GET /me`).
+
+Límites: solo cuenta `get_current_user` como autenticación y solo se revisan rutas HTTP (no `app.mount` ni websockets); si se agrega algo así, hay que extender `tests/isolation/framework.py`.
 
 `tests/isolation/test_isolation.py` falla si aparece una ruta privada sin registrar (también si la protección viene de una dependencia anidada o de las dependencias del router) o si queda registrada una ruta que ya no existe. En las pruebas, `user_a` y `user_b` son clientes autenticados con tokens falsos (`fake_firebase`), sin llamar a Google.
 

@@ -8,3 +8,4 @@ Un archivo por ronda: `AAAA-MM-DD-T-XXX-rN.md`, con la plantilla de `docs/proces
 | 2026-10-29 | [T-010](2026-10-29-T-010-r2.md) | 2 | APROBADO | #2 |
 | 2026-10-29 | [T-007](2026-10-29-T-007-r1.md) | 1 | CAMBIOS | #4 |
 | 2026-10-30 | [T-007](2026-10-30-T-007-r2.md) | 2 | APROBADO | #4 |
+| 2026-10-30 | [T-004](2026-10-30-T-004-r1.md) | 1 | CAMBIOS | #5 |
