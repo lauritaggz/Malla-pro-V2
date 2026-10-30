@@ -26,7 +26,7 @@ Estados: `todo` · `ready` · `in progress` · `blocked` · `to audit` · `to me
 | T-007 | Sincronizar el frontend de la V2 con la versión pública (v1) | code | alto | T-010 | done |
 | T-002 | Roles del equipo y registro de auditoría | code | alto | T-001 | ready |
 | T-003 | Manejo de errores y logs sin datos sensibles | code | medio | T-001 | ready |
-| T-004 | Pruebas de aislamiento entre dos usuarios | code | alto | T-001 | to audit |
+| T-004 | Pruebas de aislamiento entre dos usuarios | code | alto | T-001 | to merge |
 | T-005 | Concurrencia optimista e idempotencia | code | medio | T-001 | todo |
 | T-010 | Mallas verificadas y mallas de la U. de Chile | data | alto | T-001 | done |
 | T-011 | Portar a la V2 los cambios de frontend de v1 para la U. de Chile | code | medio | T-010 | done (en T-007) |
