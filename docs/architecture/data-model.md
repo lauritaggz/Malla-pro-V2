@@ -7,7 +7,7 @@ Fuente de verdad: `backend/app/models/` y las migraciones de `backend/alembic/ve
 | Tabla | Para qué | Requisitos | Notas |
 |---|---|---|---|
 | `users` | Usuario identificado por Firebase | CU-01, AD-03 | `firebase_uid` único; `role` = `student` / `curator` / `superadmin` (por defecto `student`, CheckConstraint; T-002 reemplazó `is_admin`) |
-| `audit_log` | Registro de acciones del equipo, solo se agregan filas | NF-11 | `actor_id` (o `actor_label` para acciones fuera de la API, p. ej. `cli`), `action`, `entity_type`, `entity_id`, `before`/`after` JSONB, `created_at`. La FK a `users` no tiene ON DELETE: borrar a alguien del equipo se decide en T-053 (T-002) |
+| `audit_log` | Registro de acciones del equipo, solo se agregan filas | NF-11 | `actor_id` (o `actor_label` para acciones fuera de la API, p. ej. `cli`), `action`, `entity_type`, `entity_id`, `before`/`after` JSONB, `created_at`. La FK a `users` no tiene ON DELETE: borrar a alguien del equipo se decide en T-053. Revertir la migración se niega si la tabla tiene filas (T-002) |
 | `universities` | Institución | CA-01 | `slug` único |
 | `programs` | Carrera | CA-01 | `career_key` único e inmutable (ADR-0007); `legacy_url` para las mallas estáticas |
 | `curriculum_versions` | Versión del plan | CA-03, sección 6 | `period_regime`, `credit_system`, `status` (draft/published/archived), una sola `is_current` por carrera, `source_type` y fuente, `attrs` (JSONB: fuente oficial, equivalencias y otros campos del archivo sin columna, T-010) |

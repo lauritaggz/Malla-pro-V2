@@ -15,3 +15,5 @@ Las cierra Laura. Una decisión técnica cerrada se registra como ADR; una de pr
 | D-09 | Códigos oficiales de la U. de Chile | Conseguirlos para cruzar ramos entre carreras | Nada de V2.0 |
 | D-10 | Mínimo de anonimato para métricas agregadas (NF-10) | p. ej. 10 usuarios | T-052 |
 | D-11 | Dónde se aloja el backend en producción | VPS con Docker Compose y Caddy | T-060 |
+| D-12 | Primer superadministrador | **Cerrada (30-10-2026, Laura):** se nombra con `uv run python -m app.scripts.set_role <correo> superadmin`; queda en `audit_log` como acción de `cli` | T-002 |
+| D-13 | Revertir la migración de roles | **Cerrada (30-10-2026, Laura):** al revertir, los curadores pasan a usuarios normales (el modelo anterior solo tenía `is_admin`). La reversión se niega si `audit_log` tiene filas, para no perder el historial | T-002 |

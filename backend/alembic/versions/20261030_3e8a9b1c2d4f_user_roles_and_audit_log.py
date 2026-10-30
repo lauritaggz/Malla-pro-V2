@@ -2,7 +2,8 @@
 
 users.is_admin is replaced by users.role (student / curator / superadmin): admins become
 superadmin. Downgrade maps superadmin back to is_admin = true; curators become plain users
-(the old model had no curator), which Laura accepted on 2026-10-30.
+(the old model had no curator), which Laura accepted on 2026-10-30. Downgrade refuses to run
+while audit_log has rows, so the audit history is never lost by accident.
 
 Revision ID: 3e8a9b1c2d4f
 Revises: 7c1d2e3f4a5b
@@ -58,6 +59,13 @@ def upgrade() -> None:
 
 
 def downgrade() -> None:
+    # Never drop the team's audit history silently (NF-11). Export it first, then empty the
+    # table on purpose if the downgrade is really needed.
+    rows = op.get_bind().execute(sa.text("SELECT count(*) FROM audit_log")).scalar_one()
+    if rows:
+        raise RuntimeError(
+            f"audit_log has {rows} rows: export them and empty the table before downgrading"
+        )
     op.drop_index("ix_audit_log_created_at", table_name="audit_log")
     op.drop_index("ix_audit_log_entity", table_name="audit_log")
     op.drop_index("ix_audit_log_actor_id", table_name="audit_log")

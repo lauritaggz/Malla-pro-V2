@@ -10,7 +10,7 @@ from app.core.security import require_role
 from app.db.session import get_db
 from app.models.user import ROLE_SUPERADMIN, User
 from app.schemas.user import AdminUserRead, RoleUpdate
-from app.services.roles import SelfDemotion, UserNotFound, change_role
+from app.services.roles import ActorNotAllowed, SelfDemotion, UserNotFound, change_role
 
 router = APIRouter(prefix="/admin", tags=["admin"])
 
@@ -25,6 +25,12 @@ async def update_user_role(user_id: uuid.UUID, body: RoleUpdate, actor: Superadm
     except UserNotFound:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND, detail="No existe ese usuario."
+        ) from None
+    except ActorNotAllowed:
+        # The actor lost the role between the guard and the lock (concurrent change).
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="No tienes permisos para esta acción.",
         ) from None
     except SelfDemotion:
         raise HTTPException(

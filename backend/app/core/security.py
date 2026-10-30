@@ -11,7 +11,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.firebase import get_firebase_app
 from app.db.session import get_db
-from app.models.user import User
+from app.models.user import ROLES, User
 
 bearer_scheme = HTTPBearer(auto_error=False)
 
@@ -82,6 +82,9 @@ def require_role(*roles: str) -> Callable[..., Awaitable[User]]:
     Roles come from the database, never from the client (CO-04, AGENTS.md).
     """
     allowed = frozenset(roles)
+    unknown = allowed - set(ROLES)
+    if not allowed or unknown:
+        raise ValueError(f"require_role: unknown or missing roles {sorted(unknown)}")
 
     async def dependency(user: Annotated[User, Depends(get_current_user)]) -> User:
         if user.role not in allowed:

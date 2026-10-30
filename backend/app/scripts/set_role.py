@@ -40,9 +40,11 @@ async def run(email: str, role: str) -> int:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Assign a team role to a user by e-mail.")
-    parser.add_argument("email")
-    parser.add_argument("role", choices=ROLES)
+    parser = argparse.ArgumentParser(
+        description="Asigna un rol del equipo a una cuenta, buscándola por correo."
+    )
+    parser.add_argument("email", help="correo de la cuenta (debe haber iniciado sesión una vez)")
+    parser.add_argument("role", choices=ROLES, help="rol: student, curator o superadmin")
     args = parser.parse_args()
     sys.exit(asyncio.run(run(args.email, args.role)))
 

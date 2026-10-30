@@ -50,7 +50,7 @@ Los `POST` que crean recursos aceptan la cabecera `Idempotency-Key` (hay que agr
 |---|---|---|
 | `GET /api/v1/health` | pública | s01 |
 | `GET /api/v1/me` | usuario | s02; T-002 cambia `is_admin` por `role` |
-| `PATCH /api/v1/admin/users/{user_id}/role` | `superadmin` | T-002. Cuerpo `{"role": "student" \| "curator" \| "superadmin"}`. 404 si no existe, 409 si un superadmin intenta quitarse su propio rol, 422 si el rol no existe. Cada cambio real queda en `audit_log`; repetir el mismo rol no cambia nada ni se audita |
+| `PATCH /api/v1/admin/users/{user_id}/role` | `superadmin` | T-002. Cuerpo `{"role": "student" \| "curator" \| "superadmin"}`. 404 si no existe, 409 si un superadmin intenta quitarse su propio rol, 422 si el rol no existe. Cada cambio real queda en `audit_log`, en la misma transacción; repetir el mismo rol no cambia nada ni se audita. Las filas de quien actúa y del destino se bloquean y el rol de quien actúa se vuelve a leer: si dos superadmins se degradan a la vez, el segundo recibe 403 |
 | `GET /api/v1/universities` | pública, caché 5 min | s03 |
 | `GET /api/v1/universities/{slug}/programs` | pública, caché 5 min | s03 |
 | `GET /api/v1/programs/{program_id}/curriculum` | pública, caché 5 min | s03; T-010 agrega `version.attrs` |

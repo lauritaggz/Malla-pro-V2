@@ -20,10 +20,18 @@ from sqlalchemy.pool import NullPool
 
 from alembic import command
 from app.core.config import get_settings
+from app.core.security import require_role
 from app.models.audit import AuditLog
 from app.models.user import User
 from app.scripts import set_role as set_role_script
 from app.services.audit import record_audit
+from app.services.roles import (
+    ActorNotAllowed,
+    AmbiguousUser,
+    UserNotFound,
+    change_role,
+    find_user_by_email,
+)
 from tests.conftest import BACKEND_DIR, _ensure_database
 
 ROLE_URL = "/api/v1/admin/users/{}/role"
@@ -193,6 +201,98 @@ async def test_the_role_cannot_be_set_through_the_login_claims(
     assert response.status_code == 403
 
 
+async def test_change_and_audit_are_saved_together_or_not_at_all(
+    user_a: AsyncClient, user_b: AsyncClient, db_session: AsyncSession, test_engine: AsyncEngine
+) -> None:
+    """If the transaction does not commit, neither the new role nor its audit row exists."""
+    actor_id = uuid.UUID((await _me(user_a))["id"])
+    target_id = uuid.UUID((await _me(user_b))["id"])
+    await _set_role(db_session, str(actor_id), "superadmin")
+
+    maker = async_sessionmaker(test_engine, expire_on_commit=False)
+    async with maker() as session:
+        actor = await session.get(User, actor_id)
+        _, changed = await change_role(
+            session, target_id=target_id, new_role="curator", actor=actor
+        )
+        assert changed
+        await session.rollback()  # e.g. the commit failed
+
+    async with maker() as other:
+        assert (await other.get(User, target_id)).role == "student"
+        assert await other.scalar(select(func.count()).select_from(AuditLog)) == 0
+
+
+async def test_two_superadmins_demoting_each_other_cannot_both_win(
+    user_a: AsyncClient, user_b: AsyncClient, db_session: AsyncSession, test_engine: AsyncEngine
+) -> None:
+    """Rows are locked and the actor re-checked: the second demotion is refused (403)."""
+    a_id = uuid.UUID((await _me(user_a))["id"])
+    b_id = uuid.UUID((await _me(user_b))["id"])
+    await _set_role(db_session, str(a_id), "superadmin")
+    await _set_role(db_session, str(b_id), "superadmin")
+
+    maker = async_sessionmaker(test_engine, expire_on_commit=False)
+    async with maker() as s1, maker() as s2:
+        actor_a = await s1.get(User, a_id)
+        actor_b = await s2.get(User, b_id)
+        await change_role(s1, target_id=b_id, new_role="student", actor=actor_a)
+        second = asyncio.create_task(
+            change_role(s2, target_id=a_id, new_role="student", actor=actor_b)
+        )
+        await asyncio.sleep(0.3)
+        assert not second.done(), "the second change must wait for the first one's locks"
+        await s1.commit()
+        with pytest.raises(ActorNotAllowed):
+            await second
+        await s2.rollback()
+
+    db_session.expire_all()
+    roles = {u.id: u.role for u in (await db_session.scalars(select(User))).all()}
+    assert (roles[a_id], roles[b_id]) == ("superadmin", "student")
+    assert len(await _audit_rows(db_session)) == 1
+
+
+async def test_a_demoted_superadmin_gets_403_even_with_a_stale_user(
+    user_a: AsyncClient, user_b: AsyncClient, db_session: AsyncSession, test_engine: AsyncEngine
+) -> None:
+    """The role is read under the lock, not from the User object loaded at login."""
+    a_id = uuid.UUID((await _me(user_a))["id"])
+    b_id = uuid.UUID((await _me(user_b))["id"])
+    await _set_role(db_session, str(a_id), "superadmin")
+    maker = async_sessionmaker(test_engine, expire_on_commit=False)
+    async with maker() as session:
+        stale_actor = await session.get(User, a_id)  # loaded while still superadmin
+        async with maker() as other:
+            await _set_role(other, str(a_id), "student")
+        with pytest.raises(ActorNotAllowed):
+            await change_role(session, target_id=b_id, new_role="curator", actor=stale_actor)
+        await session.rollback()
+
+
+def test_require_role_rejects_unknown_role_names() -> None:
+    with pytest.raises(ValueError, match="unknown or missing roles"):
+        require_role("admin")
+    with pytest.raises(ValueError):
+        require_role()
+
+
+async def test_role_errors_never_carry_the_email(db_session: AsyncSession) -> None:
+    """NF-07: exception messages may end up in logs (T-003)."""
+    with pytest.raises(UserNotFound) as missing:
+        await find_user_by_email(db_session, "secreta@example.com")
+    db_session.add_all(
+        [
+            User(firebase_uid="d1", email="dup@example.com"),
+            User(firebase_uid="d2", email="dup@example.com"),
+        ]
+    )
+    await db_session.commit()
+    with pytest.raises(AmbiguousUser) as dup:
+        await find_user_by_email(db_session, "dup@example.com")
+    assert "@" not in str(missing.value) + str(dup.value)
+
+
 def test_record_audit_needs_an_actor_or_a_label() -> None:
     with pytest.raises(ValueError, match="actor_label"):
         record_audit(
@@ -329,6 +429,20 @@ async def test_migration_maps_admins_to_superadmin_and_back(
                         "VALUES (gen_random_uuid(), 'bad', 'admin')"
                     )
                 )
+
+    # With audit history, the downgrade refuses to run (nothing is lost by accident).
+    async with engine.begin() as conn:
+        await conn.execute(
+            text(
+                "INSERT INTO audit_log (id, actor_label, action, entity_type, entity_id) "
+                "VALUES (gen_random_uuid(), 'cli', 'user.role_changed', 'user', 'x')"
+            )
+        )
+    with pytest.raises(RuntimeError, match="audit_log has 1 rows"):
+        await asyncio.to_thread(_alembic, url, "downgrade", PREVIOUS)
+    async with engine.begin() as conn:
+        assert (await conn.execute(text("SELECT count(*) FROM audit_log"))).scalar_one() == 1
+        await conn.execute(text("DELETE FROM audit_log"))
 
     await asyncio.to_thread(_alembic, url, "downgrade", PREVIOUS)
     async with engine.begin() as conn:

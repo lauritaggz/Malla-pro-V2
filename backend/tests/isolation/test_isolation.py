@@ -74,6 +74,14 @@ def test_team_routes_declare_exactly_their_roles() -> None:
     assert guarded == set(TEAM_ROUTES), sorted(guarded ^ set(TEAM_ROUTES))
 
 
+def test_every_admin_route_is_a_team_route() -> None:
+    """Anything under /api/v1/admin must be a registered team route (so it has require_role),
+    even if it forgot authentication entirely or was filed as self-scoped."""
+    admin = {key for key in all_route_keys(app) if key[1].startswith("/api/v1/admin")}
+    assert admin == set(TEAM_ROUTES), sorted(admin ^ set(TEAM_ROUTES))
+    assert not (set(SELF_SCOPED_ROUTES) & admin)
+
+
 @pytest.mark.parametrize("route", sorted(TEAM_ROUTES), ids=lambda r: f"{r[0]} {r[1]}")
 async def test_a_student_gets_403_on_every_team_route(
     route: tuple[str, str], user_a: AsyncClient
