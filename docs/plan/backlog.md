@@ -23,12 +23,13 @@ Estados: `todo` · `ready` · `in progress` · `blocked` · `to audit` · `to me
 | D-02 | Crear malla manual gratis en el nivel básico | decision | bajo | — | todo |
 | D-03 | ¿Solo Google o también correo y contraseña? | decision | bajo | — | todo |
 | T-006 | Corregir los errores de lint del frontend | code | bajo | T-001 | ready |
+| T-007 | Sincronizar el frontend de la V2 con la versión pública (v1) | code | alto | T-010 | review (auditoría r2 APROBADO) |
 | T-002 | Roles del equipo y registro de auditoría | code | alto | T-001 | ready |
 | T-003 | Manejo de errores y logs sin datos sensibles | code | medio | T-001 | ready |
 | T-004 | Pruebas de aislamiento entre dos usuarios | code | alto | T-001 | ready |
 | T-005 | Concurrencia optimista e idempotencia | code | medio | T-001 | todo |
 | T-010 | Mallas verificadas y mallas de la U. de Chile | data | alto | T-001 | review (auditoría r2 APROBADO) |
-| T-011 | Portar a la V2 los cambios de frontend de v1 para la U. de Chile | code | medio | T-010 | todo |
+| T-011 | Portar a la V2 los cambios de frontend de v1 para la U. de Chile | code | medio | T-010 | incluida en T-007 |
 | T-012 | Evaluar árboles de prerrequisitos en el frontend | code | medio | T-001 | ready |
 | T-013 | Cálculo de notas como módulo puro con casos de referencia | code | medio | T-001 | ready |
 | T-014 | Detección de topes de horario con pruebas | code | bajo | T-001 | ready |
@@ -116,11 +117,23 @@ Hoy solo hay Google (ADR-0003). CU-01 pide al menos un método, así que basta. 
   3. `Idempotency-Key` permitida en CORS.
 - Pruebas: dos actualizaciones con la misma versión (la segunda da 409); reintento con la misma clave.
 
+### T-007 · Sincronizar el frontend de la V2 con la versión pública (v1)
+- Tipo: code · Riesgo: alto · Requisitos: CA-01, NO-04, NF-05 · Depende de: T-010 · Aprobada por Laura el 29-10-2026.
+- Origen: el frontend de la V2 se copió de v1 en `ddcaebc` (9-10-2026). Desde entonces v1 sumó 29 commits hasta `543e5e6` (Rediseño Tinta, selector de carreras, Horario, panel de notas, U. de Chile). Incluye T-011.
+- Alcance: `frontend/` salvo `public/mallas/` (las mallas ya llegaron con T-010). Se conserva lo propio de la V2: login con Google (`features/auth`, `lib/`), catálogo desde la API (`curriculumApi.js`, `mallasLoader.js`), `career_key` de la API (`storageKeys.js`).
+- Criterios:
+  1. Sin backend, la V2 se ve igual que v1 en `543e5e6`: mismas pantallas en escritorio y móvil (comparación de capturas).
+  2. El login sigue visible y usable: en escritorio en el riel lateral, en móvil en la barra inferior (la barra superior de v1 ahora es solo móvil).
+  3. Con la API, el selector muestra lo mismo que sin ella (área y semestres de las mallas legadas) y no inventa datos para mallas que solo existen en la API.
+  4. Las mallas de la U. de Chile se identifican como tales en la etiqueta de universidad, al compartir configuraciones (`UCH`) y en analítica; no ofrecen toma de ramos.
+  5. Sin dependencias nuevas; las pruebas de v1 y de la V2 pasan; el lint no suma errores.
+- Pruebas: `universityDetection.test.js`, pruebas de v1 incluidas (`courseColors.test.js`, `shareCourseConfig.test.js`), suites existentes; capturas comparadas.
+
 ### T-006 · Corregir los errores de lint del frontend
 - Tipo: code · Riesgo: bajo · Requisitos: NF-09 · Depende de: T-001
 - Alcance: archivos con errores de `npm run lint` en `frontend/src/`, `frontend/eslint.config.js`, `.github/workflows/ci.yml` (solo para quitar `continue-on-error` del lint y los disparadores del job `catalog-data`).
 - Criterios:
-  1. `npm run lint` termina sin errores. Hoy hay 10: variables sin usar en `App.jsx`, `Navbar.jsx`, `LandingPage.jsx` y `academicProgressStorage.js`; `react-refresh/only-export-components` en `ImportCourseConfigModal.jsx`; `Buffer` no definido en `shareCourseConfig.js`, que es un respaldo para Node y se resuelve en la configuración de ESLint o con `globalThis.Buffer`, sin cambiar el comportamiento.
+  1. `npm run lint` termina sin errores. Hoy (después de T-007) hay 8: variables sin usar en `App.jsx` (`progreso`, `cursosCursando`, `handleVerProgresoNav`), `Navbar.jsx` (`cantidadSemestres`) y `academicProgressStorage.js` (`emptyProgress`); `react-refresh/only-export-components` en `ImportCourseConfigModal.jsx`; `Buffer` no definido en `shareCourseConfig.js`, que es un respaldo para Node y se resuelve en la configuración de ESLint o con `globalThis.Buffer`, sin cambiar el comportamiento.
   2. Ningún cambio de comportamiento: si quitar una variable sin usar revela una función que se perdió (p. ej. `handleVerProgresoNav`), se reporta en el PR en vez de borrarla a ciegas.
   3. El lint pasa a ser bloqueante en CI.
   4. El job `catalog-data` también corre al agregar o quitar una etiqueta (`pull_request: types: [opened, synchronize, reopened, labeled, unlabeled]`), para que poner `type:data` después de abrir el PR no deje el CI en rojo (auditoría T-010, A12).
@@ -167,7 +180,7 @@ Hoy solo hay Google (ADR-0003). CU-01 pide al menos un método, así que basta. 
 - Tipo: code · Riesgo: medio · Requisitos: NO-01, NO-02, NO-03 · Depende de: T-001
 - Alcance: `frontend/src/utils/grades.js` (nuevo), `frontend/src/utils/gradeUtils.js`, `frontend/src/components/NotasModal.jsx`, `testdata/academic-cases/grades.json`, pruebas.
 - Criterios:
-  1. La lógica de promedio ponderado, nota necesaria y eximición sale de `NotasModal.jsx` a funciones puras, sin cambiar el resultado para los datos existentes.
+  1. La lógica de promedio ponderado, nota necesaria y eximición sale de `NotasModal.jsx` a funciones puras, sin cambiar el resultado para los datos existentes. Ojo: con T-007 (paridad con v1) la nota necesaria para eximirse se divide por lo que falta **calificar** (evaluaciones sin nota más el porcentaje sin asignar, `pesoPendiente`) y ya no solo por lo que faltaba **asignar**; ese comportamiento es el caso de referencia.
   2. Aviso si las ponderaciones no suman 100 %.
   3. Nota necesaria: informa "imposible" si no alcanza ni con 7,0 y "falta información" si hay ponderaciones desconocidas.
   4. Escala y umbral configurables (por defecto 1,0–7,0, aprueba con 4,0); redondeo documentado y probado en los bordes (3,95 / 3,949).

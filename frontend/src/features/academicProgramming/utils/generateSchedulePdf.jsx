@@ -1,7 +1,15 @@
 /* eslint-disable react-refresh/only-export-components */
 import React from "react";
 import { Document, Page, Text, View, StyleSheet, pdf } from "@react-pdf/renderer";
-import { unabTimeSlots, getStableCourseColor, timeToMinutes } from "../services/scheduleService";
+import {
+  unabTimeSlots,
+  getStableCourseColor,
+  getCourseColorByIndex,
+  normalizeCourseKey,
+  assignCourseColorIndexes,
+  loadCourseColorAssignments,
+  timeToMinutes,
+} from "../services/scheduleService";
 
 const styles = StyleSheet.create({
   page: {
@@ -298,6 +306,11 @@ function SchedulePdfDocument({
   periodLabel,
 }) {
   const meetingsByDay = preparePdfMeetings(selectedSectionsList);
+  // Mismos colores que la grilla: se leen las asignaciones guardadas
+  const colorIndexes = assignCourseColorIndexes(
+    selectedSectionsList.map((s) => s.courseCode),
+    loadCourseColorAssignments()
+  );
   const totalRamos = selectedSectionsList.length;
   const busyDays = Object.keys(meetingsByDay).filter((d) => meetingsByDay[d].length > 0);
 
@@ -373,7 +386,8 @@ function SchedulePdfDocument({
 
                 {/* Bloques de clase en este día */}
                 {dayMeetings.map((m, idx) => {
-                  const colors = getStableCourseColor(m.courseCode);
+                  const colorIdx = colorIndexes[normalizeCourseKey(m.courseCode)];
+                  const colors = colorIdx == null ? getStableCourseColor(m.courseCode) : getCourseColorByIndex(colorIdx);
                   const isConflicting = conflicts.some(
                     (col) =>
                       (col.meetingA.courseCode === m.courseCode && col.meetingA.meeting.dayCode === m.dayCode && col.meetingA.meeting.startTime === m.startTime) ||

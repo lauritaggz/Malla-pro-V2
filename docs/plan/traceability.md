@@ -19,7 +19,7 @@ Generado con `python3 tools/docs/traceability.py` desde los requerimientos y el 
 | AV-04 | Explicar disponibilidad de un curso | V2.0 | T-012 |  |
 | AV-05 | Registrar excepciones personales | V2.0 | T-024 |  |
 | AV-06 | Cambios masivos con revisión y recuperación | V2.0 | T-026 |  |
-| CA-01 | Buscar catálogo por institución y carrera | V2.0 | T-010, T-030, s03 (parcial) | `backend/tests/test_catalog.py::test_universities_endpoint`, `::test_programs_endpoint_lists_uch_in_order`, `::test_uch_programs_belong_to_their_own_university`; `frontend/src/utils/verifiedMallas.test.js` › "lista UNAB y U. de Chile por separado" (T-010) |
+| CA-01 | Buscar catálogo por institución y carrera | V2.0 | T-007, T-010, T-011, T-030, s03 (parcial) | `backend/tests/test_catalog.py::test_universities_endpoint`, `::test_programs_endpoint_lists_uch_in_order`, `::test_uch_programs_belong_to_their_own_university`; `frontend/src/utils/verifiedMallas.test.js` › "lista UNAB y U. de Chile por separado" (T-010); `frontend/src/utils/universityDetection.test.js` › "selector con la API: mismas áreas y semestres", "elegir una malla en el selector conserva su careerKey", "etiqueta de universidad" (T-007) |
 | CA-02 | Separar mallas de catálogo y mallas personales | V2.0 | T-030, T-032 |  |
 | CA-03 | Versionar el catálogo | V2.0 | T-031, s03 (parcial) |  |
 | CO-01 | Mostrar planes y condiciones | V2.2 | épica V2.2 · Prueba de 2 meses y suscripción |  |
@@ -58,7 +58,7 @@ Generado con `python3 tools/docs/traceability.py` desde los requerimientos y el 
 | NF-02 | Secretos y privilegios en servidor | Transversal | T-060 |  |
 | NF-03 | Integridad y conflictos de edición | Transversal | T-005, T-022 |  |
 | NF-04 | Rendimiento | Transversal | T-033 |  |
-| NF-05 | Accesibilidad y móvil | Transversal | T-033 |  |
+| NF-05 | Accesibilidad y móvil | Transversal | T-007, T-033 | Verificación manual de T-007 con capturas a 1366, 390 y 360 px y navegación con teclado (`docs/audits/2026-10-29-T-007-r1.md`) |
 | NF-06 | Respaldo y recuperación | Transversal | T-061 |  |
 | NF-07 | Errores observables | Transversal | T-003, T-062 |  |
 | NF-08 | Configuración operativa | Transversal | épica V2.1 · Importación con IA de mallas |  |
@@ -69,7 +69,7 @@ Generado con `python3 tools/docs/traceability.py` desde los requerimientos y el 
 | NO-01 | Registrar evaluaciones, notas y ponderaciones por intento | V2.0 | T-013, T-025 |  |
 | NO-02 | Configurar escala y calcular nota necesaria | V2.0 | T-013, T-025 |  |
 | NO-03 | Separar cálculo y aprobación | V2.0 | T-013, T-025 |  |
-| NO-04 | Compartir la configuración de un ramo mediante enlace o código | V2.0 | T-029 |  |
+| NO-04 | Compartir la configuración de un ramo mediante enlace o código | V2.0 | T-007, T-011, T-029 | `frontend/src/utils/universityDetection.test.js` › "una configuración UNAB no se acepta en un ramo de la U. de Chile ni al revés"; `frontend/src/utils/shareCourseConfig.test.js` (T-007) |
 | NO-05 | Importar una configuración compartida | V2.0 | T-029 |  |
 | OF-01 | Importar oferta desde PDF o imagen | V2.1 | épica V2.1 · Importación de oferta |  |
 | OF-02 | Revisar antes de usar | V2.1 | épica V2.1 · Importación de oferta |  |

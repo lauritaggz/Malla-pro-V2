@@ -69,6 +69,18 @@ describe("normalizeInstitution", () => {
     expect(normalizeInstitution({ url: "/mallas/unab/Comp.json" })).toBe("UNAB");
   });
 
+  it("reconoce Universidad de Chile / UCH", () => {
+    expect(normalizeInstitution("UCH")).toBe("UCH");
+    expect(normalizeInstitution("Universidad de Chile")).toBe("UCH");
+    expect(normalizeInstitution({ universidad: "Universidad de Chile" })).toBe(
+      "UCH"
+    );
+    expect(normalizeInstitution({ url: "/mallas/QuimicaUCH.json" })).toBe("UCH");
+    expect(
+      normalizeInstitution({ url: "/mallas/BioquimicaUCH.json" })
+    ).toBe("UCH");
+  });
+
   it("devuelve vacío para desconocidos", () => {
     expect(normalizeInstitution("")).toBe("");
     expect(normalizeInstitution(null)).toBe("");

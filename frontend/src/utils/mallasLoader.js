@@ -1,5 +1,48 @@
 import { apiCurriculumToLegacyJson } from "./curriculumApi";
 
+/**
+ * Indica si la malla pertenece a la Universidad de Chile.
+ * @param {{ universidad?: string, url?: string } | null | undefined} malla
+ */
+export function isUniversidadDeChile(malla) {
+  if (!malla) return false;
+  const uni = String(malla.universidad || "").toLowerCase();
+  if (uni.includes("chile") || uni.includes("uch")) return true;
+  const url = String(malla.url || "").toLowerCase();
+  return /uch\.json|\/uch\//i.test(url) || url.includes("uch");
+}
+
+/**
+ * Etiqueta de universidad para el riel, la barra superior y el encabezado de la malla.
+ * @param {{ universidad?: string, url?: string } | null | undefined} malla
+ * @param {"short" | "long"} [size]
+ */
+export function universityLabel(malla, size = "short") {
+  if (isUniversidadDeChile(malla)) return size === "long" ? "Universidad de Chile" : "U. de Chile";
+  return "UNAB";
+}
+
+/**
+ * Lo que se guarda al elegir una malla del selector. Conserva careerKey y programId:
+ * de careerKey sale la clave del avance guardado de las mallas que vienen de la API.
+ * @param {{ nombre: string, url: string, careerKey?: string, programId?: string }} malla
+ */
+export function selectionFromListing(malla) {
+  const out = { nombre: malla.nombre, url: malla.url };
+  if (malla.careerKey) out.careerKey = malla.careerKey;
+  if (malla.programId) out.programId = malla.programId;
+  return out;
+}
+
+/**
+ * Toma de ramos / programación académica solo está disponible para UNAB.
+ * @param {{ universidad?: string, url?: string } | null | undefined} malla
+ */
+export function supportsTomaDeRamos(malla) {
+  if (!malla) return false;
+  return !isUniversidadDeChile(malla);
+}
+
 const API_TIMEOUT_MS = 5000;
 const CURRICULUM_PATH_RE = /^\/api\/v1\/programs\/([0-9a-f-]{36})\/curriculum\/?$/i;
 
@@ -11,38 +54,56 @@ const STATIC_UNIVERSIDADES = [
       {
         nombre: "Ingeniería Civil Industrial",
         url: "/mallas/Industrial.json",
+        area: "Ingeniería",
+        semestres: 10,
       },
       {
         nombre: "Ingeniería en Computación e Informática",
         url: "/mallas/Comp.json",
+        area: "Ingeniería",
+        semestres: 8,
       },
       {
         nombre: "Geología",
         url: "/mallas/Geo.json",
+        area: "Ingeniería",
+        semestres: 10,
       },
       {
         nombre: "Ingeniería en Marina Mercante",
         url: "/mallas/MM.json",
+        area: "Ingeniería",
+        semestres: 8,
       },
       {
         nombre: "Ingeniería Civil Informática",
         url: "/mallas/CInf.json",
+        area: "Ingeniería",
+        semestres: 10,
       },
       {
         nombre: "Ingeniería Civil en Minas",
         url: "/mallas/Minas.json",
+        area: "Ingeniería",
+        semestres: 10,
       },
       {
         nombre: "Medicina",
         url: "/mallas/Med.json",
+        area: "Salud",
+        semestres: 12,
       },
       {
         nombre: "Tecnología Médica",
         url: "/mallas/TM.json",
+        area: "Salud",
+        semestres: 10,
       },
       {
         nombre: "Psicología",
         url: "/mallas/Psicologia.json",
+        area: "Ciencias sociales",
+        semestres: 10,
       },
     ],
   },
@@ -53,22 +114,37 @@ const STATIC_UNIVERSIDADES = [
       {
         nombre: "Bioquímica",
         url: "/mallas/BioquimicaUCH.json",
+        area: "Ciencias",
+        semestres: 11,
       },
       {
         nombre: "Ingeniería en Alimentos",
         url: "/mallas/IngenieriaAlimentosUCH.json",
+        area: "Ingeniería",
+        semestres: 11,
       },
       {
         nombre: "Química",
         url: "/mallas/QuimicaUCH.json",
+        area: "Ciencias",
+        semestres: 11,
       },
       {
         nombre: "Química y Farmacia",
         url: "/mallas/QuimicaFarmaciaUCH.json",
+        area: "Ciencias",
+        semestres: 11,
       },
     ],
   },
 ];
+
+/** Área y semestres de las mallas legadas, para que el selector se vea igual con la API. */
+const STATIC_META_BY_URL = new Map(
+  STATIC_UNIVERSIDADES.flatMap((u) =>
+    u.mallas.map((m) => [m.url, { area: m.area, semestres: m.semestres }])
+  )
+);
 
 function getApiBase() {
   const raw = import.meta.env?.VITE_API_URL;
@@ -103,7 +179,8 @@ async function loadApiCatalog() {
       // Las mallas legadas conservan su URL de siempre (y con ella su careerId).
       const url = p.legacy_url || `/api/v1/programs/${p.id}/curriculum`;
       programIdByUrl.set(url, p.id);
-      return { nombre: p.name, url, careerKey: p.career_key, programId: p.id };
+      const meta = STATIC_META_BY_URL.get(url) || {};
+      return { nombre: p.name, url, careerKey: p.career_key, programId: p.id, ...meta };
     });
     if (mallas.length > 0) universidades.push({ universidad: uni.name, mallas });
   }

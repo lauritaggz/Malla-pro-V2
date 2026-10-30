@@ -8,6 +8,7 @@ dist/
 !.env.example
 !frontend/.env.production
 !frontend/.env.cpanel
+!frontend/.env.development
 
 # Python
 __pycache__/

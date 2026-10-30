@@ -1,18 +1,42 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { BookMarked, CalendarDays, CalendarRange, LogIn, LogOut, MessageCircle } from "lucide-react";
 import { useAuth } from "../features/auth/useAuth";
 import { UserAvatar } from "../features/auth/AuthMenu";
+import { supportsTomaDeRamos } from "../utils/mallasLoader";
+
+// Clases literales para que Tailwind las incluya en el build.
+const GRID_COLS = { 3: "grid-cols-3", 4: "grid-cols-4", 5: "grid-cols-5" };
 
 export default function MobileBottomNav({
   vistaPrincipal = "malla",
   setVistaPrincipal,
   onGuardLeave,
+  mallaSeleccionada = null,
 }) {
   const navigate = useNavigate();
+  const showTomaDeRamos = supportsTomaDeRamos(mallaSeleccionada);
   const { enabled, loading, user, backendUser, signInWithGoogle, signOut } = useAuth();
   const [accountOpen, setAccountOpen] = useState(false);
+  const accountRef = useRef(null);
   const showAuth = enabled && !loading;
+
+  // El menú de cuenta se cierra al tocar fuera o con Escape.
+  useEffect(() => {
+    if (!accountOpen) return undefined;
+    const onPointer = (e) => {
+      if (accountRef.current && !accountRef.current.contains(e.target)) setAccountOpen(false);
+    };
+    const onKey = (e) => {
+      if (e.key === "Escape") setAccountOpen(false);
+    };
+    document.addEventListener("pointerdown", onPointer);
+    document.addEventListener("keydown", onKey);
+    return () => {
+      document.removeEventListener("pointerdown", onPointer);
+      document.removeEventListener("keydown", onKey);
+    };
+  }, [accountOpen]);
 
   const navItems = [
     {
@@ -25,7 +49,7 @@ export default function MobileBottomNav({
       }
     },
     {
-      label: "Periodo actual",
+      label: "Periodo",
       value: "periodo-actual",
       icon: <CalendarDays className="w-5.5 h-5.5" />,
       onClick: () => {
@@ -34,16 +58,20 @@ export default function MobileBottomNav({
         navigate("/app");
       }
     },
-    {
-      label: "Horario",
-      value: "toma-de-ramos",
-      icon: <CalendarRange className="w-5.5 h-5.5" />,
-      onClick: () => {
-        if (onGuardLeave && !onGuardLeave()) return;
-        setVistaPrincipal("toma-de-ramos");
-        navigate("/programacion-academica");
-      }
-    },
+    ...(showTomaDeRamos
+      ? [
+          {
+            label: "Horario",
+            value: "toma-de-ramos",
+            icon: <CalendarRange className="w-5.5 h-5.5" />,
+            onClick: () => {
+              if (onGuardLeave && !onGuardLeave()) return;
+              setVistaPrincipal("toma-de-ramos");
+              navigate("/programacion-academica");
+            },
+          },
+        ]
+      : []),
     {
       label: "Tutorías",
       value: "tutorias",
@@ -56,8 +84,14 @@ export default function MobileBottomNav({
     }
   ];
 
+  const cols = navItems.length + (showAuth ? 1 : 0);
+
   return (
-    <div className={`fixed bottom-0 left-0 right-0 h-[calc(4rem+env(safe-area-inset-bottom,0px))] bg-bgSecondary/90 backdrop-blur-xl border-t border-borderColor/50 z-[90] sm:hidden grid ${showAuth ? "grid-cols-5" : "grid-cols-4"} items-center px-1 pb-[env(safe-area-inset-bottom,0px)] shadow-[0_-2px_12px_rgba(0,0,0,0.06)]`}>
+    <div
+      className={`fixed bottom-0 left-0 right-0 h-[calc(4rem+env(safe-area-inset-bottom,0px))] bg-bgSecondary/90 backdrop-blur-xl border-t border-borderColor/50 z-[90] sm:hidden grid items-center px-1 pb-[env(safe-area-inset-bottom,0px)] shadow-[0_-2px_12px_rgba(0,0,0,0.06)] ${
+        GRID_COLS[cols] || "grid-cols-4"
+      }`}
+    >
       {navItems.map((item) => {
         const isActive = vistaPrincipal === item.value;
         return (
@@ -70,18 +104,19 @@ export default function MobileBottomNav({
             <div className={`transition-transform duration-200 ${isActive ? "scale-105 text-primary" : "text-textSecondary/80"}`}>
               {item.icon}
             </div>
-            <span className="text-[9.5px] font-semibold leading-none truncate w-full text-center">
+            <span className="text-[12px] font-semibold leading-none truncate w-full text-center">
               {item.label}
             </span>
           </button>
         );
       })}
       {showAuth && (
-        <div className="relative flex items-center justify-center">
+        <div ref={accountRef} className="relative flex items-center justify-center">
           <button
             type="button"
             onClick={() => (user ? setAccountOpen((v) => !v) : signInWithGoogle())}
             aria-label={user ? "Menú de cuenta" : "Entrar con Google"}
+            aria-expanded={user ? accountOpen : undefined}
             className="flex flex-col items-center justify-center p-1 gap-1 text-textSecondary"
           >
             {user ? (
@@ -89,7 +124,7 @@ export default function MobileBottomNav({
             ) : (
               <LogIn className="w-5.5 h-5.5" />
             )}
-            <span className="text-[9.5px] font-semibold leading-none">
+            <span className="text-[12px] font-semibold leading-none">
               {user ? "Cuenta" : "Entrar"}
             </span>
           </button>
@@ -98,7 +133,7 @@ export default function MobileBottomNav({
               <p className="truncate text-xs font-bold text-textPrimary">
                 {backendUser?.display_name || user.displayName}
               </p>
-              <p className="truncate text-[11px] text-textSecondary">
+              <p className="truncate text-[12px] text-textSecondary">
                 {backendUser?.email || user.email}
               </p>
               <button

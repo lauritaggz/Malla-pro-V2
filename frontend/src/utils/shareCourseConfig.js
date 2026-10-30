@@ -69,6 +69,10 @@ const INSTITUTION_ALIASES = {
   "universidad andrés bello": "UNAB",
   "u. andres bello": "UNAB",
   "u andres bello": "UNAB",
+  uch: "UCH",
+  "universidad de chile": "UCH",
+  "u. de chile": "UCH",
+  "u de chile": "UCH",
 };
 
 /**
@@ -128,7 +132,11 @@ export function normalizeInstitution(input) {
       const fromPath = resolveInstitutionToken(uniInPath[1]);
       if (fromPath) return fromPath;
     }
-    // Catálogo actual: /mallas/Comp.json → UNAB
+    // Archivos UCH: /mallas/QuimicaUCH.json
+    if (/uch\.json|\/uch\//i.test(url) || /uch/i.test(url.split("/").pop() || "")) {
+      return "UCH";
+    }
+    // Catálogo UNAB: /mallas/Comp.json
     if (/\/mallas\/[^/]+\.json/i.test(url) || /\/mallas\//i.test(url)) {
       return "UNAB";
     }
@@ -155,6 +163,7 @@ function resolveInstitutionToken(raw) {
   // Ya es código corto conocido
   const upper = trimmed.toUpperCase();
   if (upper === "UNAB") return "UNAB";
+  if (upper === "UCH") return "UCH";
 
   return "";
 }
