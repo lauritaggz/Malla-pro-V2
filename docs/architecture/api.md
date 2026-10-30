@@ -27,6 +27,15 @@ Se mantiene el formato de FastAPI, que el frontend ya interpreta:
 | 429 | Límite de frecuencia | |
 | 500 | Error interno | El detalle va al log, nunca a la respuesta |
 
+## Rutas privadas y aislamiento (T-004)
+
+Toda ruta que depende de `get_current_user` se registra en `backend/tests/isolation/registry.py`, en el mismo PR que la crea:
+
+- **`PRIVATE_RESOURCES`**: datos de un usuario (perfil, intentos, notas, horario…). Se declara cómo crearlo, cómo lo lee su dueño y qué intentará otro usuario: leer, modificar y borrar, con el id en la URL **y** en el cuerpo (`Op(..., json={"profile_id": "{id}"})`). `assert_isolated` exige 404 en cada intento y que el recurso del dueño quede igual.
+- **`SELF_SCOPED_ROUTES`**: rutas que solo actúan sobre quien llama y no reciben ids (como `GET /me`).
+
+`tests/isolation/test_isolation.py` falla si aparece una ruta privada sin registrar (también si la protección viene de una dependencia anidada o de las dependencias del router) o si queda registrada una ruta que ya no existe. En las pruebas, `user_a` y `user_b` son clientes autenticados con tokens falsos (`fake_firebase`), sin llamar a Google.
+
 ## Idempotencia
 
 Los `POST` que crean recursos aceptan la cabecera `Idempotency-Key` (hay que agregarla a `allow_headers` de CORS en la tarea que la implemente).

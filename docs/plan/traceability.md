@@ -54,7 +54,7 @@ Generado con `python3 tools/docs/traceability.py` desde los requerimientos y el 
 | MP-01 | Crear y editar una malla personal manualmente | V2.0 | T-032 |  |
 | MP-02 | Mostrar malla y conexiones | V2.0 | T-033 |  |
 | MP-03 | Reportar un error o proponer una malla para revisión | V2.0 | T-034 |  |
-| NF-01 | Privacidad y aislamiento | Transversal | T-004, T-029 |  |
+| NF-01 | Privacidad y aislamiento | Transversal | T-004, T-029 | `backend/tests/isolation/test_isolation.py` (registro de rutas privadas, aislamiento por recurso), `backend/tests/isolation/test_framework.py` (detecta fugas al leer, modificar, borrar y con el id en el cuerpo) (T-004) |
 | NF-02 | Secretos y privilegios en servidor | Transversal | T-060 |  |
 | NF-03 | Integridad y conflictos de edición | Transversal | T-005, T-022 |  |
 | NF-04 | Rendimiento | Transversal | T-033 |  |
