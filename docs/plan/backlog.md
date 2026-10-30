@@ -23,7 +23,7 @@ Estados: `todo` · `ready` · `in progress` · `blocked` · `to audit` · `to me
 | D-02 | Crear malla manual gratis en el nivel básico | decision | bajo | — | todo |
 | D-03 | ¿Solo Google o también correo y contraseña? | decision | bajo | — | todo |
 | T-006 | Corregir los errores de lint del frontend | code | bajo | T-001 | ready |
-| T-007 | Sincronizar el frontend de la V2 con la versión pública (v1) | code | alto | T-010 | review |
+| T-007 | Sincronizar el frontend de la V2 con la versión pública (v1) | code | alto | T-010 | review (auditoría r2 APROBADO) |
 | T-002 | Roles del equipo y registro de auditoría | code | alto | T-001 | ready |
 | T-003 | Manejo de errores y logs sin datos sensibles | code | medio | T-001 | ready |
 | T-004 | Pruebas de aislamiento entre dos usuarios | code | alto | T-001 | ready |
