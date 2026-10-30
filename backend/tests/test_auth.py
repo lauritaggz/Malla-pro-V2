@@ -55,8 +55,8 @@ async def test_valid_token_creates_user(
     assert body["email"] == "ana@example.com"
     assert body["display_name"] == "Ana Pérez"
     assert body["photo_url"] == "https://example.com/a.png"
-    assert body["is_admin"] is False
-    assert set(body) == {"id", "email", "display_name", "photo_url", "is_admin", "created_at"}
+    assert body["role"] == "student"
+    assert set(body) == {"id", "email", "display_name", "photo_url", "role", "created_at"}
     assert await _count_users(db_session) == 1
 
 

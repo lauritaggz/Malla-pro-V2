@@ -34,6 +34,7 @@ docker compose up --build     # la primera vez tarda: construye las imágenes e 
 - Los cambios en `backend/` y `frontend/src/` se recargan solos.
 - Si cambias dependencias: `uv.lock` se sincroniza al reiniciar el backend; `package-lock.json` hace que el frontend ejecute `npm ci` al arrancar.
 - Login con Google: igual que sin Docker (`frontend/.env.local` y `backend/firebase-sa.json`); las carpetas están montadas.
+- **Después de cambiar de rama o hacer `git pull`: `docker compose restart backend`.** Las migraciones y las mallas se aplican solo al arrancar; la recarga automática toma el código nuevo pero no actualiza la base.
 - `docker compose down` para todo y conserva la base; `docker compose down -v` la borra.
 
 **Infraestructura local** (solo Postgres, para correr backend y frontend en tu máquina):
@@ -58,6 +59,8 @@ uv run ruff check
 ```
 
 Los tests crean la base `mallapro_test` en el mismo Postgres si no existe.
+
+**Primer superadministrador:** la persona inicia sesión una vez (eso crea su cuenta) y luego, desde `backend/`, `uv run python -m app.scripts.set_role <correo> superadmin` (con Docker: `docker compose exec backend uv run --no-sync python -m app.scripts.set_role <correo> superadmin`). Queda en el registro de auditoría como acción de `cli`. Después, los roles se cambian desde la API (`PATCH /api/v1/admin/users/{id}/role`).
 
 **Login con Google (opcional):** el frontend funciona sin login. Para activarlo copia `frontend/.env.example` a `frontend/.env.local` y coloca `firebase-sa.json` (service account, ignorado por git) en `backend/`. Los tests aplican las migraciones de Alembic sobre `mallapro_test`.
 

@@ -1,4 +1,5 @@
 import asyncio
+from collections.abc import Awaitable, Callable
 from datetime import UTC, datetime
 from typing import Annotated, Any
 
@@ -10,7 +11,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from app.core.firebase import get_firebase_app
 from app.db.session import get_db
-from app.models.user import User
+from app.models.user import ROLES, User
 
 bearer_scheme = HTTPBearer(auto_error=False)
 
@@ -73,3 +74,25 @@ async def get_current_user(
     user = (await db.execute(stmt)).scalar_one()
     await db.commit()
     return user
+
+
+def require_role(*roles: str) -> Callable[..., Awaitable[User]]:
+    """Dependency: the authenticated user must have one of `roles`, otherwise 403.
+
+    Roles come from the database, never from the client (CO-04, AGENTS.md).
+    """
+    allowed = frozenset(roles)
+    unknown = allowed - set(ROLES)
+    if not allowed or unknown:
+        raise ValueError(f"require_role: unknown or missing roles {sorted(unknown)}")
+
+    async def dependency(user: Annotated[User, Depends(get_current_user)]) -> User:
+        if user.role not in allowed:
+            raise HTTPException(
+                status_code=status.HTTP_403_FORBIDDEN,
+                detail="No tienes permisos para esta acción.",
+            )
+        return user
+
+    dependency.required_roles = allowed  # type: ignore[attr-defined]  (read by the route tests)
+    return dependency
