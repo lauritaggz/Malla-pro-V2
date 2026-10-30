@@ -34,6 +34,7 @@ docker compose up --build     # la primera vez tarda: construye las imágenes e 
 - Los cambios en `backend/` y `frontend/src/` se recargan solos.
 - Si cambias dependencias: `uv.lock` se sincroniza al reiniciar el backend; `package-lock.json` hace que el frontend ejecute `npm ci` al arrancar.
 - Login con Google: igual que sin Docker (`frontend/.env.local` y `backend/firebase-sa.json`); las carpetas están montadas.
+- **Después de cambiar de rama o hacer `git pull`: `docker compose restart backend`.** Las migraciones y las mallas se aplican solo al arrancar; la recarga automática toma el código nuevo pero no actualiza la base.
 - `docker compose down` para todo y conserva la base; `docker compose down -v` la borra.
 
 **Infraestructura local** (solo Postgres, para correr backend y frontend en tu máquina):

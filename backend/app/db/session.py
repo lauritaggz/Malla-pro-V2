@@ -13,7 +13,10 @@ from app.core.config import get_settings
 
 @lru_cache
 def get_engine() -> AsyncEngine:
-    return create_async_engine(get_settings().database_url, pool_pre_ping=True)
+    # hide_parameters: SQL errors never carry query values (e-mails, grades…) into logs (NF-07).
+    return create_async_engine(
+        get_settings().database_url, pool_pre_ping=True, hide_parameters=True
+    )
 
 
 @lru_cache

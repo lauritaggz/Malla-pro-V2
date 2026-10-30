@@ -10,6 +10,8 @@ import argparse
 import asyncio
 import sys
 
+from sqlalchemy.exc import SQLAlchemyError
+
 from app.db.session import get_engine, get_sessionmaker
 from app.models.user import ROLES
 from app.services.roles import AmbiguousUser, UserNotFound, change_role, find_user_by_email
@@ -33,6 +35,14 @@ async def run(email: str, role: str) -> int:
         except AmbiguousUser:
             print("Hay más de una cuenta con ese correo; no se cambió nada.", file=sys.stderr)
             return 1
+        except SQLAlchemyError as exc:
+            # Short message without the SQL or its parameters (they contain the e-mail, NF-07).
+            print(
+                f"No se pudo cambiar el rol: error de base de datos ({type(exc).__name__}). "
+                "¿Están aplicadas las migraciones? Con Docker: docker compose restart backend",
+                file=sys.stderr,
+            )
+            return 2
         await db.commit()
     await get_engine().dispose()
     print(f"Rol {'actualizado' if changed else 'sin cambios'}: {role}")

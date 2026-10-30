@@ -418,6 +418,35 @@ async def test_set_role_script_refuses_unknown_or_ambiguous_emails(
     assert await _audit_rows(db_session) == []
 
 
+async def test_set_role_script_hides_database_errors(
+    script_uses_test_db: None,
+    monkeypatch: pytest.MonkeyPatch,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
+    """E.g. migrations not applied: a short message, no traceback, SQL or e-mail (NF-07)."""
+    from sqlalchemy.exc import ProgrammingError
+
+    async def broken(*_args: object, **_kwargs: object) -> None:
+        raise ProgrammingError(
+            "SELECT users.role FROM users WHERE lower(users.email) = $1",
+            ("secreta@example.com",),
+            Exception("column users.role does not exist"),
+        )
+
+    monkeypatch.setattr(set_role_script, "find_user_by_email", broken)
+    assert await set_role_script.run("secreta@example.com", "superadmin") == 2
+    out = capsys.readouterr()
+    text_out = out.out + out.err
+    assert "docker compose restart backend" in text_out
+    assert "@" not in text_out and "SELECT" not in text_out
+
+
+def test_app_engine_hides_sql_parameters() -> None:
+    from app.db.session import get_engine
+
+    assert get_engine().sync_engine.hide_parameters is True
+
+
 # ---------------------------------------------------------------- migration
 
 
