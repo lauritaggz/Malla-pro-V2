@@ -1,0 +1,51 @@
+# Prototipo: mallas desde PDF o foto con IA (rama `spike/ia-mallas`)
+
+**Estado:** prototipo para medir, no es una tarea del backlog ni va a `main` sin diseño (épica V2.1, IA-01 a IA-05, D-07, D-08) y auditoría.
+
+## Qué hace
+
+`app.scripts.ai_extract_malla` manda un PDF o una foto a Claude y recibe la malla en un formato fijo (herramienta con esquema). Luego:
+
+1. La convierte al formato de `frontend/public/mallas/` y la marca como **borrador** (`"estado": "borrador"`). No se importa ni se guarda en la base.
+2. Aplica las reglas de no inventar: un requisito ilegible, uno que apunta a un ramo que no está en el documento o uno "conocido" sin ramos listados queda como **desconocido** (`prereq_status: "unknown"`), nunca como "sin requisitos". "Semestre N aprobado" se convierte en todos los ramos hasta el semestre N, como en las mallas verificadas.
+3. Revisa la estructura con los mismos chequeos del importador (ids repetidos o inexistentes, autorreferencias, ciclos, requisitos en el mismo semestre o después, códigos repetidos) y que los créditos sumen el total.
+4. Con `--compare`, mide el acierto contra una malla verificada: cobertura de ramos, ramos inventados, semestre, créditos y prerrequisitos (correctos, incorrectos y desconocidos).
+
+No muestra el contenido del documento en la salida (NF-07). El borrador sí lo contiene: guárdalo en `backend/ia-pruebas/`, que está en `.gitignore`.
+
+## Cómo probarlo (en tu computador)
+
+1. En `backend/.env` agrega `ANTHROPIC_API_KEY=...` (nunca en git ni en el chat).
+2. Copia los documentos a `backend/ia-pruebas/` (por ejemplo, desde tu carpeta "Mallas PDF").
+3. Con Docker: `docker compose restart backend` (instala el SDK `anthropic`, que es dependencia nueva) y luego:
+
+```bash
+docker compose exec backend uv run --no-sync python -m app.scripts.ai_extract_malla \
+  "ia-pruebas/MALLA Q - corregido (1).pdf" \
+  --compare /app/frontend/public/mallas/QuimicaUCH.json \
+  --out ia-pruebas/quimica.borrador.json
+```
+
+Sin Docker, desde `backend/`: `uv sync` y el mismo comando con `uv run python -m ...` y `--compare ../frontend/public/mallas/QuimicaUCH.json`.
+
+## Pruebas sugeridas para la demo
+
+| Documento | Comparar con | Por qué |
+|---|---|---|
+| `MALLA Q - corregido (1).pdf` | `QuimicaUCH.json` | PDF con texto, ramos numerados |
+| `imagen-20260428-001.webp` | `QuimicaFarmaciaUCH.json` | Imagen (foto o captura) |
+| `ICINF.malla.pdf` (Banner) | `CInf.json` | Formato Banner de la UNAB, con códigos oficiales |
+| `Tecnología Médica.pdf` | `TM.json` | Tiene menciones: el prototipo todavía no las separa (aparecerá como advertencia o con ramos sin cruzar) |
+
+## Resultados
+
+| Fecha | Documento | Modelo | Ramos (cruzados / verificados) | Inventados | Semestre | Créditos | Prerrequisitos correctos | Desconocidos | Tokens (entrada / salida) |
+|---|---|---|---|---|---|---|---|---|---|
+| | | | | | | | | | |
+
+## Límites conocidos
+
+- No separa menciones ni planes con especialidades.
+- Una sola llamada por documento, con `max_tokens` de 16 000: una malla muy grande puede cortarse (el script avisa).
+- Las alternativas ("A o B") quedan como texto en `prereq_expr` y solo se exigen los ramos obligatorios; el formato actual no tiene árboles (T-012).
+- Sin caché, cola de tareas, límites de uso ni pantalla de revisión: eso es el diseño de la V2.1.

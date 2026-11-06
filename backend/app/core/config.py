@@ -20,6 +20,10 @@ class Settings(BaseSettings):
         default=None, validation_alias="FIREBASE_CREDENTIALS_JSON"
     )
 
+    # Prototype AI extraction (spike/ia-mallas). Only in backend/.env, never committed.
+    anthropic_api_key: str | None = Field(default=None, validation_alias="ANTHROPIC_API_KEY")
+    ai_model: str = Field(default="claude-sonnet-5-5", validation_alias="AI_MODEL")
+
     @property
     def cors_origins(self) -> list[str]:
         return [o.strip() for o in self.cors_origins_raw.split(",") if o.strip()]
