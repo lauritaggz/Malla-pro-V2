@@ -29,4 +29,6 @@ PRIVATE_RESOURCES: list[PrivateResource] = [
 
 SELF_SCOPED_ROUTES: set[RouteKey] = {
     ("GET", "/api/v1/me"),
+    # Prototype (spike/ia-mallas): only reads the uploaded file and answers; stores nothing.
+    ("POST", "/api/v1/me/malla-drafts"),
 }
