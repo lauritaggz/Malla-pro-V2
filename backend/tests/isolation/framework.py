@@ -79,6 +79,8 @@ class PrivateResource:
     attempts: tuple[Op, ...]
     # Routes used by `create` that are not already in `read`/`attempts`.
     create_routes: tuple[RouteKey, ...] = field(default_factory=tuple)
+    # pytest fixtures the routes need (e.g. a feature flag or a fake external service).
+    fixtures: tuple[str, ...] = field(default_factory=tuple)
 
     def route_keys(self) -> set[RouteKey]:
         keys = {self.read.route_key, *(op.route_key for op in self.attempts)}

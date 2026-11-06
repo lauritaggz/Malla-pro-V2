@@ -1,16 +1,20 @@
 """PROTOTYPE (spike/ia-mallas): AI draft of a malla from an uploaded PDF or photo.
 
 Enabled only in development with ANTHROPIC_API_KEY set, so nobody else spends the credits.
-Nothing is stored: the document and the draft live only for the request (D-08 pending).
+History (prototype only): each draft is saved as a JSON file under AI_DRAFTS_DIR, in one folder
+per user, so it can be reviewed later. The uploaded document itself is never stored (D-08).
 The body is the raw file (Content-Type application/pdf or image/*), so no multipart dependency.
 """
 
 import asyncio
 import json
+import uuid
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Annotated, Any
 
 from fastapi import APIRouter, Depends, HTTPException, Query, Request, status
+from fastapi import Path as PathParam
 from pydantic import BaseModel
 
 from app.core.config import get_settings
@@ -33,6 +37,9 @@ class Tokens(BaseModel):
 
 
 class MallaDraftOut(BaseModel):
+    id: uuid.UUID
+    creado: datetime
+    documento: str
     malla: dict[str, Any]
     advertencias: list[str]
     problemas: list[str]
@@ -50,7 +57,35 @@ def get_ai_client() -> Any:
     return anthropic.Anthropic(api_key=get_settings().anthropic_api_key)
 
 
-def _require_enabled() -> None:
+class MallaDraftSummary(BaseModel):
+    id: uuid.UUID
+    creado: datetime
+    documento: str
+    carrera: str
+    ramos: int
+    desconocidos: int
+    modelo: str
+    cobertura_pct: float | None
+
+
+def get_drafts_dir() -> Path:
+    """Where the prototype keeps its history; tests override this dependency."""
+    return Path(get_settings().ai_drafts_dir)
+
+
+def _user_dir(base: Path, user: User) -> Path:
+    return base / str(user.id)
+
+
+def _load(path: Path) -> MallaDraftOut:
+    return MallaDraftOut.model_validate_json(path.read_text(encoding="utf-8"))
+
+
+def _not_found() -> HTTPException:
+    return HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="No existe ese borrador.")
+
+
+def require_ai_enabled() -> None:
     settings = get_settings()
     if settings.environment != "development" or not settings.anthropic_api_key:
         raise HTTPException(
@@ -59,12 +94,14 @@ def _require_enabled() -> None:
         )
 
 
-@router.post("", response_model=MallaDraftOut, dependencies=[Depends(_require_enabled)])
+@router.post("", response_model=MallaDraftOut, dependencies=[Depends(require_ai_enabled)])
 async def create_malla_draft(
     request: Request,
     user: Annotated[User, Depends(get_current_user)],
     client: Annotated[Any, Depends(get_ai_client)],
+    drafts_dir: Annotated[Path, Depends(get_drafts_dir)],
     compare_with: Annotated[str | None, Query(max_length=64)] = None,
+    filename: Annotated[str | None, Query(max_length=200)] = None,
 ) -> MallaDraftOut:
     media_type = (request.headers.get("content-type") or "").split(";")[0].strip().lower()
     if media_type not in ALLOWED_MEDIA:
@@ -104,7 +141,10 @@ async def create_malla_draft(
     if compare_with:
         verified = json.loads((MALLAS_DIR / f"{compare_with}.json").read_text(encoding="utf-8"))
         comparison = compare(draft.malla, verified)
-    return MallaDraftOut(
+    out = MallaDraftOut(
+        id=uuid.uuid4(),
+        creado=datetime.now(UTC),
+        documento=Path(filename).name if filename else "documento",
         malla=draft.malla,
         advertencias=draft.warnings,
         problemas=validate(draft.malla),
@@ -114,3 +154,64 @@ async def create_malla_draft(
         cortado=result.stop_reason == "max_tokens",
         comparacion=comparison,
     )
+    folder = _user_dir(drafts_dir, user)
+    folder.mkdir(parents=True, exist_ok=True)
+    (folder / f"{out.id}.json").write_text(out.model_dump_json(), encoding="utf-8")
+    return out
+
+
+@router.get("", response_model=list[MallaDraftSummary], dependencies=[Depends(require_ai_enabled)])
+async def list_malla_drafts(
+    user: Annotated[User, Depends(get_current_user)],
+    drafts_dir: Annotated[Path, Depends(get_drafts_dir)],
+) -> list[MallaDraftSummary]:
+    """The caller's own drafts, newest first."""
+    folder = _user_dir(drafts_dir, user)
+    items = [_load(p) for p in folder.glob("*.json")] if folder.is_dir() else []
+    items.sort(key=lambda d: d.creado, reverse=True)
+    return [
+        MallaDraftSummary(
+            id=d.id,
+            creado=d.creado,
+            documento=d.documento,
+            carrera=d.malla.get("carrera") or "",
+            ramos=sum(len(sem.get("cursos") or []) for sem in d.malla.get("semestres") or []),
+            desconocidos=d.desconocidos,
+            modelo=d.modelo,
+            cobertura_pct=(d.comparacion or {}).get("cobertura_pct"),
+        )
+        for d in items
+    ]
+
+
+DraftId = Annotated[uuid.UUID, PathParam()]
+
+
+@router.get("/{draft_id}", response_model=MallaDraftOut, dependencies=[Depends(require_ai_enabled)])
+async def get_malla_draft(
+    draft_id: DraftId,
+    user: Annotated[User, Depends(get_current_user)],
+    drafts_dir: Annotated[Path, Depends(get_drafts_dir)],
+) -> MallaDraftOut:
+    # The path is built from the caller's own folder and a parsed UUID: another user's draft,
+    # or anything outside the folder, is simply not there (404).
+    path = _user_dir(drafts_dir, user) / f"{draft_id}.json"
+    if not path.is_file():
+        raise _not_found()
+    return _load(path)
+
+
+@router.delete(
+    "/{draft_id}",
+    status_code=status.HTTP_204_NO_CONTENT,
+    dependencies=[Depends(require_ai_enabled)],
+)
+async def delete_malla_draft(
+    draft_id: DraftId,
+    user: Annotated[User, Depends(get_current_user)],
+    drafts_dir: Annotated[Path, Depends(get_drafts_dir)],
+) -> None:
+    path = _user_dir(drafts_dir, user) / f"{draft_id}.json"
+    if not path.is_file():
+        raise _not_found()
+    path.unlink()

@@ -8,9 +8,32 @@
 `test_isolation.py` fails if a route depends on `get_current_user` and is in neither list.
 """
 
-from tests.isolation.framework import PrivateResource, RouteKey
+from httpx import AsyncClient
+
+from tests.isolation.framework import Op, PrivateResource, RouteKey
+
+
+async def create_malla_draft(owner: AsyncClient) -> str:
+    response = await owner.post(
+        "/api/v1/me/malla-drafts", content=b"%PDF", headers={"Content-Type": "application/pdf"}
+    )
+    assert response.status_code == 200, response.text
+    return str(response.json()["id"])
+
 
 PRIVATE_RESOURCES: list[PrivateResource] = [
+    # Prototype (spike/ia-mallas): AI drafts kept as a per-user history.
+    PrivateResource(
+        name="AI malla draft (prototype)",
+        create=create_malla_draft,
+        read=Op("GET", "/api/v1/me/malla-drafts/{draft_id}"),
+        attempts=(
+            Op("GET", "/api/v1/me/malla-drafts/{draft_id}"),
+            Op("DELETE", "/api/v1/me/malla-drafts/{draft_id}"),
+        ),
+        create_routes=(("POST", "/api/v1/me/malla-drafts"),),
+        fixtures=("ai_drafts",),
+    ),
     # Empty until the first user-owned resource exists (T-020 academic profiles onwards).
     # Example for a future route set:
     # PrivateResource(
@@ -29,6 +52,6 @@ PRIVATE_RESOURCES: list[PrivateResource] = [
 
 SELF_SCOPED_ROUTES: set[RouteKey] = {
     ("GET", "/api/v1/me"),
-    # Prototype (spike/ia-mallas): only reads the uploaded file and answers; stores nothing.
-    ("POST", "/api/v1/me/malla-drafts"),
+    # Prototype: lists only the caller's own drafts (checked in test_malla_drafts_api.py).
+    ("GET", "/api/v1/me/malla-drafts"),
 }

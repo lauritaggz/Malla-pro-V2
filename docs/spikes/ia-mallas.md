@@ -30,9 +30,19 @@ Sin Docker, desde `backend/`: `uv sync` y el mismo comando con `uv run python -m
 
 ## Ruta para la pantalla de la demo
 
-`POST /api/v1/me/malla-drafts?compare_with=<Malla>` con el archivo como cuerpo (`Content-Type: application/pdf` o `image/png|jpeg|webp|gif`, máximo 10 MB). Exige sesión y **solo responde en desarrollo y con `ANTHROPIC_API_KEY`** (si no, 503), para que nadie más gaste los créditos. No guarda nada. Devuelve `malla` (borrador), `advertencias`, `problemas`, `desconocidos`, `modelo`, `tokens`, `cortado` y, con `compare_with` (nombre de un archivo de `public/mallas`, sin `.json`), `comparacion`. Errores en español: 415 formato, 413 tamaño, 400 vacío, 404 malla para comparar desconocida, 502 si falla la IA (sin texto del documento).
+`POST /api/v1/me/malla-drafts?compare_with=<Malla>` con el archivo como cuerpo (`Content-Type: application/pdf` o `image/png|jpeg|webp|gif`, máximo 10 MB). Exige sesión y **solo responde en desarrollo y con `ANTHROPIC_API_KEY`** (si no, 503), para que nadie más gaste los créditos. Parámetro opcional `filename` (nombre del archivo, para reconocerlo en el historial). Devuelve `id`, `creado`, `documento`, `malla` (borrador), `advertencias`, `problemas`, `desconocidos`, `modelo`, `tokens`, `cortado` y, con `compare_with` (nombre de un archivo de `public/mallas`, sin `.json`), `comparacion`. Errores en español: 415 formato, 413 tamaño, 400 vacío, 404 malla para comparar desconocida, 502 si falla la IA (sin texto del documento).
 
 La pantalla se hace con el diseño de Laura en Figma.
+
+### Historial de prueba
+
+Cada borrador que sale bien se guarda como JSON en `backend/ia-pruebas/historial/<id de usuario>/<id>.json` (carpeta ignorada por git; se cambia con `AI_DRAFTS_DIR`). **Nunca se guarda el documento subido**, solo el borrador (D-08). Las rutas solo funcionan en desarrollo y con la clave, igual que la de arriba, y cada usuario ve solo lo suyo (registradas en las pruebas de aislamiento):
+
+- `GET /api/v1/me/malla-drafts`: lista, del más nuevo al más antiguo, con `id`, `creado`, `documento`, `carrera`, `ramos`, `desconocidos`, `modelo`, `cobertura_pct` (o `null` si no se comparó).
+- `GET /api/v1/me/malla-drafts/{id}`: el borrador completo, igual a lo que devolvió el `POST`.
+- `DELETE /api/v1/me/malla-drafts/{id}`: lo borra (204).
+
+Un borrador de otro usuario, o un id que no existe, da 404. Para revisar a mano basta abrir los JSON de la carpeta.
 
 ## Pruebas sugeridas para la demo
 

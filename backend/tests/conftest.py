@@ -1,6 +1,7 @@
 import asyncio
-from collections.abc import AsyncIterator
+from collections.abc import AsyncIterator, Iterator
 from pathlib import Path
+from typing import Any
 
 import pytest
 import pytest_asyncio
@@ -126,3 +127,23 @@ async def user_b(client: AsyncClient, fake_firebase: None) -> AsyncIterator[Asyn
     """HTTP client authenticated as user B."""
     async with await _authed_client("token-user-b") as c:
         yield c
+
+
+# ---------------------------------------------------------------- AI prototype (spike/ia-mallas)
+
+
+@pytest.fixture
+def ai_drafts(monkeypatch: pytest.MonkeyPatch, tmp_path: Path) -> Iterator[Any]:
+    """Enables /me/malla-drafts with a fake AI and a temporary history folder."""
+    from app.api.v1 import malla_drafts
+    from app.core.config import Settings
+    from tests.test_ai_malla import FakeClient, as_model_output, verified
+
+    settings = Settings(ENVIRONMENT="development", ANTHROPIC_API_KEY="test-key", AI_MODEL="m")
+    monkeypatch.setattr(malla_drafts, "get_settings", lambda: settings)
+    fake = FakeClient(as_model_output(verified("QuimicaUCH"), by_number=True))
+    app.dependency_overrides[malla_drafts.get_ai_client] = lambda: fake
+    app.dependency_overrides[malla_drafts.get_drafts_dir] = lambda: tmp_path / "historial"
+    yield fake
+    app.dependency_overrides.pop(malla_drafts.get_ai_client, None)
+    app.dependency_overrides.pop(malla_drafts.get_drafts_dir, None)

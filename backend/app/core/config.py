@@ -23,6 +23,8 @@ class Settings(BaseSettings):
     # Prototype AI extraction (spike/ia-mallas). Only in backend/.env, never committed.
     anthropic_api_key: str | None = Field(default=None, validation_alias="ANTHROPIC_API_KEY")
     ai_model: str = Field(default="claude-sonnet-5-5", validation_alias="AI_MODEL")
+    # Prototype history: one JSON per draft, one folder per user (gitignored).
+    ai_drafts_dir: str = Field(default="ia-pruebas/historial", validation_alias="AI_DRAFTS_DIR")
 
     @property
     def cors_origins(self) -> list[str]:

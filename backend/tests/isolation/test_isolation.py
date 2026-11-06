@@ -52,7 +52,12 @@ def test_registry_has_no_stale_routes() -> None:
 
 @pytest.mark.parametrize("resource", PRIVATE_RESOURCES, ids=lambda r: r.name)
 async def test_private_resource_is_isolated(
-    resource: PrivateResource, user_a: AsyncClient, user_b: AsyncClient
+    resource: PrivateResource,
+    user_a: AsyncClient,
+    user_b: AsyncClient,
+    request: pytest.FixtureRequest,
 ) -> None:
+    for name in resource.fixtures:
+        request.getfixturevalue(name)
     await assert_isolated(resource, owner=user_a, other=user_b)
     await assert_isolated(resource, owner=user_b, other=user_a)
